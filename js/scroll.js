@@ -3,6 +3,7 @@
     const process = document.querySelector('#site-process');
     let isRunning = false;
     
+    
     return () => {
       if (isRunning) return;
       isRunning = true;
