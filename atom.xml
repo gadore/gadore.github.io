@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://gadore.me/"/>
+  <link href="https://blog.gadore.me/"/>
   <updated>2020-02-15T10:27:55.561Z</updated>
-  <id>https://gadore.me/</id>
+  <id>https://blog.gadore.me/</id>
   
   <author>
     <name>gadore</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>自动化分拣设备监控</title>
-    <link href="https://gadore.me/2020/02/15/webMonitor/"/>
-    <id>https://gadore.me/2020/02/15/webMonitor/</id>
+    <link href="https://blog.gadore.me/2020/02/15/webMonitor/"/>
+    <id>https://blog.gadore.me/2020/02/15/webMonitor/</id>
     <published>2020-02-15T10:09:54.000Z</published>
     <updated>2020-02-15T10:27:55.561Z</updated>
     
@@ -36,15 +36,15 @@
     </summary>
     
     
-      <category term="Project" scheme="https://gadore.me/categories/Project/"/>
+      <category term="Project" scheme="https://blog.gadore.me/categories/Project/"/>
     
     
   </entry>
   
   <entry>
     <title>Termux</title>
-    <link href="https://gadore.me/2020/01/30/Termux/"/>
-    <id>https://gadore.me/2020/01/30/Termux/</id>
+    <link href="https://blog.gadore.me/2020/01/30/Termux/"/>
+    <id>https://blog.gadore.me/2020/01/30/Termux/</id>
     <published>2020-01-30T08:39:28.000Z</published>
     <updated>2020-01-30T08:40:01.125Z</updated>
     
@@ -65,8 +65,8 @@
   
   <entry>
     <title>timeFly</title>
-    <link href="https://gadore.me/2019/09/20/timeFly/"/>
-    <id>https://gadore.me/2019/09/20/timeFly/</id>
+    <link href="https://blog.gadore.me/2019/09/20/timeFly/"/>
+    <id>https://blog.gadore.me/2019/09/20/timeFly/</id>
     <published>2019-09-20T01:14:33.000Z</published>
     <updated>2019-09-20T01:23:06.560Z</updated>
     
@@ -75,15 +75,15 @@
     </summary>
     
     
-      <category term="talk" scheme="https://gadore.me/categories/talk/"/>
+      <category term="talk" scheme="https://blog.gadore.me/categories/talk/"/>
     
     
   </entry>
   
   <entry>
     <title>从《星际牛仔》中理解渡边信一郎的音乐哲学(转)</title>
-    <link href="https://gadore.me/2019/09/17/Cowboy%20Bebop/"/>
-    <id>https://gadore.me/2019/09/17/Cowboy Bebop/</id>
+    <link href="https://blog.gadore.me/2019/09/17/Cowboy%20Bebop/"/>
+    <id>https://blog.gadore.me/2019/09/17/Cowboy Bebop/</id>
     <published>2019-09-17T07:13:06.000Z</published>
     <updated>2019-09-18T09:44:36.882Z</updated>
     
@@ -99,15 +99,15 @@
     </summary>
     
     
-      <category term="animation" scheme="https://gadore.me/categories/animation/"/>
+      <category term="animation" scheme="https://blog.gadore.me/categories/animation/"/>
     
     
   </entry>
   
   <entry>
     <title>There is the title</title>
-    <link href="https://gadore.me/2019/09/15/hello-world/"/>
-    <id>https://gadore.me/2019/09/15/hello-world/</id>
+    <link href="https://blog.gadore.me/2019/09/15/hello-world/"/>
+    <id>https://blog.gadore.me/2019/09/15/hello-world/</id>
     <published>2019-09-15T07:13:06.000Z</published>
     <updated>2019-10-09T08:52:07.973Z</updated>
     
@@ -123,7 +123,7 @@
     </summary>
     
     
-      <category term="learn" scheme="https://gadore.me/categories/learn/"/>
+      <category term="learn" scheme="https://blog.gadore.me/categories/learn/"/>
     
     
   </entry>
