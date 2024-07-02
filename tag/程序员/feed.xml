@@ -1,0 +1,1025 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;程序员&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2024-05-31T10:46:59.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="网络" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="NAS" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <entry>
+        <id>https://blog.gadore.top/archives/way2remember/</id>
+        <title>做一款长期主义的App「V2RMB」</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/way2remember/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;长期主义？我？哈哈哈，先看两年吧。等我到时候没放弃的时候，那应该可以 review 一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;开发背景&#34;&gt;&lt;a href=&#34;#开发背景&#34; class=&#34;headerlink&#34; title=&#34;开发背景&#34;&gt;&lt;/a&gt;开发背景&lt;/h2&gt;&lt;p&gt;在 2020 年刚开始疫情封控的时候，我也被封在家里了，那段时间公司也没办法展开任何业务，所以我就开始寻找一些能消磨时间的事情做，学习 SwiftUI 在我看来就是一个不错的契机。&lt;/p&gt;
+&lt;p&gt;但在当年的时间节点，ChatGPT 还没出现在大家的视野，SwiftUI 本身也一大堆问题，很多地方还需要 UIKit 来解决问题，所以当时学习的时候也非常的痛苦，更不要说当时 SwiftUI 的文档也是一坨，但在被封控的这段时间里，好像也没那么难地去攻坚下去，算事因祸得福吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/birthdaynote.webp&#34; alt=&#34;农小记商店截图&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当年开发了一个多月时间，也磕磕绊绊地开发出来了一款 App，「农小记」，功能超级简单，但它免费、轻量（安装包不到1M）、没广告，你现在依旧可以在 App Store 下载到（非国区才有）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://birthdaynote.pages.dev/static/img/preview.png&#34; alt=&#34;当时就适配了 Apple Watch 和 iPad&#34;&gt;&lt;/p&gt;
+&lt;p&gt;从 App 的名称来看，大家应该也大概猜到了它的主要使用场景，在这种场景下其实同类型应用特别多，倒数日、生日提醒、Happy Days 等等，我为什么还要单独开发一个这样的产品出来呢，首先，在 2020 年刚开始开发的时候，作为练手项目，要么就是笔记类软件，要么就是 TODO 类软件，要么就是番茄时钟，没别的选择，再选的话上手难度就太高了。&lt;br&gt;&lt;img src=&#34;/upload/ding.webp&#34; alt=&#34;农小记商店截图&#34;&gt;&lt;br&gt;但其实当时我第一个目标是做一个网易云音乐第三方，这个另找时间再聊吧，都是泪。当时名气比较大的就只有倒数日这一家，而且当时他也没办法设置一项生日记录循环计算下一个生日的到期时间，而且倒数日在当时的小组件只能显示一个日子，我就想做一个显示列表的，一切好像都很合理，诉求也很简单，那就开始做吧。&lt;/p&gt;
+&lt;p&gt;我在 2020 年刚开始开发第一版的时候，其实同类型产品（我能搜索到的）还不算太多，跨平台的同时提供云同步的更是只有倒数日一款，再说倒数日的那个 UI 真的欣赏不能，但它免费，你还能说什么呢。&lt;/p&gt;
+&lt;h2 id=&#34;这款-App-在-2024-年推出，主要解决什么问题？&#34;&gt;&lt;a href=&#34;#这款-App-在-2024-年推出，主要解决什么问题？&#34; class=&#34;headerlink&#34; title=&#34;这款 App 在 2024 年推出，主要解决什么问题？&#34;&gt;&lt;/a&gt;这款 App 在 2024 年推出，主要解决什么问题？&lt;/h2&gt;&lt;p&gt;当时间来到了 2024 年之后，虽然在 iOS 平台上，跟我功能类似的产品已经非常多了，很多产品的 UI 和精致程度已经超过了我这款，但大部分产品是跟苹果平台强关联的，脱离 iOS 平台就无法使用了，这其实也是我第一款产品的问题，2021 年当我的苹果开发者账号到期之后，我预感接下来一年可能没时间继续开发这款产品，就没有续费开发者账号，于是你猜怎么着，之前曾经下载过我 App 的人，也无法使用 iCloud 进行数据同步了。。。苹果，你下架我的 App 我能够理解，但你直接禁止已经下载的用户使用 iCloud 同步这一点，就不太地道了吧。&lt;/p&gt;
+&lt;p&gt;所以我在对第一款产品升级的重点，就是要做一款长期主义的 App。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v2rmb.gadore.top/static/img/preview.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;长期主义，贯穿这款产品开发始终&#34;&gt;&lt;a href=&#34;#长期主义，贯穿这款产品开发始终&#34; class=&#34;headerlink&#34; title=&#34;长期主义，贯穿这款产品开发始终&#34;&gt;&lt;/a&gt;长期主义，贯穿这款产品开发始终&lt;/h2&gt;&lt;p&gt;我做的时候，做一切决策，只考虑一个问题：这个 App 如何稳定使用 10 年，即使我已经不再做开发者，用户依旧可以正常使用？&lt;/p&gt;
+&lt;h3 id=&#34;云同步方式：Cloudflare-D1&#34;&gt;&lt;a href=&#34;#云同步方式：Cloudflare-D1&#34; class=&#34;headerlink&#34; title=&#34;云同步方式：Cloudflare D1&#34;&gt;&lt;/a&gt;云同步方式：Cloudflare D1&lt;/h3&gt;&lt;p&gt;考虑到苹果 CloudKit 这个大坑，云同步肯定不能用了，更何况如果后期我要开发 Android 平台，更没发对接 iCloud，最开始我使用的是 fastify 框架，这样的话就要接数据库，就需要租服务器，这样的话，成本就非常大了。而当我接触到 Cloudflare D1，我就知道，我必须要用，这真的太棒了！&lt;/p&gt;
+&lt;p&gt;简单来讲，D1 就是基于 Api 的数据库服务，你只需要写好接口层的内容，然后交给 D1，一切就都就绪了，它不是一个实时运行的服务，但当你访问指定的路由时，D1 会根据路由找到指定的执行文件，执行后发给你执行结果。他有日 10W 的免费调用额度，5GB 的存储空间，对于一个记录和同步用户生日和纪念日的信息来说，绰绰有余了，即使后期用户群起来了（大概率不会），也可以通过简单的弹性套餐来增加调用次数和存储空间，这太适合低成本的 Startup 项目了！&lt;/p&gt;
+&lt;h3 id=&#34;本地存储方式：SQLite&#34;&gt;&lt;a href=&#34;#本地存储方式：SQLite&#34; class=&#34;headerlink&#34; title=&#34;本地存储方式：SQLite&#34;&gt;&lt;/a&gt;本地存储方式：SQLite&lt;/h3&gt;&lt;p&gt;同样的，自从被苹果 CloudKit 坑过之后，我算是 PTSD 了，其实如果我能继续使用 CloudKit 的话，那第一版 App 的大部分逻辑代码都能复用，我只用重新写写 UI 装饰一下就好了，但既然后期有 Android 版本，所以干脆在移动端就用 SQLite 了。&lt;/p&gt;
+&lt;h3 id=&#34;开发语言：SwiftUI-Flutter&#34;&gt;&lt;a href=&#34;#开发语言：SwiftUI-Flutter&#34; class=&#34;headerlink&#34; title=&#34;开发语言：SwiftUI &amp;amp;&amp;amp; Flutter&#34;&gt;&lt;/a&gt;开发语言：SwiftUI &amp;amp;&amp;amp; Flutter&lt;/h3&gt;&lt;p&gt;其实在开发到一半的时候，Flutter 是一个更优解，因为可以一套代码多平台发布，但整个项目毕竟是从学习 SwiftUI 开始，所以也舍不得放弃当前已经构建了 80% 的 iOS App，所以下个产品，一定直接走 Flutter ！&lt;/p&gt;
+&lt;h2 id=&#34;开发主要功能&#34;&gt;&lt;a href=&#34;#开发主要功能&#34; class=&#34;headerlink&#34; title=&#34;开发主要功能&#34;&gt;&lt;/a&gt;开发主要功能&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;BB 了这么久终于要说功能了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;双历倒数日&#34;&gt;&lt;a href=&#34;#双历倒数日&#34; class=&#34;headerlink&#34; title=&#34;双历倒数日&#34;&gt;&lt;/a&gt;双历倒数日&lt;/h3&gt;&lt;p&gt;中国生日用农历，所以肯定要兼容的，但结婚纪念日、恋爱纪念日这种，正常使用公历的当然也要支持。&lt;br&gt;&lt;img src=&#34;/upload/v2rmb.webp&#34; alt=&#34;V2RMB 商店截图&#34;&gt;&lt;br&gt;这里小小吐槽一下，SwiftUI 的 bug 真的奇奇怪怪的，他自带 DatePicker ，并且可以指定为 LunarCalendar，但不同的SwiftUI版本，在使用这个组件的时候，实际的展示效果千奇百怪，这种 bug 真的把我逼疯了，我只好自己做一个 LunarDatePicker。&lt;/p&gt;
+&lt;h3 id=&#34;多尺寸的小组件支持&#34;&gt;&lt;a href=&#34;#多尺寸的小组件支持&#34; class=&#34;headerlink&#34; title=&#34;多尺寸的小组件支持&#34;&gt;&lt;/a&gt;多尺寸的小组件支持&lt;/h3&gt;&lt;p&gt;同时支持苹果和安卓端的应用我知道的只有倒数日，但它的小组件真的一言难尽，所以这也是我打算开发多端的重要原因，希望我可以开发一款好看的安卓小组件吧～&lt;/p&gt;
+&lt;h3 id=&#34;多平台支持&#34;&gt;&lt;a href=&#34;#多平台支持&#34; class=&#34;headerlink&#34; title=&#34;多平台支持&#34;&gt;&lt;/a&gt;多平台支持&lt;/h3&gt;&lt;p&gt;如题，无须多言，国内备案实在是太恶心了，所以这款 App 近期不打算上架国区了，等以后再说吧。&lt;/p&gt;
+&lt;h3 id=&#34;多语言支持&#34;&gt;&lt;a href=&#34;#多语言支持&#34; class=&#34;headerlink&#34; title=&#34;多语言支持&#34;&gt;&lt;/a&gt;多语言支持&lt;/h3&gt;&lt;p&gt;如题，同样无须多言，因为使用的 XCode 工程标准的多语言支持方式，所以后期适配日语啊、德语啊，也是非常轻松的。&lt;/p&gt;
+&lt;h3 id=&#34;通知方式&#34;&gt;&lt;a href=&#34;#通知方式&#34; class=&#34;headerlink&#34; title=&#34;通知方式&#34;&gt;&lt;/a&gt;通知方式&lt;/h3&gt;&lt;p&gt;作为一个以长期主义为主要宗旨的 App，云通知的方式是万万不行的（主要是云服务器计算压力比较大），那在 iOS 本地的 LocalNotificationSchedule 就非常香了，它是可以在本地预约通知的 Api，估计很多通知笔记都是经过这个 Api 进行开发的。&lt;/p&gt;
+&lt;p&gt;但我现在还不知道 Android 有没有类似的接口来实现（找到了，有方式实现），毕竟 Android 实在是太乱了。。。希望有吧。&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;p&gt;iOS端：&lt;a href=&#34;https://apps.apple.com/us/app/v2rmb/id6502951931&#34;&gt;App Store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Android端：新建文件夹中，可能需要一段开发时间。&lt;/p&gt;
+&lt;h2 id=&#34;收费吗？&#34;&gt;&lt;a href=&#34;#收费吗？&#34; class=&#34;headerlink&#34; title=&#34;收费吗？&#34;&gt;&lt;/a&gt;收费吗？&lt;/h2&gt;&lt;p&gt;只要用户量在当前 Cloudflare 免费调用额度以下，那就可以永远免费地使用下去，如果用户量激增（怎么可能），那就是早用早享受啦～&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="产品" />
+        <category term="独立开发" />
+        <category term="iOS" />
+        <category term="SwiftUI" />
+        <updated>2024-05-31T10:46:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/selfHostServiceMove/</id>
+        <title>自托管服务访问入口迁移</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/selfHostServiceMove/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/2f52f8b928f21bcb0ab92ee79b83bce8.webp&#34; alt=&#34;封面图&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;封面图来源说明：下载自：wallhaven，图片来自于：动画剧集《拾荒者统治》截图，如侵权请联系删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;承接上一篇文章，&lt;a href=&#34;/archives/persionalIpAddressApply&#34;&gt;我的公网 IP 被干掉了&lt;/a&gt;，但生活还是要继续。本篇文章记录我的自托管服务迁移方案&lt;/p&gt;
+&lt;p&gt;得益于 Cloudflare 的存在，这次迁移并没有想象中那么复杂。&lt;/p&gt;
+&lt;h2 id=&#34;基于-Halo-托管的个人博客平台&#34;&gt;&lt;a href=&#34;#基于-Halo-托管的个人博客平台&#34; class=&#34;headerlink&#34; title=&#34;基于 Halo 托管的个人博客平台&#34;&gt;&lt;/a&gt;&lt;strong&gt;基于 Halo 托管的个人博客平台&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;情况说明：我的主博客网站使用的是 Github Page 服务，在国内的访问速度不佳，于是我就用 Halo 搭建了这个国内可以访问的平台，并手动同步这两个平台的文章信息。&lt;/li&gt;
+&lt;li&gt;替代方式：使用 Cloudflare 平台的 Workers &amp;amp;&amp;amp; Pages 中的 Page 托管直接镜像整个 Github Page 服务，实现 100% 的网站镜像，同时在国内又拥有一定的访问能力（想比较 Github 的访问速度而言）&lt;/li&gt;
+&lt;li&gt;优点：一劳永逸，设置好之后我几乎没有再碰过这个服务，始终稳定且安全地帮我做网站镜像，包括主站的评论数据也全部同步过来了。&lt;/li&gt;
+&lt;li&gt;缺点：丢失了旧网站的访客数据和评论数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/f70eac12271f473b3ecb90612c06cfba.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Workers &amp;amp;&amp;amp; Pages&lt;/p&gt;
+&lt;h2 id=&#34;Komga-服务、Bitwarden-服务&#34;&gt;&lt;a href=&#34;#Komga-服务、Bitwarden-服务&#34; class=&#34;headerlink&#34; title=&#34;Komga 服务、Bitwarden 服务&#34;&gt;&lt;/a&gt;Komga 服务、Bitwarden 服务&lt;/h2&gt;&lt;p&gt;这两个服务也大大便利了我的日常生活，而且这种服务考虑到数据安全性和迁移数据的复杂程度，仍旧考虑把服务部署在自己的机器里，通过 Cloudflare 的 Zero Trust 下边的 Tunnel 进行代理。&lt;/p&gt;
+&lt;p&gt;Zero Trust 下的 Tunnel 也是老朋友了，用一句话总结就是：它是一个 Cloudflare 帮你搞定服务端、SSL 证书签名的 Frp 反向代理服务。&lt;/p&gt;
+&lt;p&gt;我要做的就是在本机运行一个 Cloudflared 程序，绑定到 Cloudflare 下的某一个 Tunnel ，指定好我的服务端口和公网访问时用到的二级域名即可。&lt;/p&gt;
+&lt;p&gt;比如下图中的设置，如果我要访问机器里的 80 端口，那我直接在公网访问 test.gadore.top 就好了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/400b08152003af37de6e591fff19e859.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tunnel&lt;/p&gt;
+&lt;p&gt;除了带宽不太高，安全性、便携性都有了保障。&lt;/p&gt;
+&lt;h2 id=&#34;Fress-RSS&#34;&gt;&lt;a href=&#34;#Fress-RSS&#34; class=&#34;headerlink&#34; title=&#34;Fress RSS&#34;&gt;&lt;/a&gt;Fress RSS&lt;/h2&gt;&lt;p&gt;这一个月开始，我所使用的 The Old Reader 平台好像调整了他们平台的免费版用户的抓取时间间隔，我通常需要两天时间才能刷新出来平台抓取的 RSS 内容，开始逐渐不好用了。&lt;/p&gt;
+&lt;p&gt;恰逢 Fress RSS 前年开源满十年（始于 2012 年），而且我常用的 Reeder 阅读器支持登陆自托管的 Fress RSS，索性就用它重新搭建了一个 RSS 服务平台。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/f9c58311f7240473e1eb46b2440e6d2d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;分组管理&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/5eb865318479caa767b9f4fb19f114c7.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;抓取时间间隔调整&lt;/p&gt;
+&lt;p&gt;借助 Cloudflare 的 Zero Trust ，也把这个服务正常暴露到了公网，这样抓取时间间隔我就可以灵活控制了，感谢 Fress RSS，感谢开源！&lt;/p&gt;
+&lt;h2 id=&#34;设备组网&#34;&gt;&lt;a href=&#34;#设备组网&#34; class=&#34;headerlink&#34; title=&#34;设备组网&#34;&gt;&lt;/a&gt;设备组网&lt;/h2&gt;&lt;p&gt;这个替代品很多，zero tier、tailscale 等等，使用体验大差不差，就不过多赘述啦。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2024-04-09T14:31:56.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/persionalIpAddressApply/</id>
+        <title>我的公网 IP 被干掉了</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/persionalIpAddressApply/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/f7c30ca29ec08a59da0e720391829da2.webp&#34; alt=&#34;封面图&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;封面图来源说明：下载自：wallhaven，图片来自于：ILLUSION 社开发的游戏《监禁》截图，如侵权请联系删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 &lt;a href=&#34;/archives/1683599671683&#34;&gt;个人家庭宽带公网 IP 升级杂记&lt;/a&gt; 里，我惊喜于公网IP 获取居然如此简单（其实也并没有很简单），还在后续时间里兴高采烈地基于公网 IP 继续折腾了 DDNS 和自动证书续签，正当我享受这些折腾给我带来的便利，短短不到一年时间，我就被打脸了。&lt;/p&gt;
+&lt;p&gt;因为某县的宽带公司作恶，导致我在 2024 年 4 月痛失公网 IP ，我抗争了，但至少在这个县城，我不想跟这些人再多费口舌。&lt;/p&gt;
+&lt;p&gt;如标题所讲，这应该是个人家庭宽带申请的终结，而且可能不仅仅是我。&lt;/p&gt;
+&lt;p&gt;如果改变不了环境，&lt;del&gt;就融入环境?&lt;/del&gt; 就离这种垃圾环境远点儿。&lt;/p&gt;
+&lt;h2 id=&#34;复盘整个过程&#34;&gt;&lt;a href=&#34;#复盘整个过程&#34; class=&#34;headerlink&#34; title=&#34;复盘整个过程&#34;&gt;&lt;/a&gt;复盘整个过程&lt;/h2&gt;&lt;p&gt;这一整个家庭公网 IP 的申请和获取其实非常具有偶然性，它可能跟你当地的电信局、当地人员业务水平等都有非常大的关系，每个市、县的工作人员对上面政策的理解也各有不同，他们理解这样不对，那你的理解对他们而言就不重要了。&lt;/p&gt;
+&lt;h3 id=&#34;2023-04-25，开端&#34;&gt;&lt;a href=&#34;#2023-04-25，开端&#34; class=&#34;headerlink&#34; title=&#34;2023-04-25，开端&#34;&gt;&lt;/a&gt;2023-04-25，开端&lt;/h3&gt;&lt;p&gt;多次跟XX县城宽带业务进行电话沟通，确认只需要 ¥1200 就可以开通上下行 100M 的专线宽带，有固定公网 IP，这也就意味着可以 ICP 备案。&lt;br&gt;我心想：100M 上行，这不得爽死。买云服务器这个上行速度一个月不就得这么多钱。&lt;/p&gt;
+&lt;h3 id=&#34;2023-04-29，办理&#34;&gt;&lt;a href=&#34;#2023-04-29，办理&#34; class=&#34;headerlink&#34; title=&#34;2023-04-29，办理&#34;&gt;&lt;/a&gt;2023-04-29，办理&lt;/h3&gt;&lt;p&gt;带着营业执照和个人身份证，去他们办公室去开通（没错，柜台没有这种业务，得去他们办公室，就那种老干部办公室）。各种操作不在话下，在我还在他们办公室的情况下，他们已经派业务人员上门安装调试了。&lt;/p&gt;
+&lt;p&gt;我办理完成后回去检查，发现上行速度的确是快，下行也 OK，只是 443 端口和 80 端口被屏蔽了，我无论如何无法访问，同时，IP 也做了防 ping ( ICMP 协议)。&lt;/p&gt;
+&lt;p&gt;这就奇怪了，他们没说这些不能用啊，而且我都拿营业执照和身份证去备案了，于是我就跟业务人员进行沟通，得到的回复是：我明天上门看看。&lt;/p&gt;
+&lt;h3 id=&#34;2023-04-30，摆烂&#34;&gt;&lt;a href=&#34;#2023-04-30，摆烂&#34; class=&#34;headerlink&#34; title=&#34;2023-04-30，摆烂&#34;&gt;&lt;/a&gt;2023-04-30，摆烂&lt;/h3&gt;&lt;p&gt;业务人员上门，发现了这些问题，表示他只负责安装网线，保证速率正常，至于我遇到的问题，他表示的确是不正常，但他无能为力，让我联系给我办业务的业务人员。&lt;/p&gt;
+&lt;p&gt;我联系了昨天那个女业务员，她表示她不懂我在说什么，我就说那你问给我上门的技术人员吧，两人沟通一番后，她表示理解，但她只负责收钱、点提交、开通套餐，别的她也不懂，问我能不能就这样用着。&lt;/p&gt;
+&lt;p&gt;我都被她气笑了😊。随便嘲讽了两句，她回复说给我问问他们局技术人员。&lt;/p&gt;
+&lt;p&gt;技术人员说帮我检查下机房，然后过了五分钟，回复我说我那条网线连通性正常，其他他们不知道，就不管了。&lt;/p&gt;
+&lt;p&gt;我心里那股气就莫名起来了，直接生气告诉女业务员：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“如果不解决，我就投诉了，我知道你们都是做自己分内的事，我遇到的问题你们可能没能力解决，也找不到人解决，那我是不是只能到省公司投诉？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;她说她帮我问问市一级的技术员，又是大概半小时，她回复说技术员这两天出去了，他可能这两天有空会给我通电话，让我保持电话通畅。&lt;/p&gt;
+&lt;h3 id=&#34;2023-05-01，答复&#34;&gt;&lt;a href=&#34;#2023-05-01，答复&#34; class=&#34;headerlink&#34; title=&#34;2023-05-01，答复&#34;&gt;&lt;/a&gt;2023-05-01，答复&lt;/h3&gt;&lt;p&gt;今天他们局里没人上班，是漫长的等待的一天，女业务员可能被我昨天的态度吓到，怕我投诉，这一天里两次帮我催市技术员，终于在下午接近5点钟，我接到了市技术员电话。&lt;/p&gt;
+&lt;p&gt;市技术员用很随和的语气给我解释了我的问题为什么会这样：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你的虽然是专线，但因为价格便宜，只能用于直播这一种用途，不能用于个人网站的搭建，也不能通过 443 和 80 端口向外提供任何服务，防 ping 是为了保护个人宽带的安全（我用你保护？）；如果我真的要开通 80 和 443 接口，那就需要再购买商业宽带套餐，大概 3K～5K&amp;#x2F;年，带宽还是这么大。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在我跟技术员结束通话后，女业务员电话过来问我解决问题了没，不过我感觉她更多的是好奇，以及希望从我这里问到以后碰到这种问题该咋办，我转述了技术员的内容，她直接问：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“那你要升级吗，升级的话就明天来找我办好了，我明天正好值班。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（我办你妹啊！！！）&lt;/p&gt;
+&lt;h3 id=&#34;2023-05-02，庆幸&#34;&gt;&lt;a href=&#34;#2023-05-02，庆幸&#34; class=&#34;headerlink&#34; title=&#34;2023-05-02，庆幸&#34;&gt;&lt;/a&gt;2023-05-02，庆幸&lt;/h3&gt;&lt;p&gt;带各种证件取消了我的专线宽带。&lt;br&gt;因为在这几天的时间里，我需要验证各种端口、网线、带宽等性能，所以在技术人员上门期间，我给他买了瓶可乐，然后让他把光猫里的宽带放到我的路由器里，这样我就能用 PPPoE 做拨号，而 PPPoE 拨号就意味着公网 IP！&lt;/p&gt;
+&lt;p&gt;感谢可乐，哈哈。&lt;/p&gt;
+&lt;p&gt;在接下来的半年时间里，基于公网 IP 的各种折腾自然不在话下，感兴趣翻看我博客即可。&lt;/p&gt;
+&lt;h3 id=&#34;2024-01-29，意外&#34;&gt;&lt;a href=&#34;#2024-01-29，意外&#34; class=&#34;headerlink&#34; title=&#34;2024-01-29，意外&#34;&gt;&lt;/a&gt;2024-01-29，意外&lt;/h3&gt;&lt;p&gt;XX公司为封禁 PCDN，把所有月上传流量过大的个人家庭宽带强行降速，直接导致整个宽带处于几乎不可用状态：上行 1M（125kb&amp;#x2F;s），即使一个视频通话都会卡。&lt;br&gt;打电话投诉，说我违规使用宽带，从事 PCDN ，我直接说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你们不是有技术手段可以检测我这里有没有用 PCDN 吗？你检测啊？我也可以给你们签订一个不从事 PCDN 的保证书，我同意签订，你恢复我这个上传带宽，这样行吗？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我感觉我的配合度已经够高了，没想到我再次被这些技术人员的专业性气笑了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你说没有，我们也不知道你到底从事没有，现在上面（市公司）就是监测到你流量比别人大，这就是不行的，你这是什么东西？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（指着我的 NAS ）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你这个东西肯定违法吧，你先关机，拔掉吧，不然你们这个网恢复不了。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我真的气疯了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“NAS 为什么违法？现在淘宝上京东上都有卖，违法的东西能卖吗？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“这我不知道，你别跟我说这些，要么你断电，把这个设备拔掉，要么你这个网不好恢复。你投诉到上边到时候过来处理的人还是我。最近上头查那个啥 PDN 查的严，你先拔掉，等风头过去了再插上，我们相信你没做违法的事儿，但系统现在就是监测到了你上传流量高，所以你也配合下我们工作，等下我就说没在你这里看到任何可疑设备，好吧，这样我们两边都好。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“嗯，”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我爸也在旁边疯狂使眼色。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“那就先这样吧。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我妥协了，但我很困惑，宽带公司给了我 30M 上行速率，而我不能用，这是什么道理？&lt;/p&gt;
+&lt;p&gt;而且仅仅是因为我上传流量比一般的家庭宽带大，就认定我是 PCDN，也不做任何技术检测，就直接定性，这跟流氓有什么区别？&lt;/p&gt;
+&lt;p&gt;在现实的面前，一切真理都有可能被弯曲，但这还不是结束。&lt;/p&gt;
+&lt;h3 id=&#34;2024-04-07，落幕&#34;&gt;&lt;a href=&#34;#2024-04-07，落幕&#34; class=&#34;headerlink&#34; title=&#34;2024-04-07，落幕&#34;&gt;&lt;/a&gt;2024-04-07，落幕&lt;/h3&gt;&lt;p&gt;下午发现整个宽带都没有网了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重启所有设备，检查所有指示灯，无果&lt;/li&gt;
+&lt;li&gt;业务人员在后台系统查看宽带账号，一切正常&lt;/li&gt;
+&lt;li&gt;县机房人员查网线联通状态，一切正常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;打电话给技术员，技术员上门，把 PPPoE 拨号取消，改为光猫下发方式，网络恢复，公网 IP 彻底消失，询问重新在我路由器拨号的可能性，得到确切的“不可能”的回复。&lt;/p&gt;
+&lt;p&gt;至此，个人宽带申请，在这个小县城，是彻底画上句号了。&lt;/p&gt;
+&lt;p&gt;我所有的基于公网IP的局域网组网、数据同步、密码同步服务、漫画服务、Webdav、国内博客托管服务等等，也都因为公网IP的消失而无法使用了。&lt;/p&gt;
+&lt;p&gt;感谢看到这里的看官，我当然也知道 tailscale，zerotier 可以摆脱公网 IP 组网，但这个速率相比较宽带自带的 30M 真的差太多，很多东西都不得不重新做变化来适应了。&lt;/p&gt;
+&lt;p&gt;这是个人家庭宽带申请的终局，但数字生活还是要继续。&lt;/p&gt;
+&lt;p&gt;To be continue …&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2024-04-08T18:57:16.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1706280378817/</id>
+        <title>2024 年还买 Lumia 950？体验超前，感叹悲惨，补偿过往</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1706280378817/"/>
+        <content type="html">&lt;p&gt;此文在少数派首发&lt;/p&gt;
+&lt;p&gt;「新玩意」？老朋友，但第二次见。&lt;/p&gt;
+&lt;p&gt;2014年秋冬，我站在公交车站等车去学校，与我一起等车的还有隔壁班的一哥们儿，他手里握着一款黑色手机，屏幕上满是彩色大色块的图标和纯黑的背景，点击某个 App 后，桌面播放了一个非常奇妙的动画，然后非常非常大的字体就显示在了纯黑色的屏幕上。&lt;/p&gt;
+&lt;p&gt;【这人是老年人吗，用这么大字体，有必要吗，不过刚刚那个动画还挺好看的，手机系统不是苹果，也不像是安卓，是不是网上传的那个 WP 】&lt;/p&gt;
+&lt;p&gt;终究也没去问他这是啥手机，但这就是我和 Lumia 手机的第一次相遇。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/73e28e21ab78ea3449e00ce23cc1dde9.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当时那款手机，大概长这样&lt;/p&gt;
+&lt;h2 id=&#34;优缺点一览&#34;&gt;&lt;a href=&#34;#优缺点一览&#34; class=&#34;headerlink&#34; title=&#34;优缺点一览&#34;&gt;&lt;/a&gt;优缺点一览&lt;/h2&gt;&lt;p&gt;十年后，当 Lumia 系列早已被大众盖棺定论，我却突然想淘一台来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/0720360adeb4e154b6cdacc1771b58d6.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;￥385，箱说全，哈哈哈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优美的非线性动画&lt;/li&gt;
+&lt;li&gt;低配置却能提供流畅使用体验&lt;/li&gt;
+&lt;li&gt;超前的暗色模式&lt;/li&gt;
+&lt;li&gt;一致的界面设计语言，对非官方 App 的界面设计拥有极高的约束力&lt;/li&gt;
+&lt;li&gt;背靠强大的桌面系统，生态联动性一流&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/9b1fed0eaa1505b492148e13b8e3ea45.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;锁屏、桌面动态磁贴、下拉控制菜单栏&lt;/p&gt;
+&lt;p&gt;纵然它有各种各样的优点和超前的设计理念，&lt;strong&gt;生态缺失&lt;/strong&gt;，就是癌症。&lt;/p&gt;
+&lt;p&gt;如果不是微软的某几个决策者戏剧性的抉择，现在的移动端市场，又会是一幅什么样的景象呢？如果有平行世界的话，我真想看一下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/6a29ad7ef81df1945253b22e4c094f12.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lumia 950 XL &amp;#x2F; Lumia 950&lt;/p&gt;
+&lt;p&gt;做主力机：做梦呢？&lt;/p&gt;
+&lt;p&gt;做备用机：只要涉及到微信、QQ 等涉及到及时通信的 App， 那你就真的想多了，如果就是收发短信、挂个 SIM 卡，那绝对没问题，但现在可以做到这一点的设备太多了，完全没必要考虑用 Lumia ；&lt;/p&gt;
+&lt;p&gt;做收藏：无需解释；&lt;/p&gt;
+&lt;p&gt;做玩具：Yes，唯二正解，让老旧设备焕发活力，最好的待遇就是让它继续服役！&lt;/p&gt;
+&lt;p&gt;以下软件&lt;strong&gt;全部下载自微软商店。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;上手后要做的第一件事：系统升级&#34;&gt;&lt;a href=&#34;#上手后要做的第一件事：系统升级&#34; class=&#34;headerlink&#34; title=&#34;上手后要做的第一件事：系统升级&#34;&gt;&lt;/a&gt;上手后要做的第一件事：系统升级&lt;/h3&gt;&lt;p&gt;手机默认版本是 1511，手机在刚开机那会儿就是完全不可用状态。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/0e5b92427ee67e599b0f81662c741e1a.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;差点儿以为这款设备就这样凉了&lt;/p&gt;
+&lt;p&gt;作为微软 2015 年推出的一款旗舰机， Lumia 950 收到的最后更新是 2020 年的安全更新，收到的最后一版系统大更新是众所周知的 1709，我在拿到手机后，经过了四次系统下载更新，花费了接近三个小时。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/4a9643a7208a42fcb4778e643348437d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在这里最害怕看到的：系统已是最新版&lt;/p&gt;
+&lt;p&gt;系统更新到最新之后，你会发现应用商店可以用了。&lt;/p&gt;
+&lt;h3 id=&#34;应用商店，非常残，但勉强能用&#34;&gt;&lt;a href=&#34;#应用商店，非常残，但勉强能用&#34; class=&#34;headerlink&#34; title=&#34;应用商店，非常残，但勉强能用&#34;&gt;&lt;/a&gt;应用商店，非常残，但勉强能用&lt;/h3&gt;&lt;p&gt;刚拿到的时候一度以为完了，因为基本上你常用的 App ，你都搜索不到，见下图左一。&lt;/p&gt;
+&lt;p&gt;但很快我就掌握一个技巧，在顶部搜索栏搜索的时候，不要过快地回车发起搜索，它会在搜索栏显示可能的结果，这里弹出的 App，（比如我这里显示的我们非常熟悉的红色的 App）直接点击，就能进入应用下载界面，见下图中间。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/d10bf578d21b0c911c56e04aa727944c.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;一些奇怪的使用姿势&lt;/p&gt;
+&lt;h3 id=&#34;网易云-UWP，YYDS&#34;&gt;&lt;a href=&#34;#网易云-UWP，YYDS&#34; class=&#34;headerlink&#34; title=&#34;网易云 UWP，YYDS&#34;&gt;&lt;/a&gt;网易云 UWP，YYDS&lt;/h3&gt;&lt;p&gt;最让我惊艳的一款产品，没有之一，在 &lt;a href=&#34;https://sspai.com/post/81711&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt; 这篇文章里我也被网易云强大的兼容性所震惊，实在是没想到这么久远的设备仍旧可以得到几乎完整的支持，对这种企业我就只能喜欢了。&lt;/p&gt;
+&lt;p&gt;在线听歌、听日推、看评论，夫复何求？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/73dbaf8860eaa51720b9f9f386486e82.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;主要功能都可以用&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/6a3cd75e4da5c473d77e8146abb5ae42.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;VIP 歌曲会下载失败、朋友动态无法查看&lt;/p&gt;
+&lt;h3 id=&#34;Newsflow、Cover-、Bing-词典&#34;&gt;&lt;a href=&#34;#Newsflow、Cover-、Bing-词典&#34; class=&#34;headerlink&#34; title=&#34;Newsflow、Cover 、Bing 词典&#34;&gt;&lt;/a&gt;Newsflow、Cover 、Bing 词典&lt;/h3&gt;&lt;p&gt;Newsflow：RSS 拯救了这款老机器。Again，在 &lt;a href=&#34;https://sspai.com/post/81711&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt; 这篇文章里，iPhone 5 同样被 RSS 阅读器 Reeder 所拯救，让那款设备实用度上升了一个级别。RSS 协议，以它非商业性、高兼容性、高普及度等优势，在各大厂商依次放弃 Windows Mobile 平台、iOS 低版本、安卓低版本之后，拯救了一款又一款老旧设备，优秀的技术大概就是这样，永远不会过时。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b226d4e79e89e075f3c8fa84c6d61a45.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;RSS， YYDS！！！&lt;/p&gt;
+&lt;p&gt;Cover：离线漫画阅读器，在 &lt;a href=&#34;https://sspai.com/post/79100&#34;&gt;搭建属于自己的离线漫画库：我为什么推荐你试试 Komga&lt;/a&gt; 有介绍过，当时是在 Windows PC 端进行使用的，没想到它 UWP 的兼容性如此之好，在手机端的界面布局和操作的适配度很高。&lt;/p&gt;
+&lt;p&gt;Bing 词典：微软为数不多的，还能正常工作的 UWP 软件。&lt;/p&gt;
+&lt;h3 id=&#34;Bilibili-UWP&#34;&gt;&lt;a href=&#34;#Bilibili-UWP&#34; class=&#34;headerlink&#34; title=&#34;Bilibili UWP&#34;&gt;&lt;/a&gt;Bilibili UWP&lt;/h3&gt;&lt;p&gt;残废级别：50%，只能看普通动态视频，无法看番剧了，也无法看直播。&lt;/p&gt;
+&lt;p&gt;作为日常刷刷视频的机器，还是能够胜任的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b9ec7c2ef4c62e2a6e535f6374b12e7e.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;主要信息流：正常&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/a7342ff3e2fde53dafc9eb65e5104e8e.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;普通视频播放：正常&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b9da4f35b2e100211313ca97238f9308.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;番剧播放：无法使用&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/989c79d58d4afbad164e50a7e577633c.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;电视剧播放：异常&lt;/p&gt;
+&lt;h3 id=&#34;远程桌面&#34;&gt;&lt;a href=&#34;#远程桌面&#34; class=&#34;headerlink&#34; title=&#34;远程桌面&#34;&gt;&lt;/a&gt;远程桌面&lt;/h3&gt;&lt;p&gt;Windows Mobile 可以下载 Remote Desktop 软件，用这款软件连接 Windows 电脑，我愿称之为：何必呢？哈哈哈哈&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/ce662a13276c574ec0aff58abc1ca11e.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;mstsc，启动！&lt;/p&gt;
+&lt;p&gt;当然了，配合 continuum 模式，再加上鼠标、键盘、大屏幕之后，操作体验会好非常多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b34b6a4ea0b79f86b486177ef79d5223.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/724c5fd8a35ae3e83c3065d06ca3d211.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/4e82c7a770d33f708430d152d7cd181d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但可能是受限于骁龙 808 的性能，视频输出分辨率最高只有 1080P 画质。&lt;/p&gt;
+&lt;h2 id=&#34;彩蛋&#34;&gt;&lt;a href=&#34;#彩蛋&#34; class=&#34;headerlink&#34; title=&#34;彩蛋&#34;&gt;&lt;/a&gt;彩蛋&lt;/h2&gt;&lt;h3 id=&#34;Project-Astoria：Lumia-运行安卓-App&#34;&gt;&lt;a href=&#34;#Project-Astoria：Lumia-运行安卓-App&#34; class=&#34;headerlink&#34; title=&#34;Project Astoria：Lumia 运行安卓 App&#34;&gt;&lt;/a&gt;Project Astoria：Lumia 运行安卓 App&lt;/h3&gt;&lt;p&gt;在折腾期间，偶然看到少数派的这篇文章，&lt;a href=&#34;https://sspai.com/post/30481#!&#34;&gt;Windows 10 Mobile 直装 Android 应用教程 + 使用体验&lt;/a&gt;，发现了少数派有趣的过往，哈哈，感兴趣的可以去考古。&lt;/p&gt;
+&lt;p&gt;简单来讲，微软曾经尝试在 Windows Mobile 上搭载 Android 系统文件，并使用转译桥来实现在 移动端运行安卓，如果你是上述文章中的机型之一，那你可以尝试使用教程方式来折腾下，但安卓系统版本较低，是安卓4.4，但安卓4.4也比微软 1709 的软件生态要丰富，如果你要折腾，祝你玩得开心~&lt;/p&gt;
+&lt;p&gt;Project Astoria 只存在于几个测试版本的系统中，Lumia 950 没有该版本的内测系统，我用不了。F，如果你有满足要求的设备，真的要折腾，你大概率会碰到 code&amp;#x3D;9、code&amp;#x3D;8等错误，不要问我怎么知道的，但我可以告诉你怎么解决……&lt;/p&gt;
+&lt;h3 id=&#34;戏剧性界面&#34;&gt;&lt;a href=&#34;#戏剧性界面&#34; class=&#34;headerlink&#34; title=&#34;戏剧性界面&#34;&gt;&lt;/a&gt;戏剧性界面&lt;/h3&gt;&lt;p&gt;iPhone 在关机时会假意先把屏幕全部黑掉（但实际上是一个纯黑的界面，在非OLED 的屏幕上可以很轻松的观察到这种现象），但实际上系统还在走关机流程，它使用这种欺骗的方式来给用户一种关机很快的感觉。&lt;/p&gt;
+&lt;p&gt;Lumia 每次关机都可以看到屏幕上显示 【Goodbye】，中文系统是 【再见】，这个词汇不是一闪而过，而是会停留&lt;strong&gt;非常非常长&lt;/strong&gt;的时间，系统此时也在运行一系列的关机的操作，通知各个系统组件对当前的软件状态进行妥善存储和处理，所以在关机这段时间，会把【再见】这个词停留非常长的时间，提醒用户不要在这段时间扣电池，直到系统真正关机。&lt;/p&gt;
+&lt;p&gt;在现在这个戏剧性的时间节点，Lumia 早已被微软所抛弃，软件生态也几乎处于完全不可用的状态，那对于每一台 Lumia 设备来说，这漫长的 Goodbye，何尝不是一种凄惨的别离。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/cdfe4a25c34dabdf31918be80a51e7ac.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;每次关机&lt;/p&gt;
+&lt;h2 id=&#34;Windows-on-Arm&#34;&gt;&lt;a href=&#34;#Windows-on-Arm&#34; class=&#34;headerlink&#34; title=&#34;Windows on Arm&#34;&gt;&lt;/a&gt;Windows on Arm&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://woa-project.github.io/LumiaWOA/&#34;&gt;Lumia WOA&lt;/a&gt; 是一个开源社区维护的为 Lumia 950 &amp;#x2F; Lumia 950 XL 刷入满血版 Windows Arm Version 的项目，可以让你运行真正的 X86 软件。&lt;/p&gt;
+&lt;p&gt;如果你不知道这事儿，你可能很激动，但你先别激动，别忘了它的配置：骁龙 808 &amp;#x2F; 骁龙 810，3GB Ram。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/60c7c7d8a8163d165370af9a7bfe1382.webp&#34; alt=&#34;A Lumia 950&#34;&gt;&lt;/p&gt;
+&lt;p&gt;大概长这样&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/fe160d04356e1b88dc799ff84d507424.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;continuum 模式&lt;/p&gt;
+&lt;p&gt;刷入 Arm 版本的 Windows 后，Lumia 950 也支持 continuum 模式，也就是说，拿出拓展坞、鼠标、键盘后，这次你真的可以体验一台真正的电脑了，当然了，我知道，你可能很激动，但你先别激动。&lt;/p&gt;
+&lt;p&gt;别忘了它的配置：骁龙 808 &amp;#x2F; 骁龙 810，3GB Ram。&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2024-01-27T15:44:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1701742335478/</id>
+        <title>群晖自带的 Let&#39;s Encrypt SSL 证书续签经常抽风？试试这个：ZeroSSL</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1701742335478/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;在当今信息化高速发展的社会，Https 的重要性不言而喻，所以对于我这种自己部署了很多服务并且要暴露在外网的人来说，维持自己的 ssl 证书是一件非常重要的事。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本来一年申请一次 ssl 证书，手动部署一下，我也觉得没什么，直到最近发生了这两件事：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;阿里云调整免费证书的有效期，从一年缩短到了三个月（90天）；&lt;/li&gt;
+&lt;li&gt;群晖使用 Let‘s Encrypt 进行自动续签服务不稳定，间歇性抽风、校验 80 端口失败等；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-08_09-31-31.webp&#34;&gt;&lt;br&gt;是时候折腾一下了&lt;/p&gt;
+&lt;p&gt;本文介绍通过 Zerossl 平台配合 acme.sh 脚本实现 Linux 服务器证书自动申请续签、自动部署的全过程，因本人在互联网查询教程期间，发现网上大部分文章均已经过时，部分官方新特性未在大部分教程中看到，遂开此文章，望帮到更多人。&lt;/p&gt;
+&lt;p&gt;如果你有网络条件、设备基础、操作能力，强烈建议你直接参考官方中文指引，毕竟这是实时更新的 wiki ，理论上是不会过期的，也是更加准确的，但如果你命令行操作能力有限，可继续看下去。&lt;/p&gt;
+&lt;p&gt;请注意文章时效（2023-12-05）。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;&lt;a href=&#34;#准备工作&#34; class=&#34;headerlink&#34; title=&#34;准备工作&#34;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;因为我主要是以我自己的亲身经历来讲，所以首先要介绍一下我所使用的服务所走的环境。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我的域名购买自阿里云，现在已将 DNS 解析放到了 Cloudflare ；&lt;/li&gt;
+&lt;li&gt;我之前的证书也是阿里云的1年免费证书，包含：根证书、中间证书、私钥；&lt;/li&gt;
+&lt;li&gt;阿里云、腾讯云证书都只能提供主域名和一个子域名的证书（www），不提供免费泛域名证书；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1、一个-DNS-解析托管平台，本文以-Cloudflare-为例&#34;&gt;&lt;a href=&#34;#1、一个-DNS-解析托管平台，本文以-Cloudflare-为例&#34; class=&#34;headerlink&#34; title=&#34;1、一个 DNS 解析托管平台，本文以 Cloudflare 为例&#34;&gt;&lt;/a&gt;1、一个 DNS 解析托管平台，本文以 Cloudflare 为例&lt;/h3&gt;&lt;p&gt;你需要一个支持 Api 修改 DNS 记录的域名解析商，例如我上边提到的 Cloudflare ，创建账号，并讲你的域名迁移到这里之后，你就可以继续往下操作了。&lt;/p&gt;
+&lt;p&gt;如果你的域名解析服务商是别的平台，比如 GoDaddy、DNSPod 等，也是支持的，不需要迁移到 Cloudflare ，全部支持的列表和操作方法参考 这里（多说一句，其实阿里云也是支持的，但 Cloudflare 有太多好用的特性和功能了）。&lt;/p&gt;
+&lt;h3 id=&#34;2、拿到-Cloudflare-操作-Api-的-Key-和需要修改的域名-ID&#34;&gt;&lt;a href=&#34;#2、拿到-Cloudflare-操作-Api-的-Key-和需要修改的域名-ID&#34; class=&#34;headerlink&#34; title=&#34;2、拿到 Cloudflare 操作 Api 的 Key 和需要修改的域名 ID&#34;&gt;&lt;/a&gt;2、拿到 Cloudflare 操作 Api 的 Key 和需要修改的域名 ID&lt;/h3&gt;&lt;p&gt;一般这种自动化操作脚本都是需要 Key 的，因为接口需要对操作进行身份检查，防止坏人修改你的信息，Key 就是证明你身份的东西。&lt;/p&gt;
+&lt;h4 id=&#34;Global-Api-Key&#34;&gt;&lt;a href=&#34;#Global-Api-Key&#34; class=&#34;headerlink&#34; title=&#34;Global Api Key&#34;&gt;&lt;/a&gt;Global Api Key&lt;/h4&gt;&lt;p&gt;Cloudflare 的 Globalkey 的位置可以参考这个操作步骤：【登陆】【右上角】 【Myprofile】 【Api Tokens】 【Global Api Key】 ，输入密码，复制这个Key，暂存到本地后边用。&lt;/p&gt;
+&lt;h4 id=&#34;Zone-ID&#34;&gt;&lt;a href=&#34;#Zone-ID&#34; class=&#34;headerlink&#34; title=&#34;Zone ID&#34;&gt;&lt;/a&gt;Zone ID&lt;/h4&gt;&lt;p&gt;Zone ID 为你的域名空间ID，加入你有多个域名，那就对应到了多个 Zone ID ，所以需要查询到指定的 Zone ID ，确保修改的是你指定的域名。&lt;/p&gt;
+&lt;p&gt;Cloudflare 的 Zone ID 可以通过这种方式查询到：【登陆，如果已登陆，就点击左上角的图标回到主页】【登录后的默认主页，点击你的域名】【进入后，查看右侧，下方】&lt;/p&gt;
+&lt;h3 id=&#34;3、使用-ssh-登录到你的主机&#34;&gt;&lt;a href=&#34;#3、使用-ssh-登录到你的主机&#34; class=&#34;headerlink&#34; title=&#34;3、使用 ssh 登录到你的主机&#34;&gt;&lt;/a&gt;3、使用 ssh 登录到你的主机&lt;/h3&gt;&lt;p&gt;请确保你拥有这台主机的 root 账户权限，如果没有，也没关系，证书申请不受影响，证书安装和重启你的服务可能需要你自己想办法了。&lt;/p&gt;
+&lt;h3 id=&#34;4、在-Zerossl-创建账号&#34;&gt;&lt;a href=&#34;#4、在-Zerossl-创建账号&#34; class=&#34;headerlink&#34; title=&#34;4、在 Zerossl 创建账号&#34;&gt;&lt;/a&gt;4、在 Zerossl 创建账号&lt;/h3&gt;&lt;p&gt;如果你由于种种原因，没办法执行下边的所有操作，你还可以回到这一步，因为在 Zerossl 官网也可以通过操作网页界面的方式申请到证书，但在网页只能申请到主域名和 www 子域名。&lt;/p&gt;
+&lt;p&gt;泛域名要么使用付费方案（付费可以延长至一年有效期），想白嫖？继续往下看。&lt;/p&gt;
+&lt;h2 id=&#34;操作步骤&#34;&gt;&lt;a href=&#34;#操作步骤&#34; class=&#34;headerlink&#34; title=&#34;操作步骤&#34;&gt;&lt;/a&gt;操作步骤&lt;/h2&gt;&lt;h3 id=&#34;1、下载-acme-sh-到主机&#34;&gt;&lt;a href=&#34;#1、下载-acme-sh-到主机&#34; class=&#34;headerlink&#34; title=&#34;1、下载 acme.sh 到主机&#34;&gt;&lt;/a&gt;1、下载 acme.sh 到主机&lt;/h3&gt;&lt;p&gt;这一步的脚本无需 root 账号运行，普通用户即可，但使用 root 权限也是更好的。&lt;/p&gt;
+&lt;p&gt;请把下方的 &lt;a href=&#34;mailto:&amp;#109;&amp;#121;&amp;#x40;&amp;#x65;&amp;#x78;&amp;#x61;&amp;#109;&amp;#x70;&amp;#108;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&#34;&gt;&amp;#109;&amp;#121;&amp;#x40;&amp;#x65;&amp;#x78;&amp;#x61;&amp;#109;&amp;#x70;&amp;#108;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt; 替换为你申请域名时所填写的邮箱，不要直接复制运行！&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://get.acme.sh | sh -s email=my@example.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_11-15-15.webp&#34;&gt;&lt;br&gt;群晖在这里会报错&lt;/p&gt;
+&lt;p&gt;所以群晖用户需要增加 –force 参数运行&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://get.acme.sh | sh -s email=my@example.com --force&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;还可以使用 wget 来运行，上边如果已经运行成功了，那就没必要再使用 wget 运行了&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget -O -  https://get.acme.sh | sh -s email=my@example.com --force&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_11-23-53.webp&#34;&gt;&lt;br&gt;运行成功后截图&lt;/p&gt;
+&lt;p&gt;脚本会将 acme.sh 下载到当前用户目录下，也就是 ~&amp;#x2F;.acme.sh 目录， 可使用以下方式切换到该目录：&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd ~/.acme.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2、为域名申请一个证书&#34;&gt;&lt;a href=&#34;#2、为域名申请一个证书&#34; class=&#34;headerlink&#34; title=&#34;2、为域名申请一个证书&#34;&gt;&lt;/a&gt;2、为域名申请一个证书&lt;/h3&gt;&lt;p&gt;证书申请需要验证你对当前域名的所有权，通常有三种方式：80 端口、www 根目录验证、增加 DNS 记录验证&lt;/p&gt;
+&lt;p&gt;acme.sh 非常强大，还拥有 standalone 模式，即使你本地啥网络服务也没部署，他也可以自己启动 80 端口，然后临时充当你的网络服务来辅助验证，甚至还可以不使用 80 端口（当你的网络服务有反向代理端口转发的话）！&lt;/p&gt;
+&lt;p&gt;考虑到个人家庭公网 IP 会被屏蔽80端口，强烈建议此类跟我类似情况的用户使用 增加 DNS 记录验证 的方式来验证，因为这是最简单的方式！&lt;/p&gt;
+&lt;p&gt;使用增加 DNS 记录的方式申请证书&lt;br&gt;此方式需要用到上边我们预先申请好的 Cloudflare Key 和 Zone ID。&lt;/p&gt;
+&lt;p&gt;请确保当前的命令行位置是 ~&amp;#x2F;.acme.sh&lt;/p&gt;
+&lt;p&gt;为了方便，建议像我这样操作：&lt;/p&gt;
+&lt;p&gt;新建一个执行文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;touch fetch.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;编辑 fetch.sh，将以下内容放到该文件中，记得修改相应的地方为你自己的内容&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd /path/to/.acme.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export CF_Key=&amp;quot;替换成上边你保存的 KEY&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export CF_Email=&amp;quot; 替换成你申请域名的时候所填写的邮箱&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export CF_Zone_ID=&amp;quot;替换成你的域名所在的 Zone ID&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --issue --dns dns_cf -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --issue --dns dns_cf -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在这行命令中：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;–dns dns_cf，就是以 cloudflare dns生成的方式，通过向我们的 DNS 解析中添加一个 txt 记录来验证你对该域名的所有权，这个过程是程序自动的，你无须做任何操作，等就可以了；&lt;br&gt;-d 你的域名地址 -d ‘&lt;em&gt;.你的域名地址’，这里看起来有两个【 -d 你的域名地址】，但他们作用不一样，前一个是你申请的主域名，后一个是你申请你域名的所有子域名（也可称之为泛域名），比如www.子域名，所以在替换的时候，一定记得：你只能替换 【你的域名地址】内容，其它地方都不要动，尤其是前边的 【&lt;/em&gt;.】 ，不要自作聪明删掉它。&lt;br&gt;编辑好之后，再给这个脚本添加执行权限&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;chmod a+x ./acme.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;执行&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./fetch.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_13-18-55.webp&#34;&gt;&lt;br&gt;执行结果截图&lt;/p&gt;
+&lt;p&gt;如果你跟我一样看到这个结果（主要是绿色的 Cert success），恭喜！你应该已经拿到了证书了。&lt;/p&gt;
+&lt;p&gt;开心一下，继续下一步。&lt;/p&gt;
+&lt;h3 id=&#34;3、安装证书&#34;&gt;&lt;a href=&#34;#3、安装证书&#34; class=&#34;headerlink&#34; title=&#34;3、安装证书&#34;&gt;&lt;/a&gt;3、安装证书&lt;/h3&gt;&lt;p&gt;由于接下来这一步对服务器影响较大，而且部分操作需要 root 权限，对以下操作较为陌生的人，不要轻易运行！！！在线生产环境，不要轻易运行！！！当然，如果是在非生产环境，或者你本身就对这个操作比较熟悉，那没什么问题。&lt;/p&gt;
+&lt;h4 id=&#34;Apache-部署证书的方法&#34;&gt;&lt;a href=&#34;#Apache-部署证书的方法&#34; class=&#34;headerlink&#34; title=&#34;Apache 部署证书的方法&#34;&gt;&lt;/a&gt;Apache 部署证书的方法&lt;/h4&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --install-cert -d 你的域名地址 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--cert-file      /path/to/certfile/in/apache/cert.pem  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--key-file       /path/to/keyfile/in/apache/key.pem  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--fullchain-file /path/to/fullchain/certfile/apache/fullchain.pem \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--reloadcmd     &amp;quot;service apache2 force-reload&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;Nginx-部署证书的方法&#34;&gt;&lt;a href=&#34;#Nginx-部署证书的方法&#34; class=&#34;headerlink&#34; title=&#34;Nginx 部署证书的方法&#34;&gt;&lt;/a&gt;Nginx 部署证书的方法&lt;/h4&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --install-cert -d 你的域名地址 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--key-file       /path/to/keyfile/in/nginx/key.pem  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--fullchain-file /path/to/fullchain/nginx/cert.pem \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--reloadcmd     &amp;quot;service nginx force-reload&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;群晖部署证书的方法&#34;&gt;&lt;a href=&#34;#群晖部署证书的方法&#34; class=&#34;headerlink&#34; title=&#34;群晖部署证书的方法&#34;&gt;&lt;/a&gt;群晖部署证书的方法&lt;/h4&gt;&lt;p&gt;在网上搜索到的大部分教程，在这里都跟我讲，如果要自动部署证书到群晖，需要先这样，再那样，然后如果你 Admin 账号开了两步验证，还需要怎样怎样。听得我头皮发麻，但实际上官方的部署脚本已经升级了，所以看到这里，你们可以不用像我之前那样疑惑了。&lt;/p&gt;
+&lt;p&gt;跟上边一样，新建一个 install.sh 脚本（touch install.sh），把以下内容放到脚本里，并给脚本授予执行权限（chmod a+x .&amp;#x2F;install.sh）&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd /path/to/.acme.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Username=&amp;#x27;群晖管理员用户名&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Password=&amp;#x27;群晖管理员密码&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Certificate=&amp;quot;证书名称&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_DID=&amp;#x27;设备ID&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Create=1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --deploy --deploy-hook synology_dsm -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;关于上边的脚本，主要是设备 ID 那里，如果你没开管理员的两步验证，就无需填写，直接删除这一行即可。&lt;/p&gt;
+&lt;p&gt;用户名跟密码自不用多说，直接填；&lt;/p&gt;
+&lt;p&gt;export SYNO_Certificate&amp;#x3D;”证书名称”，【证书名称】这里替换成英文，给你新申请的证书起一个名称，比如：zerossl；&lt;/p&gt;
+&lt;p&gt;export SYNO_DID&amp;#x3D;’群晖设备ID’，【设备ID】这里，如果你开了两步验证，这里就需要一点点操作，【打开浏览器，使用管理员账号登陆你的群晖，登录的时候选择：记住这台设备】【按 F12 开启调试模式，这个时候会弹出来一个新的界面】【上方一横排菜单里，找到 Application，如果找不到，就把这个窗口拉宽一点儿】【在左侧的 Cookies 菜单点击下方的地址，右侧就会出现很多项内容，找到 ID，把右边的值复制出来，放到上方的”群晖设备ID“处替换即可】&lt;br&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_13-51-04.webp&#34;&gt;&lt;br&gt;获取设备 ID 的地方&lt;/p&gt;
+&lt;p&gt;export SYNO_Create&amp;#x3D;1，脚本会自动处理，所以不管你的证书是不是新建，都可以这么写&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --deploy --deploy-hook synology_dsm -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;，--deploy-hook synology_dsm&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这是专门针对群晖部署的方式，如果你不是群晖设备，请参考其它部署方式。&lt;/p&gt;
+&lt;p&gt;官方脚本已经提供了输入两步验证（OTP code）的输入口了&lt;/p&gt;
+&lt;p&gt;等你输入好两步验证码之后，命令行会跳出新的输入，设备名称那里可以留空，你直接回车即可，脚本会自己默认一个名称的。&lt;/p&gt;
+&lt;p&gt;官方提供了超级多的其它的自动化部署方式，本文不再一一赘述，请参考官方提供的部署方式WIKI。&lt;/p&gt;
+&lt;h3 id=&#34;4、自动化更新证书&#34;&gt;&lt;a href=&#34;#4、自动化更新证书&#34; class=&#34;headerlink&#34; title=&#34;4、自动化更新证书&#34;&gt;&lt;/a&gt;4、自动化更新证书&lt;/h3&gt;&lt;p&gt;在操作步骤第一步的时候，可以看到我的截图里有报错，其实 acme.sh 有检查自动化任务，同时也会在安装时自动部署更新脚本，60天后（证书过期前30天），自动申请延长证书。&lt;/p&gt;
+&lt;p&gt;使用其它不具备运行 crontab 系统的小伙伴（比如群晖），就需要自己到定时任务管理系统去设置一下了，但其实在上方的准备一切正常的情况下，你也只需要运行两个脚本：fetch.sh 获取下新的证书，install.sh 把证书安装到服务器即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_14-40-03.webp&#34;&gt;&lt;br&gt;群晖的任务管理设置入口&lt;/p&gt;
+&lt;p&gt;群晖系统自身带有任务管理，在任务管理里设置好脚本，我也就摆脱了手动之苦，享受全自动化带来的乐趣了~&lt;/p&gt;
+&lt;h2 id=&#34;SSL-证书的意义&#34;&gt;&lt;a href=&#34;#SSL-证书的意义&#34; class=&#34;headerlink&#34; title=&#34;SSL 证书的意义&#34;&gt;&lt;/a&gt;SSL 证书的意义&lt;/h2&gt;&lt;p&gt;老手自不用多说，SSL 是初入编程世界的新人必须要了解的一个知识，本文也是面向较为初级的编程新手，希望大家通过 SSL 证书保护好自己的隐私和数据。&lt;/p&gt;
+&lt;p&gt;其实在各个开发平台，厂商也都半强制要求了开发者所开发的 App 在调用后端接口时，必须要使用 Https 协议而非 Http 进行通信，这也是依赖于 SSL 证书的。&lt;/p&gt;
+&lt;p&gt;所以你还在等什么 ~&lt;/p&gt;
+&lt;p&gt;哦，对了，本来写这篇文章我是有点儿拖延症的，两天了一直没动，直到我打开了 testv 的官网，发现他们 https 证书居然过期了。&lt;br&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_14-42-40.webp&#34;&gt;&lt;br&gt;哈！哈！哈！&lt;/p&gt;
+&lt;p&gt;作为老粉丝，我突然就来了兴趣，干脆就通过这种方式来催 testv 更新证书好了。&lt;/p&gt;
+&lt;p&gt;希望他们看到。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <category term="NAS" />
+        <updated>2023-12-05T13:47:07.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1699253243159/</id>
+        <title>那些年，我曾用过的设备（保持更新）</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1699253243159/"/>
+        <content type="html">&lt;p&gt;可以看出我基本上是以购买尺寸、重量都比较便携的设备为主。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;手机型号&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;长度(mm)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;宽度(mm)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;厚度(mm)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;重量(g)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;上市时间&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;电池容量(mAh)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;处理器型号&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;BBK K118&lt;/td&gt;
+&lt;td&gt;109.7&lt;/td&gt;
+&lt;td&gt;47.8&lt;/td&gt;
+&lt;td&gt;14.5&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;2009年10月&lt;/td&gt;
+&lt;td&gt;1200mAh&lt;/td&gt;
+&lt;td&gt;N&amp;#x2F;A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 5s&lt;/td&gt;
+&lt;td&gt;123.8&lt;/td&gt;
+&lt;td&gt;58.6&lt;/td&gt;
+&lt;td&gt;7.6&lt;/td&gt;
+&lt;td&gt;112&lt;/td&gt;
+&lt;td&gt;2013年9月&lt;/td&gt;
+&lt;td&gt;1560mAh&lt;/td&gt;
+&lt;td&gt;Apple A7 (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;坚果Pro&lt;/td&gt;
+&lt;td&gt;155&lt;/td&gt;
+&lt;td&gt;73.5&lt;/td&gt;
+&lt;td&gt;6.98&lt;/td&gt;
+&lt;td&gt;158&lt;/td&gt;
+&lt;td&gt;2017年5月&lt;/td&gt;
+&lt;td&gt;3500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 625&amp;#x2F;626&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 6s&lt;/td&gt;
+&lt;td&gt;138.3&lt;/td&gt;
+&lt;td&gt;67.1&lt;/td&gt;
+&lt;td&gt;7.1&lt;/td&gt;
+&lt;td&gt;143&lt;/td&gt;
+&lt;td&gt;2015年9月&lt;/td&gt;
+&lt;td&gt;1715mAh&lt;/td&gt;
+&lt;td&gt;Apple A9 (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;坚果手机&lt;/td&gt;
+&lt;td&gt;141.3&lt;/td&gt;
+&lt;td&gt;69.6&lt;/td&gt;
+&lt;td&gt;9.6&lt;/td&gt;
+&lt;td&gt;155&lt;/td&gt;
+&lt;td&gt;2015年8月&lt;/td&gt;
+&lt;td&gt;2900mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 615&amp;#x2F;616&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;锤子T2&lt;/td&gt;
+&lt;td&gt;144.55&lt;/td&gt;
+&lt;td&gt;70.84&lt;/td&gt;
+&lt;td&gt;7.53&lt;/td&gt;
+&lt;td&gt;146&lt;/td&gt;
+&lt;td&gt;2015年12月&lt;/td&gt;
+&lt;td&gt;2500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 808&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;坚果R1&lt;/td&gt;
+&lt;td&gt;153.3&lt;/td&gt;
+&lt;td&gt;74.5&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;70&lt;/td&gt;
+&lt;td&gt;2018年5月&lt;/td&gt;
+&lt;td&gt;3600mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 845&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 11&lt;/td&gt;
+&lt;td&gt;150.9&lt;/td&gt;
+&lt;td&gt;75.7&lt;/td&gt;
+&lt;td&gt;8.3&lt;/td&gt;
+&lt;td&gt;194&lt;/td&gt;
+&lt;td&gt;2019年9月&lt;/td&gt;
+&lt;td&gt;3110mAh&lt;/td&gt;
+&lt;td&gt;Apple A13 Bionic (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 11 Pro&lt;/td&gt;
+&lt;td&gt;144&lt;/td&gt;
+&lt;td&gt;71.4&lt;/td&gt;
+&lt;td&gt;8.1&lt;/td&gt;
+&lt;td&gt;188&lt;/td&gt;
+&lt;td&gt;2019年9月&lt;/td&gt;
+&lt;td&gt;3046mAh&lt;/td&gt;
+&lt;td&gt;Apple A13 Bionic (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pixel 3&lt;/td&gt;
+&lt;td&gt;145.6&lt;/td&gt;
+&lt;td&gt;68.2&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;148&lt;/td&gt;
+&lt;td&gt;2018年&lt;/td&gt;
+&lt;td&gt;2915mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 845&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sony XZ1C&lt;/td&gt;
+&lt;td&gt;129&lt;/td&gt;
+&lt;td&gt;65&lt;/td&gt;
+&lt;td&gt;9.3&lt;/td&gt;
+&lt;td&gt;117&lt;/td&gt;
+&lt;td&gt;2017年9月&lt;/td&gt;
+&lt;td&gt;2700mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 12 Mini&lt;/td&gt;
+&lt;td&gt;131.5&lt;/td&gt;
+&lt;td&gt;64.2&lt;/td&gt;
+&lt;td&gt;7.4&lt;/td&gt;
+&lt;td&gt;133&lt;/td&gt;
+&lt;td&gt;2020年10月&lt;/td&gt;
+&lt;td&gt;2227mAh&lt;/td&gt;
+&lt;td&gt;Apple A14 Bionic (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小米13&lt;/td&gt;
+&lt;td&gt;152.8&lt;/td&gt;
+&lt;td&gt;71.5&lt;/td&gt;
+&lt;td&gt;7.98&lt;/td&gt;
+&lt;td&gt;189&lt;/td&gt;
+&lt;td&gt;2022年12月&lt;/td&gt;
+&lt;td&gt;4500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 8 Gen 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 13 Mini&lt;/td&gt;
+&lt;td&gt;131.5&lt;/td&gt;
+&lt;td&gt;64.2&lt;/td&gt;
+&lt;td&gt;7.65&lt;/td&gt;
+&lt;td&gt;140&lt;/td&gt;
+&lt;td&gt;2021年9月&lt;/td&gt;
+&lt;td&gt;2406mAh&lt;/td&gt;
+&lt;td&gt;Apple A15 Bionic (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sony Xperia 10 V&lt;/td&gt;
+&lt;td&gt;157&lt;/td&gt;
+&lt;td&gt;68&lt;/td&gt;
+&lt;td&gt;8.3&lt;/td&gt;
+&lt;td&gt;169&lt;/td&gt;
+&lt;td&gt;2023年&lt;/td&gt;
+&lt;td&gt;4500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;感兴趣的设备请在评论区留言，我会详细说。&lt;/p&gt;
+&lt;p&gt;当然了，酷安有更详细的每台设备的用户，那里可以看到更多地设备相关的评价。&lt;/p&gt;
+&lt;p&gt;先偷懒了~&lt;/p&gt;
+&lt;p&gt;对了！差点忘记了本文最大的彩蛋：以上信息来自于阿里的AI聊天机器人“&lt;a href=&#34;https://qianwen.aliyun.com/&#34;&gt;通义千问&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-11-19_14-33-05.webp&#34;&gt;没想到国内AI已经发展到这种水平了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-11-19_14-35-52.webp&#34;&gt;上下文的理解上也没问题&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;是时候在本地训练自己的Ai了！！！&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2023-11-17T13:32:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1690792964757/</id>
+        <title>iPhone5 在2023年生存状况报告</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1690792964757/"/>
+        <content type="html">&lt;p&gt;此文在少数派首发&lt;/p&gt;
+&lt;h2 id=&#34;2023年买了台-iPhone-5-当备用机&#34;&gt;&lt;a href=&#34;#2023年买了台-iPhone-5-当备用机&#34; class=&#34;headerlink&#34; title=&#34;2023年买了台 iPhone 5 当备用机&#34;&gt;&lt;/a&gt;2023年买了台 iPhone 5 当备用机&lt;/h2&gt;&lt;p&gt;公司的主要 IM 是微信（不准笑），当时考虑到工作与生活分离，我就单独注册了一个微信账号用于工作。&lt;/p&gt;
+&lt;p&gt;我的主力机是 iPhone13 mini，因为众所周知的原因，苹果没办法双微信，这就需要一个备用机了。&lt;/p&gt;
+&lt;h3 id=&#34;上一任备用机&#34;&gt;&lt;a href=&#34;#上一任备用机&#34; class=&#34;headerlink&#34; title=&#34;上一任备用机&#34;&gt;&lt;/a&gt;上一任备用机&lt;/h3&gt;&lt;p&gt;我两年前买了台 XZ1C 当备用机，它拥有类原生系统、3.5mm 耳机接口、和 mini 系列一样的机身尺寸，用起来非常舒服。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1111111108-02_21-19-16.webp&#34;&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV14t4y1p7Em/?spm_id_from=333.337.search-card.all.click&amp;vd_source=240fc73d28dcf02140581b3793ac27d8&#34;&gt;当时是在 TESTV 频道种草的，点这里可以查看此视频&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但本就是备用机的它在今年的软件环境跟体量下实在是难以流畅运行，卡顿也越来越频繁。&lt;/p&gt;
+&lt;p&gt;更何况今年它电池直接鼓包了，我也懒得再折腾换电池了，干脆￥160出掉（毕竟当时买它也才花了￥330）。&lt;/p&gt;
+&lt;p&gt;那我始终还是需要一个备用机来登录另一个微信账号呀！&lt;/p&gt;
+&lt;h3 id=&#34;挑选新备用机&#34;&gt;&lt;a href=&#34;#挑选新备用机&#34; class=&#34;headerlink&#34; title=&#34;挑选新备用机&#34;&gt;&lt;/a&gt;挑选新备用机&lt;/h3&gt;&lt;p&gt;脑子里过了一下筛选条件：小屏、有3.5mm 耳机孔、2023年登陆微信不卡、好看。&lt;/p&gt;
+&lt;p&gt;索性持巨资（￥220）购入了一台 iPhone5， 黑色 16GB，机器自带 iOS6.0 系统。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_21-36-39.webp&#34;&gt;对比iPhone 13 mini，iPhone 5 的机身尺寸还要更小&lt;/p&gt;
+&lt;p&gt;过了这么多年，重新拿到一个95新翻新机的时候，心里还是非常激动的。&lt;/p&gt;
+&lt;p&gt;时光自然没有带我回到机器刚刚发布的那年，毕竟当年没钱买，但拿到机器的那一刻，曾经的穷小子突然在我身体里苏醒，把嘴角上拉了一秒。&lt;/p&gt;
+&lt;h2 id=&#34;2023年，iPhone-5-还能胜任备用机的职责吗？&#34;&gt;&lt;a href=&#34;#2023年，iPhone-5-还能胜任备用机的职责吗？&#34; class=&#34;headerlink&#34; title=&#34;2023年，iPhone 5 还能胜任备用机的职责吗？&#34;&gt;&lt;/a&gt;2023年，iPhone 5 还能胜任备用机的职责吗？&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;对我来说，能&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这主要看个人对备用机职责的界定，我个人购买备用机的要求就这几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;可以流畅使用微信&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可以收发短信，接打电话（本文截图中飞行模式是因为这样比较省电，我只有在需要接验证码的时候才会关闭飞行模式）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可以听歌，而且我要用3.5mm 耳机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;好看，轻薄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最好还能偶尔用来阅读咨询和小说&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最好跟我主力机使用同一个充电接口（主力机是 iPhone13 mini ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最后一条是因为，在我使用 Sony XZ1C 的时候，又要用 lightning、又要用 type-c 充电，体验非常差。&lt;/p&gt;
+&lt;p&gt;iPhone 5 和 iOS6 的软件契合度非常高，流畅性无敌，开机的那一刻，我就决定不再升级它的系统版本了，低版本虽然受限，但至少还是有办法用的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_21-11-18.webp&#34;&gt;注：以下安装步骤需要越狱环境，爱思助手有一键傻瓜式越狱&lt;/p&gt;
+&lt;h3 id=&#34;微信低版本登陆方法&#34;&gt;&lt;a href=&#34;#微信低版本登陆方法&#34; class=&#34;headerlink&#34; title=&#34;微信低版本登陆方法&#34;&gt;&lt;/a&gt;微信低版本登陆方法&lt;/h3&gt;&lt;p&gt;软件版本：6.1.0&lt;/p&gt;
+&lt;p&gt;安装来源：爱思助手&lt;/p&gt;
+&lt;p&gt;用到功能：消息推送、聊天、群聊、支付、语音通话；&lt;/p&gt;
+&lt;p&gt;体验结论：非常流畅、占用极低、满足要求；&lt;/p&gt;
+&lt;p&gt;使用方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;准备一些网络手段，把 iPhone 5 接入这个网络，可以打开一些网站；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;准备另一台正常的手机或平板，把你后期需要登录到 iPhone 5 的微信先登录到这些设备；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择【添加朋友】，在搜索界面搜索 facebookapp ，点击进去绑定账号，账号自备；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开 iPhone 5 ，后台清空，关闭微信，然后手机设置，区域改成非大陆地区（我用的香港），语言改英文；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开微信，选择使用账号登陆，在下方你应该可以看到 【使用 facebook 登陆】的选项，点击它，跳转到浏览器后，正常登陆，然后跳转回来，登录成功；&lt;strong&gt;如果浏览器界面登录不上了，可以选择下载一个facebook的app到手机上，亲测iOS6.0版本的facebook还是可以正常登陆的（2023年10月31号测），这个时候在App登陆，再去微信点击facebook connect后，就能正常使用了&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD%20(1)-krkw.webp&#34;&gt;看到那个 Facebook Connect 了嘛&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;iPhone 5 连接爱思助手，编辑 info.plist 文件，把所有显示 6.1.0 的地方改成 6.3.1.32（如果不改，下次微信关闭后、或者系统重启后，重新打开微信会被微信服务端强制退出登录）；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_21-42-10.webp&#34;&gt;定位文件方式参考上方截图&lt;/p&gt;
+&lt;p&gt;CFBundleShortVersionString：6.3.1&lt;/p&gt;
+&lt;p&gt;CFBundleVersion：6.3.1.32&lt;/p&gt;
+&lt;p&gt;WeChatBundleVersion：6.3.1.32&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;保持系统区域设置为非大陆的前提下，修改语言为中文（也可以保持不变，看个人使用习惯）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;应该可以日用了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-zofk.webp&#34;&gt;能聊天、能语音、能刷朋友圈！&lt;/p&gt;
+&lt;p&gt;网上有一个其他的方法，就是提取高版本的微信数据资料，然后再导入到低版本的微信App中，这也是一种方式，但需要两个版本的微信都越狱，对安装了双系统的同学可能折腾起来更方便，你可以在&lt;a href=&#34;https://www.iosipa.cn/index.php/page/960.html&#34;&gt;这里&lt;/a&gt;查看这种登录方式，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;声明：由于微信官方服务器的关联逻辑并不透明，所以&lt;strong&gt;不能保证&lt;/strong&gt;此方法一定适用于所有账号。&lt;/p&gt;
+&lt;h3 id=&#34;网易云的使用&#34;&gt;&lt;a href=&#34;#网易云的使用&#34; class=&#34;headerlink&#34; title=&#34;网易云的使用&#34;&gt;&lt;/a&gt;网易云的使用&lt;/h3&gt;&lt;p&gt;软件版本：2.7.1&lt;/p&gt;
+&lt;p&gt;安装来源：爱思助手&lt;/p&gt;
+&lt;p&gt;用到功能：我的歌单、日推、听歌、下载、签到、歌词、评论&lt;/p&gt;
+&lt;p&gt;体验结论：非常流畅、占用极低、满足要求；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-wowk.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;使用方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载软件；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;连接爱思助手，编辑info.plist，将版本改为 3.5.1；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;正常登陆&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Reeder，RSS果然是永远的神&#34;&gt;&lt;a href=&#34;#Reeder，RSS果然是永远的神&#34; class=&#34;headerlink&#34; title=&#34;Reeder，RSS果然是永远的神&#34;&gt;&lt;/a&gt;Reeder，RSS果然是永远的神&lt;/h3&gt;&lt;p&gt;软件版本：3.2&lt;/p&gt;
+&lt;p&gt;安装来源：&lt;a href=&#34;https://archive.org/download/iOSObscura&#34;&gt;https://archive.org/download/iOSObscura&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到功能：RSS 订阅&lt;/p&gt;
+&lt;p&gt;体验结论：超出预期，但存在缺陷&lt;/p&gt;
+&lt;p&gt;使用说明：&lt;/p&gt;
+&lt;p&gt;Reeder 相比较网易云和微信来说使用群体是相对小众的。&lt;/p&gt;
+&lt;p&gt;但因为它兼容 RSS 协议，而 RSS 协议兼容差不多整个互联网的内容。&lt;/p&gt;
+&lt;p&gt;所以拥有 Reeder 让这台 iPhone 5 在十多年后仍旧可以发挥出远超预期的余热！&lt;/p&gt;
+&lt;p&gt;借助 RSS 协议，我可以在 Reeder 做到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;刷 Bilibili 某个用户动态（视频无法播放）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;刷微博某个用户的时间线内容（视频无法播放）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;订阅知乎精选（上知乎）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;订阅酷安精选（刷酷安）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;刷少数派、个人博客等各种支持 RSS 的网站&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-xgkv.webp&#34;&gt; 界面设计跟操作逻辑跟现在的 Reeder 基本上一样，太经典了&lt;/p&gt;
+&lt;p&gt;具体 RSSHub 的使用方式可以参考&lt;a href=&#34;https://sspai.com/post/75340#!&#34;&gt;少数派的这篇文章&lt;/a&gt;，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;关于视频：因为早期的 Webkit 版本较老，对当前主流视频网站的所使用的视频格式都不再兼容了，所以无法播放来自 RSS 抓取的视频。&lt;/p&gt;
+&lt;p&gt;还有一些第三方RSSHub的网站在 iPhone 5 上打不开，经我测试，我猜测主要原因是 iOS 6 所支持的 HTTPS 协议版本较低，而近几年部署的 RSSHub 镜像站的 HTTPS 协议所支持的最低版本可能太高了，导致在电脑上可以打开，在 iOS 6 系统上打不开。&lt;/p&gt;
+&lt;h3 id=&#34;多看&#34;&gt;&lt;a href=&#34;#多看&#34; class=&#34;headerlink&#34; title=&#34;多看&#34;&gt;&lt;/a&gt;多看&lt;/h3&gt;&lt;p&gt;软件版本：2.6.1&lt;/p&gt;
+&lt;p&gt;安装来源：&lt;a href=&#34;https://iosipa.cn/&#34;&gt;https://iosipa.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到功能：wifi传书、阅读&lt;/p&gt;
+&lt;p&gt;体验结论：体验流畅、动画精美&lt;/p&gt;
+&lt;p&gt;使用说明：安装，打开，传书，阅读。有手就行。&lt;/p&gt;
+&lt;h3 id=&#34;VLC&#34;&gt;&lt;a href=&#34;#VLC&#34; class=&#34;headerlink&#34; title=&#34;VLC&#34;&gt;&lt;/a&gt;VLC&lt;/h3&gt;&lt;p&gt;软件版本：2.1.3&lt;/p&gt;
+&lt;p&gt;安装来源：&lt;a href=&#34;https://iosipa.cn/&#34;&gt;https://iosipa.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到功能：wifi传输&lt;/p&gt;
+&lt;p&gt;体验结论：体验流畅&lt;/p&gt;
+&lt;p&gt;使用说明：安装，打开，传输，观看。有手就行。&lt;/p&gt;
+&lt;h3 id=&#34;支付宝&#34;&gt;&lt;a href=&#34;#支付宝&#34; class=&#34;headerlink&#34; title=&#34;支付宝&#34;&gt;&lt;/a&gt;支付宝&lt;/h3&gt;&lt;p&gt;软件版本：9.1.0&lt;/p&gt;
+&lt;p&gt;安装来源：爱思助手&lt;/p&gt;
+&lt;p&gt;用到功能：支付&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD%20(1).webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;体验结论：资产查询、支付、手机充值，还是可用的，别的就不要想了。&lt;/p&gt;
+&lt;h3 id=&#34;QQ&#34;&gt;&lt;a href=&#34;#QQ&#34; class=&#34;headerlink&#34; title=&#34;QQ&#34;&gt;&lt;/a&gt;QQ&lt;/h3&gt;&lt;p&gt;因为不怎么用，所以这个我没有什么动力去折腾，有需要的可以&lt;a href=&#34;https://www.iosipa.cn/index.php/page/959.html&#34;&gt;参考这里&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;各种游戏&#34;&gt;&lt;a href=&#34;#各种游戏&#34; class=&#34;headerlink&#34; title=&#34;各种游戏&#34;&gt;&lt;/a&gt;各种游戏&lt;/h3&gt;&lt;p&gt;这就不再赘述，网络上老版本软件最多的也是游戏，所以找资源也相对而言容易很多。&lt;/p&gt;
+&lt;h2 id=&#34;越狱插件推荐&#34;&gt;&lt;a href=&#34;#越狱插件推荐&#34; class=&#34;headerlink&#34; title=&#34;越狱插件推荐&#34;&gt;&lt;/a&gt;越狱插件推荐&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;CleverPin：锤子信任的网络的设计来源，可以设置连接某个网络时不用输入密码直接进桌面，对没有指纹的设备还有很有用的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SPi：让原生键盘支持双拼打字，比最新的 iOS 系统自带的双拼输入法都要流畅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Zephyr：让老设备支持全面屏手势，我主要用到上划返回，减少 Home 键磨损&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;中国日历 Pro：通知中心的日历组件，体验接近现在的小历&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Torch：锁屏界面打开手电筒&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Springtomiz：可以定制系统界面的方方面面，但我只用来屏蔽了文件夹的气泡通知，iOS 6 原生就已经很美了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Auxo：定制 iOS 6 系统的任务切换界面，添加了很多系统设置的快捷开关&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SwitcherCleaner：定制任务管理界面，优化体验&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SpotLock：桌面左滑到Spotlight搜索时，直接触发锁屏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SwipeSelection：键盘上滑动可以移动光标&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;WeatherX：修复iOS 6 原生天气应用无法使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-mupc.webp&#34;&gt;任务栏预览，任务栏控制按钮，通知中心万年历&lt;/p&gt;
+&lt;p&gt;我所使用的 Cydia 软件源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://apt.abcydia.com/&#34;&gt;http://apt.abcydia.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://apt.91.com/&#34;&gt;http://apt.91.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.thebigboss.org/repofiles/cydia/&#34;&gt;http://apt.thebigboss.org/repofiles/cydia/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.saurik.com/&#34;&gt;http://apt.saurik.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://1.pwn.ixmoe.com/dev/&#34;&gt;http://1.pwn.ixmoe.com/dev/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.iosipa.cn/&#34;&gt;http://apt.iosipa.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.modmyi.com/&#34;&gt;http://apt.modmyi.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cydia.zodttd.com/repo/cydia/&#34;&gt;http://cydia.zodttd.com/repo/cydia/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对了，你可还要注意这些：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;部分插件可能在某个源里不可用，这时候可以通过换源的方式从其他软件源下载&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;有些插件即使换源也不一定找得到，这时候就需要去网络上找 .deb 格式的插件安装包了&lt;/p&gt;
+&lt;p&gt;以上边提到的 CleverPin 插件为例，我在 Cydia 里边无论如何也搜索不到这个插件，包括不稳定的软件源里边，这个时候使用万能的搜索引擎开始检索，&lt;/p&gt;
+&lt;p&gt;经过无数页的翻找、无数个关键词的组合（持续性挠头+小声咒骂，耗时2小时以上），我在万能的互联网上发现了一个这样的网页：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_19-52-17.webp&#34;&gt;网上关于该插件的下载地址经过十多年的时间洗礼，大部分都失效了，这是我能找到的唯一解&lt;/p&gt;
+&lt;p&gt;这是啥？ctrl + f ，输入cleverpin，找到一个资源 url，把这个 网址复制到浏览器地址栏，回车，下载了！&lt;/p&gt;
+&lt;p&gt;接下来就简单了，打开 iFile （越狱必装的文件管理软件，你也可以用爱思的文件管理） 的网页服务器，在电脑上打开管理网页，找到地址：private&amp;#x2F;var&amp;#x2F;root&amp;#x2F;Media&amp;#x2F;Cydia&amp;#x2F;AutoInstall&amp;#x2F;，把你刚刚下载的deb格式的文件上传到这个位置，重启手机，安装就完成了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;折腾到这一步，这台机器作为备用机，日常使用体验在某些方面应该已经不输这两年的百元安卓机了。&lt;/p&gt;
+&lt;h2 id=&#34;写在最后&#34;&gt;&lt;a href=&#34;#写在最后&#34; class=&#34;headerlink&#34; title=&#34;写在最后&#34;&gt;&lt;/a&gt;写在最后&lt;/h2&gt;&lt;p&gt;购买这台机器当备用机，我是心里比较打鼓的，网上现存的一些微信登录方式其实是非常复杂的，而 Bilibili 网站上各种体验视频也是参差不齐。&lt;/p&gt;
+&lt;p&gt;但最终折腾出来的成果，是远超过我的预期的，我感觉这￥220 花的非常值。&lt;/p&gt;
+&lt;p&gt;我们这代人（90后），是被父辈和年代压抑的一代。&lt;/p&gt;
+&lt;p&gt;穷，贯穿着我们绝大多数人的童年。我仍记得我的第一部手机是我初一暑假买的，当时考了全班第二，年级第十六名，我妈说500块钱以内给我买一台自己的手机。&lt;/p&gt;
+&lt;p&gt;结果还是超预算了，买了一款步步高的直板手机，除了功能机的必备功能之外，它还自带了一个手机QQ，售价￥699。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/bbk118.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【K118 ，就这样一部手机，耐用性无敌，至少在我跟家人手里流转了8年以上】&lt;/p&gt;
+&lt;p&gt;就在同样的时代，iPhone4S 横空出世，当时能从兜里掏出它的人绝对是人群中最亮眼的存在，这一点毋庸置疑。但作为穷学生的我自然没有购买首发的财力和勇气。&lt;/p&gt;
+&lt;p&gt;但我还是想要啊！！！！！！即使是多年后的今天，这份心情仍旧回旋在心里的某个角落，偶尔冒出来，让我心痒痒。&lt;/p&gt;
+&lt;p&gt;廉价的礼物，延迟的满足感，在2023年的夏天，开心。&lt;/p&gt;
+&lt;h3 id=&#34;关于折腾的意义&#34;&gt;&lt;a href=&#34;#关于折腾的意义&#34; class=&#34;headerlink&#34; title=&#34;关于折腾的意义&#34;&gt;&lt;/a&gt;关于折腾的意义&lt;/h3&gt;&lt;p&gt;垃圾佬最开始是折腾老旧数码设备爱好者的自嘲，但我有看到一些网络的边角有人大批这种捡垃圾的行为，说是屌丝乞丐才会做。&lt;/p&gt;
+&lt;p&gt;我个人对这种观点不予置评。&lt;/p&gt;
+&lt;p&gt;但我认为，把一款过时的、超过正常使用年限的产品，重新收拾起来，让它重新焕发新的活力，对设备而言，何尝不是一种幸事？&lt;/p&gt;
+&lt;p&gt;这种例子比比皆是：老爷车、模拟信号、磁带播放器、唱片播放机。&lt;/p&gt;
+&lt;p&gt;借用生活大爆炸的一段对白结束此文：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here is my question, why （did you do this）？&lt;/p&gt;
+&lt;p&gt;Because we can.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2023-08-02T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1689128493165/</id>
+        <title>当你拥有了第二台NAS，这是你需要了解的数据迁移和同步方式</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1689128493165/"/>
+        <content type="html">&lt;p&gt;自从有了NAS，我的数字生活总算是找到了一个家，数据安全地躺在这里，不受任何方面的干扰：不用担心供应商跑路，不用害怕数据泄漏，也不需要频繁地在各个云服务商之间颠转腾挪。&lt;/p&gt;
+&lt;p&gt;但当自己成了自己数字资产的第一负责人后，一系列的顾忌也接踵而至：NAS 的硬盘坏了怎么办？NAS 坏了怎么办？NAS 丢了怎么办？&lt;/p&gt;
+&lt;p&gt;针对这些问题，网络社区也早有应对答案：RAID 和两地三中心。&lt;/p&gt;
+&lt;p&gt;针对硬盘损坏，倒还是比较容易解决的。比如，群晖 DS 系列本就设计有双盘、四盘的 RAID 冗余盘位，一般情况下，为了自己的数据安全，初始化的时候可以选择 RAID1、RAID5 等拥有数据冗余的磁盘阵列组合，以此来保障我们的数据不会因为单个磁盘的故障而损坏。&lt;/p&gt;
+&lt;p&gt;因为数据是无价的，所以我也不敢忽视低概率的另外俩问题：NAS 的损坏、丢失等问题。这也就涉及到了本文的重点：两地三中心的搭建、数据迁移以及数据同步。&lt;/p&gt;
+&lt;h2 id=&#34;搭建低配两地三中心&#34;&gt;&lt;a href=&#34;#搭建低配两地三中心&#34; class=&#34;headerlink&#34; title=&#34;搭建低配两地三中心&#34;&gt;&lt;/a&gt;搭建低配两地三中心&lt;/h2&gt;&lt;p&gt;两地三中心，顾名思义：你的数据需要存在于三个数据中心，这三个数据中心至少要存在于两个城市。&lt;/p&gt;
+&lt;p&gt;我相信购买 NAS 的大多数其实是跟我一样的工薪阶层，暂时还没考虑互联网企业的数据中心、数据机房那种百万级别的服务器集群建设。所以在搭建费用上，我选择的是最低花销方案。&lt;/p&gt;
+&lt;h3 id=&#34;1、重要数据加密后上云&#34;&gt;&lt;a href=&#34;#1、重要数据加密后上云&#34; class=&#34;headerlink&#34; title=&#34;1、重要数据加密后上云&#34;&gt;&lt;/a&gt;1、重要数据加密后上云&lt;/h3&gt;&lt;p&gt;云服务商的廉价和低使用成本是我不能忽视的一个选择，群晖的 Cloud Sync 应用支持百度、京东、阿里、微软十多家云服务的接入，在拥有第一台 NAS 后，我就把我的重要数据加密备份到了这种云服务商的平台上，这些平台有一个不能忽视的优点：免费。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_20-40-11.webp&#34;&gt;可以接入许多公有云服务进行数据同步&lt;/p&gt;
+&lt;p&gt;你要知道，个人重要资料压缩加密后的空间占用很小，云服务的免费额度已经足够使用了。&lt;/p&gt;
+&lt;p&gt;而且这些云服务没有任何运维成本、付费后你是爹（比如下载百度云的时候，一次月付即可完成备份数据的下载）。&lt;/p&gt;
+&lt;h3 id=&#34;2、第二台-NAS-的购置&#34;&gt;&lt;a href=&#34;#2、第二台-NAS-的购置&#34; class=&#34;headerlink&#34; title=&#34;2、第二台 NAS 的购置&#34;&gt;&lt;/a&gt;2、第二台 NAS 的购置&lt;/h3&gt;&lt;p&gt;在&lt;a href=&#34;/archives/1683599671683&#34;&gt;个人家庭宽带升级&lt;/a&gt;中有提到，因为本人是大城市打工仔一名，房子自然是买不起的。而且受限于租房的网络条件会因为换租频繁变动，我就在五一假期期间将 NAS 放到了我的老家去了。不但解决了公网 IP 的问题，同时还让我免去了在大城市打工期间频繁地跟房东、运营商、小区网络管理员等人沟通的成本。但这也带来另一个问题：公网访问的网速受限严重。&lt;/p&gt;
+&lt;p&gt;当时买 NAS 的初衷就是可以随心看自己喜欢看的剧集，但公网速度有时候会极大地剥夺这份快乐：网速差。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-21-10.webp&#34;&gt;在小小的屏幕上转啊转啊转啊转啊，就是不播放&lt;/p&gt;
+&lt;p&gt;起初我是打算买块硬盘挂到我的台式机，然后在台式机上部署各种各样的服务来最低程度实现第二台 NAS 的。&lt;/p&gt;
+&lt;p&gt;我可以先把数据同步到我的 Windows 的机械硬盘上，然后在此基础上再进行各种数据服务拓展。&lt;/p&gt;
+&lt;p&gt;但经过了一周的数据迁移和使用后，我发现这个方案太蹩脚了，而且使用起来非常不方便！&lt;/p&gt;
+&lt;h4 id=&#34;PC-NAS-耗电难忍&#34;&gt;&lt;a href=&#34;#PC-NAS-耗电难忍&#34; class=&#34;headerlink&#34; title=&#34;PC NAS 耗电难忍&#34;&gt;&lt;/a&gt;PC NAS 耗电难忍&lt;/h4&gt;&lt;p&gt;NAS 低功耗的特点可以让我长时间保持机器开机而不用心疼电费，但PC主机待机功耗就高达40 ~ 50W（据我所知，这还不算最高的）,更不要说我当时组装 PC 的时候买的扇热风扇是自带闪瞎眼 RGB 灯效的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/IMG_0371%20(1).webp&#34;&gt;我家猫那几天晚上一直在这种蹦迪环境中&lt;/p&gt;
+&lt;h4 id=&#34;系统体验一言难尽&#34;&gt;&lt;a href=&#34;#系统体验一言难尽&#34; class=&#34;headerlink&#34; title=&#34;系统体验一言难尽&#34;&gt;&lt;/a&gt;系统体验一言难尽&lt;/h4&gt;&lt;p&gt;家里 PC 还同时承担着游戏主机和休闲主机的任务，暂时不能给他换成 TrueNAS 、Unraid 等第三方 NAS 系统。&lt;/p&gt;
+&lt;p&gt;因此我就尝试在 Windows 上搭建我的一系列服务：Docker、Webdav、Smb，然后再基于 Docker 进行 Emby ，Komga 等服务的搭建。&lt;/p&gt;
+&lt;p&gt;但我发现这一点也非常不好实现。&lt;/p&gt;
+&lt;p&gt;首先 Windows 的 IIS 自带的 Webdav Server 最大只支持 4GB 的文件传输（就这都得改注册表才能实现），也就是说超过 4GB 的文件就无法同步过来；那我只好换方案，我用 Smb 协议把文件夹挂载到 Windows 本地，再使用 FreeFileSync 进行数据同步，算是解决了最大文件限制的问题。&lt;/p&gt;
+&lt;p&gt;但当我把 Docker 中的各个镜像也启动之后，另一个窒息的问题问题来了：我的 16GB 的内存怎么就只剩下 2GB 可用了？！（各种服务存在的同时还用电脑做娱乐或者办公的场景）&lt;/p&gt;
+&lt;p&gt;干脆再买台 NAS 吧，看着折腾了好几天之后心情愈加难受的镜中的我说道。&lt;/p&gt;
+&lt;p&gt;于是就有了今天的主角：DS220+。&lt;/p&gt;
+&lt;p&gt;别问，问就是穷；再问就破防（刚买了半个月，DS224+ 发布了，处理器性能翻倍&amp;gt;_&amp;lt;）。&lt;/p&gt;
+&lt;h3 id=&#34;3、群晖-NAS-间的数据同步软件&#34;&gt;&lt;a href=&#34;#3、群晖-NAS-间的数据同步软件&#34; class=&#34;headerlink&#34; title=&#34;3、群晖 NAS 间的数据同步软件&#34;&gt;&lt;/a&gt;3、群晖 NAS 间的数据同步软件&lt;/h3&gt;&lt;p&gt;早就听说了群晖的数据同步非常完善，所以我也在机器到手后把该装的不该装的都装了一遍。结果发现最终能使用的其实非常少。&lt;/p&gt;
+&lt;p&gt;先说我的条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;已有的主机是 DS 920+，拥有 20GB 的内存和10TB 的存储空间 ，8TB 存主数据（raid 5）， 2TB 用来当下载缓存盘（无Raid）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我有公网域名，通过 DDNS 指向一个动态分配的公网 IP；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我在主 NAS 上部署了 OpenVPN 来组网，保证我的设备可以在全国各地有网的环境下相互联通；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当前新买的从机是 DS220+，配备两块16TB 的磁盘组 Raid1；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的诉求：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我的两台NAS的主数据相互同步，又可以相互独立使用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;同步数据时，可以在公网的条件下进行，但又要有一定程度的安全性（ frp 完全暴露要不得）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下是我这几天设置数据迁移过程中的一些使用体验，有任何问题欢迎指正。&lt;/p&gt;
+&lt;h4 id=&#34;Hyper-Backup&#34;&gt;&lt;a href=&#34;#Hyper-Backup&#34; class=&#34;headerlink&#34; title=&#34;Hyper Backup&#34;&gt;&lt;/a&gt;Hyper Backup&lt;/h4&gt;&lt;p&gt;功能：这个软件是把系统整机备份到另一台设备，备份后就相当于是一个加密的压缩包，你反正没法找文件，也没法从中读取任何数据，只能再找一个机器恢复出来。&lt;/p&gt;
+&lt;p&gt;感受：就像你可以把 iPhone 连接你的电脑，点击备份整机数据。然后等买了新手机后，再点击从备份中恢复一样。&lt;/p&gt;
+&lt;p&gt;优点：可以备份几乎所有数据。&lt;/p&gt;
+&lt;p&gt;缺点：只是整机备份，备份后的数据是一个压缩包，无法作为正常可识别数据供我使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_20-57-47.webp&#34;&gt;备份文件夹、备份套件等等，非常细致&lt;/p&gt;
+&lt;h4 id=&#34;Migration-Assistant&#34;&gt;&lt;a href=&#34;#Migration-Assistant&#34; class=&#34;headerlink&#34; title=&#34;Migration Assistant&#34;&gt;&lt;/a&gt;Migration Assistant&lt;/h4&gt;&lt;p&gt;功能：这个迁移助手可以提供 NAS 整机的数据和资料迁移。迁移期间你的很多数据文件夹和服务都会被锁死无法使用，而且迁移后它就结束工作了，你这边的文件如果有什么变动的话，它是不会帮你实时同步的。&lt;/p&gt;
+&lt;p&gt;优点：就相当于安卓或者 iOS 换机，如果是手中有台 NAS 并且又买了一台新的 NAS 的话，可以使用该功能进行数据的拷贝，会方便不少。&lt;/p&gt;
+&lt;p&gt;缺点：迁移完成后数据不再同步，迁移过程中还会停用很多服务，而且非常依赖网络环境，网络不稳定会导致任务卡住直接失败，需要重新来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-01-40.webp&#34;&gt;NAS 版换机助手&lt;/p&gt;
+&lt;h4 id=&#34;High-Avaliablity&#34;&gt;&lt;a href=&#34;#High-Avaliablity&#34; class=&#34;headerlink&#34; title=&#34;High Avaliablity&#34;&gt;&lt;/a&gt;High Avaliablity&lt;/h4&gt;&lt;p&gt;功能：它可以把两台 NAS 主机组成一个热备，实时同步两台机器的所有数据和状态，当其中一台宕机之后，另一台立刻顶上去，让用户可以稳定使用网盘服务。&lt;/p&gt;
+&lt;p&gt;感受：几乎没有缺点，这个套件其实非常接近我的需求，但它有一个强制性要求：两台主机必须使用物理网线点对点连接（心跳线），无法跨局域网使用。&lt;/p&gt;
+&lt;p&gt;唉，总之对我而言：不适用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-05-10.webp&#34;&gt;这个套件适合小型工作室使用&lt;/p&gt;
+&lt;h4 id=&#34;Cloud-Sync&#34;&gt;&lt;a href=&#34;#Cloud-Sync&#34; class=&#34;headerlink&#34; title=&#34;Cloud Sync&#34;&gt;&lt;/a&gt;Cloud Sync&lt;/h4&gt;&lt;p&gt;这款软件可以让你的NAS接入许多商用云，公有云等开放的协议接口，刚买 NAS 的时候用它把百度云中的数据都下载下来了。这次我重新研究了一下它的用途，发现这个套件非常不得了！&lt;/p&gt;
+&lt;p&gt;功能：它的使用步骤就两步：连接主机、设置同步任务。&lt;/p&gt;
+&lt;p&gt;连接主机：支持通用的 Webdav 协议、百度云、腾讯云 COS、阿里云对象存储、OneDrive 等等，只需要登录一次。&lt;/p&gt;
+&lt;p&gt;同步任务：你可以设置多个同步任务，每个任务包含一个本地路径和远程路径，你可以设置同步方向是双向或单项，同步任务可以添加多个。&lt;/p&gt;
+&lt;p&gt;这款软件完全适用我的需求！&lt;/p&gt;
+&lt;p&gt;缺点：相比较前三个套件，CloudSync 只能同步用户新建的共享文件夹下的数据，如果数据没有存在共享文件夹下（比如 NoteStation），那就无法进行数据同步了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-20_12-20-42.webp&#34;&gt;一个链接下添加多个同步任务&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-20_12-21-04.webp&#34;&gt;可以设置同步计划，如果感觉晚上硬盘太吵可以设置晚上不同步&lt;/p&gt;
+&lt;h4 id=&#34;Synology-Drive-ShareSync-2023-07-31-16-00补充更新&#34;&gt;&lt;a href=&#34;#Synology-Drive-ShareSync-2023-07-31-16-00补充更新&#34; class=&#34;headerlink&#34; title=&#34;Synology Drive ShareSync (2023-07-31 16:00补充更新)&#34;&gt;&lt;/a&gt;Synology Drive ShareSync (2023-07-31 16:00补充更新)&lt;/h4&gt;&lt;p&gt;在网络上跟别人讨论后，发现还有一个套件也能实现跨网络的文件夹同步，甚至不需要公网 IP ，只需要一个quickconnect id，遂赶紧补充到这里。&lt;/p&gt;
+&lt;p&gt;功能：可以使用 qc id 进行同步，无需公网 IP 、可以选择开启了团队文件夹的所有文件数据&lt;/p&gt;
+&lt;p&gt;感受：这个群晖自带的套件使用更加简洁方便（相比较Cloud Sync），对两台 NAS 的要求也更少，更适合不喜欢折腾的人使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-31_16-10-47.webp&#34; alt=&#34;Snipaste_2023-07-31_16-10-47.webp&#34;&gt;使用前提：在DriveServer控制台为共享文件夹开启团队文件夹功能&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-31_16-13-16.webp&#34;&gt;也拥有类似Cloud Sync的同步逻辑设置，但没有任务执行时间策略调整&lt;/p&gt;
+&lt;h3 id=&#34;4、网络&#34;&gt;&lt;a href=&#34;#4、网络&#34; class=&#34;headerlink&#34; title=&#34;4、网络&#34;&gt;&lt;/a&gt;4、网络&lt;/h3&gt;&lt;p&gt;网络的联通其实是一切跨互联网同步的基础，关于公网 IP 和动态域名的映射问题，我在&lt;a href=&#34;/archives/1683599671683&#34;&gt;&lt;strong&gt;个人家庭宽带公网 IP 升级杂记&lt;/strong&gt;&lt;/a&gt;里也提到过，不再赘述。&lt;/p&gt;
+&lt;p&gt;这里单独说一下当时让我头疼了很久但最后发现很简单的一件事：Openvpn 的连接。&lt;/p&gt;
+&lt;p&gt;在 PC 上也好，移动端也好，我都可以非常简单地找到客户端来导入我的配置文件并登陆我的主机，完成设备组网并连接到我的主机上。但群晖的商店却无论如何找不到这个客户端软件，开源社区也是。&lt;/p&gt;
+&lt;p&gt;我当时在想：难道没人这么用过？&lt;/p&gt;
+&lt;p&gt;结果答案却让我笑掉大牙：依次打开【控制面板】【网络】【新增】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-11-24.webp&#34;&gt;看到熟悉的字段了吗？&lt;/p&gt;
+&lt;p&gt;喔，我的老伙计，原来你在这啊！&lt;/p&gt;
+&lt;p&gt;这是我的&lt;a href=&#34;/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/&#34;&gt;明明白白玩NAS系列&lt;/a&gt;的第&lt;strong&gt;六&lt;/strong&gt;篇文章了，如果你对这个系列的其他文章感兴趣，可以访问&lt;a href=&#34;/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/&#34;&gt;这里&lt;/a&gt;查看。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <category term="NAS" />
+        <updated>2023-07-26T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1687328820096/</id>
+        <title>群晖DSM系统下的VideoStation修改ffmpeg以支持DTS、AAC、HEVC等播放格式</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1687328820096/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/bliss%20600dpi.webp&#34; alt=&#34;bliss 600dpi.webp&#34;&gt;前几天微软发布了WindowsXP 经典蓝天白云壁纸，但是是重制版，我找到了这个原版4K分辨率的，趁此机会发出来好了&lt;/p&gt;
+&lt;p&gt;如题，每次DSM更新都会导致我的VideoStation没法播放部分有DTS音轨的视频，手动更新了两次，后来又自己写了bash脚本来自动更新，但每次都会有各种各样的小问题，甚是困扰。&lt;/p&gt;
+&lt;p&gt;去网上搜索各种ln和mv backup脚本，每次更新之后脚本内容都不一定完全兼容，太痛苦了。&lt;/p&gt;
+&lt;p&gt;干脆，上Github。&lt;/p&gt;
+&lt;p&gt;果然，已经有人做了自动化修补脚本，在此记录分享一下。&lt;/p&gt;
+&lt;p&gt;有条件的可以直接看源项目：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;项目地址：&lt;/strong&gt;&lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher&#34;&gt;&lt;strong&gt;VideoStation-FFMPEG-Patcher&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果网络条件不好可以参考我下方的搬运内容。&lt;/p&gt;
+&lt;h2 id=&#34;系统支持情况&#34;&gt;&lt;a href=&#34;#系统支持情况&#34; class=&#34;headerlink&#34; title=&#34;系统支持情况&#34;&gt;&lt;/a&gt;系统支持情况&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;DSM 6.2.2-24922 Update 4 (and above)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Video Station 2.4.6-1594 (and above)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SynoCommunity ffmpeg 4.x.x, ffmpeg 5.x.x or ffmpeg 6.x.x (&lt;a href=&#34;https://synocommunity.com/#easy-install&#34;&gt;help&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2023-06-21 DSM7.2亲测可用。&lt;/p&gt;
+&lt;h2 id=&#34;当前支持和非支持功能&#34;&gt;&lt;a href=&#34;#当前支持和非支持功能&#34; class=&#34;headerlink&#34; title=&#34;当前支持和非支持功能&#34;&gt;&lt;/a&gt;当前支持和非支持功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;[DTS or EAC3 or TrueHD] + [Any non HEVC standard video format]&lt;/strong&gt;: ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;[no DTS, no EAC3, no TrueHD] + [HEVC]&lt;/strong&gt;: ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;[DTS or EAC3 or TrueHD] + [HEVC]&lt;/strong&gt;: ⚠️ Not working on architectures where Advanced Media Extensions uses GStreamer for audio decoding&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用方式和可选参数&#34;&gt;&lt;a href=&#34;#使用方式和可选参数&#34; class=&#34;headerlink&#34; title=&#34;使用方式和可选参数&#34;&gt;&lt;/a&gt;使用方式和可选参数&lt;/h2&gt;&lt;h3 id=&#34;前提条件&#34;&gt;&lt;a href=&#34;#前提条件&#34; class=&#34;headerlink&#34; title=&#34;前提条件&#34;&gt;&lt;/a&gt;前提条件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Check that you meet the required &lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher#dependencies&#34;&gt;dependencies&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Install SynoCommunity ffmpeg (&lt;a href=&#34;https://synocommunity.com/#easy-install&#34;&gt;help&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you plan to play HEVC &amp;#x2F; AAC videos, install Advanced Media Extensions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Connect to your NAS using SSH (admin user required) (&lt;a href=&#34;https://www.synology.com/en-global/knowledgebase/DSM/tutorial/General_Setup/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet&#34;&gt;help&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the command &lt;code&gt;sudo -i&lt;/code&gt; to switch to root user&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the &lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher#usage&#34;&gt;following&lt;/a&gt; command (Basic command) to execute the patch&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note : Basic command uses &lt;strong&gt;ffmpeg4&lt;/strong&gt; by default, if you want to use a different ffmpeg version (i.e. &lt;strong&gt;ffmpeg5&lt;/strong&gt; or &lt;strong&gt;ffmpeg6&lt;/strong&gt;), please check the command &lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher#usage&#34;&gt;flags&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You’ll have to re-run the patcher everytime you update VideoStation, Advanced Media Extensions and DSM&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;运行脚本&#34;&gt;&lt;a href=&#34;#运行脚本&#34; class=&#34;headerlink&#34; title=&#34;运行脚本&#34;&gt;&lt;/a&gt;运行脚本&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-06-21_14-28-21.webp&#34; alt=&#34;Snipaste_2023-06-21_14-28-21.webp&#34;&gt;傻瓜脚本，一键运行&lt;/p&gt;
+&lt;p&gt;正常情况下，运行下方的第一行命令即可（没有科学的条件的话，网速会比较慢，耐心等待即可），高端玩家可以自行参考第二行命令及下方表格说明。&lt;/p&gt;
+&lt;p&gt;Basic command:  &lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://raw.githubusercontent.com/AlexPresso/VideoStation-FFMPEG-Patcher/main/patcher.sh | bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;With options:  &lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://raw.githubusercontent.com/AlexPresso/VideoStation-FFMPEG-Patcher/main/patcher.sh | bash -s -- &amp;lt;flags&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flags&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;-a&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Action flag: choose between &lt;code&gt;patch&lt;/code&gt; or &lt;code&gt;unpatch&lt;/code&gt; ; example: &lt;code&gt;-a patch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;patch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-b&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Branch flag: allows you to choose the wrapper branch to use ; example &lt;code&gt;-b main&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;main&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-p&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Proxy flag: allows you to use a proxy to connect to github ; example &lt;code&gt;-p http://my-proxy&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/&#34;&gt;https://github.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-v&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;FFMpeg version flag: allows you to choose desired ffmpeg version ; example &lt;code&gt;-v 5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <updated>2023-06-21T13:32:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1683956999331/</id>
+        <title>为小米 13 刷入 Andy 大佬的 LineageOS20 类原生系统</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1683956999331/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;前提声明&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;本文非正规或官方刷入教程，只是我对自己已知内容的一个汇总；&lt;/li&gt;
+&lt;li&gt;本人非 Rom 的开发人员，也非维护人员，只是按照原作者指引，在自己的小米手机上成功刷入了 GSI 镜像；&lt;/li&gt;
+&lt;li&gt;本人不对你的手机负责，如果由于你的或者我的原因导致手机数据丢失、死机、本人跟本网站不负任何责任；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你大可以把本文当成导航页，来跳转到 XDA 等其他网站去，对此我不排斥，毕竟这只是对我自己刷机流程的一个记录备忘；&lt;/p&gt;
+&lt;h2 id=&#34;关于-ROM-适配者&#34;&gt;&lt;a href=&#34;#关于-ROM-适配者&#34; class=&#34;headerlink&#34; title=&#34;关于 ROM 适配者&#34;&gt;&lt;/a&gt;关于 ROM 适配者&lt;/h2&gt;&lt;p&gt;Rom 的适配者是 &lt;a href=&#34;https://forum.xda-developers.com/t/gsi-13-lineageos-20-trebledroid-based.4517345/&#34;&gt;Andy Yan (XDA)&lt;/a&gt;，首先感谢他的无私工作，让我们可以享受到这个纯净的镜像系统；&lt;/p&gt;
+&lt;p&gt;如果你不是同样的 Rom 适配的相关人员或对手机刷机有基本的知识了解，请不要打扰他，当然了，如果你想给作者打赏，那就没关系，但打赏不意味着你就是大爷，请自重；&lt;/p&gt;
+&lt;p&gt;不要问任何人为什么你手机卡死了、你的手机卡米了等问题，请先自己提前了解好所有要准备的知识和操作，这是互联网的基本礼仪；&lt;/p&gt;
+&lt;p&gt;大佬在酷安跟 XDA 都有账号，如非必然，不要打扰。&lt;/p&gt;
+&lt;h2 id=&#34;关于当前-LineageOS20-镜像可用度说明&#34;&gt;&lt;a href=&#34;#关于当前-LineageOS20-镜像可用度说明&#34; class=&#34;headerlink&#34; title=&#34;关于当前 LineageOS20 镜像可用度说明&#34;&gt;&lt;/a&gt;关于当前 LineageOS20 镜像可用度说明&lt;/h2&gt;&lt;p&gt;刷机后你会失去这些东西，你必须知道&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你会失去所有 MIUI 本地化的优势，NFC 公交卡、本地化快递查询、农历、节假日闹钟等等；&lt;/li&gt;
+&lt;li&gt;你会失去指纹识别（当前还不支持，以后支不支持也不明朗），但为了方便也有别的解决方法，后文会讲；&lt;/li&gt;
+&lt;li&gt;小米的莱卡摄像相关的优化肯定没了，但你可以自己搜索日文大佬的谷歌相机安装，听说还不错，我没试所以不知道；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当然，MIUI自带的反向充电，现在也没有打开的地方了（我反正没找到）&lt;/p&gt;
+&lt;h2 id=&#34;有失必有得，这里也有一些诱人的东西&#34;&gt;&lt;a href=&#34;#有失必有得，这里也有一些诱人的东西&#34; class=&#34;headerlink&#34; title=&#34;有失必有得，这里也有一些诱人的东西&#34;&gt;&lt;/a&gt;有失必有得，这里也有一些诱人的东西&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;干净的不像话的系统，终于不用跟小米广告系统斗智斗勇了&lt;/li&gt;
+&lt;li&gt;漂亮的不像安卓的界面，笑死，安卓原生明明很好看的&lt;/li&gt;
+&lt;li&gt;终于及时的消息通知，MIUI虽然集成了 Google 服务，但 GMS 太残废了，我在 Play store 上下载的应用大部分的推送要么延迟6、7个小时，要么就干脆干没了；现在终于正常了&lt;/li&gt;
+&lt;li&gt;小米百年不修的 Bug ，在原生里直接没有了，包含但不限于：系统字体大大小小粗粗细细非常不统一、B 站放后台十秒钟以上就丢失播放进度（设置后台电池忽略优化也没用）&lt;/li&gt;
+&lt;li&gt;Gboard 输入法终于有了正常的高度，MIUI 上 Gboard 就像被 MIUI 砍掉了一双腿一样，非常地矮，打字体验极差。&lt;/li&gt;
+&lt;li&gt;非常小的系统占用和逻辑异常清晰简洁的系统设置，当然，你也可以理解为简陋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;你还需要知道的非常重要的信息&#34;&gt;&lt;a href=&#34;#你还需要知道的非常重要的信息&#34; class=&#34;headerlink&#34; title=&#34;你还需要知道的非常重要的信息&#34;&gt;&lt;/a&gt;你还需要知道的非常重要的信息&lt;/h2&gt;&lt;h3 id=&#34;解-BL-锁&#34;&gt;&lt;a href=&#34;#解-BL-锁&#34; class=&#34;headerlink&#34; title=&#34;解 BL 锁&#34;&gt;&lt;/a&gt;解 BL 锁&lt;/h3&gt;&lt;p&gt;小米解 Bootloader 锁直接清除数据，还有可能会失去保修，你的手机数据也会全部消失，所以损失你应该懂的，不要没想清楚就瞎折腾。&lt;/p&gt;
+&lt;h3 id=&#34;刷机有风险&#34;&gt;&lt;a href=&#34;#刷机有风险&#34; class=&#34;headerlink&#34; title=&#34;刷机有风险&#34;&gt;&lt;/a&gt;刷机有风险&lt;/h3&gt;&lt;p&gt;这一点是肯定的，有极大可能性，你会刷机失败，手机就变砖了，救砖又是一个非常惊心动魄的经历。&lt;/p&gt;
+&lt;p&gt;正所谓：愿你。。。。，归来。。。。。&lt;/p&gt;
+&lt;p&gt;所以你最好还有另外一部手机作为备用，否则你可能会栽的很惨。&lt;/p&gt;
+&lt;h3 id=&#34;如果你还是想刷机，请一定看到文章末尾再考虑动手&#34;&gt;&lt;a href=&#34;#如果你还是想刷机，请一定看到文章末尾再考虑动手&#34; class=&#34;headerlink&#34; title=&#34;如果你还是想刷机，请一定看到文章末尾再考虑动手&#34;&gt;&lt;/a&gt;如果你还是想刷机，请一定看到文章末尾再考虑动手&lt;/h3&gt;&lt;p&gt;先准备好电脑的adb环境，如果你之前没有接触过，那你还是不要刷机了。真的，赶紧走，现在还来得及。&lt;/p&gt;
+&lt;p&gt;下载好镜像资源，链接如下：&lt;a href=&#34;https://sourceforge.net/projects/andyyan-gsi/files/&#34;&gt;Andy Yan 的镜像&lt;/a&gt;，如果你不知道这些镜像命名意味着什么，赶紧跑。&lt;/p&gt;
+&lt;p&gt;Andy 大佬同样对 &lt;a href=&#34;https://forum.xda-developers.com/t/xiaomi-13-gsi.4572035/page-3&#34;&gt;TD 和 Light&lt;/a&gt; 进行了解释，对此我的理解是：如果你用得到 Google 套件，那你就自己找适合自己的镜像就行了，如果你不清楚自己到底选哪个，那就选下载量最高的那个镜像，人民检查过的，准没错。&lt;/p&gt;
+&lt;p&gt;解 BL 锁，然后手机就重置了，重置后重新简单设置一下进入手机，主要是开一下 adb ，在这个过程中不要升级、不要升级、不要升级&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb reboot fastboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;你应该进入一个使用蓝色字体写着 FASTBOOTD 的字样的界面&lt;/p&gt;
+&lt;p&gt;如果是橘红色的，那你肯定进错了，这也没关系，试试这个：fastboot reboot fastboot&lt;/p&gt;
+&lt;p&gt;我假设你已经下载好了镜像，解压，确保后缀是.img&lt;/p&gt;
+&lt;p&gt;运行：&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastboot flash system lineageos20.xxxxxx.img&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;正常情况下，命令行应该已经在正常走进度了，耐心等待，好了之后，直接跳到第 4 步&lt;/p&gt;
+&lt;p&gt;如果你命令行报错说：找不到lineageos20.xxxxx.img，赶紧滚。&lt;/p&gt;
+&lt;p&gt;如果你的系统还是不小心做了升级，（例如我），你可能会看到类似：Writing ‘system’ FAILED (remote: ‘Partition not found’) 或者 not enough space to resize system_b 的报错&lt;/p&gt;
+&lt;p&gt;别慌，运行：以下命令&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_ext_a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_ext_b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition product_a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition product_b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_ext_a 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_ext_b 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_a 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_b 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition product_a 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition product_b 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这也是在 Andy 大佬的提示下发现的问题，因为小米 13 遵循安卓动态系统分区原则，升级后会把当前系统切换到 b 分区，我们把逻辑分区全部删掉重建为 0 长度后就可以正常刷机了&lt;/p&gt;
+&lt;p&gt;请保证以上命令运行都是 OK 的，然后你就可以重新尝试 fastboot flash system lineageos20.xxxxxx.img ，正常情况下，你就能跟我一样，看到系统在正常刷入了&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastboot reboot recovery&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;手动选择清空数据，然后确认，清空后，你就可以重启了。&lt;/p&gt;
+&lt;p&gt;恭喜你，成功了~&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123633_Trebuchet.webp&#34;&gt;&lt;br&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123706_%E8%AE%BE%E7%BD%AE.webp&#34;&gt;&lt;br&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123648_Trebuchet.webp&#34;&gt;&lt;br&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123735_Trebuchet.webp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;现在哪些功能是好的&#34;&gt;&lt;a href=&#34;#现在哪些功能是好的&#34; class=&#34;headerlink&#34; title=&#34;现在哪些功能是好的&#34;&gt;&lt;/a&gt;现在哪些功能是好的&lt;/h2&gt;&lt;p&gt;基于我自己的体验和测试：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通话测试正常&lt;/li&gt;
+&lt;li&gt;WiFi正常&lt;/li&gt;
+&lt;li&gt;4G正常（我移动卡，截图叹号是因为有关了数据网络，流量用完了），5G没测试，待补充&lt;/li&gt;
+&lt;li&gt;待机正常，没有异常耗电&lt;/li&gt;
+&lt;li&gt;可以正常震动反馈&lt;/li&gt;
+&lt;li&gt;推送啊、一般性地使用啊都正常&lt;/li&gt;
+&lt;li&gt;60 &amp;#x2F; 90 &amp;#x2F; 120 三档刷新帧率，MIUI 自己都只有 60 和 120 ！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;哪些功能是不好的&#34;&gt;&lt;a href=&#34;#哪些功能是不好的&#34; class=&#34;headerlink&#34; title=&#34;哪些功能是不好的&#34;&gt;&lt;/a&gt;哪些功能是不好的&lt;/h2&gt;&lt;p&gt;就像前文提到的，指纹识别不行了，但我用 Smart Lock 曲线救国了，在设置、安全，更多安全设置找到它，把你家添加为常用地点，这样你就可以在家享受不输入密码解锁手机的快感了&lt;/p&gt;
+&lt;p&gt;还有自动亮度，也不能用了。但这个影响不大，手动调节又不是不能用。&lt;/p&gt;
+&lt;h2 id=&#34;回到-MIUI、救砖&#34;&gt;&lt;a href=&#34;#回到-MIUI、救砖&#34; class=&#34;headerlink&#34; title=&#34;回到 MIUI、救砖&#34;&gt;&lt;/a&gt;回到 MIUI、救砖&lt;/h2&gt;&lt;p&gt;当然，任何人可能会失败、反悔、变砖、卡米，我也是，这是我自己亲身经历的救砖流程：&lt;/p&gt;
+&lt;p&gt;到&lt;a href=&#34;https://xiaomirom.com/&#34;&gt;这个网站&lt;/a&gt;下载小米 13 的线刷包、刷机工具，在 fastboot 下连接电脑，把线刷包解压成文件夹，使用工具重新刷回去即可，只要它正常走刷机流程了，那就没问题，我亲测虽然最后给我的反馈结果是Error，但手机重新恢复了 MIUI 的系统并重启了，喔，刷入前右下角最好选不 Lock，友情提示一下。&lt;/p&gt;
+&lt;p&gt;如果你没成功救回来，那我也没办法，所以如果你看到这里，还没开始，或者已经怕了，我劝你赶紧走，刷机有风险，动手需谨慎，走啊！！！&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2023-05-13T18:04:04.000Z</updated>
+    </entry>
+</feed>

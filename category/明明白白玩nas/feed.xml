@@ -1,0 +1,1116 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;明明白白玩nas&#34; category</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2024-04-09T14:31:56.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="网络" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="NAS" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <entry>
+        <id>https://blog.gadore.top/archives/selfHostServiceMove/</id>
+        <title>自托管服务访问入口迁移</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/selfHostServiceMove/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/2f52f8b928f21bcb0ab92ee79b83bce8.webp&#34; alt=&#34;封面图&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;封面图来源说明：下载自：wallhaven，图片来自于：动画剧集《拾荒者统治》截图，如侵权请联系删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;承接上一篇文章，&lt;a href=&#34;/archives/persionalIpAddressApply&#34;&gt;我的公网 IP 被干掉了&lt;/a&gt;，但生活还是要继续。本篇文章记录我的自托管服务迁移方案&lt;/p&gt;
+&lt;p&gt;得益于 Cloudflare 的存在，这次迁移并没有想象中那么复杂。&lt;/p&gt;
+&lt;h2 id=&#34;基于-Halo-托管的个人博客平台&#34;&gt;&lt;a href=&#34;#基于-Halo-托管的个人博客平台&#34; class=&#34;headerlink&#34; title=&#34;基于 Halo 托管的个人博客平台&#34;&gt;&lt;/a&gt;&lt;strong&gt;基于 Halo 托管的个人博客平台&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;情况说明：我的主博客网站使用的是 Github Page 服务，在国内的访问速度不佳，于是我就用 Halo 搭建了这个国内可以访问的平台，并手动同步这两个平台的文章信息。&lt;/li&gt;
+&lt;li&gt;替代方式：使用 Cloudflare 平台的 Workers &amp;amp;&amp;amp; Pages 中的 Page 托管直接镜像整个 Github Page 服务，实现 100% 的网站镜像，同时在国内又拥有一定的访问能力（想比较 Github 的访问速度而言）&lt;/li&gt;
+&lt;li&gt;优点：一劳永逸，设置好之后我几乎没有再碰过这个服务，始终稳定且安全地帮我做网站镜像，包括主站的评论数据也全部同步过来了。&lt;/li&gt;
+&lt;li&gt;缺点：丢失了旧网站的访客数据和评论数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/f70eac12271f473b3ecb90612c06cfba.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Workers &amp;amp;&amp;amp; Pages&lt;/p&gt;
+&lt;h2 id=&#34;Komga-服务、Bitwarden-服务&#34;&gt;&lt;a href=&#34;#Komga-服务、Bitwarden-服务&#34; class=&#34;headerlink&#34; title=&#34;Komga 服务、Bitwarden 服务&#34;&gt;&lt;/a&gt;Komga 服务、Bitwarden 服务&lt;/h2&gt;&lt;p&gt;这两个服务也大大便利了我的日常生活，而且这种服务考虑到数据安全性和迁移数据的复杂程度，仍旧考虑把服务部署在自己的机器里，通过 Cloudflare 的 Zero Trust 下边的 Tunnel 进行代理。&lt;/p&gt;
+&lt;p&gt;Zero Trust 下的 Tunnel 也是老朋友了，用一句话总结就是：它是一个 Cloudflare 帮你搞定服务端、SSL 证书签名的 Frp 反向代理服务。&lt;/p&gt;
+&lt;p&gt;我要做的就是在本机运行一个 Cloudflared 程序，绑定到 Cloudflare 下的某一个 Tunnel ，指定好我的服务端口和公网访问时用到的二级域名即可。&lt;/p&gt;
+&lt;p&gt;比如下图中的设置，如果我要访问机器里的 80 端口，那我直接在公网访问 test.gadore.top 就好了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/400b08152003af37de6e591fff19e859.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tunnel&lt;/p&gt;
+&lt;p&gt;除了带宽不太高，安全性、便携性都有了保障。&lt;/p&gt;
+&lt;h2 id=&#34;Fress-RSS&#34;&gt;&lt;a href=&#34;#Fress-RSS&#34; class=&#34;headerlink&#34; title=&#34;Fress RSS&#34;&gt;&lt;/a&gt;Fress RSS&lt;/h2&gt;&lt;p&gt;这一个月开始，我所使用的 The Old Reader 平台好像调整了他们平台的免费版用户的抓取时间间隔，我通常需要两天时间才能刷新出来平台抓取的 RSS 内容，开始逐渐不好用了。&lt;/p&gt;
+&lt;p&gt;恰逢 Fress RSS 前年开源满十年（始于 2012 年），而且我常用的 Reeder 阅读器支持登陆自托管的 Fress RSS，索性就用它重新搭建了一个 RSS 服务平台。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/f9c58311f7240473e1eb46b2440e6d2d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;分组管理&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/5eb865318479caa767b9f4fb19f114c7.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;抓取时间间隔调整&lt;/p&gt;
+&lt;p&gt;借助 Cloudflare 的 Zero Trust ，也把这个服务正常暴露到了公网，这样抓取时间间隔我就可以灵活控制了，感谢 Fress RSS，感谢开源！&lt;/p&gt;
+&lt;h2 id=&#34;设备组网&#34;&gt;&lt;a href=&#34;#设备组网&#34; class=&#34;headerlink&#34; title=&#34;设备组网&#34;&gt;&lt;/a&gt;设备组网&lt;/h2&gt;&lt;p&gt;这个替代品很多，zero tier、tailscale 等等，使用体验大差不差，就不过多赘述啦。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2024-04-09T14:31:56.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/persionalIpAddressApply/</id>
+        <title>我的公网 IP 被干掉了</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/persionalIpAddressApply/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/f7c30ca29ec08a59da0e720391829da2.webp&#34; alt=&#34;封面图&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;封面图来源说明：下载自：wallhaven，图片来自于：ILLUSION 社开发的游戏《监禁》截图，如侵权请联系删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 &lt;a href=&#34;/archives/1683599671683&#34;&gt;个人家庭宽带公网 IP 升级杂记&lt;/a&gt; 里，我惊喜于公网IP 获取居然如此简单（其实也并没有很简单），还在后续时间里兴高采烈地基于公网 IP 继续折腾了 DDNS 和自动证书续签，正当我享受这些折腾给我带来的便利，短短不到一年时间，我就被打脸了。&lt;/p&gt;
+&lt;p&gt;因为某县的宽带公司作恶，导致我在 2024 年 4 月痛失公网 IP ，我抗争了，但至少在这个县城，我不想跟这些人再多费口舌。&lt;/p&gt;
+&lt;p&gt;如标题所讲，这应该是个人家庭宽带申请的终结，而且可能不仅仅是我。&lt;/p&gt;
+&lt;p&gt;如果改变不了环境，&lt;del&gt;就融入环境?&lt;/del&gt; 就离这种垃圾环境远点儿。&lt;/p&gt;
+&lt;h2 id=&#34;复盘整个过程&#34;&gt;&lt;a href=&#34;#复盘整个过程&#34; class=&#34;headerlink&#34; title=&#34;复盘整个过程&#34;&gt;&lt;/a&gt;复盘整个过程&lt;/h2&gt;&lt;p&gt;这一整个家庭公网 IP 的申请和获取其实非常具有偶然性，它可能跟你当地的电信局、当地人员业务水平等都有非常大的关系，每个市、县的工作人员对上面政策的理解也各有不同，他们理解这样不对，那你的理解对他们而言就不重要了。&lt;/p&gt;
+&lt;h3 id=&#34;2023-04-25，开端&#34;&gt;&lt;a href=&#34;#2023-04-25，开端&#34; class=&#34;headerlink&#34; title=&#34;2023-04-25，开端&#34;&gt;&lt;/a&gt;2023-04-25，开端&lt;/h3&gt;&lt;p&gt;多次跟XX县城宽带业务进行电话沟通，确认只需要 ¥1200 就可以开通上下行 100M 的专线宽带，有固定公网 IP，这也就意味着可以 ICP 备案。&lt;br&gt;我心想：100M 上行，这不得爽死。买云服务器这个上行速度一个月不就得这么多钱。&lt;/p&gt;
+&lt;h3 id=&#34;2023-04-29，办理&#34;&gt;&lt;a href=&#34;#2023-04-29，办理&#34; class=&#34;headerlink&#34; title=&#34;2023-04-29，办理&#34;&gt;&lt;/a&gt;2023-04-29，办理&lt;/h3&gt;&lt;p&gt;带着营业执照和个人身份证，去他们办公室去开通（没错，柜台没有这种业务，得去他们办公室，就那种老干部办公室）。各种操作不在话下，在我还在他们办公室的情况下，他们已经派业务人员上门安装调试了。&lt;/p&gt;
+&lt;p&gt;我办理完成后回去检查，发现上行速度的确是快，下行也 OK，只是 443 端口和 80 端口被屏蔽了，我无论如何无法访问，同时，IP 也做了防 ping ( ICMP 协议)。&lt;/p&gt;
+&lt;p&gt;这就奇怪了，他们没说这些不能用啊，而且我都拿营业执照和身份证去备案了，于是我就跟业务人员进行沟通，得到的回复是：我明天上门看看。&lt;/p&gt;
+&lt;h3 id=&#34;2023-04-30，摆烂&#34;&gt;&lt;a href=&#34;#2023-04-30，摆烂&#34; class=&#34;headerlink&#34; title=&#34;2023-04-30，摆烂&#34;&gt;&lt;/a&gt;2023-04-30，摆烂&lt;/h3&gt;&lt;p&gt;业务人员上门，发现了这些问题，表示他只负责安装网线，保证速率正常，至于我遇到的问题，他表示的确是不正常，但他无能为力，让我联系给我办业务的业务人员。&lt;/p&gt;
+&lt;p&gt;我联系了昨天那个女业务员，她表示她不懂我在说什么，我就说那你问给我上门的技术人员吧，两人沟通一番后，她表示理解，但她只负责收钱、点提交、开通套餐，别的她也不懂，问我能不能就这样用着。&lt;/p&gt;
+&lt;p&gt;我都被她气笑了😊。随便嘲讽了两句，她回复说给我问问他们局技术人员。&lt;/p&gt;
+&lt;p&gt;技术人员说帮我检查下机房，然后过了五分钟，回复我说我那条网线连通性正常，其他他们不知道，就不管了。&lt;/p&gt;
+&lt;p&gt;我心里那股气就莫名起来了，直接生气告诉女业务员：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“如果不解决，我就投诉了，我知道你们都是做自己分内的事，我遇到的问题你们可能没能力解决，也找不到人解决，那我是不是只能到省公司投诉？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;她说她帮我问问市一级的技术员，又是大概半小时，她回复说技术员这两天出去了，他可能这两天有空会给我通电话，让我保持电话通畅。&lt;/p&gt;
+&lt;h3 id=&#34;2023-05-01，答复&#34;&gt;&lt;a href=&#34;#2023-05-01，答复&#34; class=&#34;headerlink&#34; title=&#34;2023-05-01，答复&#34;&gt;&lt;/a&gt;2023-05-01，答复&lt;/h3&gt;&lt;p&gt;今天他们局里没人上班，是漫长的等待的一天，女业务员可能被我昨天的态度吓到，怕我投诉，这一天里两次帮我催市技术员，终于在下午接近5点钟，我接到了市技术员电话。&lt;/p&gt;
+&lt;p&gt;市技术员用很随和的语气给我解释了我的问题为什么会这样：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你的虽然是专线，但因为价格便宜，只能用于直播这一种用途，不能用于个人网站的搭建，也不能通过 443 和 80 端口向外提供任何服务，防 ping 是为了保护个人宽带的安全（我用你保护？）；如果我真的要开通 80 和 443 接口，那就需要再购买商业宽带套餐，大概 3K～5K&amp;#x2F;年，带宽还是这么大。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在我跟技术员结束通话后，女业务员电话过来问我解决问题了没，不过我感觉她更多的是好奇，以及希望从我这里问到以后碰到这种问题该咋办，我转述了技术员的内容，她直接问：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“那你要升级吗，升级的话就明天来找我办好了，我明天正好值班。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（我办你妹啊！！！）&lt;/p&gt;
+&lt;h3 id=&#34;2023-05-02，庆幸&#34;&gt;&lt;a href=&#34;#2023-05-02，庆幸&#34; class=&#34;headerlink&#34; title=&#34;2023-05-02，庆幸&#34;&gt;&lt;/a&gt;2023-05-02，庆幸&lt;/h3&gt;&lt;p&gt;带各种证件取消了我的专线宽带。&lt;br&gt;因为在这几天的时间里，我需要验证各种端口、网线、带宽等性能，所以在技术人员上门期间，我给他买了瓶可乐，然后让他把光猫里的宽带放到我的路由器里，这样我就能用 PPPoE 做拨号，而 PPPoE 拨号就意味着公网 IP！&lt;/p&gt;
+&lt;p&gt;感谢可乐，哈哈。&lt;/p&gt;
+&lt;p&gt;在接下来的半年时间里，基于公网 IP 的各种折腾自然不在话下，感兴趣翻看我博客即可。&lt;/p&gt;
+&lt;h3 id=&#34;2024-01-29，意外&#34;&gt;&lt;a href=&#34;#2024-01-29，意外&#34; class=&#34;headerlink&#34; title=&#34;2024-01-29，意外&#34;&gt;&lt;/a&gt;2024-01-29，意外&lt;/h3&gt;&lt;p&gt;XX公司为封禁 PCDN，把所有月上传流量过大的个人家庭宽带强行降速，直接导致整个宽带处于几乎不可用状态：上行 1M（125kb&amp;#x2F;s），即使一个视频通话都会卡。&lt;br&gt;打电话投诉，说我违规使用宽带，从事 PCDN ，我直接说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你们不是有技术手段可以检测我这里有没有用 PCDN 吗？你检测啊？我也可以给你们签订一个不从事 PCDN 的保证书，我同意签订，你恢复我这个上传带宽，这样行吗？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我感觉我的配合度已经够高了，没想到我再次被这些技术人员的专业性气笑了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你说没有，我们也不知道你到底从事没有，现在上面（市公司）就是监测到你流量比别人大，这就是不行的，你这是什么东西？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（指着我的 NAS ）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“你这个东西肯定违法吧，你先关机，拔掉吧，不然你们这个网恢复不了。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我真的气疯了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“NAS 为什么违法？现在淘宝上京东上都有卖，违法的东西能卖吗？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“这我不知道，你别跟我说这些，要么你断电，把这个设备拔掉，要么你这个网不好恢复。你投诉到上边到时候过来处理的人还是我。最近上头查那个啥 PDN 查的严，你先拔掉，等风头过去了再插上，我们相信你没做违法的事儿，但系统现在就是监测到了你上传流量高，所以你也配合下我们工作，等下我就说没在你这里看到任何可疑设备，好吧，这样我们两边都好。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“嗯，”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我爸也在旁边疯狂使眼色。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“那就先这样吧。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我妥协了，但我很困惑，宽带公司给了我 30M 上行速率，而我不能用，这是什么道理？&lt;/p&gt;
+&lt;p&gt;而且仅仅是因为我上传流量比一般的家庭宽带大，就认定我是 PCDN，也不做任何技术检测，就直接定性，这跟流氓有什么区别？&lt;/p&gt;
+&lt;p&gt;在现实的面前，一切真理都有可能被弯曲，但这还不是结束。&lt;/p&gt;
+&lt;h3 id=&#34;2024-04-07，落幕&#34;&gt;&lt;a href=&#34;#2024-04-07，落幕&#34; class=&#34;headerlink&#34; title=&#34;2024-04-07，落幕&#34;&gt;&lt;/a&gt;2024-04-07，落幕&lt;/h3&gt;&lt;p&gt;下午发现整个宽带都没有网了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重启所有设备，检查所有指示灯，无果&lt;/li&gt;
+&lt;li&gt;业务人员在后台系统查看宽带账号，一切正常&lt;/li&gt;
+&lt;li&gt;县机房人员查网线联通状态，一切正常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;打电话给技术员，技术员上门，把 PPPoE 拨号取消，改为光猫下发方式，网络恢复，公网 IP 彻底消失，询问重新在我路由器拨号的可能性，得到确切的“不可能”的回复。&lt;/p&gt;
+&lt;p&gt;至此，个人宽带申请，在这个小县城，是彻底画上句号了。&lt;/p&gt;
+&lt;p&gt;我所有的基于公网IP的局域网组网、数据同步、密码同步服务、漫画服务、Webdav、国内博客托管服务等等，也都因为公网IP的消失而无法使用了。&lt;/p&gt;
+&lt;p&gt;感谢看到这里的看官，我当然也知道 tailscale，zerotier 可以摆脱公网 IP 组网，但这个速率相比较宽带自带的 30M 真的差太多，很多东西都不得不重新做变化来适应了。&lt;/p&gt;
+&lt;p&gt;这是个人家庭宽带申请的终局，但数字生活还是要继续。&lt;/p&gt;
+&lt;p&gt;To be continue …&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2024-04-08T18:57:16.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1701742335478/</id>
+        <title>群晖自带的 Let&#39;s Encrypt SSL 证书续签经常抽风？试试这个：ZeroSSL</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1701742335478/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;在当今信息化高速发展的社会，Https 的重要性不言而喻，所以对于我这种自己部署了很多服务并且要暴露在外网的人来说，维持自己的 ssl 证书是一件非常重要的事。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本来一年申请一次 ssl 证书，手动部署一下，我也觉得没什么，直到最近发生了这两件事：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;阿里云调整免费证书的有效期，从一年缩短到了三个月（90天）；&lt;/li&gt;
+&lt;li&gt;群晖使用 Let‘s Encrypt 进行自动续签服务不稳定，间歇性抽风、校验 80 端口失败等；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-08_09-31-31.webp&#34;&gt;&lt;br&gt;是时候折腾一下了&lt;/p&gt;
+&lt;p&gt;本文介绍通过 Zerossl 平台配合 acme.sh 脚本实现 Linux 服务器证书自动申请续签、自动部署的全过程，因本人在互联网查询教程期间，发现网上大部分文章均已经过时，部分官方新特性未在大部分教程中看到，遂开此文章，望帮到更多人。&lt;/p&gt;
+&lt;p&gt;如果你有网络条件、设备基础、操作能力，强烈建议你直接参考官方中文指引，毕竟这是实时更新的 wiki ，理论上是不会过期的，也是更加准确的，但如果你命令行操作能力有限，可继续看下去。&lt;/p&gt;
+&lt;p&gt;请注意文章时效（2023-12-05）。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;&lt;a href=&#34;#准备工作&#34; class=&#34;headerlink&#34; title=&#34;准备工作&#34;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;因为我主要是以我自己的亲身经历来讲，所以首先要介绍一下我所使用的服务所走的环境。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我的域名购买自阿里云，现在已将 DNS 解析放到了 Cloudflare ；&lt;/li&gt;
+&lt;li&gt;我之前的证书也是阿里云的1年免费证书，包含：根证书、中间证书、私钥；&lt;/li&gt;
+&lt;li&gt;阿里云、腾讯云证书都只能提供主域名和一个子域名的证书（www），不提供免费泛域名证书；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1、一个-DNS-解析托管平台，本文以-Cloudflare-为例&#34;&gt;&lt;a href=&#34;#1、一个-DNS-解析托管平台，本文以-Cloudflare-为例&#34; class=&#34;headerlink&#34; title=&#34;1、一个 DNS 解析托管平台，本文以 Cloudflare 为例&#34;&gt;&lt;/a&gt;1、一个 DNS 解析托管平台，本文以 Cloudflare 为例&lt;/h3&gt;&lt;p&gt;你需要一个支持 Api 修改 DNS 记录的域名解析商，例如我上边提到的 Cloudflare ，创建账号，并讲你的域名迁移到这里之后，你就可以继续往下操作了。&lt;/p&gt;
+&lt;p&gt;如果你的域名解析服务商是别的平台，比如 GoDaddy、DNSPod 等，也是支持的，不需要迁移到 Cloudflare ，全部支持的列表和操作方法参考 这里（多说一句，其实阿里云也是支持的，但 Cloudflare 有太多好用的特性和功能了）。&lt;/p&gt;
+&lt;h3 id=&#34;2、拿到-Cloudflare-操作-Api-的-Key-和需要修改的域名-ID&#34;&gt;&lt;a href=&#34;#2、拿到-Cloudflare-操作-Api-的-Key-和需要修改的域名-ID&#34; class=&#34;headerlink&#34; title=&#34;2、拿到 Cloudflare 操作 Api 的 Key 和需要修改的域名 ID&#34;&gt;&lt;/a&gt;2、拿到 Cloudflare 操作 Api 的 Key 和需要修改的域名 ID&lt;/h3&gt;&lt;p&gt;一般这种自动化操作脚本都是需要 Key 的，因为接口需要对操作进行身份检查，防止坏人修改你的信息，Key 就是证明你身份的东西。&lt;/p&gt;
+&lt;h4 id=&#34;Global-Api-Key&#34;&gt;&lt;a href=&#34;#Global-Api-Key&#34; class=&#34;headerlink&#34; title=&#34;Global Api Key&#34;&gt;&lt;/a&gt;Global Api Key&lt;/h4&gt;&lt;p&gt;Cloudflare 的 Globalkey 的位置可以参考这个操作步骤：【登陆】【右上角】 【Myprofile】 【Api Tokens】 【Global Api Key】 ，输入密码，复制这个Key，暂存到本地后边用。&lt;/p&gt;
+&lt;h4 id=&#34;Zone-ID&#34;&gt;&lt;a href=&#34;#Zone-ID&#34; class=&#34;headerlink&#34; title=&#34;Zone ID&#34;&gt;&lt;/a&gt;Zone ID&lt;/h4&gt;&lt;p&gt;Zone ID 为你的域名空间ID，加入你有多个域名，那就对应到了多个 Zone ID ，所以需要查询到指定的 Zone ID ，确保修改的是你指定的域名。&lt;/p&gt;
+&lt;p&gt;Cloudflare 的 Zone ID 可以通过这种方式查询到：【登陆，如果已登陆，就点击左上角的图标回到主页】【登录后的默认主页，点击你的域名】【进入后，查看右侧，下方】&lt;/p&gt;
+&lt;h3 id=&#34;3、使用-ssh-登录到你的主机&#34;&gt;&lt;a href=&#34;#3、使用-ssh-登录到你的主机&#34; class=&#34;headerlink&#34; title=&#34;3、使用 ssh 登录到你的主机&#34;&gt;&lt;/a&gt;3、使用 ssh 登录到你的主机&lt;/h3&gt;&lt;p&gt;请确保你拥有这台主机的 root 账户权限，如果没有，也没关系，证书申请不受影响，证书安装和重启你的服务可能需要你自己想办法了。&lt;/p&gt;
+&lt;h3 id=&#34;4、在-Zerossl-创建账号&#34;&gt;&lt;a href=&#34;#4、在-Zerossl-创建账号&#34; class=&#34;headerlink&#34; title=&#34;4、在 Zerossl 创建账号&#34;&gt;&lt;/a&gt;4、在 Zerossl 创建账号&lt;/h3&gt;&lt;p&gt;如果你由于种种原因，没办法执行下边的所有操作，你还可以回到这一步，因为在 Zerossl 官网也可以通过操作网页界面的方式申请到证书，但在网页只能申请到主域名和 www 子域名。&lt;/p&gt;
+&lt;p&gt;泛域名要么使用付费方案（付费可以延长至一年有效期），想白嫖？继续往下看。&lt;/p&gt;
+&lt;h2 id=&#34;操作步骤&#34;&gt;&lt;a href=&#34;#操作步骤&#34; class=&#34;headerlink&#34; title=&#34;操作步骤&#34;&gt;&lt;/a&gt;操作步骤&lt;/h2&gt;&lt;h3 id=&#34;1、下载-acme-sh-到主机&#34;&gt;&lt;a href=&#34;#1、下载-acme-sh-到主机&#34; class=&#34;headerlink&#34; title=&#34;1、下载 acme.sh 到主机&#34;&gt;&lt;/a&gt;1、下载 acme.sh 到主机&lt;/h3&gt;&lt;p&gt;这一步的脚本无需 root 账号运行，普通用户即可，但使用 root 权限也是更好的。&lt;/p&gt;
+&lt;p&gt;请把下方的 &lt;a href=&#34;mailto:&amp;#109;&amp;#121;&amp;#x40;&amp;#x65;&amp;#x78;&amp;#x61;&amp;#109;&amp;#x70;&amp;#108;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&#34;&gt;&amp;#109;&amp;#121;&amp;#x40;&amp;#x65;&amp;#x78;&amp;#x61;&amp;#109;&amp;#x70;&amp;#108;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt; 替换为你申请域名时所填写的邮箱，不要直接复制运行！&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://get.acme.sh | sh -s email=my@example.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_11-15-15.webp&#34;&gt;&lt;br&gt;群晖在这里会报错&lt;/p&gt;
+&lt;p&gt;所以群晖用户需要增加 –force 参数运行&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://get.acme.sh | sh -s email=my@example.com --force&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;还可以使用 wget 来运行，上边如果已经运行成功了，那就没必要再使用 wget 运行了&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget -O -  https://get.acme.sh | sh -s email=my@example.com --force&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_11-23-53.webp&#34;&gt;&lt;br&gt;运行成功后截图&lt;/p&gt;
+&lt;p&gt;脚本会将 acme.sh 下载到当前用户目录下，也就是 ~&amp;#x2F;.acme.sh 目录， 可使用以下方式切换到该目录：&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd ~/.acme.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2、为域名申请一个证书&#34;&gt;&lt;a href=&#34;#2、为域名申请一个证书&#34; class=&#34;headerlink&#34; title=&#34;2、为域名申请一个证书&#34;&gt;&lt;/a&gt;2、为域名申请一个证书&lt;/h3&gt;&lt;p&gt;证书申请需要验证你对当前域名的所有权，通常有三种方式：80 端口、www 根目录验证、增加 DNS 记录验证&lt;/p&gt;
+&lt;p&gt;acme.sh 非常强大，还拥有 standalone 模式，即使你本地啥网络服务也没部署，他也可以自己启动 80 端口，然后临时充当你的网络服务来辅助验证，甚至还可以不使用 80 端口（当你的网络服务有反向代理端口转发的话）！&lt;/p&gt;
+&lt;p&gt;考虑到个人家庭公网 IP 会被屏蔽80端口，强烈建议此类跟我类似情况的用户使用 增加 DNS 记录验证 的方式来验证，因为这是最简单的方式！&lt;/p&gt;
+&lt;p&gt;使用增加 DNS 记录的方式申请证书&lt;br&gt;此方式需要用到上边我们预先申请好的 Cloudflare Key 和 Zone ID。&lt;/p&gt;
+&lt;p&gt;请确保当前的命令行位置是 ~&amp;#x2F;.acme.sh&lt;/p&gt;
+&lt;p&gt;为了方便，建议像我这样操作：&lt;/p&gt;
+&lt;p&gt;新建一个执行文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;touch fetch.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;编辑 fetch.sh，将以下内容放到该文件中，记得修改相应的地方为你自己的内容&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd /path/to/.acme.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export CF_Key=&amp;quot;替换成上边你保存的 KEY&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export CF_Email=&amp;quot; 替换成你申请域名的时候所填写的邮箱&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export CF_Zone_ID=&amp;quot;替换成你的域名所在的 Zone ID&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --issue --dns dns_cf -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --issue --dns dns_cf -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在这行命令中：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;–dns dns_cf，就是以 cloudflare dns生成的方式，通过向我们的 DNS 解析中添加一个 txt 记录来验证你对该域名的所有权，这个过程是程序自动的，你无须做任何操作，等就可以了；&lt;br&gt;-d 你的域名地址 -d ‘&lt;em&gt;.你的域名地址’，这里看起来有两个【 -d 你的域名地址】，但他们作用不一样，前一个是你申请的主域名，后一个是你申请你域名的所有子域名（也可称之为泛域名），比如www.子域名，所以在替换的时候，一定记得：你只能替换 【你的域名地址】内容，其它地方都不要动，尤其是前边的 【&lt;/em&gt;.】 ，不要自作聪明删掉它。&lt;br&gt;编辑好之后，再给这个脚本添加执行权限&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;chmod a+x ./acme.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;执行&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./fetch.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_13-18-55.webp&#34;&gt;&lt;br&gt;执行结果截图&lt;/p&gt;
+&lt;p&gt;如果你跟我一样看到这个结果（主要是绿色的 Cert success），恭喜！你应该已经拿到了证书了。&lt;/p&gt;
+&lt;p&gt;开心一下，继续下一步。&lt;/p&gt;
+&lt;h3 id=&#34;3、安装证书&#34;&gt;&lt;a href=&#34;#3、安装证书&#34; class=&#34;headerlink&#34; title=&#34;3、安装证书&#34;&gt;&lt;/a&gt;3、安装证书&lt;/h3&gt;&lt;p&gt;由于接下来这一步对服务器影响较大，而且部分操作需要 root 权限，对以下操作较为陌生的人，不要轻易运行！！！在线生产环境，不要轻易运行！！！当然，如果是在非生产环境，或者你本身就对这个操作比较熟悉，那没什么问题。&lt;/p&gt;
+&lt;h4 id=&#34;Apache-部署证书的方法&#34;&gt;&lt;a href=&#34;#Apache-部署证书的方法&#34; class=&#34;headerlink&#34; title=&#34;Apache 部署证书的方法&#34;&gt;&lt;/a&gt;Apache 部署证书的方法&lt;/h4&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --install-cert -d 你的域名地址 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--cert-file      /path/to/certfile/in/apache/cert.pem  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--key-file       /path/to/keyfile/in/apache/key.pem  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--fullchain-file /path/to/fullchain/certfile/apache/fullchain.pem \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--reloadcmd     &amp;quot;service apache2 force-reload&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;Nginx-部署证书的方法&#34;&gt;&lt;a href=&#34;#Nginx-部署证书的方法&#34; class=&#34;headerlink&#34; title=&#34;Nginx 部署证书的方法&#34;&gt;&lt;/a&gt;Nginx 部署证书的方法&lt;/h4&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --install-cert -d 你的域名地址 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--key-file       /path/to/keyfile/in/nginx/key.pem  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--fullchain-file /path/to/fullchain/nginx/cert.pem \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--reloadcmd     &amp;quot;service nginx force-reload&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;群晖部署证书的方法&#34;&gt;&lt;a href=&#34;#群晖部署证书的方法&#34; class=&#34;headerlink&#34; title=&#34;群晖部署证书的方法&#34;&gt;&lt;/a&gt;群晖部署证书的方法&lt;/h4&gt;&lt;p&gt;在网上搜索到的大部分教程，在这里都跟我讲，如果要自动部署证书到群晖，需要先这样，再那样，然后如果你 Admin 账号开了两步验证，还需要怎样怎样。听得我头皮发麻，但实际上官方的部署脚本已经升级了，所以看到这里，你们可以不用像我之前那样疑惑了。&lt;/p&gt;
+&lt;p&gt;跟上边一样，新建一个 install.sh 脚本（touch install.sh），把以下内容放到脚本里，并给脚本授予执行权限（chmod a+x .&amp;#x2F;install.sh）&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd /path/to/.acme.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Username=&amp;#x27;群晖管理员用户名&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Password=&amp;#x27;群晖管理员密码&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Certificate=&amp;quot;证书名称&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_DID=&amp;#x27;设备ID&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export SYNO_Create=1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --deploy --deploy-hook synology_dsm -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;关于上边的脚本，主要是设备 ID 那里，如果你没开管理员的两步验证，就无需填写，直接删除这一行即可。&lt;/p&gt;
+&lt;p&gt;用户名跟密码自不用多说，直接填；&lt;/p&gt;
+&lt;p&gt;export SYNO_Certificate&amp;#x3D;”证书名称”，【证书名称】这里替换成英文，给你新申请的证书起一个名称，比如：zerossl；&lt;/p&gt;
+&lt;p&gt;export SYNO_DID&amp;#x3D;’群晖设备ID’，【设备ID】这里，如果你开了两步验证，这里就需要一点点操作，【打开浏览器，使用管理员账号登陆你的群晖，登录的时候选择：记住这台设备】【按 F12 开启调试模式，这个时候会弹出来一个新的界面】【上方一横排菜单里，找到 Application，如果找不到，就把这个窗口拉宽一点儿】【在左侧的 Cookies 菜单点击下方的地址，右侧就会出现很多项内容，找到 ID，把右边的值复制出来，放到上方的”群晖设备ID“处替换即可】&lt;br&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_13-51-04.webp&#34;&gt;&lt;br&gt;获取设备 ID 的地方&lt;/p&gt;
+&lt;p&gt;export SYNO_Create&amp;#x3D;1，脚本会自动处理，所以不管你的证书是不是新建，都可以这么写&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./acme.sh --deploy --deploy-hook synology_dsm -d 你的域名地址 -d &amp;#x27;*.你的域名地址&amp;#x27;，--deploy-hook synology_dsm&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这是专门针对群晖部署的方式，如果你不是群晖设备，请参考其它部署方式。&lt;/p&gt;
+&lt;p&gt;官方脚本已经提供了输入两步验证（OTP code）的输入口了&lt;/p&gt;
+&lt;p&gt;等你输入好两步验证码之后，命令行会跳出新的输入，设备名称那里可以留空，你直接回车即可，脚本会自己默认一个名称的。&lt;/p&gt;
+&lt;p&gt;官方提供了超级多的其它的自动化部署方式，本文不再一一赘述，请参考官方提供的部署方式WIKI。&lt;/p&gt;
+&lt;h3 id=&#34;4、自动化更新证书&#34;&gt;&lt;a href=&#34;#4、自动化更新证书&#34; class=&#34;headerlink&#34; title=&#34;4、自动化更新证书&#34;&gt;&lt;/a&gt;4、自动化更新证书&lt;/h3&gt;&lt;p&gt;在操作步骤第一步的时候，可以看到我的截图里有报错，其实 acme.sh 有检查自动化任务，同时也会在安装时自动部署更新脚本，60天后（证书过期前30天），自动申请延长证书。&lt;/p&gt;
+&lt;p&gt;使用其它不具备运行 crontab 系统的小伙伴（比如群晖），就需要自己到定时任务管理系统去设置一下了，但其实在上方的准备一切正常的情况下，你也只需要运行两个脚本：fetch.sh 获取下新的证书，install.sh 把证书安装到服务器即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_14-40-03.webp&#34;&gt;&lt;br&gt;群晖的任务管理设置入口&lt;/p&gt;
+&lt;p&gt;群晖系统自身带有任务管理，在任务管理里设置好脚本，我也就摆脱了手动之苦，享受全自动化带来的乐趣了~&lt;/p&gt;
+&lt;h2 id=&#34;SSL-证书的意义&#34;&gt;&lt;a href=&#34;#SSL-证书的意义&#34; class=&#34;headerlink&#34; title=&#34;SSL 证书的意义&#34;&gt;&lt;/a&gt;SSL 证书的意义&lt;/h2&gt;&lt;p&gt;老手自不用多说，SSL 是初入编程世界的新人必须要了解的一个知识，本文也是面向较为初级的编程新手，希望大家通过 SSL 证书保护好自己的隐私和数据。&lt;/p&gt;
+&lt;p&gt;其实在各个开发平台，厂商也都半强制要求了开发者所开发的 App 在调用后端接口时，必须要使用 Https 协议而非 Http 进行通信，这也是依赖于 SSL 证书的。&lt;/p&gt;
+&lt;p&gt;所以你还在等什么 ~&lt;/p&gt;
+&lt;p&gt;哦，对了，本来写这篇文章我是有点儿拖延症的，两天了一直没动，直到我打开了 testv 的官网，发现他们 https 证书居然过期了。&lt;br&gt;&lt;img src=&#34;/upload/Snipaste_2023-12-05_14-42-40.webp&#34;&gt;&lt;br&gt;哈！哈！哈！&lt;/p&gt;
+&lt;p&gt;作为老粉丝，我突然就来了兴趣，干脆就通过这种方式来催 testv 更新证书好了。&lt;/p&gt;
+&lt;p&gt;希望他们看到。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <category term="NAS" />
+        <updated>2023-12-05T13:47:07.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1689128493165/</id>
+        <title>当你拥有了第二台NAS，这是你需要了解的数据迁移和同步方式</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1689128493165/"/>
+        <content type="html">&lt;p&gt;自从有了NAS，我的数字生活总算是找到了一个家，数据安全地躺在这里，不受任何方面的干扰：不用担心供应商跑路，不用害怕数据泄漏，也不需要频繁地在各个云服务商之间颠转腾挪。&lt;/p&gt;
+&lt;p&gt;但当自己成了自己数字资产的第一负责人后，一系列的顾忌也接踵而至：NAS 的硬盘坏了怎么办？NAS 坏了怎么办？NAS 丢了怎么办？&lt;/p&gt;
+&lt;p&gt;针对这些问题，网络社区也早有应对答案：RAID 和两地三中心。&lt;/p&gt;
+&lt;p&gt;针对硬盘损坏，倒还是比较容易解决的。比如，群晖 DS 系列本就设计有双盘、四盘的 RAID 冗余盘位，一般情况下，为了自己的数据安全，初始化的时候可以选择 RAID1、RAID5 等拥有数据冗余的磁盘阵列组合，以此来保障我们的数据不会因为单个磁盘的故障而损坏。&lt;/p&gt;
+&lt;p&gt;因为数据是无价的，所以我也不敢忽视低概率的另外俩问题：NAS 的损坏、丢失等问题。这也就涉及到了本文的重点：两地三中心的搭建、数据迁移以及数据同步。&lt;/p&gt;
+&lt;h2 id=&#34;搭建低配两地三中心&#34;&gt;&lt;a href=&#34;#搭建低配两地三中心&#34; class=&#34;headerlink&#34; title=&#34;搭建低配两地三中心&#34;&gt;&lt;/a&gt;搭建低配两地三中心&lt;/h2&gt;&lt;p&gt;两地三中心，顾名思义：你的数据需要存在于三个数据中心，这三个数据中心至少要存在于两个城市。&lt;/p&gt;
+&lt;p&gt;我相信购买 NAS 的大多数其实是跟我一样的工薪阶层，暂时还没考虑互联网企业的数据中心、数据机房那种百万级别的服务器集群建设。所以在搭建费用上，我选择的是最低花销方案。&lt;/p&gt;
+&lt;h3 id=&#34;1、重要数据加密后上云&#34;&gt;&lt;a href=&#34;#1、重要数据加密后上云&#34; class=&#34;headerlink&#34; title=&#34;1、重要数据加密后上云&#34;&gt;&lt;/a&gt;1、重要数据加密后上云&lt;/h3&gt;&lt;p&gt;云服务商的廉价和低使用成本是我不能忽视的一个选择，群晖的 Cloud Sync 应用支持百度、京东、阿里、微软十多家云服务的接入，在拥有第一台 NAS 后，我就把我的重要数据加密备份到了这种云服务商的平台上，这些平台有一个不能忽视的优点：免费。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_20-40-11.webp&#34;&gt;可以接入许多公有云服务进行数据同步&lt;/p&gt;
+&lt;p&gt;你要知道，个人重要资料压缩加密后的空间占用很小，云服务的免费额度已经足够使用了。&lt;/p&gt;
+&lt;p&gt;而且这些云服务没有任何运维成本、付费后你是爹（比如下载百度云的时候，一次月付即可完成备份数据的下载）。&lt;/p&gt;
+&lt;h3 id=&#34;2、第二台-NAS-的购置&#34;&gt;&lt;a href=&#34;#2、第二台-NAS-的购置&#34; class=&#34;headerlink&#34; title=&#34;2、第二台 NAS 的购置&#34;&gt;&lt;/a&gt;2、第二台 NAS 的购置&lt;/h3&gt;&lt;p&gt;在&lt;a href=&#34;/archives/1683599671683&#34;&gt;个人家庭宽带升级&lt;/a&gt;中有提到，因为本人是大城市打工仔一名，房子自然是买不起的。而且受限于租房的网络条件会因为换租频繁变动，我就在五一假期期间将 NAS 放到了我的老家去了。不但解决了公网 IP 的问题，同时还让我免去了在大城市打工期间频繁地跟房东、运营商、小区网络管理员等人沟通的成本。但这也带来另一个问题：公网访问的网速受限严重。&lt;/p&gt;
+&lt;p&gt;当时买 NAS 的初衷就是可以随心看自己喜欢看的剧集，但公网速度有时候会极大地剥夺这份快乐：网速差。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-21-10.webp&#34;&gt;在小小的屏幕上转啊转啊转啊转啊，就是不播放&lt;/p&gt;
+&lt;p&gt;起初我是打算买块硬盘挂到我的台式机，然后在台式机上部署各种各样的服务来最低程度实现第二台 NAS 的。&lt;/p&gt;
+&lt;p&gt;我可以先把数据同步到我的 Windows 的机械硬盘上，然后在此基础上再进行各种数据服务拓展。&lt;/p&gt;
+&lt;p&gt;但经过了一周的数据迁移和使用后，我发现这个方案太蹩脚了，而且使用起来非常不方便！&lt;/p&gt;
+&lt;h4 id=&#34;PC-NAS-耗电难忍&#34;&gt;&lt;a href=&#34;#PC-NAS-耗电难忍&#34; class=&#34;headerlink&#34; title=&#34;PC NAS 耗电难忍&#34;&gt;&lt;/a&gt;PC NAS 耗电难忍&lt;/h4&gt;&lt;p&gt;NAS 低功耗的特点可以让我长时间保持机器开机而不用心疼电费，但PC主机待机功耗就高达40 ~ 50W（据我所知，这还不算最高的）,更不要说我当时组装 PC 的时候买的扇热风扇是自带闪瞎眼 RGB 灯效的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/IMG_0371%20(1).webp&#34;&gt;我家猫那几天晚上一直在这种蹦迪环境中&lt;/p&gt;
+&lt;h4 id=&#34;系统体验一言难尽&#34;&gt;&lt;a href=&#34;#系统体验一言难尽&#34; class=&#34;headerlink&#34; title=&#34;系统体验一言难尽&#34;&gt;&lt;/a&gt;系统体验一言难尽&lt;/h4&gt;&lt;p&gt;家里 PC 还同时承担着游戏主机和休闲主机的任务，暂时不能给他换成 TrueNAS 、Unraid 等第三方 NAS 系统。&lt;/p&gt;
+&lt;p&gt;因此我就尝试在 Windows 上搭建我的一系列服务：Docker、Webdav、Smb，然后再基于 Docker 进行 Emby ，Komga 等服务的搭建。&lt;/p&gt;
+&lt;p&gt;但我发现这一点也非常不好实现。&lt;/p&gt;
+&lt;p&gt;首先 Windows 的 IIS 自带的 Webdav Server 最大只支持 4GB 的文件传输（就这都得改注册表才能实现），也就是说超过 4GB 的文件就无法同步过来；那我只好换方案，我用 Smb 协议把文件夹挂载到 Windows 本地，再使用 FreeFileSync 进行数据同步，算是解决了最大文件限制的问题。&lt;/p&gt;
+&lt;p&gt;但当我把 Docker 中的各个镜像也启动之后，另一个窒息的问题问题来了：我的 16GB 的内存怎么就只剩下 2GB 可用了？！（各种服务存在的同时还用电脑做娱乐或者办公的场景）&lt;/p&gt;
+&lt;p&gt;干脆再买台 NAS 吧，看着折腾了好几天之后心情愈加难受的镜中的我说道。&lt;/p&gt;
+&lt;p&gt;于是就有了今天的主角：DS220+。&lt;/p&gt;
+&lt;p&gt;别问，问就是穷；再问就破防（刚买了半个月，DS224+ 发布了，处理器性能翻倍&amp;gt;_&amp;lt;）。&lt;/p&gt;
+&lt;h3 id=&#34;3、群晖-NAS-间的数据同步软件&#34;&gt;&lt;a href=&#34;#3、群晖-NAS-间的数据同步软件&#34; class=&#34;headerlink&#34; title=&#34;3、群晖 NAS 间的数据同步软件&#34;&gt;&lt;/a&gt;3、群晖 NAS 间的数据同步软件&lt;/h3&gt;&lt;p&gt;早就听说了群晖的数据同步非常完善，所以我也在机器到手后把该装的不该装的都装了一遍。结果发现最终能使用的其实非常少。&lt;/p&gt;
+&lt;p&gt;先说我的条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;已有的主机是 DS 920+，拥有 20GB 的内存和10TB 的存储空间 ，8TB 存主数据（raid 5）， 2TB 用来当下载缓存盘（无Raid）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我有公网域名，通过 DDNS 指向一个动态分配的公网 IP；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我在主 NAS 上部署了 OpenVPN 来组网，保证我的设备可以在全国各地有网的环境下相互联通；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当前新买的从机是 DS220+，配备两块16TB 的磁盘组 Raid1；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的诉求：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我的两台NAS的主数据相互同步，又可以相互独立使用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;同步数据时，可以在公网的条件下进行，但又要有一定程度的安全性（ frp 完全暴露要不得）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下是我这几天设置数据迁移过程中的一些使用体验，有任何问题欢迎指正。&lt;/p&gt;
+&lt;h4 id=&#34;Hyper-Backup&#34;&gt;&lt;a href=&#34;#Hyper-Backup&#34; class=&#34;headerlink&#34; title=&#34;Hyper Backup&#34;&gt;&lt;/a&gt;Hyper Backup&lt;/h4&gt;&lt;p&gt;功能：这个软件是把系统整机备份到另一台设备，备份后就相当于是一个加密的压缩包，你反正没法找文件，也没法从中读取任何数据，只能再找一个机器恢复出来。&lt;/p&gt;
+&lt;p&gt;感受：就像你可以把 iPhone 连接你的电脑，点击备份整机数据。然后等买了新手机后，再点击从备份中恢复一样。&lt;/p&gt;
+&lt;p&gt;优点：可以备份几乎所有数据。&lt;/p&gt;
+&lt;p&gt;缺点：只是整机备份，备份后的数据是一个压缩包，无法作为正常可识别数据供我使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_20-57-47.webp&#34;&gt;备份文件夹、备份套件等等，非常细致&lt;/p&gt;
+&lt;h4 id=&#34;Migration-Assistant&#34;&gt;&lt;a href=&#34;#Migration-Assistant&#34; class=&#34;headerlink&#34; title=&#34;Migration Assistant&#34;&gt;&lt;/a&gt;Migration Assistant&lt;/h4&gt;&lt;p&gt;功能：这个迁移助手可以提供 NAS 整机的数据和资料迁移。迁移期间你的很多数据文件夹和服务都会被锁死无法使用，而且迁移后它就结束工作了，你这边的文件如果有什么变动的话，它是不会帮你实时同步的。&lt;/p&gt;
+&lt;p&gt;优点：就相当于安卓或者 iOS 换机，如果是手中有台 NAS 并且又买了一台新的 NAS 的话，可以使用该功能进行数据的拷贝，会方便不少。&lt;/p&gt;
+&lt;p&gt;缺点：迁移完成后数据不再同步，迁移过程中还会停用很多服务，而且非常依赖网络环境，网络不稳定会导致任务卡住直接失败，需要重新来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-01-40.webp&#34;&gt;NAS 版换机助手&lt;/p&gt;
+&lt;h4 id=&#34;High-Avaliablity&#34;&gt;&lt;a href=&#34;#High-Avaliablity&#34; class=&#34;headerlink&#34; title=&#34;High Avaliablity&#34;&gt;&lt;/a&gt;High Avaliablity&lt;/h4&gt;&lt;p&gt;功能：它可以把两台 NAS 主机组成一个热备，实时同步两台机器的所有数据和状态，当其中一台宕机之后，另一台立刻顶上去，让用户可以稳定使用网盘服务。&lt;/p&gt;
+&lt;p&gt;感受：几乎没有缺点，这个套件其实非常接近我的需求，但它有一个强制性要求：两台主机必须使用物理网线点对点连接（心跳线），无法跨局域网使用。&lt;/p&gt;
+&lt;p&gt;唉，总之对我而言：不适用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-05-10.webp&#34;&gt;这个套件适合小型工作室使用&lt;/p&gt;
+&lt;h4 id=&#34;Cloud-Sync&#34;&gt;&lt;a href=&#34;#Cloud-Sync&#34; class=&#34;headerlink&#34; title=&#34;Cloud Sync&#34;&gt;&lt;/a&gt;Cloud Sync&lt;/h4&gt;&lt;p&gt;这款软件可以让你的NAS接入许多商用云，公有云等开放的协议接口，刚买 NAS 的时候用它把百度云中的数据都下载下来了。这次我重新研究了一下它的用途，发现这个套件非常不得了！&lt;/p&gt;
+&lt;p&gt;功能：它的使用步骤就两步：连接主机、设置同步任务。&lt;/p&gt;
+&lt;p&gt;连接主机：支持通用的 Webdav 协议、百度云、腾讯云 COS、阿里云对象存储、OneDrive 等等，只需要登录一次。&lt;/p&gt;
+&lt;p&gt;同步任务：你可以设置多个同步任务，每个任务包含一个本地路径和远程路径，你可以设置同步方向是双向或单项，同步任务可以添加多个。&lt;/p&gt;
+&lt;p&gt;这款软件完全适用我的需求！&lt;/p&gt;
+&lt;p&gt;缺点：相比较前三个套件，CloudSync 只能同步用户新建的共享文件夹下的数据，如果数据没有存在共享文件夹下（比如 NoteStation），那就无法进行数据同步了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-20_12-20-42.webp&#34;&gt;一个链接下添加多个同步任务&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-20_12-21-04.webp&#34;&gt;可以设置同步计划，如果感觉晚上硬盘太吵可以设置晚上不同步&lt;/p&gt;
+&lt;h4 id=&#34;Synology-Drive-ShareSync-2023-07-31-16-00补充更新&#34;&gt;&lt;a href=&#34;#Synology-Drive-ShareSync-2023-07-31-16-00补充更新&#34; class=&#34;headerlink&#34; title=&#34;Synology Drive ShareSync (2023-07-31 16:00补充更新)&#34;&gt;&lt;/a&gt;Synology Drive ShareSync (2023-07-31 16:00补充更新)&lt;/h4&gt;&lt;p&gt;在网络上跟别人讨论后，发现还有一个套件也能实现跨网络的文件夹同步，甚至不需要公网 IP ，只需要一个quickconnect id，遂赶紧补充到这里。&lt;/p&gt;
+&lt;p&gt;功能：可以使用 qc id 进行同步，无需公网 IP 、可以选择开启了团队文件夹的所有文件数据&lt;/p&gt;
+&lt;p&gt;感受：这个群晖自带的套件使用更加简洁方便（相比较Cloud Sync），对两台 NAS 的要求也更少，更适合不喜欢折腾的人使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-31_16-10-47.webp&#34; alt=&#34;Snipaste_2023-07-31_16-10-47.webp&#34;&gt;使用前提：在DriveServer控制台为共享文件夹开启团队文件夹功能&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-31_16-13-16.webp&#34;&gt;也拥有类似Cloud Sync的同步逻辑设置，但没有任务执行时间策略调整&lt;/p&gt;
+&lt;h3 id=&#34;4、网络&#34;&gt;&lt;a href=&#34;#4、网络&#34; class=&#34;headerlink&#34; title=&#34;4、网络&#34;&gt;&lt;/a&gt;4、网络&lt;/h3&gt;&lt;p&gt;网络的联通其实是一切跨互联网同步的基础，关于公网 IP 和动态域名的映射问题，我在&lt;a href=&#34;/archives/1683599671683&#34;&gt;&lt;strong&gt;个人家庭宽带公网 IP 升级杂记&lt;/strong&gt;&lt;/a&gt;里也提到过，不再赘述。&lt;/p&gt;
+&lt;p&gt;这里单独说一下当时让我头疼了很久但最后发现很简单的一件事：Openvpn 的连接。&lt;/p&gt;
+&lt;p&gt;在 PC 上也好，移动端也好，我都可以非常简单地找到客户端来导入我的配置文件并登陆我的主机，完成设备组网并连接到我的主机上。但群晖的商店却无论如何找不到这个客户端软件，开源社区也是。&lt;/p&gt;
+&lt;p&gt;我当时在想：难道没人这么用过？&lt;/p&gt;
+&lt;p&gt;结果答案却让我笑掉大牙：依次打开【控制面板】【网络】【新增】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-07-26_21-11-24.webp&#34;&gt;看到熟悉的字段了吗？&lt;/p&gt;
+&lt;p&gt;喔，我的老伙计，原来你在这啊！&lt;/p&gt;
+&lt;p&gt;这是我的&lt;a href=&#34;/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/&#34;&gt;明明白白玩NAS系列&lt;/a&gt;的第&lt;strong&gt;六&lt;/strong&gt;篇文章了，如果你对这个系列的其他文章感兴趣，可以访问&lt;a href=&#34;/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/&#34;&gt;这里&lt;/a&gt;查看。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <category term="NAS" />
+        <updated>2023-07-26T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1687328820096/</id>
+        <title>群晖DSM系统下的VideoStation修改ffmpeg以支持DTS、AAC、HEVC等播放格式</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1687328820096/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/bliss%20600dpi.webp&#34; alt=&#34;bliss 600dpi.webp&#34;&gt;前几天微软发布了WindowsXP 经典蓝天白云壁纸，但是是重制版，我找到了这个原版4K分辨率的，趁此机会发出来好了&lt;/p&gt;
+&lt;p&gt;如题，每次DSM更新都会导致我的VideoStation没法播放部分有DTS音轨的视频，手动更新了两次，后来又自己写了bash脚本来自动更新，但每次都会有各种各样的小问题，甚是困扰。&lt;/p&gt;
+&lt;p&gt;去网上搜索各种ln和mv backup脚本，每次更新之后脚本内容都不一定完全兼容，太痛苦了。&lt;/p&gt;
+&lt;p&gt;干脆，上Github。&lt;/p&gt;
+&lt;p&gt;果然，已经有人做了自动化修补脚本，在此记录分享一下。&lt;/p&gt;
+&lt;p&gt;有条件的可以直接看源项目：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;项目地址：&lt;/strong&gt;&lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher&#34;&gt;&lt;strong&gt;VideoStation-FFMPEG-Patcher&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果网络条件不好可以参考我下方的搬运内容。&lt;/p&gt;
+&lt;h2 id=&#34;系统支持情况&#34;&gt;&lt;a href=&#34;#系统支持情况&#34; class=&#34;headerlink&#34; title=&#34;系统支持情况&#34;&gt;&lt;/a&gt;系统支持情况&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;DSM 6.2.2-24922 Update 4 (and above)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Video Station 2.4.6-1594 (and above)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SynoCommunity ffmpeg 4.x.x, ffmpeg 5.x.x or ffmpeg 6.x.x (&lt;a href=&#34;https://synocommunity.com/#easy-install&#34;&gt;help&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2023-06-21 DSM7.2亲测可用。&lt;/p&gt;
+&lt;h2 id=&#34;当前支持和非支持功能&#34;&gt;&lt;a href=&#34;#当前支持和非支持功能&#34; class=&#34;headerlink&#34; title=&#34;当前支持和非支持功能&#34;&gt;&lt;/a&gt;当前支持和非支持功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;[DTS or EAC3 or TrueHD] + [Any non HEVC standard video format]&lt;/strong&gt;: ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;[no DTS, no EAC3, no TrueHD] + [HEVC]&lt;/strong&gt;: ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;[DTS or EAC3 or TrueHD] + [HEVC]&lt;/strong&gt;: ⚠️ Not working on architectures where Advanced Media Extensions uses GStreamer for audio decoding&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用方式和可选参数&#34;&gt;&lt;a href=&#34;#使用方式和可选参数&#34; class=&#34;headerlink&#34; title=&#34;使用方式和可选参数&#34;&gt;&lt;/a&gt;使用方式和可选参数&lt;/h2&gt;&lt;h3 id=&#34;前提条件&#34;&gt;&lt;a href=&#34;#前提条件&#34; class=&#34;headerlink&#34; title=&#34;前提条件&#34;&gt;&lt;/a&gt;前提条件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Check that you meet the required &lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher#dependencies&#34;&gt;dependencies&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Install SynoCommunity ffmpeg (&lt;a href=&#34;https://synocommunity.com/#easy-install&#34;&gt;help&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you plan to play HEVC &amp;#x2F; AAC videos, install Advanced Media Extensions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Connect to your NAS using SSH (admin user required) (&lt;a href=&#34;https://www.synology.com/en-global/knowledgebase/DSM/tutorial/General_Setup/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet&#34;&gt;help&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the command &lt;code&gt;sudo -i&lt;/code&gt; to switch to root user&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the &lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher#usage&#34;&gt;following&lt;/a&gt; command (Basic command) to execute the patch&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note : Basic command uses &lt;strong&gt;ffmpeg4&lt;/strong&gt; by default, if you want to use a different ffmpeg version (i.e. &lt;strong&gt;ffmpeg5&lt;/strong&gt; or &lt;strong&gt;ffmpeg6&lt;/strong&gt;), please check the command &lt;a href=&#34;https://github.com/AlexPresso/VideoStation-FFMPEG-Patcher#usage&#34;&gt;flags&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You’ll have to re-run the patcher everytime you update VideoStation, Advanced Media Extensions and DSM&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;运行脚本&#34;&gt;&lt;a href=&#34;#运行脚本&#34; class=&#34;headerlink&#34; title=&#34;运行脚本&#34;&gt;&lt;/a&gt;运行脚本&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-06-21_14-28-21.webp&#34; alt=&#34;Snipaste_2023-06-21_14-28-21.webp&#34;&gt;傻瓜脚本，一键运行&lt;/p&gt;
+&lt;p&gt;正常情况下，运行下方的第一行命令即可（没有科学的条件的话，网速会比较慢，耐心等待即可），高端玩家可以自行参考第二行命令及下方表格说明。&lt;/p&gt;
+&lt;p&gt;Basic command:  &lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://raw.githubusercontent.com/AlexPresso/VideoStation-FFMPEG-Patcher/main/patcher.sh | bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;With options:  &lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl https://raw.githubusercontent.com/AlexPresso/VideoStation-FFMPEG-Patcher/main/patcher.sh | bash -s -- &amp;lt;flags&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flags&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;-a&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Action flag: choose between &lt;code&gt;patch&lt;/code&gt; or &lt;code&gt;unpatch&lt;/code&gt; ; example: &lt;code&gt;-a patch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;patch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-b&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Branch flag: allows you to choose the wrapper branch to use ; example &lt;code&gt;-b main&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;main&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-p&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Proxy flag: allows you to use a proxy to connect to github ; example &lt;code&gt;-p http://my-proxy&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/&#34;&gt;https://github.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-v&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;FFMpeg version flag: allows you to choose desired ffmpeg version ; example &lt;code&gt;-v 5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <updated>2023-06-21T13:32:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1683599671683/</id>
+        <title>个人家庭宽带公网 IP 升级杂记</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1683599671683/"/>
+        <content type="html">&lt;p&gt;首先先说结论：升级失败了，但在升级过程中，我也找到了别的途径来满足我最初的需求。&lt;/p&gt;
+&lt;h2 id=&#34;一个服务器迁移带来的一系列问题&#34;&gt;&lt;a href=&#34;#一个服务器迁移带来的一系列问题&#34; class=&#34;headerlink&#34; title=&#34;一个服务器迁移带来的一系列问题&#34;&gt;&lt;/a&gt;一个服务器迁移带来的一系列问题&lt;/h2&gt;&lt;p&gt;现在作为一个程序员，谁还没有一个云服务器了（也就刚买了两年的我说到）。&lt;/p&gt;
+&lt;p&gt;但当你真正去使用这个云服务器做一些好玩的事情的时候，你会发现处处都是坑。&lt;/p&gt;
+&lt;p&gt;本文旨在分享一个普通人角度下获取公网 IP 的尝试，并非严谨的教程文，请悉知。&lt;/p&gt;
+&lt;h3 id=&#34;高昂的云服务器续费和升级&#34;&gt;&lt;a href=&#34;#高昂的云服务器续费和升级&#34; class=&#34;headerlink&#34; title=&#34;高昂的云服务器续费和升级&#34;&gt;&lt;/a&gt;高昂的云服务器续费和升级&lt;/h3&gt;&lt;p&gt;我现在使用的域名指向的是我一年前购买腾讯云服务器赠送的公网 IP，使用挺方便，我也正常走完了备案流程开启了服务器的 443 端口和 80 端口，但就这一年的体验来说并不算特别好，因为当时买的丐版套餐，带宽只有可怜的 10M，换算成我们平时使用的速率，也就是 1.25Mb&amp;#x2F;s ，再加上 frp 内网穿透导致的宽带打折……，我也查了升级 20M 的价格后，一年要多交 11000 元，杀了我吧。&lt;/p&gt;
+&lt;p&gt;事实上，只是保持当前的配置进行续费的情况下，价格就已经非常不划算了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-05-12_15-16-13.webp&#34;&gt;刚刚购买时3年才500多块钱，现在续费一年一千多&lt;/p&gt;
+&lt;h3 id=&#34;个人申请固定-IP-的可能性&#34;&gt;&lt;a href=&#34;#个人申请固定-IP-的可能性&#34; class=&#34;headerlink&#34; title=&#34;个人申请固定 IP 的可能性&#34;&gt;&lt;/a&gt;个人申请固定 IP 的可能性&lt;/h3&gt;&lt;p&gt;换个思路，云服务器我看中的不就是他的公网 IP 吗，那我干脆直接去弄个公网 IP 不就行了，至于性能比它强的设备，树莓派4、Nas、电脑、甚至装了 Termux 的安卓手机都是可以胜任的。&lt;/p&gt;
+&lt;p&gt;这个五一，我提前跟老家县城的宽带公司进行了多次沟通，了解到他们现在有一个优惠政策，可以让我用 2900元&amp;#x2F;年的价格享受到上下行同为 200M 的宽带，还送我固定 IP 地址，这不比云服务器香多了？&lt;/p&gt;
+&lt;p&gt;于是我就安排了出行计划，正好趁这次回老家的机会把我服务器上边的服务也迁移掉。&lt;/p&gt;
+&lt;h3 id=&#34;联通宽带公司提供的公网-IP-的问题&#34;&gt;&lt;a href=&#34;#联通宽带公司提供的公网-IP-的问题&#34; class=&#34;headerlink&#34; title=&#34;联通宽带公司提供的公网 IP 的问题&#34;&gt;&lt;/a&gt;联通宽带公司提供的公网 IP 的问题&lt;/h3&gt;&lt;p&gt;五一当天，我用老家店里的营业执照申请了安装，师傅当天就上门了，速度非常到位。等宽带师傅装好新的光纤后，我测试了一下网络情况，公网 IP 确实是给我了，但运营商屏蔽了所有的常用端口和协议：80、443、ICMP（ ping 协议）。&lt;/p&gt;
+&lt;p&gt;本来以为这就是小问题，像云服务器一样正常走一下备案流程就可以正常开放了。但我没想到这反倒成了最难处理的一环。&lt;/p&gt;
+&lt;h4 id=&#34;安装师傅和宽带办理业务员的业务熟练度问题&#34;&gt;&lt;a href=&#34;#安装师傅和宽带办理业务员的业务熟练度问题&#34; class=&#34;headerlink&#34; title=&#34;安装师傅和宽带办理业务员的业务熟练度问题&#34;&gt;&lt;/a&gt;安装师傅和宽带办理业务员的业务熟练度问题&lt;/h4&gt;&lt;p&gt;首先，安装师傅知道我这个公网IP没有办法 ping 通肯定是有问题的，我也当场给他演示了 443 端口跟 80 端口不通，但他表示：我就是个扯网线的，我不懂，你可以联系业务员。然后他就走了。&lt;/p&gt;
+&lt;p&gt;之后，我电话联系给我办理宽带的业务员，她表示她也不懂我在说什么，但她在他们公司的系统操作都是正确的，所以我这边应该没有问题的，她甚至希望我赶紧交钱；我又好气又好笑地让她自己问他们宽带安装师傅装好了没，有没有问题，她们之间沟通完之后表示给我往上反映。&lt;/p&gt;
+&lt;p&gt;接着，我先后收到了他们的技术专员、技术总监、区技术员的电话，他们问了各种情况后统一表示：对啊，你这个肯定有问题啊，但我也不知道什么问题，就挂掉了。&lt;/p&gt;
+&lt;p&gt;我这个时候真的生气了，我直接跟业务员说，这是你们公司的问题，不要把问题抛给我。她表示她继续向上反映。&lt;/p&gt;
+&lt;h4 id=&#34;终于，一盆冷水泼下&#34;&gt;&lt;a href=&#34;#终于，一盆冷水泼下&#34; class=&#34;headerlink&#34; title=&#34;终于，一盆冷水泼下&#34;&gt;&lt;/a&gt;终于，一盆冷水泼下&lt;/h4&gt;&lt;p&gt;当天下午三点左右，我终于接到一个靠谱的人打来的电话，他是市宽带公司的业务专员，他说现在宽带公司统一都是把这些端口（80、443、8080 等）和协议给屏蔽掉的，个人宽带账号是无法使用这些的，我问那我备案呢，他说备案也不行，你这个套餐不支持这个，需要再升级到 3500元&amp;#x2F;年的 10M 带宽，我当时还怀疑我听错了，我确认到：“10M？上下行 1.25Mb&amp;#x2F;s 的那种吗？”，他说对。&lt;/p&gt;
+&lt;p&gt;那确定了这些问题之后，我通过简单的端口测试发现他们关于公网 IP 的常用端口的屏蔽所言非虚，因为除了这些端口外，其他非常用端口都是可以正常使用的。这种情况在普通家用宽带也适用。&lt;/p&gt;
+&lt;p&gt;那就继续用家用宽带吧，在一瓶可乐的_贿赂_下，宽带小哥把拨号放到了我自己的路由器上，动态 IP 到手~。IP 变动也没什么，我们早就有成熟的解决方案了不是嘛。&lt;/p&gt;
+&lt;h2 id=&#34;用-Cloudflare-实现-DDNS&#34;&gt;&lt;a href=&#34;#用-Cloudflare-实现-DDNS&#34; class=&#34;headerlink&#34; title=&#34;用 Cloudflare 实现 DDNS&#34;&gt;&lt;/a&gt;用 Cloudflare 实现 DDNS&lt;/h2&gt;&lt;p&gt;DDNS（Dynamic Domain Name Server，动态域名解析服务），也就是通过一个固定域名来动态指向不同的 IP 。&lt;/p&gt;
+&lt;p&gt;我这里使用的是 Cloudflare，所以就在 github 里搜索了一下 “Cloudflare ddns” 关键字，找到了一个适合自己的部署方式。&lt;a href=&#34;https://github.com/imki911/DdnsOnCloudFlare&#34;&gt;**&lt;br&gt;DdnsOnCloudFlare**&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-05-12_15-08-24.webp&#34;&gt;&lt;strong&gt;自动 DDNS 更新日志&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用-CloudFlare-绕过网站-80-和-443-端口&#34;&gt;&lt;a href=&#34;#用-CloudFlare-绕过网站-80-和-443-端口&#34; class=&#34;headerlink&#34; title=&#34;用 CloudFlare 绕过网站 80 和 443 端口&#34;&gt;&lt;/a&gt;用 CloudFlare 绕过网站 80 和 443 端口&lt;/h2&gt;&lt;p&gt;搞定了这个域名解析之后，还有另一个棘手的问题：网站端口 80 跟 443。&lt;/p&gt;
+&lt;p&gt;一个成熟的网站自然不能让用户访问的时候还得自己输入一个奇奇怪怪的端口吧。&lt;/p&gt;
+&lt;p&gt;比如 sspai.com，看起来很正常，也很好记。&lt;/p&gt;
+&lt;p&gt;但是 sspai.com:28934 ，看起来就很奇怪了，用户也很难记住这个数字。&lt;/p&gt;
+&lt;p&gt;好在 Cloudflare 有另一个杀手锏：端口回源转发。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-05-12_15-13-06.webp&#34;&gt;端口回源设置&lt;/p&gt;
+&lt;p&gt;通过这个特性，当用户访问我们域名的 443 或 80 端口时，Cloudflare 可以帮我们把 443 端口转写成我们自定义的端口（例如 3000 ）再发往我们的指定服务。这样就可以完美解决 443 端口被运营商屏蔽的问题了。&lt;/p&gt;
+&lt;h2 id=&#34;可靠性？&#34;&gt;&lt;a href=&#34;#可靠性？&#34; class=&#34;headerlink&#34; title=&#34;可靠性？&#34;&gt;&lt;/a&gt;可靠性？&lt;/h2&gt;&lt;p&gt;其实到了这一步，除了解决问题的愉悦之外，这样的稳定性和安全性也要打上一个大大的问号。&lt;/p&gt;
+&lt;p&gt;前文提到的宽带公司的业务员有在沟通中提到：“理论上来讲，虽然（家庭宽带）屏蔽了常用关键端口，但其他端口你还是可以正常用的，但这个使用是没有经过我们公司的正式许可的，只是说你暂时可以使用这些端口。”&lt;/p&gt;
+&lt;p&gt;我也追问：“那我应该找谁去做这个报备呢？”&lt;/p&gt;
+&lt;p&gt;回：“信息局，具体我也不清楚，你可以自己去网上了解一下。”&lt;/p&gt;
+&lt;p&gt;总的来讲，宽带公司在任何时候屏蔽我的任何端口，都是理所当然的。&lt;/p&gt;
+&lt;p&gt;至于我所使用的网站域名，我自然早就在阿里云做了实名备案，但现在这种家用宽带的动态 IP 是没法做备案的，也只好作罢。&lt;/p&gt;
+&lt;p&gt;Cloudflare 端口回源的功能菜单上也明明晃晃地标上了 “beta” 字样，同样预示着它的不稳定和不可预测。&lt;/p&gt;
+&lt;p&gt;这就非常头疼了。&lt;/p&gt;
+&lt;h2 id=&#34;其他可能性&#34;&gt;&lt;a href=&#34;#其他可能性&#34; class=&#34;headerlink&#34; title=&#34;其他可能性&#34;&gt;&lt;/a&gt;其他可能性&lt;/h2&gt;&lt;p&gt;那我就彻底与 443 端口说再见了吗？&lt;/p&gt;
+&lt;p&gt;俗话说：人不能在一棵树上吊死。我自然也咨询了另外两家宽带公司的业务员，其中移动直接已读不回。至于另一家……&lt;/p&gt;
+&lt;h3 id=&#34;与电信公司沟通始末&#34;&gt;&lt;a href=&#34;#与电信公司沟通始末&#34; class=&#34;headerlink&#34; title=&#34;与电信公司沟通始末&#34;&gt;&lt;/a&gt;与电信公司沟通始末&lt;/h3&gt;&lt;p&gt;初到电信公司营业厅的时候，店门是关着的。我顶着烈日拨通了店门口的手机号。&lt;/p&gt;
+&lt;p&gt;“啊？办宽带？我还在吃饭，马上回来，你等我两分钟。”&lt;/p&gt;
+&lt;p&gt;回来的是一名非常年轻的店长，他打开环形锁，踢开店里的躺椅，随口问我想办什么宽带。&lt;/p&gt;
+&lt;p&gt;我说出了我的诉求，他立即知道我是想办理固定公网IP，专业性跟店内环境行程鲜明地对比。&lt;/p&gt;
+&lt;p&gt;我也提了一下 443 等敏感端口的事情。&lt;/p&gt;
+&lt;p&gt;他说：“啊，这个需要做备案的，你如果需要的话，营业执照跟身份证复印件提供一下，我帮你走流程，走完就能开通了。”&lt;/p&gt;
+&lt;p&gt;什么叫专业！啊！&lt;/p&gt;
+&lt;p&gt;至此，Plan B 也找到了。&lt;/p&gt;
+&lt;h2 id=&#34;作者说&#34;&gt;&lt;a href=&#34;#作者说&#34; class=&#34;headerlink&#34; title=&#34;作者说&#34;&gt;&lt;/a&gt;作者说&lt;/h2&gt;&lt;p&gt;我之所以要这样折腾一番，主要是受够了云服务商的吃相太过难堪，他们在一开始以极低的价格把云服务器卖给你，还送你公网 IP，非常香；之后你的云计算服务、网站也已经慢慢走上正轨，但当你购买的两年或一年的云服务器到期需要续费的时候，割韭菜的时候就到了，你会发现续费价格是你当初购买服务器的价格的十倍以上！&lt;/p&gt;
+&lt;p&gt;你不得不重新购买入门套餐、重新迁移所有的服务到新的服务器上。当然，所有依赖你之前公网 IP 的服务也要修改 IP 地址，你最好有自己的固定域名，否则又是另一场灾难。&lt;/p&gt;
+&lt;p&gt;诚然，商业化的团队跟大公司自然承担的起云服务的续费价格，土豪朋友就更不用说了；而且云服务器不单单只是提供一个公网 IP，他们会为你的云计算提供一整套的云服务器和配套安全服务，从种种意义上来说，它的存在也解决了不少人和团队的痛点。&lt;/p&gt;
+&lt;p&gt;但假如你跟我一样，只是一个卑微的小极客，只是想做一些好玩的东西方便自己或者大家使用，且不想每过几年就被云服务商割韭菜，那本文算是一个不成熟的解决方案之一吧。&lt;/p&gt;
+&lt;p&gt;至少这一套流程走下来，网站是跑起来了，服务也通过一般端口正常映射出去了不是嘛。&lt;/p&gt;
+&lt;p&gt;而且你只是借用了家庭宽带的网络，都不需要额外费用的。&lt;/p&gt;
+&lt;p&gt;再不济我还有 PlanB 。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2023-05-12T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1680250983095/</id>
+        <title>受够了密码数据泄漏事件？用 Bitwarden 做自己的安全负责人</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1680250983095/"/>
+        <content type="html">&lt;p&gt;从 iPhone12mini 换到小米13已经两个月了，我也基本上适应了安卓手机作为主力机的数字生活了，但有一点是无论如何不能适应的：&lt;/p&gt;
+&lt;p&gt;安卓手机的密码自动填充，体验真的有够差，也无法生态联动，已经是无法日用的地步。&lt;/p&gt;
+&lt;p&gt;再加上近两年 Chrome 密码泄漏事件频发，这也同样导致我不得不把谷歌账号里保存的密码自动填充都删掉，好了，密码是删掉了，那我岂不是一夜回到解放前，以后所有网站都要自己手动输入密码了吗？&lt;/p&gt;
+&lt;p&gt;我咬牙坚持了一个月之后得出一个结论：不太行。&lt;/p&gt;
+&lt;p&gt;现在的社交媒体网站五花八门，我们的生活也充斥着各式各样的网站和App，如果你从现在开始关闭浏览器的 “ 记住密码 ” ，并把之前保存的密码全部删除，相信我，很多网站的密码到底是什么你可能都已经忘记了，因为网站实在是太多了！&lt;/p&gt;
+&lt;h2 id=&#34;我需要密码管理吗&#34;&gt;&lt;a href=&#34;#我需要密码管理吗&#34; class=&#34;headerlink&#34; title=&#34;我需要密码管理吗&#34;&gt;&lt;/a&gt;我需要密码管理吗&lt;/h2&gt;&lt;p&gt;我相信肯定有一些人是 “一套密码走天下” 派系的，这一派系在当代的各种奇奇怪怪的密码规则要求下，应该也活的很崩溃吧？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;密码长度不能低于八位&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;密码必须包含大小写字母和数字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;密码必须含有至少一个特殊字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;密码不能超过14位&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;密码不能包含用户名信息&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;123456？不行不行，被朋友嘲笑了一年了说什么也不能用了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;密码必须……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-06_09-30-07.webp&#34; alt=&#34;Snipaste_2023-04-06_09-30-07.webp&#34;&gt;图片来源于unsplash&lt;/p&gt;
+&lt;p&gt;即使当前你的一个密码可以满足要求，但我相信这串密码经过每年的超进化后又会变得混乱不堪。&lt;/p&gt;
+&lt;p&gt;当然了，你可能跟我一样拥有超群的记忆力（臭不要脸），也能记住自己的所有社交媒体和网站的账号，但在日复一日的密码输入后，你会有种恍如隔世的挫败感：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为什么科技如此发达的今天，我还要这样一遍一遍地重复输入我的密码，我还要痛苦多少次？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;密码管理器的选择&#34;&gt;&lt;a href=&#34;#密码管理器的选择&#34; class=&#34;headerlink&#34; title=&#34;密码管理器的选择&#34;&gt;&lt;/a&gt;密码管理器的选择&lt;/h2&gt;&lt;p&gt;那有需求自然有市场，眼下各家科技公司也早已帮我们准备好了应对方案。&lt;/p&gt;
+&lt;h3 id=&#34;苹果-iCloud-钥匙串&#34;&gt;&lt;a href=&#34;#苹果-iCloud-钥匙串&#34; class=&#34;headerlink&#34; title=&#34;苹果 iCloud 钥匙串&#34;&gt;&lt;/a&gt;苹果 iCloud 钥匙串&lt;/h3&gt;&lt;p&gt;在安全上问题上，苹果的生态布局永远领先对手好几年，我长达八年的苹果设备使用经历，也在 iCloud 中留下了非常多的个人使用痕迹。&lt;/p&gt;
+&lt;p&gt;现在即使给我一个新的 Apple 设备来设置，只要让我登录一下 iCloud 账号，那剩下的 App 基本上都可以用钥匙圈来解决登陆问题，无需再亲力亲为了。&lt;br&gt;钥匙串，就是一个&lt;strong&gt;旦用难回&lt;/strong&gt;（一旦使用就很难再回到未使用的状态）的功能。&lt;/p&gt;
+&lt;h4 id=&#34;它是如何工作的呢&#34;&gt;&lt;a href=&#34;#它是如何工作的呢&#34; class=&#34;headerlink&#34; title=&#34;它是如何工作的呢&#34;&gt;&lt;/a&gt;它是如何工作的呢&lt;/h4&gt;&lt;p&gt;在你使用苹果设备的过程中，任何时候进行登录行为时，苹果都会贴心地弹出一个小小的提示：密码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-zeis.webp&#34; alt=&#34;Full HD-zeis.webp&#34;&gt;在输入任何内容时，键盘上方会出现一个【密码】按钮&lt;/p&gt;
+&lt;p&gt;你只需点击它，验证一下生物特征（人脸&amp;#x2F;指纹 识别），就可以选择系统推荐的账号密码信息自动填充待输入处的信息。全程使用优雅且便携。&lt;/p&gt;
+&lt;p&gt;而且这些信息是全生态同步的（全苹果生态），这也就意味着你只要在任何联网设备上输入一次信息，以后在其它设备上一样可以重复使用这次输入的信息。&lt;/p&gt;
+&lt;p&gt;使用体验满分。&lt;/p&gt;
+&lt;h4 id=&#34;它的缺点也很明显&#34;&gt;&lt;a href=&#34;#它的缺点也很明显&#34; class=&#34;headerlink&#34; title=&#34;它的缺点也很明显&#34;&gt;&lt;/a&gt;它的&lt;strong&gt;缺点&lt;/strong&gt;也很明显&lt;/h4&gt;&lt;p&gt;你无法在非苹果生态上使用钥匙串，这也就意味着如果你在使用苹果设备的同时，还同样持有 Android、Windows、Linux 等设备的话……&lt;/p&gt;
+&lt;p&gt;很不幸，一夜回到解放前。&lt;/p&gt;
+&lt;h3 id=&#34;1Password&#34;&gt;&lt;a href=&#34;#1Password&#34; class=&#34;headerlink&#34; title=&#34;1Password&#34;&gt;&lt;/a&gt;1Password&lt;/h3&gt;&lt;p&gt;这家公司正是看到了iCloud的缺陷，所以顺势推出了一款全平台的密码管理器，涵盖 macOS、iOS（和 watchOS）、Windows、Android、Linux 和命令行 等使用场景。&lt;/p&gt;
+&lt;p&gt;但作为一家商业公司，1Password现在已经推出了订阅制服务，会员的持续订阅也能让公司更长远地走下去。&lt;/p&gt;
+&lt;p&gt;以上两款密码管理器都有一个共同的我不能容忍的点：他们仍旧在他们的服务器上存储了我的所有账号和密码。&lt;/p&gt;
+&lt;p&gt;什么是安全？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;安全，是把东西牢牢握在自己手上的踏实感。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以我开始搜寻一款支持&lt;strong&gt;自托管&lt;/strong&gt;的，跨平台的密码管理工具。&lt;/p&gt;
+&lt;p&gt;在这一过程中，我找到了它——也就是今天的主角：&lt;strong&gt;Bitwarden&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h3 id=&#34;Bitwarden&#34;&gt;&lt;a href=&#34;#Bitwarden&#34; class=&#34;headerlink&#34; title=&#34;Bitwarden&#34;&gt;&lt;/a&gt;Bitwarden&lt;/h3&gt;&lt;p&gt;这是一款开源的密码管理器，同样支持当前所有主流的平台。&lt;/p&gt;
+&lt;p&gt;个人用户免费，可以通过付费开通高级账户以使用 2FA （二级验证）功能来增强你的密码管理器的安全性。&lt;/p&gt;
+&lt;p&gt;更重要的是：它支持 Self-Hosting ！也就是自己部署和托管 ！&lt;/p&gt;
+&lt;p&gt;当然了，如果你暂时不具备 Self-Hosting 的条件，你也可以选择使用免费的官方服务，只需要注册一个官方账号就好了，使用官方也有一个好处：你不需要关心任何部署和后期维护和升级相关的事情，坐享其成（褒义）就可以了。&lt;/p&gt;
+&lt;p&gt;所以它其实就是一个免费版本的 1Password，还支持自行部署。&lt;/p&gt;
+&lt;h2 id=&#34;在-NAS-上部署-BitWarden&#34;&gt;&lt;a href=&#34;#在-NAS-上部署-BitWarden&#34; class=&#34;headerlink&#34; title=&#34;在 NAS 上部署 BitWarden&#34;&gt;&lt;/a&gt;在 NAS 上部署 BitWarden&lt;/h2&gt;&lt;p&gt;如果你恰巧跟我一样，希望把数据牢牢抓在自己手上，那你可算来着了。&lt;/p&gt;
+&lt;p&gt;我会把我部署和使用 Bitwarden 的过程进行介绍。&lt;/p&gt;
+&lt;h3 id=&#34;使用的设备&#34;&gt;&lt;a href=&#34;#使用的设备&#34; class=&#34;headerlink&#34; title=&#34;使用的设备&#34;&gt;&lt;/a&gt;使用的设备&lt;/h3&gt;&lt;p&gt;部署设备：群晖 DS920+&lt;/p&gt;
+&lt;p&gt;系统版本：DSM7.1.1&lt;/p&gt;
+&lt;p&gt;Docker 版本：20.10.3&lt;/p&gt;
+&lt;h3 id=&#34;你的准备&#34;&gt;&lt;a href=&#34;#你的准备&#34; class=&#34;headerlink&#34; title=&#34;你的准备&#34;&gt;&lt;/a&gt;你的准备&lt;/h3&gt;&lt;p&gt;你需要至少拥有以下条件或环境&lt;/p&gt;
+&lt;p&gt;部署环境：云服务器或自建服务器，也可以用群晖、威联通等自带 Docker 环境的 NAS 设备代替，你甚至可以用树莓派，但你需要保证它里边的数据长久稳定&lt;/p&gt;
+&lt;p&gt;外网服务：你的部署环境需要具备外网环境，可以是你家庭或购买服务器自带的公网 IP，如果没有公网IP，你的使用体验将非常受限&lt;/p&gt;
+&lt;p&gt;动手能力：你需要基础的 Linux 操作能力，以应对接下来的一系列操作&lt;/p&gt;
+&lt;p&gt;测试设备：主力手机一台，可以是 iOS 或者安卓操作系统，主力工作电脑一台，如无需求请忽略&lt;/p&gt;
+&lt;h3 id=&#34;在-Docker-中安装&#34;&gt;&lt;a href=&#34;#在-Docker-中安装&#34; class=&#34;headerlink&#34; title=&#34;在 Docker 中安装&#34;&gt;&lt;/a&gt;在 Docker 中安装&lt;/h3&gt;&lt;p&gt;注意：一下全部流程需要使用&lt;strong&gt;管理员&lt;/strong&gt;账号操作。&lt;/p&gt;
+&lt;h4 id=&#34;下载并安装-Docker&#34;&gt;&lt;a href=&#34;#下载并安装-Docker&#34; class=&#34;headerlink&#34; title=&#34;下载并安装 Docker&#34;&gt;&lt;/a&gt;下载并安装 Docker&lt;/h4&gt;&lt;p&gt;在群晖的【套件中心】找到 Docker 软件，点击安装&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_10-13-35.webp&#34; alt=&#34;Snipaste_2023-04-03_10-13-35.webp&#34;&gt;下载Docker&lt;/p&gt;
+&lt;h4 id=&#34;在-Docker-中下载镜像&#34;&gt;&lt;a href=&#34;#在-Docker-中下载镜像&#34; class=&#34;headerlink&#34; title=&#34;在 Docker 中下载镜像&#34;&gt;&lt;/a&gt;在 Docker 中下载镜像&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开 Docker，&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;左侧，点击【注册表】&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在右侧右上角输入框输入：vaultwarden，回车搜索（官方镜像更名为 vaultwarden，所以不要输入错了）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在列出的镜像中选择名称为：vaultwarden&amp;#x2F;server，单击当前行即可&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选中当前行后，点击对话框最上方的【下载】按钮&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在弹出的版本选择中，点开下拉框选择最新版，&lt;strong&gt;注意：latest 不一定是最新版！&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本文撰写时，已有新版本1.28.1推出，所以这里一定&lt;strong&gt;不要选 latest&lt;/strong&gt;，请选择高于1.28.1的版本。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_10-15-34.webp&#34; alt=&#34;Snipaste_2023-04-03_10-15-34.webp&#34;&gt;下载镜像&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_10-16-16.webp&#34; alt=&#34;Snipaste_2023-04-03_10-16-16.webp&#34;&gt;点击选择，等待 Docker 下载镜像&lt;/p&gt;
+&lt;h4 id=&#34;使用镜像创建容器并运行&#34;&gt;&lt;a href=&#34;#使用镜像创建容器并运行&#34; class=&#34;headerlink&#34; title=&#34;使用镜像创建容器并运行&#34;&gt;&lt;/a&gt;使用镜像创建容器并运行&lt;/h4&gt;&lt;p&gt;若这是你第一次使用docker，我建议你在群晖的共享文件夹中创建一个单独的文件给docker，步骤为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;点击 NAS 主菜单&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击 控制面板&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击 共享文件夹&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击 新增&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;名称输入：docker，所在位置建议选择主存储池&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下一步，直到应用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;当你已经有一个docker文件夹作为共享文件夹时，可以继续往下操作。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开 FileStation，在 docker 文件夹中新建一个子文件夹：Bitwarden&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开 Docker 应用，点击左侧容器，然后点击新增&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在弹出的窗口中选择我们刚刚下载好的镜像，点击下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在弹出的窗口中确认已勾选“使用已选择的网络”，bridge，确认后，点击下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在弹出的窗口中继续点击下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在端口设置处的80端口的左侧填18080（如果你知道这里意味着什么，那你可以随便填，比如28080、9090、18580，如果你不懂这个含义是什么，那就填18080）3012可以留空，不用填，继续下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在存储空间设置中点击新建文件夹，在弹出的窗口中选择我们刚刚创建的 docker&amp;#x2F;bitwarden 文件夹，在右侧装在路径填：&amp;#x2F;data，点击下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击创建容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为什么需要在端口处设置端口转发和文件夹映射？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Docker 是一个虚拟机容器，我们创建的容器的运行环境跟 NAS 本机的运行环境完全隔离，所以容器中的服务通过端口提供的服务需要使用一个端口映射出来我们才能进行访问，如果这里不填，Docker 会自动随机一个当前系统尚未使用的端口，这对我们后期对端口服务进行二次转发是较为麻烦的，所以在此处进行指定；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;因为 Docker 创建的每一个容器的环境都相互隔离，所以当容器删除之后，容器中的数据也就随之消失了，而我们每次升级或调整容器时都会有可能重新创建这个容器，为了保证容器中的数据不会丢失，在这里通过文件夹映射的功能把容器中的数据映射到我们外部文件夹，这样即使容器删除了，我们的数据依旧得以保留，下次重新创建容器的时候重新关联一下文件即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_14-58-05.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_14-59-57.webp&#34;&gt;选择你刚刚下载的镜像文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_15-17-33.webp&#34;&gt;设置端口映射&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_15-18-20.webp&#34;&gt;设置文件夹映射&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_15-18-36.webp&#34;&gt;点击完成&lt;/p&gt;
+&lt;p&gt;至此，你就拥有一个属于你自己的密码管理服务了，你的所有密码都将保存到这里，除了你，谁都无法看到你保存的密码是什么，非常安全。&lt;/p&gt;
+&lt;p&gt;但先别高兴太早，NAS 作为一个局域网设备，他现在只能发挥非常有限的作用，我们需要进一步完善它的网络连接来实现一个完全体的 Bitwarden。&lt;/p&gt;
+&lt;p&gt;如果你仅仅只想体验一下这个服务，也可以先在内网环境下使用，打开浏览器，输入http:&amp;#x2F;&amp;#x2F;把这里替换成你的 NAS 的内网 IP 地址:18080，进行简单设置后，就可以跳转到【实际使用体验】&lt;/p&gt;
+&lt;p&gt;在此之前，我需要向完全没有网络基础的同学介绍一下为什么需要这一步，已经掌握这部分知识的可以直接跳转下一章。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/HD.webp&#34; alt=&#34;HD.webp&#34;&gt;公网和私网的关系&lt;/p&gt;
+&lt;p&gt;简单来讲，我们当前的互联网网络环境分为两大部分：内网和外网。外网为我们提供互联网服务，内网用来接入外网，然后使用外网的互联网服务。&lt;/p&gt;
+&lt;p&gt;听起来好像有点儿生涩，但这就意味着：如果你想要使用某个互联网服务，那你必须要与这个服务处于同一个网络环境中。大概有以下三种情况&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一般意义上的互联网服务在外网可以访问，正常情况下，你在内网，那如果你要访问外网，就需要从内网转换到外网，我们平时用的4G蜂窝网，WiFi 等帮你实现了这个功能；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当互联网服务在外网，你也在外网（一般情况下，当你使用4G蜂窝网络时，会被供应商临时分配到外网环境下），那也是可以直接访问的；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当互联网服务在内网，你也在内网时（很多电脑手机互传的服务就是基于这一环境），那是可以直接访问的；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果你手持使用设备在外网，而互联网服务在内网；或者说你在一个内网，互联网服务在另外一个内网；那你就无法访问到内网中的互联网服务了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一般互联网服务：抖音、微博、微信、QQ、百度，这些互联网公司都在公网部署有自己的互联网服务，也是因为这些互联网服务的部署，你手中的 App 才能正常地运行和使用。&lt;/p&gt;
+&lt;p&gt;我们刚刚部署的 Bitwarden 就是第四种情况。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_09-52-52.webp&#34; alt=&#34;Snipaste_2023-04-04_09-52-52.webp&#34;&gt;对你来说，是找一颗星星容易，还是找沙漠中的一颗砂砾容易呢（图片来自 unsplash）&lt;/p&gt;
+&lt;p&gt;我相信你还是可能不理解，那我们把当前的公网比作星空，互联网服务比作星空中的星星，把你自己比作沙漠中的砂砾（个人上网用户繁多）&lt;/p&gt;
+&lt;p&gt;你去星空中找某一颗星星，只需要抬头，寻找星星的参照物（例如把北斗七星作为参照），然后找到它即可。&lt;/p&gt;
+&lt;p&gt;但如果你是一颗星星，如何找到地球上某个沙漠中的一个特定的砂砾呢？这几乎不可能。&lt;/p&gt;
+&lt;p&gt;我们刚刚在 Docker 中部署的那个镜像，就为我们提供了互联网服务，如果你把 NAS 放置在家中，那当你在家时，就相当于沙漠中的两个挨着的砂砾，很容易就找到对方了。但若你出门了（去星空里了），再让你找那颗特定的砂砾，就没那么容易了。同样的，假如你去了别人家，连入了别人的 WiFi（进入到了另一个沙漠），那你也无法找到最开始跟你相邻的那个砂砾了。&lt;/p&gt;
+&lt;p&gt;这个时候，如果我们可以从砂砾上牵一根线，绑到某一个星星上，这样当我们需要找到特定的砂砾的时候，只需要找到某颗星星，然后顺着星星上绑着的线，就可以找到我们想要的那颗砂砾了。&lt;/p&gt;
+&lt;p&gt;接下来，我将会简单介绍一下你应该如何绑这根线（Frp）。&lt;/p&gt;
+&lt;h3 id=&#34;设置外网访问&#34;&gt;&lt;a href=&#34;#设置外网访问&#34; class=&#34;headerlink&#34; title=&#34;设置外网访问&#34;&gt;&lt;/a&gt;设置外网访问&lt;/h3&gt;&lt;h4 id=&#34;你有两种方式设置外网访问&#34;&gt;&lt;a href=&#34;#你有两种方式设置外网访问&#34; class=&#34;headerlink&#34; title=&#34;你有两种方式设置外网访问&#34;&gt;&lt;/a&gt;你有两种方式设置外网访问&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;通过购买云服务器获取固定公网 IP 地址，然后通过 Frp 穿透到自己的 NAS （租一颗天上的星星，牵线到自己 NAS）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过自己的宽带账号获取静态或动态公网 IP 地址，然后在路由器上做端口映射 （搞一颗星星放自己家）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;搞一颗星星放自己家！？听起来很酷炫不是嘛～&lt;/p&gt;
+&lt;p&gt;相比较而言，第二种方式也确实是更加简单直接，也相比较省成本的方案。但它有一个致命的问题：能不能拿到公网IP地址，你说了不算，得你所在的宽带公司说了算，而大部分时间里，宽带公司都不会给你这个 IP ……（至少我没有）&lt;/p&gt;
+&lt;p&gt;所以很多需要公网IP的同学仍旧选择了第一种方案：购置云服务器。&lt;/p&gt;
+&lt;p&gt;如有需要，请打开搜索引擎搜索：群晖 docker frp，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;另外，为了后期运维方便，我非常建议你使用域名而不是公网IP来使用自己的服务，请自行搜索域名购买，不再赘述。&lt;/p&gt;
+&lt;p&gt;域名有很多显而易见的好处：&lt;br&gt;减少你不需要修改（一旦更换云服务器，所有使用 Bitwarden 服务的地方都要重新修改服务地址）&lt;/p&gt;
+&lt;p&gt;更好记，就像少数派网站：sspai.com 跟 119.23.141.248 ，你觉得哪个更好记呢？&lt;/p&gt;
+&lt;p&gt;如果你坚持到了这一步，那恭喜你！！！&lt;/p&gt;
+&lt;p&gt;你已经成功了一半了。&lt;/p&gt;
+&lt;p&gt;为什么这么说？&lt;/p&gt;
+&lt;p&gt;因为为了我们服务在公网上的绝对安全，你还需要为这个服务设置 Https 加密。&lt;/p&gt;
+&lt;p&gt;tips：你需要先为自己的域名（或固定公网IP地址）申请 ssl 证书，群晖 NAS 有非常方便的证书导入功能，申请好的证书可以通过以下方式导入&lt;/p&gt;
+&lt;p&gt;打开控制面板 -&amp;gt; 安全性 -&amp;gt; 证书 -&amp;gt; 新增&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_09-59-11.webp&#34; alt=&#34;Snipaste_2023-04-04_09-59-11.webp&#34;&gt;导入你的ssl证书&lt;/p&gt;
+&lt;h4 id=&#34;将-http-转换成-https&#34;&gt;&lt;a href=&#34;#将-http-转换成-https&#34; class=&#34;headerlink&#34; title=&#34;将 http 转换成 https&#34;&gt;&lt;/a&gt;将 http 转换成 https&lt;/h4&gt;&lt;p&gt;简单理解的话，http 情况下，你在外网访问到家里的 NAS 的密码保管服务时，互联网世界的黑客就有机会将 http 劫持并查看传输内容，也就是说，你的密码又变的不安全了！&lt;/p&gt;
+&lt;p&gt;这时候我们就需要 Https 协议，有了它，每次传输的内容都是加密的，黑客是劫持不了的，同时传输内容也是加密的，他们（黑客）即使用手段找到了你传输的信息，也看不明白传输的内容是什么。&lt;/p&gt;
+&lt;p&gt;正所谓行百里者半九十，这一步&lt;strong&gt;非常重要&lt;/strong&gt;，如果 https 协议没有设置就用的话，那我们前边所有的努力就都白费了。&lt;/p&gt;
+&lt;p&gt;假设你通过 frp 内网穿透到 NAS 的端口是9999 （云服务器上端口随便，NAS上的端口是9999）&lt;/p&gt;
+&lt;p&gt;此时9999的协议仍是http，请继续操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开控制面板 -&amp;gt; 登录门户 -&amp;gt; 高级 -&amp;gt; 反向代理服务器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击新增，名称随便填，为了好记可以写：bitwarden，&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;来源：协议选 https，主机名称填写你的域名，端口填9999，勾选【启用 HSTS】&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;目的地：协议 http，主机名：127.0.0.1，端口：18080（参考上方部署时所设置的 Bitwarden 端口号）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击确定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开控制面板 -&amp;gt; 安全性 -&amp;gt; 证书 -&amp;gt; 设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找到服务中所有包含你域名或者公网 IP 的服务，将右侧证书修改为你自己的域名或公网 IP 证书，点击确定&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_10-03-18-txsg.webp&#34;&gt;设置反向代理，将http链接升级为更安全的Https&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_10-06-07.webp&#34;&gt;为你的反向代理域名设置证书&lt;/p&gt;
+&lt;p&gt;如果一切正常的话，现在你就可以访问https:&amp;#x2F;&amp;#x2F;你的域名:9999来真正设置你最开始部署的 Bitwarden 了。&lt;/p&gt;
+&lt;p&gt;恭喜你 🎉🎉🎉 ，You made it ！&lt;/p&gt;
+&lt;h2 id=&#34;实际使用体验&#34;&gt;&lt;a href=&#34;#实际使用体验&#34; class=&#34;headerlink&#34; title=&#34;实际使用体验&#34;&gt;&lt;/a&gt;实际使用体验&lt;/h2&gt;&lt;p&gt;以下就是非常舒适的使用体验了，不涉及任何部署相关的流程了，请放心食用。&lt;/p&gt;
+&lt;h4 id=&#34;PC端浏览器体验&#34;&gt;&lt;a href=&#34;#PC端浏览器体验&#34; class=&#34;headerlink&#34; title=&#34;PC端浏览器体验&#34;&gt;&lt;/a&gt;PC端浏览器体验&lt;/h4&gt;&lt;p&gt;第一次打开该网址时，会让你设置登陆账号跟密码，正常输入即可，输入后你就可以正常使用了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_10-12-25.webp&#34; alt=&#34;Snipaste_2023-04-04_10-12-25.webp&#34;&gt;网页端设置界面&lt;/p&gt;
+&lt;p&gt;第一次登陆某个网站的时候，因为你密码库是空的，所以它仍需要你手动输入账号跟密码，但当你输入一次后，Bitwarden 会检测当前的表单值，并提示你是否要将当前的账号和密码保存到密码库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_10-20-59.webp&#34; alt=&#34;Snipaste_2023-04-04_10-20-59.webp&#34;&gt;输入正确了再保存~&lt;/p&gt;
+&lt;p&gt;也就是说它会根据你的使用时间不断进化，到后期越来越强大。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_10-14-54.webp&#34; alt=&#34;Snipaste_2023-04-04_10-14-54.webp&#34;&gt;登录时，双击 Bitwarden 的推荐项目，密码就会自动填充到网页&lt;/p&gt;
+&lt;p&gt;当然，如果你希望提前在密码库把自己还记得的密码都填进去，下次在登录网站的时候直接用，也是可以的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-04_10-15-47.webp&#34; alt=&#34;Snipaste_2023-04-04_10-15-47.webp&#34;&gt;新增一个账号和密码项&lt;/p&gt;
+&lt;h4 id=&#34;iPhone-体验&#34;&gt;&lt;a href=&#34;#iPhone-体验&#34; class=&#34;headerlink&#34; title=&#34;iPhone 体验&#34;&gt;&lt;/a&gt;iPhone 体验&lt;/h4&gt;&lt;p&gt;第一次在手机上使用 Bitwarden 时需要进行初始化设置，步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开软件，在登录界面点击右上角齿轮按钮&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在设置界面修改服务器 URL 为你自己刚刚映射的 Https 地址，点击保存（如果你打算用官方的服务，此处可以不用管）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;回到登录界面登陆，账号是你第一次设置 Bitwarden 时输入的账号和密码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;登录成功后，你的密码库可能是空，也可能已经同步了你在网页端添加的密码库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开手机设置，找到【密码】选项，并在二级菜单中选择【密码选项】&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开自动填充密码，并将 Bitwarden 勾选上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在任何网页或者 App 的输入过程中，点击【密码】按钮，在弹出的应用中选择 Bitwarden 填充&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-xcpl.webp&#34; alt=&#34;Full HD-xcpl.webp&#34;&gt;iPhone设置步骤参考&lt;/p&gt;
+&lt;p&gt;至此，你就可以完全使用自己托管的密码库服务啦。&lt;/p&gt;
+&lt;p&gt;tips：在iOS上，Bitwarden 需要使用通知推送功能来自动后台同步你的密码数据，你需要打开 Bitwarden 的推送功能才能保证 App 在后台的密码同步，如果关闭后，Bitwarden 只能在你每次打开 App 的时候才能触发同步，体验不佳，所以强烈建议你开启通知推送功能，这只是 iOS 的同步策略需要，不会给你的手机推送奇奇怪怪的东西。&lt;/p&gt;
+&lt;h4 id=&#34;Android体验&#34;&gt;&lt;a href=&#34;#Android体验&#34; class=&#34;headerlink&#34; title=&#34;Android体验&#34;&gt;&lt;/a&gt;Android体验&lt;/h4&gt;&lt;p&gt;安卓手机相比较 iOS，缺少了钥匙串这个功能，但你仍旧可以在辅助功能里开启自动填充。&lt;/p&gt;
+&lt;p&gt;我使用的安卓手机是小米13，自动填充服务在：更多设置 -&amp;gt; 语言与输入法 -&amp;gt; 自动填充服务&lt;/p&gt;
+&lt;p&gt;为了保证 App 在后台自动同步而不是每次使用都要打开App手动同步，你也要在安卓手机上设置 App 的省电策略为【无限制】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-18_15-20-44.webp&#34; alt=&#34;Snipaste_2023-04-18_15-20-44.webp&#34;&gt;App 使用体验&lt;/p&gt;
+&lt;p&gt;友情提示：有些 App 的登录界面不是标准的表单结构，所以不一定会触发 Bitwarden 的自动填充，可以先尝试输入密码，这个时候 Bitwarden 可能会因为检测到密码输入框而自动弹出。&lt;/p&gt;
+&lt;p&gt;Bitwarden 实际上还支持命令行和 Linux 系统的自动填充，但考虑到用户的动手能力，我相信使用命令行和Linux的用户应该不需要我介绍了吧，哈哈哈哈。&lt;/p&gt;
+&lt;h2 id=&#34;附言&#34;&gt;&lt;a href=&#34;#附言&#34; class=&#34;headerlink&#34; title=&#34;附言&#34;&gt;&lt;/a&gt;附言&lt;/h2&gt;&lt;p&gt;事实上，我写到这里之后开始扪心自问：我真的有必要做到这一步吗？就像个正常人一样用官方的服务不好吗？&lt;/p&gt;
+&lt;p&gt;不好。&lt;/p&gt;
+&lt;p&gt;这种可以把自己的安全牢牢掌握在自己手上的快感，会上瘾。&lt;/p&gt;
+&lt;p&gt;做少数派中的少数派，更上瘾。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <category term="NAS" />
+        <category term="安全" />
+        <updated>2023-04-06T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1680011338095/</id>
+        <title>Komga，群晖缺失的漫画管理应用被我找回来了！</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1680011338095/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/79100&#34;&gt;少数派首发&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;声明：就在我起文之时，网上已不乏各种关于 Komga 的使用教程，各有各的偏向风格，如果细心找的话，你甚至可以发现有视频教你在 Nas 上部署 Komga 的操作流程，但我还是打算从头向大家介绍一下这个漫画托管利器，因为它切切实实地解决了我看漫画过程中遇到的问题。所以这不会是一个面面俱到的教程文，更偏向于一篇安利文。&lt;/p&gt;
+&lt;p&gt;本文仅适用于以下场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;你想看的漫画国内在线平台都没有，你找到一个全是图片的漫画压缩包（ zip、rar ），但解压后用预览、系统相册等应用的幻灯片式观看体验不佳&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;你当前手里有一大堆离线漫画资源（压缩包），但苦于整理过于繁琐，你只能把他们丢｛在一起，想看的时候随便打开一个&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;你有很多 PDF 的书籍，但你把他们上传到了iPad中的 图书 App 中，在非苹果生态的设备上无法阅读这些书籍资料&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;你在不同平台有不同的离线漫画阅读器，但每次资源导入过程费时又费力&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果以上问题曾困扰过你，那么恭喜你，这篇文章可能会救你于水火。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_20.25.48.webp&#34; alt=&#34;iShot_2023-03-30_20.25.48.webp&#34;&gt;Komga 官网&lt;/p&gt;
+&lt;h2 id=&#34;Komga-是什么&#34;&gt;&lt;a href=&#34;#Komga-是什么&#34; class=&#34;headerlink&#34; title=&#34;Komga 是什么&#34;&gt;&lt;/a&gt;Komga 是什么&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://komga.org/&#34;&gt;Komga&lt;/a&gt; 是 github 上的一款免费且开源的漫画库资源托管服务，开发者是 &lt;a href=&#34;https://github.com/gotson&#34;&gt;gotson&lt;/a&gt; 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;它基于Java 开发，所以你可以在几乎任何平台上运行它（ Windows、MacOS、Linux、Nas 和其他类似平台），用以托管你的离线漫画资源&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;它支持很多漫画文件格式：CBZ、CBR、ZIP、RAR、EPUB（只支持图片）、PDF 等&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;它可以根据你对资源的文件夹分类做自动识别和整理，从而还你一个干净、整洁的线上漫画网站&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;它自带全平台 Web 端，可支持全平台的阅读记录同步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;它还支持 &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Publication_Distribution_System&#34;&gt;OPDS&lt;/a&gt; 协议，这意味着你可以使用官方或第三方适配客户端实现更适合自己的阅读体验&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;哦，它有 &lt;a href=&#34;https://komga.org/installation/docker.html#registries&#34;&gt;docker&lt;/a&gt; 镜像，你可以很方便地在 docker 中部署它&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Komga-可以为我们带来什么&#34;&gt;&lt;a href=&#34;#Komga-可以为我们带来什么&#34; class=&#34;headerlink&#34; title=&#34;Komga 可以为我们带来什么&#34;&gt;&lt;/a&gt;Komga 可以为我们带来什么&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_20.27.35.webp&#34; alt=&#34;iShot_2023-03-30_20.27.35.webp&#34;&gt;作者提供的示例网站&lt;/p&gt;
+&lt;h3 id=&#34;1、简单但直观的漫画分类展示&#34;&gt;&lt;a href=&#34;#1、简单但直观的漫画分类展示&#34; class=&#34;headerlink&#34; title=&#34;1、简单但直观的漫画分类展示&#34;&gt;&lt;/a&gt;1、简单但直观的漫画分类展示&lt;/h3&gt;&lt;p&gt;Komga 的分类层级较为扁平，暂时只有两级：分为库层（ Library ）和文件夹层（ Folder ）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_20.31.29.webp&#34; alt=&#34;iShot_2023-03-30_20.31.29.webp&#34;&gt;库，作为文件大类，放置在左侧菜单栏，你可以很方便地访问和设置当前漫画库&lt;/p&gt;
+&lt;p&gt;简单理解就是你的漫画书可以根据书籍类型分成不同文件夹来作为漫画库（日本漫画、欧美漫画等），每种类型下可以分别创建不同的文件夹来放置漫画文件，比如鬼灭之刃的漫画放在同一个文件夹下，那么系统扫描识别的时候就会把该文件夹下的元数据都归类到鬼灭之刃系列的漫画书中。相信不少人在使用Komga之前的漫画库就已经是这么整理甚至有比这更加细致的分类层级了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_20.32.22.webp&#34; alt=&#34;iShot_2023-03-30_20.32.22.webp&#34;&gt;你当然也可以新建库&lt;/p&gt;
+&lt;p&gt;一旦你创建漫画库并关联你的漫画资源后，Komga就开始在后台扫描和分析元数据，然后在扫描结束后刷新网页的漫画封面和漫画信息。&lt;/p&gt;
+&lt;h3 id=&#34;2、云端同步阅读进度&#34;&gt;&lt;a href=&#34;#2、云端同步阅读进度&#34; class=&#34;headerlink&#34; title=&#34;2、云端同步阅读进度&#34;&gt;&lt;/a&gt;2、云端同步阅读进度&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_20.34.22.webp&#34; alt=&#34;iShot_2023-03-30_20.34.22.webp&#34;&gt;打开后自动跳转到了上次阅读进度「11页」&lt;/p&gt;
+&lt;p&gt;借助 Komga 的 网页端，你可以在任何支持打开网页的设备上打开 komga 的网站并选择你想观看的漫画，后台会自动记住你的上次阅读进度，省去了”忘记上次看到哪了，只好重头看一遍“的窘境。Komga 也支持诸如：推荐、阅读列表、收藏等最近阅读分类，方便你把最想看的书放在最显眼的位置，减少翻找漫画时间；说到翻找，它当然也支持全局图书关键字查找啦~&lt;/p&gt;
+&lt;h3 id=&#34;3、便利的内容分发平台&#34;&gt;&lt;a href=&#34;#3、便利的内容分发平台&#34; class=&#34;headerlink&#34; title=&#34;3、便利的内容分发平台&#34;&gt;&lt;/a&gt;3、便利的内容分发平台&lt;/h3&gt;&lt;p&gt;有了这个服务对你的漫画资源进行托管后，你阅读漫画的方式就便利了许多。&lt;/p&gt;
+&lt;p&gt;我仍旧记得在之前的时候，我是把漫画一股脑塞到 iPad 的 Comics 里边，然后每次看漫画只能用 iPad ，后来随着漫画资源越来越多，iPad 的存储空间也捉襟见肘了，不得不手动处理文件的流转：&lt;/p&gt;
+&lt;p&gt;Mac-&amp;gt;iPad&lt;/p&gt;
+&lt;p&gt;Nas-&amp;gt;iPad&lt;/p&gt;
+&lt;p&gt;iPhone-&amp;gt;iPad&lt;/p&gt;
+&lt;p&gt;Mac-&amp;gt;Nas&lt;/p&gt;
+&lt;p&gt;Nas-&amp;gt;Windows&lt;/p&gt;
+&lt;p&gt;异常痛苦。&lt;/p&gt;
+&lt;p&gt;而且在不同的平台，各种离线阅读 App 给我的体验也不都尽如人意&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;平台&lt;/th&gt;
+&lt;th&gt;应用名称&lt;/th&gt;
+&lt;th&gt;优点&lt;/th&gt;
+&lt;th&gt;缺点&lt;/th&gt;
+&lt;th&gt;推荐指数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Windows&lt;/td&gt;
+&lt;td&gt;Cover&lt;/td&gt;
+&lt;td&gt;没有广告，界面设计合理，对触屏优化较好，有漫画库的管理和优化逻辑，是我找到的 Windows 上最好的离线漫画资源管理 App&lt;/td&gt;
+&lt;td&gt;漫画库最高只能扫描25本漫画，超过这个数量的漫画库需要付费才能继续扫描，切Windows电脑的便携性不如平板和手机，除非你手边正好有 Surface&lt;/td&gt;
+&lt;td&gt;⭐⭐⭐⭐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mac&lt;/td&gt;
+&lt;td&gt;Simple Comic&lt;/td&gt;
+&lt;td&gt;没有广告&lt;/td&gt;
+&lt;td&gt;使用时间久了会卡顿，猜测是对M系列Mac的优化不到位，也没有任何漫画库的管理功能，单纯的漫画文件阅读器&lt;/td&gt;
+&lt;td&gt;⭐⭐⭐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iOS&lt;/td&gt;
+&lt;td&gt;Comics&lt;/td&gt;
+&lt;td&gt;没有广告，我愿称之为 iOS 上最优秀的漫画阅读 App，支持漫画的导入和简单的管理，阅读体验较好&lt;/td&gt;
+&lt;td&gt;需要付费，但偶尔会限免&lt;/td&gt;
+&lt;td&gt;⭐⭐⭐⭐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Android&lt;/td&gt;
+&lt;td&gt;ComicScreen&lt;/td&gt;
+&lt;td&gt;免费&lt;/td&gt;
+&lt;td&gt;有广告，App界面较老，阅读体验还行，这肯定不是安卓上最好的离线漫画阅读器，但我在Play上暂时只找到这个体验还过得去的&lt;/td&gt;
+&lt;td&gt;⭐⭐⭐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-03-30_20-40-17.webp&#34; alt=&#34;Snipaste_2023-03-30_20-40-17.webp&#34;&gt;Windows 商店的 Cover&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/mibile.webp&#34; alt=&#34;mibile.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;iOS App Store 的 Comics 和 Play Store 的 ComicScreen&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_20.46.57.webp&#34; alt=&#34;iShot_2023-03-30_20.46.57.webp&#34;&gt;Mac App Store 的 Simple Comic&lt;/p&gt;
+&lt;p&gt;我自然不敢说以上应用都已经是这四个常用平台的最优解了，但至少是我在一定时间的使用后，最终真实使用感受还不错的；这些应用在一定程度上，也确实满足了我观看离线漫画的需求，当我的漫画库的漫画资源不是很繁杂时，使用以上应用也能给我带来不错的观看体验。&lt;/p&gt;
+&lt;p&gt;不过，单体应用有他们不可忽视的缺陷。&lt;/p&gt;
+&lt;p&gt;例如：界面操作逻辑不统一、阅读进度不能同步、阅读资源需要自己做资源流转等；现在借助 Komga 平台，我终于不用再被这些问题困扰了，可喜可贺。&lt;/p&gt;
+&lt;p&gt;除了同步阅读进度以外，Komga 的网页端也可以一键下载资源到本地或者删除线上平台的漫画书，可以协助你在任何地方管理漫画资源（当你设置了外网访问路径的话），可以说非常舒适了。&lt;/p&gt;
+&lt;h2 id=&#34;客户端：离线阅读利器&#34;&gt;&lt;a href=&#34;#客户端：离线阅读利器&#34; class=&#34;headerlink&#34; title=&#34;客户端：离线阅读利器&#34;&gt;&lt;/a&gt;客户端：离线阅读利器&lt;/h2&gt;&lt;p&gt;虽说网页端非常方便你随时随地打开，但它也有一些不方便的地方（你用久了就知道了），比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果你不知道怎么折腾公网服务器或外网端口映射（Frp），那么当你并未与 Komga 处于同一个内网时，那你就没办法访问到它了（简单理解就是出门就用不了）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;即使你知道怎么解决外网访问问题，但 Frp 本身孱弱的网络带宽可能也不能给你带来良好的阅读体验，可能每页漫画加载时间都会很长（土豪可以忽略）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基于上一条，你更不要奢望出行时高铁和飞机上的网络环境了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;浪费了宝贵的流量（根据不同的画面质量，每本漫画可能消耗流量30M~150M不等，土豪可以忽略）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;浏览器沉浸性较差，不能提供良好的阅读体验等&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;客户端正是为了解决以上问题而被开发出来的。&lt;/p&gt;
+&lt;p&gt;正如我前文所提到的，由于 Komga 支持 &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Publication_Distribution_System&#34;&gt;OPDS&lt;/a&gt; 协议，所以它允许用户根据自己的偏好选择自己最喜欢的客户端，我在这里也推荐两款，如果有其它更好用的客户端也欢迎在评论区讨论。&lt;/p&gt;
+&lt;p&gt;安卓端：&lt;a href=&#34;https://tachiyomi.org/&#34;&gt;&lt;strong&gt;Tachiyomi&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/tachiyomi.webp&#34; alt=&#34;tachiyomi.webp&#34;&gt;Tachiyoumi，支持中文&lt;/p&gt;
+&lt;p&gt;这是一款遵守安卓 Material you 协议的官方推荐的客户端，没有广告、界面非常简洁，但支持功能很全，当前我只用到了漫画源的添加、漫画书的在线观看、漫画下载、漫画离线观看这些功能。&lt;/p&gt;
+&lt;p&gt;iOS端：&lt;a href=&#34;https://paperback.moe/&#34;&gt;&lt;strong&gt;Paperback&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Paperback.webp&#34; alt=&#34;Paperback.webp&#34;&gt;Paperback，暂不支持中文&lt;/p&gt;
+&lt;p&gt;这是一款原生开发的 iOS 端的 App，同样没有广告，也支持漫画源的添加和在线或离线观看功能。&lt;/p&gt;
+&lt;h2 id=&#34;Komga-不能为我带来什么&#34;&gt;&lt;a href=&#34;#Komga-不能为我带来什么&#34; class=&#34;headerlink&#34; title=&#34;Komga 不能为我带来什么&#34;&gt;&lt;/a&gt;Komga 不能为我带来什么&lt;/h2&gt;&lt;p&gt;部署了 Komga 之后，如果你没有任何漫画资源，那你仍旧没有任何漫画书可看，如果你希望找到的是一个免费为你提供无穷无尽漫画资源的 App，那你可能完全不需要 Komga，Bilibili 漫画、快看漫画都是你更好的选择。&lt;/p&gt;
+&lt;p&gt;从我的角度讲，Komga 就是一个漫画界的 VideoStation、Jellyfin、Emby ……&lt;/p&gt;
+&lt;p&gt;你懂的，所以本篇文章也不会向读者传递任何漫画资源的搜索和下载网站相关的信息，请自行思考你 Videostation 里的资源是哪里来的😁。&lt;/p&gt;
+&lt;h2 id=&#34;我使用-Komga-的原因&#34;&gt;&lt;a href=&#34;#我使用-Komga-的原因&#34; class=&#34;headerlink&#34; title=&#34;我使用 Komga 的原因&#34;&gt;&lt;/a&gt;我使用 Komga 的原因&lt;/h2&gt;&lt;p&gt;我接触 Komga 的契机是当我购买我的第一台 Nas 后：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;影视资源有 VideoStation 帮我整理和搜刮信息&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;拍摄的照片和视频也有对应的 Photos 服务帮助我托管&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;音乐文件有 AudioStation 帮我托管在线音乐平台，它甚至支持歌词自动匹配&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-04-03_10-13-35.webp&#34; alt=&#34;Snipaste_2023-04-03_10-13-35.webp&#34;&gt;Docker 里的 komga 容器&lt;/p&gt;
+&lt;p&gt;唯独我的漫画资源没有一个比较好的服务来进行整理和托管，这让每次手动上传下载和管理原始文件的我，像个原始人。&lt;/p&gt;
+&lt;p&gt;所以 Komga 的出现对我而言简直就是久旱逢甘霖了。&lt;/p&gt;
+&lt;h2 id=&#34;Komga-的其他用途&#34;&gt;&lt;a href=&#34;#Komga-的其他用途&#34; class=&#34;headerlink&#34; title=&#34;Komga 的其他用途&#34;&gt;&lt;/a&gt;Komga 的其他用途&lt;/h2&gt;&lt;p&gt;之前碰到写的好的文章，普遍的保存方式是使用 EverNote、OneNote、DSNote 等浏览器剪藏工具剪藏到自己的收藏夹。&lt;/p&gt;
+&lt;p&gt;但我发现有些网站和文章的图片使用的文章初始的图片地址，这就导致一旦最初的图片挂掉后，你的剪藏内容中的图片也会失效；又或者你所使用的平台工具可以把图片上传到他们自己的服务器，这样你就认为你的文章安全了吗？&lt;/p&gt;
+&lt;p&gt;Naive！&lt;/p&gt;
+&lt;p&gt;我经历了太多平台为了防止用户白嫖他们的云存储空间作为免费图床（印象、简书、Gitee 等商业上没错，理解，尊重），都给图片加了二次获取验证，让这些图片只有在他们自己平台上可能正常显示，无疑让你在文章迁移的时候犯难。&lt;/p&gt;
+&lt;p&gt;而且有些文章作者在发出来的时候，会非常注重文章的排版功能，但经过剪藏的文章，它的原始排版布局有一定几率会被剪藏工具所破坏，这就给二次阅读时候的你，一个非常膈应的感觉。&lt;/p&gt;
+&lt;p&gt;唉，真正靠谱的，永远只有我们自己。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_21.42.44%20(1).webp&#34; alt=&#34;iShot_2023-03-30_21.42.44 (1).webp&#34;&gt;文章的 PDF 格式备份，可以很好地保留文章原始排版和图片信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/iShot_2023-03-30_21.44.30%20(1).webp&#34; alt=&#34;iShot_2023-03-30_21.44.30 (1).webp&#34;&gt;也会有一些 PDF 格式的书籍会放在 Komga 里边进行托管&lt;/p&gt;
+&lt;p&gt;因为 Komga 支持对 PDF 文件的托管和读取，所以有很多我觉得写的很棒的文章，我也更倾向于转成 PDF 文档后，一起丢到 Komga 中，这样可以最大程度还原文章的排版，也一定程度避免了网站后期运维不善导致图片资源丢失的问题（比如网站所用图床挂了），毕竟数据无价嘛。&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;&lt;a href=&#34;#结语&#34; class=&#34;headerlink&#34; title=&#34;结语&#34;&gt;&lt;/a&gt;结语&lt;/h2&gt;&lt;p&gt;你还有更好的自托管漫画平台推荐吗？&lt;/p&gt;
+&lt;p&gt;如果没有的话，还不赶紧去部署 Komga 呀~&lt;/p&gt;
+&lt;p&gt;什么？怎么部署？&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;鉴于本篇文章字数已经过长，如果大家呼声很高的话，我就再单独写一篇文章详细介绍如果部署 Komga 和如何设置手机端 App 好了。&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;可以参考另一个博客的&lt;a href=&#34;https://www.himiku.com/archives/komga.html&#34;&gt;这篇文章。&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2023-03-30T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1677915050714/</id>
+        <title>我Hack了一个蓝牙墨水屏，还挺好玩</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1677915050714/"/>
+        <content type="html">&lt;p&gt;少数派首发&lt;/p&gt;
+&lt;p&gt;我为什么要买墨水屏产品&lt;br&gt;事情的起因是这样的，一年前，社交媒体上就已经有很多技术宅在自己玩一些微雪的墨水屏了，看着他们又是焊板子又是PCB的真的是馋死我了。&lt;/p&gt;
+&lt;p&gt;但苦于自己是软件出身，没有一点硬件的底子，我就在想，能不能买一个现成的，然后自己再慢慢地去分析原理。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;于是我就持巨资买了两块超市用的价签，一块65，带支架，有App控制，可以批量添加。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-zglb-dppx.webp&#34; alt=&#34;现在居然还涨价了。。。&#34;&gt;&lt;br&gt;现在居然还涨价了。。。&lt;/p&gt;
+&lt;p&gt;然后我拆了其中一块想试下能不能用我树莓派的视频输出去控制它。&lt;/p&gt;
+&lt;p&gt;然后。。。就悲剧了。&lt;/p&gt;
+&lt;p&gt;我发现这玩意儿的排线跟树莓派根本就不兼容。。。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-eosd-rxjp-nuvf.webp&#34; alt=&#34;被我拆掉的尸体，组装回去还能用，但我发现我没法用树莓派去接线驱动&#34;&gt;&lt;br&gt;被我拆掉的尸体，组装回去还能用，但我发现我没法用树莓派去接线驱动&lt;/p&gt;
+&lt;p&gt;66块钱就这么没了！！&lt;/p&gt;
+&lt;p&gt;还有另一块作为我的备用方案一直躺在箱子里待了半年多。&lt;/p&gt;
+&lt;p&gt;废物再利用，另辟蹊径&lt;br&gt;直到今年年初，我NAS的硬盘被我用到了80%，然后迅雷还在卯足了劲儿在往硬盘里塞东西，我每天不得不多次打开我的管理界面去检测Nas当前还有多少余量可以用。&lt;/p&gt;
+&lt;p&gt;然后我就想到了它，墨水屏，这东西显示的时候不耗电，只有刷新的时候才会用一点点电，简直就是为监控状态而生的屏幕啊。&lt;/p&gt;
+&lt;p&gt;所以我就又下定了决心去想驱动它的办法。&lt;/p&gt;
+&lt;p&gt;上次用硬件驱动的路子走不通了，学习成本过高。我开始另辟蹊径，往软件驱动上靠：我能不能去找到控制它刷新的协议呢？&lt;/p&gt;
+&lt;p&gt;答案是肯定的。&lt;/p&gt;
+&lt;p&gt;这类墨水屏走的都是低功耗蓝牙控制的路子，手机蓝牙发送数据都是可以通过logcat这个工具进行抓包，说干就干。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-fzlx-bmwp.webp&#34; alt=&#34;这是logcat抓取的所有的手机运行日志&#34;&gt;&lt;br&gt;这是logcat抓取的所有的手机运行日志&lt;/p&gt;
+&lt;p&gt;显然有很多是我们不需要的信息，这严重干扰了我的分析工作，那就加一个过滤条件，只接受蓝牙相关的信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-yijd-rcmn-nrqm.webp&#34; alt=&#34;还是看不出什么内容，只是很不相关的日志输出&#34;&gt;&lt;br&gt;还是看不出什么内容，只是很不相关的日志输出&lt;/p&gt;
+&lt;p&gt;只能根据时间节点一点点翻logcat日志了，此时我发现一个值得关注的信息，在蓝牙发送的那段时间的日志中，有一个非常规律的，也很像有点儿内容的写命令&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-qedh-eiwd-pzkk.webp&#34; alt=&#34;识别度AAAA！！！&#34;&gt;&lt;br&gt;识别度AAAA！！！&lt;/p&gt;
+&lt;p&gt;于是我就把这个关键字作为单独的日志过滤条件重新进行了一次抓包，事情突然就明朗了，这就是蓝牙墨水屏的手机App控制墨水屏的协议，而且协议的内容也非常容易理解&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-jlrd-hial-pnub.webp&#34; alt=&#34;纵向看，注意到那个01 02 03 04 05 06 了嘛？&#34;&gt;&lt;br&gt;纵向看，注意到那个01 02 03 04 05 06 了嘛？&lt;/p&gt;
+&lt;p&gt;为了信息发送的稳定性，开发者把这个屏幕的发送信息切成了一段一段的内容，分开发给蓝牙墨水屏屏幕，然后在发送结束后，再发送命令给墨水屏统一控制刷新一次，这样就完成了屏幕的刷新，接下来我详细分析一下我对这段协议的理解。&lt;/p&gt;
+&lt;p&gt;报文分析，找到协议规律&lt;br&gt;可以参考上边的报文内容，并结合当前的分析内容看。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;01-25 17:11:24.844 25455 25455 E write: total=1,13 01 b4 ff ……ff ff 4c&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;这是蓝牙发送协议的内容部分，报文的起始内容是13 01 b4 ff ……ff ff 4c&lt;/p&gt;
+&lt;p&gt;13：命令字，标识当前的内容是显示内容，对应到墨水屏的显示控制部分的地址&lt;/p&gt;
+&lt;p&gt;01：报文顺序，通过上边截图（竖着看），也能看出，开发者是把屏幕的内容切割成一段一段分开发给屏幕的&lt;/p&gt;
+&lt;p&gt;b4：16进制数字，代表180，数一下b4后边的报文也就是180 + 1的长度，这个+1看下边说明&lt;/p&gt;
+&lt;p&gt;4c：校验位，防止当前这段报文在传输过程中有内容没收到或者传输错误，所以增加一个校验位，来保证当前报文是&lt;/p&gt;
+&lt;p&gt;ff：报文内容，这个下边再细说。&lt;/p&gt;
+&lt;p&gt;这种报文一共出现了26次，第二十七次有一点不同&lt;/p&gt;
+&lt;p&gt;01-25 17:11:34.142 25455 25455 E write: total&amp;#x3D;1,13 1b 38 ff ……ff ff c8&lt;br&gt;可以看到，除了长度以外，报文的规则仍然符合我们上述的分析。&lt;/p&gt;
+&lt;p&gt;那么我们现在就可以来总结一下这个命令字0x13的所有内容了：&lt;/p&gt;
+&lt;p&gt;180&lt;em&gt;26+56 &amp;#x3D; 4736 &amp;#x3D; 296&lt;/em&gt;16&lt;/p&gt;
+&lt;p&gt;已知的情况是：我们的墨水屏屏幕分辨率为296&lt;em&gt;128，128 &amp;#x3D; 16&lt;/em&gt;8&lt;/p&gt;
+&lt;p&gt;那缺失的这个系数8哪去了呢？&lt;/p&gt;
+&lt;p&gt;我们知道，ff是16进制数，&lt;/p&gt;
+&lt;p&gt;换算为10进制是255，&lt;/p&gt;
+&lt;p&gt;换算为2进制是11111111&lt;/p&gt;
+&lt;p&gt;诶？11111111，这不正好是8个长度位吗？&lt;/p&gt;
+&lt;p&gt;事情开始明了了，&lt;/p&gt;
+&lt;p&gt;一个ff数据，二进制形式下是11111111，通过1和0来区分墨水屏的黑色和白色状态，进而可以控制八个墨水屏像素。&lt;/p&gt;
+&lt;p&gt;那我们的等式180&lt;em&gt;26+56 &amp;#x3D; 4736 &amp;#x3D; 296&lt;/em&gt;16 * 8 &amp;#x3D; 296*128就正式成立了！！！&lt;/p&gt;
+&lt;p&gt;因为我买的是三色显示，所以除了显示黑白，这个屏幕还可以显示红色，红色报文的控制跟上述类似，只是命令字不通，就不再赘述。&lt;/p&gt;
+&lt;p&gt;新的问题，蓝牙连接&lt;br&gt;搞定了这块屏幕的控制协议，接下来就是怎么把协议发过去了。到了这一阶段就彻底没有可能通过报文分析，只能盲猜了。&lt;/p&gt;
+&lt;p&gt;我查了一些低功耗蓝牙的连接资料，同时一步一步地写代码来测试，最终还是摸索到了连接蓝牙并发送的方法了&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;onCharacteristicFound&lt;/span&gt; = (&lt;span class=&#34;params&#34;&gt;_error, services, _characteristics&lt;/span&gt;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; characteristic = services[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;].&lt;span class=&#34;property&#34;&gt;characteristics&lt;/span&gt;[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      characteristic.&lt;span class=&#34;title function_&#34;&gt;once&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;notify&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;state&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &amp;#123; &lt;span class=&#34;title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;notify: &amp;#x27;&lt;/span&gt; + state) &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      characteristic.&lt;span class=&#34;title function_&#34;&gt;once&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;write&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;function&#34;&gt;() =&amp;gt;&lt;/span&gt; &amp;#123; &amp;#125;, &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;res&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                             &lt;span class=&#34;title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;write get response: &amp;#x27;&lt;/span&gt; + res)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;built_in&#34;&gt;setTimeout&lt;/span&gt;(&lt;span class=&#34;function&#34;&gt;() =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;title function_&#34;&gt;sendData&lt;/span&gt;(characteristic)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;, &lt;span class=&#34;number&#34;&gt;250&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;onDescover&lt;/span&gt; = (&lt;span class=&#34;params&#34;&gt;peripheral&lt;/span&gt;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;searning...&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (peripheral.&lt;span class=&#34;property&#34;&gt;connectable&lt;/span&gt; === &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &amp;amp;&amp;amp; peripheral.&lt;span class=&#34;property&#34;&gt;state&lt;/span&gt; === &lt;span class=&#34;string&#34;&gt;&amp;#x27;disconnected&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (peripheral.&lt;span class=&#34;property&#34;&gt;advertisement&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;localName&lt;/span&gt; === &lt;span class=&#34;string&#34;&gt;&amp;#x27;你的蓝牙设备识别码&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  &lt;span class=&#34;title function_&#34;&gt;stopScanning&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  currentDevice = peripheral&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  peripheral.&lt;span class=&#34;title function_&#34;&gt;once&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;connect&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;function&#34;&gt;() =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;Connected !!! &amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        peripheral.&lt;span class=&#34;title function_&#34;&gt;discoverSomeServicesAndCharacteristics&lt;/span&gt;(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    [&lt;span class=&#34;string&#34;&gt;&amp;#x27;服务特征码1&amp;#x27;&lt;/span&gt;], &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    [&lt;span class=&#34;string&#34;&gt;&amp;#x27;服务特征码2&amp;#x27;&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    onCharacteristicFound);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  peripheral.&lt;span class=&#34;title function_&#34;&gt;once&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;disconnect&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;function&#34;&gt;() =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;disconnected !!! &amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                  peripheral.&lt;span class=&#34;title function_&#34;&gt;connect&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;以上代码就是搜索蓝牙、连接蓝牙、连接服务、发送数据的全部代码了，当然，完整的项目代码晚点我也会上传github，欢迎大家多多Star，多多提意见。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-igpa-anwy-jvhg.webp&#34; alt=&#34;最终效果&#34;&gt;&lt;/p&gt;
+&lt;p&gt;屏幕其实挺小的，2.9寸&lt;/p&gt;
+&lt;p&gt;在这块小屏幕上，分别展示了&lt;/p&gt;
+&lt;p&gt;1、我的Nas的两块存储池的使用情况&lt;/p&gt;
+&lt;p&gt;2、Nas的cpu、内存占用情况&lt;/p&gt;
+&lt;p&gt;3、树莓派的内存状态&lt;/p&gt;
+&lt;p&gt;4、树莓派的CPU状态&lt;/p&gt;
+&lt;p&gt;5、当前信息的刷新时间&lt;/p&gt;
+&lt;p&gt;不多，但是也够用了。&lt;/p&gt;
+&lt;p&gt;其实在代码上我还有一些内容忘记聊了，关于显示内容的控制。&lt;/p&gt;
+&lt;p&gt;上边的信息看起来挺简单的，但把它换算成一个一个像素点其实还是蛮复杂的，需要分析字库字形、图形缩放等等，时间成本过高。&lt;/p&gt;
+&lt;p&gt;我突然想到了canvas，canvas就是一个可以定制显示画布像素的完美工具，而且在上边可以做几乎任何事情，说干就干，我把需要显示的内容通过canvas绘制出来，然后再转换成一个一个的像素信息，然后再通过黑白红颜色的RGB值来决定最终发送的报文信息，搞定！！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-jgup-bsod-tlyy.webp&#34; alt=&#34;Nas是个好东西&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我把这个程序跑在我的树莓派上，然后Nas上设置了一个定时任务，每隔一段时间就推送信息到树莓派上，然后树莓派再通过蓝牙把信息发送给墨水屏。&lt;/p&gt;
+&lt;p&gt;这感觉，才叫自动化啊 😄 😄 😄&lt;/p&gt;
+&lt;p&gt;总结&lt;br&gt;整个项目如果从买设备开始算跨度倒还挺大的，不过此次Hack的时间倒不长，前前后后也就一两周时间，而且都是晚上下班或者用周末时间来做的。&lt;/p&gt;
+&lt;p&gt;当然啦，如果是熟悉这个领域的大佬来搞，可能所用的时间更短，毕竟我还是一个小前端。哈哈哈。&lt;/p&gt;
+&lt;p&gt;希望我可以保持这种Hack精神，因为这真的是太有意思了。&lt;/p&gt;
+&lt;p&gt;希望大家也可以分享更多类似的经历，毕竟我知道自己在这个折腾的过程中很开心，相信大家知道了之后也会替我开心，尤其是那些想动手还没动手的人，说不定已经跃跃欲试了。&lt;/p&gt;
+&lt;p&gt;毕竟我只是一名小前端嘛~&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <updated>2023-03-18T13:32:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1677919529460/</id>
+        <title>Nas，我用我开心，你买你快乐</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1677919529460/"/>
+        <content type="html">&lt;p&gt;最近绿联应该是没少花钱，我看各个数码博主都在给他们的DX4600打广告，说什么：啊，这才是普通人该用的Nas；啊，这才是大厂良心。。。&lt;/p&gt;
+&lt;p&gt;嗯，Nas这个东西，它始终是一个程序员产品，有些东西就是需要折腾的，否则Nas也将会失去它所拥有的计算能力的意义了。当然，我有看到绿联把一些之前需要折腾的功能直接打包好给用户奉上了，这对用户来说倒是挺好的，但更多的功能，其实还是需要用户自己折腾的，除非你想要的，卖Nas的厂商都帮你打包好，这个开发成本还是挺客观的，从商业角度来看，我觉得不太可能。&lt;/p&gt;
+&lt;p&gt;很多人喷群晖的上手成本很高，喷群晖的外网链接慢，喷群晖价格高，都没喷到点子上，喷这些的人，至少没有深入的去使用群晖。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;绿联提供的基础功能，群晖其实也可以很方便地上手，只是分成了一个一个的独立程序，诚意其实要远高于绿联，但大家就喜欢绿联的All in One，那行吧。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;群晖外网连接慢，这跟商业模式有关，厂商帮你转发数据流量，是同样需要租用高带宽服务器的，而且你自己的家庭上传带宽也是很大的一个瓶颈，很多家用网络下载速度很快，上传只有下载的十分之一不到，绿联可能给用户分配了更高的带宽限制，但也仅此而已了，我希望它能一直坚持这个免费转发带宽，这对用户是好事儿，对厂商是运营负担。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;群晖价格是比其他竞品高的，这其实主要是因为它系统所带来的附加值。这一点跟iOS很像，就像你花8000买了iPhone，是奔着它的4G运行内存去的吗？隔壁2000就能买到12G大内存的安卓手机。你更希望享受到的，是苹果iOS带来的软件生态和用户体验。群晖的DSM，就是Nas中的iOS。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;而且Nas的价格，在硬盘面前都是弟弟，后期买硬盘来存资料的时候，才是真正的花钱的大头，你会发现你买硬盘的钱会远远超过群晖本身的价格。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我觉得群晖最让我难受的缺陷，是它自带的&lt;strong&gt;孱弱的低功耗处理器，&lt;/strong&gt;真的太差了，这么多的钱，给这样的处理器，真的真的很小气。这应该也是很多极客自己组Nas的原因吧。&lt;/p&gt;
+&lt;p&gt;Nas的硬盘分为企业盘、Nas专用盘等，便宜的企业盘（氦气盘）非常吵，而且硬盘一旦损坏，维修成本也非常高（这是听说的，我没买过）。而买专业盘呢，价格就会比企业盘贵得多，但存自己的数据嘛，稳定、靠谱才是重点，如果Nas经常丢数据，那就失去了它存储中心的意义了不是吗。&lt;/p&gt;
+&lt;p&gt;但这都不是大家买群晖的重点，大家容忍他的上手难度、低配高价，无非是看中了他能解决的问题，接下来我就说说我的经历。&lt;/p&gt;
+&lt;h2 id=&#34;相见恨晚&#34;&gt;&lt;a href=&#34;#相见恨晚&#34; class=&#34;headerlink&#34; title=&#34;相见恨晚&#34;&gt;&lt;/a&gt;相见恨晚&lt;/h2&gt;&lt;p&gt;我当前这台**群晖DS920+**是去年上海封城前三天下单的，我觉得这是我买到的最值的电子产品，没有之一。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-izyy-zxsx.webp&#34; alt=&#34;image-izyy-zxsx.webp&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;我的痛点&#34;&gt;&lt;a href=&#34;#我的痛点&#34; class=&#34;headerlink&#34; title=&#34;我的痛点&#34;&gt;&lt;/a&gt;我的痛点&lt;/h3&gt;&lt;p&gt;在买Nas之前：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;数据在转移中丢失的情况不止一次发生在我身上，很多积攒很多年的学习资料都莫名其妙地找不到了。真的很让我头疼。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;手头有几块U盘和一块2T的移动硬盘，工作电脑和笔记本、手机中也都分散存储了很多资料，好听点儿叫分布式存储，不好听点就是找资料火葬场。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;iCloud存不了几个拍摄的视频，只能每个月花钱维持扩容空间，但扩容后也用不了多久，又满了，还要花钱再升级。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;百度网盘空间倒是挺大，但也要我自己花钱才能用高速下载，不然就是残废东西。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;iCloud丢失过我的文件，对网络存储也开始不放心了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;国内各大平台（B站用的比较多），上线的《老友记》阉割非常非常严重，就没法看。我之前非常爱看的《碧蓝之海》也阉割了。令我非常气愤。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;还有很多问题，不再一一列举。。。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;购买背景&#34;&gt;&lt;a href=&#34;#购买背景&#34; class=&#34;headerlink&#34; title=&#34;购买背景&#34;&gt;&lt;/a&gt;购买背景&lt;/h3&gt;&lt;p&gt;2022年3月的上海，大街小巷都在传“上海马上要封城了”，我们当时由于下错单，多买了两箱方便面（我跟我女朋友下单了两次），还在苦恼该怎么办，边苦笑边把面搬回租的房子里。没想到这一举动反而在后边的三个月时间里让我们减少了食物焦虑。&lt;/p&gt;
+&lt;p&gt;当时人心惶惶的，小区也早就管控起来了，我就怕到时候把我们都封在屋子里，不让出门，我会被逼疯吧。然后我就卡着时间点下单了群晖的DS920+，想着有个东西折腾，那至少不会那么无聊吧。事实证明这个决定是无比正确的，群晖不仅帮助我度过了那段艰难的时间，更让我从此以后过上了存储自由的生活。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请注意，此文章不是教你如何使用Nas的，因为群晖的使用一篇文章也远远讲不清楚，我只是把群晖能解决的问题跟大家分享一下，如果以后有缘，再分篇幅去把各个功能点如何使用来给大家分享一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那我们开始吧&lt;/p&gt;
+&lt;h2 id=&#34;影视功能&#34;&gt;&lt;a href=&#34;#影视功能&#34; class=&#34;headerlink&#34; title=&#34;影视功能&#34;&gt;&lt;/a&gt;影视功能&lt;/h2&gt;&lt;p&gt;为了对付国内“大阉割”趋势，我用群晖的影视功能实现了看剧自由，我可以自由挑选资源来组成我的影视库，无论是被阉割的动漫番剧、国内没有上映的电影、国内阉割严重的电视剧、以及其他类型的影视，我都可以找到完美的替换资源，然后把这些内容存放在群晖的影视资源库中。给大家几张图片感受一下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-03-04_16-43-12-rbmx.webp&#34; alt=&#34;Snipaste_2023-03-04_16-43-12-rbmx.webp&#34;&gt;&lt;img src=&#34;/upload/Snipaste_2023-03-04_16-42-47-sbeg.webp&#34; alt=&#34;Snipaste_2023-03-04_16-42-47-sbeg.webp&#34;&gt;&lt;img src=&#34;/upload/Snipaste_2023-03-04_16-42-30-eddo.webp&#34; alt=&#34;Snipaste_2023-03-04_16-42-30-eddo.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;因为大多数时间，我都在自己的家里看这些影视，所以内网速度其实非常快，观看根本不需要缓存时间，就算断网了，只要我的路由器活着，我就仍然可以在家里看这些剧，可以说非常方便了。&lt;/p&gt;
+&lt;p&gt;当然了，没有广告，没有付费，没有阉割，没有恶意马赛克（我说的是碧蓝之海）这些都是基本素质。&lt;/p&gt;
+&lt;p&gt;通过这个影视功能，算是把我看剧自由的痛点全部解决了。&lt;/p&gt;
+&lt;p&gt;顺便说一下，quickconnect的速度其实还是可以的，在外网看看普通清晰度的剧完全够用，如果要看高清的4K资源，则完全取决于你的家庭上传速度和你自己的frp转发带宽上限，这里就不展开了。&lt;/p&gt;
+&lt;h2 id=&#34;云相册功能&#34;&gt;&lt;a href=&#34;#云相册功能&#34; class=&#34;headerlink&#34; title=&#34;云相册功能&#34;&gt;&lt;/a&gt;云相册功能&lt;/h2&gt;&lt;p&gt;云相册其实解决的就是我的iCloud付费的问题，随着时间流逝，我的照片和视频总是会越来越多的，我总不能无限制地给Apple付费下去，而且它还丢数据（数据无价）。&lt;/p&gt;
+&lt;p&gt;群晖自带的Synology Photo有手机端App，可以把你手机里的所有照片都上传到你的Nas中，也有网页版，方便你在各个地方查看你的照片，更何况群晖还附赠了图片分析功能，帮你根据拍摄时间、拍摄地点、人脸等内容自动整理相册，而且这些分析数据完全放在你的机器上，不会在你看不到摸不着的云服务器上。&lt;/p&gt;
+&lt;p&gt;当然了，这个在线图库也有一个问题，它没办法编辑图片，需要我下载到本地，用本地相册编辑完，再上传上去。我觉得群晖需要在这个地方再下下功夫，那这个相册就更强了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-txyc-zmyt.webp&#34; alt=&#34;image-txyc-zmyt.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我当前的Nas的存储池是7T（Raid5）+2T（No Raid）的组合，重要的个人资料，包含相册在内，都是存在我的7T存储池中的，随我使用，反正以现在的拍照速度来看，可以用到我退休了。&lt;/p&gt;
+&lt;p&gt;同时，Raid5的磁盘阵列也保证了我数据的安全性，即使有磁盘坏掉，我换掉磁盘即可，不需要担心数据丢失的问题。&lt;/p&gt;
+&lt;h2 id=&#34;网盘功能&#34;&gt;&lt;a href=&#34;#网盘功能&#34; class=&#34;headerlink&#34; title=&#34;网盘功能&#34;&gt;&lt;/a&gt;网盘功能&lt;/h2&gt;&lt;p&gt;Nas的网盘功能是存储文件资料的基础功能之一，现在也更强了，群晖增加了Drive的团队功能，现在用户可以在线一同使用群晖的Drive来编辑Word文档、Excel表格等，四舍五入每年的Office授权费又省下来了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-qbzt-wuwt.webp&#34; alt=&#34;image-qbzt-wuwt.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;喔，你还可以把文件转成公开链接，让你的朋友下载和查看，基操勿6。&lt;/p&gt;
+&lt;h2 id=&#34;漫画功能&#34;&gt;&lt;a href=&#34;#漫画功能&#34; class=&#34;headerlink&#34; title=&#34;漫画功能&#34;&gt;&lt;/a&gt;漫画功能&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;该功能需要使用群晖的Docker，使用一个Komga的工具来实现，不要慌，我不是要教你&lt;a href=&#34;/archives/1680011338095&#34;&gt;&lt;strong&gt;怎么实现&lt;/strong&gt;&lt;/a&gt;，我就展示一下这个功能，你来看下好不好用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;国内的漫画环境其实挺糟糕的，想看的漫画基本上在网络上都搜不到，漫画资源倒是可以搜罗到，但看漫画的工具都在各个设备上，iOS有Comics，Windows上有Cover，Mac上也有看漫画的工具，都有，但我总不能每次下载一个漫画，就分别复制到各个设备上吧，以后漫画资源慢慢多起来后，设备存储有限，又是传来传去，删来删去，得，东西又丢了不是，而且这样的话阅读的进度也是不同步的，总之就是非常割裂。&lt;/p&gt;
+&lt;p&gt;Komga就是为此痛点而生的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-03-04_17-38-49-rmqg.webp&#34; alt=&#34;Snipaste_2023-03-04_17-38-49-rmqg.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Komga在Nas上搭建了一个网站，你的所有设备都可以打开Komga进行阅读，阅读记录是同步的，而且漫画是存储在Nas上的，不会占用你的其他设备任何空间，一举多得。&lt;/p&gt;
+&lt;p&gt;实际上，在拥有Nas后，我购买电子设备的时候就不用再给设备预留太多的存储空间了，因为重要的资料就在Nas上。图片、视频、想看的漫画、想看的影视，都在Nas上，电脑、手机、平板，只需要能够打开Nas的各个服务所对应的App就行了。根本不需要花额外的钱去购买手机和平板电脑的硬盘空间，而且苹果公司是出了名的存储空间卖的贵，500GB的磁盘升级都要上千块，有这钱都够给Nas买一个4T甚至8T的硬盘了。&lt;/p&gt;
+&lt;h2 id=&#34;博客功能&#34;&gt;&lt;a href=&#34;#博客功能&#34; class=&#34;headerlink&#34; title=&#34;博客功能&#34;&gt;&lt;/a&gt;博客功能&lt;/h2&gt;&lt;p&gt;这也是近期我折腾的一个成果之一，之前的博客系统使用的Hexo，它很轻、很好用，就是、、、我把我生成博客的文件丢失了，我不知道我当时存在了哪台设备上，也没有用github进行备份，就导致我不得不重新搭建一个博客系统，Halo这个带后台的博客系统完美地解决了我的问题，我不用自己生成、部署、解决图床等问题。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-qkjl-kxub.webp&#34; alt=&#34;image-qkjl-kxub.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我所需要做的，就是打开网站，登陆，写文章，发布。你可以通过&lt;a href=&#34;/archives/rebooting-my-blog-system&#34;&gt;这篇文章&lt;/a&gt;来了解一下我搭建博客的心路历程&lt;/p&gt;
+&lt;p&gt;真的太爽了，你用你也爽，相信我。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;&lt;a href=&#34;#总结&#34; class=&#34;headerlink&#34; title=&#34;总结&#34;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;Nas的第一职责是数据安全，在此基础上，可以拓展出无限的玩法，这其中绝不仅仅是我上边提及的那些，更不仅仅是数码博主视频里提到的那些视频和相册这种老掉牙的功能。&lt;/p&gt;
+&lt;p&gt;正如我之前所说&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我当前的Nas的存储池是8T（Raid5）+2T（No Raid）的组合，重要的个人资料，包含相册在内，都是存在我的8T存储池中的，随我使用，反正以现在的拍照速度来看，可以用到我退休了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;同时，Raid5的磁盘阵列也保证了我数据的安全性，即使有一块磁盘坏了，我换掉磁盘即可，不需要担心数据丢失的问题。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-obgl-msfi.webp&#34; alt=&#34;image-obgl-msfi.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;有人可能要问了，Nas放了你的所有，那如果哪天你的Nas整个坏掉，你该怎么办？如果你的三块磁盘都一起坏了。你的数据不是还面临着丢失嘛？&lt;/p&gt;
+&lt;p&gt;这个其实也在我的考虑之内。现在分布式存储的设想已经在我的计划中了，我后期可能会再准备一个Nas放在异地，然后把这两个Nas组成分布式存储链，即使哪天真有其中一个坏掉了，那另一个备份Nas的存在也让我有充足的时间重新购置硬件并恢复我的设备了。&lt;/p&gt;
+&lt;p&gt;那如果异地的两台Nas都同时坏掉了呢？&lt;/p&gt;
+&lt;p&gt;嗯。。。我猜那时候这个世界距离毁灭应该不远了，所以数据什么的应该无所谓了吧。&lt;/p&gt;
+&lt;p&gt;正如我标题所讲，Nas很好，你也可以来一台的。&lt;/p&gt;
+&lt;p&gt;ps：很多人说折腾不来，不懂计算机相关的知识，其实我倒觉得这才是小问题，自己不会，可以问朋友，朋友不会，可以在网上找会的人（比如我，哈哈哈，插会儿腰），另外，如果大家觉得付费指导是一个可以接受的选项，我相信市场一定会出现类似的团队的：你只需要掏钱，他们就会提供保姆式的Nas搭建服务，帮你完成Nas的采购、设置、扩展、维护等。&lt;/p&gt;
+&lt;p&gt;如果这种团队迟迟不出现怎么办？没事，只要呼声够高，我会出手的😎😎😎。&lt;/p&gt;
+&lt;p&gt;ps：很多人说你这一套折腾下来也不便宜啊，算下来够我买XXX会员XX年了。&lt;/p&gt;
+&lt;p&gt;这位朋友，你说的其实是对的。的确可以。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;服务名&lt;/th&gt;
+&lt;th&gt;连续包月&lt;/th&gt;
+&lt;th&gt;连续包年&lt;/th&gt;
+&lt;th&gt;用途&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;百度云网盘会员连续包年5T空间，高清下载&lt;/td&gt;
+&lt;td&gt;25元&lt;/td&gt;
+&lt;td&gt;263元&lt;/td&gt;
+&lt;td&gt;存资料&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iCloud会员2TB版本&lt;/td&gt;
+&lt;td&gt;68元&lt;/td&gt;
+&lt;td&gt;816元&lt;/td&gt;
+&lt;td&gt;存照片视频&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bilibili大会员&lt;/td&gt;
+&lt;td&gt;15元&lt;/td&gt;
+&lt;td&gt;148元&lt;/td&gt;
+&lt;td&gt;看番剧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;爱奇艺会员&lt;/td&gt;
+&lt;td&gt;25元&lt;/td&gt;
+&lt;td&gt;258元&lt;/td&gt;
+&lt;td&gt;看剧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;腾讯会员&lt;/td&gt;
+&lt;td&gt;25元&lt;/td&gt;
+&lt;td&gt;238元&lt;/td&gt;
+&lt;td&gt;看剧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;注意，iCloud跟百度云的存储空间加起来，好像也没超过Nas的存储空间，反正没超过我的Nas。哈哈。&lt;/p&gt;
+&lt;p&gt;不抬杠哈。&lt;/p&gt;
+&lt;p&gt;况且你看看服务费：&lt;/p&gt;
+&lt;p&gt;一年花销：263+816+148+258+238 &amp;#x3D; 1723&lt;/p&gt;
+&lt;p&gt;两年花销：1723 * 2 &amp;#x3D; 3446&lt;/p&gt;
+&lt;p&gt;三年花销：1723 * 3 &amp;#x3D; 5169&lt;/p&gt;
+&lt;p&gt;……你懂的&lt;/p&gt;
+&lt;p&gt;况且，Nas，本来就不仅仅是一个网盘，Nas有无限的可能。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="网络" />
+        <updated>2023-03-04T20:28:38.000Z</updated>
+    </entry>
+</feed>
