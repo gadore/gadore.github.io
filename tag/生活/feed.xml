@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;生活&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2024-10-27T14:59:30.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="网络" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="iPhone" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <category term="生活" />
+    <entry>
+        <id>https://blog.gadore.top/archives/tinnitus/</id>
+        <title>熬夜原来真的不行，耳朵差点儿聋了</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/tinnitus/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/mushishi.png&#34; alt=&#34;虫师&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;动漫《虫师》中，有一种会吃掉声音的虫，这种虫会导致宿主什么都听不到；还有一种会释放声音的虫，会让你的耳朵里充斥着各种声音，让人在声音的嘈扰下无法好好休息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近这几天耳朵又开始嗡嗡响，心说遭了，我的耳鸣又复发了。这几天只能早早睡觉，不敢再熬夜了。&lt;/p&gt;
+&lt;p&gt;倒不是危险耸听，我也没有经常耳朵塞个耳机一直听歌，但我好像这辈子都要笼罩在耳鸣的阴影之下了。&lt;/p&gt;
+&lt;h2 id=&#34;发病&#34;&gt;&lt;a href=&#34;#发病&#34; class=&#34;headerlink&#34; title=&#34;发病&#34;&gt;&lt;/a&gt;发病&lt;/h2&gt;&lt;p&gt;两年前，在我还不清楚耳鸣这个名词之前，我熬夜是比较随意的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;白天，工作比较忙，RSS 抓取的各种新闻源，直到晚上躺到床上之后，才会一个个开始翻看；&lt;/li&gt;
+&lt;li&gt;偶尔想补一下东野圭吾的小说，《恶意》《放学后》《同级生》，一本本读下来非常上瘾，每天都到凌晨两三点才睡；&lt;/li&gt;
+&lt;li&gt;晚上思维比较活跃，会突然想折腾一下刷机啊、各种开源的工具啊，之类的；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;凡此种种，一不留神，就跨过了凌晨这个熬夜的门槛。&lt;/p&gt;
+&lt;p&gt;持续最久的时候，可能会连续好几天都在熬夜，结果就是右耳朵开始嗡嗡响，也就是所谓的 “耳鸣” 开始折磨我。&lt;/p&gt;
+&lt;h3 id=&#34;症状&#34;&gt;&lt;a href=&#34;#症状&#34; class=&#34;headerlink&#34; title=&#34;症状&#34;&gt;&lt;/a&gt;症状&lt;/h3&gt;&lt;p&gt;可能很多人没有经历过耳鸣，我简单说一下，我的属于神经型耳鸣，以我浅薄的理解，就是硬件（耳朵、耳膜）没有任何外部损坏，出问题的是耳朵到大脑的神经传导部分。我能感觉到的就是：耳朵一直在响，类似有人一直在我耳边 ‘滋滋滋—’。&lt;/p&gt;
+&lt;p&gt;如果你想知道是什么声音，那可以找一个安静的环境，用手捂住你的耳朵，完全捂住之后，耳朵是不是可以听到一些低沉的嗡嗡声？耳鸣声，就跟这个声音类似，但是声音更尖锐。&lt;/p&gt;
+&lt;p&gt;最开始我还不以为然，因为带上耳机后，这种声音就基本上消失了。&lt;/p&gt;
+&lt;p&gt;但又过了两天，耳鸣声音越来越大，戴上耳机也消除不了了，更恐怖的是，两只耳朵听歌的时候，音乐的音量在我听来已经不一样大了，耳机没有坏，那就是耳朵坏了，我赶紧去医院检查。&lt;/p&gt;
+&lt;h2 id=&#34;治疗&#34;&gt;&lt;a href=&#34;#治疗&#34; class=&#34;headerlink&#34; title=&#34;治疗&#34;&gt;&lt;/a&gt;治疗&lt;/h2&gt;&lt;p&gt;在医院耳鼻喉科做了详细的听力测试，结果如我所料 — 神经性耳鸣，听力已经损耗很严重了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/erming.JPEG&#34; alt=&#34;耳鸣诊断结果&#34;&gt;&lt;/p&gt;
+&lt;p&gt;心里开始害怕，问医生：有办法治好吗？&lt;/p&gt;
+&lt;p&gt;医生的回答是：大概率能治，但没办法完全治好。而且因为是神经性的，需要用到激素治疗，每个人体质不同，激素作用效果也因人而异，所以需要多次复检来调整激素用量。&lt;/p&gt;
+&lt;p&gt;放在大腿上的手开始微微发抖。&lt;/p&gt;
+&lt;p&gt;医生这时又警告我：近半个月，不准听歌，绝对不准熬夜和加班，神经性耳鸣最忌讳的就是熬夜和劳累。&lt;/p&gt;
+&lt;h2 id=&#34;病根&#34;&gt;&lt;a href=&#34;#病根&#34; class=&#34;headerlink&#34; title=&#34;病根&#34;&gt;&lt;/a&gt;病根&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;肯定很多 “肝帝” 说：我天天熬夜玩游戏也没啥啊，怎么你这么菜？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;确实，我也这么问医生的，毕竟谁高中大学没有经常熬夜，怎么我之前天天通宵去网吧也没事？&lt;/p&gt;
+&lt;p&gt;医生也帮我分析了一下，大概意思：最近是不是工作上的压力比较大？神经性耳鸣都有一个发病的临界点，当你的压力突破了这个临界点，就会开始触发神经性耳鸣，熬夜会加重你耳鸣的程度，但不是你发病的原因。&lt;/p&gt;
+&lt;p&gt;我突然想起我最近，我的确是被公司外派到某个项目现场出差，白天调试设备，晚上盯生产，连续干了两天，每天工作强度在十八小时以上。&lt;/p&gt;
+&lt;p&gt;现在想来，可能在现场超负荷工作的时候，耳鸣已经开始了，只是现场设备 80 分贝的工作环境下，我又怎么可能听得到耳朵的嗡嗡声呢？&lt;/p&gt;
+&lt;p&gt;出差回来之后仅仅睡了一个懒觉，白天继续上班工作，晚上又熬夜看信息流，看小说，“恶补” 我出差时没能享受的信息流洗礼。这一系列的操作下，神经性耳鸣，发作了。&lt;/p&gt;
+&lt;h2 id=&#34;浅谈&#34;&gt;&lt;a href=&#34;#浅谈&#34; class=&#34;headerlink&#34; title=&#34;浅谈&#34;&gt;&lt;/a&gt;浅谈&lt;/h2&gt;&lt;p&gt;回到现在，正如当时治疗我的医生所言，神经性耳鸣无法完全治愈，当我每天可以获得正常的休息时，耳朵是比较正常的。&lt;/p&gt;
+&lt;p&gt;但当我开始熬夜，哪怕只是跨过了凌晨这个槛，第二天起床，耳朵就一定会开始嗡嗡响，如果我第二天晚上还不收敛，第三天醒来，耳鸣的声音还会越来越大。&lt;/p&gt;
+&lt;p&gt;而想要完全恢复这个耳鸣，就要持续一周以上的充足睡眠，也就是说晚上十一点之前就要熄灯睡觉，这对于生活在 21 世纪当下的我来说，确实不容易。&lt;/p&gt;
+&lt;p&gt;但我不得不这样做，因为熬夜要看的东西，第二天可以找时间看，但听力如果丧失了，那我失去的就太多了。&lt;/p&gt;
+&lt;p&gt;希望我的经历，对大家有所警觉，也希望大家除了努力工作，也要好好注意自己的健康。&lt;/p&gt;
+</content>
+        <category term="生活" />
+        <updated>2024-10-27T14:59:30.000Z</updated>
+    </entry>
+</feed>
