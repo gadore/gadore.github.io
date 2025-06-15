@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;iphone&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2025-05-05T21:46:30.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <category term="生活" />
+    <entry>
+        <id>https://blog.gadore.top/archives/iphone-auto-alarm/</id>
+        <title>都 2025 年了，用 iPhone 还不会设置节假日闹钟的进来</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/iphone-auto-alarm/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这不上周五一假期前补班， iPhone 没有办法设置&lt;strong&gt;节假日补班闹钟&lt;/strong&gt;导致迟到的事情又又又一次上了微博的热搜，我也纳闷了，iPhone 闹钟虽然自身是不支持这一功能，但都这么多年了，早就有非常简单的方式可以弥补这一点的。但看微博上大家叫的那么欢，评论区大家哭的那么惨，似乎还是有超级多的人不知道该如何在 iPhone 上实现&lt;strong&gt;节假日闹钟&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;与其天天咒骂，忍受苹果不做本地化的痛，然后忍受迟到、忍受休息日闹钟早早地把你叫醒。你为啥不花十分钟设置一下呢？设置完之后，你的 iPhone 等于拥有了节假日闹钟。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文提供两种方式来实现这一功能，设置完成后，你的 iPhone 可以实现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;工作日自动设置起床闹钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;周末自动关闭起床闹钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;节假日期间自动关闭闹钟（哪怕是非周末时间），给你一个宁静的睡眠&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;补班期间自动打开闹钟（哪怕是周末），防止你因为迟到而引发严重后果&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;文章主要介绍第一种较为简单的方法，至于第二种进阶方法（见文末链接），等你掌握了第一种方法，自然可以去研究。&lt;/p&gt;
+&lt;h2 id=&#34;一、准备工作&#34;&gt;&lt;a href=&#34;#一、准备工作&#34; class=&#34;headerlink&#34; title=&#34;一、准备工作&#34;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;h3 id=&#34;1、设置你的闹钟，确定闹钟类型&#34;&gt;&lt;a href=&#34;#1、设置你的闹钟，确定闹钟类型&#34; class=&#34;headerlink&#34; title=&#34;1、设置你的闹钟，确定闹钟类型&#34;&gt;&lt;/a&gt;1、设置你的闹钟，确定闹钟类型&lt;/h3&gt;&lt;p&gt;众所周知，苹果的闹钟有两种，一种是普通闹钟，另一个也是普通闹钟（不是）&lt;/p&gt;
+&lt;p&gt;而另一种，是集成在苹果健康里边的“睡眠闹钟”，你如果要设置这个睡眠闹钟，还要专门下载一个名叫“健康”的 App。&lt;/p&gt;
+&lt;p&gt;如果你使用的是第一种普通闹钟，那接下来的操作，你就选择“&lt;strong&gt;一般闹钟&lt;/strong&gt;”；&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/alarm.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/alarm.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 “睡眠｜起床闹钟”为睡眠闹钟， 下方的“其他闹钟”为一般闹钟】&lt;/p&gt;
+&lt;p&gt;如果你的闹钟是在苹果的&lt;strong&gt;健康 App&lt;/strong&gt; 里边设置的，那接下来的操作，你就选择“&lt;strong&gt;睡眠闹钟&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;！如果你使用的是&lt;strong&gt;睡眠闹钟&lt;/strong&gt;，为了能够在调休日也能正常使用闹钟，请务必在设置闹钟的时候设置为&lt;strong&gt;“每天“都启用&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;二、安装-“休息日”&#34;&gt;&lt;a href=&#34;#二、安装-“休息日”&#34; class=&#34;headerlink&#34; title=&#34;二、安装 “休息日”&#34;&gt;&lt;/a&gt;二、安装 “休息日”&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/app/id6501973975&#34;&gt;点击安装休息日&lt;/a&gt;，安装后打开，按照 App 或者文章下方教程设置。&lt;/p&gt;
+&lt;h4 id=&#34;2-1-选择节假日模板&#34;&gt;&lt;a href=&#34;#2-1-选择节假日模板&#34; class=&#34;headerlink&#34; title=&#34;2.1 选择节假日模板&#34;&gt;&lt;/a&gt;2.1 选择节假日模板&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/restDayApp.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/restDayApp.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 休息日 选择节假日模板】&lt;/p&gt;
+&lt;h4 id=&#34;2-2-添加快捷指令&#34;&gt;&lt;a href=&#34;#2-2-添加快捷指令&#34; class=&#34;headerlink&#34; title=&#34;2.2 添加快捷指令&#34;&gt;&lt;/a&gt;2.2 添加快捷指令&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/shutcuts.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/shutcuts.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 休息日 】&lt;/p&gt;
+&lt;p&gt;根据本文上方的说明，选择你当前使用的闹钟方式。&lt;/p&gt;
+&lt;p&gt;在弹出的界面点击底部的“添加快捷指令”&lt;/p&gt;
+&lt;h2 id=&#34;三、设置自动化任务（最后一步，小学生都会）&#34;&gt;&lt;a href=&#34;#三、设置自动化任务（最后一步，小学生都会）&#34; class=&#34;headerlink&#34; title=&#34;三、设置自动化任务（最后一步，小学生都会）&#34;&gt;&lt;/a&gt;三、设置自动化任务（最后一步，小学生都会）&lt;/h2&gt;&lt;h3 id=&#34;1、打开捷径，点击底部的“自动化”&#34;&gt;&lt;a href=&#34;#1、打开捷径，点击底部的“自动化”&#34; class=&#34;headerlink&#34; title=&#34;1、打开捷径，点击底部的“自动化”&#34;&gt;&lt;/a&gt;1、打开捷径，点击底部的“自动化”&lt;/h3&gt;&lt;h3 id=&#34;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34;&gt;&lt;a href=&#34;#2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34; class=&#34;headerlink&#34; title=&#34;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34;&gt;&lt;/a&gt;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&lt;/h3&gt;&lt;h3 id=&#34;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34;&gt;&lt;a href=&#34;#3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34; class=&#34;headerlink&#34; title=&#34;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34;&gt;&lt;/a&gt;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/autoTask.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/autoTask.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;恭喜🎉🎉🎉！！！至此，设置就完成了，理论上你就拥有了一个完全自动化的节假日调休闹钟。&lt;/p&gt;
+&lt;h2 id=&#34;四、检查效果（非必须）&#34;&gt;&lt;a href=&#34;#四、检查效果（非必须）&#34; class=&#34;headerlink&#34; title=&#34;四、检查效果（非必须）&#34;&gt;&lt;/a&gt;四、检查效果（非必须）&lt;/h2&gt;&lt;p&gt;保险起见，如果你对自己的操作没有信心，而且你如果迟到之后，后果非常严重，那我建议你还是做一下测试，看下自己在上一步的操作是否起效&lt;/p&gt;
+&lt;h2 id=&#34;原理分析&#34;&gt;&lt;a href=&#34;#原理分析&#34; class=&#34;headerlink&#34; title=&#34;原理分析&#34;&gt;&lt;/a&gt;原理分析&lt;/h2&gt;&lt;p&gt;“休息日” App 提供了一个选项，判断明天是不是休息日&lt;/p&gt;
+&lt;h3 id=&#34;1、一般闹钟&#34;&gt;&lt;a href=&#34;#1、一般闹钟&#34; class=&#34;headerlink&#34; title=&#34;1、一般闹钟&#34;&gt;&lt;/a&gt;1、一般闹钟&lt;/h3&gt;&lt;p&gt;在一般闹钟模式，如果明天是休息日，他就帮你关掉起床闹钟，否则，他就帮你打开休息日。&lt;/p&gt;
+&lt;h3 id=&#34;1、睡眠闹钟&#34;&gt;&lt;a href=&#34;#1、睡眠闹钟&#34; class=&#34;headerlink&#34; title=&#34;1、睡眠闹钟&#34;&gt;&lt;/a&gt;1、睡眠闹钟&lt;/h3&gt;&lt;p&gt;在睡眠闹钟模式，因为睡眠闹钟不能直接设置关闭，但提供了跳过，跳过明天闹钟的效果跟关闭是一样的，所以也可以达到效果。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/logic-kafu.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/logic-kafu.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;当前方式的缺点&#34;&gt;&lt;a href=&#34;#当前方式的缺点&#34; class=&#34;headerlink&#34; title=&#34;当前方式的缺点&#34;&gt;&lt;/a&gt;当前方式的缺点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;需要安装 App&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每年需要打开 App 更新一次（可能）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;另一种方法&#34;&gt;&lt;a href=&#34;#另一种方法&#34; class=&#34;headerlink&#34; title=&#34;另一种方法&#34;&gt;&lt;/a&gt;另一种方法&lt;/h2&gt;&lt;p&gt;如果你已经掌握了第一种方式，而且对于第一种方式的缺点无法接受，那你可以试一下第二种方式：&lt;a href=&#34;https://www.icloud.com/shortcuts/5e3c34dcd642416a930bda9e6e959d19&#34;&gt;捷径路径&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;祝你好运～&lt;/p&gt;
+</content>
+        <category term="iPhone" />
+        <updated>2025-05-05T21:46:30.000Z</updated>
+    </entry>
+</feed>
