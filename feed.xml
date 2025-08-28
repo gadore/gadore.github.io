@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2025-08-28T17:28:19.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="博客" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <entry>
+        <id>https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/</id>
+        <title>Google Pixel 5 更换 Lineage OS</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;当过社畜的都知道，以季度为施工周期的项目，进入 8、9 月份基本上到了项目的加速或是冲刺期，所以整个 8 月份都在赶项目进度；&lt;/p&gt;
+&lt;p&gt;外包项目倒是也接触了好几个，但都停留在了技术咨询阶段，0 入账；&lt;/p&gt;
+&lt;p&gt;尝试用 Raspberry Pi 4B 和 Qwen3 0.6B 模型进行 Edge Ai + 自动联网分析的应用开发，用 Python 做出来之后发现效果略差于手机上的 App ，又是无功而返的三个晚上；&lt;/p&gt;
+&lt;p&gt;8 月就这么碌碌无为地溜了过去，整个人感觉好像什么都没做，那就刷个机吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的备用 Android 手机是 Pixel 5，官方已经永久停止系统支持了，当前的系统最新版本停留在 Android 14.&lt;/p&gt;
+&lt;p&gt;但我看到了 Android 15 有非常吸引人的优化系统系能的更新（ page size 16 kb），所以就特想升级，由于之前使用过 Lineage OS，所以就打开了它的官网，果然支持，直接刷入～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202025%E5%B9%B48%E6%9C%8828%E6%97%A5%2013_45_34.png&#34; alt=&#34;ChatGPT Image 2025年8月28日 13_45_34.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.lineageos.org/devices/redfin/&#34;&gt;Lineage OS for Pixel 5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刷入后发现了很多原生系统不支持的特性，太惊喜了！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;官方支持的 16kb 分页，App 打开效率提升&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;电池健康度检测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;充电控制（最大充到多少）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;状态栏展示网速（老传统了，其实没啥可说的，但原生没有）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1-LVWz.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2-jEiy.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3-xxGr.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4-apgs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;还得是 Pixel，官方不支持社区也会支持。&lt;/p&gt;
+&lt;p&gt;我感觉下一个版本的 Lineage OS （Android 16）理论上来说也能支持，&lt;/p&gt;
+&lt;p&gt;感谢 Lineage OS 。&lt;/p&gt;
+&lt;p&gt;期待一波～&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="刷机" />
+        <category term="Pixel 5" />
+        <category term="LineageOS" />
+        <updated>2025-08-28T17:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/shanghai-Neighborhood-Committee/</id>
+        <title>在上海公租房：一名租客的首次居委会体验</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/shanghai-Neighborhood-Committee/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;⚠️ 无图警告 ⚠️&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;背景：新居的烦恼&#34;&gt;&lt;a href=&#34;#背景：新居的烦恼&#34; class=&#34;headerlink&#34; title=&#34;背景：新居的烦恼&#34;&gt;&lt;/a&gt;&lt;strong&gt;背景：新居的烦恼&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;刚搬进上海某社区的公租房🏠不久，我就和邻居们遇到了两个棘手问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;电梯故障频发🛗：&lt;/strong&gt; 三个月内报修四次！在一梯四户的高层单元楼里，这简直是灾难。高峰期拥堵不堪。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;停车位严重短缺🅿️：&lt;/strong&gt; 小区地下车库有上千车位，但划给公租房租客的仅有约80个。更糟的是，大量车位被锁死或遭占用，租客停车难上加难。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;线上群聊沟通无效后，有邻居拨打了 &lt;strong&gt;12345&lt;/strong&gt; 市民热线☎️投诉。很快啊，街道办就在两天后组织召开了这次居委会会议。&lt;/p&gt;
+&lt;h2 id=&#34;会议进行时&#34;&gt;&lt;a href=&#34;#会议进行时&#34; class=&#34;headerlink&#34; title=&#34;会议进行时&#34;&gt;&lt;/a&gt;&lt;strong&gt;会议进行时&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;时间调整⏰：&lt;/strong&gt; 最初通知是周三下午两点半，立刻在公租房群被集体“Diss”——工作日上班时间谁有空？最终会议改到了晚上 &lt;strong&gt;7:30&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;地点：&lt;/strong&gt; XXX小区街道办会议室&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;参会方：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;政府代表：工商局XX老师、住建局XX老师、网格员、区XX书记&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;管理方：物业公司经理（2位）、公租房管家XX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;租户代表：公租房租客代表（2人）、普通公租房租客（8人）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;会议记录员（1人）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;议题一：电梯困局🛗&#34;&gt;&lt;a href=&#34;#议题一：电梯困局🛗&#34; class=&#34;headerlink&#34; title=&#34;议题一：电梯困局🛗&#34;&gt;&lt;/a&gt;&lt;strong&gt;议题一：电梯困局🛗&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;问题核心：&lt;/strong&gt; 电梯频繁显示“Out of Service”，迫使所有人挤用另一部电梯，在20+层、每层8户、仅2部电梯的情况下，高峰期完全瘫痪。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;物业分析故障原因：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;垃圾堵门🗑️：&lt;/strong&gt; 乘客遗留的垃圾被踢到门缝，遮挡光栅，导致电梯无法关门，触发保护机制停运。（监控曾拍到保洁🧹阿姨将垃圾扫入门缝！）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;快递堵门📦：&lt;/strong&gt; 快递员用小推车或快递故意挡住电梯门，以便一趟送完所有楼层。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;设备替换件故障🔧：&lt;/strong&gt; 硬件老化或损坏。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;可见，人为因素（有意或无意）是主因。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;讨论与解决方案：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;垃圾堵门🗑️：&lt;/strong&gt; 物业已通知保洁🧹部门重点清扫电梯门缝区域，杜绝垃圾堆积。→ &lt;strong&gt;此方案获一致好评👍。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;快递堵门📦：&lt;/strong&gt; 物业提议在一楼设置快递柜和外卖柜🥡，让居民自取，减少电梯占用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;遭遇强烈反对👎：&lt;/strong&gt; 住户认为这反而会增加大家下楼取件的次数，&lt;strong&gt;加剧电梯🛗使用负担&lt;/strong&gt;。提议作罢。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;设备故障🔧：&lt;/strong&gt; 住户建议&lt;strong&gt;增加预防性检修频次&lt;/strong&gt;，避免故障后才更换配件。→ &lt;strong&gt;电梯维保🔧部门采纳。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;议题二：停车位争夺战🅿️&#34;&gt;&lt;a href=&#34;#议题二：停车位争夺战🅿️&#34; class=&#34;headerlink&#34; title=&#34;议题二：停车位争夺战🅿️&#34;&gt;&lt;/a&gt;&lt;strong&gt;议题二：停车位争夺战🅿️&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;这是小区的“老大难”问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;现状：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;小区规划车位超1600个，租客固定车位仅约80个，其余属业主和开发商。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;即使这80个“专属”车位，也常被业主或临时车占用！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更甚者，开发商为逼迫业主购买车位，&lt;strong&gt;锁死🔒了大量包含租客车位的临时区域&lt;/strong&gt;，导致办了长期停车证的租客也无位可停。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;会议交锋与决议：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;居委会强硬指令📢：&lt;/strong&gt; 责令物业&lt;strong&gt;一周内解决问题&lt;/strong&gt;，必须确保政策规定数量的车位切实留给公租房租客。&lt;strong&gt;“到期不拆锁🔒，住建局将强拆💥！”&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;物业经理的“难题”（与态度）：&lt;/strong&gt; 一位经理提出（带着被多位在场租客形容为“幸灾乐祸😏”的表情）：“负一层租客车位只有20个，负二层的又离你们单元楼太远，怎么安排呢？”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;书记的机智回应💡：&lt;/strong&gt; “能申请上公租房的租客，智商比我们这些人都高！这个问题&lt;strong&gt;不用你操心&lt;/strong&gt;，你只管拆锁🔒！”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;租客提议（获认可✅）：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;采用&lt;strong&gt;车牌登记制📝&lt;/strong&gt;，租客提交私家车信息。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过&lt;strong&gt;公平抽签🎲&lt;/strong&gt;分配80个固定车位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;物业根据抽签结果，&lt;strong&gt;将车牌号与车位绑定&lt;/strong&gt;，严格管理，防止占用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感想：被看见的租客&#34;&gt;&lt;a href=&#34;#感想：被看见的租客&#34; class=&#34;headerlink&#34; title=&#34;感想：被看见的租客&#34;&gt;&lt;/a&gt;&lt;strong&gt;感想：被看见的租客&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在上海工作多年，这是我&lt;strong&gt;第一次作为租客感受到如此切实的尊重&lt;/strong&gt;，说实话，有点受宠若惊。&lt;/p&gt;
+&lt;p&gt;以往租住合租公寓或二房东的房子，我们既无时间也无渠道接触居委会（疫情😷封控时期除外）。这次能直接反馈问题，并看到问题被认真对待、推动解决，感觉&lt;strong&gt;非常棒✨&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;至少在这一刻，我想感谢公租房制度。它让我第一次在大城市里，真切地体会到自己是一个&lt;strong&gt;手握议事权利、能参与社区事务的公民🗳️&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果租房环境都能有这样一套机制来保障租客的合法权益，那么，&lt;strong&gt;一直租房下去，又有何不可呢？&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="公租房" />
+        <category term="生活" />
+        <updated>2025-07-05T22:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/they-are-not-paying-me-enough-to-care/</id>
+        <title>“They’re not paying me enough to care”（转载）.md</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/they-are-not-paying-me-enough-to-care/"/>
+        <content type="html">&lt;b&gt;
+This is an understandable sentiment. As jobs push people to be automatons and often offer little in the way of respect, it’s easy to quietly quit.
+
+&lt;p&gt;But perhaps, they’re not paying you enough to &lt;em&gt;not&lt;/em&gt; care.&lt;/p&gt;
+&lt;p&gt;Spending your days, day after day, not caring is a tragedy.&lt;/p&gt;
+&lt;p&gt;They might not deserve your focus and effort, but you do.&lt;br&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DeepL 翻译：&lt;br&gt;“他们付给我的钱不够我关心”&lt;/p&gt;
+&lt;p&gt;这种情绪是可以理解的。因为工作会把人逼得像机器一样，而且往往不会给人什么尊重，所以很容易悄悄辞职。&lt;/p&gt;
+&lt;p&gt;但也许，他们付给你的薪水不足以让你不在乎。&lt;/p&gt;
+&lt;p&gt;日复一日地漠不关心是一种悲剧。&lt;/p&gt;
+&lt;p&gt;他们可能不值得你关注和努力，但你值得。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文来自于博友 &lt;a href=&#34;http://luozx.org/&#34;&gt;Luozx&lt;/a&gt; 在本博客《&lt;a href=&#34;https://blog.gadore.top/archives/work-isnt-life&#34;&gt;有些工作不值得投入太多&lt;/a&gt;》文章中的评论推荐，转载自 seths.blog ，&lt;a href=&#34;https://seths.blog/2025/05/theyre-not-paying-me-enough-to-care/&#34;&gt;原文链接&lt;/a&gt;。&lt;/p&gt;
+</content>
+        <updated>2025-07-05T20:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/first-pay-user/</id>
+        <title>庆祝我的 App 唯记 迎来第一位付费用户 🎉🎉🎉</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/first-pay-user/"/>
+        <content type="html">&lt;p&gt;最近我开发的 iOS 平台的 App 【&lt;a href=&#34;https://apps.apple.com/app/id6502951931&#34;&gt;唯记&lt;/a&gt;】 迎来了第一位付费用户！！！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/193961749781114.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/193961749781114.jpg&#34; alt=&#34;193961749781114.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;撒花 撒花 🎉🎉🎉&lt;/p&gt;
+&lt;h2 id=&#34;我本来都失去希望了&#34;&gt;&lt;a href=&#34;#我本来都失去希望了&#34; class=&#34;headerlink&#34; title=&#34;我本来都失去希望了&#34;&gt;&lt;/a&gt;我本来都失去希望了&lt;/h2&gt;&lt;p&gt;在一个月以前，我认为 App 已经可以进行小批量公测了，就在 v2ex 上放了一个限免的链接活动，看大家对这个 App 的评价如何。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_12.41.19.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_12.41.19.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;部分评论区截图&lt;/p&gt;
+&lt;p&gt;没想到一半的人对 App 的评价就是：界面丑、UI 简陋，还让我借鉴那些 UI 点缀很丰富的 App，甚至有人让我去淘宝花钱买一套设计图重新开发。&lt;/p&gt;
+&lt;p&gt;我整个 App 的开发初衷，都只是源自一个显示完善信息的小组件，我都没想让用户打开界面啊哈哈哈：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2015.41.57.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2015.41.57.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然了，有些人是真心给的建议，不是口嗨，我也看了下他让 AI 帮忙生成的设计图，某种意义上来说，也很好看，比我的界面要丰富。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_13.05.24.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_13.05.24.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网友 AI 生成的设计图&lt;/p&gt;
+&lt;p&gt;可我也真心不觉得我的界面很丑啊（T_T）：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/333.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/333.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只是有点儿简陋罢了&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_14.10.19.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_14.10.19.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;海王？好的！彩蛋？有的～&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-15_16.07.10.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-15_16.07.10.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;求这个海王到底什么性取向&lt;/p&gt;
+&lt;p&gt;动画彩蛋也被我采纳了，至于点击哪里才会触发，大家自己去摸索吧～&lt;/p&gt;
+&lt;h2 id=&#34;感谢社区，但……&#34;&gt;&lt;a href=&#34;#感谢社区，但……&#34; class=&#34;headerlink&#34; title=&#34;感谢社区，但……&#34;&gt;&lt;/a&gt;感谢社区，但……&lt;/h2&gt;&lt;p&gt;我也是 v2ex 社区资深潜水员，唯记的英文正式名称就是 V2RMB，取自：Way to Remember 的缩写，借鉴的 v2ex 。&lt;/p&gt;
+&lt;p&gt;我很感激社区这些人能下载我的 App，同时还给我建议，让我知道我什么地方做得不足。&lt;/p&gt;
+&lt;h2 id=&#34;为什么开发【唯记】&#34;&gt;&lt;a href=&#34;#为什么开发【唯记】&#34; class=&#34;headerlink&#34; title=&#34;为什么开发【唯记】&#34;&gt;&lt;/a&gt;为什么开发【唯记】&lt;/h2&gt;&lt;h3 id=&#34;我的需求&#34;&gt;&lt;a href=&#34;#我的需求&#34; class=&#34;headerlink&#34; title=&#34;我的需求&#34;&gt;&lt;/a&gt;我的需求&lt;/h3&gt;&lt;p&gt;开发当前 App 的初衷（2023年），就只是想要一眼浏览&lt;strong&gt;所有重要信息的应用&amp;#x2F;小组件&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这个应用体积最好还特别小。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202025-06-15%2016.17.54.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202025-06-15%2016.17.54.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当前唯记的体积是 10MB&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在保持超小体积的同时，唯记也积极去适应 &lt;strong&gt;AI 🤖&lt;/strong&gt; 爆发的时代。当前 MCP 的概念可谓是火爆，我已经适配了 &lt;strong&gt;Siri Kit&lt;/strong&gt;，你可以在苹果的捷径（shortcuts）App 里调用，我提供了文本和 Json 两种数据返回格式，希望你能借助它玩出更多花样👋👋&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2016.37.21-sbzk.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2016.37.21-sbzk.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;捷径运行示例&lt;/p&gt;
+&lt;h3 id=&#34;当前与唯记相似功能的应用（仅列举部分前辈作品）&#34;&gt;&lt;a href=&#34;#当前与唯记相似功能的应用（仅列举部分前辈作品）&#34; class=&#34;headerlink&#34; title=&#34;当前与唯记相似功能的应用（仅列举部分前辈作品）&#34;&gt;&lt;/a&gt;当前与唯记相似功能的应用（仅列举部分前辈作品）&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;倒数日&lt;/strong&gt;：老牌倒数日应用，用户量庞大，功能全面，界面 UI 较老。UI 小组件不够完善，但它免费呀！还是全平台！&lt;/p&gt;
+&lt;p&gt;**Countdown+**：界面设计优秀，设计为导向的 App。如果你就是对审美有强烈的需求，为它付费就对了（这款 App 也是我从评论区看到的）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Happy Days&lt;/strong&gt;：设计和功能的平衡，覆盖了大部分用户的需求，但付费价格过高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;滴答清单&lt;/strong&gt;：今年刚刚支持倒数日，免费，功能还在完善。&lt;/p&gt;
+&lt;p&gt;所以，大家&lt;strong&gt;如果看不惯唯记，那完全没关系，不要下载就好了&lt;/strong&gt;，App Store 里有更多拥有优秀设计的产品，我这里只提及了部分，如果还有更好的，欢迎大家在评论区沟通。&lt;/p&gt;
+&lt;h2 id=&#34;我的潜在用户群体&#34;&gt;&lt;a href=&#34;#我的潜在用户群体&#34; class=&#34;headerlink&#34; title=&#34;我的潜在用户群体&#34;&gt;&lt;/a&gt;我的潜在用户群体&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;当我的 App 有上百上千的付费的时候，（哽咽）你们要知道这是为你们开发的……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果有那么一群人他们：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;对生日、纪念日预期管理非常注重，一定要让他知道最近有哪些人要生日了，要为他们做好准备（礼物、聚会、寄送卡片）！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;有较多的关系较好的朋友、或者家族较大，亲戚朋友很多，需要做批量管理，分组管理等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;原生党、小内存党、对简陋（简约）比较偏爱的人（我就是这类人，搞什么花里胡哨的，原生就很好看啊喂）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不喜欢大而全的应用，像淘宝、美团那种打开之后几乎什么都可以做的应用：哒咩！！！只想要独立的小应用，聚焦一个功能点&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这肯定不会是一个庞大的群体，但既然这个世界上有那么多人，总会有跟我一样需求的用户吧。&lt;/p&gt;
+&lt;p&gt;如果你看到这里，并且真的发现唯记适合你，那去下载吧，唯记就是为你做的～&lt;/p&gt;
+&lt;h2 id=&#34;点击下载唯记&#34;&gt;&lt;a href=&#34;#点击下载唯记&#34; class=&#34;headerlink&#34; title=&#34;点击下载唯记&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://apps.apple.com/app/id6502951931&#34;&gt;点击下载唯记&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&#34;唯记-的未来开发计划&#34;&gt;&lt;a href=&#34;#唯记-的未来开发计划&#34; class=&#34;headerlink&#34; title=&#34;唯记 的未来开发计划&#34;&gt;&lt;/a&gt;唯记 的未来开发计划&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;从通讯录导入联系人生日（很实用的功能，计划内）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;支持生日当天自动发送祝福信息给相关人（已适配部分苹果 Siri 相关功能，具体实现效果看 iOS 的 AI 进展）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;最后的最后&#34;&gt;&lt;a href=&#34;#最后的最后&#34; class=&#34;headerlink&#34; title=&#34;最后的最后&#34;&gt;&lt;/a&gt;最后的最后&lt;/h2&gt;&lt;p&gt;第一位付费用户，如果这篇文章有幸能被你看到，我要感谢你，❤️感谢你告诉我这个世界上真的还有一个人，跟我有类似的需求。你如果联系我的话，我会奉上 App 兑换码 2 枚，感谢你的肯定～&lt;/p&gt;
+&lt;p&gt;关注该博客的朋友们，如果你对唯记也有兴趣，认可这种简单功能简约开发的理念，可以去下载呀，下载过的朋友，截图邮件我，我会同样奉上兑换码 1 枚，当然，要是能好评一下就更好了✨✨。&lt;/p&gt;
+&lt;p&gt;当然了，兑换码数量有限哦～&lt;/p&gt;
+</content>
+        <category term="独立开发" />
+        <category term="iOS" />
+        <category term="Swift" />
+        <updated>2025-06-15T17:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/iphone-auto-alarm/</id>
+        <title>都 2025 年了，用 iPhone 还不会设置节假日闹钟的进来</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/iphone-auto-alarm/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这不上周五一假期前补班， iPhone 没有办法设置&lt;strong&gt;节假日补班闹钟&lt;/strong&gt;导致迟到的事情又又又一次上了微博的热搜，我也纳闷了，iPhone 闹钟虽然自身是不支持这一功能，但都这么多年了，早就有非常简单的方式可以弥补这一点的。但看微博上大家叫的那么欢，评论区大家哭的那么惨，似乎还是有超级多的人不知道该如何在 iPhone 上实现&lt;strong&gt;节假日闹钟&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;与其天天咒骂，忍受苹果不做本地化的痛，然后忍受迟到、忍受休息日闹钟早早地把你叫醒。你为啥不花十分钟设置一下呢？设置完之后，你的 iPhone 等于拥有了节假日闹钟。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文提供两种方式来实现这一功能，设置完成后，你的 iPhone 可以实现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;工作日自动设置起床闹钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;周末自动关闭起床闹钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;节假日期间自动关闭闹钟（哪怕是非周末时间），给你一个宁静的睡眠&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;补班期间自动打开闹钟（哪怕是周末），防止你因为迟到而引发严重后果&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;文章主要介绍第一种较为简单的方法，至于第二种进阶方法（见文末链接），等你掌握了第一种方法，自然可以去研究。&lt;/p&gt;
+&lt;h2 id=&#34;一、准备工作&#34;&gt;&lt;a href=&#34;#一、准备工作&#34; class=&#34;headerlink&#34; title=&#34;一、准备工作&#34;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;h3 id=&#34;1、设置你的闹钟，确定闹钟类型&#34;&gt;&lt;a href=&#34;#1、设置你的闹钟，确定闹钟类型&#34; class=&#34;headerlink&#34; title=&#34;1、设置你的闹钟，确定闹钟类型&#34;&gt;&lt;/a&gt;1、设置你的闹钟，确定闹钟类型&lt;/h3&gt;&lt;p&gt;众所周知，苹果的闹钟有两种，一种是普通闹钟，另一个也是普通闹钟（不是）&lt;/p&gt;
+&lt;p&gt;而另一种，是集成在苹果健康里边的“睡眠闹钟”，你如果要设置这个睡眠闹钟，还要专门下载一个名叫“健康”的 App。&lt;/p&gt;
+&lt;p&gt;如果你使用的是第一种普通闹钟，那接下来的操作，你就选择“&lt;strong&gt;一般闹钟&lt;/strong&gt;”；&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/alarm.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/alarm.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 “睡眠｜起床闹钟”为睡眠闹钟， 下方的“其他闹钟”为一般闹钟】&lt;/p&gt;
+&lt;p&gt;如果你的闹钟是在苹果的&lt;strong&gt;健康 App&lt;/strong&gt; 里边设置的，那接下来的操作，你就选择“&lt;strong&gt;睡眠闹钟&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;！如果你使用的是&lt;strong&gt;睡眠闹钟&lt;/strong&gt;，为了能够在调休日也能正常使用闹钟，请务必在设置闹钟的时候设置为&lt;strong&gt;“每天“都启用&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;二、安装-“休息日”&#34;&gt;&lt;a href=&#34;#二、安装-“休息日”&#34; class=&#34;headerlink&#34; title=&#34;二、安装 “休息日”&#34;&gt;&lt;/a&gt;二、安装 “休息日”&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/app/id6501973975&#34;&gt;点击安装休息日&lt;/a&gt;，安装后打开，按照 App 或者文章下方教程设置。&lt;/p&gt;
+&lt;h4 id=&#34;2-1-选择节假日模板&#34;&gt;&lt;a href=&#34;#2-1-选择节假日模板&#34; class=&#34;headerlink&#34; title=&#34;2.1 选择节假日模板&#34;&gt;&lt;/a&gt;2.1 选择节假日模板&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/restDayApp.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/restDayApp.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 休息日 选择节假日模板】&lt;/p&gt;
+&lt;h4 id=&#34;2-2-添加快捷指令&#34;&gt;&lt;a href=&#34;#2-2-添加快捷指令&#34; class=&#34;headerlink&#34; title=&#34;2.2 添加快捷指令&#34;&gt;&lt;/a&gt;2.2 添加快捷指令&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/shutcuts.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/shutcuts.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 休息日 】&lt;/p&gt;
+&lt;p&gt;根据本文上方的说明，选择你当前使用的闹钟方式。&lt;/p&gt;
+&lt;p&gt;在弹出的界面点击底部的“添加快捷指令”&lt;/p&gt;
+&lt;h2 id=&#34;三、设置自动化任务（最后一步，小学生都会）&#34;&gt;&lt;a href=&#34;#三、设置自动化任务（最后一步，小学生都会）&#34; class=&#34;headerlink&#34; title=&#34;三、设置自动化任务（最后一步，小学生都会）&#34;&gt;&lt;/a&gt;三、设置自动化任务（最后一步，小学生都会）&lt;/h2&gt;&lt;h3 id=&#34;1、打开捷径，点击底部的“自动化”&#34;&gt;&lt;a href=&#34;#1、打开捷径，点击底部的“自动化”&#34; class=&#34;headerlink&#34; title=&#34;1、打开捷径，点击底部的“自动化”&#34;&gt;&lt;/a&gt;1、打开捷径，点击底部的“自动化”&lt;/h3&gt;&lt;h3 id=&#34;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34;&gt;&lt;a href=&#34;#2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34; class=&#34;headerlink&#34; title=&#34;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34;&gt;&lt;/a&gt;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&lt;/h3&gt;&lt;h3 id=&#34;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34;&gt;&lt;a href=&#34;#3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34; class=&#34;headerlink&#34; title=&#34;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34;&gt;&lt;/a&gt;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/autoTask.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/autoTask.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;恭喜🎉🎉🎉！！！至此，设置就完成了，理论上你就拥有了一个完全自动化的节假日调休闹钟。&lt;/p&gt;
+&lt;h2 id=&#34;四、检查效果（非必须）&#34;&gt;&lt;a href=&#34;#四、检查效果（非必须）&#34; class=&#34;headerlink&#34; title=&#34;四、检查效果（非必须）&#34;&gt;&lt;/a&gt;四、检查效果（非必须）&lt;/h2&gt;&lt;p&gt;保险起见，如果你对自己的操作没有信心，而且你如果迟到之后，后果非常严重，那我建议你还是做一下测试，看下自己在上一步的操作是否起效&lt;/p&gt;
+&lt;h2 id=&#34;原理分析&#34;&gt;&lt;a href=&#34;#原理分析&#34; class=&#34;headerlink&#34; title=&#34;原理分析&#34;&gt;&lt;/a&gt;原理分析&lt;/h2&gt;&lt;p&gt;“休息日” App 提供了一个选项，判断明天是不是休息日&lt;/p&gt;
+&lt;h3 id=&#34;1、一般闹钟&#34;&gt;&lt;a href=&#34;#1、一般闹钟&#34; class=&#34;headerlink&#34; title=&#34;1、一般闹钟&#34;&gt;&lt;/a&gt;1、一般闹钟&lt;/h3&gt;&lt;p&gt;在一般闹钟模式，如果明天是休息日，他就帮你关掉起床闹钟，否则，他就帮你打开休息日。&lt;/p&gt;
+&lt;h3 id=&#34;1、睡眠闹钟&#34;&gt;&lt;a href=&#34;#1、睡眠闹钟&#34; class=&#34;headerlink&#34; title=&#34;1、睡眠闹钟&#34;&gt;&lt;/a&gt;1、睡眠闹钟&lt;/h3&gt;&lt;p&gt;在睡眠闹钟模式，因为睡眠闹钟不能直接设置关闭，但提供了跳过，跳过明天闹钟的效果跟关闭是一样的，所以也可以达到效果。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/logic-kafu.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/logic-kafu.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;当前方式的缺点&#34;&gt;&lt;a href=&#34;#当前方式的缺点&#34; class=&#34;headerlink&#34; title=&#34;当前方式的缺点&#34;&gt;&lt;/a&gt;当前方式的缺点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;需要安装 App&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每年需要打开 App 更新一次（可能）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;另一种方法&#34;&gt;&lt;a href=&#34;#另一种方法&#34; class=&#34;headerlink&#34; title=&#34;另一种方法&#34;&gt;&lt;/a&gt;另一种方法&lt;/h2&gt;&lt;p&gt;如果你已经掌握了第一种方式，而且对于第一种方式的缺点无法接受，那你可以试一下第二种方式：&lt;a href=&#34;https://www.icloud.com/shortcuts/5e3c34dcd642416a930bda9e6e959d19&#34;&gt;捷径路径&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;祝你好运～&lt;/p&gt;
+</content>
+        <category term="iPhone" />
+        <updated>2025-05-05T21:46:30.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/oldbili/</id>
+        <title>iOS 6 新的 B 站第三方客户端：OldBili</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/oldbili/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这是关于玩转 iOS 老设备的第三篇文章了，我也没想到还有这么多为爱发电的开发者（可喜可贺），在为老款 iPhone 发力。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之前文章导航：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/archives/1690792964757/&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/archives/iphone5-watch-video-in-2024/&#34;&gt;iPhone 5 在 2024 年还能看视频吗？&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在写第二篇文章的时候，我就在想，可能很多人，都没有那么方便地通过我的文章来复刻一样的使用条件，毕竟为了刷个视频还得自己搭建 webdav，都 2025 年了……&lt;/p&gt;
+&lt;p&gt;然后最近刷 rss 的时候就发现了这个：&lt;a href=&#34;https://www.88ipa.com/application/39920.html&#34;&gt;OldBili&lt;/a&gt;（托管于 ios.ipa ）&lt;/p&gt;
+&lt;p&gt;开发者 B 站：&lt;a href=&#34;https://space.bilibili.com/651771871&#34;&gt;&lt;strong&gt;伦大来了&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;首页一览&#34;&gt;&lt;a href=&#34;#首页一览&#34; class=&#34;headerlink&#34; title=&#34;首页一览&#34;&gt;&lt;/a&gt;首页一览&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/1.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;播放视频&#34;&gt;&lt;a href=&#34;#播放视频&#34; class=&#34;headerlink&#34; title=&#34;播放视频&#34;&gt;&lt;/a&gt;播放视频&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用户界面&#34;&gt;&lt;a href=&#34;#用户界面&#34; class=&#34;headerlink&#34; title=&#34;用户界面&#34;&gt;&lt;/a&gt;用户界面&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/3.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;信息-设置&#34;&gt;&lt;a href=&#34;#信息-设置&#34; class=&#34;headerlink&#34; title=&#34;信息 &amp;amp;&amp;amp; 设置&#34;&gt;&lt;/a&gt;信息 &amp;amp;&amp;amp; 设置&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/4.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，开发者是完全使用 iOS 原生语言开发，设计规范符合 iOS 6 的拟物风，在 iOS 19 即将推出的此刻，1.5MB 的 B 站原生版本，感受到压力了吗，Apple？&lt;/p&gt;
+&lt;p&gt;现在终于可以打开 iPhone 5 直接刷 B 站啦～&lt;/p&gt;
+&lt;p&gt;对了，你的 iOS 6 设备需要越狱才能装。&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <updated>2025-04-05T22:48:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/swiftgg2025/</id>
+        <title>参与 SwiftGG 2025 有感</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/swiftgg2025/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2_3806631.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2_3806631.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;感谢 &lt;a href=&#34;https://megabits.xyz/&#34;&gt;&lt;strong&gt;Megabits&lt;/strong&gt;&lt;/a&gt; 大佬的 Basic Pass。&lt;/p&gt;
+&lt;p&gt;这是我第一次参加 SwiftGG 活动，上海天气也很舒适，这两天气温 14～27，直接进入初夏。&lt;/p&gt;
+&lt;p&gt;活动日期：2025 3&amp;#x2F;1 ～ 3&amp;#x2F;2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关注的人&#34;&gt;&lt;a href=&#34;#关注的人&#34; class=&#34;headerlink&#34; title=&#34;关注的人&#34;&gt;&lt;/a&gt;关注的人&lt;/h2&gt;&lt;h2 id=&#34;独立开发者-Megabits-（以下简称金鱼桑）&#34;&gt;&lt;a href=&#34;#独立开发者-Megabits-（以下简称金鱼桑）&#34; class=&#34;headerlink&#34; title=&#34;独立开发者 Megabits （以下简称金鱼桑）&#34;&gt;&lt;/a&gt;独立开发者 Megabits （以下简称金鱼桑）&lt;/h2&gt;&lt;p&gt;跟金鱼桑面对面聊了几个问题，整体看来：  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;作为知名的独立开发者，而且还是独自一人在日本上大学的独立开发者，金鱼桑形容自己是：贴地飞行的鸟，只要自己稍微放松，可能就糟糕了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;金鱼桑已经临近毕业了，毕业后可能并不会全职去做独立开发者（只是当前的节点，不知道后来会怎么发展），而是兼职、独立开发、外包等多线并行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/IMG_0025.JPG&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0025.JPG&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可能是长期关注的大佬第一次在线下见到，我感觉我并没有表现的很好，但他还是耐心解答了我的问题。&lt;/p&gt;
+&lt;p&gt;感谢金鱼桑。&lt;/p&gt;
+&lt;h2 id=&#34;Paul-Hudson-（Hacking-With-Swift-的创办者）&#34;&gt;&lt;a href=&#34;#Paul-Hudson-（Hacking-With-Swift-的创办者）&#34; class=&#34;headerlink&#34; title=&#34;Paul Hudson （Hacking With Swift 的创办者）&#34;&gt;&lt;/a&gt;Paul Hudson （Hacking With Swift 的创办者）&lt;/h2&gt;&lt;p&gt;在 Ai 大面积问世之前，想要学习 Swift 开发，要么去读苹果官方的开发文档（你看得懂就出鬼了），另一种方式就是去看各种第三方的开发教程网站，而在这其中，&lt;a href=&#34;https://www.hackingwithswift.com/&#34;&gt;&lt;strong&gt;Hacking With Swift&lt;/strong&gt;&lt;/a&gt; 是我接触过程中，更新最勤快、写法最简单易懂、教程最多的一个网站。在 Ai 问世前，我 60% 的 Swift 知识其实是从这里来的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-03-03_14.08.33.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-03-03_14.08.33.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我之前特别不能理解，为什么大家看到那些商界大佬的时候，特别喜欢去跟这些大佬合作。&lt;/p&gt;
+&lt;p&gt;但当我看到 Paul 的时候，我那种被他点燃的持续开发的热情，趋使我也想要跟这位伟大的人合影。&lt;/p&gt;
+&lt;h2 id=&#34;所见的事&#34;&gt;&lt;a href=&#34;#所见的事&#34; class=&#34;headerlink&#34; title=&#34;所见的事&#34;&gt;&lt;/a&gt;所见的事&lt;/h2&gt;&lt;p&gt;现场除了主会场以外，也有很多的小摊位，来供各个独立开发者、团队、网站等来展示他们的作品。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2_4626925-hhip.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2_4626925-hhip.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2_3562520.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2_3562520.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我见到了很多神奇的巧思，看到他们的 App 产品直呼：你怎么想到的？&lt;/p&gt;
+&lt;p&gt;比如基于开源 NeoDB 服务实例的类豆瓣客户端：&lt;a href=&#34;https://piecelet.app/&#34;&gt;&lt;strong&gt;Piecelet for NeoDB&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;，&lt;/strong&gt;是为 NeoDB 制作的第三方 iOS 客户，开发者是一位大三在读女生 &lt;a href=&#34;https://blog.citrons.cc/&#34;&gt;&lt;strong&gt;citron&lt;/strong&gt;&lt;/a&gt;，如果你了解长毛象（Mastodon），那你应该可以理解 NeoDB 的设计理念，更多细节访问： &lt;a href=&#34;https://about.neodb.social/doc/howto/&#34;&gt;&lt;strong&gt;https://about.neodb.social/doc/howto/&lt;/strong&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/9ac63b463d5a00011393851d58a091.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/9ac63b463d5a00011393851d58a091.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然，也有一些的 App，开发出来之后我完全看不到任何巧思，各种：Ai 笔记、XX记、Note、剪藏夹。市面上还有这么多人在做笔记产品的炒冷饭（现场打眼一看就看到 4～5 个笔记类的应用）。&lt;/p&gt;
+&lt;h2 id=&#34;老鸡汤了&#34;&gt;&lt;a href=&#34;#老鸡汤了&#34; class=&#34;headerlink&#34; title=&#34;老鸡汤了&#34;&gt;&lt;/a&gt;老鸡汤了&lt;/h2&gt;&lt;p&gt;这次大会参加下来，收获颇丰。&lt;/p&gt;
+&lt;p&gt;跟热爱的偶像合了影。&lt;/p&gt;
+&lt;p&gt;更重要的是，我知道以后工作和生活平衡方式了，整个 2024 年都是生活和工作混沌的一年，但 新的一年不想这样了。&lt;/p&gt;
+&lt;p&gt;但我猛的一想，不对啊，建这个博客的时候，我就写下了我的宗旨：&lt;strong&gt;Fun to coding, fun to life.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;突然又想起老罗一句老鸡汤：&lt;strong&gt;不要因为走得太远，就不知道为什么出发&lt;/strong&gt;。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <updated>2025-03-03T12:59:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/iphone13miniwithtypec/</id>
+        <title>iPhone 13 mini 改 Type-C</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/iphone13miniwithtypec/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/markup_1000086977%20(1).png&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当时我之所以换掉 mini，就是为了可以一个 Type-C 走天下，出过差的人都懂，各种 lighting、Type-C、电脑、Apple Watch 一大堆充电线，烦都烦死了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近刷酷安了解到，现在居然有非常成熟的技术可以给 mini 换上 Type-C 了，好家伙，我直接心动不如行动。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/WechatIMG31.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/WechatIMG31.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我对 mini 的喜爱可以从我的换机历史看出来：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2021 年 3 月：在上海万象店原价 ¥5999 购入 iPhone 12 mini 白色&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2022 年 4 月：在闲鱼 ¥3688 购入欧版 iPhone 13 mini 星光色&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2024 年 3 月：在京东 ¥4850 购入 iPhone 15 （为了 Type-C），同时卖掉欧版 iPhone 13 mini （¥2000）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2025 年 2 月：重新购入 iPhone 13 mini 亚太版，改装 Type-C，改装高密度电池。（iPhone 15 给老妈用了没有卖）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;换了高密度电池之后，续航上也完全不虚：&lt;br&gt;&lt;a href=&#34;https://halo.gadore.top/upload/WechatIMG32-bhqo.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/WechatIMG32-bhqo.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果有 A18 芯片 + 8GB 内存就更好了。哎&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <updated>2025-03-03T11:43:44.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/work-isnt-life/</id>
+        <title>有些工作不值得投入太多</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/work-isnt-life/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/upload/bird_on_roof.jpeg&#34; alt=&#34;老房屋顶的麻雀&#34;&gt;&lt;br&gt;图：过年期间拍到的，老房屋顶的麻雀&lt;/p&gt;
+&lt;h2 id=&#34;我在-2024-为公司做了什么&#34;&gt;&lt;a href=&#34;#我在-2024-为公司做了什么&#34; class=&#34;headerlink&#34; title=&#34;我在 2024 为公司做了什么&#34;&gt;&lt;/a&gt;我在 2024 为公司做了什么&lt;/h2&gt;&lt;p&gt;我在保持前一年的前端开发工作量的基础上，还把一名后端开发的工作也纳入到了我的工作职责范围内了，毕竟公司在 2023 年年底已经“广进”过了，公司整体的软件开发工作量没少太多，但做事的人只剩下一半，剩下的人只好把原不属于自己的工作担起来了。&lt;/p&gt;
+&lt;p&gt;在此基础上，我重新研发了一款产品，可以极大地降低公司在固定领域的开发投入，而且产品的一致性、维护性都有很大的改观。&lt;/p&gt;
+&lt;p&gt;什么，我自吹自擂？&lt;/p&gt;
+&lt;p&gt;nonono。&lt;/p&gt;
+&lt;p&gt;我司运维和实施的小伙伴下半年多次讲过：有了新的软件后，终于没有任何堆积的任务和需求了，之前总是堆积成山，直到暴雷，领导才能协调人过来稍微处理半个月。现在这个问题已经不存在了。&lt;/p&gt;
+&lt;p&gt;销售部门的人验收项目后也说：今年的软件更新速度和需求响应速度都快多了，客户那边终于有了交代了。&lt;/p&gt;
+&lt;p&gt;那这岂不是皆大欢喜，谁不开心了呢？&lt;/p&gt;
+&lt;h2 id=&#34;公司在-2024-年年末对我做了什么&#34;&gt;&lt;a href=&#34;#公司在-2024-年年末对我做了什么&#34; class=&#34;headerlink&#34; title=&#34;公司在 2024 年年末对我做了什么&#34;&gt;&lt;/a&gt;公司在 2024 年年末对我做了什么&lt;/h2&gt;&lt;p&gt;年末我领导把我叫到办公室，说年底要扣减我的年终奖（五年来从未发生过）。&lt;/p&gt;
+&lt;p&gt;我当然要质问他为什么。&lt;/p&gt;
+&lt;p&gt;回应是粗暴的：你的工作职责是保证 2024 年你负责的工作不出问题，这你做的没问题，但是！我这边还有一些其他的紧急的工作，你没帮我承担，所以我要扣减你的年终奖，来奖励那些帮我承担了开发风险的人。&lt;/p&gt;
+&lt;p&gt;？？？帮你承担风险的那些开发人员，他们的工作内容本来就跟你负责的项目有交集，他们承担风险，他们完成了自己的工作，他们应该得到奖励，但你为什么拿我的钱奖励他们呢？？？我是有什么工作失误吗？？？我没帮你承担翻倍的开发工作量吗？？？&lt;/p&gt;
+&lt;p&gt;我自然质问他：你自己觉得你这话说的没有逻辑问题吗？&lt;/p&gt;
+&lt;p&gt;他就开始泼妇起来了，不讲道理：我的决定已经做了，你要质疑我的决定吗？我给你一次质疑的机会，你敢用吗？&lt;/p&gt;
+&lt;p&gt;我继续试图跟他讲道理，让他至少给出一个可以说服我的理由。&lt;/p&gt;
+&lt;p&gt;他直接跳起来了：你非要讲这个道理是吧？！！！那我不跟你讲了！！！我现在就个人名义把钱转给你，但你记住，你这是严重质疑我的决定，你想一下自己以后的处境！！！！&lt;/p&gt;
+&lt;p&gt;道理算是讲不了了。两年前曾经帮我争取过加薪的领导，那一点感激之情，也完全消失了。&lt;/p&gt;
+&lt;p&gt;挺好的，不欠他什么了。&lt;/p&gt;
+&lt;h2 id=&#34;非常狭隘的结论&#34;&gt;&lt;a href=&#34;#非常狭隘的结论&#34; class=&#34;headerlink&#34; title=&#34;非常狭隘的结论&#34;&gt;&lt;/a&gt;非常狭隘的结论&lt;/h2&gt;&lt;p&gt;公司不值得投入太多，感情、时间、精力。&lt;/p&gt;
+&lt;p&gt;这是之前在网上看到的一篇文章的观点，我当时看到后，感觉这是句废话，我肯定不能投入太多，因为我还有生活，总不能 7 * 24 小时住公司吧。&lt;/p&gt;
+&lt;p&gt;但经过这次扣减年终奖事件后，我算是深刻体会到这句话的份量了。&lt;/p&gt;
+&lt;p&gt;在一个看不清楚人员重要性和工作量的领导手下工作，真的没必要在工作中投入太多感情，只要最低程度完成工作内容的要求，就行了不是吗？&lt;/p&gt;
+&lt;p&gt;这世界上自然有比我司更过分的公司，更奇葩的领导。我相信你们看到我发的这些感悟，肯定会有类似：“你才知道嘛，傻子”之类的想法。&lt;/p&gt;
+&lt;p&gt;当然，肯定也有比我司福利待遇好，比我司前景好的多的公司，我希望大家都能在工作量化更好的公司工作，我祝福大家都能在 2025 年获得更好的工作环境。&lt;/p&gt;
+&lt;p&gt;至于我嘛，新的一年，我打算：&lt;/p&gt;
+&lt;p&gt;最低程度完成公司要求的工作，然后……&lt;/p&gt;
+&lt;p&gt;谁还中午休息时间加班赶进度，切！&lt;/p&gt;
+&lt;p&gt;谁还晚上加班一个小时，持续两个月，就为了软件能尽快上线，切！&lt;/p&gt;
+&lt;p&gt;谁还周末来公司为了一点点问题加班优化，切！&lt;/p&gt;
+&lt;p&gt;谁还在家用家里的电脑协助解决各种项目上的突发问题，切！&lt;/p&gt;
+&lt;p&gt;谁还前一天晚上加班，第二天不请假继续正常到公司打卡，切！&lt;/p&gt;
+&lt;p&gt;曾经的公司年度员工（我在几年前由于工作量过于突出，被评为年度员工，也是唯一一年，部门年度员工没有任何奖金的一年，当年也质问过领导，领导说以后补偿，没想到是以负数的方式补偿）累了，对公司没感情了。&lt;/p&gt;
+&lt;p&gt;我就做好本职工作，然后等着被裁员吧。&lt;/p&gt;
+&lt;p&gt;现在想想，N + 1 挺香的。&lt;/p&gt;
+</content>
+        <updated>2025-02-01T15:37:12.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/immich-experience/</id>
+        <title>Immich 相册管理系统使用体验分享</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/immich-experience/"/>
+        <content type="html">&lt;p&gt;自从群晖更新了 DSM 7.2 之后，官方就默认移除了 Video Station 套件，我惊讶于这一更新给我造成的不便（没错，我在用 VS 套件，怎样），开始翻阅群晖的更新日志，这不翻不知道，群晖居然要去掉整个 NAS 的解码功能，虽然说 NAS 的机能是不强吧，但我买的 920+ 的性能是够用的啊！导致现在我在浏览器看照片需要安装一个解码插件才能看，在手机端看照片也要打开一个 “图片助手” 才能正常看。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Version: 7.2.2-72806 (2024-09-11) 注意事项……&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;自此版本起，使用 HEVC (H.265)、AVC (H.264) 和 VC-1 编解码器处理多媒体文件的负载，将从服务器端转移至终端设备，以减少系统不必要的资源占用，从而提升效能。 这些编解码器在智能手机、平板、计算机、智能电视等终端设备上已广泛支持。如果终端设备不支持所需的编解码器，媒体文件的使用可能会受到限制。&lt;/strong&gt; 关于替代方案，请参阅……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Video Station 已经不能用了，相册这样恶心我一下，鬼知道群晖哪天会像砍 Video Station 一样把相册也砍掉。而且这样的相册系统我也不想再用了，索性直接寻找两套解决方案，视频托管解决方案和图片托管解决方案。&lt;/p&gt;
+&lt;p&gt;视频套件自不必多说，Jellyfin。本篇文章暂不展开。&lt;/p&gt;
+&lt;p&gt;我本次想分享一下关于我部署和使用图片托管服务的相关使用体验。&lt;/p&gt;
+&lt;h2 id=&#34;Immich：自托管相册视频管理解决方案&#34;&gt;&lt;a href=&#34;#Immich：自托管相册视频管理解决方案&#34; class=&#34;headerlink&#34; title=&#34;Immich：自托管相册视频管理解决方案&#34;&gt;&lt;/a&gt;Immich：自托管相册视频管理解决方案&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://immich.app/assets/images/feature-panel-286c220a4bdfd8a0a9a3abc45c47a600.webp&#34; alt=&#34;Immich&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网：&lt;a href=&#34;https://immich.app/&#34;&gt;Immich&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;体验：&lt;a href=&#34;https://demo.immich.app/auth/login&#34;&gt;Demo Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;客户端支持：网页端、Android、iOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;官网有非常详细的文档指引，如果你对于英文文档的阅读有不便的话，还可以参考 &lt;a href=&#34;https://www.himiku.com/archives/immich.html&#34;&gt;初之音&lt;/a&gt; 的这篇教程，你会拥有更好的阅读体验。&lt;/p&gt;
+&lt;h2 id=&#34;Immich-的优势&#34;&gt;&lt;a href=&#34;#Immich-的优势&#34; class=&#34;headerlink&#34; title=&#34;Immich 的优势&#34;&gt;&lt;/a&gt;Immich 的优势&lt;/h2&gt;&lt;h3 id=&#34;不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&#34;&gt;&lt;a href=&#34;#不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&#34; class=&#34;headerlink&#34; title=&#34;不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&#34;&gt;&lt;/a&gt;不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&lt;/h3&gt;&lt;p&gt;（点你呢，群晖！）&lt;/p&gt;
+&lt;h3 id=&#34;使用-Flutter-开发客户端，双端拥有一致的使用体验&#34;&gt;&lt;a href=&#34;#使用-Flutter-开发客户端，双端拥有一致的使用体验&#34; class=&#34;headerlink&#34; title=&#34;使用 Flutter 开发客户端，双端拥有一致的使用体验&#34;&gt;&lt;/a&gt;使用 Flutter 开发客户端，双端拥有一致的使用体验&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://immich.app/img/screenshot-light.webp&#34; alt=&#34;Immich&#34;&gt;&lt;br&gt;Flutter 更为现代化的 UI 组建，特性也双端同步更新。&lt;/p&gt;
+&lt;h3 id=&#34;集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&#34;&gt;&lt;a href=&#34;#集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&#34; class=&#34;headerlink&#34; title=&#34;集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&#34;&gt;&lt;/a&gt;集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/immich-machine-learning.png&#34;&gt;&lt;br&gt;这个计算时间较长，跟设备的计算性能有关，如果有条件的话可以在更强的设备上运行。&lt;/p&gt;
+&lt;h3 id=&#34;存储模板可以帮我整理杂乱的群晖相册结构&#34;&gt;&lt;a href=&#34;#存储模板可以帮我整理杂乱的群晖相册结构&#34; class=&#34;headerlink&#34; title=&#34;存储模板可以帮我整理杂乱的群晖相册结构&#34;&gt;&lt;/a&gt;存储模板可以帮我整理杂乱的群晖相册结构&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/photoStructure.png&#34;&gt;&lt;br&gt;使用过群晖相册的都知道，群晖的整理就是没有整理。&lt;br&gt;&lt;img src=&#34;https://immich.app/assets/images/storage-template-5504da62979bf2d9e40a94d898b54388.webp&#34;&gt;&lt;br&gt;可以自定义存储模板。&lt;/p&gt;
+&lt;h3 id=&#34;非常便捷的图库迁移工具链，可以通过命令行快速迁移&#34;&gt;&lt;a href=&#34;#非常便捷的图库迁移工具链，可以通过命令行快速迁移&#34; class=&#34;headerlink&#34; title=&#34;非常便捷的图库迁移工具链，可以通过命令行快速迁移&#34;&gt;&lt;/a&gt;非常便捷的图库迁移工具链，可以通过命令行快速迁移&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/immichCLI.webp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Immich-的问题&#34;&gt;&lt;a href=&#34;#Immich-的问题&#34; class=&#34;headerlink&#34; title=&#34;Immich 的问题&#34;&gt;&lt;/a&gt;Immich 的问题&lt;/h2&gt;&lt;h3 id=&#34;较高的上手门槛（自部署）&#34;&gt;&lt;a href=&#34;#较高的上手门槛（自部署）&#34; class=&#34;headerlink&#34; title=&#34;较高的上手门槛（自部署）&#34;&gt;&lt;/a&gt;较高的上手门槛（自部署）&lt;/h3&gt;&lt;p&gt;自己部署 Immich，你至少需要了解以下知识：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自己实现外部访问&lt;ul&gt;
+&lt;li&gt;域名&lt;/li&gt;
+&lt;li&gt;公网 IP&lt;/li&gt;
+&lt;li&gt;反向代理&lt;/li&gt;
+&lt;li&gt;SSL 证书&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一定的玩机经验&lt;ul&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Bash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;稳定性欠佳&#34;&gt;&lt;a href=&#34;#稳定性欠佳&#34; class=&#34;headerlink&#34; title=&#34;稳定性欠佳&#34;&gt;&lt;/a&gt;稳定性欠佳&lt;/h3&gt;&lt;p&gt;Immich 开源项目仍旧在非常活跃的开发状态，从官方 Roadmap 看，需要等到 2025 年才会推出第一个稳定版。&lt;/p&gt;
+&lt;p&gt;我也在近几天的使用中发现了一些问题，比如：当我在移动设备中使用了 Proxy 设置，在 Immich 客户端的 App 中并不会走设备的 Proxy 进行网络请求，导致我在外边请求服务器时经常出现 “Server not reachable” 连接不上服务器的问题。&lt;/p&gt;
+&lt;p&gt;把官方的 Flutter 项目的代码拉取到本地 Debug 了一下，排查到 Flutter 的 baseHttpClient 在发起网络请求时，并不会直接使用移动设备的代理，需要在代码里进行判断和覆盖一下才行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/immich-mobile-proxy.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我也在官方的仓库提了 Discussion，希望能被官方看到吧。&lt;/p&gt;
+&lt;h2 id=&#34;我的建议&#34;&gt;&lt;a href=&#34;#我的建议&#34; class=&#34;headerlink&#34; title=&#34;我的建议&#34;&gt;&lt;/a&gt;我的建议&lt;/h2&gt;&lt;p&gt;如果你跟我一样，希望找一个能够替代群晖官方图片托管的第三方服务，那 Immich 是值得你关注的，但还不能日用，至少&lt;strong&gt;不是现在&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果你更常用网页的话，那当前版本的 Immich 已经是可以使用的状态了。&lt;/p&gt;
+&lt;p&gt;如果你需要同时使用网页和客户端，那 Immich 正式版推出之后，可能更合适。因为它还没有到一个可以正常使用的版本，尤其是客户端。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="相册" />
+        <updated>2024-12-19T10:51:03.000Z</updated>
+    </entry>
+</feed>
