@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;博客&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2024-02-21T20:41:28.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/1708519528836/</id>
+        <title>听起来可笑，但我在 2023 年重启了我的博客</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1708519528836/"/>
+        <content type="html">&lt;p&gt;少数派首发&lt;/p&gt;
+&lt;p&gt;本文参加 2023 年度征文活动。我的 2023 年度关键词是：重启。&lt;/p&gt;
+&lt;p&gt;在 2023 年 12 月到 2024 年 1 月，我关注的各大博主、UP 主都在陆续总结自己的 2023 年。拜我年初重启博客的决定所赐，我今年有想写的东西了，但坐在电脑面前，总感觉缺了点儿什么，情绪一直跟灵感较劲，直到我看到了老麦发布的 &lt;strong&gt;2023 年度征文&lt;/strong&gt;，嘴角才开始&lt;strong&gt;疯狂上扬&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这是对我整个 2023 年的心路总结，也是我人生阶段新的开始。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h2 id=&#34;博客的-Shutdown&#34;&gt;&lt;a href=&#34;#博客的-Shutdown&#34; class=&#34;headerlink&#34; title=&#34;博客的 Shutdown&#34;&gt;&lt;/a&gt;博客的 Shutdown&lt;/h2&gt;&lt;p&gt;上次博客更新时间是什么时候？大学第一年（2016）？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/d080b6c8cd56e6300c4c966d978471b2.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;博客文章残影&lt;/p&gt;
+&lt;p&gt;当时写了几篇有关 ACM 算法相关的文章，流水账一样地记录了我攻破这些问题的思考过程，然后，我便&lt;strong&gt;忘记更新和维护&lt;/strong&gt;了。博客的&lt;strong&gt;原始文件&lt;/strong&gt;也随着时间的推移和设备的不断更新而&lt;strong&gt;遗失&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;博客重启的契机：为了这碟醋包了顿饺子&#34;&gt;&lt;a href=&#34;#博客重启的契机：为了这碟醋包了顿饺子&#34; class=&#34;headerlink&#34; title=&#34;博客重启的契机：为了这碟醋包了顿饺子&#34;&gt;&lt;/a&gt;博客重启的契机：为了这碟醋包了顿饺子&lt;/h2&gt;&lt;p&gt;在 2023 年初，我突然想找个地方记录一下我当时&lt;a href=&#34;https://sspai.com/post/78993&#34;&gt;折腾一个蓝牙墨水屏&lt;/a&gt;的过程，因为我感觉这个折腾的过程还挺好玩的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-eosd-rxjp-nuvf.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;蓝牙墨水屏&lt;/p&gt;
+&lt;p&gt;最适合的地方当属个人博客：可惜我的博客源文件找不到了……&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;要不某 XXDN？&lt;/strong&gt;不行不行，这平台太乱了，平时我搜索引擎都设置了过滤掉所有 CSDN 结果，因为这个平台几乎任何信息需要付费或者登陆才能查看，已经完全背离了互联网共享精神。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;某书？&lt;/strong&gt;虽然我大学期间也在该平台发布过几篇文章，还上过首页（羞），但看它现在半死不活的样子，实在提不起兴趣。&lt;/p&gt;
+&lt;p&gt;索性重新搭建一个博客平台吧，至少没人会拒绝我的投稿，这个博客网站我说了算！&lt;/p&gt;
+&lt;p&gt;（当时没想过发少数派的心路历程是：少数派的投稿门槛应该很高吧，毕竟这可是我每天都刷的少数派，日常看上边的文章质量那么高，我的文章投稿在这？想啥呢？）&lt;/p&gt;
+&lt;h2 id=&#34;博客系统或工具的选择&#34;&gt;&lt;a href=&#34;#博客系统或工具的选择&#34; class=&#34;headerlink&#34; title=&#34;博客系统或工具的选择&#34;&gt;&lt;/a&gt;博客系统或工具的选择&lt;/h2&gt;&lt;p&gt;大学期间我使用过 Hexo 搭建个人博客，托管在 Github Page 服务上。&lt;/p&gt;
+&lt;p&gt;这次重启博客，我想找一个带后台、省心的工具，于是就用上了这个：&lt;a href=&#34;https://www.halo.run/&#34;&gt;Halo&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/image-igpa-anwy-jvhg.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Halo 官网&lt;/p&gt;
+&lt;h3 id=&#34;Halo：强大易用的开源建站工具&#34;&gt;&lt;a href=&#34;#Halo：强大易用的开源建站工具&#34; class=&#34;headerlink&#34; title=&#34;Halo：强大易用的开源建站工具&#34;&gt;&lt;/a&gt;Halo：&lt;strong&gt;强大易用的开源建站工具&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;先说这种方式下我认为的缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对个人网络技术要求高，需要有自己的公网 IP 地址和域名地址，如果家庭宽带申请有困难的话，可能还要购买云服务器，再使用 frp 等内网穿透工具来完成网站搭建。&lt;/li&gt;
+&lt;li&gt;维护成本高，你需要一台 Always online （永远保持开机和在线） 的设备，如果你所在的地方阶段性地停网、停电、电压不稳，你肯定知道维持一个 Always online 设备的难度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当然了，以上这些对程序员群体和科技发烧友来说不算事儿~&lt;/p&gt;
+&lt;p&gt;再说优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;开箱即用的使用体验，相比较生成式博客工具，你无须关心图床、编辑器、生成、主题配置文件、邮件通知插件等等，Halo 安装好了，就能立马使用。&lt;/li&gt;
+&lt;li&gt;强大的扩展能力，现在 Halo 上线了在线插件商城，各种主题和第三方插件一键安装，不要太爽~&lt;/li&gt;
+&lt;li&gt;还想要优点？那就去 &lt;a href=&#34;https://www.halo.run/&#34;&gt;Halo 官网&lt;/a&gt;看吧，哈哈。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/8da5e7717a2dc1882fbf16d6020f9d81.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图片来自文章：&lt;a href=&#34;/upload/image-qkjl-kxub-ffhe.webp&#34;&gt;NAS，我用我开心，你买你快乐&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Hexo：快速、简洁且高效的博客框架&#34;&gt;&lt;a href=&#34;#Hexo：快速、简洁且高效的博客框架&#34; class=&#34;headerlink&#34; title=&#34;Hexo：快速、简洁且高效的博客框架&#34;&gt;&lt;/a&gt;Hexo：快速、简洁且高效的博客框架&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/21cbc4594179c379eba2f60e70e9e1c4.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hexo 官网&lt;/p&gt;
+&lt;p&gt;Hexo 是我使用了一段时间 Halo 托管的博客网站后，个人认为必要的一个备选方案。&lt;/p&gt;
+&lt;p&gt;它配置复杂，对个人要求更高；扩展性更强，但每一次的扩展都意味着半天或者一天的时间消耗，消耗在查资料、装依赖、申请各种第三方网站的 Token 等等。&lt;/p&gt;
+&lt;p&gt;即便如此，它扔有杀手锏：不用公网 IP，不需要任何 Always online 设备，如果你对博客域名没有太高的要求的话，你甚至不需要购买域名 （详情可以了解 &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Page 服务&lt;/a&gt;）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/db4ae5d737d171f4884e407651460d79.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;你能接受这样的博客配置方式吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么需要 Hexo 作为备选方案？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为各种不可抗力，导致我这一年维持自己的 Always online 设备真的太难了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/3cafc793857c8884cf18755e6462d1a5.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;日志记录下的异常断电&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2023年5月，&lt;a href=&#34;https://sspai.com/post/79773&#34;&gt;拉扯公网 IP 申请&lt;/a&gt;问题，好在最终申请到了。&lt;/li&gt;
+&lt;li&gt;2023年8月，设备所在县城因为电网压力频繁断电，设备不得不关机一段时间（2024 年 1 月，再次频繁地断电、电压不稳后，怒下单了一台 UPS）。&lt;/li&gt;
+&lt;li&gt;2023年11月，Cloudflare 的 Origin Rules（端口转发，解决个人宽带 80、443 端口封禁问题）抽风，导致博客直接不可访问，紧急切换到 Zero Trust 下边的 tunnels （Cloudflare 的内网穿透服务）解决问题。&lt;/li&gt;
+&lt;li&gt;2023年12月，XX 市联通为解决 PCDN 问题，对所有上行较高的个人宽带实行静默限速，博客访问异常缓慢。&lt;/li&gt;
+&lt;li&gt;2023年12月，我发现从国外已经无法正常访问国内的这个域名所指向的 IP 了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/c8f34f514984250b9bc22f9c84e96067.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在最新版本的设置界面，Beta 字样已经消失了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/413a95391ee3fbca472b53dfc9ac6fe4.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;有了 UPS ,设备终于不怕异常断电了&lt;/p&gt;
+&lt;p&gt;可以看到，个人维护一个网站，在非商业环境、低成本实现下，每隔一段时间，就会遭到各种意想不到的问题，而每一个问题，都可能会导致博客网站无法访问。&lt;/p&gt;
+&lt;p&gt;在以上的种种组合拳下，现实的毒打让我意识到，Hexo 虽然前期配置困难，但只要我配置好了之后，这个托管在 Github 上的网站基本上不受任何电力、网络等因素的影响，实在是太优秀了！&lt;/p&gt;
+&lt;p&gt;还得是你，老伙计。&lt;/p&gt;
+&lt;p&gt;ps1：把&lt;strong&gt;博客直接放在云服务器上&lt;/strong&gt;也是方案之一，也能解决 Always online 设备的维护困难问题，但从个人用户角度出发，我感觉&lt;a href=&#34;https://gadore.top/archives/1683599671683&#34;&gt;云服务器商吃相也挺难看的&lt;/a&gt;，这个就不过多展开了。&lt;/p&gt;
+&lt;p&gt;ps2：我托管在 Github Page 上的备用网站比主站建站时间要短很多，所以访问量也要少很多，网站访客统计是不同步的。&lt;/p&gt;
+&lt;p&gt;ps3：现在市面上也有很多在线博客平台，老牌的有 Wordpress，新一点的可以尝试 Typlog，对于不想折腾的人来说，这些付费平台可以帮助你省下更多时间，来做更有意义的事情。&lt;/p&gt;
+&lt;h2 id=&#34;如何坚持写博客&#34;&gt;&lt;a href=&#34;#如何坚持写博客&#34; class=&#34;headerlink&#34; title=&#34;如何坚持写博客&#34;&gt;&lt;/a&gt;如何坚持写博客&lt;/h2&gt;&lt;p&gt;这是一个永恒的话题，类似的还有：如何坚持健身、如何坚持读书、如何坚持摄影等等。&lt;/p&gt;
+&lt;p&gt;作为一个懒惰的人，我使用以下方式坚持了接近一年的写作习惯，如果能帮到你，那就更好。&lt;/p&gt;
+&lt;h3 id=&#34;低目标化，养成习惯比什么都重要&#34;&gt;&lt;a href=&#34;#低目标化，养成习惯比什么都重要&#34; class=&#34;headerlink&#34; title=&#34;低目标化，养成习惯比什么都重要&#34;&gt;&lt;/a&gt;低目标化，养成习惯比什么都重要&lt;/h3&gt;&lt;p&gt;俗话说的好，强扭的瓜不甜。&lt;/p&gt;
+&lt;p&gt;在我看来，保持高强度更新实在没有必要，毕竟我不是专业的写手或者小说家，所以在刚建立博客之初，我就暗暗定下了低更新率的策略，让自己至少一个月一篇文章产出即可，记录自己这一个月以来遇到的好玩的事和物。&lt;/p&gt;
+&lt;p&gt;如果这一个月真的实在没有任何事情可以写，那我还可以分享我之前收罗的好看的图片，好玩的软件，总能留下点儿东西的。&lt;/p&gt;
+&lt;p&gt;从一年的实践看来，这个目标还是很容易完成的。&lt;/p&gt;
+&lt;h3 id=&#34;借助外部力量&#34;&gt;&lt;a href=&#34;#借助外部力量&#34; class=&#34;headerlink&#34; title=&#34;借助外部力量&#34;&gt;&lt;/a&gt;借助外部力量&lt;/h3&gt;&lt;p&gt;对于懒惰的人来说（比如我），内驱动力实在有限，所以借助外部驱动力来督促自己也是非常有必要的，这里我简单介绍两个。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;友链&lt;/strong&gt;：友链看似是简单的把认识的人的网站放到自己博客的一个地方进行展示，但常年运营的&lt;strong&gt;站长&lt;/strong&gt;对添加友链是有一定要求的。比如&lt;strong&gt;定期的文章更新频率&lt;/strong&gt;、&lt;strong&gt;文章质量&lt;/strong&gt;、&lt;strong&gt;流畅的网络访问体验&lt;/strong&gt;等等，只有你的博客网站达到了这个要求，才有可能被站长收录到自己的友链中去。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;十年之约项目&lt;/strong&gt;：&lt;a href=&#34;https://www.foreverblog.cn/&#34;&gt;十年之约项目&lt;/a&gt;是一个更加强约束的组织，如果你的博客网站申请加入十年之约，他们会定期监督你去好好经营自己的博客和生产内容，更多有关十年之约的要求可以去段首提及的链接详细了解，这里就不再赘述啦。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/96b2f96f4456ac424e66da8508c88128.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;十年之约官网&lt;/p&gt;
+&lt;p&gt;这些手段组合起来至少对于我来说是凑效的（毕竟我的目标也不是很高嘛），而且随着时间的推移，现在我的心态已经从“这个月到底该写什么”转变为“这个月选哪个话题写”了。&lt;/p&gt;
+&lt;h3 id=&#34;中文互联网的混乱&#34;&gt;&lt;a href=&#34;#中文互联网的混乱&#34; class=&#34;headerlink&#34; title=&#34;中文互联网的混乱&#34;&gt;&lt;/a&gt;中文互联网的混乱&lt;/h3&gt;&lt;p&gt;现在每个互联网大厂都想把用户永远地留在自己的平台。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个简单的聊天软件也要去做搜索引擎和直播，这样更多的人就会在这个 App 内留存更久；&lt;/li&gt;
+&lt;li&gt;一个做短视频的 App 也要集成电商平台和直播平台，这样更多的人就会在他们 App 里留存更久；&lt;/li&gt;
+&lt;li&gt;一个做搜索引擎的大厂也要做安全全家桶，争取让用户电脑上多安装一个自家的应用，这样就可以抢占用户的电脑资源。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更可怕的是，他们互相抄袭功能、又互相屏蔽跳转链接，功能越堆越多，导致现在用户下载一个聊天软件跟 3A 大作一样。&lt;/p&gt;
+&lt;p&gt;爬虫的诞生，让互联网的“互联”形同虚设，中文互联网更甚。&lt;/p&gt;
+&lt;p&gt;反爬虫环境下，甚至出现了用户从网页复制一句话都得&lt;strong&gt;用户注册和登陆才能复制&lt;/strong&gt;的现象。&lt;/p&gt;
+&lt;p&gt;搜索引擎啥也搜不到，用户&lt;strong&gt;必须下载手机 App&lt;/strong&gt;， 到每一家的软件里去搜索才行。&lt;/p&gt;
+&lt;p&gt;平时遇到小的技术问题，去互联网查解决方法，查到问题的答案后答案只显示一半，剩下一半&lt;strong&gt;需要付费&lt;/strong&gt;才能看得到？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/d3db13cf54b012578a8229ee4ad9d577.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在一个技术论坛社区网站上传一个 Docx 文档，再让我付费下载，绝&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/a56033cb303498b501cb9d219a921c8d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;教我我如何复制的代码块无法直接复制 &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你们！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;想赚钱都想疯了吗？&lt;/p&gt;
+&lt;h3 id=&#34;写作，让人思考&#34;&gt;&lt;a href=&#34;#写作，让人思考&#34; class=&#34;headerlink&#34; title=&#34;写作，让人思考&#34;&gt;&lt;/a&gt;写作，让人思考&lt;/h3&gt;&lt;p&gt;博客对我来说的另一个作用，就是一本&lt;strong&gt;公开的个人日记&lt;/strong&gt;，我可以从文章中看到我过去的时间里都经历的什么，怎么解决的等等，也算是没有虚度光阴。&lt;/p&gt;
+&lt;p&gt;如果没有博客的存在，对于我这种记忆力很差的人，一年前的事情可能很快就忘得一干二净。&lt;/p&gt;
+&lt;p&gt;留下写作的习惯，也就帮助我开辟了思考空间。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/87719b2525539dc186fb2c83da9dce88.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;嘿，猛的一看这一年我还挺能折腾的&lt;/p&gt;
+&lt;h3 id=&#34;弥补没能参加年度征文的遗憾&#34;&gt;&lt;a href=&#34;#弥补没能参加年度征文的遗憾&#34; class=&#34;headerlink&#34; title=&#34;弥补没能参加年度征文的遗憾&#34;&gt;&lt;/a&gt;弥补没能参加年度征文的遗憾&lt;/h3&gt;&lt;p&gt;我第一次接触到少数派的征文活动是 2016 年。&lt;/p&gt;
+&lt;p&gt;【&lt;a href=&#34;https://sspai.com/post/37496&#34;&gt;如何在一个极偏执的大学里笑出声来 | 2016 与我的数字生活&lt;/a&gt;】这篇文章在当时给了我极大地震撼，我把它保存在我的文章收藏夹里，每当我经历了一些难过的事情，或者遭受了外部的压力需要对抗时，都会拿出来读一遍，直至今日，仍旧可以感受到&lt;strong&gt;里边文字带给我的力量&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;什么时候我也能参加少数派征文呢？先写起来吧，没有文章，何谈参与。&lt;/p&gt;
+&lt;h2 id=&#34;定义重启本身&#34;&gt;&lt;a href=&#34;#定义重启本身&#34; class=&#34;headerlink&#34; title=&#34;定义重启本身&#34;&gt;&lt;/a&gt;定义重启本身&lt;/h2&gt;&lt;p&gt;我相信很多人听过这段话：种一棵树最好的时间是十年前，其次是现在。&lt;/p&gt;
+&lt;p&gt;《权力的游戏》“小恶魔”扮演者彼特•丁拉基在演讲中说道：不要像我一样，29岁人生才开始。&lt;/p&gt;
+&lt;p&gt;猛然回望我人生走过的二十多年，一切似乎都被时间蒙上了一层浓重的雾气，隐约记得我好做了什么，经历了什么，但视野就像是被摘掉了近视眼镜一样，朦朦胧胧。&lt;/p&gt;
+&lt;p&gt;现在，只要打开我的博客，简单翻阅，就能看到这一年里我做了哪些值得记录的事。&lt;/p&gt;
+&lt;p&gt;嗯，就把重启博客的时间作为锚点好了，至少从这个时间结点开始，我的人生轨迹是清晰的。&lt;/p&gt;
+&lt;h2 id=&#34;重启博客这一年，我经历了什么&#34;&gt;&lt;a href=&#34;#重启博客这一年，我经历了什么&#34; class=&#34;headerlink&#34; title=&#34;重启博客这一年，我经历了什么&#34;&gt;&lt;/a&gt;重启博客这一年，我经历了什么&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;认识了一些有趣的朋友：见我博客&lt;a href=&#34;https://blog.gadore.top/link&#34;&gt;友链&lt;/a&gt;（&lt;a href=&#34;https://halo.gadore.top/1684286993439&#34;&gt;备用链接&lt;/a&gt;），欢迎大家互链。&lt;/li&gt;
+&lt;li&gt;少数派写作收益：就是&lt;strong&gt;钱&lt;/strong&gt;啦，做自己喜欢的事，还有收益，还有比这更幸福的吗？&lt;/li&gt;
+&lt;li&gt;难得的思考空间：写起来，才会思考。&lt;/li&gt;
+&lt;li&gt;神奇的发现：现在还在坚持写博客的人还挺多嘛！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关于少数派收益：重启博客后，我莫名其妙地拥有了投稿少数派的勇气了！于是，在手忙脚乱地准备后，我也成功申请到了共创作者资格（没过多久少数派就开放了这个权限给更多人T_T，后来者真幸福），然后忐忑不安地把我博客的第一篇文章投稿到了编辑部，居然上了首页！！！还有钱拿！！！&lt;/p&gt;
+&lt;p&gt;关于投稿策略：自认为优秀的文章拿到少数派投稿，技术性过强、个人闲谈等不适合少数派首页的就只放在个人博客里。&lt;/p&gt;
+&lt;p&gt;可能有人会问我为什么要&lt;strong&gt;把博客文章同步投稿少数派&lt;/strong&gt;：&lt;strong&gt;增加曝光啊&lt;/strong&gt;！！！我的博客一年的访客量，比不上一篇文章在少数派首页的访问量&lt;strong&gt;（T_T）&lt;/strong&gt;，另一个重要原因是老麦允许投稿少数派的文章在&lt;strong&gt;遵守网站协议&lt;/strong&gt;的前提下在个人博客发布。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/115969a4d37aad451bf22a201bc4f794.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;博客建立第 355 天访客总量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/acede9d969b116a54c5b46b21640a11c.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;发布在少数派的文章访问量&lt;/p&gt;
+&lt;p&gt;诚然，我的博客网站只是刚刚起步的不知名小站，国内某度搜索引擎，直到现在（2024 年 2月 21 号）还没收录我博客的任何网站链接，是因为我没有掏钱竞价排名嘛？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/9309ba93ad70691699199c5cd7819f97.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;某度搜索结果&lt;/p&gt;
+&lt;h2 id=&#34;博客-2023-年度文章&#34;&gt;&lt;a href=&#34;#博客-2023-年度文章&#34; class=&#34;headerlink&#34; title=&#34;博客 2023 年度文章&#34;&gt;&lt;/a&gt;博客 2023 年度文章&lt;/h2&gt;&lt;p&gt;在保证至少一个月一篇文章的更新频率下，我在过去的这一年共有接近 20 篇左右的文章产出，我也给他们评选了 1、2、3 名，对文章感兴趣的各位可以赏脸移步：&lt;/p&gt;
+&lt;h3 id=&#34;我的-2023-年度文章&#34;&gt;&lt;a href=&#34;#我的-2023-年度文章&#34; class=&#34;headerlink&#34; title=&#34;我的 2023 年度文章&#34;&gt;&lt;/a&gt;我的 2023 年度文章&lt;/h3&gt;&lt;p&gt;博客地址：&lt;a href=&#34;https://gadore.top/archives/1677915050714&#34;&gt;我 Hack 了一个蓝牙墨水屏，还挺好玩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;少数派共创版：&lt;a href=&#34;https://sspai.com/post/78993&#34;&gt;抓包解协议，代码造布局：电子墨水价签改造 NAS 监控屏小记&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;评选理由：这是一切的开始。&lt;/p&gt;
+&lt;h3 id=&#34;我的-2023-博客网站最高访问量文章&#34;&gt;&lt;a href=&#34;#我的-2023-博客网站最高访问量文章&#34; class=&#34;headerlink&#34; title=&#34;我的 2023 博客网站最高访问量文章&#34;&gt;&lt;/a&gt;我的 2023 博客网站最高访问量文章&lt;/h3&gt;&lt;p&gt;博客地址：&lt;a href=&#34;https://gadore.top/archives/1683956999331&#34;&gt;为小米 13 刷入 Andy 大佬的 LineageOS20 类原生系统&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;评选理由：如题，刷基佬赛高！&lt;/p&gt;
+&lt;h3 id=&#34;我的-2023-年度优秀文章&#34;&gt;&lt;a href=&#34;#我的-2023-年度优秀文章&#34; class=&#34;headerlink&#34; title=&#34;我的 2023 年度优秀文章&#34;&gt;&lt;/a&gt;我的 2023 年度优秀文章&lt;/h3&gt;&lt;p&gt;博客地址：&lt;a href=&#34;https://gadore.top/archives/1680011338095&#34;&gt;Komga，群晖缺失的漫画管理应用被我找回来了！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;少数派共创版：&lt;a href=&#34;https://sspai.com/post/79100&#34;&gt;搭建属于自己的离线漫画库：我为什么推荐你试试 Komga&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;评选理由：这是第一篇投稿少数派首页直接通过的文章，得到了编辑的夸奖。&lt;/p&gt;
+</content>
+        <category term="博客" />
+        <updated>2024-02-21T20:41:28.000Z</updated>
+    </entry>
+</feed>

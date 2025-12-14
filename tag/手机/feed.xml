@@ -1,0 +1,871 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;手机&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2025-08-28T17:28:19.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/</id>
+        <title>Google Pixel 5 更换 Lineage OS</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;当过社畜的都知道，以季度为施工周期的项目，进入 8、9 月份基本上到了项目的加速或是冲刺期，所以整个 8 月份都在赶项目进度；&lt;/p&gt;
+&lt;p&gt;外包项目倒是也接触了好几个，但都停留在了技术咨询阶段，0 入账；&lt;/p&gt;
+&lt;p&gt;尝试用 Raspberry Pi 4B 和 Qwen3 0.6B 模型进行 Edge Ai + 自动联网分析的应用开发，用 Python 做出来之后发现效果略差于手机上的 App ，又是无功而返的三个晚上；&lt;/p&gt;
+&lt;p&gt;8 月就这么碌碌无为地溜了过去，整个人感觉好像什么都没做，那就刷个机吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的备用 Android 手机是 Pixel 5，官方已经永久停止系统支持了，当前的系统最新版本停留在 Android 14.&lt;/p&gt;
+&lt;p&gt;但我看到了 Android 15 有非常吸引人的优化系统系能的更新（ page size 16 kb），所以就特想升级，由于之前使用过 Lineage OS，所以就打开了它的官网，果然支持，直接刷入～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202025%E5%B9%B48%E6%9C%8828%E6%97%A5%2013_45_34.png&#34; alt=&#34;ChatGPT Image 2025年8月28日 13_45_34.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.lineageos.org/devices/redfin/&#34;&gt;Lineage OS for Pixel 5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刷入后发现了很多原生系统不支持的特性，太惊喜了！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;官方支持的 16kb 分页，App 打开效率提升&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;电池健康度检测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;充电控制（最大充到多少）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;状态栏展示网速（老传统了，其实没啥可说的，但原生没有）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1-LVWz.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2-jEiy.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3-xxGr.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4-apgs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;还得是 Pixel，官方不支持社区也会支持。&lt;/p&gt;
+&lt;p&gt;我感觉下一个版本的 Lineage OS （Android 16）理论上来说也能支持，&lt;/p&gt;
+&lt;p&gt;感谢 Lineage OS 。&lt;/p&gt;
+&lt;p&gt;期待一波～&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="刷机" />
+        <category term="Pixel 5" />
+        <category term="LineageOS" />
+        <updated>2025-08-28T17:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/oldbili/</id>
+        <title>iOS 6 新的 B 站第三方客户端：OldBili</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/oldbili/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这是关于玩转 iOS 老设备的第三篇文章了，我也没想到还有这么多为爱发电的开发者（可喜可贺），在为老款 iPhone 发力。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之前文章导航：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/archives/1690792964757/&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/archives/iphone5-watch-video-in-2024/&#34;&gt;iPhone 5 在 2024 年还能看视频吗？&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在写第二篇文章的时候，我就在想，可能很多人，都没有那么方便地通过我的文章来复刻一样的使用条件，毕竟为了刷个视频还得自己搭建 webdav，都 2025 年了……&lt;/p&gt;
+&lt;p&gt;然后最近刷 rss 的时候就发现了这个：&lt;a href=&#34;https://www.88ipa.com/application/39920.html&#34;&gt;OldBili&lt;/a&gt;（托管于 ios.ipa ）&lt;/p&gt;
+&lt;p&gt;开发者 B 站：&lt;a href=&#34;https://space.bilibili.com/651771871&#34;&gt;&lt;strong&gt;伦大来了&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;首页一览&#34;&gt;&lt;a href=&#34;#首页一览&#34; class=&#34;headerlink&#34; title=&#34;首页一览&#34;&gt;&lt;/a&gt;首页一览&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/1.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;播放视频&#34;&gt;&lt;a href=&#34;#播放视频&#34; class=&#34;headerlink&#34; title=&#34;播放视频&#34;&gt;&lt;/a&gt;播放视频&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用户界面&#34;&gt;&lt;a href=&#34;#用户界面&#34; class=&#34;headerlink&#34; title=&#34;用户界面&#34;&gt;&lt;/a&gt;用户界面&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/3.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;信息-设置&#34;&gt;&lt;a href=&#34;#信息-设置&#34; class=&#34;headerlink&#34; title=&#34;信息 &amp;amp;&amp;amp; 设置&#34;&gt;&lt;/a&gt;信息 &amp;amp;&amp;amp; 设置&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/4.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，开发者是完全使用 iOS 原生语言开发，设计规范符合 iOS 6 的拟物风，在 iOS 19 即将推出的此刻，1.5MB 的 B 站原生版本，感受到压力了吗，Apple？&lt;/p&gt;
+&lt;p&gt;现在终于可以打开 iPhone 5 直接刷 B 站啦～&lt;/p&gt;
+&lt;p&gt;对了，你的 iOS 6 设备需要越狱才能装。&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <updated>2025-04-05T22:48:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/iphone13miniwithtypec/</id>
+        <title>iPhone 13 mini 改 Type-C</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/iphone13miniwithtypec/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/markup_1000086977%20(1).png&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当时我之所以换掉 mini，就是为了可以一个 Type-C 走天下，出过差的人都懂，各种 lighting、Type-C、电脑、Apple Watch 一大堆充电线，烦都烦死了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近刷酷安了解到，现在居然有非常成熟的技术可以给 mini 换上 Type-C 了，好家伙，我直接心动不如行动。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/WechatIMG31.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/WechatIMG31.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我对 mini 的喜爱可以从我的换机历史看出来：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2021 年 3 月：在上海万象店原价 ¥5999 购入 iPhone 12 mini 白色&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2022 年 4 月：在闲鱼 ¥3688 购入欧版 iPhone 13 mini 星光色&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2024 年 3 月：在京东 ¥4850 购入 iPhone 15 （为了 Type-C），同时卖掉欧版 iPhone 13 mini （¥2000）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2025 年 2 月：重新购入 iPhone 13 mini 亚太版，改装 Type-C，改装高密度电池。（iPhone 15 给老妈用了没有卖）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;换了高密度电池之后，续航上也完全不虚：&lt;br&gt;&lt;a href=&#34;https://halo.gadore.top/upload/WechatIMG32-bhqo.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/WechatIMG32-bhqo.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果有 A18 芯片 + 8GB 内存就更好了。哎&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <updated>2025-03-03T11:43:44.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/phonePlayIn2024/</id>
+        <title>末玩机时代，还有哪些有趣的安卓机器（征询贴）</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/phonePlayIn2024/"/>
+        <content type="html">&lt;h2 id=&#34;致歉（对能看到当前博客的朋友）&#34;&gt;&lt;a href=&#34;#致歉（对能看到当前博客的朋友）&#34; class=&#34;headerlink&#34; title=&#34;致歉（对能看到当前博客的朋友）&#34;&gt;&lt;/a&gt;致歉（对能看到当前博客的朋友）&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;整个下半年我把精力都花在为公司开发一款低代码平台的设备监控和查询系统，这个项目完全由我一人开发，包揽前后端，涉及 S7、DB、TCP、Websocket、Http 等等高度自定义和可配置化的监控需求，所以前前后后耗费了好几个月，领导那边也是多次汇报才通过这个开发方案。还好 10 月份大功告成，11 月份项目正常上线，提高了公司在这方面的项目交付效率，我也终于松了一口气。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由于下半年的这个项目完全是在工作时间开发，我没办法透露一行代码出来，更不可能开源、分享，也由此影响到了博客方面，下半年的博客文章技术力肉眼可见地下降了，还请各位多多包涵。后边会好起来的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;从我高中毕业之后爸妈给我购买的第一款 iPhone 5s 起，我就被苹果生态捆绑了。但像我这种平时喜欢折腾的人来说，一部苹果手机，显然不行。&lt;/p&gt;
+&lt;p&gt;所以我也陆陆续续购买了各种各样的安卓手机，可以在&lt;a href=&#34;/archives/1699253243159&#34;&gt;那些年，我曾用过的设备（保持更新）&lt;/a&gt;进行查看。&lt;/p&gt;
+&lt;h2 id=&#34;温润如玉的-XZ2C-（当前备用机）&#34;&gt;&lt;a href=&#34;#温润如玉的-XZ2C-（当前备用机）&#34; class=&#34;headerlink&#34; title=&#34;温润如玉的 XZ2C （当前备用机）&#34;&gt;&lt;/a&gt;温润如玉的 XZ2C （当前备用机）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;CPU：骁龙 845&lt;/li&gt;
+&lt;li&gt;内存：4G&lt;/li&gt;
+&lt;li&gt;尺寸：135 x 65 x 12.1 mm&lt;/li&gt;
+&lt;li&gt;重量：169g&lt;/li&gt;
+&lt;li&gt;价格：¥ 400&lt;/li&gt;
+&lt;li&gt;缺点：4G内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://giggster.com/guide/content-img/articles/32500/1000-Sony-Xperia-XZ2-Compact-Green-2_1532427760.jpg&#34; alt=&#34;XZ2C，图片来自 giggster&#34;&gt;&lt;br&gt;做个不太恰当的比喻，如果用古代妻和妾来比作手机的话，我的主力机 iPhone 15 是正妻，那 XZ2C 就是我最爱的小妾。&lt;/p&gt;
+&lt;p&gt;我很多时候可能不得不带 iPhone 15 出门，但非必要情况下，我会拿着 XZ2C 把玩。&lt;/p&gt;
+&lt;h3 id=&#34;它为什么会有这么大的魔力呢？&#34;&gt;&lt;a href=&#34;#它为什么会有这么大的魔力呢？&#34; class=&#34;headerlink&#34; title=&#34;它为什么会有这么大的魔力呢？&#34;&gt;&lt;/a&gt;它为什么会有这么大的魔力呢？&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;三选二卡槽，支持双卡双待&lt;/li&gt;
+&lt;li&gt;骁龙 845 处理器，不玩游戏勉强够用&lt;/li&gt;
+&lt;li&gt;方正屏幕，没有无用的 R 角弧度，也没有挖孔&lt;/li&gt;
+&lt;li&gt;屏幕较长（对比 XZ1C ），刷信息流很舒服&lt;/li&gt;
+&lt;li&gt;机身小巧，握持感很棒&lt;/li&gt;
+&lt;li&gt;Type-C，伟大，无须多言&lt;/li&gt;
+&lt;li&gt;够用的电池续航（使用 adb 禁用无用的系统应用）&lt;/li&gt;
+&lt;li&gt;还算快的指纹识别（比三星 Galaxy Note 10+ 的屏幕指纹快）&lt;/li&gt;
+&lt;li&gt;Android 9 系统，大部分软件还是支持的&lt;/li&gt;
+&lt;li&gt;类原生系统，纯净无广告&lt;/li&gt;
+&lt;li&gt;超好看的白色屏幕面板（白色控狂喜）&lt;/li&gt;
+&lt;li&gt;¥ 400 就可以买到（docomo 版本，不支持电信，但可以加钱上港版）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;缺点&#34;&gt;&lt;a href=&#34;#缺点&#34; class=&#34;headerlink&#34; title=&#34;缺点&#34;&gt;&lt;/a&gt;缺点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;触摸失灵，触发频率随机，大约 1&amp;#x2F;10 ～ 1&amp;#x2F;20，熄屏重新点亮就可以恢复&lt;/li&gt;
+&lt;li&gt;4G 内存，运行一个微信就比较吃力了。毕竟国产 3A&lt;/li&gt;
+&lt;li&gt;GPS 失效，不知道是不是因为 docomo 版本原因，离线导航是无法获取 GPS 信号的&lt;/li&gt;
+&lt;li&gt;没有 3.5mm 耳机孔&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可以看到，它缺点很致命，所以在大多数出门的场合，XZ2C 都没办法应付自如，但作为一个备用机而言，通过安装各种精简 APK 来获得更好的信息浏览和观看体验，它是完全可以胜任的。&lt;/p&gt;
+&lt;p&gt;这款手机我已经陆陆续续使用了一年多了，现在仍旧爱不释手。&lt;/p&gt;
+&lt;h2 id=&#34;断层&#34;&gt;&lt;a href=&#34;#断层&#34; class=&#34;headerlink&#34; title=&#34;断层&#34;&gt;&lt;/a&gt;断层&lt;/h2&gt;&lt;p&gt;XZ2C 是独一份的存在，它的方正无挖孔的屏幕，小巧的尺寸，类原生的系统，双卡双待、Type-C，这部手机几乎没有缺点，它最大的短板：4G 运行内存，是我当前最大的痛。&lt;/p&gt;
+&lt;p&gt;我最近也在收罗各种安卓小屏旧旗舰的替代方案。&lt;/p&gt;
+&lt;h3 id=&#34;Xperia-5-V&#34;&gt;&lt;a href=&#34;#Xperia-5-V&#34; class=&#34;headerlink&#34; title=&#34;Xperia 5 V&#34;&gt;&lt;/a&gt;Xperia 5 V&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://www.sony.jp/xperia/xperia/xperia5m5/assets/kounyuu/5m5_docomo.jpg&#34; alt=&#34;图片来自：索尼官网&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU：骁龙 8 Gen 2&lt;/li&gt;
+&lt;li&gt;内存：8G&lt;/li&gt;
+&lt;li&gt;尺寸：154 x 68 x 8.6&lt;/li&gt;
+&lt;li&gt;重量：183g&lt;/li&gt;
+&lt;li&gt;价格：¥ 4188&lt;/li&gt;
+&lt;li&gt;缺点：贵（这是我的问题）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Zenfone-10&#34;&gt;&lt;a href=&#34;#Zenfone-10&#34; class=&#34;headerlink&#34; title=&#34;Zenfone 10&#34;&gt;&lt;/a&gt;Zenfone 10&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://dlcdnwebimgs.asus.com/gain/5f4839ec-a8ae-4254-aac3-0a21a7fae438/w800&#34; alt=&#34;图片来自：华硕官网&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU：骁龙 8 Gen 3&lt;/li&gt;
+&lt;li&gt;内存：8G&lt;/li&gt;
+&lt;li&gt;尺寸：146.5 x 68.1 x 9.4&lt;/li&gt;
+&lt;li&gt;重量：172g&lt;/li&gt;
+&lt;li&gt;价格：¥ 5699&lt;/li&gt;
+&lt;li&gt;缺点：贵（这是我的问题）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我不会考虑 Zenfone 9，那个屏幕…… 买回来也是重新卖掉的命运&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以上两款价格过高，我甚至认真考虑了 XZ2C的同期旗舰：&lt;/p&gt;
+&lt;h3 id=&#34;XZ2P&#34;&gt;&lt;a href=&#34;#XZ2P&#34; class=&#34;headerlink&#34; title=&#34;XZ2P&#34;&gt;&lt;/a&gt;XZ2P&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/40172343_10156665274538390_3411113436514353152_n.png?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=0327a3&amp;_nc_ohc=2eZkgLznMScQ7kNvgHid-ZB&amp;_nc_zt=23&amp;_nc_ht=scontent-nrt1-1.xx&amp;_nc_gid=AQtEmwZ8lqpCuXau5jxixIM&amp;oh=00_AYAZxfx4qUgZ04C-dHVBls3NK3wbWNzqFTDlOOM_jCudrQ&amp;oe=6767A909&#34; alt=&#34;图片来自：Facebook&#34;&gt;&lt;br&gt;从左至右依次是：XZ2P、XZ2、XZ2C&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU：骁龙 845&lt;/li&gt;
+&lt;li&gt;内存：6G&lt;/li&gt;
+&lt;li&gt;尺寸：158 x 80 x 11.9&lt;/li&gt;
+&lt;li&gt;重量：236g&lt;/li&gt;
+&lt;li&gt;价格：¥ 648&lt;/li&gt;
+&lt;li&gt;缺点：太重，太宽，无法长时间握持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;真正的小屏，好难找。&lt;/p&gt;
+&lt;p&gt;方正屏幕、类原生、小屏、Type-C、性能够用、更大的内存（大于4G）&lt;/p&gt;
+&lt;p&gt;Last but not least: 合理的价格（毕竟备用机） !&lt;/p&gt;
+&lt;p&gt;想知道各位还有没有更好的选择？&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2024-11-22T14:25:42.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/iphone5-watch-video-in-2024/</id>
+        <title>iPhone 5 在 2024 年还能看视频吗？</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/iphone5-watch-video-in-2024/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这是我的上一篇文章&lt;a href=&#34;/archives/1690792964757/&#34;&gt;iPhone 5 在 2023 年生存状况报告&lt;/a&gt;的 DLC 更新，毕竟对于现在的人来说，手机最最重要的工作，除了让你听歌、聊天、刷新闻、等任务之外，还有一个高频的使用场景：看视频。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先上结论：&lt;strong&gt;当然能&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;我自然不是说那种使用 iTunes 或者是用 USB 线、无线网拷贝视频文件到 iPhone 5 上边，这谁都能做到。&lt;/p&gt;
+&lt;p&gt;当然，iPhone 5 推出这么多年，而最经典的 iOS 6 系统也已经停更了这么久，能下载到的运行在 iOS 6 系统上的在线流媒体平台也都基本上&lt;strong&gt;不能用&lt;/strong&gt;了，包含但不限于我们常用的 B 站、爱优腾等。&lt;/p&gt;
+&lt;p&gt;那我还做了什么尝试呢？&lt;/p&gt;
+&lt;h2 id=&#34;方法1：WEBDAV-GoodPlayer&#34;&gt;&lt;a href=&#34;#方法1：WEBDAV-GoodPlayer&#34; class=&#34;headerlink&#34; title=&#34;方法1：WEBDAV + GoodPlayer&#34;&gt;&lt;/a&gt;方法1：WEBDAV + GoodPlayer&lt;/h2&gt;&lt;p&gt;该方法使用的前提，是你需要有一个类似 NAS 的设备一直在线，为你提供稳定的视频来源。&lt;/p&gt;
+&lt;p&gt;而配合 WEBDAV 协议的 GoodPlayer ，也是我最近找到了兼容性和流畅度最好的视频播放器。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/goodplayer-protocol.webp&#34; alt=&#34;goodplayer-protocol&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，它实在是支持太多协议了，各种意义上的神～&lt;/p&gt;
+&lt;h3 id=&#34;GoodPlayer&#34;&gt;&lt;a href=&#34;#GoodPlayer&#34; class=&#34;headerlink&#34; title=&#34;GoodPlayer&#34;&gt;&lt;/a&gt;GoodPlayer&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;软件版本：9.7.1&lt;/li&gt;
+&lt;li&gt;安装来源：&lt;a href=&#34;https://iosipa.cn/&#34;&gt;https://iosipa.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;用到功能：WEBDAV 在线视频浏览&lt;/li&gt;
+&lt;li&gt;体验结论：体验流畅&lt;/li&gt;
+&lt;li&gt;使用说明：安装，打开，设置 webdav，观看。有手就行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;在线查看-NAS-上的资源&#34;&gt;&lt;a href=&#34;#在线查看-NAS-上的资源&#34; class=&#34;headerlink&#34; title=&#34;在线查看 NAS 上的资源&#34;&gt;&lt;/a&gt;在线查看 NAS 上的资源&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;/upload/goodplayer-anime.webp&#34; alt=&#34;goodplayer-anime&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;在线观看往期-STN-快报&#34;&gt;&lt;a href=&#34;#在线观看往期-STN-快报&#34; class=&#34;headerlink&#34; title=&#34;在线观看往期 STN 快报&#34;&gt;&lt;/a&gt;在线观看往期 STN 快报&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;/upload/goodplayer-stn.webp&#34; alt=&#34;goodplayer-stn&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方法2：RSS-订阅视频动态&#34;&gt;&lt;a href=&#34;#方法2：RSS-订阅视频动态&#34; class=&#34;headerlink&#34; title=&#34;方法2：RSS 订阅视频动态&#34;&gt;&lt;/a&gt;方法2：RSS 订阅视频动态&lt;/h2&gt;&lt;p&gt;读过我的&lt;a href=&#34;/archives/1690792964757/&#34;&gt;上一篇文章&lt;/a&gt;的自不必多说，对 Reeder 这个 RSS 届的老大哥肯定很耳熟。&lt;/p&gt;
+&lt;h3 id=&#34;Reeder&#34;&gt;&lt;a href=&#34;#Reeder&#34; class=&#34;headerlink&#34; title=&#34;Reeder&#34;&gt;&lt;/a&gt;Reeder&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;软件版本：3.2&lt;/li&gt;
+&lt;li&gt;安装来源：&lt;a href=&#34;https://archive.org/download/iOSObscura&#34;&gt;https://archive.org/download/iOSObscura&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;用到功能：RSS 订阅&lt;/li&gt;
+&lt;li&gt;体验结论：超出预期，但存在缺陷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;而借助 RSSHub 的帮助，我就可以直接在 Reeder 中订阅我想看的视频博主，进而可以直接在 Reeder 中在线观看视频。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/rss-youtube.webp&#34; alt=&#34;rss-youtube&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可以从顶部进度条看到正在进行的缓存进度条，它真的还可以正常查看在线视频！&lt;/p&gt;
+&lt;h2 id=&#34;我想说&#34;&gt;&lt;a href=&#34;#我想说&#34; class=&#34;headerlink&#34; title=&#34;我想说&#34;&gt;&lt;/a&gt;我想说&lt;/h2&gt;&lt;p&gt;已经第 N 次向大家推荐 RSS 了，毕竟这是一个可以让我们主动去决定信息来源的东西，每一次在关注的博主那里关注到新的有趣的新闻源、博客网站的时候，手动把他们的 RSS 链接加入到我的 RSS 订阅中，会感觉非常有仪式感。&lt;/p&gt;
+&lt;p&gt;与之相反的就是各种算法推荐的泛资讯的信息爆炸，让人看着上瘾，不停点击下一个，期待算法能推荐更多感兴趣的东西。&lt;/p&gt;
+&lt;p&gt;我很反感后者。&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2024-08-10T21:29:52.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1706280378817/</id>
+        <title>2024 年还买 Lumia 950？体验超前，感叹悲惨，补偿过往</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1706280378817/"/>
+        <content type="html">&lt;p&gt;此文在少数派首发&lt;/p&gt;
+&lt;p&gt;「新玩意」？老朋友，但第二次见。&lt;/p&gt;
+&lt;p&gt;2014年秋冬，我站在公交车站等车去学校，与我一起等车的还有隔壁班的一哥们儿，他手里握着一款黑色手机，屏幕上满是彩色大色块的图标和纯黑的背景，点击某个 App 后，桌面播放了一个非常奇妙的动画，然后非常非常大的字体就显示在了纯黑色的屏幕上。&lt;/p&gt;
+&lt;p&gt;【这人是老年人吗，用这么大字体，有必要吗，不过刚刚那个动画还挺好看的，手机系统不是苹果，也不像是安卓，是不是网上传的那个 WP 】&lt;/p&gt;
+&lt;p&gt;终究也没去问他这是啥手机，但这就是我和 Lumia 手机的第一次相遇。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/73e28e21ab78ea3449e00ce23cc1dde9.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当时那款手机，大概长这样&lt;/p&gt;
+&lt;h2 id=&#34;优缺点一览&#34;&gt;&lt;a href=&#34;#优缺点一览&#34; class=&#34;headerlink&#34; title=&#34;优缺点一览&#34;&gt;&lt;/a&gt;优缺点一览&lt;/h2&gt;&lt;p&gt;十年后，当 Lumia 系列早已被大众盖棺定论，我却突然想淘一台来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/0720360adeb4e154b6cdacc1771b58d6.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;￥385，箱说全，哈哈哈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优美的非线性动画&lt;/li&gt;
+&lt;li&gt;低配置却能提供流畅使用体验&lt;/li&gt;
+&lt;li&gt;超前的暗色模式&lt;/li&gt;
+&lt;li&gt;一致的界面设计语言，对非官方 App 的界面设计拥有极高的约束力&lt;/li&gt;
+&lt;li&gt;背靠强大的桌面系统，生态联动性一流&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/9b1fed0eaa1505b492148e13b8e3ea45.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;锁屏、桌面动态磁贴、下拉控制菜单栏&lt;/p&gt;
+&lt;p&gt;纵然它有各种各样的优点和超前的设计理念，&lt;strong&gt;生态缺失&lt;/strong&gt;，就是癌症。&lt;/p&gt;
+&lt;p&gt;如果不是微软的某几个决策者戏剧性的抉择，现在的移动端市场，又会是一幅什么样的景象呢？如果有平行世界的话，我真想看一下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/6a29ad7ef81df1945253b22e4c094f12.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lumia 950 XL &amp;#x2F; Lumia 950&lt;/p&gt;
+&lt;p&gt;做主力机：做梦呢？&lt;/p&gt;
+&lt;p&gt;做备用机：只要涉及到微信、QQ 等涉及到及时通信的 App， 那你就真的想多了，如果就是收发短信、挂个 SIM 卡，那绝对没问题，但现在可以做到这一点的设备太多了，完全没必要考虑用 Lumia ；&lt;/p&gt;
+&lt;p&gt;做收藏：无需解释；&lt;/p&gt;
+&lt;p&gt;做玩具：Yes，唯二正解，让老旧设备焕发活力，最好的待遇就是让它继续服役！&lt;/p&gt;
+&lt;p&gt;以下软件&lt;strong&gt;全部下载自微软商店。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;上手后要做的第一件事：系统升级&#34;&gt;&lt;a href=&#34;#上手后要做的第一件事：系统升级&#34; class=&#34;headerlink&#34; title=&#34;上手后要做的第一件事：系统升级&#34;&gt;&lt;/a&gt;上手后要做的第一件事：系统升级&lt;/h3&gt;&lt;p&gt;手机默认版本是 1511，手机在刚开机那会儿就是完全不可用状态。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/0e5b92427ee67e599b0f81662c741e1a.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;差点儿以为这款设备就这样凉了&lt;/p&gt;
+&lt;p&gt;作为微软 2015 年推出的一款旗舰机， Lumia 950 收到的最后更新是 2020 年的安全更新，收到的最后一版系统大更新是众所周知的 1709，我在拿到手机后，经过了四次系统下载更新，花费了接近三个小时。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/4a9643a7208a42fcb4778e643348437d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在这里最害怕看到的：系统已是最新版&lt;/p&gt;
+&lt;p&gt;系统更新到最新之后，你会发现应用商店可以用了。&lt;/p&gt;
+&lt;h3 id=&#34;应用商店，非常残，但勉强能用&#34;&gt;&lt;a href=&#34;#应用商店，非常残，但勉强能用&#34; class=&#34;headerlink&#34; title=&#34;应用商店，非常残，但勉强能用&#34;&gt;&lt;/a&gt;应用商店，非常残，但勉强能用&lt;/h3&gt;&lt;p&gt;刚拿到的时候一度以为完了，因为基本上你常用的 App ，你都搜索不到，见下图左一。&lt;/p&gt;
+&lt;p&gt;但很快我就掌握一个技巧，在顶部搜索栏搜索的时候，不要过快地回车发起搜索，它会在搜索栏显示可能的结果，这里弹出的 App，（比如我这里显示的我们非常熟悉的红色的 App）直接点击，就能进入应用下载界面，见下图中间。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/d10bf578d21b0c911c56e04aa727944c.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;一些奇怪的使用姿势&lt;/p&gt;
+&lt;h3 id=&#34;网易云-UWP，YYDS&#34;&gt;&lt;a href=&#34;#网易云-UWP，YYDS&#34; class=&#34;headerlink&#34; title=&#34;网易云 UWP，YYDS&#34;&gt;&lt;/a&gt;网易云 UWP，YYDS&lt;/h3&gt;&lt;p&gt;最让我惊艳的一款产品，没有之一，在 &lt;a href=&#34;https://sspai.com/post/81711&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt; 这篇文章里我也被网易云强大的兼容性所震惊，实在是没想到这么久远的设备仍旧可以得到几乎完整的支持，对这种企业我就只能喜欢了。&lt;/p&gt;
+&lt;p&gt;在线听歌、听日推、看评论，夫复何求？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/73dbaf8860eaa51720b9f9f386486e82.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;主要功能都可以用&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/6a3cd75e4da5c473d77e8146abb5ae42.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;VIP 歌曲会下载失败、朋友动态无法查看&lt;/p&gt;
+&lt;h3 id=&#34;Newsflow、Cover-、Bing-词典&#34;&gt;&lt;a href=&#34;#Newsflow、Cover-、Bing-词典&#34; class=&#34;headerlink&#34; title=&#34;Newsflow、Cover 、Bing 词典&#34;&gt;&lt;/a&gt;Newsflow、Cover 、Bing 词典&lt;/h3&gt;&lt;p&gt;Newsflow：RSS 拯救了这款老机器。Again，在 &lt;a href=&#34;https://sspai.com/post/81711&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt; 这篇文章里，iPhone 5 同样被 RSS 阅读器 Reeder 所拯救，让那款设备实用度上升了一个级别。RSS 协议，以它非商业性、高兼容性、高普及度等优势，在各大厂商依次放弃 Windows Mobile 平台、iOS 低版本、安卓低版本之后，拯救了一款又一款老旧设备，优秀的技术大概就是这样，永远不会过时。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b226d4e79e89e075f3c8fa84c6d61a45.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;RSS， YYDS！！！&lt;/p&gt;
+&lt;p&gt;Cover：离线漫画阅读器，在 &lt;a href=&#34;https://sspai.com/post/79100&#34;&gt;搭建属于自己的离线漫画库：我为什么推荐你试试 Komga&lt;/a&gt; 有介绍过，当时是在 Windows PC 端进行使用的，没想到它 UWP 的兼容性如此之好，在手机端的界面布局和操作的适配度很高。&lt;/p&gt;
+&lt;p&gt;Bing 词典：微软为数不多的，还能正常工作的 UWP 软件。&lt;/p&gt;
+&lt;h3 id=&#34;Bilibili-UWP&#34;&gt;&lt;a href=&#34;#Bilibili-UWP&#34; class=&#34;headerlink&#34; title=&#34;Bilibili UWP&#34;&gt;&lt;/a&gt;Bilibili UWP&lt;/h3&gt;&lt;p&gt;残废级别：50%，只能看普通动态视频，无法看番剧了，也无法看直播。&lt;/p&gt;
+&lt;p&gt;作为日常刷刷视频的机器，还是能够胜任的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b9ec7c2ef4c62e2a6e535f6374b12e7e.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;主要信息流：正常&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/a7342ff3e2fde53dafc9eb65e5104e8e.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;普通视频播放：正常&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b9da4f35b2e100211313ca97238f9308.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;番剧播放：无法使用&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/989c79d58d4afbad164e50a7e577633c.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;电视剧播放：异常&lt;/p&gt;
+&lt;h3 id=&#34;远程桌面&#34;&gt;&lt;a href=&#34;#远程桌面&#34; class=&#34;headerlink&#34; title=&#34;远程桌面&#34;&gt;&lt;/a&gt;远程桌面&lt;/h3&gt;&lt;p&gt;Windows Mobile 可以下载 Remote Desktop 软件，用这款软件连接 Windows 电脑，我愿称之为：何必呢？哈哈哈哈&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/ce662a13276c574ec0aff58abc1ca11e.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;mstsc，启动！&lt;/p&gt;
+&lt;p&gt;当然了，配合 continuum 模式，再加上鼠标、键盘、大屏幕之后，操作体验会好非常多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/b34b6a4ea0b79f86b486177ef79d5223.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/724c5fd8a35ae3e83c3065d06ca3d211.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/4e82c7a770d33f708430d152d7cd181d.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但可能是受限于骁龙 808 的性能，视频输出分辨率最高只有 1080P 画质。&lt;/p&gt;
+&lt;h2 id=&#34;彩蛋&#34;&gt;&lt;a href=&#34;#彩蛋&#34; class=&#34;headerlink&#34; title=&#34;彩蛋&#34;&gt;&lt;/a&gt;彩蛋&lt;/h2&gt;&lt;h3 id=&#34;Project-Astoria：Lumia-运行安卓-App&#34;&gt;&lt;a href=&#34;#Project-Astoria：Lumia-运行安卓-App&#34; class=&#34;headerlink&#34; title=&#34;Project Astoria：Lumia 运行安卓 App&#34;&gt;&lt;/a&gt;Project Astoria：Lumia 运行安卓 App&lt;/h3&gt;&lt;p&gt;在折腾期间，偶然看到少数派的这篇文章，&lt;a href=&#34;https://sspai.com/post/30481#!&#34;&gt;Windows 10 Mobile 直装 Android 应用教程 + 使用体验&lt;/a&gt;，发现了少数派有趣的过往，哈哈，感兴趣的可以去考古。&lt;/p&gt;
+&lt;p&gt;简单来讲，微软曾经尝试在 Windows Mobile 上搭载 Android 系统文件，并使用转译桥来实现在 移动端运行安卓，如果你是上述文章中的机型之一，那你可以尝试使用教程方式来折腾下，但安卓系统版本较低，是安卓4.4，但安卓4.4也比微软 1709 的软件生态要丰富，如果你要折腾，祝你玩得开心~&lt;/p&gt;
+&lt;p&gt;Project Astoria 只存在于几个测试版本的系统中，Lumia 950 没有该版本的内测系统，我用不了。F，如果你有满足要求的设备，真的要折腾，你大概率会碰到 code&amp;#x3D;9、code&amp;#x3D;8等错误，不要问我怎么知道的，但我可以告诉你怎么解决……&lt;/p&gt;
+&lt;h3 id=&#34;戏剧性界面&#34;&gt;&lt;a href=&#34;#戏剧性界面&#34; class=&#34;headerlink&#34; title=&#34;戏剧性界面&#34;&gt;&lt;/a&gt;戏剧性界面&lt;/h3&gt;&lt;p&gt;iPhone 在关机时会假意先把屏幕全部黑掉（但实际上是一个纯黑的界面，在非OLED 的屏幕上可以很轻松的观察到这种现象），但实际上系统还在走关机流程，它使用这种欺骗的方式来给用户一种关机很快的感觉。&lt;/p&gt;
+&lt;p&gt;Lumia 每次关机都可以看到屏幕上显示 【Goodbye】，中文系统是 【再见】，这个词汇不是一闪而过，而是会停留&lt;strong&gt;非常非常长&lt;/strong&gt;的时间，系统此时也在运行一系列的关机的操作，通知各个系统组件对当前的软件状态进行妥善存储和处理，所以在关机这段时间，会把【再见】这个词停留非常长的时间，提醒用户不要在这段时间扣电池，直到系统真正关机。&lt;/p&gt;
+&lt;p&gt;在现在这个戏剧性的时间节点，Lumia 早已被微软所抛弃，软件生态也几乎处于完全不可用的状态，那对于每一台 Lumia 设备来说，这漫长的 Goodbye，何尝不是一种凄惨的别离。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/cdfe4a25c34dabdf31918be80a51e7ac.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;每次关机&lt;/p&gt;
+&lt;h2 id=&#34;Windows-on-Arm&#34;&gt;&lt;a href=&#34;#Windows-on-Arm&#34; class=&#34;headerlink&#34; title=&#34;Windows on Arm&#34;&gt;&lt;/a&gt;Windows on Arm&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://woa-project.github.io/LumiaWOA/&#34;&gt;Lumia WOA&lt;/a&gt; 是一个开源社区维护的为 Lumia 950 &amp;#x2F; Lumia 950 XL 刷入满血版 Windows Arm Version 的项目，可以让你运行真正的 X86 软件。&lt;/p&gt;
+&lt;p&gt;如果你不知道这事儿，你可能很激动，但你先别激动，别忘了它的配置：骁龙 808 &amp;#x2F; 骁龙 810，3GB Ram。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/60c7c7d8a8163d165370af9a7bfe1382.webp&#34; alt=&#34;A Lumia 950&#34;&gt;&lt;/p&gt;
+&lt;p&gt;大概长这样&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/fe160d04356e1b88dc799ff84d507424.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;continuum 模式&lt;/p&gt;
+&lt;p&gt;刷入 Arm 版本的 Windows 后，Lumia 950 也支持 continuum 模式，也就是说，拿出拓展坞、鼠标、键盘后，这次你真的可以体验一台真正的电脑了，当然了，我知道，你可能很激动，但你先别激动。&lt;/p&gt;
+&lt;p&gt;别忘了它的配置：骁龙 808 &amp;#x2F; 骁龙 810，3GB Ram。&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2024-01-27T15:44:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1699253243159/</id>
+        <title>那些年，我曾用过的设备（保持更新）</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1699253243159/"/>
+        <content type="html">&lt;p&gt;可以看出我基本上是以购买尺寸、重量都比较便携的设备为主。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;手机型号&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;长度(mm)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;宽度(mm)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;厚度(mm)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;重量(g)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;上市时间&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;电池容量(mAh)&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;处理器型号&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;BBK K118&lt;/td&gt;
+&lt;td&gt;109.7&lt;/td&gt;
+&lt;td&gt;47.8&lt;/td&gt;
+&lt;td&gt;14.5&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;2009年10月&lt;/td&gt;
+&lt;td&gt;1200mAh&lt;/td&gt;
+&lt;td&gt;N&amp;#x2F;A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 5s&lt;/td&gt;
+&lt;td&gt;123.8&lt;/td&gt;
+&lt;td&gt;58.6&lt;/td&gt;
+&lt;td&gt;7.6&lt;/td&gt;
+&lt;td&gt;112&lt;/td&gt;
+&lt;td&gt;2013年9月&lt;/td&gt;
+&lt;td&gt;1560mAh&lt;/td&gt;
+&lt;td&gt;Apple A7 (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;坚果Pro&lt;/td&gt;
+&lt;td&gt;155&lt;/td&gt;
+&lt;td&gt;73.5&lt;/td&gt;
+&lt;td&gt;6.98&lt;/td&gt;
+&lt;td&gt;158&lt;/td&gt;
+&lt;td&gt;2017年5月&lt;/td&gt;
+&lt;td&gt;3500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 625&amp;#x2F;626&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 6s&lt;/td&gt;
+&lt;td&gt;138.3&lt;/td&gt;
+&lt;td&gt;67.1&lt;/td&gt;
+&lt;td&gt;7.1&lt;/td&gt;
+&lt;td&gt;143&lt;/td&gt;
+&lt;td&gt;2015年9月&lt;/td&gt;
+&lt;td&gt;1715mAh&lt;/td&gt;
+&lt;td&gt;Apple A9 (64-bit ARMv8-A)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;坚果手机&lt;/td&gt;
+&lt;td&gt;141.3&lt;/td&gt;
+&lt;td&gt;69.6&lt;/td&gt;
+&lt;td&gt;9.6&lt;/td&gt;
+&lt;td&gt;155&lt;/td&gt;
+&lt;td&gt;2015年8月&lt;/td&gt;
+&lt;td&gt;2900mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 615&amp;#x2F;616&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;锤子T2&lt;/td&gt;
+&lt;td&gt;144.55&lt;/td&gt;
+&lt;td&gt;70.84&lt;/td&gt;
+&lt;td&gt;7.53&lt;/td&gt;
+&lt;td&gt;146&lt;/td&gt;
+&lt;td&gt;2015年12月&lt;/td&gt;
+&lt;td&gt;2500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 808&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;坚果R1&lt;/td&gt;
+&lt;td&gt;153.3&lt;/td&gt;
+&lt;td&gt;74.5&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;70&lt;/td&gt;
+&lt;td&gt;2018年5月&lt;/td&gt;
+&lt;td&gt;3600mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 845&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 11&lt;/td&gt;
+&lt;td&gt;150.9&lt;/td&gt;
+&lt;td&gt;75.7&lt;/td&gt;
+&lt;td&gt;8.3&lt;/td&gt;
+&lt;td&gt;194&lt;/td&gt;
+&lt;td&gt;2019年9月&lt;/td&gt;
+&lt;td&gt;3110mAh&lt;/td&gt;
+&lt;td&gt;Apple A13 Bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 11 Pro&lt;/td&gt;
+&lt;td&gt;144&lt;/td&gt;
+&lt;td&gt;71.4&lt;/td&gt;
+&lt;td&gt;8.1&lt;/td&gt;
+&lt;td&gt;188&lt;/td&gt;
+&lt;td&gt;2019年9月&lt;/td&gt;
+&lt;td&gt;3046mAh&lt;/td&gt;
+&lt;td&gt;Apple A13 Bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pixel 3&lt;/td&gt;
+&lt;td&gt;145.6&lt;/td&gt;
+&lt;td&gt;68.2&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;148&lt;/td&gt;
+&lt;td&gt;2018年&lt;/td&gt;
+&lt;td&gt;2915mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 845&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sony XZ1C&lt;/td&gt;
+&lt;td&gt;129&lt;/td&gt;
+&lt;td&gt;65&lt;/td&gt;
+&lt;td&gt;9.3&lt;/td&gt;
+&lt;td&gt;117&lt;/td&gt;
+&lt;td&gt;2017年9月&lt;/td&gt;
+&lt;td&gt;2700mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 12 Mini&lt;/td&gt;
+&lt;td&gt;131.5&lt;/td&gt;
+&lt;td&gt;64.2&lt;/td&gt;
+&lt;td&gt;7.4&lt;/td&gt;
+&lt;td&gt;133&lt;/td&gt;
+&lt;td&gt;2020年10月&lt;/td&gt;
+&lt;td&gt;2227mAh&lt;/td&gt;
+&lt;td&gt;Apple A14 Bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小米13&lt;/td&gt;
+&lt;td&gt;152.8&lt;/td&gt;
+&lt;td&gt;71.5&lt;/td&gt;
+&lt;td&gt;7.98&lt;/td&gt;
+&lt;td&gt;189&lt;/td&gt;
+&lt;td&gt;2022年12月&lt;/td&gt;
+&lt;td&gt;4500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 8 Gen 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 13 Mini&lt;/td&gt;
+&lt;td&gt;131.5&lt;/td&gt;
+&lt;td&gt;64.2&lt;/td&gt;
+&lt;td&gt;7.65&lt;/td&gt;
+&lt;td&gt;140&lt;/td&gt;
+&lt;td&gt;2021年9月&lt;/td&gt;
+&lt;td&gt;2406mAh&lt;/td&gt;
+&lt;td&gt;Apple A15 Bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sony Xperia 10 V&lt;/td&gt;
+&lt;td&gt;157&lt;/td&gt;
+&lt;td&gt;68&lt;/td&gt;
+&lt;td&gt;8.3&lt;/td&gt;
+&lt;td&gt;169&lt;/td&gt;
+&lt;td&gt;2023年&lt;/td&gt;
+&lt;td&gt;4500mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iPhone 15&lt;/td&gt;
+&lt;td&gt;147.6&lt;/td&gt;
+&lt;td&gt;71.6&lt;/td&gt;
+&lt;td&gt;7.8&lt;/td&gt;
+&lt;td&gt;171&lt;/td&gt;
+&lt;td&gt;2023年9月&lt;/td&gt;
+&lt;td&gt;3349mAh&lt;/td&gt;
+&lt;td&gt;Apple A16 Bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sony XZ2C&lt;/td&gt;
+&lt;td&gt;135&lt;/td&gt;
+&lt;td&gt;65&lt;/td&gt;
+&lt;td&gt;12.1&lt;/td&gt;
+&lt;td&gt;169&lt;/td&gt;
+&lt;td&gt;2018年&lt;/td&gt;
+&lt;td&gt;2870mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 845&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Samsung Galaxy Note 10+ 5G&lt;/td&gt;
+&lt;td&gt;162.3&lt;/td&gt;
+&lt;td&gt;77.2&lt;/td&gt;
+&lt;td&gt;7.9&lt;/td&gt;
+&lt;td&gt;198&lt;/td&gt;
+&lt;td&gt;2019年&lt;/td&gt;
+&lt;td&gt;4300mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 855&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pixel 5&lt;/td&gt;
+&lt;td&gt;144.7&lt;/td&gt;
+&lt;td&gt;70.4&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;151&lt;/td&gt;
+&lt;td&gt;2020年&lt;/td&gt;
+&lt;td&gt;4080mAh&lt;/td&gt;
+&lt;td&gt;Qualcomm Snapdragon 765G&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;聪明的工匠：锤子&#34;&gt;&lt;a href=&#34;#聪明的工匠：锤子&#34; class=&#34;headerlink&#34; title=&#34;聪明的工匠：锤子&#34;&gt;&lt;/a&gt;聪明的工匠：锤子&lt;/h2&gt;&lt;p&gt;从该列表里可以比较明显地看出，我曾经是个锤粉😳，而我选择锤子的重要原因（除了老罗比较会讲相声意外）就是：系统干净且低侵入感。&lt;/p&gt;
+&lt;p&gt;随着老罗离开，锤子科技的产品也渐渐失去了灵魂，我也陆续体验了一些其他的手机系统。&lt;/p&gt;
+&lt;h2 id=&#34;不尽如人意的安卓系统，小米-13&#34;&gt;&lt;a href=&#34;#不尽如人意的安卓系统，小米-13&#34; class=&#34;headerlink&#34; title=&#34;不尽如人意的安卓系统，小米 13&#34;&gt;&lt;/a&gt;不尽如人意的安卓系统，小米 13&lt;/h2&gt;&lt;p&gt;随着最两年各种形势的发展，国内的手机对于我而言变得越来越难用了。&lt;/p&gt;
+&lt;p&gt;这里仅仅以我体验过的小米 13 举例（截止到 2023 年），这个手机系统里，各种 UI 鱼龙混杂，你看着这个系统，能同一时间享受到跨度接近 10 年的审美变化，字体也贴心的为你提供大大小小粗粗细细的“百花争鸣”般的“闪亮”体验。&lt;/p&gt;
+&lt;p&gt;这些都还仅仅是表面的问题，更深层次的问题就是：侵入感。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;重要声明：我知道现在这个阶段，Color OS 和 Origin OS 甚至是华为 OS 相比较小米的 UI 来说都要有更一致的观感，但去掉 UI 部分，我保持我的观点，这些手机的侵入感过强了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;上手第一时间研究关广告&lt;/li&gt;
+&lt;li&gt;安装第三方 App 时各种警告⚠️、限制🚫、不允许&lt;/li&gt;
+&lt;li&gt;应用商店的各种推广&lt;/li&gt;
+&lt;li&gt;答题解 BL （说的就是你，小米）&lt;/li&gt;
+&lt;li&gt;更别提内置 FZ 模块，我访问个 Github 都能诈骗警告的&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你只是个工具而已，又凭什么对我的操作指指点点？我掏钱买个爹？&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2023-11-17T13:32:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1690792964757/</id>
+        <title>iPhone5 在2023年生存状况报告</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1690792964757/"/>
+        <content type="html">&lt;p&gt;此文在少数派首发&lt;/p&gt;
+&lt;h2 id=&#34;2023年买了台-iPhone-5-当备用机&#34;&gt;&lt;a href=&#34;#2023年买了台-iPhone-5-当备用机&#34; class=&#34;headerlink&#34; title=&#34;2023年买了台 iPhone 5 当备用机&#34;&gt;&lt;/a&gt;2023年买了台 iPhone 5 当备用机&lt;/h2&gt;&lt;p&gt;公司的主要 IM 是微信（不准笑），当时考虑到工作与生活分离，我就单独注册了一个微信账号用于工作。&lt;/p&gt;
+&lt;p&gt;我的主力机是 iPhone13 mini，因为众所周知的原因，苹果没办法双微信，这就需要一个备用机了。&lt;/p&gt;
+&lt;h3 id=&#34;上一任备用机&#34;&gt;&lt;a href=&#34;#上一任备用机&#34; class=&#34;headerlink&#34; title=&#34;上一任备用机&#34;&gt;&lt;/a&gt;上一任备用机&lt;/h3&gt;&lt;p&gt;我两年前买了台 XZ1C 当备用机，它拥有类原生系统、3.5mm 耳机接口、和 mini 系列一样的机身尺寸，用起来非常舒服。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1111111108-02_21-19-16.webp&#34;&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV14t4y1p7Em/?spm_id_from=333.337.search-card.all.click&amp;vd_source=240fc73d28dcf02140581b3793ac27d8&#34;&gt;当时是在 TESTV 频道种草的，点这里可以查看此视频&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但本就是备用机的它在今年的软件环境跟体量下实在是难以流畅运行，卡顿也越来越频繁。&lt;/p&gt;
+&lt;p&gt;更何况今年它电池直接鼓包了，我也懒得再折腾换电池了，干脆￥160出掉（毕竟当时买它也才花了￥330）。&lt;/p&gt;
+&lt;p&gt;那我始终还是需要一个备用机来登录另一个微信账号呀！&lt;/p&gt;
+&lt;h3 id=&#34;挑选新备用机&#34;&gt;&lt;a href=&#34;#挑选新备用机&#34; class=&#34;headerlink&#34; title=&#34;挑选新备用机&#34;&gt;&lt;/a&gt;挑选新备用机&lt;/h3&gt;&lt;p&gt;脑子里过了一下筛选条件：小屏、有3.5mm 耳机孔、2023年登陆微信不卡、好看。&lt;/p&gt;
+&lt;p&gt;索性持巨资（￥220）购入了一台 iPhone5， 黑色 16GB，机器自带 iOS6.0 系统。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_21-36-39.webp&#34;&gt;对比iPhone 13 mini，iPhone 5 的机身尺寸还要更小&lt;/p&gt;
+&lt;p&gt;过了这么多年，重新拿到一个95新翻新机的时候，心里还是非常激动的。&lt;/p&gt;
+&lt;p&gt;时光自然没有带我回到机器刚刚发布的那年，毕竟当年没钱买，但拿到机器的那一刻，曾经的穷小子突然在我身体里苏醒，把嘴角上拉了一秒。&lt;/p&gt;
+&lt;h2 id=&#34;2023年，iPhone-5-还能胜任备用机的职责吗？&#34;&gt;&lt;a href=&#34;#2023年，iPhone-5-还能胜任备用机的职责吗？&#34; class=&#34;headerlink&#34; title=&#34;2023年，iPhone 5 还能胜任备用机的职责吗？&#34;&gt;&lt;/a&gt;2023年，iPhone 5 还能胜任备用机的职责吗？&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;对我来说，能&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这主要看个人对备用机职责的界定，我个人购买备用机的要求就这几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;可以流畅使用微信&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可以收发短信，接打电话（本文截图中飞行模式是因为这样比较省电，我只有在需要接验证码的时候才会关闭飞行模式）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可以听歌，而且我要用3.5mm 耳机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;好看，轻薄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最好还能偶尔用来阅读咨询和小说&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最好跟我主力机使用同一个充电接口（主力机是 iPhone13 mini ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最后一条是因为，在我使用 Sony XZ1C 的时候，又要用 lightning、又要用 type-c 充电，体验非常差。&lt;/p&gt;
+&lt;p&gt;iPhone 5 和 iOS6 的软件契合度非常高，流畅性无敌，开机的那一刻，我就决定不再升级它的系统版本了，低版本虽然受限，但至少还是有办法用的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_21-11-18.webp&#34;&gt;注：以下安装步骤需要越狱环境，爱思助手有一键傻瓜式越狱&lt;/p&gt;
+&lt;h3 id=&#34;微信低版本登陆方法&#34;&gt;&lt;a href=&#34;#微信低版本登陆方法&#34; class=&#34;headerlink&#34; title=&#34;微信低版本登陆方法&#34;&gt;&lt;/a&gt;微信低版本登陆方法&lt;/h3&gt;&lt;p&gt;软件版本：6.1.0&lt;/p&gt;
+&lt;p&gt;安装来源：爱思助手&lt;/p&gt;
+&lt;p&gt;用到功能：消息推送、聊天、群聊、支付、语音通话；&lt;/p&gt;
+&lt;p&gt;体验结论：非常流畅、占用极低、满足要求；&lt;/p&gt;
+&lt;p&gt;使用方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;准备一些网络手段，把 iPhone 5 接入这个网络，可以打开一些网站；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;准备另一台正常的手机或平板，把你后期需要登录到 iPhone 5 的微信先登录到这些设备；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择【添加朋友】，在搜索界面搜索 facebookapp ，点击进去绑定账号，账号自备；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开 iPhone 5 ，后台清空，关闭微信，然后手机设置，区域改成非大陆地区（我用的香港），语言改英文；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开微信，选择使用账号登陆，在下方你应该可以看到 【使用 facebook 登陆】的选项，点击它，跳转到浏览器后，正常登陆，然后跳转回来，登录成功；&lt;strong&gt;如果浏览器界面登录不上了，可以选择下载一个facebook的app到手机上，亲测iOS6.0版本的facebook还是可以正常登陆的（2023年10月31号测），这个时候在App登陆，再去微信点击facebook connect后，就能正常使用了&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD%20(1)-krkw.webp&#34;&gt;看到那个 Facebook Connect 了嘛&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;iPhone 5 连接爱思助手，编辑 info.plist 文件，把所有显示 6.1.0 的地方改成 6.3.1.32（如果不改，下次微信关闭后、或者系统重启后，重新打开微信会被微信服务端强制退出登录）；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_21-42-10.webp&#34;&gt;定位文件方式参考上方截图&lt;/p&gt;
+&lt;p&gt;CFBundleShortVersionString：6.3.1&lt;/p&gt;
+&lt;p&gt;CFBundleVersion：6.3.1.32&lt;/p&gt;
+&lt;p&gt;WeChatBundleVersion：6.3.1.32&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;保持系统区域设置为非大陆的前提下，修改语言为中文（也可以保持不变，看个人使用习惯）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;应该可以日用了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-zofk.webp&#34;&gt;能聊天、能语音、能刷朋友圈！&lt;/p&gt;
+&lt;p&gt;网上有一个其他的方法，就是提取高版本的微信数据资料，然后再导入到低版本的微信App中，这也是一种方式，但需要两个版本的微信都越狱，对安装了双系统的同学可能折腾起来更方便，你可以在&lt;a href=&#34;https://www.iosipa.cn/index.php/page/960.html&#34;&gt;这里&lt;/a&gt;查看这种登录方式，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;声明：由于微信官方服务器的关联逻辑并不透明，所以&lt;strong&gt;不能保证&lt;/strong&gt;此方法一定适用于所有账号。&lt;/p&gt;
+&lt;h3 id=&#34;网易云的使用&#34;&gt;&lt;a href=&#34;#网易云的使用&#34; class=&#34;headerlink&#34; title=&#34;网易云的使用&#34;&gt;&lt;/a&gt;网易云的使用&lt;/h3&gt;&lt;p&gt;软件版本：2.7.1&lt;/p&gt;
+&lt;p&gt;安装来源：爱思助手&lt;/p&gt;
+&lt;p&gt;用到功能：我的歌单、日推、听歌、下载、签到、歌词、评论&lt;/p&gt;
+&lt;p&gt;体验结论：非常流畅、占用极低、满足要求；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-wowk.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;使用方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载软件；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;连接爱思助手，编辑info.plist，将版本改为 3.5.1；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;正常登陆&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Reeder，RSS果然是永远的神&#34;&gt;&lt;a href=&#34;#Reeder，RSS果然是永远的神&#34; class=&#34;headerlink&#34; title=&#34;Reeder，RSS果然是永远的神&#34;&gt;&lt;/a&gt;Reeder，RSS果然是永远的神&lt;/h3&gt;&lt;p&gt;软件版本：3.2&lt;/p&gt;
+&lt;p&gt;安装来源：&lt;a href=&#34;https://archive.org/download/iOSObscura&#34;&gt;https://archive.org/download/iOSObscura&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到功能：RSS 订阅&lt;/p&gt;
+&lt;p&gt;体验结论：超出预期，但存在缺陷&lt;/p&gt;
+&lt;p&gt;使用说明：&lt;/p&gt;
+&lt;p&gt;Reeder 相比较网易云和微信来说使用群体是相对小众的。&lt;/p&gt;
+&lt;p&gt;但因为它兼容 RSS 协议，而 RSS 协议兼容差不多整个互联网的内容。&lt;/p&gt;
+&lt;p&gt;所以拥有 Reeder 让这台 iPhone 5 在十多年后仍旧可以发挥出远超预期的余热！&lt;/p&gt;
+&lt;p&gt;借助 RSS 协议，我可以在 Reeder 做到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;刷 Bilibili 某个用户动态（视频无法播放）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;刷微博某个用户的时间线内容（视频无法播放）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;订阅知乎精选（上知乎）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;订阅酷安精选（刷酷安）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;刷少数派、个人博客等各种支持 RSS 的网站&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-xgkv.webp&#34;&gt; 界面设计跟操作逻辑跟现在的 Reeder 基本上一样，太经典了&lt;/p&gt;
+&lt;p&gt;具体 RSSHub 的使用方式可以参考&lt;a href=&#34;https://sspai.com/post/75340#!&#34;&gt;少数派的这篇文章&lt;/a&gt;，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;关于视频：因为早期的 Webkit 版本较老，对当前主流视频网站的所使用的视频格式都不再兼容了，所以无法播放来自 RSS 抓取的视频。&lt;/p&gt;
+&lt;p&gt;还有一些第三方RSSHub的网站在 iPhone 5 上打不开，经我测试，我猜测主要原因是 iOS 6 所支持的 HTTPS 协议版本较低，而近几年部署的 RSSHub 镜像站的 HTTPS 协议所支持的最低版本可能太高了，导致在电脑上可以打开，在 iOS 6 系统上打不开。&lt;/p&gt;
+&lt;h3 id=&#34;多看&#34;&gt;&lt;a href=&#34;#多看&#34; class=&#34;headerlink&#34; title=&#34;多看&#34;&gt;&lt;/a&gt;多看&lt;/h3&gt;&lt;p&gt;软件版本：2.6.1&lt;/p&gt;
+&lt;p&gt;安装来源：&lt;a href=&#34;https://iosipa.cn/&#34;&gt;https://iosipa.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到功能：wifi传书、阅读&lt;/p&gt;
+&lt;p&gt;体验结论：体验流畅、动画精美&lt;/p&gt;
+&lt;p&gt;使用说明：安装，打开，传书，阅读。有手就行。&lt;/p&gt;
+&lt;h3 id=&#34;VLC&#34;&gt;&lt;a href=&#34;#VLC&#34; class=&#34;headerlink&#34; title=&#34;VLC&#34;&gt;&lt;/a&gt;VLC&lt;/h3&gt;&lt;p&gt;软件版本：2.1.3&lt;/p&gt;
+&lt;p&gt;安装来源：&lt;a href=&#34;https://iosipa.cn/&#34;&gt;https://iosipa.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到功能：wifi传输&lt;/p&gt;
+&lt;p&gt;体验结论：体验流畅&lt;/p&gt;
+&lt;p&gt;使用说明：安装，打开，传输，观看。有手就行。&lt;/p&gt;
+&lt;h3 id=&#34;支付宝&#34;&gt;&lt;a href=&#34;#支付宝&#34; class=&#34;headerlink&#34; title=&#34;支付宝&#34;&gt;&lt;/a&gt;支付宝&lt;/h3&gt;&lt;p&gt;软件版本：9.1.0&lt;/p&gt;
+&lt;p&gt;安装来源：爱思助手&lt;/p&gt;
+&lt;p&gt;用到功能：支付&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD%20(1).webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;体验结论：资产查询、支付、手机充值，还是可用的，别的就不要想了。&lt;/p&gt;
+&lt;h3 id=&#34;QQ&#34;&gt;&lt;a href=&#34;#QQ&#34; class=&#34;headerlink&#34; title=&#34;QQ&#34;&gt;&lt;/a&gt;QQ&lt;/h3&gt;&lt;p&gt;因为不怎么用，所以这个我没有什么动力去折腾，有需要的可以&lt;a href=&#34;https://www.iosipa.cn/index.php/page/959.html&#34;&gt;参考这里&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;各种游戏&#34;&gt;&lt;a href=&#34;#各种游戏&#34; class=&#34;headerlink&#34; title=&#34;各种游戏&#34;&gt;&lt;/a&gt;各种游戏&lt;/h3&gt;&lt;p&gt;这就不再赘述，网络上老版本软件最多的也是游戏，所以找资源也相对而言容易很多。&lt;/p&gt;
+&lt;h2 id=&#34;越狱插件推荐&#34;&gt;&lt;a href=&#34;#越狱插件推荐&#34; class=&#34;headerlink&#34; title=&#34;越狱插件推荐&#34;&gt;&lt;/a&gt;越狱插件推荐&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;CleverPin：锤子信任的网络的设计来源，可以设置连接某个网络时不用输入密码直接进桌面，对没有指纹的设备还有很有用的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SPi：让原生键盘支持双拼打字，比最新的 iOS 系统自带的双拼输入法都要流畅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Zephyr：让老设备支持全面屏手势，我主要用到上划返回，减少 Home 键磨损&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;中国日历 Pro：通知中心的日历组件，体验接近现在的小历&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Torch：锁屏界面打开手电筒&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Springtomiz：可以定制系统界面的方方面面，但我只用来屏蔽了文件夹的气泡通知，iOS 6 原生就已经很美了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Auxo：定制 iOS 6 系统的任务切换界面，添加了很多系统设置的快捷开关&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SwitcherCleaner：定制任务管理界面，优化体验&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SpotLock：桌面左滑到Spotlight搜索时，直接触发锁屏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SwipeSelection：键盘上滑动可以移动光标&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;WeatherX：修复iOS 6 原生天气应用无法使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Full%20HD-mupc.webp&#34;&gt;任务栏预览，任务栏控制按钮，通知中心万年历&lt;/p&gt;
+&lt;p&gt;我所使用的 Cydia 软件源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://apt.abcydia.com/&#34;&gt;http://apt.abcydia.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://apt.91.com/&#34;&gt;http://apt.91.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.thebigboss.org/repofiles/cydia/&#34;&gt;http://apt.thebigboss.org/repofiles/cydia/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.saurik.com/&#34;&gt;http://apt.saurik.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://1.pwn.ixmoe.com/dev/&#34;&gt;http://1.pwn.ixmoe.com/dev/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.iosipa.cn/&#34;&gt;http://apt.iosipa.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://apt.modmyi.com/&#34;&gt;http://apt.modmyi.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cydia.zodttd.com/repo/cydia/&#34;&gt;http://cydia.zodttd.com/repo/cydia/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对了，你可还要注意这些：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;部分插件可能在某个源里不可用，这时候可以通过换源的方式从其他软件源下载&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;有些插件即使换源也不一定找得到，这时候就需要去网络上找 .deb 格式的插件安装包了&lt;/p&gt;
+&lt;p&gt;以上边提到的 CleverPin 插件为例，我在 Cydia 里边无论如何也搜索不到这个插件，包括不稳定的软件源里边，这个时候使用万能的搜索引擎开始检索，&lt;/p&gt;
+&lt;p&gt;经过无数页的翻找、无数个关键词的组合（持续性挠头+小声咒骂，耗时2小时以上），我在万能的互联网上发现了一个这样的网页：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Snipaste_2023-08-02_19-52-17.webp&#34;&gt;网上关于该插件的下载地址经过十多年的时间洗礼，大部分都失效了，这是我能找到的唯一解&lt;/p&gt;
+&lt;p&gt;这是啥？ctrl + f ，输入cleverpin，找到一个资源 url，把这个 网址复制到浏览器地址栏，回车，下载了！&lt;/p&gt;
+&lt;p&gt;接下来就简单了，打开 iFile （越狱必装的文件管理软件，你也可以用爱思的文件管理） 的网页服务器，在电脑上打开管理网页，找到地址：private&amp;#x2F;var&amp;#x2F;root&amp;#x2F;Media&amp;#x2F;Cydia&amp;#x2F;AutoInstall&amp;#x2F;，把你刚刚下载的deb格式的文件上传到这个位置，重启手机，安装就完成了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;折腾到这一步，这台机器作为备用机，日常使用体验在某些方面应该已经不输这两年的百元安卓机了。&lt;/p&gt;
+&lt;h2 id=&#34;写在最后&#34;&gt;&lt;a href=&#34;#写在最后&#34; class=&#34;headerlink&#34; title=&#34;写在最后&#34;&gt;&lt;/a&gt;写在最后&lt;/h2&gt;&lt;p&gt;购买这台机器当备用机，我是心里比较打鼓的，网上现存的一些微信登录方式其实是非常复杂的，而 Bilibili 网站上各种体验视频也是参差不齐。&lt;/p&gt;
+&lt;p&gt;但最终折腾出来的成果，是远超过我的预期的，我感觉这￥220 花的非常值。&lt;/p&gt;
+&lt;p&gt;我们这代人（90后），是被父辈和年代压抑的一代。&lt;/p&gt;
+&lt;p&gt;穷，贯穿着我们绝大多数人的童年。我仍记得我的第一部手机是我初一暑假买的，当时考了全班第二，年级第十六名，我妈说500块钱以内给我买一台自己的手机。&lt;/p&gt;
+&lt;p&gt;结果还是超预算了，买了一款步步高的直板手机，除了功能机的必备功能之外，它还自带了一个手机QQ，售价￥699。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/bbk118.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【K118 ，就这样一部手机，耐用性无敌，至少在我跟家人手里流转了8年以上】&lt;/p&gt;
+&lt;p&gt;就在同样的时代，iPhone4S 横空出世，当时能从兜里掏出它的人绝对是人群中最亮眼的存在，这一点毋庸置疑。但作为穷学生的我自然没有购买首发的财力和勇气。&lt;/p&gt;
+&lt;p&gt;但我还是想要啊！！！！！！即使是多年后的今天，这份心情仍旧回旋在心里的某个角落，偶尔冒出来，让我心痒痒。&lt;/p&gt;
+&lt;p&gt;廉价的礼物，延迟的满足感，在2023年的夏天，开心。&lt;/p&gt;
+&lt;h3 id=&#34;关于折腾的意义&#34;&gt;&lt;a href=&#34;#关于折腾的意义&#34; class=&#34;headerlink&#34; title=&#34;关于折腾的意义&#34;&gt;&lt;/a&gt;关于折腾的意义&lt;/h3&gt;&lt;p&gt;垃圾佬最开始是折腾老旧数码设备爱好者的自嘲，但我有看到一些网络的边角有人大批这种捡垃圾的行为，说是屌丝乞丐才会做。&lt;/p&gt;
+&lt;p&gt;我个人对这种观点不予置评。&lt;/p&gt;
+&lt;p&gt;但我认为，把一款过时的、超过正常使用年限的产品，重新收拾起来，让它重新焕发新的活力，对设备而言，何尝不是一种幸事？&lt;/p&gt;
+&lt;p&gt;这种例子比比皆是：老爷车、模拟信号、磁带播放器、唱片播放机。&lt;/p&gt;
+&lt;p&gt;借用生活大爆炸的一段对白结束此文：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here is my question, why （did you do this）？&lt;/p&gt;
+&lt;p&gt;Because we can.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2023-08-02T20:28:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/1683956999331/</id>
+        <title>为小米 13 刷入 Andy 大佬的 LineageOS20 类原生系统</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1683956999331/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;前提声明&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;本文非正规或官方刷入教程，只是我对自己已知内容的一个汇总；&lt;/li&gt;
+&lt;li&gt;本人非 Rom 的开发人员，也非维护人员，只是按照原作者指引，在自己的小米手机上成功刷入了 GSI 镜像；&lt;/li&gt;
+&lt;li&gt;本人不对你的手机负责，如果由于你的或者我的原因导致手机数据丢失、死机、本人跟本网站不负任何责任；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你大可以把本文当成导航页，来跳转到 XDA 等其他网站去，对此我不排斥，毕竟这只是对我自己刷机流程的一个记录备忘；&lt;/p&gt;
+&lt;h2 id=&#34;关于-ROM-适配者&#34;&gt;&lt;a href=&#34;#关于-ROM-适配者&#34; class=&#34;headerlink&#34; title=&#34;关于 ROM 适配者&#34;&gt;&lt;/a&gt;关于 ROM 适配者&lt;/h2&gt;&lt;p&gt;Rom 的适配者是 &lt;a href=&#34;https://forum.xda-developers.com/t/gsi-13-lineageos-20-trebledroid-based.4517345/&#34;&gt;Andy Yan (XDA)&lt;/a&gt;，首先感谢他的无私工作，让我们可以享受到这个纯净的镜像系统；&lt;/p&gt;
+&lt;p&gt;如果你不是同样的 Rom 适配的相关人员或对手机刷机有基本的知识了解，请不要打扰他，当然了，如果你想给作者打赏，那就没关系，但打赏不意味着你就是大爷，请自重；&lt;/p&gt;
+&lt;p&gt;不要问任何人为什么你手机卡死了、你的手机卡米了等问题，请先自己提前了解好所有要准备的知识和操作，这是互联网的基本礼仪；&lt;/p&gt;
+&lt;p&gt;大佬在酷安跟 XDA 都有账号，如非必然，不要打扰。&lt;/p&gt;
+&lt;h2 id=&#34;关于当前-LineageOS20-镜像可用度说明&#34;&gt;&lt;a href=&#34;#关于当前-LineageOS20-镜像可用度说明&#34; class=&#34;headerlink&#34; title=&#34;关于当前 LineageOS20 镜像可用度说明&#34;&gt;&lt;/a&gt;关于当前 LineageOS20 镜像可用度说明&lt;/h2&gt;&lt;p&gt;刷机后你会失去这些东西，你必须知道&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你会失去所有 MIUI 本地化的优势，NFC 公交卡、本地化快递查询、农历、节假日闹钟等等；&lt;/li&gt;
+&lt;li&gt;你会失去指纹识别（当前还不支持，以后支不支持也不明朗），但为了方便也有别的解决方法，后文会讲；&lt;/li&gt;
+&lt;li&gt;小米的莱卡摄像相关的优化肯定没了，但你可以自己搜索日文大佬的谷歌相机安装，听说还不错，我没试所以不知道；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当然，MIUI自带的反向充电，现在也没有打开的地方了（我反正没找到）&lt;/p&gt;
+&lt;h2 id=&#34;有失必有得，这里也有一些诱人的东西&#34;&gt;&lt;a href=&#34;#有失必有得，这里也有一些诱人的东西&#34; class=&#34;headerlink&#34; title=&#34;有失必有得，这里也有一些诱人的东西&#34;&gt;&lt;/a&gt;有失必有得，这里也有一些诱人的东西&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;干净的不像话的系统，终于不用跟小米广告系统斗智斗勇了&lt;/li&gt;
+&lt;li&gt;漂亮的不像安卓的界面，笑死，安卓原生明明很好看的&lt;/li&gt;
+&lt;li&gt;终于及时的消息通知，MIUI虽然集成了 Google 服务，但 GMS 太残废了，我在 Play store 上下载的应用大部分的推送要么延迟6、7个小时，要么就干脆干没了；现在终于正常了&lt;/li&gt;
+&lt;li&gt;小米百年不修的 Bug ，在原生里直接没有了，包含但不限于：系统字体大大小小粗粗细细非常不统一、B 站放后台十秒钟以上就丢失播放进度（设置后台电池忽略优化也没用）&lt;/li&gt;
+&lt;li&gt;Gboard 输入法终于有了正常的高度，MIUI 上 Gboard 就像被 MIUI 砍掉了一双腿一样，非常地矮，打字体验极差。&lt;/li&gt;
+&lt;li&gt;非常小的系统占用和逻辑异常清晰简洁的系统设置，当然，你也可以理解为简陋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;你还需要知道的非常重要的信息&#34;&gt;&lt;a href=&#34;#你还需要知道的非常重要的信息&#34; class=&#34;headerlink&#34; title=&#34;你还需要知道的非常重要的信息&#34;&gt;&lt;/a&gt;你还需要知道的非常重要的信息&lt;/h2&gt;&lt;h3 id=&#34;解-BL-锁&#34;&gt;&lt;a href=&#34;#解-BL-锁&#34; class=&#34;headerlink&#34; title=&#34;解 BL 锁&#34;&gt;&lt;/a&gt;解 BL 锁&lt;/h3&gt;&lt;p&gt;小米解 Bootloader 锁直接清除数据，还有可能会失去保修，你的手机数据也会全部消失，所以损失你应该懂的，不要没想清楚就瞎折腾。&lt;/p&gt;
+&lt;h3 id=&#34;刷机有风险&#34;&gt;&lt;a href=&#34;#刷机有风险&#34; class=&#34;headerlink&#34; title=&#34;刷机有风险&#34;&gt;&lt;/a&gt;刷机有风险&lt;/h3&gt;&lt;p&gt;这一点是肯定的，有极大可能性，你会刷机失败，手机就变砖了，救砖又是一个非常惊心动魄的经历。&lt;/p&gt;
+&lt;p&gt;正所谓：愿你。。。。，归来。。。。。&lt;/p&gt;
+&lt;p&gt;所以你最好还有另外一部手机作为备用，否则你可能会栽的很惨。&lt;/p&gt;
+&lt;h3 id=&#34;如果你还是想刷机，请一定看到文章末尾再考虑动手&#34;&gt;&lt;a href=&#34;#如果你还是想刷机，请一定看到文章末尾再考虑动手&#34; class=&#34;headerlink&#34; title=&#34;如果你还是想刷机，请一定看到文章末尾再考虑动手&#34;&gt;&lt;/a&gt;如果你还是想刷机，请一定看到文章末尾再考虑动手&lt;/h3&gt;&lt;p&gt;先准备好电脑的adb环境，如果你之前没有接触过，那你还是不要刷机了。真的，赶紧走，现在还来得及。&lt;/p&gt;
+&lt;p&gt;下载好镜像资源，链接如下：&lt;a href=&#34;https://sourceforge.net/projects/andyyan-gsi/files/&#34;&gt;Andy Yan 的镜像&lt;/a&gt;，如果你不知道这些镜像命名意味着什么，赶紧跑。&lt;/p&gt;
+&lt;p&gt;Andy 大佬同样对 &lt;a href=&#34;https://forum.xda-developers.com/t/xiaomi-13-gsi.4572035/page-3&#34;&gt;TD 和 Light&lt;/a&gt; 进行了解释，对此我的理解是：如果你用得到 Google 套件，那你就自己找适合自己的镜像就行了，如果你不清楚自己到底选哪个，那就选下载量最高的那个镜像，人民检查过的，准没错。&lt;/p&gt;
+&lt;p&gt;解 BL 锁，然后手机就重置了，重置后重新简单设置一下进入手机，主要是开一下 adb ，在这个过程中不要升级、不要升级、不要升级&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb reboot fastboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;你应该进入一个使用蓝色字体写着 FASTBOOTD 的字样的界面&lt;/p&gt;
+&lt;p&gt;如果是橘红色的，那你肯定进错了，这也没关系，试试这个：fastboot reboot fastboot&lt;/p&gt;
+&lt;p&gt;我假设你已经下载好了镜像，解压，确保后缀是.img&lt;/p&gt;
+&lt;p&gt;运行：&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastboot flash system lineageos20.xxxxxx.img&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;正常情况下，命令行应该已经在正常走进度了，耐心等待，好了之后，直接跳到第 4 步&lt;/p&gt;
+&lt;p&gt;如果你命令行报错说：找不到lineageos20.xxxxx.img，赶紧滚。&lt;/p&gt;
+&lt;p&gt;如果你的系统还是不小心做了升级，（例如我），你可能会看到类似：Writing ‘system’ FAILED (remote: ‘Partition not found’) 或者 not enough space to resize system_b 的报错&lt;/p&gt;
+&lt;p&gt;别慌，运行：以下命令&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_ext_a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_ext_b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition system_b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition product_a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot delete-logical-partition product_b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_ext_a 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_ext_b 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_a 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition system_b 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition product_a 0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot create-logical-partition product_b 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这也是在 Andy 大佬的提示下发现的问题，因为小米 13 遵循安卓动态系统分区原则，升级后会把当前系统切换到 b 分区，我们把逻辑分区全部删掉重建为 0 长度后就可以正常刷机了&lt;/p&gt;
+&lt;p&gt;请保证以上命令运行都是 OK 的，然后你就可以重新尝试 fastboot flash system lineageos20.xxxxxx.img ，正常情况下，你就能跟我一样，看到系统在正常刷入了&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;fastboot reboot recovery&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;手动选择清空数据，然后确认，清空后，你就可以重启了。&lt;/p&gt;
+&lt;p&gt;恭喜你，成功了~&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123633_Trebuchet.webp&#34;&gt;&lt;br&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123706_%E8%AE%BE%E7%BD%AE.webp&#34;&gt;&lt;br&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123648_Trebuchet.webp&#34;&gt;&lt;br&gt;&lt;img src=&#34;/upload/Screenshot_20230513-123735_Trebuchet.webp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;现在哪些功能是好的&#34;&gt;&lt;a href=&#34;#现在哪些功能是好的&#34; class=&#34;headerlink&#34; title=&#34;现在哪些功能是好的&#34;&gt;&lt;/a&gt;现在哪些功能是好的&lt;/h2&gt;&lt;p&gt;基于我自己的体验和测试：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通话测试正常&lt;/li&gt;
+&lt;li&gt;WiFi正常&lt;/li&gt;
+&lt;li&gt;4G正常（我移动卡，截图叹号是因为有关了数据网络，流量用完了），5G没测试，待补充&lt;/li&gt;
+&lt;li&gt;待机正常，没有异常耗电&lt;/li&gt;
+&lt;li&gt;可以正常震动反馈&lt;/li&gt;
+&lt;li&gt;推送啊、一般性地使用啊都正常&lt;/li&gt;
+&lt;li&gt;60 &amp;#x2F; 90 &amp;#x2F; 120 三档刷新帧率，MIUI 自己都只有 60 和 120 ！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;哪些功能是不好的&#34;&gt;&lt;a href=&#34;#哪些功能是不好的&#34; class=&#34;headerlink&#34; title=&#34;哪些功能是不好的&#34;&gt;&lt;/a&gt;哪些功能是不好的&lt;/h2&gt;&lt;p&gt;就像前文提到的，指纹识别不行了，但我用 Smart Lock 曲线救国了，在设置、安全，更多安全设置找到它，把你家添加为常用地点，这样你就可以在家享受不输入密码解锁手机的快感了&lt;/p&gt;
+&lt;p&gt;还有自动亮度，也不能用了。但这个影响不大，手动调节又不是不能用。&lt;/p&gt;
+&lt;h2 id=&#34;回到-MIUI、救砖&#34;&gt;&lt;a href=&#34;#回到-MIUI、救砖&#34; class=&#34;headerlink&#34; title=&#34;回到 MIUI、救砖&#34;&gt;&lt;/a&gt;回到 MIUI、救砖&lt;/h2&gt;&lt;p&gt;当然，任何人可能会失败、反悔、变砖、卡米，我也是，这是我自己亲身经历的救砖流程：&lt;/p&gt;
+&lt;p&gt;到&lt;a href=&#34;https://xiaomirom.com/&#34;&gt;这个网站&lt;/a&gt;下载小米 13 的线刷包、刷机工具，在 fastboot 下连接电脑，把线刷包解压成文件夹，使用工具重新刷回去即可，只要它正常走刷机流程了，那就没问题，我亲测虽然最后给我的反馈结果是Error，但手机重新恢复了 MIUI 的系统并重启了，喔，刷入前右下角最好选不 Lock，友情提示一下。&lt;/p&gt;
+&lt;p&gt;如果你没成功救回来，那我也没办法，所以如果你看到这里，还没开始，或者已经怕了，我劝你赶紧走，刷机有风险，动手需谨慎，走啊！！！&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="程序员" />
+        <updated>2023-05-13T18:04:04.000Z</updated>
+    </entry>
+</feed>

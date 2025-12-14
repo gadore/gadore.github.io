@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;相册&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2024-12-19T10:51:03.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/immich-experience/</id>
+        <title>Immich 相册管理系统使用体验分享</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/immich-experience/"/>
+        <content type="html">&lt;p&gt;自从群晖更新了 DSM 7.2 之后，官方就默认移除了 Video Station 套件，我惊讶于这一更新给我造成的不便（没错，我在用 VS 套件，怎样），开始翻阅群晖的更新日志，这不翻不知道，群晖居然要去掉整个 NAS 的解码功能，虽然说 NAS 的机能是不强吧，但我买的 920+ 的性能是够用的啊！导致现在我在浏览器看照片需要安装一个解码插件才能看，在手机端看照片也要打开一个 “图片助手” 才能正常看。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Version: 7.2.2-72806 (2024-09-11) 注意事项……&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;自此版本起，使用 HEVC (H.265)、AVC (H.264) 和 VC-1 编解码器处理多媒体文件的负载，将从服务器端转移至终端设备，以减少系统不必要的资源占用，从而提升效能。 这些编解码器在智能手机、平板、计算机、智能电视等终端设备上已广泛支持。如果终端设备不支持所需的编解码器，媒体文件的使用可能会受到限制。&lt;/strong&gt; 关于替代方案，请参阅……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Video Station 已经不能用了，相册这样恶心我一下，鬼知道群晖哪天会像砍 Video Station 一样把相册也砍掉。而且这样的相册系统我也不想再用了，索性直接寻找两套解决方案，视频托管解决方案和图片托管解决方案。&lt;/p&gt;
+&lt;p&gt;视频套件自不必多说，Jellyfin。本篇文章暂不展开。&lt;/p&gt;
+&lt;p&gt;我本次想分享一下关于我部署和使用图片托管服务的相关使用体验。&lt;/p&gt;
+&lt;h2 id=&#34;Immich：自托管相册视频管理解决方案&#34;&gt;&lt;a href=&#34;#Immich：自托管相册视频管理解决方案&#34; class=&#34;headerlink&#34; title=&#34;Immich：自托管相册视频管理解决方案&#34;&gt;&lt;/a&gt;Immich：自托管相册视频管理解决方案&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://immich.app/assets/images/feature-panel-286c220a4bdfd8a0a9a3abc45c47a600.webp&#34; alt=&#34;Immich&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网：&lt;a href=&#34;https://immich.app/&#34;&gt;Immich&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;体验：&lt;a href=&#34;https://demo.immich.app/auth/login&#34;&gt;Demo Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;客户端支持：网页端、Android、iOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;官网有非常详细的文档指引，如果你对于英文文档的阅读有不便的话，还可以参考 &lt;a href=&#34;https://www.himiku.com/archives/immich.html&#34;&gt;初之音&lt;/a&gt; 的这篇教程，你会拥有更好的阅读体验。&lt;/p&gt;
+&lt;h2 id=&#34;Immich-的优势&#34;&gt;&lt;a href=&#34;#Immich-的优势&#34; class=&#34;headerlink&#34; title=&#34;Immich 的优势&#34;&gt;&lt;/a&gt;Immich 的优势&lt;/h2&gt;&lt;h3 id=&#34;不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&#34;&gt;&lt;a href=&#34;#不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&#34; class=&#34;headerlink&#34; title=&#34;不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&#34;&gt;&lt;/a&gt;不需要安装浏览器插件，或者开启手机的图像助手，才能查看照片缩略图&lt;/h3&gt;&lt;p&gt;（点你呢，群晖！）&lt;/p&gt;
+&lt;h3 id=&#34;使用-Flutter-开发客户端，双端拥有一致的使用体验&#34;&gt;&lt;a href=&#34;#使用-Flutter-开发客户端，双端拥有一致的使用体验&#34; class=&#34;headerlink&#34; title=&#34;使用 Flutter 开发客户端，双端拥有一致的使用体验&#34;&gt;&lt;/a&gt;使用 Flutter 开发客户端，双端拥有一致的使用体验&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://immich.app/img/screenshot-light.webp&#34; alt=&#34;Immich&#34;&gt;&lt;br&gt;Flutter 更为现代化的 UI 组建，特性也双端同步更新。&lt;/p&gt;
+&lt;h3 id=&#34;集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&#34;&gt;&lt;a href=&#34;#集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&#34; class=&#34;headerlink&#34; title=&#34;集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&#34;&gt;&lt;/a&gt;集成图形识别模型，可以根据模型运行人脸识别和相似图片去重&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/immich-machine-learning.png&#34;&gt;&lt;br&gt;这个计算时间较长，跟设备的计算性能有关，如果有条件的话可以在更强的设备上运行。&lt;/p&gt;
+&lt;h3 id=&#34;存储模板可以帮我整理杂乱的群晖相册结构&#34;&gt;&lt;a href=&#34;#存储模板可以帮我整理杂乱的群晖相册结构&#34; class=&#34;headerlink&#34; title=&#34;存储模板可以帮我整理杂乱的群晖相册结构&#34;&gt;&lt;/a&gt;存储模板可以帮我整理杂乱的群晖相册结构&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/photoStructure.png&#34;&gt;&lt;br&gt;使用过群晖相册的都知道，群晖的整理就是没有整理。&lt;br&gt;&lt;img src=&#34;https://immich.app/assets/images/storage-template-5504da62979bf2d9e40a94d898b54388.webp&#34;&gt;&lt;br&gt;可以自定义存储模板。&lt;/p&gt;
+&lt;h3 id=&#34;非常便捷的图库迁移工具链，可以通过命令行快速迁移&#34;&gt;&lt;a href=&#34;#非常便捷的图库迁移工具链，可以通过命令行快速迁移&#34; class=&#34;headerlink&#34; title=&#34;非常便捷的图库迁移工具链，可以通过命令行快速迁移&#34;&gt;&lt;/a&gt;非常便捷的图库迁移工具链，可以通过命令行快速迁移&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/immichCLI.webp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Immich-的问题&#34;&gt;&lt;a href=&#34;#Immich-的问题&#34; class=&#34;headerlink&#34; title=&#34;Immich 的问题&#34;&gt;&lt;/a&gt;Immich 的问题&lt;/h2&gt;&lt;h3 id=&#34;较高的上手门槛（自部署）&#34;&gt;&lt;a href=&#34;#较高的上手门槛（自部署）&#34; class=&#34;headerlink&#34; title=&#34;较高的上手门槛（自部署）&#34;&gt;&lt;/a&gt;较高的上手门槛（自部署）&lt;/h3&gt;&lt;p&gt;自己部署 Immich，你至少需要了解以下知识：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自己实现外部访问&lt;ul&gt;
+&lt;li&gt;域名&lt;/li&gt;
+&lt;li&gt;公网 IP&lt;/li&gt;
+&lt;li&gt;反向代理&lt;/li&gt;
+&lt;li&gt;SSL 证书&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一定的玩机经验&lt;ul&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Bash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;稳定性欠佳&#34;&gt;&lt;a href=&#34;#稳定性欠佳&#34; class=&#34;headerlink&#34; title=&#34;稳定性欠佳&#34;&gt;&lt;/a&gt;稳定性欠佳&lt;/h3&gt;&lt;p&gt;Immich 开源项目仍旧在非常活跃的开发状态，从官方 Roadmap 看，需要等到 2025 年才会推出第一个稳定版。&lt;/p&gt;
+&lt;p&gt;我也在近几天的使用中发现了一些问题，比如：当我在移动设备中使用了 Proxy 设置，在 Immich 客户端的 App 中并不会走设备的 Proxy 进行网络请求，导致我在外边请求服务器时经常出现 “Server not reachable” 连接不上服务器的问题。&lt;/p&gt;
+&lt;p&gt;把官方的 Flutter 项目的代码拉取到本地 Debug 了一下，排查到 Flutter 的 baseHttpClient 在发起网络请求时，并不会直接使用移动设备的代理，需要在代码里进行判断和覆盖一下才行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/immich-mobile-proxy.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我也在官方的仓库提了 Discussion，希望能被官方看到吧。&lt;/p&gt;
+&lt;h2 id=&#34;我的建议&#34;&gt;&lt;a href=&#34;#我的建议&#34; class=&#34;headerlink&#34; title=&#34;我的建议&#34;&gt;&lt;/a&gt;我的建议&lt;/h2&gt;&lt;p&gt;如果你跟我一样，希望找一个能够替代群晖官方图片托管的第三方服务，那 Immich 是值得你关注的，但还不能日用，至少&lt;strong&gt;不是现在&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果你更常用网页的话，那当前版本的 Immich 已经是可以使用的状态了。&lt;/p&gt;
+&lt;p&gt;如果你需要同时使用网页和客户端，那 Immich 正式版推出之后，可能更合适。因为它还没有到一个可以正常使用的版本，尤其是客户端。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="相册" />
+        <updated>2024-12-19T10:51:03.000Z</updated>
+    </entry>
+</feed>

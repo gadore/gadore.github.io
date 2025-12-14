@@ -1,0 +1,640 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2025-12-14T22:55:38.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/device-sale-and-changes/</id>
+        <title>手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/device-sale-and-changes/"/>
+        <content type="html">&lt;p&gt;10 月份到 11 月份期间，我手里的各种设备经历了较大变化，在此记录。&lt;/p&gt;
+&lt;h2 id=&#34;卖掉了手里的很多设备&#34;&gt;&lt;a href=&#34;#卖掉了手里的很多设备&#34; class=&#34;headerlink&#34; title=&#34;卖掉了手里的很多设备&#34;&gt;&lt;/a&gt;卖掉了手里的很多设备&lt;/h2&gt;&lt;h3 id=&#34;1、Google-Pixel-5-草绿色-🤖&#34;&gt;&lt;a href=&#34;#1、Google-Pixel-5-草绿色-🤖&#34; class=&#34;headerlink&#34; title=&#34;1、Google Pixel 5 草绿色 🤖&#34;&gt;&lt;/a&gt;1、Google Pixel 5 草绿色 🤖&lt;/h3&gt;&lt;p&gt;买入理由：&lt;strong&gt;原生安卓、可以刷非常多第三方系统、轻、小、手感好&lt;/strong&gt;，我需要安装一些 iOS 平台没有的第三方 App&lt;/p&gt;
+&lt;p&gt;买入价格：¥1000&lt;/p&gt;
+&lt;p&gt;卖出价格：¥520&lt;/p&gt;
+&lt;p&gt;持有时间：超过一年半&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/pixel5.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;卖出理由：&lt;strong&gt;定位跟主力机 iPhone 冲突&lt;/strong&gt;，屏幕不够大（相比较下边换购的安卓平板），电池容量小，电池健康82%，作为备用机也要两天一充。&lt;/p&gt;
+&lt;h3 id=&#34;2、iPad-mini-7-256GB-星光色🫆&#34;&gt;&lt;a href=&#34;#2、iPad-mini-7-256GB-星光色🫆&#34; class=&#34;headerlink&#34; title=&#34;2、iPad mini 7 256GB 星光色🫆&#34;&gt;&lt;/a&gt;2、iPad mini 7 256GB 星光色🫆&lt;/h3&gt;&lt;p&gt;买入理由：需要性能强劲的小平板玩游戏、看视频&lt;/p&gt;
+&lt;p&gt;买入价格：¥3599&lt;/p&gt;
+&lt;p&gt;卖出价格：¥2550&lt;/p&gt;
+&lt;p&gt;持有时间：大半年&lt;/p&gt;
+&lt;p&gt;卖出理由：&lt;strong&gt;指纹识别经常失灵，经常需要手动输入密码&lt;/strong&gt;，&lt;strong&gt;指尖稍微有点儿汗就识别不了&lt;/strong&gt;！而且生态跟 iPhone 重合，在卖出了 Pixel 5 之后，手里没有设备用来安装 Android 软件，为后续购买安卓平板埋下伏笔。&lt;/p&gt;
+&lt;h3 id=&#34;3、汉密尔顿（Hamilton）墨菲-38-mm-全自动机械手表&#34;&gt;&lt;a href=&#34;#3、汉密尔顿（Hamilton）墨菲-38-mm-全自动机械手表&#34; class=&#34;headerlink&#34; title=&#34;3、汉密尔顿（Hamilton）墨菲 38 mm 全自动机械手表&#34;&gt;&lt;/a&gt;3、汉密尔顿（Hamilton）墨菲 38 mm 全自动机械手表&lt;/h3&gt;&lt;p&gt;买入理由：星际穿越🛰️&lt;/p&gt;
+&lt;p&gt;买入价格：¥5500&lt;/p&gt;
+&lt;p&gt;卖出价格：¥4000&lt;/p&gt;
+&lt;p&gt;持有时间：超过一年半&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/hamilton.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;卖出理由：&lt;strong&gt;不伺候了&lt;/strong&gt;，上弦效率差、日误差接近 15 秒、三天不戴就不走了、戴一周时差超过一分钟、需要反复上弦和反复调时间、只能看时间、机械表热情退烧了。&lt;/p&gt;
+&lt;h3 id=&#34;4、iPhone-5-16GB&#34;&gt;&lt;a href=&#34;#4、iPhone-5-16GB&#34; class=&#34;headerlink&#34; title=&#34;4、iPhone 5 16GB&#34;&gt;&lt;/a&gt;4、iPhone 5 16GB&lt;/h3&gt;&lt;p&gt;买入理由：&lt;strong&gt;iOS 6 很精致&lt;/strong&gt;，很超前，补偿当年没买过这款设备的遗憾。&lt;/p&gt;
+&lt;p&gt;买入价格：¥150&lt;/p&gt;
+&lt;p&gt;卖出价格：¥50&lt;/p&gt;
+&lt;p&gt;持有时间：超过两年&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iphone5.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;卖出理由：&lt;strong&gt;玩腻了&lt;/strong&gt;。没有最新的软件生态支撑，这就是一个 MP4 + 诺基亚功能机，况且没有 4G 网络的支持也让它完全无法胜任带出门的重任。最最最主要的：我手里主力机 iPhone 13 mini 跟他体积也差不多。&lt;/p&gt;
+&lt;h2 id=&#34;买入了新的设备&#34;&gt;&lt;a href=&#34;#买入了新的设备&#34; class=&#34;headerlink&#34; title=&#34;买入了新的设备&#34;&gt;&lt;/a&gt;买入了新的设备&lt;/h2&gt;&lt;p&gt;设备买买卖卖，这一波设备置换基本上没花钱，但给到的情绪价值却实打实的高。感谢雷总，尤其感谢搞定了小米手环 NFC 的那位技术人员，还要感谢拓竹，让我可以在如此价格体验世界一流的 3D 打印。&lt;/p&gt;
+&lt;h3 id=&#34;1、红米-K-Pad-12GB-256-GB-流金白&#34;&gt;&lt;a href=&#34;#1、红米-K-Pad-12GB-256-GB-流金白&#34; class=&#34;headerlink&#34; title=&#34;1、红米 K Pad 12GB + 256 GB 流金白&#34;&gt;&lt;/a&gt;1、红米 K Pad 12GB + 256 GB 流金白&lt;/h3&gt;&lt;p&gt;购入价格：¥2650&lt;/p&gt;
+&lt;p&gt;购入理由：尺寸与 mini 7 类似，只有一个摄像头（简洁），支持人脸识别（但是 2D 人脸），卖掉了 iPad mini 7 和 Pixel 5 之后，一个安卓平板就可以同时替代这两款产品，它既可以方便地看视频、玩游戏，也可以安装非常多只有安卓平台才有的第三方软件，如果你稍微懂一些技术，相信我，这款平板肯定要比 iPad mini 强&lt;/p&gt;
+&lt;p&gt;推荐体验：🌟🌟🌟🌟🌟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/redmikpad.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;备注说明：如果选择白色以外的颜色的话，价格可以便宜400以上，但没办法，俺就是喜欢白色，而且红米的白色背板质感非常高级，至少拿在手上不比 iPad mini 差。以及，现在流金白好像都买不到了，哈哈哈哈哈，庆幸我下单早～&lt;/p&gt;
+&lt;h3 id=&#34;2、小米手环-10-NFC-版-💳&#34;&gt;&lt;a href=&#34;#2、小米手环-10-NFC-版-💳&#34; class=&#34;headerlink&#34; title=&#34;2、小米手环 10 NFC 版 💳&#34;&gt;&lt;/a&gt;2、小米手环 10 NFC 版 💳&lt;/h3&gt;&lt;p&gt;购入价格：¥288&lt;/p&gt;
+&lt;p&gt;购入理由：冬天手腕上不想戴卡西欧的小银块，太冷了，而且太大体积了，本来就是抱着试一试的心态买的 NFC 版，没想到给我最多惊喜的也是这个 NFC，我&lt;strong&gt;小区的门禁卡、公司的电梯卡、公司机房的门禁卡，全部都可以被这个 NFC 版本所替代&lt;/strong&gt;，真的是太强了！！！对了，他甚至可以看时间！！！而且这东西正常续航两周一充（14天以上），开了超级省电模式（仅开启计步、NFC、时间）之后，续航起码奔着一个月甚至两个月去了！！！&lt;/p&gt;
+&lt;p&gt;推荐体验：🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/xiaomiband10.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;多说一句：相比较之前戴过的 Apple Watch S5、全自动机械表-墨菲38 这类需要频繁 “人去伺候它” 的设备，我更喜欢像小米手环 10 NFC 这类解决问题而且不用过多维护的设备，更何况，200 多的价格，心率、血氧、运动、睡眠检测都可以用，还要啥自行车？&lt;/p&gt;
+&lt;h3 id=&#34;3、拓竹-P2SC-🖨️&#34;&gt;&lt;a href=&#34;#3、拓竹-P2SC-🖨️&#34; class=&#34;headerlink&#34; title=&#34;3、拓竹 P2SC 🖨️&#34;&gt;&lt;/a&gt;3、拓竹 P2SC 🖨️&lt;/h3&gt;&lt;p&gt;购入价格：¥4266&lt;/p&gt;
+&lt;p&gt;购入理由：&lt;del&gt;卖出墨菲38之后剩下的钱太多了&lt;/del&gt; 自己倒腾的一些 DIY 设备需要外壳，反复去找打印农场快递来回时间太久了。&lt;/p&gt;
+&lt;p&gt;推荐体验：🌟🌟🌟🌟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/p2sc.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;多说一句：在上海这种寸土寸金的地方，我住在公租房里，家里还有两只经常认为电线是老鼠尾巴所以经常咬线的猫咪的情况下，想要放置一款噪音大、需要干燥环境的打印机还是有些挑战的，所以暂时给 4 颗星，是评给自己的贫穷😭；另外，学习了 Fusion 360 之后，我才知道原来建一个模型原来可以如此简单～&lt;/p&gt;
+&lt;p&gt;自己设计并打印的模型（给超市墨水屏设备更换 5V 电池盒、新的外壳和可插拔支架）：&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/printerModel1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/printerModel2.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安卓平板必装软件&#34;&gt;&lt;a href=&#34;#安卓平板必装软件&#34; class=&#34;headerlink&#34; title=&#34;安卓平板必装软件&#34;&gt;&lt;/a&gt;安卓平板必装软件&lt;/h2&gt;&lt;p&gt;以下链接皆为直链，部份可能需要更优质（🪜）的国际网络才能访问！！！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;B站第三方客户端：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/bggRGjQaUbCoE/PiliPlus&#34;&gt;PiliPlus&lt;/a&gt;（我认为 Android Pad 适配最好）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/guozhigq/pilipala/releases&#34;&gt;PiliPala&lt;/a&gt;（平板适配不如前者，但也很不错了）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Yotube 第三方客户端：&lt;a href=&#34;https://newpipe.net/&#34;&gt;NewPipe&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://mihon.app/&#34;&gt;Mihon&lt;/a&gt;：Komga 安卓第三方（最强）看漫画客户端&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://animeko.org/&#34;&gt;Animeko&lt;/a&gt;：Bangumi + Bilibili，你可以理解成使用网络公开（&lt;del&gt;盗版&lt;/del&gt;）资源的看番客户端，当然，阉割更少，可以看弹幕！！！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/deckerst/aves&#34;&gt;Aves&lt;/a&gt;：简单纯粹的安卓第三方相册&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RSS 工具：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/seazon/FeedMe/releases&#34;&gt;Feed Me&lt;/a&gt;：RSS 工具届的老大哥，支持批量图片预缓存，对图片较大的订阅源异常友好。我从 Android 5 一直用到 Android 16&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReadYouApp/ReadYou&#34;&gt;Read You&lt;/a&gt;：RSS新秀，仿照 iOS 端的重磅RSS 工具 Reeder 开发，界面现代且简洁&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/Anxcye/anx-reader&#34;&gt;Anx Reader&lt;/a&gt;：纯粹的 txt 阅读器，这不一定是最好的，但是我最近找到的最纯粹的&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;我还缺什么安卓平台的应用&#34;&gt;&lt;a href=&#34;#我还缺什么安卓平台的应用&#34; class=&#34;headerlink&#34; title=&#34;我还缺什么安卓平台的应用&#34;&gt;&lt;/a&gt;我还缺什么安卓平台的应用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;管理 PDF（按照文件夹分类）的阅读应用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;推特（X）第三方客户端&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果你有什么好的推荐，评论区见～&lt;/p&gt;
+</content>
+        <category term="拓竹" />
+        <category term="P2SC" />
+        <category term="红米 K Pad" />
+        <category term="小米手环 10 NFC" />
+        <updated>2025-12-14T22:55:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/quote-0/</id>
+        <title>借助捷径，不写代码也能玩转 Quote/0 墨水屏</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/quote-0/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/102845&#34;&gt;少数派首发&lt;/a&gt;（少数派网站同名作者：千里之豪）&lt;/p&gt;
+&lt;p&gt;墨水屏一直是我非常偏爱的产品形态：低功耗、不依赖背光，同时具备可刷新特性，几乎天生就是为信息看板而设计的。遗憾的是，我并非硬件工程师出身，始终没能亲手做出一块完全符合自己需求的墨水屏。&lt;/p&gt;
+&lt;p&gt;几年前，我购买了两块超市电子价签，并在好奇心的驱动下，逆向分析出它们的蓝牙通信协议，由此写下了&lt;a href=&#34;https://sspai.com/post/78993&#34;&gt;《抓包解协议，代码造布局：电子墨水价签改造 NAS 监控屏小记》&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;也正因如此，当 &lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 出现时，我格外期待。它在官方丰富模板之外，还提供了更灵活的数据更新方式，可以直接通过苹果的捷径（Shortcuts）进行扩展，让墨水屏的玩法不再局限于预设场景。&lt;/p&gt;
+&lt;h2 id=&#34;如何驱动-Quote-0-更新&#34;&gt;&lt;a href=&#34;#如何驱动-Quote-0-更新&#34; class=&#34;headerlink&#34; title=&#34;如何驱动 Quote&amp;#x2F;0 更新&#34;&gt;&lt;/a&gt;&lt;strong&gt;如何驱动 Quote&amp;#x2F;0 更新&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;要在日常中使用 Quote&amp;#x2F;0，主要依赖以下三点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;对捷径 App 的基本操作（Shortcuts）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;官方或第三方 App 对 Siri Intent 的支持&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Quote&amp;#x2F;0 的设备码和 API Key&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过这些条件，就能构建出灵活的自动化更新方案。下面以几个场景为例。&lt;/p&gt;
+&lt;h3 id=&#34;场景一：日程提醒&#34;&gt;&lt;a href=&#34;#场景一：日程提醒&#34; class=&#34;headerlink&#34; title=&#34;场景一：日程提醒&#34;&gt;&lt;/a&gt;&lt;strong&gt;场景一：日程提醒&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;捷径 + 日历 App + Quote&amp;#x2F;0 文字 API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;苹果自带的日历应用可以与捷径配合，获取即将到来的日程信息，再通过 &lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 展示在墨水屏上。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/55543381ffe41369a7891f708732c0dd.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;iOS 日历日程安排，在 Shortcuts 里用来请求更新 Quote&amp;#x2F;0&lt;/p&gt;
+&lt;p&gt;效果示例：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7ca1b2138ebe29b26987f8061916b0b0.jpg&#34; alt=&#34;7ca1b2138ebe29b26987f8061916b0b0jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;场景二：节假日查询&#34;&gt;&lt;a href=&#34;#场景二：节假日查询&#34; class=&#34;headerlink&#34; title=&#34;场景二：节假日查询&#34;&gt;&lt;/a&gt;&lt;strong&gt;场景二：节假日查询&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;捷径 + 休息日 App + Quote&amp;#x2F;0 文字 API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;「休息日」是一款提供节假日信息查询的 App，全面支持 Siri Intent。通过配置捷径触发流程，可以快速获取节假日安排并同步到 &lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/fe43e9e0f49e4b5f39847c7fce0aa7af.png&#34; alt=&#34;fe43e9e0f49e4b5f39847c7fce0aa7afpng&#34;&gt;&lt;/p&gt;
+&lt;p&gt;休息日模板 - 复制上一个配置 - 休息日提供的 Siri Intent&lt;/p&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3346da6e176bbe39e48736c02485b5ef.jpg&#34; alt=&#34;3346da6e176bbe39e48736c02485b5efjpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;场景三：生日-纪念日提醒&#34;&gt;&lt;a href=&#34;#场景三：生日-纪念日提醒&#34; class=&#34;headerlink&#34; title=&#34;场景三：生日 &amp;#x2F; 纪念日提醒&#34;&gt;&lt;/a&gt;&lt;strong&gt;场景三：生日 &amp;#x2F; 纪念日提醒&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;捷径 + 唯记 App + Quote&amp;#x2F;0 文字 API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;「&lt;a href=&#34;https://apps.apple.com/cn/app/%E5%94%AF%E8%AE%B0/id6502951931&#34;&gt;唯记&lt;/a&gt;」是一款专注于生日和纪念日提醒的 App，同样支持 Siri Intent 调用。借助捷径，你可以灵活获取倒数日信息并投放到墨水屏。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/00a23de10c94585a8fcd473498598d51.png&#34; alt=&#34;00a23de10c94585a8fcd473498598d51png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;效果示例：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/f167b589c34d752893631b60e87efb61.jpg&#34; alt=&#34;f167b589c34d752893631b60e87efb61jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;自动化轮播&#34;&gt;&lt;a href=&#34;#自动化轮播&#34; class=&#34;headerlink&#34; title=&#34;自动化轮播&#34;&gt;&lt;/a&gt;&lt;strong&gt;自动化轮播&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在捷径 App 中切换到底部的&lt;strong&gt;「自动化」&lt;/strong&gt;标签，点击右上角&lt;strong&gt;「添加」&lt;/strong&gt;，选择&lt;strong&gt;「特定时间」&lt;/strong&gt;后，绑定之前配置好的快捷指令。接着，可以根据需求设置不同时间段展示的不同信息。&lt;/p&gt;
+&lt;p&gt;这样一来，&lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 就能与手机信息保持同步，实现自动摘要与定时轮播，让它真正成为一个动态更新的桌面信息小组件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/41242ca6228949aa07003f65ee47f2ab.png&#34; alt=&#34;41242ca6228949aa07003f65ee47f2abpng&#34;&gt;&lt;/p&gt;
+&lt;p&gt;iOS 捷径自动化配置&lt;/p&gt;
+&lt;h2 id=&#34;进阶玩法：图片-API&#34;&gt;&lt;a href=&#34;#进阶玩法：图片-API&#34; class=&#34;headerlink&#34; title=&#34;进阶玩法：图片 API&#34;&gt;&lt;/a&gt;&lt;strong&gt;进阶玩法：图片 API&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;文字展示并不是终点。&lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 更强大的能力在于 &lt;strong&gt;图片 API 更新&lt;/strong&gt;。在 Node.js 环境下，可以使用虚拟 Canvas （无需借助浏览器或客户端）动态生成画布，并输出图片，再推送到墨水屏，实现更丰富的视觉效果。&lt;/p&gt;
+&lt;p&gt;例如下图的黄金走势图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/000d94c0a6c898e6d5e0eb3a0ea69c07.jpg&#34; alt=&#34;000d94c0a6c898e6d5e0eb3a0ea69c07jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;相关示例代码已更新至 &lt;a href=&#34;https://sspai.com/link?target=https://github.com/gadore/ink-screen-bluetooth&#34;&gt;GitHub 仓库&lt;/a&gt;，供参考与拓展。&lt;/p&gt;
+&lt;h2 id=&#34;写在最后&#34;&gt;&lt;a href=&#34;#写在最后&#34; class=&#34;headerlink&#34; title=&#34;写在最后&#34;&gt;&lt;/a&gt;&lt;strong&gt;写在最后&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 的出现，让墨水屏的使用方式变得前所未有的灵活。通过捷径、Siri Intent 和 API 的结合，每个人都可以根据自身需求，快速定制出独一无二的应用场景。&lt;/p&gt;
+&lt;p&gt;当然，这种玩法也高度依赖应用开发者对 Siri Intent 的&lt;strong&gt;适配&lt;/strong&gt;，如果没有适配，就只能走写代码这条老路了，但借助 AI 大模型，现在好像也不是不可逾越的高墙了，勇敢的少年啊，赶紧去尝试吧～&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="墨水屏" />
+        <updated>2025-11-13T11:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/raspberrypi-fan-control-pcb/</id>
+        <title>用刚学的 PCB 知识做一个优雅的树莓派风扇控制板</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/raspberrypi-fan-control-pcb/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;首先我不是EE（电子电路工程师），所以对电路一窍不通，但人就是这样，越菜越爱玩。所以如果你是EE的话，不要被我的电路图蠢到（不要骂我）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的家里就好几个树莓派，一些是我大学的时候做小任务的低功耗服务器用，另外一些是工作的时候，自己测试一些硬件用，跑一些边缘服务之类的。&lt;/p&gt;
+&lt;h2 id=&#34;树莓派旧风扇长期通电运行报废&#34;&gt;&lt;a href=&#34;#树莓派旧风扇长期通电运行报废&#34; class=&#34;headerlink&#34; title=&#34;树莓派旧风扇长期通电运行报废&#34;&gt;&lt;/a&gt;树莓派旧风扇长期通电运行报废&lt;/h2&gt;&lt;p&gt;我大学期间给树莓派 3B 配备的风扇在通电时间超过三年之后还是在最近寿终正寝了（作为一个4块钱的风扇而言，已经很抗造了），于是我就在想，为什么不做一个根据 CPU 温度动态控制风扇转速的模块，来延长风扇的寿命呢？说干就干。&lt;/p&gt;
+&lt;p&gt;众所周知，树莓派最新的 5B 系列已经有了成熟的风扇控制接口了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%A0%91%E8%8E%93%E6%B4%BE5.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图片来自：树莓派官网&lt;/p&gt;
+&lt;h2 id=&#34;网络上风扇开关电路简单明确，但不够优雅简洁&#34;&gt;&lt;a href=&#34;#网络上风扇开关电路简单明确，但不够优雅简洁&#34; class=&#34;headerlink&#34; title=&#34;网络上风扇开关电路简单明确，但不够优雅简洁&#34;&gt;&lt;/a&gt;网络上风扇开关电路简单明确，但不够优雅简洁&lt;/h2&gt;&lt;p&gt;但我手里的好几个 3B 和 4B 这两个系列都没有呀，我也想要一个更加优雅的、模块化的接口，而不是临时的像这种：&lt;/p&gt;
+&lt;p&gt;基础原理图，来自 shumeipai.nxez.com&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/20170713170656938-0.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/CSDN_luzze__123.jpeg&#34; alt=&#34;CSDNluzze123jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图片来自：CSDN 用户 luzze_123&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/CSDN_qq_40251961.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图片来自：CSDN 用户 qq_40251961&lt;/p&gt;
+&lt;h2 id=&#34;PCB-速成，嘉立创启动！&#34;&gt;&lt;a href=&#34;#PCB-速成，嘉立创启动！&#34; class=&#34;headerlink&#34; title=&#34;PCB 速成，嘉立创启动！&#34;&gt;&lt;/a&gt;PCB 速成，嘉立创启动！&lt;/h2&gt;&lt;p&gt;但我不会画电路板，更不了解各种电子电路相关的知识，只好去折磨 AI 了 😄。&lt;/p&gt;
+&lt;p&gt;但其实每个人都是有一定的电路基础的，正负极、开关。所以我选择了更加速成的方式：&lt;br&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1J24y1Z7cY/&#34;&gt;&lt;strong&gt;【保姆级】二十分钟零基础PCB绘制打样一条龙教程（立创EDA专业版）&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只需要按照这个视频教程，你就可以在半小时左右学会最基础的 PCB 板的绘制技巧，我也是顺利地完成了第一版绘制&lt;/p&gt;
+&lt;h3 id=&#34;第一版电路图&#34;&gt;&lt;a href=&#34;#第一版电路图&#34; class=&#34;headerlink&#34; title=&#34;第一版电路图&#34;&gt;&lt;/a&gt;第一版电路图&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-10-11_14.46.51.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-10-11_14.47.15.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-10-11_14.47.33.png&#34;&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-10-16_19.24.08.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果你是比较懂电路的话，你肯定已经看到问题所在了，没错，我把三极管放在了 5V 正极了，导致板子到手后风扇的转速非常慢，有时候甚至转不起来，即使已经通过 GPIO 把电路导通了，风扇还是不转或者转的非常慢，我就不瞎分析了，放出 AI 的分析：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;把 8050 放在正极（高侧）当“开关”用了&lt;/strong&gt; —— 8050 是 NPN 晶体管，做高侧开关时它会工作在发射跟随（emitter-follower）模式，发射极电压 ≈ 基极电压 − 0.7V。GPIO 给的是 3.3V，发射极最多 ~2.6V，风扇的电源是 5V → 风扇只拿到 ~2.6V，自然转得很慢。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我理解下来就是：三极管放正极会对电压电流有较大损耗，导致风扇工作所需功率不足。&lt;/p&gt;
+&lt;h3 id=&#34;第二版电路图&#34;&gt;&lt;a href=&#34;#第二版电路图&#34; class=&#34;headerlink&#34; title=&#34;第二版电路图&#34;&gt;&lt;/a&gt;第二版电路图&lt;/h3&gt;&lt;p&gt;于是重新去嘉立创领券，重新打板，重新焊接电路，重新测试，可以了！！！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F2025-10-16%2017.53.58.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;再配合 Python 脚本，和亿点点配置，一个全自动的风扇控制模块就做好了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0568.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装效果图&lt;/p&gt;
+&lt;p&gt;模块大小示意（对比 Type-C 接口）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0569.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;总花销：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;买电子元器件（S8050、排针、排母）：9元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;电烙铁基础套装（松香、焊锡丝、锡棉，支架）36.9元&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;然而这一趟折腾下来，我发现花销已经足够我买好多小风扇了，好在电烙铁可以反复使用，电子元器件也只消耗了一小部份，以后折腾其他东西也能用～&lt;/p&gt;
+&lt;h2 id=&#34;解除-GPIO-14-的串口占用，用来当做开关信号&#34;&gt;&lt;a href=&#34;#解除-GPIO-14-的串口占用，用来当做开关信号&#34; class=&#34;headerlink&#34; title=&#34;解除 GPIO 14 的串口占用，用来当做开关信号&#34;&gt;&lt;/a&gt;解除 GPIO 14 的串口占用，用来当做开关信号&lt;/h2&gt;&lt;p&gt;当前这个模块占地较小，但也有代价，它使用的是GPIO 14进行电路开关控制，GPIO 14 在树莓派上原本是被串口通信功能占用，如果你跟我一样不使用串口功能，可以这样关闭掉：&lt;br&gt;&lt;code&gt;sudo raspi-config&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Interface Options → Serial Port&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Would you like a login shell to be accessible over serial?&lt;/code&gt; → &lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Would you like the serial port hardware to be enabled?&lt;/code&gt; → &lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;完成后退出并选择 &lt;strong&gt;Finish&lt;/strong&gt;，允许它重启。&lt;/p&gt;
+&lt;p&gt;重启后：&lt;/p&gt;
+&lt;p&gt;sudo vim &amp;#x2F;boot&amp;#x2F;firmware&amp;#x2F;config.txt&lt;/p&gt;
+&lt;p&gt;确认或添加以下内容（顺序重要）：&lt;/p&gt;
+&lt;figure class=&#34;highlight ini&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 禁用蓝牙，释放 UART&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;dtoverlay&lt;/span&gt;=disable-bt&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 确保主 UART 关闭&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;enable_uart&lt;/span&gt;=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl &lt;span class=&#34;built_in&#34;&gt;disable&lt;/span&gt; hciuart.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl mask hciuart.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;验证 GPIO 14 状态：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pinctrl get 14&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;应显示：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GPIO 14: level=0 func=INPUT&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;（或类似 &lt;code&gt;function INPUT&lt;/code&gt;），&lt;strong&gt;没有出现&lt;/strong&gt; &lt;code&gt;ALT0&lt;/code&gt; &lt;strong&gt;&amp;#x2F;&lt;/strong&gt; &lt;code&gt;TXD0&lt;/code&gt; &lt;strong&gt;&amp;#x2F;&lt;/strong&gt; &lt;code&gt;RXD0&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;此时即可用作普通 GPIO。&lt;/p&gt;
+&lt;h2 id=&#34;如果你需要串口功能，则可以使用另一种方案代替&#34;&gt;&lt;a href=&#34;#如果你需要串口功能，则可以使用另一种方案代替&#34; class=&#34;headerlink&#34; title=&#34;如果你需要串口功能，则可以使用另一种方案代替&#34;&gt;&lt;/a&gt;如果你需要串口功能，则可以使用另一种方案代替&lt;/h2&gt;&lt;p&gt;这是另一个版本，它不占用串口功能，使用 GPIO 4 进行开关控制，最终组件也会相对应长一些&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F2025-10-16%2017.57.17.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F2025-10-16%2018.02.05.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-10-16_19.41.25.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0571.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;风扇控制脚本&#34;&gt;&lt;a href=&#34;#风扇控制脚本&#34; class=&#34;headerlink&#34; title=&#34;风扇控制脚本&#34;&gt;&lt;/a&gt;风扇控制脚本&lt;/h2&gt;&lt;p&gt;Python 脚本：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;78&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; RPi.GPIO &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; GPIO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; time&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; signal&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; sys&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 控制风扇的GPIO（BCM编号）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;FAN_GPIO = &lt;span class=&#34;number&#34;&gt;14&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 温度阈值（摄氏度）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;HIGH_TEMP = &lt;span class=&#34;number&#34;&gt;45.0&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 高于此温度开启风扇&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;LOW_TEMP = &lt;span class=&#34;number&#34;&gt;42.0&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;# 低于此温度关闭风扇&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查间隔（秒）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CHECK_INTERVAL = &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 设置GPIO模式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;GPIO.setmode(GPIO.BCM)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;GPIO.setup(FAN_GPIO, GPIO.OUT)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 初始状态关闭风扇&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;GPIO.output(FAN_GPIO, GPIO.HIGH)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fan_status = &lt;span class=&#34;literal&#34;&gt;False&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 获取CPU温度的函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;get_cpu_temperature&lt;/span&gt;():&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;open&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;/sys/class/thermal/thermal_zone0/temp&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;r&amp;#x27;&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; f:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            temp = &lt;span class=&#34;built_in&#34;&gt;float&lt;/span&gt;(f.read()) / &lt;span class=&#34;number&#34;&gt;1000.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; temp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;except&lt;/span&gt; Exception &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; e:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;f&amp;quot;无法读取CPU温度: &lt;span class=&#34;subst&#34;&gt;&amp;#123;e&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;None&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 控制风扇的函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;control_fan&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;temperature&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;global&lt;/span&gt; fan_status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; temperature &amp;gt;= HIGH_TEMP &lt;span class=&#34;keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt; fan_status:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        GPIO.output(FAN_GPIO, GPIO.HIGH)  &lt;span class=&#34;comment&#34;&gt;# 开启风扇&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        fan_status = &lt;span class=&#34;literal&#34;&gt;True&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;f&amp;quot;温度: &lt;span class=&#34;subst&#34;&gt;&amp;#123;temperature&amp;#125;&lt;/span&gt;°C - 风扇开启&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;elif&lt;/span&gt; temperature &amp;lt;= LOW_TEMP &lt;span class=&#34;keyword&#34;&gt;and&lt;/span&gt; fan_status:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        GPIO.output(FAN_GPIO, GPIO.LOW)  &lt;span class=&#34;comment&#34;&gt;# 关闭风扇&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        fan_status = &lt;span class=&#34;literal&#34;&gt;False&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;f&amp;quot;温度: &lt;span class=&#34;subst&#34;&gt;&amp;#123;temperature&amp;#125;&lt;/span&gt;°C - 风扇关闭&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        status = &lt;span class=&#34;string&#34;&gt;&amp;quot;开启&amp;quot;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; fan_status &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;关闭&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;f&amp;quot;温度: &lt;span class=&#34;subst&#34;&gt;&amp;#123;temperature&amp;#125;&lt;/span&gt;°C - 风扇保持&lt;span class=&#34;subst&#34;&gt;&amp;#123;status&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 优雅退出处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;signal_handler&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;sig, frame&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;\n正在关闭程序...&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    GPIO.output(FAN_GPIO, GPIO.LOW)  &lt;span class=&#34;comment&#34;&gt;# 确保风扇关闭&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    GPIO.cleanup()  &lt;span class=&#34;comment&#34;&gt;# 清理GPIO资源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;风扇已关闭，程序退出&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    sys.exit(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 注册信号处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;signal.signal(signal.SIGINT, signal_handler)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;signal.signal(signal.SIGTERM, signal_handler)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 主循环&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;开始监控CPU温度并控制风扇...&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;f&amp;quot;温度阈值: 高于&lt;span class=&#34;subst&#34;&gt;&amp;#123;HIGH_TEMP&amp;#125;&lt;/span&gt;°C开启, 低于&lt;span class=&#34;subst&#34;&gt;&amp;#123;LOW_TEMP&amp;#125;&lt;/span&gt;°C关闭&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;按 Ctrl+C 退出程序&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;True&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        temperature = get_cpu_temperature()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; temperature &lt;span class=&#34;keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;None&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            control_fan(temperature)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        time.sleep(CHECK_INTERVAL)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;except&lt;/span&gt; KeyboardInterrupt:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    signal_handler(&lt;span class=&#34;literal&#34;&gt;None&lt;/span&gt;, &lt;span class=&#34;literal&#34;&gt;None&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;except&lt;/span&gt; Exception &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; e:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;f&amp;quot;程序运行出错: &lt;span class=&#34;subst&#34;&gt;&amp;#123;e&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    GPIO.output(FAN_GPIO, GPIO.LOW)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    GPIO.cleanup()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Python&lt;/p&gt;
+&lt;h2 id=&#34;自动化服务配置&#34;&gt;&lt;a href=&#34;#自动化服务配置&#34; class=&#34;headerlink&#34; title=&#34;自动化服务配置&#34;&gt;&lt;/a&gt;自动化服务配置&lt;/h2&gt;&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[Unit]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Description=Fan control Service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;After=network.target&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Service]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Type=simple&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WorkingDirectory= &lt;span class=&#34;comment&#34;&gt;# 这里替换成python脚本所在目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ExecStart=/usr/bin/python3 &lt;span class=&#34;comment&#34;&gt;# 这里替换成python脚本的绝对路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Restart=always&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;RestartSec=10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;StandardOutput=syslog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;StandardError=syslog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SyslogIdentifier=fan-control&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 环境变量（如果需要）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Environment=PYTHONUNBUFFERED=1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Install]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WantedBy=multi-user.target&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Makefile&lt;/p&gt;
+&lt;p&gt;把上边这个脚本保存到&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/etc/systemd/system/fan-control.service&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后依次执行:&lt;/p&gt;
+&lt;p&gt;重新加载服务文件&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;启动风扇控制脚本服务&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl start fan-control.service&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;检查运行状态&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl status fan-control.service&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;设置服务开机自启动&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl enable fan-control.service&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果发现服务启动异常，可以通过这个命令来查看异常原因&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo journalctl -u fan-control.service -n 50&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效果&#34;&gt;&lt;a href=&#34;#效果&#34; class=&#34;headerlink&#34; title=&#34;效果&#34;&gt;&lt;/a&gt;效果&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:23:42 raspberrypi fan-control[2004]: 温度: 44.008°C - 风扇保持关闭&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:23:47 raspberrypi fan-control[2004]: 温度: 44.546°C - 风扇保持关闭&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:23:52 raspberrypi fan-control[2004]: 温度: 45.084°C - 风扇开启&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:23:57 raspberrypi fan-control[2004]: 温度: 45.084°C - 风扇保持开启&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:02 raspberrypi fan-control[2004]: 温度: 44.008°C - 风扇保持开启&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:07 raspberrypi fan-control[2004]: 温度: 43.47°C - 风扇保持开启&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:12 raspberrypi fan-control[2004]: 温度: 43.47°C - 风扇保持开启&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:17 raspberrypi fan-control[2004]: 温度: 42.932°C - 风扇保持开启&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:22 raspberrypi fan-control[2004]: 温度: 41.856°C - 风扇关闭&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:27 raspberrypi fan-control[2004]: 温度: 41.856°C - 风扇保持关闭&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:32 raspberrypi fan-control[2004]: 温度: 41.856°C - 风扇保持关闭&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Oct 16 13:24:37 raspberrypi fan-control[2004]: 温度: 41.318°C - 风扇保持关闭&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;备注&#34;&gt;&lt;a href=&#34;#备注&#34; class=&#34;headerlink&#34; title=&#34;备注&#34;&gt;&lt;/a&gt;备注&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.jlc.com/newOrder/#/collectCoupons?spm=JLC.MEMBER&#34;&gt;嘉立创领券链接&lt;/a&gt;，感谢嘉立创！😄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我跑通了这个PCB验证，也写完了这篇文章后，才发现很久之前（2021年）就有其他人做过：可以参考「&lt;a href=&#34;https://www.quarkbook.com/?p=1194&#34;&gt;夸克之书&lt;/a&gt;」的文章，哎，早点儿看到就能少走很多弯路了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="PCB" />
+        <category term="树莓派" />
+        <category term="嘉立创" />
+        <updated>2025-10-16T19:52:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/</id>
+        <title>Google Pixel 5 更换 Lineage OS</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;当过社畜的都知道，以季度为施工周期的项目，进入 8、9 月份基本上到了项目的加速或是冲刺期，所以整个 8 月份都在赶项目进度；&lt;/p&gt;
+&lt;p&gt;外包项目倒是也接触了好几个，但都停留在了技术咨询阶段，0 入账；&lt;/p&gt;
+&lt;p&gt;尝试用 Raspberry Pi 4B 和 Qwen3 0.6B 模型进行 Edge Ai + 自动联网分析的应用开发，用 Python 做出来之后发现效果略差于手机上的 App ，又是无功而返的三个晚上；&lt;/p&gt;
+&lt;p&gt;8 月就这么碌碌无为地溜了过去，整个人感觉好像什么都没做，那就刷个机吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的备用 Android 手机是 Pixel 5，官方已经永久停止系统支持了，当前的系统最新版本停留在 Android 14.&lt;/p&gt;
+&lt;p&gt;但我看到了 Android 15 有非常吸引人的优化系统系能的更新（ page size 16 kb），所以就特想升级，由于之前使用过 Lineage OS，所以就打开了它的官网，果然支持，直接刷入～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202025%E5%B9%B48%E6%9C%8828%E6%97%A5%2013_45_34.png&#34; alt=&#34;ChatGPT Image 2025年8月28日 13_45_34.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.lineageos.org/devices/redfin/&#34;&gt;Lineage OS for Pixel 5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刷入后发现了很多原生系统不支持的特性，太惊喜了！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;官方支持的 16kb 分页，App 打开效率提升&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;电池健康度检测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;充电控制（最大充到多少）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;状态栏展示网速（老传统了，其实没啥可说的，但原生没有）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1-LVWz.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2-jEiy.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3-xxGr.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4-apgs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;还得是 Pixel，官方不支持社区也会支持。&lt;/p&gt;
+&lt;p&gt;我感觉下一个版本的 Lineage OS （Android 16）理论上来说也能支持，&lt;/p&gt;
+&lt;p&gt;感谢 Lineage OS 。&lt;/p&gt;
+&lt;p&gt;期待一波～&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="刷机" />
+        <category term="Pixel 5" />
+        <category term="LineageOS" />
+        <updated>2025-08-28T17:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/shanghai-Neighborhood-Committee/</id>
+        <title>在上海公租房：一名租客的首次居委会体验</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/shanghai-Neighborhood-Committee/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;⚠️ 无图警告 ⚠️&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;背景：新居的烦恼&#34;&gt;&lt;a href=&#34;#背景：新居的烦恼&#34; class=&#34;headerlink&#34; title=&#34;背景：新居的烦恼&#34;&gt;&lt;/a&gt;&lt;strong&gt;背景：新居的烦恼&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;刚搬进上海某社区的公租房🏠不久，我就和邻居们遇到了两个棘手问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;电梯故障频发🛗：&lt;/strong&gt; 三个月内报修四次！在一梯四户的高层单元楼里，这简直是灾难。高峰期拥堵不堪。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;停车位严重短缺🅿️：&lt;/strong&gt; 小区地下车库有上千车位，但划给公租房租客的仅有约80个。更糟的是，大量车位被锁死或遭占用，租客停车难上加难。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;线上群聊沟通无效后，有邻居拨打了 &lt;strong&gt;12345&lt;/strong&gt; 市民热线☎️投诉。很快啊，街道办就在两天后组织召开了这次居委会会议。&lt;/p&gt;
+&lt;h2 id=&#34;会议进行时&#34;&gt;&lt;a href=&#34;#会议进行时&#34; class=&#34;headerlink&#34; title=&#34;会议进行时&#34;&gt;&lt;/a&gt;&lt;strong&gt;会议进行时&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;时间调整⏰：&lt;/strong&gt; 最初通知是周三下午两点半，立刻在公租房群被集体“Diss”——工作日上班时间谁有空？最终会议改到了晚上 &lt;strong&gt;7:30&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;地点：&lt;/strong&gt; XXX小区街道办会议室&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;参会方：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;政府代表：工商局XX老师、住建局XX老师、网格员、区XX书记&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;管理方：物业公司经理（2位）、公租房管家XX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;租户代表：公租房租客代表（2人）、普通公租房租客（8人）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;会议记录员（1人）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;议题一：电梯困局🛗&#34;&gt;&lt;a href=&#34;#议题一：电梯困局🛗&#34; class=&#34;headerlink&#34; title=&#34;议题一：电梯困局🛗&#34;&gt;&lt;/a&gt;&lt;strong&gt;议题一：电梯困局🛗&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;问题核心：&lt;/strong&gt; 电梯频繁显示“Out of Service”，迫使所有人挤用另一部电梯，在20+层、每层8户、仅2部电梯的情况下，高峰期完全瘫痪。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;物业分析故障原因：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;垃圾堵门🗑️：&lt;/strong&gt; 乘客遗留的垃圾被踢到门缝，遮挡光栅，导致电梯无法关门，触发保护机制停运。（监控曾拍到保洁🧹阿姨将垃圾扫入门缝！）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;快递堵门📦：&lt;/strong&gt; 快递员用小推车或快递故意挡住电梯门，以便一趟送完所有楼层。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;设备替换件故障🔧：&lt;/strong&gt; 硬件老化或损坏。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;可见，人为因素（有意或无意）是主因。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;讨论与解决方案：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;垃圾堵门🗑️：&lt;/strong&gt; 物业已通知保洁🧹部门重点清扫电梯门缝区域，杜绝垃圾堆积。→ &lt;strong&gt;此方案获一致好评👍。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;快递堵门📦：&lt;/strong&gt; 物业提议在一楼设置快递柜和外卖柜🥡，让居民自取，减少电梯占用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;遭遇强烈反对👎：&lt;/strong&gt; 住户认为这反而会增加大家下楼取件的次数，&lt;strong&gt;加剧电梯🛗使用负担&lt;/strong&gt;。提议作罢。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;设备故障🔧：&lt;/strong&gt; 住户建议&lt;strong&gt;增加预防性检修频次&lt;/strong&gt;，避免故障后才更换配件。→ &lt;strong&gt;电梯维保🔧部门采纳。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;议题二：停车位争夺战🅿️&#34;&gt;&lt;a href=&#34;#议题二：停车位争夺战🅿️&#34; class=&#34;headerlink&#34; title=&#34;议题二：停车位争夺战🅿️&#34;&gt;&lt;/a&gt;&lt;strong&gt;议题二：停车位争夺战🅿️&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;这是小区的“老大难”问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;现状：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;小区规划车位超1600个，租客固定车位仅约80个，其余属业主和开发商。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;即使这80个“专属”车位，也常被业主或临时车占用！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更甚者，开发商为逼迫业主购买车位，&lt;strong&gt;锁死🔒了大量包含租客车位的临时区域&lt;/strong&gt;，导致办了长期停车证的租客也无位可停。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;会议交锋与决议：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;居委会强硬指令📢：&lt;/strong&gt; 责令物业&lt;strong&gt;一周内解决问题&lt;/strong&gt;，必须确保政策规定数量的车位切实留给公租房租客。&lt;strong&gt;“到期不拆锁🔒，住建局将强拆💥！”&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;物业经理的“难题”（与态度）：&lt;/strong&gt; 一位经理提出（带着被多位在场租客形容为“幸灾乐祸😏”的表情）：“负一层租客车位只有20个，负二层的又离你们单元楼太远，怎么安排呢？”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;书记的机智回应💡：&lt;/strong&gt; “能申请上公租房的租客，智商比我们这些人都高！这个问题&lt;strong&gt;不用你操心&lt;/strong&gt;，你只管拆锁🔒！”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;租客提议（获认可✅）：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;采用&lt;strong&gt;车牌登记制📝&lt;/strong&gt;，租客提交私家车信息。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过&lt;strong&gt;公平抽签🎲&lt;/strong&gt;分配80个固定车位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;物业根据抽签结果，&lt;strong&gt;将车牌号与车位绑定&lt;/strong&gt;，严格管理，防止占用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感想：被看见的租客&#34;&gt;&lt;a href=&#34;#感想：被看见的租客&#34; class=&#34;headerlink&#34; title=&#34;感想：被看见的租客&#34;&gt;&lt;/a&gt;&lt;strong&gt;感想：被看见的租客&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在上海工作多年，这是我&lt;strong&gt;第一次作为租客感受到如此切实的尊重&lt;/strong&gt;，说实话，有点受宠若惊。&lt;/p&gt;
+&lt;p&gt;以往租住合租公寓或二房东的房子，我们既无时间也无渠道接触居委会（疫情😷封控时期除外）。这次能直接反馈问题，并看到问题被认真对待、推动解决，感觉&lt;strong&gt;非常棒✨&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;至少在这一刻，我想感谢公租房制度。它让我第一次在大城市里，真切地体会到自己是一个&lt;strong&gt;手握议事权利、能参与社区事务的公民🗳️&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果租房环境都能有这样一套机制来保障租客的合法权益，那么，&lt;strong&gt;一直租房下去，又有何不可呢？&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="公租房" />
+        <category term="生活" />
+        <updated>2025-07-05T22:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/they-are-not-paying-me-enough-to-care/</id>
+        <title>“They’re not paying me enough to care”（转载）.md</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/they-are-not-paying-me-enough-to-care/"/>
+        <content type="html">&lt;b&gt;
+This is an understandable sentiment. As jobs push people to be automatons and often offer little in the way of respect, it’s easy to quietly quit.
+
+&lt;p&gt;But perhaps, they’re not paying you enough to &lt;em&gt;not&lt;/em&gt; care.&lt;/p&gt;
+&lt;p&gt;Spending your days, day after day, not caring is a tragedy.&lt;/p&gt;
+&lt;p&gt;They might not deserve your focus and effort, but you do.&lt;br&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DeepL 翻译：&lt;br&gt;“他们付给我的钱不够我关心”&lt;/p&gt;
+&lt;p&gt;这种情绪是可以理解的。因为工作会把人逼得像机器一样，而且往往不会给人什么尊重，所以很容易悄悄辞职。&lt;/p&gt;
+&lt;p&gt;但也许，他们付给你的薪水不足以让你不在乎。&lt;/p&gt;
+&lt;p&gt;日复一日地漠不关心是一种悲剧。&lt;/p&gt;
+&lt;p&gt;他们可能不值得你关注和努力，但你值得。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文来自于博友 &lt;a href=&#34;http://luozx.org/&#34;&gt;Luozx&lt;/a&gt; 在本博客《&lt;a href=&#34;https://blog.gadore.top/archives/work-isnt-life&#34;&gt;有些工作不值得投入太多&lt;/a&gt;》文章中的评论推荐，转载自 seths.blog ，&lt;a href=&#34;https://seths.blog/2025/05/theyre-not-paying-me-enough-to-care/&#34;&gt;原文链接&lt;/a&gt;。&lt;/p&gt;
+</content>
+        <updated>2025-07-05T20:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/first-pay-user/</id>
+        <title>庆祝我的 App 唯记 迎来第一位付费用户 🎉🎉🎉</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/first-pay-user/"/>
+        <content type="html">&lt;p&gt;最近我开发的 iOS 平台的 App 【&lt;a href=&#34;https://apps.apple.com/app/id6502951931&#34;&gt;唯记&lt;/a&gt;】 迎来了第一位付费用户！！！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/193961749781114.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/193961749781114.jpg&#34; alt=&#34;193961749781114.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;撒花 撒花 🎉🎉🎉&lt;/p&gt;
+&lt;h2 id=&#34;我本来都失去希望了&#34;&gt;&lt;a href=&#34;#我本来都失去希望了&#34; class=&#34;headerlink&#34; title=&#34;我本来都失去希望了&#34;&gt;&lt;/a&gt;我本来都失去希望了&lt;/h2&gt;&lt;p&gt;在一个月以前，我认为 App 已经可以进行小批量公测了，就在 v2ex 上放了一个限免的链接活动，看大家对这个 App 的评价如何。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_12.41.19.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_12.41.19.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;部分评论区截图&lt;/p&gt;
+&lt;p&gt;没想到一半的人对 App 的评价就是：界面丑、UI 简陋，还让我借鉴那些 UI 点缀很丰富的 App，甚至有人让我去淘宝花钱买一套设计图重新开发。&lt;/p&gt;
+&lt;p&gt;我整个 App 的开发初衷，都只是源自一个显示完善信息的小组件，我都没想让用户打开界面啊哈哈哈：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2015.41.57.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2015.41.57.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然了，有些人是真心给的建议，不是口嗨，我也看了下他让 AI 帮忙生成的设计图，某种意义上来说，也很好看，比我的界面要丰富。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_13.05.24.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_13.05.24.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网友 AI 生成的设计图&lt;/p&gt;
+&lt;p&gt;可我也真心不觉得我的界面很丑啊（T_T）：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/333.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/333.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只是有点儿简陋罢了&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_14.10.19.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-13_14.10.19.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;海王？好的！彩蛋？有的～&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-06-15_16.07.10.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-06-15_16.07.10.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;求这个海王到底什么性取向&lt;/p&gt;
+&lt;p&gt;动画彩蛋也被我采纳了，至于点击哪里才会触发，大家自己去摸索吧～&lt;/p&gt;
+&lt;h2 id=&#34;感谢社区，但……&#34;&gt;&lt;a href=&#34;#感谢社区，但……&#34; class=&#34;headerlink&#34; title=&#34;感谢社区，但……&#34;&gt;&lt;/a&gt;感谢社区，但……&lt;/h2&gt;&lt;p&gt;我也是 v2ex 社区资深潜水员，唯记的英文正式名称就是 V2RMB，取自：Way to Remember 的缩写，借鉴的 v2ex 。&lt;/p&gt;
+&lt;p&gt;我很感激社区这些人能下载我的 App，同时还给我建议，让我知道我什么地方做得不足。&lt;/p&gt;
+&lt;h2 id=&#34;为什么开发【唯记】&#34;&gt;&lt;a href=&#34;#为什么开发【唯记】&#34; class=&#34;headerlink&#34; title=&#34;为什么开发【唯记】&#34;&gt;&lt;/a&gt;为什么开发【唯记】&lt;/h2&gt;&lt;h3 id=&#34;我的需求&#34;&gt;&lt;a href=&#34;#我的需求&#34; class=&#34;headerlink&#34; title=&#34;我的需求&#34;&gt;&lt;/a&gt;我的需求&lt;/h3&gt;&lt;p&gt;开发当前 App 的初衷（2023年），就只是想要一眼浏览&lt;strong&gt;所有重要信息的应用&amp;#x2F;小组件&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这个应用体积最好还特别小。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202025-06-15%2016.17.54.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202025-06-15%2016.17.54.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当前唯记的体积是 10MB&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在保持超小体积的同时，唯记也积极去适应 &lt;strong&gt;AI 🤖&lt;/strong&gt; 爆发的时代。当前 MCP 的概念可谓是火爆，我已经适配了 &lt;strong&gt;Siri Kit&lt;/strong&gt;，你可以在苹果的捷径（shortcuts）App 里调用，我提供了文本和 Json 两种数据返回格式，希望你能借助它玩出更多花样👋👋&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2016.37.21-sbzk.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-06-15%20at%2016.37.21-sbzk.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;捷径运行示例&lt;/p&gt;
+&lt;h3 id=&#34;当前与唯记相似功能的应用（仅列举部分前辈作品）&#34;&gt;&lt;a href=&#34;#当前与唯记相似功能的应用（仅列举部分前辈作品）&#34; class=&#34;headerlink&#34; title=&#34;当前与唯记相似功能的应用（仅列举部分前辈作品）&#34;&gt;&lt;/a&gt;当前与唯记相似功能的应用（仅列举部分前辈作品）&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;倒数日&lt;/strong&gt;：老牌倒数日应用，用户量庞大，功能全面，界面 UI 较老。UI 小组件不够完善，但它免费呀！还是全平台！&lt;/p&gt;
+&lt;p&gt;**Countdown+**：界面设计优秀，设计为导向的 App。如果你就是对审美有强烈的需求，为它付费就对了（这款 App 也是我从评论区看到的）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Happy Days&lt;/strong&gt;：设计和功能的平衡，覆盖了大部分用户的需求，但付费价格过高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;滴答清单&lt;/strong&gt;：今年刚刚支持倒数日，免费，功能还在完善。&lt;/p&gt;
+&lt;p&gt;所以，大家&lt;strong&gt;如果看不惯唯记，那完全没关系，不要下载就好了&lt;/strong&gt;，App Store 里有更多拥有优秀设计的产品，我这里只提及了部分，如果还有更好的，欢迎大家在评论区沟通。&lt;/p&gt;
+&lt;h2 id=&#34;我的潜在用户群体&#34;&gt;&lt;a href=&#34;#我的潜在用户群体&#34; class=&#34;headerlink&#34; title=&#34;我的潜在用户群体&#34;&gt;&lt;/a&gt;我的潜在用户群体&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;当我的 App 有上百上千的付费的时候，（哽咽）你们要知道这是为你们开发的……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果有那么一群人他们：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;对生日、纪念日预期管理非常注重，一定要让他知道最近有哪些人要生日了，要为他们做好准备（礼物、聚会、寄送卡片）！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;有较多的关系较好的朋友、或者家族较大，亲戚朋友很多，需要做批量管理，分组管理等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;原生党、小内存党、对简陋（简约）比较偏爱的人（我就是这类人，搞什么花里胡哨的，原生就很好看啊喂）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不喜欢大而全的应用，像淘宝、美团那种打开之后几乎什么都可以做的应用：哒咩！！！只想要独立的小应用，聚焦一个功能点&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这肯定不会是一个庞大的群体，但既然这个世界上有那么多人，总会有跟我一样需求的用户吧。&lt;/p&gt;
+&lt;p&gt;如果你看到这里，并且真的发现唯记适合你，那去下载吧，唯记就是为你做的～&lt;/p&gt;
+&lt;h2 id=&#34;点击下载唯记&#34;&gt;&lt;a href=&#34;#点击下载唯记&#34; class=&#34;headerlink&#34; title=&#34;点击下载唯记&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://apps.apple.com/app/id6502951931&#34;&gt;点击下载唯记&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&#34;唯记-的未来开发计划&#34;&gt;&lt;a href=&#34;#唯记-的未来开发计划&#34; class=&#34;headerlink&#34; title=&#34;唯记 的未来开发计划&#34;&gt;&lt;/a&gt;唯记 的未来开发计划&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;从通讯录导入联系人生日（很实用的功能，计划内）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;支持生日当天自动发送祝福信息给相关人（已适配部分苹果 Siri 相关功能，具体实现效果看 iOS 的 AI 进展）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;最后的最后&#34;&gt;&lt;a href=&#34;#最后的最后&#34; class=&#34;headerlink&#34; title=&#34;最后的最后&#34;&gt;&lt;/a&gt;最后的最后&lt;/h2&gt;&lt;p&gt;第一位付费用户，如果这篇文章有幸能被你看到，我要感谢你，❤️感谢你告诉我这个世界上真的还有一个人，跟我有类似的需求。你如果联系我的话，我会奉上 App 兑换码 2 枚，感谢你的肯定～&lt;/p&gt;
+&lt;p&gt;关注该博客的朋友们，如果你对唯记也有兴趣，认可这种简单功能简约开发的理念，可以去下载呀，下载过的朋友，截图邮件我，我会同样奉上兑换码 1 枚，当然，要是能好评一下就更好了✨✨。&lt;/p&gt;
+&lt;p&gt;当然了，兑换码数量有限哦～&lt;/p&gt;
+</content>
+        <category term="独立开发" />
+        <category term="iOS" />
+        <category term="Swift" />
+        <updated>2025-06-15T17:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/iphone-auto-alarm/</id>
+        <title>都 2025 年了，用 iPhone 还不会设置节假日闹钟的进来</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/iphone-auto-alarm/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这不上周五一假期前补班， iPhone 没有办法设置&lt;strong&gt;节假日补班闹钟&lt;/strong&gt;导致迟到的事情又又又一次上了微博的热搜，我也纳闷了，iPhone 闹钟虽然自身是不支持这一功能，但都这么多年了，早就有非常简单的方式可以弥补这一点的。但看微博上大家叫的那么欢，评论区大家哭的那么惨，似乎还是有超级多的人不知道该如何在 iPhone 上实现&lt;strong&gt;节假日闹钟&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;与其天天咒骂，忍受苹果不做本地化的痛，然后忍受迟到、忍受休息日闹钟早早地把你叫醒。你为啥不花十分钟设置一下呢？设置完之后，你的 iPhone 等于拥有了节假日闹钟。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文提供两种方式来实现这一功能，设置完成后，你的 iPhone 可以实现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;工作日自动设置起床闹钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;周末自动关闭起床闹钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;节假日期间自动关闭闹钟（哪怕是非周末时间），给你一个宁静的睡眠&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;补班期间自动打开闹钟（哪怕是周末），防止你因为迟到而引发严重后果&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;文章主要介绍第一种较为简单的方法，至于第二种进阶方法（见文末链接），等你掌握了第一种方法，自然可以去研究。&lt;/p&gt;
+&lt;h2 id=&#34;一、准备工作&#34;&gt;&lt;a href=&#34;#一、准备工作&#34; class=&#34;headerlink&#34; title=&#34;一、准备工作&#34;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;h3 id=&#34;1、设置你的闹钟，确定闹钟类型&#34;&gt;&lt;a href=&#34;#1、设置你的闹钟，确定闹钟类型&#34; class=&#34;headerlink&#34; title=&#34;1、设置你的闹钟，确定闹钟类型&#34;&gt;&lt;/a&gt;1、设置你的闹钟，确定闹钟类型&lt;/h3&gt;&lt;p&gt;众所周知，苹果的闹钟有两种，一种是普通闹钟，另一个也是普通闹钟（不是）&lt;/p&gt;
+&lt;p&gt;而另一种，是集成在苹果健康里边的“睡眠闹钟”，你如果要设置这个睡眠闹钟，还要专门下载一个名叫“健康”的 App。&lt;/p&gt;
+&lt;p&gt;如果你使用的是第一种普通闹钟，那接下来的操作，你就选择“&lt;strong&gt;一般闹钟&lt;/strong&gt;”；&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/alarm.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/alarm.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 “睡眠｜起床闹钟”为睡眠闹钟， 下方的“其他闹钟”为一般闹钟】&lt;/p&gt;
+&lt;p&gt;如果你的闹钟是在苹果的&lt;strong&gt;健康 App&lt;/strong&gt; 里边设置的，那接下来的操作，你就选择“&lt;strong&gt;睡眠闹钟&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;！如果你使用的是&lt;strong&gt;睡眠闹钟&lt;/strong&gt;，为了能够在调休日也能正常使用闹钟，请务必在设置闹钟的时候设置为&lt;strong&gt;“每天“都启用&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;二、安装-“休息日”&#34;&gt;&lt;a href=&#34;#二、安装-“休息日”&#34; class=&#34;headerlink&#34; title=&#34;二、安装 “休息日”&#34;&gt;&lt;/a&gt;二、安装 “休息日”&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/app/id6501973975&#34;&gt;点击安装休息日&lt;/a&gt;，安装后打开，按照 App 或者文章下方教程设置。&lt;/p&gt;
+&lt;h4 id=&#34;2-1-选择节假日模板&#34;&gt;&lt;a href=&#34;#2-1-选择节假日模板&#34; class=&#34;headerlink&#34; title=&#34;2.1 选择节假日模板&#34;&gt;&lt;/a&gt;2.1 选择节假日模板&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/restDayApp.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/restDayApp.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 休息日 选择节假日模板】&lt;/p&gt;
+&lt;h4 id=&#34;2-2-添加快捷指令&#34;&gt;&lt;a href=&#34;#2-2-添加快捷指令&#34; class=&#34;headerlink&#34; title=&#34;2.2 添加快捷指令&#34;&gt;&lt;/a&gt;2.2 添加快捷指令&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/shutcuts.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/shutcuts.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【图片 休息日 】&lt;/p&gt;
+&lt;p&gt;根据本文上方的说明，选择你当前使用的闹钟方式。&lt;/p&gt;
+&lt;p&gt;在弹出的界面点击底部的“添加快捷指令”&lt;/p&gt;
+&lt;h2 id=&#34;三、设置自动化任务（最后一步，小学生都会）&#34;&gt;&lt;a href=&#34;#三、设置自动化任务（最后一步，小学生都会）&#34; class=&#34;headerlink&#34; title=&#34;三、设置自动化任务（最后一步，小学生都会）&#34;&gt;&lt;/a&gt;三、设置自动化任务（最后一步，小学生都会）&lt;/h2&gt;&lt;h3 id=&#34;1、打开捷径，点击底部的“自动化”&#34;&gt;&lt;a href=&#34;#1、打开捷径，点击底部的“自动化”&#34; class=&#34;headerlink&#34; title=&#34;1、打开捷径，点击底部的“自动化”&#34;&gt;&lt;/a&gt;1、打开捷径，点击底部的“自动化”&lt;/h3&gt;&lt;h3 id=&#34;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34;&gt;&lt;a href=&#34;#2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34; class=&#34;headerlink&#34; title=&#34;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&#34;&gt;&lt;/a&gt;2、点击右上角的加号，选择特定时间，选择下午两点十分，在下方的重复，选【每天】，最下方选【立刻运行】，然后点击右上角的下一步&lt;/h3&gt;&lt;h3 id=&#34;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34;&gt;&lt;a href=&#34;#3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34; class=&#34;headerlink&#34; title=&#34;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&#34;&gt;&lt;/a&gt;3、在弹出的界面，我的快捷指令，选择刚刚添加的快捷指令&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/autoTask.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/autoTask.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;恭喜🎉🎉🎉！！！至此，设置就完成了，理论上你就拥有了一个完全自动化的节假日调休闹钟。&lt;/p&gt;
+&lt;h2 id=&#34;四、检查效果（非必须）&#34;&gt;&lt;a href=&#34;#四、检查效果（非必须）&#34; class=&#34;headerlink&#34; title=&#34;四、检查效果（非必须）&#34;&gt;&lt;/a&gt;四、检查效果（非必须）&lt;/h2&gt;&lt;p&gt;保险起见，如果你对自己的操作没有信心，而且你如果迟到之后，后果非常严重，那我建议你还是做一下测试，看下自己在上一步的操作是否起效&lt;/p&gt;
+&lt;h2 id=&#34;原理分析&#34;&gt;&lt;a href=&#34;#原理分析&#34; class=&#34;headerlink&#34; title=&#34;原理分析&#34;&gt;&lt;/a&gt;原理分析&lt;/h2&gt;&lt;p&gt;“休息日” App 提供了一个选项，判断明天是不是休息日&lt;/p&gt;
+&lt;h3 id=&#34;1、一般闹钟&#34;&gt;&lt;a href=&#34;#1、一般闹钟&#34; class=&#34;headerlink&#34; title=&#34;1、一般闹钟&#34;&gt;&lt;/a&gt;1、一般闹钟&lt;/h3&gt;&lt;p&gt;在一般闹钟模式，如果明天是休息日，他就帮你关掉起床闹钟，否则，他就帮你打开休息日。&lt;/p&gt;
+&lt;h3 id=&#34;1、睡眠闹钟&#34;&gt;&lt;a href=&#34;#1、睡眠闹钟&#34; class=&#34;headerlink&#34; title=&#34;1、睡眠闹钟&#34;&gt;&lt;/a&gt;1、睡眠闹钟&lt;/h3&gt;&lt;p&gt;在睡眠闹钟模式，因为睡眠闹钟不能直接设置关闭，但提供了跳过，跳过明天闹钟的效果跟关闭是一样的，所以也可以达到效果。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/logic-kafu.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/logic-kafu.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;当前方式的缺点&#34;&gt;&lt;a href=&#34;#当前方式的缺点&#34; class=&#34;headerlink&#34; title=&#34;当前方式的缺点&#34;&gt;&lt;/a&gt;当前方式的缺点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;需要安装 App&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每年需要打开 App 更新一次（可能）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;另一种方法&#34;&gt;&lt;a href=&#34;#另一种方法&#34; class=&#34;headerlink&#34; title=&#34;另一种方法&#34;&gt;&lt;/a&gt;另一种方法&lt;/h2&gt;&lt;p&gt;如果你已经掌握了第一种方式，而且对于第一种方式的缺点无法接受，那你可以试一下第二种方式：&lt;a href=&#34;https://www.icloud.com/shortcuts/5e3c34dcd642416a930bda9e6e959d19&#34;&gt;捷径路径&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;祝你好运～&lt;/p&gt;
+</content>
+        <category term="iPhone" />
+        <updated>2025-05-05T21:46:30.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/oldbili/</id>
+        <title>iOS 6 新的 B 站第三方客户端：OldBili</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/oldbili/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;这是关于玩转 iOS 老设备的第三篇文章了，我也没想到还有这么多为爱发电的开发者（可喜可贺），在为老款 iPhone 发力。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之前文章导航：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/archives/1690792964757/&#34;&gt;iPhone5 在 2023 年生存状况报告&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/archives/iphone5-watch-video-in-2024/&#34;&gt;iPhone 5 在 2024 年还能看视频吗？&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在写第二篇文章的时候，我就在想，可能很多人，都没有那么方便地通过我的文章来复刻一样的使用条件，毕竟为了刷个视频还得自己搭建 webdav，都 2025 年了……&lt;/p&gt;
+&lt;p&gt;然后最近刷 rss 的时候就发现了这个：&lt;a href=&#34;https://www.88ipa.com/application/39920.html&#34;&gt;OldBili&lt;/a&gt;（托管于 ios.ipa ）&lt;/p&gt;
+&lt;p&gt;开发者 B 站：&lt;a href=&#34;https://space.bilibili.com/651771871&#34;&gt;&lt;strong&gt;伦大来了&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;首页一览&#34;&gt;&lt;a href=&#34;#首页一览&#34; class=&#34;headerlink&#34; title=&#34;首页一览&#34;&gt;&lt;/a&gt;首页一览&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/1.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;播放视频&#34;&gt;&lt;a href=&#34;#播放视频&#34; class=&#34;headerlink&#34; title=&#34;播放视频&#34;&gt;&lt;/a&gt;播放视频&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用户界面&#34;&gt;&lt;a href=&#34;#用户界面&#34; class=&#34;headerlink&#34; title=&#34;用户界面&#34;&gt;&lt;/a&gt;用户界面&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/3.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;信息-设置&#34;&gt;&lt;a href=&#34;#信息-设置&#34; class=&#34;headerlink&#34; title=&#34;信息 &amp;amp;&amp;amp; 设置&#34;&gt;&lt;/a&gt;信息 &amp;amp;&amp;amp; 设置&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/4.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，开发者是完全使用 iOS 原生语言开发，设计规范符合 iOS 6 的拟物风，在 iOS 19 即将推出的此刻，1.5MB 的 B 站原生版本，感受到压力了吗，Apple？&lt;/p&gt;
+&lt;p&gt;现在终于可以打开 iPhone 5 直接刷 B 站啦～&lt;/p&gt;
+&lt;p&gt;对了，你的 iOS 6 设备需要越狱才能装。&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <updated>2025-04-05T22:48:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/swiftgg2025/</id>
+        <title>参与 SwiftGG 2025 有感</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/swiftgg2025/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2_3806631.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2_3806631.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;感谢 &lt;a href=&#34;https://megabits.xyz/&#34;&gt;&lt;strong&gt;Megabits&lt;/strong&gt;&lt;/a&gt; 大佬的 Basic Pass。&lt;/p&gt;
+&lt;p&gt;这是我第一次参加 SwiftGG 活动，上海天气也很舒适，这两天气温 14～27，直接进入初夏。&lt;/p&gt;
+&lt;p&gt;活动日期：2025 3&amp;#x2F;1 ～ 3&amp;#x2F;2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关注的人&#34;&gt;&lt;a href=&#34;#关注的人&#34; class=&#34;headerlink&#34; title=&#34;关注的人&#34;&gt;&lt;/a&gt;关注的人&lt;/h2&gt;&lt;h2 id=&#34;独立开发者-Megabits-（以下简称金鱼桑）&#34;&gt;&lt;a href=&#34;#独立开发者-Megabits-（以下简称金鱼桑）&#34; class=&#34;headerlink&#34; title=&#34;独立开发者 Megabits （以下简称金鱼桑）&#34;&gt;&lt;/a&gt;独立开发者 Megabits （以下简称金鱼桑）&lt;/h2&gt;&lt;p&gt;跟金鱼桑面对面聊了几个问题，整体看来：  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;作为知名的独立开发者，而且还是独自一人在日本上大学的独立开发者，金鱼桑形容自己是：贴地飞行的鸟，只要自己稍微放松，可能就糟糕了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;金鱼桑已经临近毕业了，毕业后可能并不会全职去做独立开发者（只是当前的节点，不知道后来会怎么发展），而是兼职、独立开发、外包等多线并行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/IMG_0025.JPG&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0025.JPG&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可能是长期关注的大佬第一次在线下见到，我感觉我并没有表现的很好，但他还是耐心解答了我的问题。&lt;/p&gt;
+&lt;p&gt;感谢金鱼桑。&lt;/p&gt;
+&lt;h2 id=&#34;Paul-Hudson-（Hacking-With-Swift-的创办者）&#34;&gt;&lt;a href=&#34;#Paul-Hudson-（Hacking-With-Swift-的创办者）&#34; class=&#34;headerlink&#34; title=&#34;Paul Hudson （Hacking With Swift 的创办者）&#34;&gt;&lt;/a&gt;Paul Hudson （Hacking With Swift 的创办者）&lt;/h2&gt;&lt;p&gt;在 Ai 大面积问世之前，想要学习 Swift 开发，要么去读苹果官方的开发文档（你看得懂就出鬼了），另一种方式就是去看各种第三方的开发教程网站，而在这其中，&lt;a href=&#34;https://www.hackingwithswift.com/&#34;&gt;&lt;strong&gt;Hacking With Swift&lt;/strong&gt;&lt;/a&gt; 是我接触过程中，更新最勤快、写法最简单易懂、教程最多的一个网站。在 Ai 问世前，我 60% 的 Swift 知识其实是从这里来的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/iShot_2025-03-03_14.08.33.png&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2025-03-03_14.08.33.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我之前特别不能理解，为什么大家看到那些商界大佬的时候，特别喜欢去跟这些大佬合作。&lt;/p&gt;
+&lt;p&gt;但当我看到 Paul 的时候，我那种被他点燃的持续开发的热情，趋使我也想要跟这位伟大的人合影。&lt;/p&gt;
+&lt;h2 id=&#34;所见的事&#34;&gt;&lt;a href=&#34;#所见的事&#34; class=&#34;headerlink&#34; title=&#34;所见的事&#34;&gt;&lt;/a&gt;所见的事&lt;/h2&gt;&lt;p&gt;现场除了主会场以外，也有很多的小摊位，来供各个独立开发者、团队、网站等来展示他们的作品。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2_4626925-hhip.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2_4626925-hhip.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/2_3562520.jpeg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2_3562520.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我见到了很多神奇的巧思，看到他们的 App 产品直呼：你怎么想到的？&lt;/p&gt;
+&lt;p&gt;比如基于开源 NeoDB 服务实例的类豆瓣客户端：&lt;a href=&#34;https://piecelet.app/&#34;&gt;&lt;strong&gt;Piecelet for NeoDB&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;，&lt;/strong&gt;是为 NeoDB 制作的第三方 iOS 客户，开发者是一位大三在读女生 &lt;a href=&#34;https://blog.citrons.cc/&#34;&gt;&lt;strong&gt;citron&lt;/strong&gt;&lt;/a&gt;，如果你了解长毛象（Mastodon），那你应该可以理解 NeoDB 的设计理念，更多细节访问： &lt;a href=&#34;https://about.neodb.social/doc/howto/&#34;&gt;&lt;strong&gt;https://about.neodb.social/doc/howto/&lt;/strong&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/upload/9ac63b463d5a00011393851d58a091.jpg&#34;&gt;&lt;img src=&#34;https://halo.gadore.top/upload/9ac63b463d5a00011393851d58a091.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然，也有一些的 App，开发出来之后我完全看不到任何巧思，各种：Ai 笔记、XX记、Note、剪藏夹。市面上还有这么多人在做笔记产品的炒冷饭（现场打眼一看就看到 4～5 个笔记类的应用）。&lt;/p&gt;
+&lt;h2 id=&#34;老鸡汤了&#34;&gt;&lt;a href=&#34;#老鸡汤了&#34; class=&#34;headerlink&#34; title=&#34;老鸡汤了&#34;&gt;&lt;/a&gt;老鸡汤了&lt;/h2&gt;&lt;p&gt;这次大会参加下来，收获颇丰。&lt;/p&gt;
+&lt;p&gt;跟热爱的偶像合了影。&lt;/p&gt;
+&lt;p&gt;更重要的是，我知道以后工作和生活平衡方式了，整个 2024 年都是生活和工作混沌的一年，但 新的一年不想这样了。&lt;/p&gt;
+&lt;p&gt;但我猛的一想，不对啊，建这个博客的时候，我就写下了我的宗旨：&lt;strong&gt;Fun to coding, fun to life.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;突然又想起老罗一句老鸡汤：&lt;strong&gt;不要因为走得太远，就不知道为什么出发&lt;/strong&gt;。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <updated>2025-03-03T12:59:29.000Z</updated>
+    </entry>
+</feed>

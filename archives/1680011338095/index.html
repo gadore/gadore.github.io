@@ -1,0 +1,548 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>Komga，群晖缺失的漫画管理应用被我找回来了！ | 千里之豪的格物垛</title><meta name="keywords" content="程序员,网络"><meta name="author" content="千里之豪"><meta name="copyright" content="千里之豪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="Komga，群晖缺失的漫画管理应用被我找回来了！"><meta name="application-name" content="Komga，群晖缺失的漫画管理应用被我找回来了！"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="Komga，群晖缺失的漫画管理应用被我找回来了！"><meta property="og:url" content="https://blog.gadore.top/archives/1680011338095/index.html"><meta property="og:site_name" content="千里之豪的格物垛"><meta property="og:description" content="少数派首发 声明：就在我起文之时，网上已不乏各种关于 Komga 的使用教程，各有各的偏向风格，如果细心找的话，你甚至可以发现有视频教你在 Nas 上部署 Komga 的操作流程，但我还是打算从头向大家介绍一下这个漫画托管利器，因为它切切实实地解决了我看漫画过程中遇到的问题。所以这不会是一个面面俱到"><meta property="og:locale" content="zh"><meta property="og:image" content="https://blog.gadore.top/upload/iShot_2023-03-30_22.13.04%20(1).webp"><meta property="article:author" content="千里之豪"><meta property="article:tag" content="千里之豪"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://blog.gadore.top/upload/iShot_2023-03-30_22.13.04%20(1).webp"><meta name="description" content="少数派首发 声明：就在我起文之时，网上已不乏各种关于 Komga 的使用教程，各有各的偏向风格，如果细心找的话，你甚至可以发现有视频教你在 Nas 上部署 Komga 的操作流程，但我还是打算从头向大家介绍一下这个漫画托管利器，因为它切切实实地解决了我看漫画过程中遇到的问题。所以这不会是一个面面俱到"><link rel="shortcut icon" href="/upload/favicon.ico"><link rel="canonical" href="https://blog.gadore.top/archives/1680011338095/"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//static.cloudflareinsights.com"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@6.1.6/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;028cead3c35d4975b599691ba472a8af&quot;}"></script><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: undefined,
+  diytitle: undefined,
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: 'https://twikoo.gadore.top',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: undefined,
+  authorStatus: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 千里之豪","link":"链接: ","source":"来源: 千里之豪的格物垛","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.2.0/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.2.0/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '千里之豪的格物垛',
+  title: 'Komga，群晖缺失的漫画管理应用被我找回来了！',
+  postAI: '',
+  pageFillDescription: 'Komga 是什么, Komga 可以为我们带来什么, 1、简单但直观的漫画分类展示, 2、云端同步阅读进度, 3、便利的内容分发平台, 客户端：离线阅读利器, Komga 不能为我带来什么, 我使用 Komga 的原因, Komga 的其他用途, 结语少数派首发声明就在我起文之时网上已不乏各种关于的使用教程各有各的偏向风格如果细心找的话你甚至可以发现有视频教你在上部署的操作流程但我还是打算从头向大家介绍一下这个漫画托管利器因为它切切实实地解决了我看漫画过程中遇到的问题所以这不会是一个面面俱到的教程文更偏向于一篇安利文本文仅适用于以下场景你想看的漫画国内在线平台都没有你找到一个全是图片的漫画压缩包但解压后用预览系统相册等应用的幻灯片式观看体验不佳你当前手里有一大堆离线漫画资源压缩包但苦于整理过于繁琐你只能把他们丢在一起想看的时候随便打开一个你有很多的书籍但你把他们上传到了中的图书中在非苹果生态的设备上无法阅读这些书籍资料你在不同平台有不同的离线漫画阅读器但每次资源导入过程费时又费力如果以上问题曾困扰过你那么恭喜你这篇文章可能会救你于水火官网是什么是上的一款免费且开源的漫画库资源托管服务开发者是它基于开发所以你可以在几乎任何平台上运行它和其他类似平台用以托管你的离线漫画资源它支持很多漫画文件格式只支持图片等它可以根据你对资源的文件夹分类做自动识别和整理从而还你一个干净整洁的线上漫画网站它自带全平台端可支持全平台的阅读记录同步它还支持协议这意味着你可以使用官方或第三方适配客户端实现更适合自己的阅读体验哦它有镜像你可以很方便地在中部署它可以为我们带来什么作者提供的示例网站简单但直观的漫画分类展示的分类层级较为扁平暂时只有两级分为库层和文件夹层库作为文件大类放置在左侧菜单栏你可以很方便地访问和设置当前漫画库简单理解就是你的漫画书可以根据书籍类型分成不同文件夹来作为漫画库日本漫画欧美漫画等每种类型下可以分别创建不同的文件夹来放置漫画文件比如鬼灭之刃的漫画放在同一个文件夹下那么系统扫描识别的时候就会把该文件夹下的元数据都归类到鬼灭之刃系列的漫画书中相信不少人在使用之前的漫画库就已经是这么整理甚至有比这更加细致的分类层级了你当然也可以新建库一旦你创建漫画库并关联你的漫画资源后就开始在后台扫描和分析元数据然后在扫描结束后刷新网页的漫画封面和漫画信息云端同步阅读进度打开后自动跳转到了上次阅读进度页借助的网页端你可以在任何支持打开网页的设备上打开的网站并选择你想观看的漫画后台会自动记住你的上次阅读进度省去了忘记上次看到哪了只好重头看一遍的窘境也支持诸如推荐阅读列表收藏等最近阅读分类方便你把最想看的书放在最显眼的位置减少翻找漫画时间说到翻找它当然也支持全局图书关键字查找啦便利的内容分发平台有了这个服务对你的漫画资源进行托管后你阅读漫画的方式就便利了许多我仍旧记得在之前的时候我是把漫画一股脑塞到的里边然后每次看漫画只能用后来随着漫画资源越来越多的存储空间也捉襟见肘了不得不手动处理文件的流转异常痛苦而且在不同的平台各种离线阅读给我的体验也不都尽如人意平台应用名称优点缺点推荐指数没有广告界面设计合理对触屏优化较好有漫画库的管理和优化逻辑是我找到的上最好的离线漫画资源管理漫画库最高只能扫描本漫画超过这个数量的漫画库需要付费才能继续扫描切电脑的便携性不如平板和手机除非你手边正好有没有广告使用时间久了会卡顿猜测是对系列的优化不到位也没有任何漫画库的管理功能单纯的漫画文件阅读器没有广告我愿称之为上最优秀的漫画阅读支持漫画的导入和简单的管理阅读体验较好需要付费但偶尔会限免免费有广告界面较老阅读体验还行这肯定不是安卓上最好的离线漫画阅读器但我在上暂时只找到这个体验还过得去的商店的的和的的我自然不敢说以上应用都已经是这四个常用平台的最优解了但至少是我在一定时间的使用后最终真实使用感受还不错的这些应用在一定程度上也确实满足了我观看离线漫画的需求当我的漫画库的漫画资源不是很繁杂时使用以上应用也能给我带来不错的观看体验不过单体应用有他们不可忽视的缺陷例如界面操作逻辑不统一阅读进度不能同步阅读资源需要自己做资源流转等现在借助平台我终于不用再被这些问题困扰了可喜可贺除了同步阅读进度以外的网页端也可以一键下载资源到本地或者删除线上平台的漫画书可以协助你在任何地方管理漫画资源当你设置了外网访问路径的话可以说非常舒适了客户端离线阅读利器虽说网页端非常方便你随时随地打开但它也有一些不方便的地方你用久了就知道了比如如果你不知道怎么折腾公网服务器或外网端口映射那么当你并未与处于同一个内网时那你就没办法访问到它了简单理解就是出门就用不了即使你知道怎么解决外网访问问题但本身孱弱的网络带宽可能也不能给你带来良好的阅读体验可能每页漫画加载时间都会很长土豪可以忽略基于上一条你更不要奢望出行时高铁和飞机上的网络环境了浪费了宝贵的流量根据不同的画面质量每本漫画可能消耗流量不等土豪可以忽略浏览器沉浸性较差不能提供良好的阅读体验等客户端正是为了解决以上问题而被开发出来的正如我前文所提到的由于支持协议所以它允许用户根据自己的偏好选择自己最喜欢的客户端我在这里也推荐两款如果有其它更好用的客户端也欢迎在评论区讨论安卓端支持中文这是一款遵守安卓协议的官方推荐的客户端没有广告界面非常简洁但支持功能很全当前我只用到了漫画源的添加漫画书的在线观看漫画下载漫画离线观看这些功能端暂不支持中文这是一款原生开发的端的同样没有广告也支持漫画源的添加和在线或离线观看功能不能为我带来什么部署了之后如果你没有任何漫画资源那你仍旧没有任何漫画书可看如果你希望找到的是一个免费为你提供无穷无尽漫画资源的那你可能完全不需要漫画快看漫画都是你更好的选择从我的角度讲就是一个漫画界的你懂的所以本篇文章也不会向读者传递任何漫画资源的搜索和下载网站相关的信息请自行思考你里的资源是哪里来的我使用的原因我接触的契机是当我购买我的第一台后影视资源有帮我整理和搜刮信息拍摄的照片和视频也有对应的服务帮助我托管音乐文件有帮我托管在线音乐平台它甚至支持歌词自动匹配里的容器唯独我的漫画资源没有一个比较好的服务来进行整理和托管这让每次手动上传下载和管理原始文件的我像个原始人所以的出现对我而言简直就是久旱逢甘霖了的其他用途之前碰到写的好的文章普遍的保存方式是使用等浏览器剪藏工具剪藏到自己的收藏夹但我发现有些网站和文章的图片使用的文章初始的图片地址这就导致一旦最初的图片挂掉后你的剪藏内容中的图片也会失效又或者你所使用的平台工具可以把图片上传到他们自己的服务器这样你就认为你的文章安全了吗我经历了太多平台为了防止用户白嫖他们的云存储空间作为免费图床印象简书等商业上没错理解尊重都给图片加了二次获取验证让这些图片只有在他们自己平台上可能正常显示无疑让你在文章迁移的时候犯难而且有些文章作者在发出来的时候会非常注重文章的排版功能但经过剪藏的文章它的原始排版布局有一定几率会被剪藏工具所破坏这就给二次阅读时候的你一个非常膈应的感觉唉真正靠谱的永远只有我们自己文章的格式备份可以很好地保留文章原始排版和图片信息也会有一些格式的书籍会放在里边进行托管因为支持对文件的托管和读取所以有很多我觉得写的很棒的文章我也更倾向于转成文档后一起丢到中这样可以最大程度还原文章的排版也一定程度避免了网站后期运维不善导致图片资源丢失的问题比如网站所用图床挂了毕竟数据无价嘛结语你还有更好的自托管漫画平台推荐吗如果没有的话还不赶紧去部署呀什么怎么部署鉴于本篇文章字数已经过长如果大家呼声很高的话我就再单独写一篇文章详细介绍如果部署和如何设置手机端好了可以参考另一个博客的这篇文章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-12-14 15:15:59',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="千里之豪的格物垛" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/upload/avatar.webp"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">千里之豪的格物垛</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><span> 关于</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/equipment/"><span> 设备</span></a></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="Random Post" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="Console" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165549.webp" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165549.webp"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165554.webp" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165554.webp"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">Interaction</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">Interests</div><span class="author-content-item-title">Find your area of interest</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AI/" style="font-size: 1.05rem;">AI<sup>1</sup></a><a href="/tags/LineageOS/" style="font-size: 1.05rem;">LineageOS<sup>1</sup></a><a href="/tags/NAS/" style="font-size: 1.05rem;">NAS<sup>6</sup></a><a href="/tags/P2SC/" style="font-size: 1.05rem;">P2SC<sup>1</sup></a><a href="/tags/PCB/" style="font-size: 1.05rem;">PCB<sup>1</sup></a><a href="/tags/Pixel-5/" style="font-size: 1.05rem;">Pixel 5<sup>1</sup></a><a href="/tags/Swift/" style="font-size: 1.05rem;">Swift<sup>1</sup></a><a href="/tags/SwiftUI/" style="font-size: 1.05rem;">SwiftUI<sup>1</sup></a><a href="/tags/iOS/" style="font-size: 1.05rem;">iOS<sup>2</sup></a><a href="/tags/iPhone/" style="font-size: 1.05rem;">iPhone<sup>1</sup></a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.05rem;">产品<sup>1</sup></a><a href="/tags/%E5%83%8F%E7%B4%A0%E9%A3%8E/" style="font-size: 1.05rem;">像素风<sup>2</sup></a><a href="/tags/%E5%85%AC%E7%A7%9F%E6%88%BF/" style="font-size: 1.05rem;">公租房<sup>1</sup></a><a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 1.05rem;">刷机<sup>1</sup></a><a href="/tags/%E5%8A%A8%E6%BC%AB/" style="font-size: 1.05rem;">动漫<sup>2</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.05rem;">博客<sup>1</sup></a><a href="/tags/%E5%98%89%E7%AB%8B%E5%88%9B/" style="font-size: 1.05rem;">嘉立创<sup>1</sup></a><a href="/tags/%E5%A2%A8%E6%B0%B4%E5%B1%8F/" style="font-size: 1.05rem;">墨水屏<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 1.05rem;">安全<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF-10-NFC/" style="font-size: 1.05rem;">小米手环 10 NFC<sup>1</sup></a><a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 1.05rem;">手机<sup>9</sup></a><a href="/tags/%E6%8B%93%E7%AB%B9/" style="font-size: 1.05rem;">拓竹<sup>1</sup></a><a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 1.05rem;">旅行<sup>3</sup></a><a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 1.05rem;">日本<sup>3</sup></a><a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" style="font-size: 1.05rem;">树莓派<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.05rem;">游戏<sup>1</sup></a><a href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">独立开发<sup>2</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.05rem;">生活<sup>2</sup></a><a href="/tags/%E7%9B%B8%E5%86%8C/" style="font-size: 1.05rem;">相册<sup>1</sup></a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" style="font-size: 1.05rem;">程序员<sup>21</sup></a><a href="/tags/%E7%BA%A2%E7%B1%B3-K-Pad/" style="font-size: 1.05rem;">红米 K Pad<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.05rem;">网络<sup>8</sup></a><a href="/tags/%E8%85%95%E8%A1%A8/" style="font-size: 1.05rem;">腕表<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>Articles</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/12/"><span class="card-archive-list-date">December 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">August 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/07/"><span class="card-archive-list-date">July 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/06/"><span class="card-archive-list-date">June 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">May 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">April 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="Toggle Display Mode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="Toggle Sidebar"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="Toggle"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/" itemprop="url">明明白白玩NAS</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>程序员</span></a><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>网络</span></a></span></div></div><h1 class="post-title" itemprop="name headline">Komga，群晖缺失的漫画管理应用被我找回来了！</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-03-30T20:28:38.000Z" title="发表于 2023-03-30 20:28:38">2023-03-30</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-12-14T15:15:59.673Z" title="更新于 2025-12-14 15:15:59">2025-12-14</time></span></div><div class="meta-secondline"></div></div></div><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/upload/iShot_2023-03-30_22.13.04%20(1).webp"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://blog.gadore.top/archives/1680011338095/"><header><a class="post-meta-categories" href="/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/" itemprop="url">明明白白玩NAS</a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" tabindex="-1" itemprop="url">程序员</a><a href="/tags/%E7%BD%91%E7%BB%9C/" tabindex="-1" itemprop="url">网络</a><h1 id="CrawlerTitle" itemprop="name headline">Komga，群晖缺失的漫画管理应用被我找回来了！</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">千里之豪</span><time itemprop="dateCreated datePublished" datetime="2023-03-30T20:28:38.000Z" title="发表于 2023-03-30 20:28:38">2023-03-30</time><time itemprop="dateCreated datePublished" datetime="2025-12-14T15:15:59.673Z" title="更新于 2025-12-14 15:15:59">2025-12-14</time></header><p><a target="_blank" rel="noopener" href="https://sspai.com/post/79100">少数派首发</a></p>
+<p>声明：就在我起文之时，网上已不乏各种关于 Komga 的使用教程，各有各的偏向风格，如果细心找的话，你甚至可以发现有视频教你在 Nas 上部署 Komga 的操作流程，但我还是打算从头向大家介绍一下这个漫画托管利器，因为它切切实实地解决了我看漫画过程中遇到的问题。所以这不会是一个面面俱到的教程文，更偏向于一篇安利文。</p>
+<p>本文仅适用于以下场景：</p>
+<ul>
+<li><p>你想看的漫画国内在线平台都没有，你找到一个全是图片的漫画压缩包（ zip、rar ），但解压后用预览、系统相册等应用的幻灯片式观看体验不佳</p>
+</li>
+<li><p>你当前手里有一大堆离线漫画资源（压缩包），但苦于整理过于繁琐，你只能把他们丢｛在一起，想看的时候随便打开一个</p>
+</li>
+<li><p>你有很多 PDF 的书籍，但你把他们上传到了iPad中的 图书 App 中，在非苹果生态的设备上无法阅读这些书籍资料</p>
+</li>
+<li><p>你在不同平台有不同的离线漫画阅读器，但每次资源导入过程费时又费力</p>
+</li>
+</ul>
+<p>如果以上问题曾困扰过你，那么恭喜你，这篇文章可能会救你于水火。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_20.25.48.webp" alt="iShot_2023-03-30_20.25.48.webp">Komga 官网</p>
+<h2 id="Komga-是什么"><a href="#Komga-是什么" class="headerlink" title="Komga 是什么"></a>Komga 是什么</h2><p><a target="_blank" rel="noopener" href="https://komga.org/">Komga</a> 是 github 上的一款免费且开源的漫画库资源托管服务，开发者是 <a target="_blank" rel="noopener" href="https://github.com/gotson">gotson</a> 。</p>
+<ul>
+<li><p>它基于Java 开发，所以你可以在几乎任何平台上运行它（ Windows、MacOS、Linux、Nas 和其他类似平台），用以托管你的离线漫画资源</p>
+</li>
+<li><p>它支持很多漫画文件格式：CBZ、CBR、ZIP、RAR、EPUB（只支持图片）、PDF 等</p>
+</li>
+<li><p>它可以根据你对资源的文件夹分类做自动识别和整理，从而还你一个干净、整洁的线上漫画网站</p>
+</li>
+<li><p>它自带全平台 Web 端，可支持全平台的阅读记录同步</p>
+</li>
+<li><p>它还支持 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Open_Publication_Distribution_System">OPDS</a> 协议，这意味着你可以使用官方或第三方适配客户端实现更适合自己的阅读体验</p>
+</li>
+<li><p>哦，它有 <a target="_blank" rel="noopener" href="https://komga.org/installation/docker.html#registries">docker</a> 镜像，你可以很方便地在 docker 中部署它</p>
+</li>
+</ul>
+<h2 id="Komga-可以为我们带来什么"><a href="#Komga-可以为我们带来什么" class="headerlink" title="Komga 可以为我们带来什么"></a>Komga 可以为我们带来什么</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_20.27.35.webp" alt="iShot_2023-03-30_20.27.35.webp">作者提供的示例网站</p>
+<h3 id="1、简单但直观的漫画分类展示"><a href="#1、简单但直观的漫画分类展示" class="headerlink" title="1、简单但直观的漫画分类展示"></a>1、简单但直观的漫画分类展示</h3><p>Komga 的分类层级较为扁平，暂时只有两级：分为库层（ Library ）和文件夹层（ Folder ）。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_20.31.29.webp" alt="iShot_2023-03-30_20.31.29.webp">库，作为文件大类，放置在左侧菜单栏，你可以很方便地访问和设置当前漫画库</p>
+<p>简单理解就是你的漫画书可以根据书籍类型分成不同文件夹来作为漫画库（日本漫画、欧美漫画等），每种类型下可以分别创建不同的文件夹来放置漫画文件，比如鬼灭之刃的漫画放在同一个文件夹下，那么系统扫描识别的时候就会把该文件夹下的元数据都归类到鬼灭之刃系列的漫画书中。相信不少人在使用Komga之前的漫画库就已经是这么整理甚至有比这更加细致的分类层级了。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_20.32.22.webp" alt="iShot_2023-03-30_20.32.22.webp">你当然也可以新建库</p>
+<p>一旦你创建漫画库并关联你的漫画资源后，Komga就开始在后台扫描和分析元数据，然后在扫描结束后刷新网页的漫画封面和漫画信息。</p>
+<h3 id="2、云端同步阅读进度"><a href="#2、云端同步阅读进度" class="headerlink" title="2、云端同步阅读进度"></a>2、云端同步阅读进度</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_20.34.22.webp" alt="iShot_2023-03-30_20.34.22.webp">打开后自动跳转到了上次阅读进度「11页」</p>
+<p>借助 Komga 的 网页端，你可以在任何支持打开网页的设备上打开 komga 的网站并选择你想观看的漫画，后台会自动记住你的上次阅读进度，省去了”忘记上次看到哪了，只好重头看一遍“的窘境。Komga 也支持诸如：推荐、阅读列表、收藏等最近阅读分类，方便你把最想看的书放在最显眼的位置，减少翻找漫画时间；说到翻找，它当然也支持全局图书关键字查找啦~</p>
+<h3 id="3、便利的内容分发平台"><a href="#3、便利的内容分发平台" class="headerlink" title="3、便利的内容分发平台"></a>3、便利的内容分发平台</h3><p>有了这个服务对你的漫画资源进行托管后，你阅读漫画的方式就便利了许多。</p>
+<p>我仍旧记得在之前的时候，我是把漫画一股脑塞到 iPad 的 Comics 里边，然后每次看漫画只能用 iPad ，后来随着漫画资源越来越多，iPad 的存储空间也捉襟见肘了，不得不手动处理文件的流转：</p>
+<p>Mac-&gt;iPad</p>
+<p>Nas-&gt;iPad</p>
+<p>iPhone-&gt;iPad</p>
+<p>Mac-&gt;Nas</p>
+<p>Nas-&gt;Windows</p>
+<p>异常痛苦。</p>
+<p>而且在不同的平台，各种离线阅读 App 给我的体验也不都尽如人意</p>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>应用名称</th>
+<th>优点</th>
+<th>缺点</th>
+<th>推荐指数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Windows</td>
+<td>Cover</td>
+<td>没有广告，界面设计合理，对触屏优化较好，有漫画库的管理和优化逻辑，是我找到的 Windows 上最好的离线漫画资源管理 App</td>
+<td>漫画库最高只能扫描25本漫画，超过这个数量的漫画库需要付费才能继续扫描，切Windows电脑的便携性不如平板和手机，除非你手边正好有 Surface</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>Mac</td>
+<td>Simple Comic</td>
+<td>没有广告</td>
+<td>使用时间久了会卡顿，猜测是对M系列Mac的优化不到位，也没有任何漫画库的管理功能，单纯的漫画文件阅读器</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Comics</td>
+<td>没有广告，我愿称之为 iOS 上最优秀的漫画阅读 App，支持漫画的导入和简单的管理，阅读体验较好</td>
+<td>需要付费，但偶尔会限免</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>ComicScreen</td>
+<td>免费</td>
+<td>有广告，App界面较老，阅读体验还行，这肯定不是安卓上最好的离线漫画阅读器，但我在Play上暂时只找到这个体验还过得去的</td>
+<td>⭐⭐⭐</td>
+</tr>
+</tbody></table>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-03-30_20-40-17.webp" alt="Snipaste_2023-03-30_20-40-17.webp">Windows 商店的 Cover</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/mibile.webp" alt="mibile.webp"></p>
+<p>iOS App Store 的 Comics 和 Play Store 的 ComicScreen</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_20.46.57.webp" alt="iShot_2023-03-30_20.46.57.webp">Mac App Store 的 Simple Comic</p>
+<p>我自然不敢说以上应用都已经是这四个常用平台的最优解了，但至少是我在一定时间的使用后，最终真实使用感受还不错的；这些应用在一定程度上，也确实满足了我观看离线漫画的需求，当我的漫画库的漫画资源不是很繁杂时，使用以上应用也能给我带来不错的观看体验。</p>
+<p>不过，单体应用有他们不可忽视的缺陷。</p>
+<p>例如：界面操作逻辑不统一、阅读进度不能同步、阅读资源需要自己做资源流转等；现在借助 Komga 平台，我终于不用再被这些问题困扰了，可喜可贺。</p>
+<p>除了同步阅读进度以外，Komga 的网页端也可以一键下载资源到本地或者删除线上平台的漫画书，可以协助你在任何地方管理漫画资源（当你设置了外网访问路径的话），可以说非常舒适了。</p>
+<h2 id="客户端：离线阅读利器"><a href="#客户端：离线阅读利器" class="headerlink" title="客户端：离线阅读利器"></a>客户端：离线阅读利器</h2><p>虽说网页端非常方便你随时随地打开，但它也有一些不方便的地方（你用久了就知道了），比如：</p>
+<ul>
+<li><p>如果你不知道怎么折腾公网服务器或外网端口映射（Frp），那么当你并未与 Komga 处于同一个内网时，那你就没办法访问到它了（简单理解就是出门就用不了）</p>
+</li>
+<li><p>即使你知道怎么解决外网访问问题，但 Frp 本身孱弱的网络带宽可能也不能给你带来良好的阅读体验，可能每页漫画加载时间都会很长（土豪可以忽略）</p>
+</li>
+<li><p>基于上一条，你更不要奢望出行时高铁和飞机上的网络环境了</p>
+</li>
+<li><p>浪费了宝贵的流量（根据不同的画面质量，每本漫画可能消耗流量30M~150M不等，土豪可以忽略）</p>
+</li>
+<li><p>浏览器沉浸性较差，不能提供良好的阅读体验等</p>
+</li>
+</ul>
+<p>客户端正是为了解决以上问题而被开发出来的。</p>
+<p>正如我前文所提到的，由于 Komga 支持 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Open_Publication_Distribution_System">OPDS</a> 协议，所以它允许用户根据自己的偏好选择自己最喜欢的客户端，我在这里也推荐两款，如果有其它更好用的客户端也欢迎在评论区讨论。</p>
+<p>安卓端：<a target="_blank" rel="noopener" href="https://tachiyomi.org/"><strong>Tachiyomi</strong></a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/tachiyomi.webp" alt="tachiyomi.webp">Tachiyoumi，支持中文</p>
+<p>这是一款遵守安卓 Material you 协议的官方推荐的客户端，没有广告、界面非常简洁，但支持功能很全，当前我只用到了漫画源的添加、漫画书的在线观看、漫画下载、漫画离线观看这些功能。</p>
+<p>iOS端：<a target="_blank" rel="noopener" href="https://paperback.moe/"><strong>Paperback</strong></a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Paperback.webp" alt="Paperback.webp">Paperback，暂不支持中文</p>
+<p>这是一款原生开发的 iOS 端的 App，同样没有广告，也支持漫画源的添加和在线或离线观看功能。</p>
+<h2 id="Komga-不能为我带来什么"><a href="#Komga-不能为我带来什么" class="headerlink" title="Komga 不能为我带来什么"></a>Komga 不能为我带来什么</h2><p>部署了 Komga 之后，如果你没有任何漫画资源，那你仍旧没有任何漫画书可看，如果你希望找到的是一个免费为你提供无穷无尽漫画资源的 App，那你可能完全不需要 Komga，Bilibili 漫画、快看漫画都是你更好的选择。</p>
+<p>从我的角度讲，Komga 就是一个漫画界的 VideoStation、Jellyfin、Emby ……</p>
+<p>你懂的，所以本篇文章也不会向读者传递任何漫画资源的搜索和下载网站相关的信息，请自行思考你 Videostation 里的资源是哪里来的😁。</p>
+<h2 id="我使用-Komga-的原因"><a href="#我使用-Komga-的原因" class="headerlink" title="我使用 Komga 的原因"></a>我使用 Komga 的原因</h2><p>我接触 Komga 的契机是当我购买我的第一台 Nas 后：</p>
+<ul>
+<li><p>影视资源有 VideoStation 帮我整理和搜刮信息</p>
+</li>
+<li><p>拍摄的照片和视频也有对应的 Photos 服务帮助我托管</p>
+</li>
+<li><p>音乐文件有 AudioStation 帮我托管在线音乐平台，它甚至支持歌词自动匹配</p>
+</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-04-03_10-13-35.webp" alt="Snipaste_2023-04-03_10-13-35.webp">Docker 里的 komga 容器</p>
+<p>唯独我的漫画资源没有一个比较好的服务来进行整理和托管，这让每次手动上传下载和管理原始文件的我，像个原始人。</p>
+<p>所以 Komga 的出现对我而言简直就是久旱逢甘霖了。</p>
+<h2 id="Komga-的其他用途"><a href="#Komga-的其他用途" class="headerlink" title="Komga 的其他用途"></a>Komga 的其他用途</h2><p>之前碰到写的好的文章，普遍的保存方式是使用 EverNote、OneNote、DSNote 等浏览器剪藏工具剪藏到自己的收藏夹。</p>
+<p>但我发现有些网站和文章的图片使用的文章初始的图片地址，这就导致一旦最初的图片挂掉后，你的剪藏内容中的图片也会失效；又或者你所使用的平台工具可以把图片上传到他们自己的服务器，这样你就认为你的文章安全了吗？</p>
+<p>Naive！</p>
+<p>我经历了太多平台为了防止用户白嫖他们的云存储空间作为免费图床（印象、简书、Gitee 等商业上没错，理解，尊重），都给图片加了二次获取验证，让这些图片只有在他们自己平台上可能正常显示，无疑让你在文章迁移的时候犯难。</p>
+<p>而且有些文章作者在发出来的时候，会非常注重文章的排版功能，但经过剪藏的文章，它的原始排版布局有一定几率会被剪藏工具所破坏，这就给二次阅读时候的你，一个非常膈应的感觉。</p>
+<p>唉，真正靠谱的，永远只有我们自己。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_21.42.44%20(1).webp" alt="iShot_2023-03-30_21.42.44 (1).webp">文章的 PDF 格式备份，可以很好地保留文章原始排版和图片信息</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/iShot_2023-03-30_21.44.30%20(1).webp" alt="iShot_2023-03-30_21.44.30 (1).webp">也会有一些 PDF 格式的书籍会放在 Komga 里边进行托管</p>
+<p>因为 Komga 支持对 PDF 文件的托管和读取，所以有很多我觉得写的很棒的文章，我也更倾向于转成 PDF 文档后，一起丢到 Komga 中，这样可以最大程度还原文章的排版，也一定程度避免了网站后期运维不善导致图片资源丢失的问题（比如网站所用图床挂了），毕竟数据无价嘛。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>你还有更好的自托管漫画平台推荐吗？</p>
+<p>如果没有的话，还不赶紧去部署 Komga 呀~</p>
+<p>什么？怎么部署？</p>
+<p><del>鉴于本篇文章字数已经过长，如果大家呼声很高的话，我就再单独写一篇文章详细介绍如果部署 Komga 和如何设置手机端 App 好了。</del></p>
+<p>可以参考另一个博客的<a target="_blank" rel="noopener" href="https://www.himiku.com/archives/komga.html">这篇文章。</a></p>
+</article><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/archives/1679230498646/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-03-19_19-17-34_1368x770.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">AI当道，这部2002年动漫的预言还有多远</div></div></a></div><div class="next-post pull-right"><a href="/archives/1680250983095/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-04-04_10-58-06.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">受够了密码数据泄漏事件？用 Bitwarden 做自己的安全负责人</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description">Fun to life, fun to coding</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">千里之豪</h1><div class="author-info__desc">Fun to life, fun to coding</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/gadore" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://blog.gadore.top/feed.xml" target="_blank" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Komga-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.</span> <span class="toc-text">Komga 是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Komga-%E5%8F%AF%E4%BB%A5%E4%B8%BA%E6%88%91%E4%BB%AC%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88"><span class="toc-number">2.</span> <span class="toc-text">Komga 可以为我们带来什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E7%AE%80%E5%8D%95%E4%BD%86%E7%9B%B4%E8%A7%82%E7%9A%84%E6%BC%AB%E7%94%BB%E5%88%86%E7%B1%BB%E5%B1%95%E7%A4%BA"><span class="toc-number">2.1.</span> <span class="toc-text">1、简单但直观的漫画分类展示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E4%BA%91%E7%AB%AF%E5%90%8C%E6%AD%A5%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6"><span class="toc-number">2.2.</span> <span class="toc-text">2、云端同步阅读进度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E4%BE%BF%E5%88%A9%E7%9A%84%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E5%B9%B3%E5%8F%B0"><span class="toc-number">2.3.</span> <span class="toc-text">3、便利的内容分发平台</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%EF%BC%9A%E7%A6%BB%E7%BA%BF%E9%98%85%E8%AF%BB%E5%88%A9%E5%99%A8"><span class="toc-number">3.</span> <span class="toc-text">客户端：离线阅读利器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Komga-%E4%B8%8D%E8%83%BD%E4%B8%BA%E6%88%91%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88"><span class="toc-number">4.</span> <span class="toc-text">Komga 不能为我带来什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BD%BF%E7%94%A8-Komga-%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">5.</span> <span class="toc-text">我使用 Komga 的原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Komga-%E7%9A%84%E5%85%B6%E4%BB%96%E7%94%A8%E9%80%94"><span class="toc-number">6.</span> <span class="toc-text">Komga 的其他用途</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">7.</span> <span class="toc-text">结语</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/device-sale-and-changes/" title="手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/thumbnails/2025/w1600/p2sc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受"/></a><div class="content"><a class="title" href="/archives/device-sale-and-changes/" title="手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受">手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受</a><time datetime="2025-12-14T22:55:38.000Z" title="发表于 2025-12-14 22:55:38">2025-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/quote-0/" title="借助捷径，不写代码也能玩转 Quote/0 墨水屏"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/thumbnails/2025/w1600/000d94c0a6c898e6d5e0eb3a0ea69c07.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="借助捷径，不写代码也能玩转 Quote/0 墨水屏"/></a><div class="content"><a class="title" href="/archives/quote-0/" title="借助捷径，不写代码也能玩转 Quote/0 墨水屏">借助捷径，不写代码也能玩转 Quote/0 墨水屏</a><time datetime="2025-11-13T11:00:00.000Z" title="发表于 2025-11-13 11:00:00">2025-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/raspberrypi-fan-control-pcb/" title="用刚学的 PCB 知识做一个优雅的树莓派风扇控制板"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/thumbnails/2025/w800/iShot2025-10-1114.46.51.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用刚学的 PCB 知识做一个优雅的树莓派风扇控制板"/></a><div class="content"><a class="title" href="/archives/raspberrypi-fan-control-pcb/" title="用刚学的 PCB 知识做一个优雅的树莓派风扇控制板">用刚学的 PCB 知识做一个优雅的树莓派风扇控制板</a><time datetime="2025-10-16T19:52:19.000Z" title="发表于 2025-10-16 19:52:19">2025-10-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/google-pixel-5-with-lineage-os/" title="Google Pixel 5 更换 Lineage OS"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/ChatGPT%20Image%202025%E5%B9%B48%E6%9C%8828%E6%97%A5%2013_45_34.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Google Pixel 5 更换 Lineage OS"/></a><div class="content"><a class="title" href="/archives/google-pixel-5-with-lineage-os/" title="Google Pixel 5 更换 Lineage OS">Google Pixel 5 更换 Lineage OS</a><time datetime="2025-08-28T17:28:19.000Z" title="发表于 2025-08-28 17:28:19">2025-08-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/shanghai-Neighborhood-Committee/" title="在上海公租房：一名租客的首次居委会体验"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/ACG.GY_37_preview%20(1).jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在上海公租房：一名租客的首次居委会体验"/></a><div class="content"><a class="title" href="/archives/shanghai-Neighborhood-Committee/" title="在上海公租房：一名租客的首次居委会体验">在上海公租房：一名租客的首次居委会体验</a><time datetime="2025-07-05T22:28:19.000Z" title="发表于 2025-07-05 22:28:19">2025-07-05</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 - 2025 By <a class="footer-bar-link" href="/" title="千里之豪" target="_blank">千里之豪</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/gadore" title="Github">Github</a><a class="footer-bar-link" href="/null"></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">45</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">33</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">3</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://gadore.top" title="导航"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/favicon.ico" alt="导航"/><span class="back-menu-item-text">导航</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><span> 关于</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/equipment/"><span> 设备</span></a></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AI/" style="font-size: 0.88rem;">AI<sup>1</sup></a><a href="/tags/LineageOS/" style="font-size: 0.88rem;">LineageOS<sup>1</sup></a><a href="/tags/NAS/" style="font-size: 0.88rem;">NAS<sup>6</sup></a><a href="/tags/P2SC/" style="font-size: 0.88rem;">P2SC<sup>1</sup></a><a href="/tags/PCB/" style="font-size: 0.88rem;">PCB<sup>1</sup></a><a href="/tags/Pixel-5/" style="font-size: 0.88rem;">Pixel 5<sup>1</sup></a><a href="/tags/Swift/" style="font-size: 0.88rem;">Swift<sup>1</sup></a><a href="/tags/SwiftUI/" style="font-size: 0.88rem;">SwiftUI<sup>1</sup></a><a href="/tags/iOS/" style="font-size: 0.88rem;">iOS<sup>2</sup></a><a href="/tags/iPhone/" style="font-size: 0.88rem;">iPhone<sup>1</sup></a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 0.88rem;">产品<sup>1</sup></a><a href="/tags/%E5%83%8F%E7%B4%A0%E9%A3%8E/" style="font-size: 0.88rem;">像素风<sup>2</sup></a><a href="/tags/%E5%85%AC%E7%A7%9F%E6%88%BF/" style="font-size: 0.88rem;">公租房<sup>1</sup></a><a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 0.88rem;">刷机<sup>1</sup></a><a href="/tags/%E5%8A%A8%E6%BC%AB/" style="font-size: 0.88rem;">动漫<sup>2</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.88rem;">博客<sup>1</sup></a><a href="/tags/%E5%98%89%E7%AB%8B%E5%88%9B/" style="font-size: 0.88rem;">嘉立创<sup>1</sup></a><a href="/tags/%E5%A2%A8%E6%B0%B4%E5%B1%8F/" style="font-size: 0.88rem;">墨水屏<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 0.88rem;">安全<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF-10-NFC/" style="font-size: 0.88rem;">小米手环 10 NFC<sup>1</sup></a><a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 0.88rem;">手机<sup>9</sup></a><a href="/tags/%E6%8B%93%E7%AB%B9/" style="font-size: 0.88rem;">拓竹<sup>1</sup></a><a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 0.88rem;">旅行<sup>3</sup></a><a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 0.88rem;">日本<sup>3</sup></a><a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" style="font-size: 0.88rem;">树莓派<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 0.88rem;">游戏<sup>1</sup></a><a href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/" style="font-size: 0.88rem;">独立开发<sup>2</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 0.88rem;">生活<sup>2</sup></a><a href="/tags/%E7%9B%B8%E5%86%8C/" style="font-size: 0.88rem;">相册<sup>1</sup></a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" style="font-size: 0.88rem;">程序员<sup>21</sup></a><a href="/tags/%E7%BA%A2%E7%B1%B3-K-Pad/" style="font-size: 0.88rem;">红米 K Pad<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 0.88rem;">网络<sup>8</sup></a><a href="/tags/%E8%85%95%E8%A1%A8/" style="font-size: 0.88rem;">腕表<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@6.1.6/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.gadore.top',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.gadore.top',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.gadore.top',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://cdn.cbd.int/qrcodejs@1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>

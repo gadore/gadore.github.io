@@ -1,0 +1,458 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>个人家庭宽带公网 IP 升级杂记 | 千里之豪的格物垛</title><meta name="keywords" content="程序员,网络"><meta name="author" content="千里之豪"><meta name="copyright" content="千里之豪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="个人家庭宽带公网 IP 升级杂记"><meta name="application-name" content="个人家庭宽带公网 IP 升级杂记"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="个人家庭宽带公网 IP 升级杂记"><meta property="og:url" content="https://blog.gadore.top/archives/1683599671683/index.html"><meta property="og:site_name" content="千里之豪的格物垛"><meta property="og:description" content="首先先说结论：升级失败了，但在升级过程中，我也找到了别的途径来满足我最初的需求。 一个服务器迁移带来的一系列问题现在作为一个程序员，谁还没有一个云服务器了（也就刚买了两年的我说到）。 但当你真正去使用这个云服务器做一些好玩的事情的时候，你会发现处处都是坑。 本文旨在分享一个普通人角度下获取公网 IP"><meta property="og:locale" content="zh"><meta property="og:image" content="https://blog.gadore.top/upload/Snipaste_2023-05-12_15-54-47.webp"><meta property="article:author" content="千里之豪"><meta property="article:tag" content="千里之豪"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://blog.gadore.top/upload/Snipaste_2023-05-12_15-54-47.webp"><meta name="description" content="首先先说结论：升级失败了，但在升级过程中，我也找到了别的途径来满足我最初的需求。 一个服务器迁移带来的一系列问题现在作为一个程序员，谁还没有一个云服务器了（也就刚买了两年的我说到）。 但当你真正去使用这个云服务器做一些好玩的事情的时候，你会发现处处都是坑。 本文旨在分享一个普通人角度下获取公网 IP"><link rel="shortcut icon" href="/upload/favicon.ico"><link rel="canonical" href="https://blog.gadore.top/archives/1683599671683/"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//static.cloudflareinsights.com"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@6.1.6/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;028cead3c35d4975b599691ba472a8af&quot;}"></script><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: undefined,
+  diytitle: undefined,
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: 'https://twikoo.gadore.top',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: undefined,
+  authorStatus: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 千里之豪","link":"链接: ","source":"来源: 千里之豪的格物垛","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.2.0/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.2.0/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '千里之豪的格物垛',
+  title: '个人家庭宽带公网 IP 升级杂记',
+  postAI: '',
+  pageFillDescription: '一个服务器迁移带来的一系列问题, 高昂的云服务器续费和升级, 个人申请固定 IP 的可能性, 联通宽带公司提供的公网 IP 的问题, 安装师傅和宽带办理业务员的业务熟练度问题, 终于一盆冷水泼下, 用 Cloudflare 实现 DDNS, 用 CloudFlare 绕过网站 80 和 443 端口, 可靠性？, 其他可能性, 与电信公司沟通始末, 作者说首先先说结论升级失败了但在升级过程中我也找到了别的途径来满足我最初的需求一个服务器迁移带来的一系列问题现在作为一个程序员谁还没有一个云服务器了也就刚买了两年的我说到但当你真正去使用这个云服务器做一些好玩的事情的时候你会发现处处都是坑本文旨在分享一个普通人角度下获取公网的尝试并非严谨的教程文请悉知高昂的云服务器续费和升级我现在使用的域名指向的是我一年前购买腾讯云服务器赠送的公网使用挺方便我也正常走完了备案流程开启了服务器的端口和端口但就这一年的体验来说并不算特别好因为当时买的丐版套餐带宽只有可怜的换算成我们平时使用的速率也就是再加上内网穿透导致的宽带打折我也查了升级的价格后一年要多交元杀了我吧事实上只是保持当前的配置进行续费的情况下价格就已经非常不划算了刚刚购买时年才多块钱现在续费一年一千多个人申请固定的可能性换个思路云服务器我看中的不就是他的公网吗那我干脆直接去弄个公网不就行了至于性能比它强的设备树莓派电脑甚至装了的安卓手机都是可以胜任的这个五一我提前跟老家县城的宽带公司进行了多次沟通了解到他们现在有一个优惠政策可以让我用元年的价格享受到上下行同为的宽带还送我固定地址这不比云服务器香多了于是我就安排了出行计划正好趁这次回老家的机会把我服务器上边的服务也迁移掉联通宽带公司提供的公网的问题五一当天我用老家店里的营业执照申请了安装师傅当天就上门了速度非常到位等宽带师傅装好新的光纤后我测试了一下网络情况公网确实是给我了但运营商屏蔽了所有的常用端口和协议协议本来以为这就是小问题像云服务器一样正常走一下备案流程就可以正常开放了但我没想到这反倒成了最难处理的一环安装师傅和宽带办理业务员的业务熟练度问题首先安装师傅知道我这个公网没有办法通肯定是有问题的我也当场给他演示了端口跟端口不通但他表示我就是个扯网线的我不懂你可以联系业务员然后他就走了之后我电话联系给我办理宽带的业务员她表示她也不懂我在说什么但她在他们公司的系统操作都是正确的所以我这边应该没有问题的她甚至希望我赶紧交钱我又好气又好笑地让她自己问他们宽带安装师傅装好了没有没有问题她们之间沟通完之后表示给我往上反映接着我先后收到了他们的技术专员技术总监区技术员的电话他们问了各种情况后统一表示对啊你这个肯定有问题啊但我也不知道什么问题就挂掉了我这个时候真的生气了我直接跟业务员说这是你们公司的问题不要把问题抛给我她表示她继续向上反映终于一盆冷水泼下当天下午三点左右我终于接到一个靠谱的人打来的电话他是市宽带公司的业务专员他说现在宽带公司统一都是把这些端口等和协议给屏蔽掉的个人宽带账号是无法使用这些的我问那我备案呢他说备案也不行你这个套餐不支持这个需要再升级到元年的带宽我当时还怀疑我听错了我确认到上下行的那种吗他说对那确定了这些问题之后我通过简单的端口测试发现他们关于公网的常用端口的屏蔽所言非虚因为除了这些端口外其他非常用端口都是可以正常使用的这种情况在普通家用宽带也适用那就继续用家用宽带吧在一瓶可乐的贿赂下宽带小哥把拨号放到了我自己的路由器上动态到手变动也没什么我们早就有成熟的解决方案了不是嘛用实现动态域名解析服务也就是通过一个固定域名来动态指向不同的我这里使用的是所以就在里搜索了一下关键字找到了一个适合自己的部署方式自动更新日志用绕过网站和端口搞定了这个域名解析之后还有另一个棘手的问题网站端口跟一个成熟的网站自然不能让用户访问的时候还得自己输入一个奇奇怪怪的端口吧比如看起来很正常也很好记但是看起来就很奇怪了用户也很难记住这个数字好在有另一个杀手锏端口回源转发端口回源设置通过这个特性当用户访问我们域名的或端口时可以帮我们把端口转写成我们自定义的端口例如再发往我们的指定服务这样就可以完美解决端口被运营商屏蔽的问题了可靠性其实到了这一步除了解决问题的愉悦之外这样的稳定性和安全性也要打上一个大大的问号前文提到的宽带公司的业务员有在沟通中提到理论上来讲虽然家庭宽带屏蔽了常用关键端口但其他端口你还是可以正常用的但这个使用是没有经过我们公司的正式许可的只是说你暂时可以使用这些端口我也追问那我应该找谁去做这个报备呢回信息局具体我也不清楚你可以自己去网上了解一下总的来讲宽带公司在任何时候屏蔽我的任何端口都是理所当然的至于我所使用的网站域名我自然早就在阿里云做了实名备案但现在这种家用宽带的动态是没法做备案的也只好作罢端口回源的功能菜单上也明明晃晃地标上了字样同样预示着它的不稳定和不可预测这就非常头疼了其他可能性那我就彻底与端口说再见了吗俗话说人不能在一棵树上吊死我自然也咨询了另外两家宽带公司的业务员其中移动直接已读不回至于另一家与电信公司沟通始末初到电信公司营业厅的时候店门是关着的我顶着烈日拨通了店门口的手机号啊办宽带我还在吃饭马上回来你等我两分钟回来的是一名非常年轻的店长他打开环形锁踢开店里的躺椅随口问我想办什么宽带我说出了我的诉求他立即知道我是想办理固定公网专业性跟店内环境行程鲜明地对比我也提了一下等敏感端口的事情他说啊这个需要做备案的你如果需要的话营业执照跟身份证复印件提供一下我帮你走流程走完就能开通了什么叫专业啊至此也找到了作者说我之所以要这样折腾一番主要是受够了云服务商的吃相太过难堪他们在一开始以极低的价格把云服务器卖给你还送你公网非常香之后你的云计算服务网站也已经慢慢走上正轨但当你购买的两年或一年的云服务器到期需要续费的时候割韭菜的时候就到了你会发现续费价格是你当初购买服务器的价格的十倍以上你不得不重新购买入门套餐重新迁移所有的服务到新的服务器上当然所有依赖你之前公网的服务也要修改地址你最好有自己的固定域名否则又是另一场灾难诚然商业化的团队跟大公司自然承担的起云服务的续费价格土豪朋友就更不用说了而且云服务器不单单只是提供一个公网他们会为你的云计算提供一整套的云服务器和配套安全服务从种种意义上来说它的存在也解决了不少人和团队的痛点但假如你跟我一样只是一个卑微的小极客只是想做一些好玩的东西方便自己或者大家使用且不想每过几年就被云服务商割韭菜那本文算是一个不成熟的解决方案之一吧至少这一套流程走下来网站是跑起来了服务也通过一般端口正常映射出去了不是嘛而且你只是借用了家庭宽带的网络都不需要额外费用的再不济我还有',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-12-14 15:15:59',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="千里之豪的格物垛" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/upload/avatar.webp"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">千里之豪的格物垛</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><span> 关于</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/equipment/"><span> 设备</span></a></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="Random Post" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="Console" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165549.webp" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165549.webp"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165554.webp" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230317165554.webp"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">Interaction</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">Interests</div><span class="author-content-item-title">Find your area of interest</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AI/" style="font-size: 1.05rem;">AI<sup>1</sup></a><a href="/tags/LineageOS/" style="font-size: 1.05rem;">LineageOS<sup>1</sup></a><a href="/tags/NAS/" style="font-size: 1.05rem;">NAS<sup>6</sup></a><a href="/tags/P2SC/" style="font-size: 1.05rem;">P2SC<sup>1</sup></a><a href="/tags/PCB/" style="font-size: 1.05rem;">PCB<sup>1</sup></a><a href="/tags/Pixel-5/" style="font-size: 1.05rem;">Pixel 5<sup>1</sup></a><a href="/tags/Swift/" style="font-size: 1.05rem;">Swift<sup>1</sup></a><a href="/tags/SwiftUI/" style="font-size: 1.05rem;">SwiftUI<sup>1</sup></a><a href="/tags/iOS/" style="font-size: 1.05rem;">iOS<sup>2</sup></a><a href="/tags/iPhone/" style="font-size: 1.05rem;">iPhone<sup>1</sup></a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.05rem;">产品<sup>1</sup></a><a href="/tags/%E5%83%8F%E7%B4%A0%E9%A3%8E/" style="font-size: 1.05rem;">像素风<sup>2</sup></a><a href="/tags/%E5%85%AC%E7%A7%9F%E6%88%BF/" style="font-size: 1.05rem;">公租房<sup>1</sup></a><a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 1.05rem;">刷机<sup>1</sup></a><a href="/tags/%E5%8A%A8%E6%BC%AB/" style="font-size: 1.05rem;">动漫<sup>2</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.05rem;">博客<sup>1</sup></a><a href="/tags/%E5%98%89%E7%AB%8B%E5%88%9B/" style="font-size: 1.05rem;">嘉立创<sup>1</sup></a><a href="/tags/%E5%A2%A8%E6%B0%B4%E5%B1%8F/" style="font-size: 1.05rem;">墨水屏<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 1.05rem;">安全<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF-10-NFC/" style="font-size: 1.05rem;">小米手环 10 NFC<sup>1</sup></a><a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 1.05rem;">手机<sup>9</sup></a><a href="/tags/%E6%8B%93%E7%AB%B9/" style="font-size: 1.05rem;">拓竹<sup>1</sup></a><a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 1.05rem;">旅行<sup>3</sup></a><a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 1.05rem;">日本<sup>3</sup></a><a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" style="font-size: 1.05rem;">树莓派<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.05rem;">游戏<sup>1</sup></a><a href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">独立开发<sup>2</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.05rem;">生活<sup>2</sup></a><a href="/tags/%E7%9B%B8%E5%86%8C/" style="font-size: 1.05rem;">相册<sup>1</sup></a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" style="font-size: 1.05rem;">程序员<sup>21</sup></a><a href="/tags/%E7%BA%A2%E7%B1%B3-K-Pad/" style="font-size: 1.05rem;">红米 K Pad<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.05rem;">网络<sup>8</sup></a><a href="/tags/%E8%85%95%E8%A1%A8/" style="font-size: 1.05rem;">腕表<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>Articles</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/12/"><span class="card-archive-list-date">December 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">August 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/07/"><span class="card-archive-list-date">July 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/06/"><span class="card-archive-list-date">June 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">May 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">April 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="Toggle Display Mode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="Toggle Sidebar"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="Toggle"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/" itemprop="url">明明白白玩NAS</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>程序员</span></a><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>网络</span></a></span></div></div><h1 class="post-title" itemprop="name headline">个人家庭宽带公网 IP 升级杂记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-05-12T20:28:38.000Z" title="发表于 2023-05-12 20:28:38">2023-05-12</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-12-14T15:15:59.674Z" title="更新于 2025-12-14 15:15:59">2025-12-14</time></span></div><div class="meta-secondline"></div></div></div><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/upload/Snipaste_2023-05-12_15-54-47.webp"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://blog.gadore.top/archives/1683599671683/"><header><a class="post-meta-categories" href="/categories/%E6%98%8E%E6%98%8E%E7%99%BD%E7%99%BD%E7%8E%A9NAS/" itemprop="url">明明白白玩NAS</a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" tabindex="-1" itemprop="url">程序员</a><a href="/tags/%E7%BD%91%E7%BB%9C/" tabindex="-1" itemprop="url">网络</a><h1 id="CrawlerTitle" itemprop="name headline">个人家庭宽带公网 IP 升级杂记</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">千里之豪</span><time itemprop="dateCreated datePublished" datetime="2023-05-12T20:28:38.000Z" title="发表于 2023-05-12 20:28:38">2023-05-12</time><time itemprop="dateCreated datePublished" datetime="2025-12-14T15:15:59.674Z" title="更新于 2025-12-14 15:15:59">2025-12-14</time></header><p>首先先说结论：升级失败了，但在升级过程中，我也找到了别的途径来满足我最初的需求。</p>
+<h2 id="一个服务器迁移带来的一系列问题"><a href="#一个服务器迁移带来的一系列问题" class="headerlink" title="一个服务器迁移带来的一系列问题"></a>一个服务器迁移带来的一系列问题</h2><p>现在作为一个程序员，谁还没有一个云服务器了（也就刚买了两年的我说到）。</p>
+<p>但当你真正去使用这个云服务器做一些好玩的事情的时候，你会发现处处都是坑。</p>
+<p>本文旨在分享一个普通人角度下获取公网 IP 的尝试，并非严谨的教程文，请悉知。</p>
+<h3 id="高昂的云服务器续费和升级"><a href="#高昂的云服务器续费和升级" class="headerlink" title="高昂的云服务器续费和升级"></a>高昂的云服务器续费和升级</h3><p>我现在使用的域名指向的是我一年前购买腾讯云服务器赠送的公网 IP，使用挺方便，我也正常走完了备案流程开启了服务器的 443 端口和 80 端口，但就这一年的体验来说并不算特别好，因为当时买的丐版套餐，带宽只有可怜的 10M，换算成我们平时使用的速率，也就是 1.25Mb&#x2F;s ，再加上 frp 内网穿透导致的宽带打折……，我也查了升级 20M 的价格后，一年要多交 11000 元，杀了我吧。</p>
+<p>事实上，只是保持当前的配置进行续费的情况下，价格就已经非常不划算了。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-05-12_15-16-13.webp">刚刚购买时3年才500多块钱，现在续费一年一千多</p>
+<h3 id="个人申请固定-IP-的可能性"><a href="#个人申请固定-IP-的可能性" class="headerlink" title="个人申请固定 IP 的可能性"></a>个人申请固定 IP 的可能性</h3><p>换个思路，云服务器我看中的不就是他的公网 IP 吗，那我干脆直接去弄个公网 IP 不就行了，至于性能比它强的设备，树莓派4、Nas、电脑、甚至装了 Termux 的安卓手机都是可以胜任的。</p>
+<p>这个五一，我提前跟老家县城的宽带公司进行了多次沟通，了解到他们现在有一个优惠政策，可以让我用 2900元&#x2F;年的价格享受到上下行同为 200M 的宽带，还送我固定 IP 地址，这不比云服务器香多了？</p>
+<p>于是我就安排了出行计划，正好趁这次回老家的机会把我服务器上边的服务也迁移掉。</p>
+<h3 id="联通宽带公司提供的公网-IP-的问题"><a href="#联通宽带公司提供的公网-IP-的问题" class="headerlink" title="联通宽带公司提供的公网 IP 的问题"></a>联通宽带公司提供的公网 IP 的问题</h3><p>五一当天，我用老家店里的营业执照申请了安装，师傅当天就上门了，速度非常到位。等宽带师傅装好新的光纤后，我测试了一下网络情况，公网 IP 确实是给我了，但运营商屏蔽了所有的常用端口和协议：80、443、ICMP（ ping 协议）。</p>
+<p>本来以为这就是小问题，像云服务器一样正常走一下备案流程就可以正常开放了。但我没想到这反倒成了最难处理的一环。</p>
+<h4 id="安装师傅和宽带办理业务员的业务熟练度问题"><a href="#安装师傅和宽带办理业务员的业务熟练度问题" class="headerlink" title="安装师傅和宽带办理业务员的业务熟练度问题"></a>安装师傅和宽带办理业务员的业务熟练度问题</h4><p>首先，安装师傅知道我这个公网IP没有办法 ping 通肯定是有问题的，我也当场给他演示了 443 端口跟 80 端口不通，但他表示：我就是个扯网线的，我不懂，你可以联系业务员。然后他就走了。</p>
+<p>之后，我电话联系给我办理宽带的业务员，她表示她也不懂我在说什么，但她在他们公司的系统操作都是正确的，所以我这边应该没有问题的，她甚至希望我赶紧交钱；我又好气又好笑地让她自己问他们宽带安装师傅装好了没，有没有问题，她们之间沟通完之后表示给我往上反映。</p>
+<p>接着，我先后收到了他们的技术专员、技术总监、区技术员的电话，他们问了各种情况后统一表示：对啊，你这个肯定有问题啊，但我也不知道什么问题，就挂掉了。</p>
+<p>我这个时候真的生气了，我直接跟业务员说，这是你们公司的问题，不要把问题抛给我。她表示她继续向上反映。</p>
+<h4 id="终于，一盆冷水泼下"><a href="#终于，一盆冷水泼下" class="headerlink" title="终于，一盆冷水泼下"></a>终于，一盆冷水泼下</h4><p>当天下午三点左右，我终于接到一个靠谱的人打来的电话，他是市宽带公司的业务专员，他说现在宽带公司统一都是把这些端口（80、443、8080 等）和协议给屏蔽掉的，个人宽带账号是无法使用这些的，我问那我备案呢，他说备案也不行，你这个套餐不支持这个，需要再升级到 3500元&#x2F;年的 10M 带宽，我当时还怀疑我听错了，我确认到：“10M？上下行 1.25Mb&#x2F;s 的那种吗？”，他说对。</p>
+<p>那确定了这些问题之后，我通过简单的端口测试发现他们关于公网 IP 的常用端口的屏蔽所言非虚，因为除了这些端口外，其他非常用端口都是可以正常使用的。这种情况在普通家用宽带也适用。</p>
+<p>那就继续用家用宽带吧，在一瓶可乐的_贿赂_下，宽带小哥把拨号放到了我自己的路由器上，动态 IP 到手~。IP 变动也没什么，我们早就有成熟的解决方案了不是嘛。</p>
+<h2 id="用-Cloudflare-实现-DDNS"><a href="#用-Cloudflare-实现-DDNS" class="headerlink" title="用 Cloudflare 实现 DDNS"></a>用 Cloudflare 实现 DDNS</h2><p>DDNS（Dynamic Domain Name Server，动态域名解析服务），也就是通过一个固定域名来动态指向不同的 IP 。</p>
+<p>我这里使用的是 Cloudflare，所以就在 github 里搜索了一下 “Cloudflare ddns” 关键字，找到了一个适合自己的部署方式。<a target="_blank" rel="noopener" href="https://github.com/imki911/DdnsOnCloudFlare">**<br>DdnsOnCloudFlare**</a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-05-12_15-08-24.webp"><strong>自动 DDNS 更新日志</strong></p>
+<h2 id="用-CloudFlare-绕过网站-80-和-443-端口"><a href="#用-CloudFlare-绕过网站-80-和-443-端口" class="headerlink" title="用 CloudFlare 绕过网站 80 和 443 端口"></a>用 CloudFlare 绕过网站 80 和 443 端口</h2><p>搞定了这个域名解析之后，还有另一个棘手的问题：网站端口 80 跟 443。</p>
+<p>一个成熟的网站自然不能让用户访问的时候还得自己输入一个奇奇怪怪的端口吧。</p>
+<p>比如 sspai.com，看起来很正常，也很好记。</p>
+<p>但是 sspai.com:28934 ，看起来就很奇怪了，用户也很难记住这个数字。</p>
+<p>好在 Cloudflare 有另一个杀手锏：端口回源转发。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-05-12_15-13-06.webp">端口回源设置</p>
+<p>通过这个特性，当用户访问我们域名的 443 或 80 端口时，Cloudflare 可以帮我们把 443 端口转写成我们自定义的端口（例如 3000 ）再发往我们的指定服务。这样就可以完美解决 443 端口被运营商屏蔽的问题了。</p>
+<h2 id="可靠性？"><a href="#可靠性？" class="headerlink" title="可靠性？"></a>可靠性？</h2><p>其实到了这一步，除了解决问题的愉悦之外，这样的稳定性和安全性也要打上一个大大的问号。</p>
+<p>前文提到的宽带公司的业务员有在沟通中提到：“理论上来讲，虽然（家庭宽带）屏蔽了常用关键端口，但其他端口你还是可以正常用的，但这个使用是没有经过我们公司的正式许可的，只是说你暂时可以使用这些端口。”</p>
+<p>我也追问：“那我应该找谁去做这个报备呢？”</p>
+<p>回：“信息局，具体我也不清楚，你可以自己去网上了解一下。”</p>
+<p>总的来讲，宽带公司在任何时候屏蔽我的任何端口，都是理所当然的。</p>
+<p>至于我所使用的网站域名，我自然早就在阿里云做了实名备案，但现在这种家用宽带的动态 IP 是没法做备案的，也只好作罢。</p>
+<p>Cloudflare 端口回源的功能菜单上也明明晃晃地标上了 “beta” 字样，同样预示着它的不稳定和不可预测。</p>
+<p>这就非常头疼了。</p>
+<h2 id="其他可能性"><a href="#其他可能性" class="headerlink" title="其他可能性"></a>其他可能性</h2><p>那我就彻底与 443 端口说再见了吗？</p>
+<p>俗话说：人不能在一棵树上吊死。我自然也咨询了另外两家宽带公司的业务员，其中移动直接已读不回。至于另一家……</p>
+<h3 id="与电信公司沟通始末"><a href="#与电信公司沟通始末" class="headerlink" title="与电信公司沟通始末"></a>与电信公司沟通始末</h3><p>初到电信公司营业厅的时候，店门是关着的。我顶着烈日拨通了店门口的手机号。</p>
+<p>“啊？办宽带？我还在吃饭，马上回来，你等我两分钟。”</p>
+<p>回来的是一名非常年轻的店长，他打开环形锁，踢开店里的躺椅，随口问我想办什么宽带。</p>
+<p>我说出了我的诉求，他立即知道我是想办理固定公网IP，专业性跟店内环境行程鲜明地对比。</p>
+<p>我也提了一下 443 等敏感端口的事情。</p>
+<p>他说：“啊，这个需要做备案的，你如果需要的话，营业执照跟身份证复印件提供一下，我帮你走流程，走完就能开通了。”</p>
+<p>什么叫专业！啊！</p>
+<p>至此，Plan B 也找到了。</p>
+<h2 id="作者说"><a href="#作者说" class="headerlink" title="作者说"></a>作者说</h2><p>我之所以要这样折腾一番，主要是受够了云服务商的吃相太过难堪，他们在一开始以极低的价格把云服务器卖给你，还送你公网 IP，非常香；之后你的云计算服务、网站也已经慢慢走上正轨，但当你购买的两年或一年的云服务器到期需要续费的时候，割韭菜的时候就到了，你会发现续费价格是你当初购买服务器的价格的十倍以上！</p>
+<p>你不得不重新购买入门套餐、重新迁移所有的服务到新的服务器上。当然，所有依赖你之前公网 IP 的服务也要修改 IP 地址，你最好有自己的固定域名，否则又是另一场灾难。</p>
+<p>诚然，商业化的团队跟大公司自然承担的起云服务的续费价格，土豪朋友就更不用说了；而且云服务器不单单只是提供一个公网 IP，他们会为你的云计算提供一整套的云服务器和配套安全服务，从种种意义上来说，它的存在也解决了不少人和团队的痛点。</p>
+<p>但假如你跟我一样，只是一个卑微的小极客，只是想做一些好玩的东西方便自己或者大家使用，且不想每过几年就被云服务商割韭菜，那本文算是一个不成熟的解决方案之一吧。</p>
+<p>至少这一套流程走下来，网站是跑起来了，服务也通过一般端口正常映射出去了不是嘛。</p>
+<p>而且你只是借用了家庭宽带的网络，都不需要额外费用的。</p>
+<p>再不济我还有 PlanB 。</p>
+</article><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/archives/1680250983095/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Snipaste_2023-04-04_10-58-06.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">受够了密码数据泄漏事件？用 Bitwarden 做自己的安全负责人</div></div></a></div><div class="next-post pull-right"><a href="/archives/1683956999331/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/Screenshot_20230513-123633_Trebuchet.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">为小米 13 刷入 Andy 大佬的 LineageOS20 类原生系统</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description">Fun to life, fun to coding</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">千里之豪</h1><div class="author-info__desc">Fun to life, fun to coding</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/gadore" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://blog.gadore.top/feed.xml" target="_blank" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%B8%80%E7%B3%BB%E5%88%97%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">一个服务器迁移带来的一系列问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E6%98%82%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BB%AD%E8%B4%B9%E5%92%8C%E5%8D%87%E7%BA%A7"><span class="toc-number">1.1.</span> <span class="toc-text">高昂的云服务器续费和升级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E7%94%B3%E8%AF%B7%E5%9B%BA%E5%AE%9A-IP-%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text">个人申请固定 IP 的可能性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%94%E9%80%9A%E5%AE%BD%E5%B8%A6%E5%85%AC%E5%8F%B8%E6%8F%90%E4%BE%9B%E7%9A%84%E5%85%AC%E7%BD%91-IP-%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text">联通宽带公司提供的公网 IP 的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%B8%88%E5%82%85%E5%92%8C%E5%AE%BD%E5%B8%A6%E5%8A%9E%E7%90%86%E4%B8%9A%E5%8A%A1%E5%91%98%E7%9A%84%E4%B8%9A%E5%8A%A1%E7%86%9F%E7%BB%83%E5%BA%A6%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.1.</span> <span class="toc-text">安装师傅和宽带办理业务员的业务熟练度问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%88%E4%BA%8E%EF%BC%8C%E4%B8%80%E7%9B%86%E5%86%B7%E6%B0%B4%E6%B3%BC%E4%B8%8B"><span class="toc-number">1.3.2.</span> <span class="toc-text">终于，一盆冷水泼下</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8-Cloudflare-%E5%AE%9E%E7%8E%B0-DDNS"><span class="toc-number">2.</span> <span class="toc-text">用 Cloudflare 实现 DDNS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8-CloudFlare-%E7%BB%95%E8%BF%87%E7%BD%91%E7%AB%99-80-%E5%92%8C-443-%E7%AB%AF%E5%8F%A3"><span class="toc-number">3.</span> <span class="toc-text">用 CloudFlare 绕过网站 80 和 443 端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E9%9D%A0%E6%80%A7%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">可靠性？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%E6%80%A7"><span class="toc-number">5.</span> <span class="toc-text">其他可能性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8E%E7%94%B5%E4%BF%A1%E5%85%AC%E5%8F%B8%E6%B2%9F%E9%80%9A%E5%A7%8B%E6%9C%AB"><span class="toc-number">5.1.</span> <span class="toc-text">与电信公司沟通始末</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%9C%E8%80%85%E8%AF%B4"><span class="toc-number">6.</span> <span class="toc-text">作者说</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/device-sale-and-changes/" title="手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/thumbnails/2025/w1600/p2sc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受"/></a><div class="content"><a class="title" href="/archives/device-sale-and-changes/" title="手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受">手中设备的巨大变动，以及从 iPad mini 7 换到红米 K Pad 的感受</a><time datetime="2025-12-14T22:55:38.000Z" title="发表于 2025-12-14 22:55:38">2025-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/quote-0/" title="借助捷径，不写代码也能玩转 Quote/0 墨水屏"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/thumbnails/2025/w1600/000d94c0a6c898e6d5e0eb3a0ea69c07.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="借助捷径，不写代码也能玩转 Quote/0 墨水屏"/></a><div class="content"><a class="title" href="/archives/quote-0/" title="借助捷径，不写代码也能玩转 Quote/0 墨水屏">借助捷径，不写代码也能玩转 Quote/0 墨水屏</a><time datetime="2025-11-13T11:00:00.000Z" title="发表于 2025-11-13 11:00:00">2025-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/raspberrypi-fan-control-pcb/" title="用刚学的 PCB 知识做一个优雅的树莓派风扇控制板"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/thumbnails/2025/w800/iShot2025-10-1114.46.51.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用刚学的 PCB 知识做一个优雅的树莓派风扇控制板"/></a><div class="content"><a class="title" href="/archives/raspberrypi-fan-control-pcb/" title="用刚学的 PCB 知识做一个优雅的树莓派风扇控制板">用刚学的 PCB 知识做一个优雅的树莓派风扇控制板</a><time datetime="2025-10-16T19:52:19.000Z" title="发表于 2025-10-16 19:52:19">2025-10-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/google-pixel-5-with-lineage-os/" title="Google Pixel 5 更换 Lineage OS"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/ChatGPT%20Image%202025%E5%B9%B48%E6%9C%8828%E6%97%A5%2013_45_34.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Google Pixel 5 更换 Lineage OS"/></a><div class="content"><a class="title" href="/archives/google-pixel-5-with-lineage-os/" title="Google Pixel 5 更换 Lineage OS">Google Pixel 5 更换 Lineage OS</a><time datetime="2025-08-28T17:28:19.000Z" title="发表于 2025-08-28 17:28:19">2025-08-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/shanghai-Neighborhood-Committee/" title="在上海公租房：一名租客的首次居委会体验"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://halo.gadore.top/upload/ACG.GY_37_preview%20(1).jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在上海公租房：一名租客的首次居委会体验"/></a><div class="content"><a class="title" href="/archives/shanghai-Neighborhood-Committee/" title="在上海公租房：一名租客的首次居委会体验">在上海公租房：一名租客的首次居委会体验</a><time datetime="2025-07-05T22:28:19.000Z" title="发表于 2025-07-05 22:28:19">2025-07-05</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 - 2025 By <a class="footer-bar-link" href="/" title="千里之豪" target="_blank">千里之豪</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/gadore" title="Github">Github</a><a class="footer-bar-link" href="/null"></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">45</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">33</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">3</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://gadore.top" title="导航"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/upload/favicon.ico" alt="导航"/><span class="back-menu-item-text">导航</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><span> 关于</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/equipment/"><span> 设备</span></a></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AI/" style="font-size: 0.88rem;">AI<sup>1</sup></a><a href="/tags/LineageOS/" style="font-size: 0.88rem;">LineageOS<sup>1</sup></a><a href="/tags/NAS/" style="font-size: 0.88rem;">NAS<sup>6</sup></a><a href="/tags/P2SC/" style="font-size: 0.88rem;">P2SC<sup>1</sup></a><a href="/tags/PCB/" style="font-size: 0.88rem;">PCB<sup>1</sup></a><a href="/tags/Pixel-5/" style="font-size: 0.88rem;">Pixel 5<sup>1</sup></a><a href="/tags/Swift/" style="font-size: 0.88rem;">Swift<sup>1</sup></a><a href="/tags/SwiftUI/" style="font-size: 0.88rem;">SwiftUI<sup>1</sup></a><a href="/tags/iOS/" style="font-size: 0.88rem;">iOS<sup>2</sup></a><a href="/tags/iPhone/" style="font-size: 0.88rem;">iPhone<sup>1</sup></a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 0.88rem;">产品<sup>1</sup></a><a href="/tags/%E5%83%8F%E7%B4%A0%E9%A3%8E/" style="font-size: 0.88rem;">像素风<sup>2</sup></a><a href="/tags/%E5%85%AC%E7%A7%9F%E6%88%BF/" style="font-size: 0.88rem;">公租房<sup>1</sup></a><a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 0.88rem;">刷机<sup>1</sup></a><a href="/tags/%E5%8A%A8%E6%BC%AB/" style="font-size: 0.88rem;">动漫<sup>2</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.88rem;">博客<sup>1</sup></a><a href="/tags/%E5%98%89%E7%AB%8B%E5%88%9B/" style="font-size: 0.88rem;">嘉立创<sup>1</sup></a><a href="/tags/%E5%A2%A8%E6%B0%B4%E5%B1%8F/" style="font-size: 0.88rem;">墨水屏<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 0.88rem;">安全<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF-10-NFC/" style="font-size: 0.88rem;">小米手环 10 NFC<sup>1</sup></a><a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 0.88rem;">手机<sup>9</sup></a><a href="/tags/%E6%8B%93%E7%AB%B9/" style="font-size: 0.88rem;">拓竹<sup>1</sup></a><a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 0.88rem;">旅行<sup>3</sup></a><a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 0.88rem;">日本<sup>3</sup></a><a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" style="font-size: 0.88rem;">树莓派<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 0.88rem;">游戏<sup>1</sup></a><a href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/" style="font-size: 0.88rem;">独立开发<sup>2</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 0.88rem;">生活<sup>2</sup></a><a href="/tags/%E7%9B%B8%E5%86%8C/" style="font-size: 0.88rem;">相册<sup>1</sup></a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" style="font-size: 0.88rem;">程序员<sup>21</sup></a><a href="/tags/%E7%BA%A2%E7%B1%B3-K-Pad/" style="font-size: 0.88rem;">红米 K Pad<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 0.88rem;">网络<sup>8</sup></a><a href="/tags/%E8%85%95%E8%A1%A8/" style="font-size: 0.88rem;">腕表<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@6.1.6/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.gadore.top',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.gadore.top',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.gadore.top',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://cdn.cbd.int/qrcodejs@1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>

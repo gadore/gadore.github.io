@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;游戏&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2024-04-18T11:07:43.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/1690965581883/</id>
+        <title>复古游戏分享：遗失的机器人</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/1690965581883/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;接触游戏的契机是初中时浏览的杂志《科学少年》，发现了这款由 Thomas Brush 开发的游戏，当时画风就给我留下了深刻的印象，随着 Flash 逐渐淡出我们的视野，这类以 Flash 平台为载体的游戏也渐渐被时间之河埋没。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我之前在少数派评论区也有推荐过一次，但当时没找到什么合适的方式让大家也体验。最近在 Github 上找到一个好用的 Flash 播放器，完美兼容这款游戏。于是就打算重新推荐，这次你们可以在&lt;strong&gt;文末下载游戏本体进行游玩啦&lt;/strong&gt;～&lt;/p&gt;
+&lt;p&gt;虽然是十多年之前的游戏，现在玩也一点儿不觉得过时。画面美术风格一点不逊于现在的 2D 游戏，而且可以说是一个优秀的典范。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;清新的画风&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-44d19e6cb6075f2b.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;进入游戏之后立刻就能看到这幅美美的风景&lt;/p&gt;
+&lt;p&gt;如果这画风你享受不能，那文章大概率没必要看下去了，浪费您时间抱歉了！&lt;/p&gt;
+&lt;p&gt;如果你特别喜欢这画风，那文章没必要再看下去了，直接拉到文末下载游戏去吧！&lt;/p&gt;
+&lt;h2 id=&#34;游戏概述（涉及游戏玩法剧透，介意直接拉到文末）&#34;&gt;&lt;a href=&#34;#游戏概述（涉及游戏玩法剧透，介意直接拉到文末）&#34; class=&#34;headerlink&#34; title=&#34;游戏概述（涉及游戏玩法剧透，介意直接拉到文末）&#34;&gt;&lt;/a&gt;&lt;strong&gt;游戏概述（涉及游戏玩法剧透，介意直接拉到文末）&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/upload/1738131-cf9ec8cbf7229386.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;正式进入第一章节就会是这个画面，现在你所控制的机器人仍然只能左右移动和跳跃，这是因为你还没激活他的技能。机器人一共有三个技能，会在接下来的游戏过程中依次激活。&lt;br&gt;激活爪子后就可以用爪子抓住那个树上的球，然后你就会发现机器人已经上树了…^ ^.（鼠标左键点击球）。第一次玩的时候我在这个地方耽误了好久，就因为不知道那个球有什么用。&lt;/p&gt;
+&lt;p&gt;第一章节可以激活：爪子、往返跳。第二章节激活：高跳踏板。&lt;/p&gt;
+&lt;h3 id=&#34;按键与人物控制&#34;&gt;&lt;a href=&#34;#按键与人物控制&#34; class=&#34;headerlink&#34; title=&#34;按键与人物控制&#34;&gt;&lt;/a&gt;&lt;strong&gt;按键与人物控制&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;A、D控制机器人(Skinny)左右移动，W是跳跃键，空格键与人物进行互动。&lt;br&gt;在开始界面会让你收集十个发光圆点作为入门操作。完成之后你就会进入第一个章节。&lt;/p&gt;
+&lt;h3 id=&#34;画风和背景音乐&#34;&gt;&lt;a href=&#34;#画风和背景音乐&#34; class=&#34;headerlink&#34; title=&#34;画风和背景音乐&#34;&gt;&lt;/a&gt;&lt;strong&gt;画风和背景音乐&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;也就是从这里开始，背景音乐和画面开始灵动起来。&lt;br&gt;黄绿色的背景和黑色的背景并不在同一维面，移动的时候就会发现&lt;br&gt;不多说，直接贴图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-a67a71e483acdcc3.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-e9e81351e42a54e2.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;遗失的机器人.第一章节 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-0ccc90c167fa45d9.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;遗失的机器人.第二章节 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-44d19e6cb6075f2b.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;遗失的机器人.第三章节&lt;/p&gt;
+&lt;h3 id=&#34;主任务与隐藏任务&#34;&gt;&lt;a href=&#34;#主任务与隐藏任务&#34; class=&#34;headerlink&#34; title=&#34;主任务与隐藏任务&#34;&gt;&lt;/a&gt;&lt;strong&gt;主任务与隐藏任务&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/upload/1738131-f1dcbcb32ecb1077.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;收集的白色圆点就是为了拯救这些被困的人。&lt;br&gt;&lt;strong&gt;游戏的主旋律就是收集所有发光圆点，然后去拯救被困的人。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;拯救一个人物需要的圆点数量会逐渐增加，刚开始是四个，最高时会达到六个。而且所要救的人也会增加，所以难度也会逐渐提高（不过话说回来，难度不提高我们玩着还有什么意思对不对？）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-3e18af277f88c724.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;白色灯泡是存档点 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-3e9970687e30d9cd.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;每章都有的隐藏点，需要钥匙才能打开。 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/1738131-a680b09933647a00.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;钥匙就在这上边，需要跳起来才看得到&lt;/p&gt;
+&lt;p&gt;本来第四章节也是打算介绍的，但思来想去还是留一些悬念给你们比较好。嘿嘿。&lt;/p&gt;
+&lt;h2 id=&#34;游玩方式&#34;&gt;&lt;a href=&#34;#游玩方式&#34; class=&#34;headerlink&#34; title=&#34;游玩方式&#34;&gt;&lt;/a&gt;&lt;strong&gt;游玩方式&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;1、下载游戏本体( SWF 格式，从以下链接选择一个下载即可)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourceforge.net/projects/skinnyrobot/files/latest/download&#34;&gt;SourceForge&lt;/a&gt;（不用登陆，直接下载）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pan.baidu.com/s/1RfdMJRfz4-kO6KmoNhBwsw?pwd=kqpe&#34;&gt;百度网盘&lt;/a&gt;（需要登录，才能下载）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2、使用 Flash 播放器打开 SWF 文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ruffle.rs/&#34;&gt;https://ruffle.rs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/3976617acd311e8db1d7db722587652c.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击浏览&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/upload/fec48d7991987fc475526667e01ff76b.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;选择刚刚下载的 swf 格式文件&lt;/p&gt;
+&lt;h2 id=&#34;Enjoy-！&#34;&gt;&lt;a href=&#34;#Enjoy-！&#34; class=&#34;headerlink&#34; title=&#34;Enjoy ！&#34;&gt;&lt;/a&gt;Enjoy ！&lt;/h2&gt;</content>
+        <category term="游戏" />
+        <updated>2024-04-18T11:07:43.000Z</updated>
+    </entry>
+</feed>

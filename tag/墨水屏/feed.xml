@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;墨水屏&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2025-11-13T11:00:00.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/quote-0/</id>
+        <title>借助捷径，不写代码也能玩转 Quote/0 墨水屏</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/quote-0/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/102845&#34;&gt;少数派首发&lt;/a&gt;（少数派网站同名作者：千里之豪）&lt;/p&gt;
+&lt;p&gt;墨水屏一直是我非常偏爱的产品形态：低功耗、不依赖背光，同时具备可刷新特性，几乎天生就是为信息看板而设计的。遗憾的是，我并非硬件工程师出身，始终没能亲手做出一块完全符合自己需求的墨水屏。&lt;/p&gt;
+&lt;p&gt;几年前，我购买了两块超市电子价签，并在好奇心的驱动下，逆向分析出它们的蓝牙通信协议，由此写下了&lt;a href=&#34;https://sspai.com/post/78993&#34;&gt;《抓包解协议，代码造布局：电子墨水价签改造 NAS 监控屏小记》&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;也正因如此，当 &lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 出现时，我格外期待。它在官方丰富模板之外，还提供了更灵活的数据更新方式，可以直接通过苹果的捷径（Shortcuts）进行扩展，让墨水屏的玩法不再局限于预设场景。&lt;/p&gt;
+&lt;h2 id=&#34;如何驱动-Quote-0-更新&#34;&gt;&lt;a href=&#34;#如何驱动-Quote-0-更新&#34; class=&#34;headerlink&#34; title=&#34;如何驱动 Quote&amp;#x2F;0 更新&#34;&gt;&lt;/a&gt;&lt;strong&gt;如何驱动 Quote&amp;#x2F;0 更新&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;要在日常中使用 Quote&amp;#x2F;0，主要依赖以下三点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;对捷径 App 的基本操作（Shortcuts）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;官方或第三方 App 对 Siri Intent 的支持&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Quote&amp;#x2F;0 的设备码和 API Key&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过这些条件，就能构建出灵活的自动化更新方案。下面以几个场景为例。&lt;/p&gt;
+&lt;h3 id=&#34;场景一：日程提醒&#34;&gt;&lt;a href=&#34;#场景一：日程提醒&#34; class=&#34;headerlink&#34; title=&#34;场景一：日程提醒&#34;&gt;&lt;/a&gt;&lt;strong&gt;场景一：日程提醒&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;捷径 + 日历 App + Quote&amp;#x2F;0 文字 API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;苹果自带的日历应用可以与捷径配合，获取即将到来的日程信息，再通过 &lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 展示在墨水屏上。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/55543381ffe41369a7891f708732c0dd.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;iOS 日历日程安排，在 Shortcuts 里用来请求更新 Quote&amp;#x2F;0&lt;/p&gt;
+&lt;p&gt;效果示例：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7ca1b2138ebe29b26987f8061916b0b0.jpg&#34; alt=&#34;7ca1b2138ebe29b26987f8061916b0b0jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;场景二：节假日查询&#34;&gt;&lt;a href=&#34;#场景二：节假日查询&#34; class=&#34;headerlink&#34; title=&#34;场景二：节假日查询&#34;&gt;&lt;/a&gt;&lt;strong&gt;场景二：节假日查询&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;捷径 + 休息日 App + Quote&amp;#x2F;0 文字 API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;「休息日」是一款提供节假日信息查询的 App，全面支持 Siri Intent。通过配置捷径触发流程，可以快速获取节假日安排并同步到 &lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/fe43e9e0f49e4b5f39847c7fce0aa7af.png&#34; alt=&#34;fe43e9e0f49e4b5f39847c7fce0aa7afpng&#34;&gt;&lt;/p&gt;
+&lt;p&gt;休息日模板 - 复制上一个配置 - 休息日提供的 Siri Intent&lt;/p&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3346da6e176bbe39e48736c02485b5ef.jpg&#34; alt=&#34;3346da6e176bbe39e48736c02485b5efjpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;场景三：生日-纪念日提醒&#34;&gt;&lt;a href=&#34;#场景三：生日-纪念日提醒&#34; class=&#34;headerlink&#34; title=&#34;场景三：生日 &amp;#x2F; 纪念日提醒&#34;&gt;&lt;/a&gt;&lt;strong&gt;场景三：生日 &amp;#x2F; 纪念日提醒&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;捷径 + 唯记 App + Quote&amp;#x2F;0 文字 API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;「&lt;a href=&#34;https://apps.apple.com/cn/app/%E5%94%AF%E8%AE%B0/id6502951931&#34;&gt;唯记&lt;/a&gt;」是一款专注于生日和纪念日提醒的 App，同样支持 Siri Intent 调用。借助捷径，你可以灵活获取倒数日信息并投放到墨水屏。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/00a23de10c94585a8fcd473498598d51.png&#34; alt=&#34;00a23de10c94585a8fcd473498598d51png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;效果示例：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/f167b589c34d752893631b60e87efb61.jpg&#34; alt=&#34;f167b589c34d752893631b60e87efb61jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;自动化轮播&#34;&gt;&lt;a href=&#34;#自动化轮播&#34; class=&#34;headerlink&#34; title=&#34;自动化轮播&#34;&gt;&lt;/a&gt;&lt;strong&gt;自动化轮播&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在捷径 App 中切换到底部的&lt;strong&gt;「自动化」&lt;/strong&gt;标签，点击右上角&lt;strong&gt;「添加」&lt;/strong&gt;，选择&lt;strong&gt;「特定时间」&lt;/strong&gt;后，绑定之前配置好的快捷指令。接着，可以根据需求设置不同时间段展示的不同信息。&lt;/p&gt;
+&lt;p&gt;这样一来，&lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 就能与手机信息保持同步，实现自动摘要与定时轮播，让它真正成为一个动态更新的桌面信息小组件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/41242ca6228949aa07003f65ee47f2ab.png&#34; alt=&#34;41242ca6228949aa07003f65ee47f2abpng&#34;&gt;&lt;/p&gt;
+&lt;p&gt;iOS 捷径自动化配置&lt;/p&gt;
+&lt;h2 id=&#34;进阶玩法：图片-API&#34;&gt;&lt;a href=&#34;#进阶玩法：图片-API&#34; class=&#34;headerlink&#34; title=&#34;进阶玩法：图片 API&#34;&gt;&lt;/a&gt;&lt;strong&gt;进阶玩法：图片 API&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;文字展示并不是终点。&lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 更强大的能力在于 &lt;strong&gt;图片 API 更新&lt;/strong&gt;。在 Node.js 环境下，可以使用虚拟 Canvas （无需借助浏览器或客户端）动态生成画布，并输出图片，再推送到墨水屏，实现更丰富的视觉效果。&lt;/p&gt;
+&lt;p&gt;例如下图的黄金走势图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/000d94c0a6c898e6d5e0eb3a0ea69c07.jpg&#34; alt=&#34;000d94c0a6c898e6d5e0eb3a0ea69c07jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;相关示例代码已更新至 &lt;a href=&#34;https://sspai.com/link?target=https://github.com/gadore/ink-screen-bluetooth&#34;&gt;GitHub 仓库&lt;/a&gt;，供参考与拓展。&lt;/p&gt;
+&lt;h2 id=&#34;写在最后&#34;&gt;&lt;a href=&#34;#写在最后&#34; class=&#34;headerlink&#34; title=&#34;写在最后&#34;&gt;&lt;/a&gt;&lt;strong&gt;写在最后&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://sspai.com/s/eOyP&#34;&gt;Quote&amp;#x2F;0&lt;/a&gt; 的出现，让墨水屏的使用方式变得前所未有的灵活。通过捷径、Siri Intent 和 API 的结合，每个人都可以根据自身需求，快速定制出独一无二的应用场景。&lt;/p&gt;
+&lt;p&gt;当然，这种玩法也高度依赖应用开发者对 Siri Intent 的&lt;strong&gt;适配&lt;/strong&gt;，如果没有适配，就只能走写代码这条老路了，但借助 AI 大模型，现在好像也不是不可逾越的高墙了，勇敢的少年啊，赶紧去尝试吧～&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="墨水屏" />
+        <updated>2025-11-13T11:00:00.000Z</updated>
+    </entry>
+</feed>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;lineageos&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2025-08-28T17:28:19.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/</id>
+        <title>Google Pixel 5 更换 Lineage OS</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/google-pixel-5-with-lineage-os/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;当过社畜的都知道，以季度为施工周期的项目，进入 8、9 月份基本上到了项目的加速或是冲刺期，所以整个 8 月份都在赶项目进度；&lt;/p&gt;
+&lt;p&gt;外包项目倒是也接触了好几个，但都停留在了技术咨询阶段，0 入账；&lt;/p&gt;
+&lt;p&gt;尝试用 Raspberry Pi 4B 和 Qwen3 0.6B 模型进行 Edge Ai + 自动联网分析的应用开发，用 Python 做出来之后发现效果略差于手机上的 App ，又是无功而返的三个晚上；&lt;/p&gt;
+&lt;p&gt;8 月就这么碌碌无为地溜了过去，整个人感觉好像什么都没做，那就刷个机吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的备用 Android 手机是 Pixel 5，官方已经永久停止系统支持了，当前的系统最新版本停留在 Android 14.&lt;/p&gt;
+&lt;p&gt;但我看到了 Android 15 有非常吸引人的优化系统系能的更新（ page size 16 kb），所以就特想升级，由于之前使用过 Lineage OS，所以就打开了它的官网，果然支持，直接刷入～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202025%E5%B9%B48%E6%9C%8828%E6%97%A5%2013_45_34.png&#34; alt=&#34;ChatGPT Image 2025年8月28日 13_45_34.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.lineageos.org/devices/redfin/&#34;&gt;Lineage OS for Pixel 5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刷入后发现了很多原生系统不支持的特性，太惊喜了！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;官方支持的 16kb 分页，App 打开效率提升&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;电池健康度检测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;充电控制（最大充到多少）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;状态栏展示网速（老传统了，其实没啥可说的，但原生没有）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1-LVWz.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2-jEiy.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/3-xxGr.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4-apgs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;还得是 Pixel，官方不支持社区也会支持。&lt;/p&gt;
+&lt;p&gt;我感觉下一个版本的 Lineage OS （Android 16）理论上来说也能支持，&lt;/p&gt;
+&lt;p&gt;感谢 Lineage OS 。&lt;/p&gt;
+&lt;p&gt;期待一波～&lt;/p&gt;
+</content>
+        <category term="手机" />
+        <category term="刷机" />
+        <category term="Pixel 5" />
+        <category term="LineageOS" />
+        <updated>2025-08-28T17:28:19.000Z</updated>
+    </entry>
+</feed>
