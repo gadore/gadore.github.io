@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;倒数日&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-04-02T08:28:19.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/v2rmb-free/</id>
+        <title>iOS 应用：唯记，限免</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/v2rmb-free/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202026-04-01%2016.32.53_%E5%89%AF%E6%9C%AC-HfAM.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;开发背景&#34;&gt;&lt;a href=&#34;#开发背景&#34; class=&#34;headerlink&#34; title=&#34;开发背景&#34;&gt;&lt;/a&gt;开发背景&lt;/h2&gt;&lt;p&gt;上大学时，我是看着一堆独立开发者的故事毕业的，Kavin、Magabits、八爷等等，他们在我的心里留下了一个执念。&lt;/p&gt;
+&lt;p&gt;在具备了实力（系统学习了编程）和财力（工作后有钱购买 💻 Macbook Pro）之后，我也终于着手开发出了一款自己的 App：唯记&lt;/p&gt;
+&lt;p&gt;那可是 2020 年，AI 还无法使用，SwiftUI 的文档也散落在互联网的各个角落的时代。「唯记」开发出来后，我想着如果有人也想用，就象征性地付费给我一块钱，这样我们都有光明的未来🐶。&lt;/p&gt;
+&lt;h2 id=&#34;当前营收状况&#34;&gt;&lt;a href=&#34;#当前营收状况&#34; class=&#34;headerlink&#34; title=&#34;当前营收状况&#34;&gt;&lt;/a&gt;当前营收状况&lt;/h2&gt;&lt;p&gt;但，既然只有很少人看得到这个帖子，我也就不嫌丢人了：实际上这三年来用户数量始终没有突破1000，好吧，甚至没有突破500。&lt;/p&gt;
+&lt;p&gt;错误当然在我，因为我也并没有真正把它当作一个正经的可以盈利的 App 在运作。截止到目前也就3～400人在使用。相对应的，我这几年的 App Store 开发者账号付费已经轻松超过 1k 了 。&lt;/p&gt;
+&lt;p&gt;我必须承认我不是一个合格的独立开发者（本来也不是……）😭，这款 App 也过于平庸，我现在终于接受了它的平庸，但我仍旧还没接受自己的平庸，即使 Github 的废案仓库一个接着一个地建，我还在努力爬行，我知道现在早已不是一个独立开发者的黄金时代，但心里总是放不下那种执念。&lt;/p&gt;
+&lt;h2 id=&#34;如果你真的喜欢&#34;&gt;&lt;a href=&#34;#如果你真的喜欢&#34; class=&#34;headerlink&#34; title=&#34;如果你真的喜欢&#34;&gt;&lt;/a&gt;如果你真的喜欢&lt;/h2&gt;&lt;p&gt;咳咳，总而言之，既然我一直没打算靠 唯记 赚钱，那设置这一块钱的付费反而是画蛇添足，现在永久免费啦～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果你真的真的喜欢唯记的话：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;App 本身的安装后占用是不超过15MB 的，应该足够轻量；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用的是 iCloud 同步 Sqlite 数据库，绝对的隐私友好；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;对苹果即将到来的 AI 支持应该是很好的（适配了 App Intent，方便 siri 调用）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;无内购、无广告、无账号绑定，现在也无需付费了，放心食用～&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;%5B%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%5D(https://sspai.com/post/102845)&#34;&gt;搭配 Quote&amp;#x2F;0 ，也很好玩哦～&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202026-04-01%2015.55.10-FcRx.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&#34;https://apps.apple.com/us/app/v2rmb/id6502951931&#34;&gt;‎V2RMB App - App Store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;或者直接 App Store 搜索：v2rmb&lt;/p&gt;
+</content>
+        <category term="独立开发" />
+        <category term="iOS" />
+        <category term="唯记" />
+        <category term="V2RMB" />
+        <category term="Way 2 Remember" />
+        <category term="倒数日" />
+        <updated>2026-04-02T08:28:19.000Z</updated>
+    </entry>
+</feed>

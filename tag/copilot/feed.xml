@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;copilot&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-03-26T12:28:19.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="独立开发" />
+    <category term="iOS" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/copilot-token-monitoring/</id>
+        <title>为了解决 Openclaw 的 Token 恐怖消耗，我做了这些事……</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/copilot-token-monitoring/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0809.jpg&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Agent failed before reply: All models failed (17): github-copilot&amp;#x2F;claude-haiku-4.5: Provider github-copilot is in cooldown (all profiles unavailable) (rate_limit) | ……………………………… github-copilot&amp;#x2F;gpt-5: Provider github-copilot is in cooldown (all profiles unavailable) (rate_limit).&lt;/p&gt;
+&lt;p&gt;Logs: openclaw logs –follow&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从 2 月给树莓派装上 Openclaw 开始，我的 Copilot Pro 订阅就被过度消耗了，自己平时写代码拼命去用也很难用完的 300 次 PR （高级模型请求次数），Openclaw 两天就可以用完，所以对这种消耗焦虑就一直萦绕在我心中。到了 3 月，我就尝试了些折腾方式来跟踪我的 Token（PR） 用量。&lt;/p&gt;
+&lt;h2 id=&#34;使用低速率模型（Flash、-mini）&#34;&gt;&lt;a href=&#34;#使用低速率模型（Flash、-mini）&#34; class=&#34;headerlink&#34; title=&#34;使用低速率模型（Flash、 mini）&#34;&gt;&lt;/a&gt;使用低速率模型（Flash、 mini）&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/lowCostModel.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;使用低速率模型的确可以给消耗打三折，但低速率模型也会带来模型降智，降智后好多任务需要我反复纠错，一来二去省掉的模型用量还是浪费了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/clawbot.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;增加监控手段&#34;&gt;&lt;a href=&#34;#增加监控手段&#34; class=&#34;headerlink&#34; title=&#34;增加监控手段&#34;&gt;&lt;/a&gt;增加监控手段&lt;/h2&gt;&lt;p&gt;Openclaw 有时候经常会不声不响地跑大半天，在我看不到的地方消耗大量的 Token 但没有产出任何有效的产物；有时候又会摆烂，跟聊天网页一样，我说一句，他后台跑10分钟就歇菜了，我还得频繁去打开网页问他状态，所以监控 Token 的消耗趋势可以得知 Openclaw 是否在后台正常的工作。&lt;/p&gt;
+&lt;h3 id=&#34;1、Quote-0-墨水屏监控&#34;&gt;&lt;a href=&#34;#1、Quote-0-墨水屏监控&#34; class=&#34;headerlink&#34; title=&#34;1、Quote&amp;#x2F;0 墨水屏监控&#34;&gt;&lt;/a&gt;1、Quote&amp;#x2F;0 墨水屏监控&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/quote_copilot_monitor.jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2、iOS-小组件监控-（Http-Widget）&#34;&gt;&lt;a href=&#34;#2、iOS-小组件监控-（Http-Widget）&#34; class=&#34;headerlink&#34; title=&#34;2、iOS 小组件监控 （Http Widget）&#34;&gt;&lt;/a&gt;2、iOS 小组件监控 （Http Widget）&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/HttpWidget.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3、Android-小组件监控-HTTP-快捷指令&#34;&gt;&lt;a href=&#34;#3、Android-小组件监控-HTTP-快捷指令&#34; class=&#34;headerlink&#34; title=&#34;3、Android 小组件监控 ( HTTP 快捷指令 )&#34;&gt;&lt;/a&gt;3、Android 小组件监控 ( HTTP 快捷指令 )&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/http_shortcuts.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/copilot_widget_1.png&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; payload = &lt;span class=&#34;title class_&#34;&gt;JSON&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;parse&lt;/span&gt;(response.&lt;span class=&#34;property&#34;&gt;body&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; usageItems = payload &amp;amp;&amp;amp; payload.&lt;span class=&#34;property&#34;&gt;usageItems&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; gross = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (usageItems &amp;amp;&amp;amp; usageItems.&lt;span class=&#34;property&#34;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; usageItems.&lt;span class=&#34;property&#34;&gt;length&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; item = usageItems[i]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (item &amp;amp;&amp;amp; item.&lt;span class=&#34;property&#34;&gt;product&lt;/span&gt; === &lt;span class=&#34;string&#34;&gt;&amp;#x27;Copilot&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      gross += &lt;span class=&#34;title class_&#34;&gt;Number&lt;/span&gt;(item.&lt;span class=&#34;property&#34;&gt;grossQuantity&lt;/span&gt; || &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 计算百分比&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; usagePercent = (gross / &lt;span class=&#34;number&#34;&gt;300&lt;/span&gt;) * &lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用 toFixed(1) 保留一位小数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; formattedPercent = usagePercent.&lt;span class=&#34;title function_&#34;&gt;toFixed&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title function_&#34;&gt;setVariable&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;Copilot&amp;quot;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;Copilot: &amp;#x27;&lt;/span&gt; + formattedPercent + &lt;span class=&#34;string&#34;&gt;&amp;#x27;%&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;JavaScript&lt;/p&gt;
+&lt;h2 id=&#34;改用-Github-Agent-Action&#34;&gt;&lt;a href=&#34;#改用-Github-Agent-Action&#34; class=&#34;headerlink&#34; title=&#34;改用 Github Agent + Action&#34;&gt;&lt;/a&gt;改用 Github Agent + Action&lt;/h2&gt;&lt;p&gt;当你深入使用 Openclaw 了一段时间之后，你很快就会发现他的瓶颈，你让他做简单的事情，他可以很快帮你搞定，但你如果让他帮你开发项目，随着项目的功能复杂度上升、业务逻辑逐渐展开给大模型后，Openclaw 很快就开始失控了：它会反复在一个地方出错，或者改好了一个地方后又会在另一个地方出问题。这不仅仅消耗你大量 Token，还会消耗你大量时间和精力，反反复复好几次之后，你会像我一样萌生这样一个想法：我自己写都比让他改要强。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/thumbnails/2026/w1600/iShot2026-03-2614.02.15.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但好在 Openclaw 已经搅动了 Agent 的整个格局，现在其他家也已经在自动化 Agent 助手功能方面做了不小的升级，以我现在在用的 Github Copilot 的订阅为例，如果你是开发工程师，并且有一定的框架思维的话，你完全可以站在架构师的层面上（其实没有也行，问 AI 就好了），使用 Github 的 Agent + Action 实现不输于 Openclaw 的工程开发能力，这种方式会让整个工程在规模逐渐庞大之后仍旧保证基本可控，而且消耗的 Token 量要小非常多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-03-26_13.49.02-fajE.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同样可以运行测试，甚至可以运行无头浏览器测试！！&lt;/p&gt;
+&lt;p&gt;当然了，Copilot 也有犯蠢的时候：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-03-26_13.28.57-ImKA.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但相对于 Openclaw 项目复杂度上升后 Token 消耗也指数级上升，这种可控的消耗方式还是更容易让人（我）接受～&lt;/p&gt;
+&lt;h2 id=&#34;升级-Copilot-Pro&#34;&gt;&lt;a href=&#34;#升级-Copilot-Pro&#34; class=&#34;headerlink&#34; title=&#34;升级 Copilot Pro +&#34;&gt;&lt;/a&gt;升级 Copilot Pro +&lt;/h2&gt;&lt;p&gt;如果你已经开始用起来这个 Github Copilot，那么恭喜你，你已经使用 10 美元雇佣了一个能力超强的开发工程了，他任劳任怨，随叫随到，你可以一天分配给他 10 个开发任务，然后坐等他叫你验收就好了。&lt;/p&gt;
+&lt;p&gt;如果你还想继续扩大你的公司规模，可以升级 Github Copilot Pro +，39 刀，你就可以额外再雇佣 4 名能力非凡的开发工程师。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="AI" />
+        <category term="Copilot" />
+        <category term="Openclaw" />
+        <updated>2026-03-26T12:28:19.000Z</updated>
+    </entry>
+</feed>
