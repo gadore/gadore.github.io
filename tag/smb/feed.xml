@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;smb&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-06-02T09:30:19.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="程序员" />
+    <category term="Openclaw" />
+    <category term="手机" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-update-log/</id>
+        <title>时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-update-log/"/>
+        <content type="html">&lt;p&gt;距离 SynoSync 发布 1.0 开始也已经过了一个多月了，在这段时间里，我收到了很多有用的建议，也按照大家的建议对 SynoSync 进行了一系列的升级，现在，是时候让大家重新认识这款 App 了！&lt;/p&gt;
+&lt;p&gt;初版发布介绍：&lt;a href=&#34;https://blog.gadore.top/archives/synosync/&#34;&gt;SynoSync｜iOS 缺失的现代化文件同步&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B46%E6%9C%881%E6%97%A5%2015_26_27.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;重要更新一：中文名、换图标&#34;&gt;&lt;a href=&#34;#重要更新一：中文名、换图标&#34; class=&#34;headerlink&#34; title=&#34;重要更新一：中文名、换图标&#34;&gt;&lt;/a&gt;重要更新一：中文名、换图标&lt;/h2&gt;&lt;h3 id=&#34;SynoSync-名称由来&#34;&gt;&lt;a href=&#34;#SynoSync-名称由来&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 名称由来&#34;&gt;&lt;/a&gt;SynoSync 名称由来&lt;/h3&gt;&lt;p&gt;这款应用一开始的开发初衷是解决我在 iOS 上同步我 NAS 里的 Obsidian 文档库的，因为我 NAS 买的是群晖（Synology），所以我就把它起名为了 SynoSync，翻译过来就是：群晖同步，当时我留了心眼，没有贸然起中文名，因为我觉得叫群晖同步的话太过绑定群晖也不好。&lt;/p&gt;
+&lt;h3 id=&#34;中文名「时刻同步」的含义&#34;&gt;&lt;a href=&#34;#中文名「时刻同步」的含义&#34; class=&#34;headerlink&#34; title=&#34;中文名「时刻同步」的含义&#34;&gt;&lt;/a&gt;中文名「时刻同步」的含义&lt;/h3&gt;&lt;p&gt;「时刻同步」这个名称一方面是 Syno 跟 时刻 有一定的谐音，更重要的是，应用是可以通过 iOS 后台调度机制在你不打开 App 的情况下进行同步，当然，这其中仍旧不能突破 iOS 的后台限制，每次后台调度同步的窗口只有几十秒，不过充电情况下系统会给较长的后台同步时间，也足够我同步 NAS 上的超大文档库了，相比较 Obsidian 内置的插件不打开就不同步，我觉得这种后台同步的机制已经相当及时了，所以「时刻同步」就此定下。&lt;/p&gt;
+&lt;h3 id=&#34;图标更换&#34;&gt;&lt;a href=&#34;#图标更换&#34; class=&#34;headerlink&#34; title=&#34;图标更换&#34;&gt;&lt;/a&gt;图标更换&lt;/h3&gt;&lt;p&gt;同理，在 App 开发早期，我更多的精力都在开发、测试、修 Bug，根本没有精力去设计 App 图标，所以第一版本的图标完全是打开 AI 生图然后顺手生成的，没有任何设计感可言。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024-oban.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但随着 App 功能逐渐稳定，现在我也终于有余力来重新更换一下 App 图标了。&lt;/p&gt;
+&lt;p&gt;相比较第一版顺手使用 AI 生成的版本，现在的图标设计做了大量的精简。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;图标主题仅保留两个代表同步的首尾衔接的箭头，&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;左右箭头分别是云 ☁️ 和文件夹 📁 的轮廓，代表「时刻同步」是同步云服务器和本地文件夹的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;箭头取色基本上跟 MacOS 的 Finder 接近，一致性这块拿捏的死死的～&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望你们更喜欢这个新的图标版本，当然，老版本图标依旧可以在设置中切换。&lt;/p&gt;
+&lt;h2 id=&#34;重要更新二：增加对-WebDAV、SMB、DSM-6-0-等协议支持&#34;&gt;&lt;a href=&#34;#重要更新二：增加对-WebDAV、SMB、DSM-6-0-等协议支持&#34; class=&#34;headerlink&#34; title=&#34;重要更新二：增加对 WebDAV、SMB、DSM 6.0 等协议支持&#34;&gt;&lt;/a&gt;重要更新二：增加对 WebDAV、SMB、DSM 6.0 等协议支持&lt;/h2&gt;&lt;p&gt;正如我上边所提到的，时刻同步一开始是为了方便我同步群晖上的文档库而开发的，DSM （群晖 NAS 系统） 支持是刚需。&lt;/p&gt;
+&lt;p&gt;随着下载人数越来越多……&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;老旧 NAS 和黑群晖可能需要用到 DSM 6.0 和 https 自签证书，已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;部分现存服务器仅部署了 WebDAV 协议？WebDAV 协议已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;家里的路由器仅支持 SMB 协议？SMB 协议已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为我主要使用 DSM 协议完成同步，所以其他协议都只做了基础功能测试，保证功能是完整可用的，但非 DSM 7.0 协议在长期使用下来的稳定性我是很难知晓的，如果大家有遇到任何问题，欢迎反馈～&lt;/p&gt;
+&lt;h2 id=&#34;重要更新三：调整最低可运行的-iOS-版本到-iOS-16-4&#34;&gt;&lt;a href=&#34;#重要更新三：调整最低可运行的-iOS-版本到-iOS-16-4&#34; class=&#34;headerlink&#34; title=&#34;重要更新三：调整最低可运行的 iOS 版本到 iOS 16.4&#34;&gt;&lt;/a&gt;重要更新三：调整最低可运行的 iOS 版本到 iOS 16.4&lt;/h2&gt;&lt;p&gt;「SynoSync」发布第一周就有朋友因为版本问题不得不升级自己设备的 iOS 大版本来安装「时刻同步」（非常感谢这位朋友的支持🙏🙏🙏），当时我忙于修复已知的同步的问题，根本没有余力兼顾降低 iOS 版本支持的工作，但最近这种低版本兼容的呼声开始变得多了起来，似乎使用低版本或者旧设备的朋友对这类文件同步软件的需求挺多？所以我就在砍掉一部分不重要的特性的情况下，将 App 最低可安装版本从 iOS 18.6 一路降到了 iOS 16.4。&lt;/p&gt;
+&lt;p&gt;我也希望更多小伙伴可以用上「时刻同步」，更需要你们在使用低版本时遇到任何问题后第一时间告诉我，因为我手头没有低版本设备，只能使用 XCode 自带的模拟器运行低版本设备做到最基础的兼容运行和功能可用性测试，但真实设备运行起来什么样，有任何问题，还需要大家安装和使用后告诉我。&lt;/p&gt;
+&lt;h2 id=&#34;承诺&#34;&gt;&lt;a href=&#34;#承诺&#34; class=&#34;headerlink&#34; title=&#34;承诺&#34;&gt;&lt;/a&gt;承诺&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;「时刻同步」绝不搞订阅制，工具类的 App 搞订阅制就是抢钱，当前情况下即使不内购的朋友也可以使用绝大多数同步功能，服务器添加、同步任务添加等没有任何限制；内购仅仅解锁后台静默同步和一些进阶功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;绝不 Vibe Coding，我会借助 AI 开发一些我不熟悉的语法特性，一些奇奇怪怪的 bug 也会让 AI 帮我分析，但我绝不会全权交给 AI 任由 Agent 编写风险未知的代码（毕竟我自己也要高强度使用）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;鸣谢&#34;&gt;&lt;a href=&#34;#鸣谢&#34; class=&#34;headerlink&#34; title=&#34;鸣谢&#34;&gt;&lt;/a&gt;鸣谢&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;❤️ 特别感谢第一天下载就付费内购的朋友！也感谢所有内购朋友的信任与支持～&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;❤️ 感谢所有反馈与建议的朋友，「时刻同步」是在你们的建议下越来越完善的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;❤️ 感谢少数派网站对本 App 的大力推广支持。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的另一款轻量级倒数日 App「唯记」永久免费且没有任何内购。&lt;/p&gt;
+&lt;p&gt;如果你厌倦了各种复杂的 UI，蹩脚的设置，或者想要一个一目了然的倒数日小组件，那可以试试「唯记」，又不要钱～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/v2rmb-store.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;时刻同步(SynoSync)：iOS 缺失的现代化文件同步： &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;App Store 下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;唯记(V2RMB)：简约漂亮的双历倒数日：&lt;a href=&#34;https://apps.apple.com/cn/app/%E5%94%AF%E8%AE%B0/id6502951931&#34;&gt;App Store 下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <category term="WebDAV" />
+        <category term="SMB" />
+        <updated>2026-06-02T09:30:19.000Z</updated>
+    </entry>
+</feed>
