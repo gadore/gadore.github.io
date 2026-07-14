@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;a6700&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-07-14T11:00:00.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="iPhone" />
+    <category term="a6700" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/electronics-prices-surge./</id>
+        <title>不得不应对的电子产品涨价</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/electronics-prices-surge./"/>
+        <content type="html">&lt;p&gt;近两年，AI 产业野蛮生长带动了整个内存产业涨价，而内存价格上涨又进一步传导到了消费电子领域。&lt;/p&gt;
+&lt;p&gt;SSD、显卡、手机、电脑、NAS……&lt;/p&gt;
+&lt;p&gt;几乎所有电子产品都在变贵。&lt;/p&gt;
+&lt;p&gt;而且从目前来看，这场涨价潮大概率还会持续至少两年以上。&lt;/p&gt;
+&lt;p&gt;既然改变不了，那普通人能做什么？&lt;/p&gt;
+&lt;p&gt;我分享一下我这些年踩过坑之后总结出来的一些经验。&lt;/p&gt;
+&lt;p&gt;很多事情其实我几年前就已经开始布局了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8814%E6%97%A5%2010_59_56.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;手机：主动降级消费&#34;&gt;&lt;a href=&#34;#手机：主动降级消费&#34; class=&#34;headerlink&#34; title=&#34;手机：主动降级消费&#34;&gt;&lt;/a&gt;手机：主动降级消费&lt;/h1&gt;&lt;h2 id=&#34;1、把手机拍照功能拆给相机&#34;&gt;&lt;a href=&#34;#1、把手机拍照功能拆给相机&#34; class=&#34;headerlink&#34; title=&#34;1、把手机拍照功能拆给相机&#34;&gt;&lt;/a&gt;1、把手机拍照功能拆给相机&lt;/h2&gt;&lt;p&gt;两年前，我突然意识到一件事情：&lt;/p&gt;
+&lt;p&gt;手机摄影已经非常强了，但最终效果还是打不过相机。&lt;/p&gt;
+&lt;p&gt;于是我决定：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;以后不再为影像旗舰的高溢价买单。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;直接采用：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;次旗舰手机 + 专业相机&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2024_alpha6700_01.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这样的组合。&lt;/p&gt;
+&lt;p&gt;好处非常明显：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;手机两三年一换，不心疼；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;相机可以长期使用；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;相机的拍摄能力在短时间内根本不可能被手机追上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;摄影圈有一句老话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;底大一级压死人。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这句话直到今天依旧成立。&lt;/p&gt;
+&lt;p&gt;哪怕是最基础的相机，也能给你一种明显越级的拍摄体验。&lt;/p&gt;
+&lt;p&gt;至于便携性……&lt;/p&gt;
+&lt;p&gt;随手拍的话，现在任何手机都已经够用了。&lt;/p&gt;
+&lt;p&gt;当然了，相机买镜头的花销又是另一个悲伤的故事了 P(T_T)q&lt;/p&gt;
+&lt;h2 id=&#34;2、降低手机存储空间溢价&#34;&gt;&lt;a href=&#34;#2、降低手机存储空间溢价&#34; class=&#34;headerlink&#34; title=&#34;2、降低手机存储空间溢价&#34;&gt;&lt;/a&gt;2、降低手机存储空间溢价&lt;/h2&gt;&lt;p&gt;2020 年买了 NAS 之后，我就在有意识地降低自己对 iCloud 的依赖。&lt;/p&gt;
+&lt;p&gt;仔细想想，我们付费购买 iCloud，原因无非两个：&lt;/p&gt;
+&lt;p&gt;1、照片太多，需要同步；&lt;/p&gt;
+&lt;p&gt;2、依赖 iCloud 的第三方软件越来越多，例如 Obsidian。&lt;/p&gt;
+&lt;p&gt;而 NAS 刚好能同时解决这两个问题。&lt;/p&gt;
+&lt;p&gt;相册方面，我已经完全迁移到了 Immich。&lt;/p&gt;
+&lt;p&gt;它拥有完全不输官方相册的体验，而且 AI 搜索更智能。&lt;/p&gt;
+&lt;p&gt;更重要的是：&lt;strong&gt;全平台支持。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;安卓、网页、Windows，访问体验甚至比 iCloud 更方便。&lt;/p&gt;
+&lt;p&gt;至于 iCloud Drive，那就更是 NAS 的舒适区了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-07-02_13.45.45.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;苹果官方一年的订阅价格，很多时候已经足够买一块容量大得多的硬盘。&lt;/p&gt;
+&lt;p&gt;如果你想要自己的 NAS 在 iOS 上达到类似 iCloud 后台同步的体验，可以试试 &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;SynoSync&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;3、次旗舰和旧旗舰&#34;&gt;&lt;a href=&#34;#3、次旗舰和旧旗舰&#34; class=&#34;headerlink&#34; title=&#34;3、次旗舰和旧旗舰&#34;&gt;&lt;/a&gt;3、次旗舰和旧旗舰&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;请注意，本篇文章不讨论 NAS 的整备价格，有时候一个路由器 + 一块机械硬盘同样可以满足基础的存储服务需求。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有了 NAS 或者家庭存储服务器后，购买次旗舰或者旧旗舰就变成了一件非常合理的事情。&lt;/p&gt;
+&lt;p&gt;现在消费电子涨价已经成为共识。&lt;/p&gt;
+&lt;p&gt;一些厂商也开始主动延长设备生命周期。&lt;/p&gt;
+&lt;p&gt;例如：谷歌最近三年的旗舰设备都拥有超过 5 年的系统更新周期，还有苹果公司在 iOS 27 所做的 30% 性能优化。&lt;/p&gt;
+&lt;p&gt;现在手机性能真的已经够用了。&lt;/p&gt;
+&lt;p&gt;真正的问题是：&lt;/p&gt;
+&lt;p&gt;互联网公司的业务膨胀速度远远快于硬件的发展速度。&lt;/p&gt;
+&lt;p&gt;开发越来越粗放，软件越来越臃肿，各家都恨不得把一个大型商超放到你的手机 App 里。&lt;/p&gt;
+&lt;p&gt;最后导致用户不得不购买更贵的设备来运行这些越来越重的软件，&lt;/p&gt;
+&lt;p&gt;这合理吗？难道软件做得差，最后买单的人反而是消费者？&lt;/p&gt;
+&lt;p&gt;引用某演员的话：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/OIP-C.webp&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“贱不贱呐？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我一直有一个原则：&lt;strong&gt;谁优化做得好，我就优先用谁。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个原则我已经坚持很多年了。&lt;/p&gt;
+&lt;h2 id=&#34;4、使用轻量化软件&#34;&gt;&lt;a href=&#34;#4、使用轻量化软件&#34; class=&#34;headerlink&#34; title=&#34;4、使用轻量化软件&#34;&gt;&lt;/a&gt;4、使用轻量化软件&lt;/h2&gt;&lt;p&gt;现在很多 App 已经变成了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在广告里边加了一点 App 功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;打开先给你来：开屏广告、会员广告、平台推荐、第三方推荐、自动播放的视频广告。&lt;/p&gt;
+&lt;p&gt;尤其是自动播放视频广告。&lt;/p&gt;
+&lt;p&gt;现在几乎所有国产主流 App 都喜欢干这个。&lt;/p&gt;
+&lt;p&gt;不仅消耗性能，还消耗电量。&lt;/p&gt;
+&lt;p&gt;最重要的是消耗心情。&lt;/p&gt;
+&lt;p&gt;这一点，B 站 UP 主 「苏星河牛通」讲得更加透彻，感兴趣移步观看：&lt;a href=&#34;https://www.bilibili.com/video/BV1seegzzEnH&#34;&gt;真的没有人能管管，早已泛滥的软件广告吗？&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;我不用你行不行？&#34;&gt;&lt;a href=&#34;#我不用你行不行？&#34; class=&#34;headerlink&#34; title=&#34;我不用你行不行？&#34;&gt;&lt;/a&gt;我不用你行不行？&lt;/h4&gt;&lt;p&gt;爱优腾，已经三年以上没打开过了。&lt;/p&gt;
+&lt;p&gt;广告软件 + 低水平影视工业流水线，最终产出的往往也是流水线内容。&lt;/p&gt;
+&lt;p&gt;当然，无意冒犯；不过互联网寻找资源这门祖传手艺，感觉真的要在我们这一代失传了。&lt;/p&gt;
+&lt;h3 id=&#34;B-站&#34;&gt;&lt;a href=&#34;#B-站&#34; class=&#34;headerlink&#34; title=&#34;B 站&#34;&gt;&lt;/a&gt;B 站&lt;/h3&gt;&lt;p&gt;长期使用国际版。&lt;/p&gt;
+&lt;p&gt;安卓选择甚至更多：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;PiliPlus&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PiliPala&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;微博&#34;&gt;&lt;a href=&#34;#微博&#34; class=&#34;headerlink&#34; title=&#34;微博&#34;&gt;&lt;/a&gt;微博&lt;/h3&gt;&lt;p&gt;iPhone：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;VVebo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;国际版&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安卓：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;See&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;购物软件&#34;&gt;&lt;a href=&#34;#购物软件&#34; class=&#34;headerlink&#34; title=&#34;购物软件&#34;&gt;&lt;/a&gt;购物软件&lt;/h3&gt;&lt;p&gt;淘宝、京东平时全部使用网页或者小程序。&lt;/p&gt;
+&lt;p&gt;只有付款的时候才打开 App。&lt;/p&gt;
+&lt;h3 id=&#34;QQ&#34;&gt;&lt;a href=&#34;#QQ&#34; class=&#34;headerlink&#34; title=&#34;QQ&#34;&gt;&lt;/a&gt;QQ&lt;/h3&gt;&lt;p&gt;坚持使用 TIM。&lt;/p&gt;
+&lt;p&gt;干净。&lt;/p&gt;
+&lt;p&gt;好用。&lt;/p&gt;
+&lt;p&gt;无广告。&lt;/p&gt;
+&lt;p&gt;无虚幻引擎。&lt;/p&gt;
+&lt;h3 id=&#34;银行-App&#34;&gt;&lt;a href=&#34;#银行-App&#34; class=&#34;headerlink&#34; title=&#34;银行 App&#34;&gt;&lt;/a&gt;银行 App&lt;/h3&gt;&lt;p&gt;全部开启大字体模式。&lt;/p&gt;
+&lt;p&gt;如果支持的话。&lt;/p&gt;
+&lt;h3 id=&#34;X&#34;&gt;&lt;a href=&#34;#X&#34; class=&#34;headerlink&#34; title=&#34;X&#34;&gt;&lt;/a&gt;X&lt;/h3&gt;&lt;p&gt;现在甚至连 X 都开始有国产 App 的味道了。&lt;/p&gt;
+&lt;p&gt;于是果断换成了 Spring。&lt;/p&gt;
+&lt;p&gt;非常清爽。&lt;/p&gt;
+&lt;p&gt;非常舒服。&lt;/p&gt;
+&lt;p&gt;另外：&lt;/p&gt;
+&lt;p&gt;请关闭所有国产流氓软件的后台运行权限。&lt;/p&gt;
+&lt;p&gt;包括 iOS 和 Android。&lt;/p&gt;
+&lt;p&gt;真的有效。&lt;/p&gt;
+&lt;p&gt;在完成这一轮轻量化替换之后你会发现：&lt;/p&gt;
+&lt;p&gt;很多所谓的“性能不够”，其实根本不是性能问题。&lt;/p&gt;
+&lt;p&gt;很多年前的手机依旧还能流畅使用。&lt;/p&gt;
+&lt;p&gt;真正拖慢手机的，从来都不是芯片。&lt;/p&gt;
+&lt;p&gt;而是软件。&lt;/p&gt;
+&lt;h4 id=&#34;至于微信……&#34;&gt;&lt;a href=&#34;#至于微信……&#34; class=&#34;headerlink&#34; title=&#34;至于微信……&#34;&gt;&lt;/a&gt;至于微信……&lt;/h4&gt;&lt;p&gt;我们只能被动抗争。&lt;/p&gt;
+&lt;p&gt;作为国民级 App，我们唯一能做的，大概就是让更多低配置、中配置设备继续运行微信。&lt;/p&gt;
+&lt;p&gt;这样微信后台统计出来的低端设备占比，才不会过早下降到一个可以忽略优化的程度。&lt;/p&gt;
+&lt;p&gt;你今天还能比较流畅地使用微信，背后其实有无数旧手机用户在默默发力。&lt;/p&gt;
+&lt;h1 id=&#34;电脑：修修补补再三年&#34;&gt;&lt;a href=&#34;#电脑：修修补补再三年&#34; class=&#34;headerlink&#34; title=&#34;电脑：修修补补再三年&#34;&gt;&lt;/a&gt;电脑：修修补补再三年&lt;/h1&gt;&lt;h2 id=&#34;1、旧平台真没有那么差&#34;&gt;&lt;a href=&#34;#1、旧平台真没有那么差&#34; class=&#34;headerlink&#34; title=&#34;1、旧平台真没有那么差&#34;&gt;&lt;/a&gt;1、旧平台真没有那么差&lt;/h2&gt;&lt;p&gt;现在很多装机讨论一开口就是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不是 DDR5 能用？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不是 i7 能用？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;还真能。&lt;/p&gt;
+&lt;p&gt;前段时间我买了一台&lt;br&gt;Intel Core i3-12100&lt;br&gt;主机做开发测试。&lt;/p&gt;
+&lt;p&gt;采购经理专门跑过来问我：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你确定买 i3？能用吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我回：那也得看是谁家的 i3 啊（笑）。&lt;/p&gt;
+&lt;p&gt;12100 已经强到离谱了。&lt;/p&gt;
+&lt;p&gt;办公完全没问题。&lt;/p&gt;
+&lt;p&gt;甚至很多 3A 游戏都完全够用。&lt;/p&gt;
+&lt;p&gt;前提是你的显卡别拖后腿。&lt;/p&gt;
+&lt;p&gt;对于办公和开发来说：&lt;/p&gt;
+&lt;p&gt;DDR4 平台依旧是性价比之王。&lt;/p&gt;
+&lt;h2 id=&#34;2、找到真正的瓶颈&#34;&gt;&lt;a href=&#34;#2、找到真正的瓶颈&#34; class=&#34;headerlink&#34; title=&#34;2、找到真正的瓶颈&#34;&gt;&lt;/a&gt;2、找到真正的瓶颈&lt;/h2&gt;&lt;h4 id=&#34;Mac-Mini-M4-16GB-256GB-的困境&#34;&gt;&lt;a href=&#34;#Mac-Mini-M4-16GB-256GB-的困境&#34; class=&#34;headerlink&#34; title=&#34;Mac Mini M4 16GB + 256GB 的困境&#34;&gt;&lt;/a&gt;Mac Mini M4 16GB + 256GB 的困境&lt;/h4&gt;&lt;p&gt;我 ¥ 3500 首发购买的 Mac mini M4 已经使用了接近两年了，16GB + 256 GB 的配置的确是有点儿捉襟见肘了，每次用 XCode 开发测试完 iPad 之后，就得立刻启动 Cleaner for XCode 赶紧把 iPad 的 SDK 给清除掉，这样就可以省出来 5GB 的磁盘空间，我又可以去打开 VSCode 去测试 Flutter 应用了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0987.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;6月苹果决定 Mac 集体涨价 20% 的时候，我是崩溃的，看来短期内便宜买到 Mac mini M5 的可能性无了，索性把苹果涨价的一千多块钱购入了 1TB 的硬盘，直接拆机替换掉了。&lt;/p&gt;
+&lt;p&gt;外接硬盘盒后把苹果系统装到硬盘盒也是一个选择，但经过了一年的使用，我还是无法忍受以下缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;开关机要比原生磁盘慢 30 - 50s&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;任何一次 Mac mini 的位置移动，或者插拔数据线不小心碰到硬盘盒的线的时候，Mac 都可能会立刻卡死，然后过了一两分钟后重启。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;群晖-DS-920-CPU-过于孱弱的问题&#34;&gt;&lt;a href=&#34;#群晖-DS-920-CPU-过于孱弱的问题&#34; class=&#34;headerlink&#34; title=&#34;群晖 DS 920+ CPU 过于孱弱的问题&#34;&gt;&lt;/a&gt;群晖 DS 920+ CPU 过于孱弱的问题&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Beelink-EQi-13500H__08_8f44593d-4f8c-4967-b658-1174ef6acb22.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;DS 920+ 已经在我家服役超过 4 年，它完全承担了我新的相册服务（Immich）托管、影音托管、漫画托管等等。但他一直有一个问题无法解决：自带的 J4105 赛扬处理器性能实在过于孱弱，有时候批量上传超过 100 张照片，Immich 在后台做 AI 分析的时候，Emby 影视服务就会受到影响；或者我在看 Komga 托管的漫画的时候，PDF 解析占用的 CPU 资源也会导致 Emby 软解码失败。&lt;/p&gt;
+&lt;p&gt;我在 6 月份以 ¥1700 左右 抢到了零刻 EQi 13 的准系统，拥有 15-13500H 的处理器，将 Docker 十多个服务全部迁移到 EQi 13 上，同时影音服务也迁移到了飞牛 OS，使用运行在 EQi 13 的飞牛 OS 负责计算任务，群晖仅仅提供 SMB 文件托管服务，同时挂载在飞牛的群晖远程文件夹也配置了低权限访问，存算分离的同时也拥有了安全的保障，也比购买一个性能更强的 NAS 要便宜很多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Beelink-EQi-13500H__05_26c8ef9c-6c77-4782-a14a-655eb72db899.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;购买 EQi 的最主要原因，除了支持 DDR4 内存外，还有一个重要的原因：内置电源，内置电源好文明！希望成为 mini 主机的标准。&lt;/p&gt;
+&lt;p&gt;对了，在抢不到 EQi 13 的情况下，还可以考虑 EQi 12，用作 NAS 的计算完全是性能过剩的，价格也更便宜，大概 ¥1100 ～¥ 1300。&lt;/p&gt;
+&lt;h1 id=&#34;总结&#34;&gt;&lt;a href=&#34;#总结&#34; class=&#34;headerlink&#34; title=&#34;总结&#34;&gt;&lt;/a&gt;总结&lt;/h1&gt;&lt;p&gt;回头看，这几年做得最正确的事情，大概有三件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;购入 NAS，迁移一切可迁移的服务到 NAS 中去，降低对手机厂家云服务的依赖&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;购入相机，拆分手机的拍照能力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;大量设备从二手平台购买&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期主义最大的优势就在这里。&lt;/p&gt;
+&lt;p&gt;很多消费决策看起来是在省钱。&lt;/p&gt;
+&lt;p&gt;但本质上是在避免支付不必要的溢价。&lt;/p&gt;
+&lt;p&gt;毕竟：&lt;/p&gt;
+&lt;p&gt;电子产品越来越贵，大概率已经不是一个周期问题，而是未来很多年的新常态。&lt;/p&gt;
+&lt;p&gt;既然如此，我们能做的就只有一件事：&lt;/p&gt;
+&lt;p&gt;尽量把钱花在真正影响体验的地方。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://halo.gadore.top/about&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="NAS" />
+        <category term="a6700" />
+        <updated>2026-07-14T11:00:00.000Z</updated>
+    </entry>
+</feed>

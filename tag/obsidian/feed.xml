@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;obsidian&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-06-15T17:50:00.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="iPhone" />
+    <category term="a6700" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="游戏" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-mac-support/</id>
+        <title>SynoSync(时刻同步) 1.2.1：支持 MacOS (完全免费) + iOS 版本内购四折优惠！</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-mac-support/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;SynoSync 在移动端的稳定性已经拥有了大部分用户的验证了，现在我也终于有余力腾出手来做 MacOS 端的兼容，首先我要坦诚：MacOS 端使用的是 Catalyst 兼容运行，因为这样的方案下移植工作量是最小的，毕竟 SynoSync 第一优先的仍旧是移动端的功能稳定，现在通过 Catalyst 让 MacOS 平台的用户也用上了 SynoSync 的绝大多数功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你还不了解 SynoSync，可以通过以下文章进行了解：&lt;/p&gt;
+&lt;p&gt;我的博客网站：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.gadore.top/archives/synosync&#34;&gt;时刻同步(SynoSync)：iOS 缺失的现代化文件同步&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.gadore.top/archives/synosync-update-log&#34;&gt;时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;国内用户可以访问少数派：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/109465&#34;&gt;SynoSync｜让群晖与 iOS 之间的文件同步真正「现代化」 - 少数派&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/110597&#34;&gt;时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持 - 少数派&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;SynoSync-时刻同步-版本-1-2-1-更新主要更新了啥？&#34;&gt;&lt;a href=&#34;#SynoSync-时刻同步-版本-1-2-1-更新主要更新了啥？&#34; class=&#34;headerlink&#34; title=&#34;SynoSync (时刻同步) 版本 1.2.1 更新主要更新了啥？&#34;&gt;&lt;/a&gt;SynoSync (时刻同步) 版本 1.2.1 更新主要更新了啥？&lt;/h2&gt;&lt;h3 id=&#34;bug-修复-🐛&#34;&gt;&lt;a href=&#34;#bug-修复-🐛&#34; class=&#34;headerlink&#34; title=&#34;bug 修复 🐛&#34;&gt;&lt;/a&gt;bug 修复 🐛&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;同名文件覆盖失败问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;优化服务器超时时间统一设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;功能优化-🛠️&#34;&gt;&lt;a href=&#34;#功能优化-🛠️&#34; class=&#34;headerlink&#34; title=&#34;功能优化 🛠️&#34;&gt;&lt;/a&gt;功能优化 🛠️&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;DSM 连接模式下，增加移动到回收站的选项&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;活动界面增加同步热力图展示&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Mac-OS-支持-💻&#34;&gt;&lt;a href=&#34;#Mac-OS-支持-💻&#34; class=&#34;headerlink&#34; title=&#34;Mac OS 支持 💻&#34;&gt;&lt;/a&gt;Mac OS 支持 💻&lt;/h3&gt;&lt;p&gt;优先支持搭载 M 系列处理器的 Mac，当前版本是基于 iOS 版本的代码基础，使用 Catalyst 进行兼容支持的，相比较我当前正在使用的 Synology Drive Client 客户端，SynoSync 拥有：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对比项&lt;/th&gt;
+&lt;th&gt;Synology Drive Client&lt;/th&gt;
+&lt;th&gt;SynoSync&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;安装体积&lt;/td&gt;
+&lt;td&gt;200 MB +&lt;/td&gt;
+&lt;td&gt;13 MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;界面信息&lt;/td&gt;
+&lt;td&gt;传统，信息模糊，同步进度难以追踪&lt;/td&gt;
+&lt;td&gt;现代化，信息清晰明了，同步进度信息面面俱到&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;同步速度&lt;/td&gt;
+&lt;td&gt;局域网较快，外网巨慢（超～级～慢）&lt;/td&gt;
+&lt;td&gt;局域网和外网都非常快，仅仅取决于网络速度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-06-15_13.12.10.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图：永远处于连接中的 Synology Drive Client&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-06-15_13.05.39.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图：安装体积高达 253.8 MB 的 Synology Drive Client&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-06-15_11.07.33.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;直观且同步速度极快的 SynoSync&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-06-15_13.05.54.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装体积仅仅 13.7 MB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mac OS 版本的 SynoSync (时刻同步) 完全免费！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mac OS 版本的 SynoSync (时刻同步) 完全免费！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mac OS 版本的 SynoSync (时刻同步) 完全免费！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为程序跟 iOS 端使用的同一个上架配置，所以可能会在 Mac App Store 显示有内购，但实际上完全没有任何内购！！！所有功能完全免费使用！！！去下载啊！！！&lt;/p&gt;
+&lt;h2 id=&#34;下载方式&#34;&gt;&lt;a href=&#34;#下载方式&#34; class=&#34;headerlink&#34; title=&#34;下载方式&#34;&gt;&lt;/a&gt;下载方式&lt;/h2&gt;&lt;p&gt;App Store 搜索：SynoSync，或者访问下方链接&lt;/p&gt;
+&lt;p&gt;时刻同步 (SynoSync)：iOS&amp;#x2F;MacOS 缺失的现代化文件同步： &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663?platform=mac&#34;&gt;&lt;strong&gt;App Store 下载地址&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;SynoSync-时刻同步-移动端内购「四折」限时优惠码&#34;&gt;&lt;a href=&#34;#SynoSync-时刻同步-移动端内购「四折」限时优惠码&#34; class=&#34;headerlink&#34; title=&#34;SynoSync(时刻同步) 移动端内购「四折」限时优惠码&#34;&gt;&lt;/a&gt;SynoSync(时刻同步) 移动端内购「四折」限时优惠码&lt;/h2&gt;&lt;h3 id=&#34;移动端内购之后你将获得：&#34;&gt;&lt;a href=&#34;#移动端内购之后你将获得：&#34; class=&#34;headerlink&#34; title=&#34;移动端内购之后你将获得：&#34;&gt;&lt;/a&gt;移动端内购之后你将获得：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;解锁 iOS 平台&lt;strong&gt;后台&lt;/strong&gt;调度权限，让你的文档可以在&lt;strong&gt;后台静默同步&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解锁 iOS 平台的&lt;strong&gt;长时间同步模式&lt;/strong&gt;，适合经常同步超大型文档库的使用场景&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;快捷&lt;strong&gt;指令 Intent 调用&lt;/strong&gt;，解锁更加进阶的同步调用方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更有设计感的图标更换&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我的&lt;strong&gt;感激之情&lt;/strong&gt; 🙏&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;使用方式：&#34;&gt;&lt;a href=&#34;#使用方式：&#34; class=&#34;headerlink&#34; title=&#34;使用方式：&#34;&gt;&lt;/a&gt;使用方式：&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;请注意，以下优惠链接是给到 iOS 设备的，也就是 iPhone 和 iPad，请不要在 MacOS 端打开！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载 SynoSync 到你的 iOS 设备上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开下方我提供的折扣链接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过折扣使用更低价格付款&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;折扣链接-（100个）-🔗&#34;&gt;&lt;a href=&#34;#折扣链接-（100个）-🔗&#34; class=&#34;headerlink&#34; title=&#34;折扣链接 （100个） 🔗&#34;&gt;&lt;/a&gt;折扣链接 （100个） 🔗&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用之后记得在评论区说哦&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=N48WX87WKPEX8NE86F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=N48WX87WKPEX8NE86F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EA4TYHFK4WHJFK36YN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EA4TYHFK4WHJFK36YN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=47NYXEY8JTHYP6HMR8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=47NYXEY8JTHYP6HMR8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=ATEN3W34W3MTYPM3JA&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=ATEN3W34W3MTYPM3JA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=7W6XAKFAAEEKT883WF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=7W6XAKFAAEEKT883WF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=7K4KPNLJLYRFLEXRK4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=7K4KPNLJLYRFLEXRK4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WJ4W8XTAP8KJMHPHF8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WJ4W8XTAP8KJMHPHF8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=Y34RTMYWWNEW3866LK&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=Y34RTMYWWNEW3866LK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=M3E6PXAPYMX33TLL43&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=M3E6PXAPYMX33TLL43&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EHT37MEFA6RNEJYLJP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EHT37MEFA6RNEJYLJP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NT68PXJJ33J88LWJY3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NT68PXJJ33J88LWJY3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RPH4YL3LHKXL88NN8Y&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RPH4YL3LHKXL88NN8Y&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FNY3EF4XELXR447APL&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FNY3EF4XELXR447APL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=473AKJPLRF8WRJ7TNR&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=473AKJPLRF8WRJ7TNR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RLM8RJNKPRMKFYRMPJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RLM8RJNKPRMKFYRMPJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8LE8P7KYT8X8RL4KRE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8LE8P7KYT8X8RL4KRE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TKTJP8RPMXXLA6KFHP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TKTJP8RPMXXLA6KFHP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WEJNK3T7P4AREMEYWN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WEJNK3T7P4AREMEYWN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NK6Y87KJKJN3YWP4M7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NK6Y87KJKJN3YWP4M7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NJW4JNJ6XLXTXFLXJK&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NJW4JNJ6XLXTXFLXJK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6XJJMMAR7HTMEK4K3P&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6XJJMMAR7HTMEK4K3P&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RHFN8T63LANH46RHXR&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RHFN8T63LANH46RHXR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6K3AEPWHWAYA3RKLML&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6K3AEPWHWAYA3RKLML&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FJMARARTN8AE3MAN8L&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FJMARARTN8AE3MAN8L&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NYX74YXLY6XKR3FTN7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NYX74YXLY6XKR3FTN7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=P7N8FEE4HA336ERAEY&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=P7N8FEE4HA336ERAEY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=MXFH8TW43TEEA7AY8W&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=MXFH8TW43TEEA7AY8W&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=R8AA6NE4WYENYMY78R&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=R8AA6NE4WYENYMY78R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=AKHTJTP4JTYR4T8RPL&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=AKHTJTP4JTYR4T8RPL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=67HWF7NA7YT6KN34AN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=67HWF7NA7YT6KN34AN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=JMAJKNHXN6KXE46X6R&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=JMAJKNHXN6KXE46X6R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NT7TEY8AR6Y8TK4EKH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NT7TEY8AR6Y8TK4EKH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RAFLTL8P7KAT3HPMME&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RAFLTL8P7KAT3HPMME&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WHHK3WPRY4AEFPPM88&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WHHK3WPRY4AEFPPM88&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6K743KMK3XHWNXM634&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6K743KMK3XHWNXM634&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=76TA6RNEYXHW4K36WF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=76TA6RNEYXHW4K36WF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=78JRTPHR7LTM3M4K6F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=78JRTPHR7LTM3M4K6F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=3H838FTAMLTR8M343Y&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=3H838FTAMLTR8M343Y&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L8YHNPRHYJJWY7F6LH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L8YHNPRHYJJWY7F6LH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TH33YYT74L4JJ8EKL3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TH33YYT74L4JJ8EKL3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L484R6JTWY3J3H3WMJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L484R6JTWY3J3H3WMJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=34HEANEL6XWAAWA6ME&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=34HEANEL6XWAAWA6ME&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=YYRFEHWY8Y6E3KYTYN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=YYRFEHWY8Y6E3KYTYN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=JLKHTYPLM686M74H84&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=JLKHTYPLM686M74H84&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6XXYRJTM8RJF44H8JE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6XXYRJTM8RJF44H8JE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TL3J88T4WNWXXLH3HE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TL3J88T4WNWXXLH3HE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=HRH7MYKWHFN37TTXHM&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=HRH7MYKWHFN37TTXHM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=4KY4N4AL8KTFFKJYNA&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=4KY4N4AL8KTFFKJYNA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=F7747P6HP6HEKM6NKH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=F7747P6HP6HEKM6NKH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L7363RHTHYWFFEXLFP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L7363RHTHYWFFEXLFP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=37MLPHHXXHWLAJ63M8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=37MLPHHXXHWLAJ63M8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L8M6LLTH4A8EYN3TEH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L8M6LLTH4A8EYN3TEH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8K4884P3L7LXJ3FP6E&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8K4884P3L7LXJ3FP6E&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WYFEENPKWXK84RPF3M&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WYFEENPKWXK84RPF3M&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=LF6HMPRKFLYEYMTWM8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=LF6HMPRKFLYEYMTWM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=Y466HK7L34NMFFEX3F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=Y466HK7L34NMFFEX3F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WMREWNR764K8RL4WY7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WMREWNR764K8RL4WY7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=4ARPT88RNLAXH3MPEH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=4ARPT88RNLAXH3MPEH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=XRF4HMKNPNLXYXXJM8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=XRF4HMKNPNLXYXXJM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=LP3WE4P8M7L34JR3TJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=LP3WE4P8M7L34JR3TJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=LTXRYMKA64H7JX6RMF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=LTXRYMKA64H7JX6RMF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=MFNL7T6TAL644MA8A8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=MFNL7T6TAL644MA8A8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=R8J87HW8MHW4TY7P7X&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=R8J87HW8MHW4TY7P7X&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=AHFFLF3ARYKA37L73R&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=AHFFLF3ARYKA37L73R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=N846N8Y6M7NRN8XJME&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=N846N8Y6M7NRN8XJME&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=M7LA7MTL7P6RYPMPHH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=M7LA7MTL7P6RYPMPHH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FY4EPY6H468X8K74AA&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FY4EPY6H468X8K74AA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=W6HM7FN4A4NL4NMPP4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=W6HM7FN4A4NL4NMPP4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6MXNWYXTTX8P6NLNM8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6MXNWYXTTX8P6NLNM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=K4F3EXFWYKJ3PRYL3H&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=K4F3EXFWYKJ3PRYL3H&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EPMKKWPPT4XARHLNE4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EPMKKWPPT4XARHLNE4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=3NRX3NNH6AHM7JTHJW&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=3NRX3NNH6AHM7JTHJW&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KALKPPLKWMPWWAY8E4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KALKPPLKWMPWWAY8E4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EPTTL6JPJYT3AHT8FY&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EPTTL6JPJYT3AHT8FY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8A4PXHK6YJ66FLAYWE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8A4PXHK6YJ66FLAYWE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TPHJREHR3TRFHPJK33&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TPHJREHR3TRFHPJK33&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=XN3MMEFH8LAJ8XE7J6&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=XN3MMEFH8LAJ8XE7J6&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=E3MW6Y373XH7KNX4LE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=E3MW6Y373XH7KNX4LE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KPH3YMA6XAWJPLPAWM&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KPH3YMA6XAWJPLPAWM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=3WAW6NYK6HENXE37HP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=3WAW6NYK6HENXE37HP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=JFM3JHF6WEFXMFMNLR&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=JFM3JHF6WEFXMFMNLR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=34H644H37XWRFNAPJ3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=34H644H37XWRFNAPJ3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=MMAYMR7HY663KXWJRP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=MMAYMR7HY663KXWJRP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=4H44KT4673YMFRTTA7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=4H44KT4673YMFRTTA7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KMTWYY66NER6P8JAWJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KMTWYY66NER6P8JAWJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WK8FKHWYWFRE883WYX&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WK8FKHWYWFRE883WYX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=YMP7X3E6R8PJRXYN36&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=YMP7X3E6R8PJRXYN36&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KAYWPATWJR8TNPRJFT&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KAYWPATWJR8TNPRJFT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8RM48YRAN7F73R3W6K&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8RM48YRAN7F73R3W6K&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=M4YPRYPJKYHFWR8MRJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=M4YPRYPJKYHFWR8MRJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=E88H4Y6JAAPFNR874F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=E88H4Y6JAAPFNR874F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FHENM4648NLFTJ86WN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FHENM4648NLFTJ86WN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=X4YMWLTJJJKYE3E3YX&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=X4YMWLTJJJKYE3E3YX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=F7XFNNFPFYJAN7JHK7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=F7XFNNFPFYJAN7JHK7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WW7XT76X68A48NX7AW&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WW7XT76X68A48NX7AW&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KEY3KF36L7WYJFJ7T3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KEY3KF36L7WYJFJ7T3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=HWFE4RKR6YHJEPK67H&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=HWFE4RKR6YHJEPK67H&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=T3YYRKF8WKJFTLJFTF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=T3YYRKF8WKJFTLJFTF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TH8XW6H8RKWT38F4LH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TH8XW6H8RKWT38F4LH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KNYJP4F7WK88LLPH3J&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KNYJP4F7WK88LLPH3J&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <category term="WebDAV" />
+        <category term="SMB" />
+        <updated>2026-06-15T17:50:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-update-log/</id>
+        <title>时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-update-log/"/>
+        <content type="html">&lt;p&gt;距离 SynoSync 发布 1.0 开始也已经过了一个多月了，在这段时间里，我收到了很多有用的建议，也按照大家的建议对 SynoSync 进行了一系列的升级，现在，是时候让大家重新认识这款 App 了！&lt;/p&gt;
+&lt;p&gt;初版发布介绍：&lt;a href=&#34;https://blog.gadore.top/archives/synosync/&#34;&gt;SynoSync｜iOS 缺失的现代化文件同步&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B46%E6%9C%881%E6%97%A5%2015_26_27.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;重要更新一：中文名、换图标&#34;&gt;&lt;a href=&#34;#重要更新一：中文名、换图标&#34; class=&#34;headerlink&#34; title=&#34;重要更新一：中文名、换图标&#34;&gt;&lt;/a&gt;重要更新一：中文名、换图标&lt;/h2&gt;&lt;h3 id=&#34;SynoSync-名称由来&#34;&gt;&lt;a href=&#34;#SynoSync-名称由来&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 名称由来&#34;&gt;&lt;/a&gt;SynoSync 名称由来&lt;/h3&gt;&lt;p&gt;这款应用一开始的开发初衷是解决我在 iOS 上同步我 NAS 里的 Obsidian 文档库的，因为我 NAS 买的是群晖（Synology），所以我就把它起名为了 SynoSync，翻译过来就是：群晖同步，当时我留了心眼，没有贸然起中文名，因为我觉得叫群晖同步的话太过绑定群晖也不好。&lt;/p&gt;
+&lt;h3 id=&#34;中文名「时刻同步」的含义&#34;&gt;&lt;a href=&#34;#中文名「时刻同步」的含义&#34; class=&#34;headerlink&#34; title=&#34;中文名「时刻同步」的含义&#34;&gt;&lt;/a&gt;中文名「时刻同步」的含义&lt;/h3&gt;&lt;p&gt;「时刻同步」这个名称一方面是 Syno 跟 时刻 有一定的谐音，更重要的是，应用是可以通过 iOS 后台调度机制在你不打开 App 的情况下进行同步，当然，这其中仍旧不能突破 iOS 的后台限制，每次后台调度同步的窗口只有几十秒，不过充电情况下系统会给较长的后台同步时间，也足够我同步 NAS 上的超大文档库了，相比较 Obsidian 内置的插件不打开就不同步，我觉得这种后台同步的机制已经相当及时了，所以「时刻同步」就此定下。&lt;/p&gt;
+&lt;h3 id=&#34;图标更换&#34;&gt;&lt;a href=&#34;#图标更换&#34; class=&#34;headerlink&#34; title=&#34;图标更换&#34;&gt;&lt;/a&gt;图标更换&lt;/h3&gt;&lt;p&gt;同理，在 App 开发早期，我更多的精力都在开发、测试、修 Bug，根本没有精力去设计 App 图标，所以第一版本的图标完全是打开 AI 生图然后顺手生成的，没有任何设计感可言。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024-oban.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但随着 App 功能逐渐稳定，现在我也终于有余力来重新更换一下 App 图标了。&lt;/p&gt;
+&lt;p&gt;相比较第一版顺手使用 AI 生成的版本，现在的图标设计做了大量的精简。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;图标主题仅保留两个代表同步的首尾衔接的箭头，&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;左右箭头分别是云 ☁️ 和文件夹 📁 的轮廓，代表「时刻同步」是同步云服务器和本地文件夹的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;箭头取色基本上跟 MacOS 的 Finder 接近，一致性这块拿捏的死死的～&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望你们更喜欢这个新的图标版本，当然，老版本图标依旧可以在设置中切换。&lt;/p&gt;
+&lt;h2 id=&#34;重要更新二：增加对-WebDAV、SMB、DSM-6-0-等协议支持&#34;&gt;&lt;a href=&#34;#重要更新二：增加对-WebDAV、SMB、DSM-6-0-等协议支持&#34; class=&#34;headerlink&#34; title=&#34;重要更新二：增加对 WebDAV、SMB、DSM 6.0 等协议支持&#34;&gt;&lt;/a&gt;重要更新二：增加对 WebDAV、SMB、DSM 6.0 等协议支持&lt;/h2&gt;&lt;p&gt;正如我上边所提到的，时刻同步一开始是为了方便我同步群晖上的文档库而开发的，DSM （群晖 NAS 系统） 支持是刚需。&lt;/p&gt;
+&lt;p&gt;随着下载人数越来越多……&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;老旧 NAS 和黑群晖可能需要用到 DSM 6.0 和 https 自签证书，已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;部分现存服务器仅部署了 WebDAV 协议？WebDAV 协议已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;家里的路由器仅支持 SMB 协议？SMB 协议已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为我主要使用 DSM 协议完成同步，所以其他协议都只做了基础功能测试，保证功能是完整可用的，但非 DSM 7.0 协议在长期使用下来的稳定性我是很难知晓的，如果大家有遇到任何问题，欢迎反馈～&lt;/p&gt;
+&lt;h2 id=&#34;重要更新三：调整最低可运行的-iOS-版本到-iOS-16-4&#34;&gt;&lt;a href=&#34;#重要更新三：调整最低可运行的-iOS-版本到-iOS-16-4&#34; class=&#34;headerlink&#34; title=&#34;重要更新三：调整最低可运行的 iOS 版本到 iOS 16.4&#34;&gt;&lt;/a&gt;重要更新三：调整最低可运行的 iOS 版本到 iOS 16.4&lt;/h2&gt;&lt;p&gt;「SynoSync」发布第一周就有朋友因为版本问题不得不升级自己设备的 iOS 大版本来安装「时刻同步」（非常感谢这位朋友的支持🙏🙏🙏），当时我忙于修复已知的同步的问题，根本没有余力兼顾降低 iOS 版本支持的工作，但最近这种低版本兼容的呼声开始变得多了起来，似乎使用低版本或者旧设备的朋友对这类文件同步软件的需求挺多？所以我就在砍掉一部分不重要的特性的情况下，将 App 最低可安装版本从 iOS 18.6 一路降到了 iOS 16.4。&lt;/p&gt;
+&lt;p&gt;我也希望更多小伙伴可以用上「时刻同步」，更需要你们在使用低版本时遇到任何问题后第一时间告诉我，因为我手头没有低版本设备，只能使用 XCode 自带的模拟器运行低版本设备做到最基础的兼容运行和功能可用性测试，但真实设备运行起来什么样，有任何问题，还需要大家安装和使用后告诉我。&lt;/p&gt;
+&lt;h2 id=&#34;承诺&#34;&gt;&lt;a href=&#34;#承诺&#34; class=&#34;headerlink&#34; title=&#34;承诺&#34;&gt;&lt;/a&gt;承诺&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;「时刻同步」绝不搞订阅制，工具类的 App 搞订阅制就是抢钱，当前情况下即使不内购的朋友也可以使用绝大多数同步功能，服务器添加、同步任务添加等没有任何限制；内购仅仅解锁后台静默同步和一些进阶功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;绝不 Vibe Coding，我会借助 AI 开发一些我不熟悉的语法特性，一些奇奇怪怪的 bug 也会让 AI 帮我分析，但我绝不会全权交给 AI 任由 Agent 编写风险未知的代码（毕竟我自己也要高强度使用）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;鸣谢&#34;&gt;&lt;a href=&#34;#鸣谢&#34; class=&#34;headerlink&#34; title=&#34;鸣谢&#34;&gt;&lt;/a&gt;鸣谢&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;❤️ 特别感谢第一天下载就付费内购的朋友！也感谢所有内购朋友的信任与支持～&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;❤️ 感谢所有反馈与建议的朋友，「时刻同步」是在你们的建议下越来越完善的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;❤️ 感谢少数派网站对本 App 的大力推广支持。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的另一款轻量级倒数日 App「唯记」永久免费且没有任何内购。&lt;/p&gt;
+&lt;p&gt;如果你厌倦了各种复杂的 UI，蹩脚的设置，或者想要一个一目了然的倒数日小组件，那可以试试「唯记」，又不要钱～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/v2rmb-store.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;时刻同步(SynoSync)：iOS 缺失的现代化文件同步： &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;App Store 下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;唯记(V2RMB)：简约漂亮的双历倒数日：&lt;a href=&#34;https://apps.apple.com/cn/app/%E5%94%AF%E8%AE%B0/id6502951931&#34;&gt;App Store 下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <category term="WebDAV" />
+        <category term="SMB" />
+        <updated>2026-06-03T16:40:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync/</id>
+        <title>SynoSync｜让群晖与 iOS 之间的文件同步真正「现代化」</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B45%E6%9C%887%E6%97%A5%2013_29_47%20(1).png&#34; alt=&#34;ChatGPT Image 2026年5月7日 132947 1png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更新：1.0.8 或者更新的版本已增加 WebDAV 协议支持，所以就算没有群晖 DSM 系统的 NAS 现在也可以使用 SynoSync 啦～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;开发背景：关于安全感与掌控感&#34;&gt;&lt;a href=&#34;#开发背景：关于安全感与掌控感&#34; class=&#34;headerlink&#34; title=&#34;开发背景：关于安全感与掌控感&#34;&gt;&lt;/a&gt;开发背景：关于安全感与掌控感&lt;/h2&gt;&lt;p&gt;一直以来，基于 Markdown 纯文本的 Obsidian 文档库给了我极强的安全感与掌控感。&lt;/p&gt;
+&lt;p&gt;在我的工作流中，NAS 承担着文档库托管与同步的核心角色。群晖 Drive 在 Windows、Mac、Linux 乃至 Android 平台上的体验都堪称出色，唯独在 iOS 端，这种连贯性戛然而止。&lt;/p&gt;
+&lt;h2 id=&#34;困境：iOS-上的群晖-Drive，为何不够「现代化」？&#34;&gt;&lt;a href=&#34;#困境：iOS-上的群晖-Drive，为何不够「现代化」？&#34; class=&#34;headerlink&#34; title=&#34;困境：iOS 上的群晖 Drive，为何不够「现代化」？&#34;&gt;&lt;/a&gt;困境：iOS 上的群晖 Drive，为何不够「现代化」？&lt;/h2&gt;&lt;p&gt;在 iOS 生态下，群晖 Drive 的同步范围被严格限制在自身的沙盒文件夹内（应该是考虑到旧版本 iOS 兼容性）。这意味着 Obsidian 无法直接调用 Drive 的同步能力来读取文档库。对于追求「全平台一致体验」的开发者来说，这成了最难受的断层。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024%20(1).png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Obsidian-的多平台同步方案现状&#34;&gt;&lt;a href=&#34;#Obsidian-的多平台同步方案现状&#34; class=&#34;headerlink&#34; title=&#34;Obsidian 的多平台同步方案现状&#34;&gt;&lt;/a&gt;Obsidian 的多平台同步方案现状&lt;/h2&gt;&lt;p&gt;如果你想自建 Obsidian 文档库同步，目前主流方案的优劣对比清晰可见：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;方案&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;优点&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;缺点&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;官方 Sync 服务&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;集成度最高，支持最完美&lt;/td&gt;
+&lt;td&gt;订阅制费用随空间上涨；隐私完全托付于第三方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;iCloud&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;苹果原生支持，全家桶体验好&lt;/td&gt;
+&lt;td&gt;仅限 Apple 生态；大库订阅费高；同步状态黑盒化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;自托管 + 插件&lt;/strong&gt; (如 Remotely Save)&lt;/td&gt;
+&lt;td&gt;空间不受限，隐私高度可控&lt;/td&gt;
+&lt;td&gt;需维护内网穿透及 WebDAV 服务；配置门槛较高&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;如果你和我一样，希望文档库具备更安全的托管方式，&lt;strong&gt;Remotely Save + WebDAV&lt;/strong&gt; 依然是目前的权宜之计。但要获得稳定的体验，通常还需折腾 &lt;strong&gt;HTTPS、内网穿透、DDNS 或 Cloudflare&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么，难道就没有一种方案，能让我们直接复用 QuickConnect 那种「开箱即用」的穿透能力与内外网自动切换逻辑，在免去繁琐穿透配置的同时，实现真正的文档库自动同步到任何地方？&lt;/p&gt;
+&lt;h2 id=&#34;我的「万级」文件同步噩梦&#34;&gt;&lt;a href=&#34;#我的「万级」文件同步噩梦&#34; class=&#34;headerlink&#34; title=&#34;我的「万级」文件同步噩梦&#34;&gt;&lt;/a&gt;我的「万级」文件同步噩梦&lt;/h2&gt;&lt;p&gt;我的 Obsidian 文档库包含 &lt;strong&gt;26,000+ 个文件&lt;/strong&gt;，总体积接近 &lt;strong&gt;10GB&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-05-07_12.56.08%20(1).png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在这种规模下，单纯依赖 Obsidian 的前台插件同步，体验会呈断崖式下降。更棘手的是，常规插件方案很难像群晖官方 App 那样，根据网络环境（局域网 vs 公网）自动且智能地切换连接地址。&lt;/p&gt;
+&lt;p&gt;为了解决这些切肤之痛，我开发了 &lt;strong&gt;SynoSync&lt;/strong&gt;。它的目标非常明确：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;彻底解决「群晖 + iOS」用户的文档库同步难题。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;SynoSync-能为你做什么？&#34;&gt;&lt;a href=&#34;#SynoSync-能为你做什么？&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 能为你做什么？&#34;&gt;&lt;/a&gt;SynoSync 能为你做什么？&lt;/h2&gt;&lt;h3 id=&#34;1-多账号与多任务的灵活管理&#34;&gt;&lt;a href=&#34;#1-多账号与多任务的灵活管理&#34; class=&#34;headerlink&#34; title=&#34;1. 多账号与多任务的灵活管理&#34;&gt;&lt;/a&gt;1. 多账号与多任务的灵活管理&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;支持配置多台 DSM：&lt;/strong&gt; 完美适配拥有多套群晖环境的进阶用户。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;支持多同步任务并行：&lt;/strong&gt; 你可以针对不同的 App、不同的本地路径，创建多条上传、下载或双向同步任务，灵活构建你的同步方案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-覆盖全场景的同步模式&#34;&gt;&lt;a href=&#34;#2-覆盖全场景的同步模式&#34; class=&#34;headerlink&#34; title=&#34;2. 覆盖全场景的同步模式&#34;&gt;&lt;/a&gt;2. 覆盖全场景的同步模式&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024%20(1)-eaFO.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;前台同步：&lt;/strong&gt; 实时可见的极速同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;大批量初始化：&lt;/strong&gt; 针对首次同步或超大文件夹优化的传输模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;后台静默同步：&lt;/strong&gt; 无需干预，在系统允许的范围内自动对齐差异。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;快捷指令触发：&lt;/strong&gt; 联动 iOS 自动化，解锁更多高效玩法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-直观的状态追踪&#34;&gt;&lt;a href=&#34;#3-直观的状态追踪&#34; class=&#34;headerlink&#34; title=&#34;3. 直观的状态追踪&#34;&gt;&lt;/a&gt;3. 直观的状态追踪&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024%20(1)-pYDC.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Activity 报告：&lt;/strong&gt; 每一个文件的流转都清晰可查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;小组件支持：&lt;/strong&gt; 无需打开 App，在桌面即可实时观察同步进度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一些坦诚的局限性……&#34;&gt;&lt;a href=&#34;#一些坦诚的局限性……&#34; class=&#34;headerlink&#34; title=&#34;一些坦诚的局限性……&#34;&gt;&lt;/a&gt;一些坦诚的局限性……&lt;/h2&gt;&lt;p&gt;在开发 SynoSync 的这一个多月里，最让我抓狂的莫过于 iOS 严苛的后台机制。&lt;/p&gt;
+&lt;p&gt;众所周知，iOS 采用了近乎「墓碑式」的后台管理。对于 SynoSync 这种需要频繁进行网络请求、文件比对及高强度读写的 App 来说，后台环境极其不友好。为了实现优雅的「静默同步」，我尝试了各种姿势去突破限制，但必须承认：&lt;strong&gt;它的后台效果依然无法达到 Android 或 PC 端的随心所欲。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;特别是在面对我那 2.6 万个文件的「巨型库」时，iOS 的后台限制会导致同步耗时拉长。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;因此，SynoSync 提供的最终解法是：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先通过「前台大批量同步」完成沉重的初始化任务，后续的日常增量更新，则交给「后台比对」去静默完成。&lt;/p&gt;
+&lt;p&gt;如果你发现 SynoSync 发出了后台同步失败的通知，也不用惊慌，这只是 iOS 后台切断了 App 的后台网络权限（为了省电），SynoSync 会在下一个 iOS 允许的时间窗口重新尝试同步的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;App Store&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <updated>2026-05-07T12:30:19.000Z</updated>
+    </entry>
+</feed>
