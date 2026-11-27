@@ -1,0 +1,1001 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-11-22T20:25:00.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="SynoSync" />
+    <category term="Mac" />
+    <category term="时刻同步" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="a6700" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <category term="红米电视" />
+    <category term="HyperOS" />
+    <category term="开机自启动" />
+    <category term="视觉" />
+    <category term="RDK" />
+    <category term="Radxa" />
+    <category term="Jetson" />
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-mac-native/</id>
+        <title>SynoSync（时刻同步），Mac 原生文件同步客户端+1</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-mac-native/"/>
+        <content type="html">&lt;p&gt;SynoSync 最初是一款为了解决群晖的 Drive 在 iOS 端没办法把 Obsidian 文档库同步给 Obsidian 的同步工具，它因为&lt;strong&gt;支持后台静默同步&lt;/strong&gt;，受到了一部分用户的喜欢，感兴趣的可以移步站内&lt;a href=&#34;/archives/synosync/&#34;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;它可以连接群晖、WebDAV、SMB 这类常用的文件服务器，然后设置多种不同的同步方向和同步策略，并按照这种策略同步本地与服务器文件的工具。尤其擅长 Obsidian 文档库、Harness 会话库等基于文件的同步场景。&lt;/p&gt;
+&lt;p&gt;SynoSync 其实在最初是没有 Mac 版本的，因为我不擅长写 App Kit，只用过 SwiftUI。所以当时就基于 iOS 版本的源代码，配合苹果的 Catalyst 转译，自动生成了 Mac端，界面风格基本上和 iPad 一致。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-11-15_22.38.25.png&#34; alt=&#34;老版本，还是 iPad 的操作逻辑&#34;&gt;&lt;/p&gt;
+&lt;p&gt;现在俺带着 Mac 原生客户端来啦～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/c0305585f7e00df409f5549f9c6212d1.png&#34; alt=&#34;新版：Mac 原生应用&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;SynoSync，解决什么问题&#34;&gt;&lt;a href=&#34;#SynoSync，解决什么问题&#34; class=&#34;headerlink&#34; title=&#34;SynoSync，解决什么问题&#34;&gt;&lt;/a&gt;SynoSync，解决什么问题&lt;/h2&gt;&lt;p&gt;（老用户可以跳到下一章）&lt;/p&gt;
+&lt;p&gt;因为我是 NAS + Obsidian 用户，避免不了地需要用到一些同步工具，而在这其中，最难用的同步工具，莫过于群晖自家的 Synology Drive Client；&lt;/p&gt;
+&lt;p&gt;在 iOS 端（名为 Drive），它无法支持同步到自身沙盒以外，让我不得不借助第三方插件才能同步 Obsidian 的文档库（但我的文档库有 20000 + 的文件，Obsidian 插件同步效率非常低，而且必须要开 App 才能同步）；而在 Mac 上，群晖家的客户端也远远算不上好用。&lt;/p&gt;
+&lt;h3 id=&#34;Synology-Drive-Client-在-Mac-端的问题&#34;&gt;&lt;a href=&#34;#Synology-Drive-Client-在-Mac-端的问题&#34; class=&#34;headerlink&#34; title=&#34;Synology Drive Client 在 Mac 端的问题&#34;&gt;&lt;/a&gt;Synology Drive Client 在 Mac 端的问题&lt;/h3&gt;&lt;p&gt;界面老旧&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/0cb548756ad8d0be2993a0f546825a61.png&#34; alt=&#34;传统派 UI 设计&#34;&gt;&lt;/p&gt;
+&lt;p&gt;操作反应迟钝&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2d8fce5eee9c865c13bce0fe9bd87160.JPG&#34; alt=&#34;每次退出都需要等待非常长的时间，而且会阻塞电脑操作&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装体积巨大&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7b03ad64457bddf19ab7f1143c4f7b4b.png&#34; alt=&#34;安装体积动辄 250 MB +&#34;&gt;&lt;/p&gt;
+&lt;p&gt;创建任务时自动帮你创建新文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7e1444f6425da456e311e7e73c69e663.png&#34; alt=&#34;俺知道可以取消，但人有时候只有在反复试错后才知道不取消意味着什么……&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当你填写同步任务的时候，再自动帮你增加一个跟任务名同名的嵌套子文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/69fc5abd9a3f612fd1fa3ba4bc708ac0.png&#34; alt=&#34;请注意，我先选的 Obsidian 文件夹，然后填写任务名称，这一步无法跳过、无法留空&#34;&gt;&lt;/p&gt;
+&lt;p&gt;本地只能设置空文件夹为同步目的地&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/6699999dfe34ea787a7398c424044705.png&#34;&gt;&lt;br&gt;一旦设置好的同步任务就无法再调整&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/409d8d5f5da2b69595cfdb08d28f4ca8.png&#34;&gt;&lt;br&gt;新建成功后就无法编辑的同步任务&lt;/p&gt;
+&lt;p&gt;这几个问题叠加在一起，就可能会导致你遇上这样的事情：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;新建任务的时候默认帮你加两层子文件夹命名（如果不仔细看的话）&lt;/li&gt;
+&lt;li&gt;新建成功后发现任务无法修改&lt;/li&gt;
+&lt;li&gt;删掉旧的同步任务，重新创建任务&lt;/li&gt;
+&lt;li&gt;你猜怎么着？刚刚的文件夹不为空，无法选择了！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;新版功能增强&#34;&gt;&lt;a href=&#34;#新版功能增强&#34; class=&#34;headerlink&#34; title=&#34;新版功能增强&#34;&gt;&lt;/a&gt;新版功能增强&lt;/h2&gt;&lt;p&gt;正如开始所说，本次时刻同步进行了底层升级，从 iOS 转译应用（Catalyst）转向了 Mac 原生！因此 SynoSync 本身也获得了更强的能力：&lt;/p&gt;
+&lt;h3 id=&#34;常驻菜单栏能力&#34;&gt;&lt;a href=&#34;#常驻菜单栏能力&#34; class=&#34;headerlink&#34; title=&#34;常驻菜单栏能力&#34;&gt;&lt;/a&gt;常驻菜单栏能力&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/29f5230714bb7d72e0fd0871c865690d.png&#34;&gt;&lt;br&gt;之前 Catalyst 版本必须要保留一个窗口才能正常同步，现在可以放心关掉主界面了。&lt;/p&gt;
+&lt;h3 id=&#34;开机自启动&#34;&gt;&lt;a href=&#34;#开机自启动&#34; class=&#34;headerlink&#34; title=&#34;开机自启动&#34;&gt;&lt;/a&gt;开机自启动&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/85276d1c5fc726bc1260bdcb591377d3.png&#34;&gt;&lt;br&gt;默认关闭，但你有需要的话，现在可以打开了。&lt;/p&gt;
+&lt;h3 id=&#34;毫秒级文件变动监控&#34;&gt;&lt;a href=&#34;#毫秒级文件变动监控&#34; class=&#34;headerlink&#34; title=&#34;毫秒级文件变动监控&#34;&gt;&lt;/a&gt;毫秒级文件变动监控&lt;/h3&gt;&lt;p&gt;之前 Catalyst 转译是 iOS 逻辑，无法监听到文件的变更事件，只能定时同步；&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/8429a02d8149e42f9854a12fa24ef2b9.png&#34;&gt;&lt;br&gt;现在，本地文件修改可以及时通知到客户端，进而实时同步到服务器了。&lt;/p&gt;
+&lt;h3 id=&#34;更加自然的-UI&#34;&gt;&lt;a href=&#34;#更加自然的-UI&#34; class=&#34;headerlink&#34; title=&#34;更加自然的 UI&#34;&gt;&lt;/a&gt;更加自然的 UI&lt;/h3&gt;&lt;p&gt;先看看之前老版本通过 Catalyst 转译的界面长啥样：&lt;/p&gt;
+&lt;p&gt;老版本服务器创建界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2626c4cf5f65a7493219ce3edbc10cf7.png&#34;&gt;&lt;br&gt;老版本关于界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/c0f69b621f6550da880f9ca34ab3a619.png&#34;&gt;&lt;br&gt;使用 App Kit 原生构建后：&lt;/p&gt;
+&lt;p&gt;新的活动界面看板&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/e9cc4dce87f931956c09b751616d3dc7.png&#34;&gt;&lt;br&gt;新的添加服务器界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/56016b65796aa43fc32df522836c643a.png&#34;&gt;&lt;br&gt;新的设置界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/f7c49123292f3a42f1391687987094f5.png&#34;&gt;&lt;br&gt;对了，Catalyst 甚至不支持图标切换！这怎么可以被接受呢？原生！必须原生！&lt;/p&gt;
+&lt;h4 id=&#34;更小的安装体积&#34;&gt;&lt;a href=&#34;#更小的安装体积&#34; class=&#34;headerlink&#34; title=&#34;更小的安装体积&#34;&gt;&lt;/a&gt;更小的安装体积&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4d11a0404984d593bc27dd4857095803.png&#34;&gt;&lt;br&gt;原生的伟大，无需多言！&lt;/p&gt;
+&lt;h3 id=&#34;所有功能仍旧免费中！&#34;&gt;&lt;a href=&#34;#所有功能仍旧免费中！&#34; class=&#34;headerlink&#34; title=&#34;所有功能仍旧免费中！&#34;&gt;&lt;/a&gt;所有功能仍旧免费中！&lt;/h3&gt;&lt;p&gt;只要你下载时免费，那就是&lt;strong&gt;永久解锁所有功能&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;其他同步协议选择&#34;&gt;&lt;a href=&#34;#其他同步协议选择&#34; class=&#34;headerlink&#34; title=&#34;其他同步协议选择&#34;&gt;&lt;/a&gt;其他同步协议选择&lt;/h3&gt;&lt;p&gt;SynoSync 最初的确是为了解决群晖的一系列问题而开发的，但第一版发布后，我就陆陆续续收到了一些用户对 WebDAV 和 SMB 协议支持的意见，用户就是天！&lt;/p&gt;
+&lt;p&gt;WebDAV、SMB 文件协议早已在 iOS 版本支持，现在也延续到了 Mac 客户端。&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/35f738a188d7f9463515fb4949bf2f1c.png&#34;&gt;&lt;br&gt;当前已经支持连接的服务器类型&lt;/p&gt;
+&lt;h2 id=&#34;SynoSync-未来的发展路线规划&#34;&gt;&lt;a href=&#34;#SynoSync-未来的发展路线规划&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 未来的发展路线规划&#34;&gt;&lt;/a&gt;SynoSync 未来的发展路线规划&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;飞牛 FN 接口支持（视官方 Api 而定）&lt;/li&gt;
+&lt;li&gt;Windows 和 Linux 版本 （开发语言：MyGO ！！！）&lt;/li&gt;
+&lt;li&gt;Android 版本（是否有人想要呢？）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;AI-使用声明&#34;&gt;&lt;a href=&#34;#AI-使用声明&#34; class=&#34;headerlink&#34; title=&#34;AI 使用声明&#34;&gt;&lt;/a&gt;AI 使用声明&lt;/h2&gt;&lt;p&gt;你可能有疑问，你不是开头说你不会写 App Kit 吗？难道说这个 Mac 版本……&lt;/p&gt;
+&lt;p&gt;没错～拿到 AI 生成的第一版本后，我发现各种细节都很难说是直接能用，难道又要我花费很长时间一点点去反馈问题然后一条条告诉 AI 再去慢慢改嘛？&lt;/p&gt;
+&lt;p&gt;遥想半年前（哽咽），时刻同步的每个 iOS 版本发布，都是我手工一条条去核对测试集，一个个按钮点击测试的，一次完整功能测试做完，俺两天时间都没了。&lt;/p&gt;
+&lt;p&gt;而 Mac 版本客户端的加入，让测试工作的进展更加艰难了，因为我没办法利用空闲时间测试，毕竟 iPhone 可以随身携带，有时间就拿出来验证一些应用场景，但Mac 没办法揣兜里啊！&lt;/p&gt;
+&lt;p&gt;不过正如 XINGRZ（aka：导演）之前的文章所说：“&lt;strong&gt;现在是 AI 时代，有什么东西不能靠许愿得到呢？&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;为了尽可能地保障 AI 参与后的版本稳定可靠，我同步让 AI 搭建了单元测试、UI 测试、集成测试等整条自动化测试管线（&lt;strong&gt;纯脚本运行，搭建成功后零 Token 消耗&lt;/strong&gt;）。&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/f4ba5e0c5856fffed5923be94f02b1fb.png&#34;&gt;&lt;br&gt;双击运行的 command 终端脚本&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7369df97599601e8e893a6d306ddfac4.png&#34;&gt;&lt;br&gt;Mac OS 端的自动化测试脚本运行截图&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/SynoSync-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95-%E6%89%A7%E8%A1%8C%E8%AE%B0%E5%BD%95.png&#34;&gt;&lt;br&gt;手搓匠人的精神，终究是在便利的 AI 面前，毫无性价比了呀～&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="SynoSync" />
+        <category term="Mac" />
+        <category term="时刻同步" />
+        <updated>2026-11-22T20:25:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/edgeAiDevice/</id>
+        <title>边缘视觉识别工控机选型</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/edgeAiDevice/"/>
+        <content type="html">&lt;h2 id=&#34;背景&#34;&gt;&lt;a href=&#34;#背景&#34; class=&#34;headerlink&#34; title=&#34;背景&#34;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;传统快递分拣行业没有在传输过程中感知流量的模块，只能通过光电、光幕来感知：有 &amp;#x2F; 无 包裹这种比较简单的判断。只有到达了单件分离、叠件分离、这些特种设备的时候，才能知道流量。但这种设备动辄 10～30W，不可能大面积布置。&lt;/p&gt;
+&lt;p&gt;而传统视觉厂家的提供的便宜的AI视觉设备采购价也动辄超过 1W，最便宜的也在 7～8 K 以上。&lt;/p&gt;
+&lt;p&gt;我最近两个月刚好就是负责公司这边的视觉识别在现场的应用，所以有机会采购了一大批形形色色的负责 AI 模型推理的电脑。&lt;/p&gt;
+&lt;h2 id=&#34;NVIDIA-Jetson-Orin-NX-Super-16GB&#34;&gt;&lt;a href=&#34;#NVIDIA-Jetson-Orin-NX-Super-16GB&#34; class=&#34;headerlink&#34; title=&#34;NVIDIA Jetson Orin NX Super 16GB&#34;&gt;&lt;/a&gt;NVIDIA Jetson Orin NX Super 16GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-Lysl.png&#34; alt=&#34;NVIDIA Jetson Orin NX Super 16GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;智能算力：157 TOPS&lt;/li&gt;
+&lt;li&gt;参考价格：¥ 7000 ～ 9000&lt;/li&gt;
+&lt;li&gt;使用感受：完全过剩，16 bit 高精度模型推理不在话下！但 Nvidia 在 Linux on arm 的生态和驱动没有在 x86 平台上成熟，Jetpack 版本非常不稳定，会遇到很多奇奇怪怪的依赖问题，好在有了 AI 帮忙都解决了，算力强的没话说&lt;/li&gt;
+&lt;li&gt;是否推荐：不推荐，算力过剩，成本过高；而且它居然不支持上电自启动！也可能是我这家代理商没有配置对应的上电自启动的配件，导致我在现场只能手搓。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;NVIDIA-Jetson-Nano-Super-8GB&#34;&gt;&lt;a href=&#34;#NVIDIA-Jetson-Nano-Super-8GB&#34; class=&#34;headerlink&#34; title=&#34;NVIDIA Jetson Nano Super 8GB&#34;&gt;&lt;/a&gt;NVIDIA Jetson Nano Super 8GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-rQie.png&#34; alt=&#34;NVIDIA Jetson Nano Super 8GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：40 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 4000 ～ 6000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：在我们当前的使用状况下，算力仍旧非常充沛，占用空间更小了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：不推荐，算力过剩，跟上方的 NX 一样，成本过高；有类似的 arm 生态配置问题，Ai 能解决。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;RDK-X5-8GB&#34;&gt;&lt;a href=&#34;#RDK-X5-8GB&#34; class=&#34;headerlink&#34; title=&#34;RDK X5 8GB&#34;&gt;&lt;/a&gt;RDK X5 8GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-GpYl.png?width=1600&#34; alt=&#34;RDK X5 8GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：10 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 900 ～ 1000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：算力刚刚好够用，RDK 生态非常丰富，官方手册也很详细，例程丰富，非常适合初学者，但很多例程对我来说有点儿没必要，占用了非常大的 SD 卡空间，后续删除了不少示例项目；而且它标识的是 8G 运行内存，但是实际上有 4GB 是完全被 NPU 给独占了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：新手推荐，周边配套完善&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Radxa-Cubie-A7S-4GB&#34;&gt;&lt;a href=&#34;#Radxa-Cubie-A7S-4GB&#34; class=&#34;headerlink&#34; title=&#34;Radxa Cubie A7S 4GB&#34;&gt;&lt;/a&gt;Radxa Cubie A7S 4GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-fGdY.png&#34; alt=&#34;Radxa Cubie A7S 4GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：3 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 410&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：暂未使用，摄像头接口转换线与树莓派不兼容，而且算力较低，需要降低模型精度或者间歇性推理场景&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：如果购买到对应转换线和摄像头的话，在需要控制体积的情况下，可以购买&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Radxa-4D-6GB&#34;&gt;&lt;a href=&#34;#Radxa-4D-6GB&#34; class=&#34;headerlink&#34; title=&#34;Radxa 4D 6GB&#34;&gt;&lt;/a&gt;Radxa 4D 6GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-rOIk.png&#34; alt=&#34;Radxa 4D 6GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：6 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 650&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：接口适配树莓派生态，算力刚好够用，系统比较干净，资料说明详细，非常不错；而且他的 NPU 和 CPU 共用 6GB 的运行内存，反而比 上方的 RDK X5 的内存应用还要灵活&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：我已购买，体验暂时良好。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感想&#34;&gt;&lt;a href=&#34;#感想&#34; class=&#34;headerlink&#34; title=&#34;感想&#34;&gt;&lt;/a&gt;感想&lt;/h2&gt;&lt;p&gt;其实这类 AI 视觉模型在前几年就已经非常成熟了，只是这两年语言大模型的程序才让大众后知后觉地意识到了这一点，当然，语言大模型也在这其中帮助了很多，尤其在环境配置和应用开发方面。&lt;/p&gt;
+&lt;p&gt;借助 RDK 和 Radxa 这两个开发板，我成功把采购成本降到了 1K 左右。&lt;/p&gt;
+&lt;p&gt;如果后续的芯片和内存产能能够释放到民用和工业端的话，这类计算设备应该可以更便宜。&lt;/p&gt;
+&lt;p&gt;现在我在其中一个场地布置了 RDK X5 5 台，另两个场地布置 Radxa 4D 共 10 台，想要了解后续反馈的话，请持续关注我的博客吧～&lt;/p&gt;
+</content>
+        <category term="AI" />
+        <category term="视觉" />
+        <category term="RDK" />
+        <category term="Radxa" />
+        <category term="Jetson" />
+        <updated>2026-10-14T17:00:18.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/bloger-saved-my-redmi-tv/</id>
+        <title>传统网站在 AI 时代并没有失去价值（使用api控制红米/小米电视开机启动第三方应用）</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/bloger-saved-my-redmi-tv/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;文章由本人 100% 手打，仅文章封面图使用了 AI 生成，请放心阅读～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;背景：现场买了几百台红米电视当数据看板&#34;&gt;&lt;a href=&#34;#背景：现场买了几百台红米电视当数据看板&#34; class=&#34;headerlink&#34; title=&#34;背景：现场买了几百台红米电视当数据看板&#34;&gt;&lt;/a&gt;背景：现场买了几百台红米电视当数据看板&lt;/h2&gt;&lt;p&gt;近期项目上采购了几百台红米 A43 2025 省电版作为现场的监控屏，主要用于各个点位的数据看板，足够大的尺寸+自带系统，要比现场使用工控机+显示器的方案要简单很多，本来是一个非常完美的方案的。&lt;/p&gt;
+&lt;p&gt;我们自己封装了一个 Apk 应用，打开后自动热加载网页更新然后展示各式各样的数据，一切看起来都很美好。&lt;/p&gt;
+&lt;h2 id=&#34;现状：红米HyperOS不支持第三方应用自启&#34;&gt;&lt;a href=&#34;#现状：红米HyperOS不支持第三方应用自启&#34; class=&#34;headerlink&#34; title=&#34;现状：红米HyperOS不支持第三方应用自启&#34;&gt;&lt;/a&gt;现状：红米HyperOS不支持第三方应用自启&lt;/h2&gt;&lt;p&gt;现场实际安装后，才发现红米 A43 搭载的 HyperOS 1.0.24 根本不支持设置开机自启动第三方应用！&lt;/p&gt;
+&lt;p&gt;也就相当于现场&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;要么一直给 TV 通电，这样设置一次就可以一直用下去；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;要么每&lt;strong&gt;次开机之后都要拿几百个遥控器，然后一个个 TV 分别打开一遍 Apk&lt;/strong&gt;！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这显然很反人类。&lt;/p&gt;
+&lt;p&gt;所以我们需要想办法让 TV 开机后自启动到我们的应用程序去。&lt;/p&gt;
+&lt;h2 id=&#34;调查：B-站、小红书、Bing、Google、Claude&#34;&gt;&lt;a href=&#34;#调查：B-站、小红书、Bing、Google、Claude&#34; class=&#34;headerlink&#34; title=&#34;调查：B 站、小红书、Bing、Google、Claude&#34;&gt;&lt;/a&gt;调查：B 站、小红书、Bing、Google、Claude&lt;/h2&gt;&lt;p&gt;去 B 站看了很多视频，都是基于 MIUI for TV 的旧系统的方案，在 HyperOS 时代已经不适用了。&lt;/p&gt;
+&lt;p&gt;然后去小红书（当今的年轻人的搜索引擎）搜索了很多帖子，都是不知所云或者求方案贴，完全没用。&lt;/p&gt;
+&lt;p&gt;我去，难道这几百台电视机就这么废了？&lt;/p&gt;
+&lt;p&gt;于是开始疯狂 Bing、Google，这其中也过滤了非常多似是而非的帖子，一些一看就是 AI 生成的乐色。&lt;/p&gt;
+&lt;p&gt;经过半个多小时的疯狂查找，终于翻到了一个 52 破解网站的帖子&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我开始激动了起来，就像是找到了唯一的救命稻草了。&lt;/p&gt;
+&lt;p&gt;如果这个方案还不行，就只能研究 root 方案了，那样的话，现场的操作量会非常非常复杂。&lt;/p&gt;
+&lt;p&gt;因为 TV 架设在比较高的地方，操作需要爬上爬下、U盘拷贝等等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;52-破解网站的帖子&#34;&gt;&lt;a href=&#34;#52-破解网站的帖子&#34; class=&#34;headerlink&#34; title=&#34;52 破解网站的帖子&#34;&gt;&lt;/a&gt;52 破解网站的帖子&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.52pojie.cn/thread-1834214-1-1.html&#34;&gt;小米电视开机启动指定APP脚本PY版&lt;/a&gt;：&lt;a href=&#34;https://www.52pojie.cn/thread-1834214-1-1.html&#34;&gt;https://www.52pojie.cn/thread-1834214-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;帖子时间是 2023年9月15日,那还能不能适配现在的 HyperOS 系统呢，万一官方在新系统上把这个 Api 给关了我不就直接凉凉了。&lt;/p&gt;
+&lt;p&gt;于是继续在网上搜索其他类似的帖子，想要得到交叉验证，希望还有其他人也通过这种方式控制过红米电视的开机启动第三方 App，但找了很久都没有找到……&lt;/p&gt;
+&lt;h3 id=&#34;Claude-和个人博客&#34;&gt;&lt;a href=&#34;#Claude-和个人博客&#34; class=&#34;headerlink&#34; title=&#34;Claude 和个人博客&#34;&gt;&lt;/a&gt;Claude 和个人博客&lt;/h3&gt;&lt;p&gt;我不相信整个互联网只有这一个使用 Python 的案例，打开 DeepSeek、Claude，把关键字同步发送给两个智能体，让他们帮我去检索和确定这个 API 的方案是否在 2026 年 或者在 HyperOS 上仍旧可用。&lt;/p&gt;
+&lt;p&gt;仅仅用了5分钟，Claude 就传来喜报，在互联网的某个角落，找到了另一篇 &lt;strong&gt;2026年 2月 19 号&lt;/strong&gt;的博客文章，里边也提到了类似的接口地址！！！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gddhy.net/2026/xiao-mi-dian-shi-api/&#34;&gt;小米电视API收集整理&lt;/a&gt;：&lt;a href=&#34;https://gddhy.net/2026/xiao-mi-dian-shi-api/&#34;&gt;https://gddhy.net/2026/xiao-mi-dian-shi-api/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;识别度 AAAAA ！！！&lt;/p&gt;
+&lt;h2 id=&#34;解决&#34;&gt;&lt;a href=&#34;#解决&#34; class=&#34;headerlink&#34; title=&#34;解决&#34;&gt;&lt;/a&gt;解决&lt;/h2&gt;&lt;p&gt;这个时候是北京时间晚上 10 点 37 分，远在其他国家的同事开始工作了，给现场设备通上电之后，直接一个 curl 测试，成了！App 通过远程 API 调用在 红米电视上被正常启动了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-08-12_12.35.56.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Bloger-help-bloger&#34;&gt;&lt;a href=&#34;#Bloger-help-bloger&#34; class=&#34;headerlink&#34; title=&#34;Bloger help bloger&#34;&gt;&lt;/a&gt;Bloger help bloger&lt;/h2&gt;&lt;p&gt;谁说博客时代过去了？这些所谓的新时代主流网络平台，没一个能解决我的问题的！&lt;/p&gt;
+&lt;p&gt;还得是咱们写博客的，各位千万不要断更啊！！！&lt;/p&gt;
+</content>
+        <category term="红米电视" />
+        <category term="HyperOS" />
+        <category term="开机自启动" />
+        <updated>2026-08-12T13:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/electronics-prices-surge./</id>
+        <title>不得不应对的电子产品涨价</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/electronics-prices-surge./"/>
+        <content type="html">&lt;p&gt;近两年，AI 产业野蛮生长带动了整个内存产业涨价，而内存价格上涨又进一步传导到了消费电子领域。&lt;/p&gt;
+&lt;p&gt;SSD、显卡、手机、电脑、NAS……&lt;/p&gt;
+&lt;p&gt;几乎所有电子产品都在变贵。&lt;/p&gt;
+&lt;p&gt;而且从目前来看，这场涨价潮大概率还会持续至少两年以上。&lt;/p&gt;
+&lt;p&gt;既然改变不了，那普通人能做什么？&lt;/p&gt;
+&lt;p&gt;我分享一下我这些年踩过坑之后总结出来的一些经验。&lt;/p&gt;
+&lt;p&gt;很多事情其实我几年前就已经开始布局了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8814%E6%97%A5%2010_59_56.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;手机：主动降级消费&#34;&gt;&lt;a href=&#34;#手机：主动降级消费&#34; class=&#34;headerlink&#34; title=&#34;手机：主动降级消费&#34;&gt;&lt;/a&gt;手机：主动降级消费&lt;/h1&gt;&lt;h2 id=&#34;1、把手机拍照功能拆给相机&#34;&gt;&lt;a href=&#34;#1、把手机拍照功能拆给相机&#34; class=&#34;headerlink&#34; title=&#34;1、把手机拍照功能拆给相机&#34;&gt;&lt;/a&gt;1、把手机拍照功能拆给相机&lt;/h2&gt;&lt;p&gt;两年前，我突然意识到一件事情：&lt;/p&gt;
+&lt;p&gt;手机摄影已经非常强了，但最终效果还是打不过相机。&lt;/p&gt;
+&lt;p&gt;于是我决定：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;以后不再为影像旗舰的高溢价买单。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;直接采用：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;次旗舰手机 + 专业相机&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2024_alpha6700_01.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这样的组合。&lt;/p&gt;
+&lt;p&gt;好处非常明显：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;手机两三年一换，不心疼；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;相机可以长期使用；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;相机的拍摄能力在短时间内根本不可能被手机追上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;摄影圈有一句老话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;底大一级压死人。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这句话直到今天依旧成立。&lt;/p&gt;
+&lt;p&gt;哪怕是最基础的相机，也能给你一种明显越级的拍摄体验。&lt;/p&gt;
+&lt;p&gt;至于便携性……&lt;/p&gt;
+&lt;p&gt;随手拍的话，现在任何手机都已经够用了。&lt;/p&gt;
+&lt;p&gt;当然了，相机买镜头的花销又是另一个悲伤的故事了 P(T_T)q&lt;/p&gt;
+&lt;h2 id=&#34;2、降低手机存储空间溢价&#34;&gt;&lt;a href=&#34;#2、降低手机存储空间溢价&#34; class=&#34;headerlink&#34; title=&#34;2、降低手机存储空间溢价&#34;&gt;&lt;/a&gt;2、降低手机存储空间溢价&lt;/h2&gt;&lt;p&gt;2020 年买了 NAS 之后，我就在有意识地降低自己对 iCloud 的依赖。&lt;/p&gt;
+&lt;p&gt;仔细想想，我们付费购买 iCloud，原因无非两个：&lt;/p&gt;
+&lt;p&gt;1、照片太多，需要同步；&lt;/p&gt;
+&lt;p&gt;2、依赖 iCloud 的第三方软件越来越多，例如 Obsidian。&lt;/p&gt;
+&lt;p&gt;而 NAS 刚好能同时解决这两个问题。&lt;/p&gt;
+&lt;p&gt;相册方面，我已经完全迁移到了 Immich。&lt;/p&gt;
+&lt;p&gt;它拥有完全不输官方相册的体验，而且 AI 搜索更智能。&lt;/p&gt;
+&lt;p&gt;更重要的是：&lt;strong&gt;全平台支持。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;安卓、网页、Windows，访问体验甚至比 iCloud 更方便。&lt;/p&gt;
+&lt;p&gt;至于 iCloud Drive，那就更是 NAS 的舒适区了。&lt;/p&gt;
+&lt;p&gt;苹果官方一年的订阅价格，很多时候已经足够买一块容量大得多的硬盘。&lt;/p&gt;
+&lt;p&gt;如果你想要自己的 NAS 在 iOS 上达到类似 iCloud 后台同步的体验，可以试试 &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;SynoSync&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;3、次旗舰和旧旗舰&#34;&gt;&lt;a href=&#34;#3、次旗舰和旧旗舰&#34; class=&#34;headerlink&#34; title=&#34;3、次旗舰和旧旗舰&#34;&gt;&lt;/a&gt;3、次旗舰和旧旗舰&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;请注意，本篇文章不讨论 NAS 的整备价格，有时候一个路由器 + 一块机械硬盘同样可以满足基础的存储服务需求。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有了 NAS 或者家庭存储服务器后，购买次旗舰或者旧旗舰就变成了一件非常合理的事情。&lt;/p&gt;
+&lt;p&gt;现在消费电子涨价已经成为共识。&lt;/p&gt;
+&lt;p&gt;一些厂商也开始主动延长设备生命周期。&lt;/p&gt;
+&lt;p&gt;例如：谷歌最近三年的旗舰设备都拥有超过 5 年的系统更新周期，还有苹果公司在 iOS 27 所做的 30% 性能优化。&lt;/p&gt;
+&lt;p&gt;现在手机性能真的已经够用了。&lt;/p&gt;
+&lt;p&gt;真正的问题是：&lt;/p&gt;
+&lt;p&gt;互联网公司的业务膨胀速度远远快于硬件的发展速度。&lt;/p&gt;
+&lt;p&gt;开发越来越粗放，软件越来越臃肿，各家都恨不得把一个大型商超放到你的手机 App 里。&lt;/p&gt;
+&lt;p&gt;最后导致用户不得不购买更贵的设备来运行这些越来越重的软件，&lt;/p&gt;
+&lt;p&gt;这合理吗？难道软件做得差，最后买单的人反而是消费者？&lt;/p&gt;
+&lt;p&gt;引用某演员的话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“贱不贱呐？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我一直有一个原则：&lt;strong&gt;谁优化做得好，我就优先用谁。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个原则我已经坚持很多年了。&lt;/p&gt;
+&lt;h2 id=&#34;4、使用轻量化软件&#34;&gt;&lt;a href=&#34;#4、使用轻量化软件&#34; class=&#34;headerlink&#34; title=&#34;4、使用轻量化软件&#34;&gt;&lt;/a&gt;4、使用轻量化软件&lt;/h2&gt;&lt;p&gt;现在很多 App 已经变成了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在广告里边加了一点 App 功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;打开先给你来：开屏广告、会员广告、平台推荐、第三方推荐、自动播放的视频广告。&lt;/p&gt;
+&lt;p&gt;尤其是自动播放视频广告。&lt;/p&gt;
+&lt;p&gt;现在几乎所有国产主流 App 都喜欢干这个。&lt;/p&gt;
+&lt;p&gt;不仅消耗性能，还消耗电量。&lt;/p&gt;
+&lt;p&gt;最重要的是消耗心情。&lt;/p&gt;
+&lt;p&gt;这一点，B 站 UP 主 「苏星河牛通」讲得更加透彻，感兴趣移步观看：&lt;a href=&#34;https://www.bilibili.com/video/BV1seegzzEnH&#34;&gt;真的没有人能管管，早已泛滥的软件广告吗？&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;我不用你行不行？&#34;&gt;&lt;a href=&#34;#我不用你行不行？&#34; class=&#34;headerlink&#34; title=&#34;我不用你行不行？&#34;&gt;&lt;/a&gt;我不用你行不行？&lt;/h4&gt;&lt;p&gt;爱优腾，已经三年以上没打开过了。&lt;/p&gt;
+&lt;p&gt;广告软件 + 低水平影视工业流水线，最终产出的往往也是流水线内容。&lt;/p&gt;
+&lt;p&gt;当然，无意冒犯；不过互联网寻找资源这门祖传手艺，感觉真的要在我们这一代失传了。&lt;/p&gt;
+&lt;h3 id=&#34;B-站&#34;&gt;&lt;a href=&#34;#B-站&#34; class=&#34;headerlink&#34; title=&#34;B 站&#34;&gt;&lt;/a&gt;B 站&lt;/h3&gt;&lt;p&gt;长期使用国际版。&lt;/p&gt;
+&lt;p&gt;安卓选择甚至更多：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;PiliPlus&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PiliPala&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;微博&#34;&gt;&lt;a href=&#34;#微博&#34; class=&#34;headerlink&#34; title=&#34;微博&#34;&gt;&lt;/a&gt;微博&lt;/h3&gt;&lt;p&gt;iPhone：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;VVebo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;国际版&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安卓：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;See&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;购物软件&#34;&gt;&lt;a href=&#34;#购物软件&#34; class=&#34;headerlink&#34; title=&#34;购物软件&#34;&gt;&lt;/a&gt;购物软件&lt;/h3&gt;&lt;p&gt;淘宝、京东平时全部使用网页或者小程序。&lt;/p&gt;
+&lt;p&gt;只有付款的时候才打开 App。&lt;/p&gt;
+&lt;h3 id=&#34;QQ&#34;&gt;&lt;a href=&#34;#QQ&#34; class=&#34;headerlink&#34; title=&#34;QQ&#34;&gt;&lt;/a&gt;QQ&lt;/h3&gt;&lt;p&gt;坚持使用 TIM。&lt;/p&gt;
+&lt;p&gt;干净。&lt;/p&gt;
+&lt;p&gt;好用。&lt;/p&gt;
+&lt;p&gt;无广告。&lt;/p&gt;
+&lt;p&gt;无虚幻引擎。&lt;/p&gt;
+&lt;h3 id=&#34;银行-App&#34;&gt;&lt;a href=&#34;#银行-App&#34; class=&#34;headerlink&#34; title=&#34;银行 App&#34;&gt;&lt;/a&gt;银行 App&lt;/h3&gt;&lt;p&gt;全部开启大字体模式。&lt;/p&gt;
+&lt;p&gt;如果支持的话。&lt;/p&gt;
+&lt;h3 id=&#34;X&#34;&gt;&lt;a href=&#34;#X&#34; class=&#34;headerlink&#34; title=&#34;X&#34;&gt;&lt;/a&gt;X&lt;/h3&gt;&lt;p&gt;现在甚至连 X 都开始有国产 App 的味道了。&lt;/p&gt;
+&lt;p&gt;于是果断换成了 Spring。&lt;/p&gt;
+&lt;p&gt;非常清爽。&lt;/p&gt;
+&lt;p&gt;非常舒服。&lt;/p&gt;
+&lt;p&gt;另外：&lt;/p&gt;
+&lt;p&gt;请关闭所有国产流氓软件的后台运行权限。&lt;/p&gt;
+&lt;p&gt;包括 iOS 和 Android。&lt;/p&gt;
+&lt;p&gt;真的有效。&lt;/p&gt;
+&lt;p&gt;在完成这一轮轻量化替换之后你会发现：&lt;/p&gt;
+&lt;p&gt;很多所谓的“性能不够”，其实根本不是性能问题。&lt;/p&gt;
+&lt;p&gt;很多年前的手机依旧还能流畅使用。&lt;/p&gt;
+&lt;p&gt;真正拖慢手机的，从来都不是芯片。&lt;/p&gt;
+&lt;p&gt;而是软件。&lt;/p&gt;
+&lt;h4 id=&#34;至于微信……&#34;&gt;&lt;a href=&#34;#至于微信……&#34; class=&#34;headerlink&#34; title=&#34;至于微信……&#34;&gt;&lt;/a&gt;至于微信……&lt;/h4&gt;&lt;p&gt;我们只能被动抗争。&lt;/p&gt;
+&lt;p&gt;作为国民级 App，我们唯一能做的，大概就是让更多低配置、中配置设备继续运行微信。&lt;/p&gt;
+&lt;p&gt;这样微信后台统计出来的低端设备占比，才不会过早下降到一个可以忽略优化的程度。&lt;/p&gt;
+&lt;p&gt;你今天还能比较流畅地使用微信，背后其实有无数旧手机用户在默默发力。&lt;/p&gt;
+&lt;h1 id=&#34;电脑：修修补补再三年&#34;&gt;&lt;a href=&#34;#电脑：修修补补再三年&#34; class=&#34;headerlink&#34; title=&#34;电脑：修修补补再三年&#34;&gt;&lt;/a&gt;电脑：修修补补再三年&lt;/h1&gt;&lt;h2 id=&#34;1、旧平台真没有那么差&#34;&gt;&lt;a href=&#34;#1、旧平台真没有那么差&#34; class=&#34;headerlink&#34; title=&#34;1、旧平台真没有那么差&#34;&gt;&lt;/a&gt;1、旧平台真没有那么差&lt;/h2&gt;&lt;p&gt;现在很多装机讨论一开口就是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不是 DDR5 能用？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不是 i7 能用？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;还真能。&lt;/p&gt;
+&lt;p&gt;前段时间我买了一台&lt;br&gt;Intel Core i3-12100&lt;br&gt;主机做开发测试。&lt;/p&gt;
+&lt;p&gt;采购经理专门跑过来问我：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你确定买 i3？能用吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我回：那也得看是谁家的 i3 啊（笑）。&lt;/p&gt;
+&lt;p&gt;12100 已经强到离谱了。&lt;/p&gt;
+&lt;p&gt;办公完全没问题。&lt;/p&gt;
+&lt;p&gt;甚至很多 3A 游戏都完全够用。&lt;/p&gt;
+&lt;p&gt;前提是你的显卡别拖后腿。&lt;/p&gt;
+&lt;p&gt;对于办公和开发来说：&lt;/p&gt;
+&lt;p&gt;DDR4 平台依旧是性价比之王。&lt;/p&gt;
+&lt;h2 id=&#34;2、找到真正的瓶颈&#34;&gt;&lt;a href=&#34;#2、找到真正的瓶颈&#34; class=&#34;headerlink&#34; title=&#34;2、找到真正的瓶颈&#34;&gt;&lt;/a&gt;2、找到真正的瓶颈&lt;/h2&gt;&lt;h4 id=&#34;Mac-Mini-M4-16GB-256GB-的困境&#34;&gt;&lt;a href=&#34;#Mac-Mini-M4-16GB-256GB-的困境&#34; class=&#34;headerlink&#34; title=&#34;Mac Mini M4 16GB + 256GB 的困境&#34;&gt;&lt;/a&gt;Mac Mini M4 16GB + 256GB 的困境&lt;/h4&gt;&lt;p&gt;我 ¥ 3500 首发购买的 Mac mini M4 已经使用了接近两年了，16GB + 256 GB 的配置的确是有点儿捉襟见肘了，每次用 XCode 开发测试完 iPad 之后，就得立刻启动 Cleaner for XCode 赶紧把 iPad 的 SDK 给清除掉，这样就可以省出来 5GB 的磁盘空间，我又可以去打开 VSCode 去测试 Flutter 应用了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0987.JPG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;6月苹果决定 Mac 集体涨价 20% 的时候，我是崩溃的，看来短期内便宜买到 Mac mini M5 的可能性无了，索性把苹果涨价的一千多块钱购入了 1TB 的硬盘，直接拆机替换掉了。&lt;/p&gt;
+&lt;p&gt;外接硬盘盒后把苹果系统装到硬盘盒也是一个选择，但经过了一年的使用，我还是无法忍受以下缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;开关机要比原生磁盘慢 30 - 50s&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;任何一次 Mac mini 的位置移动，或者插拔数据线不小心碰到硬盘盒的线的时候，Mac 都可能会立刻卡死，然后过了一两分钟后重启。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;群晖-DS-920-CPU-过于孱弱的问题&#34;&gt;&lt;a href=&#34;#群晖-DS-920-CPU-过于孱弱的问题&#34; class=&#34;headerlink&#34; title=&#34;群晖 DS 920+ CPU 过于孱弱的问题&#34;&gt;&lt;/a&gt;群晖 DS 920+ CPU 过于孱弱的问题&lt;/h4&gt;&lt;p&gt;DS 920+ 已经在我家服役超过 4 年，它完全承担了我新的相册服务（Immich）托管、影音托管、漫画托管等等。但他一直有一个问题无法解决：自带的 J4105 赛扬处理器性能实在过于孱弱，有时候批量上传超过 100 张照片，Immich 在后台做 AI 分析的时候，Emby 影视服务就会受到影响；或者我在看 Komga 托管的漫画的时候，PDF 解析占用的 CPU 资源也会导致 Emby 软解码失败。&lt;/p&gt;
+&lt;p&gt;我在 6 月份以 ¥1700 左右 抢到了零刻 EQi 13 的准系统，拥有 15-13500H 的处理器，将 Docker 十多个服务全部迁移到 EQi 13 上，同时影音服务也迁移到了飞牛 OS，使用运行在 EQi 13 的飞牛 OS 负责计算任务，群晖仅仅提供 SMB 文件托管服务，同时挂载在飞牛的群晖远程文件夹也配置了低权限访问，存算分离的同时也拥有了安全的保障，也比购买一个性能更强的 NAS 要便宜很多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/1_e9bf0ed9-eee9-4e6d-a983-cc07a2f12e4a.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;购买 EQi 的最主要原因，除了支持 DDR4 内存外，还有一个重要的原因：内置电源，内置电源好文明！希望成为 mini 主机的标准。&lt;/p&gt;
+&lt;p&gt;对了，在抢不到 EQi 13 的情况下，还可以考虑 EQi 12，用作 NAS 的计算完全是性能过剩的，价格也更便宜，大概 ¥1100 ～¥ 1300。&lt;/p&gt;
+&lt;h1 id=&#34;总结&#34;&gt;&lt;a href=&#34;#总结&#34; class=&#34;headerlink&#34; title=&#34;总结&#34;&gt;&lt;/a&gt;总结&lt;/h1&gt;&lt;p&gt;回头看，这几年做得最正确的事情，大概有三件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;购入 NAS，迁移一切可迁移的服务到 NAS 中去，降低对手机厂家云服务的依赖&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;购入相机，拆分手机的拍照能力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;大量设备从二手平台购买&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期主义最大的优势就在这里。&lt;/p&gt;
+&lt;p&gt;很多消费决策看起来是在省钱。&lt;/p&gt;
+&lt;p&gt;但本质上是在避免支付不必要的溢价。&lt;/p&gt;
+&lt;p&gt;毕竟：&lt;/p&gt;
+&lt;p&gt;电子产品越来越贵，大概率已经不是一个周期问题，而是未来很多年的新常态。&lt;/p&gt;
+&lt;p&gt;既然如此，我们能做的就只有一件事：&lt;/p&gt;
+&lt;p&gt;尽量把钱花在真正影响体验的地方。&lt;/p&gt;
+</content>
+        <category term="NAS" />
+        <category term="a6700" />
+        <updated>2026-07-14T11:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-mac-support/</id>
+        <title>SynoSync(时刻同步)：MacOS 完全免费, iOS 内购四折优惠！(长期置顶)</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-mac-support/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;SynoSync 在移动端的稳定性已经拥有了大部分用户的验证了，现在我也终于有余力腾出手来做 MacOS 端的兼容，首先我要坦诚：MacOS 端使用的是 Catalyst 兼容运行，因为这样的方案下移植工作量是最小的，毕竟 SynoSync 第一优先的仍旧是移动端的功能稳定，现在通过 Catalyst 让 MacOS 平台的用户也用上了 SynoSync 的绝大多数功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你还不了解 SynoSync，可以通过以下文章进行了解：&lt;/p&gt;
+&lt;p&gt;我的博客网站：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.gadore.top/archives/synosync&#34;&gt;时刻同步(SynoSync)：iOS 缺失的现代化文件同步&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.gadore.top/archives/synosync-update-log&#34;&gt;时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;国内用户可以访问少数派：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/109465&#34;&gt;SynoSync｜让群晖与 iOS 之间的文件同步真正「现代化」 - 少数派&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://sspai.com/post/110597&#34;&gt;时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持 - 少数派&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;SynoSync-时刻同步-版本-1-2-1-更新主要更新了啥？&#34;&gt;&lt;a href=&#34;#SynoSync-时刻同步-版本-1-2-1-更新主要更新了啥？&#34; class=&#34;headerlink&#34; title=&#34;SynoSync (时刻同步) 版本 1.2.1 更新主要更新了啥？&#34;&gt;&lt;/a&gt;SynoSync (时刻同步) 版本 1.2.1 更新主要更新了啥？&lt;/h2&gt;&lt;h3 id=&#34;bug-修复-🐛&#34;&gt;&lt;a href=&#34;#bug-修复-🐛&#34; class=&#34;headerlink&#34; title=&#34;bug 修复 🐛&#34;&gt;&lt;/a&gt;bug 修复 🐛&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;同名文件覆盖失败问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;优化服务器超时时间统一设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;功能优化-🛠️&#34;&gt;&lt;a href=&#34;#功能优化-🛠️&#34; class=&#34;headerlink&#34; title=&#34;功能优化 🛠️&#34;&gt;&lt;/a&gt;功能优化 🛠️&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;DSM 连接模式下，增加移动到回收站的选项&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;活动界面增加同步热力图展示&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Mac-OS-支持-💻&#34;&gt;&lt;a href=&#34;#Mac-OS-支持-💻&#34; class=&#34;headerlink&#34; title=&#34;Mac OS 支持 💻&#34;&gt;&lt;/a&gt;Mac OS 支持 💻&lt;/h3&gt;&lt;p&gt;优先支持搭载 M 系列处理器的 Mac，当前版本是基于 iOS 版本的代码基础，使用 Catalyst 进行兼容支持的，相比较我当前正在使用的 Synology Drive Client 客户端，SynoSync 拥有：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对比项&lt;/th&gt;
+&lt;th&gt;Synology Drive Client&lt;/th&gt;
+&lt;th&gt;SynoSync&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;安装体积&lt;/td&gt;
+&lt;td&gt;200 MB +&lt;/td&gt;
+&lt;td&gt;13 MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;界面信息&lt;/td&gt;
+&lt;td&gt;传统，信息模糊，同步进度难以追踪&lt;/td&gt;
+&lt;td&gt;现代化，信息清晰明了，同步进度信息面面俱到&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;同步速度&lt;/td&gt;
+&lt;td&gt;局域网较快，外网巨慢（超～级～慢）&lt;/td&gt;
+&lt;td&gt;局域网和外网都非常快，仅仅取决于网络速度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0955.JPG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图：永远处于连接中的 Synology Drive Client&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0963.JPG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;直观且同步速度极快的 SynoSync&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0964.JPG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装体积仅仅 13.7 MB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mac OS 版本的 SynoSync (时刻同步) 完全免费！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mac OS 版本的 SynoSync (时刻同步) 完全免费！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mac OS 版本的 SynoSync (时刻同步) 完全免费！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为程序跟 iOS 端使用的同一个上架配置，所以可能会在 Mac App Store 显示有内购，但实际上完全没有任何内购！！！所有功能完全免费使用！！！去下载啊！！！&lt;/p&gt;
+&lt;h2 id=&#34;下载方式&#34;&gt;&lt;a href=&#34;#下载方式&#34; class=&#34;headerlink&#34; title=&#34;下载方式&#34;&gt;&lt;/a&gt;下载方式&lt;/h2&gt;&lt;p&gt;App Store 搜索：SynoSync，或者访问下方链接&lt;/p&gt;
+&lt;p&gt;时刻同步 (SynoSync)：iOS&amp;#x2F;MacOS 缺失的现代化文件同步： &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663?platform=mac&#34;&gt;&lt;strong&gt;App Store 下载地址&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;SynoSync-时刻同步-移动端内购「四折」限时优惠码&#34;&gt;&lt;a href=&#34;#SynoSync-时刻同步-移动端内购「四折」限时优惠码&#34; class=&#34;headerlink&#34; title=&#34;SynoSync(时刻同步) 移动端内购「四折」限时优惠码&#34;&gt;&lt;/a&gt;SynoSync(时刻同步) 移动端内购「四折」限时优惠码&lt;/h2&gt;&lt;h3 id=&#34;移动端内购之后你将获得：&#34;&gt;&lt;a href=&#34;#移动端内购之后你将获得：&#34; class=&#34;headerlink&#34; title=&#34;移动端内购之后你将获得：&#34;&gt;&lt;/a&gt;移动端内购之后你将获得：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;解锁 iOS 平台&lt;strong&gt;后台&lt;/strong&gt;调度权限，让你的文档可以在&lt;strong&gt;后台静默同步&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解锁 iOS 平台的&lt;strong&gt;长时间同步模式&lt;/strong&gt;，适合经常同步超大型文档库的使用场景&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;快捷&lt;strong&gt;指令 Intent 调用&lt;/strong&gt;，解锁更加进阶的同步调用方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更有设计感的图标更换&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我的&lt;strong&gt;感激之情&lt;/strong&gt; 🙏&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;使用方式：&#34;&gt;&lt;a href=&#34;#使用方式：&#34; class=&#34;headerlink&#34; title=&#34;使用方式：&#34;&gt;&lt;/a&gt;使用方式：&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;请注意，以下优惠链接是给到 iOS 设备的，也就是 iPhone 和 iPad，请不要在 MacOS 端打开！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载 SynoSync 到你的 iOS 设备上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开下方我提供的折扣链接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过折扣使用更低价格付款&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;折扣链接-（100个）-🔗&#34;&gt;&lt;a href=&#34;#折扣链接-（100个）-🔗&#34; class=&#34;headerlink&#34; title=&#34;折扣链接 （100个） 🔗&#34;&gt;&lt;/a&gt;折扣链接 （100个） 🔗&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用之后记得在评论区说哦&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=N48WX87WKPEX8NE86F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=N48WX87WKPEX8NE86F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EA4TYHFK4WHJFK36YN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EA4TYHFK4WHJFK36YN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=47NYXEY8JTHYP6HMR8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=47NYXEY8JTHYP6HMR8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=ATEN3W34W3MTYPM3JA&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=ATEN3W34W3MTYPM3JA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=7W6XAKFAAEEKT883WF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=7W6XAKFAAEEKT883WF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=7K4KPNLJLYRFLEXRK4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=7K4KPNLJLYRFLEXRK4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WJ4W8XTAP8KJMHPHF8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WJ4W8XTAP8KJMHPHF8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=Y34RTMYWWNEW3866LK&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=Y34RTMYWWNEW3866LK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=M3E6PXAPYMX33TLL43&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=M3E6PXAPYMX33TLL43&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EHT37MEFA6RNEJYLJP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EHT37MEFA6RNEJYLJP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NT68PXJJ33J88LWJY3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NT68PXJJ33J88LWJY3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RPH4YL3LHKXL88NN8Y&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RPH4YL3LHKXL88NN8Y&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FNY3EF4XELXR447APL&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FNY3EF4XELXR447APL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=473AKJPLRF8WRJ7TNR&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=473AKJPLRF8WRJ7TNR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RLM8RJNKPRMKFYRMPJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RLM8RJNKPRMKFYRMPJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8LE8P7KYT8X8RL4KRE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8LE8P7KYT8X8RL4KRE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TKTJP8RPMXXLA6KFHP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TKTJP8RPMXXLA6KFHP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WEJNK3T7P4AREMEYWN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WEJNK3T7P4AREMEYWN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NK6Y87KJKJN3YWP4M7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NK6Y87KJKJN3YWP4M7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NJW4JNJ6XLXTXFLXJK&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NJW4JNJ6XLXTXFLXJK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6XJJMMAR7HTMEK4K3P&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6XJJMMAR7HTMEK4K3P&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RHFN8T63LANH46RHXR&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RHFN8T63LANH46RHXR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6K3AEPWHWAYA3RKLML&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6K3AEPWHWAYA3RKLML&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FJMARARTN8AE3MAN8L&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FJMARARTN8AE3MAN8L&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NYX74YXLY6XKR3FTN7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NYX74YXLY6XKR3FTN7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=P7N8FEE4HA336ERAEY&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=P7N8FEE4HA336ERAEY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=MXFH8TW43TEEA7AY8W&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=MXFH8TW43TEEA7AY8W&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=R8AA6NE4WYENYMY78R&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=R8AA6NE4WYENYMY78R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=AKHTJTP4JTYR4T8RPL&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=AKHTJTP4JTYR4T8RPL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=67HWF7NA7YT6KN34AN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=67HWF7NA7YT6KN34AN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=JMAJKNHXN6KXE46X6R&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=JMAJKNHXN6KXE46X6R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=NT7TEY8AR6Y8TK4EKH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=NT7TEY8AR6Y8TK4EKH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=RAFLTL8P7KAT3HPMME&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=RAFLTL8P7KAT3HPMME&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WHHK3WPRY4AEFPPM88&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WHHK3WPRY4AEFPPM88&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6K743KMK3XHWNXM634&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6K743KMK3XHWNXM634&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=76TA6RNEYXHW4K36WF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=76TA6RNEYXHW4K36WF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=78JRTPHR7LTM3M4K6F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=78JRTPHR7LTM3M4K6F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=3H838FTAMLTR8M343Y&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=3H838FTAMLTR8M343Y&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L8YHNPRHYJJWY7F6LH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L8YHNPRHYJJWY7F6LH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TH33YYT74L4JJ8EKL3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TH33YYT74L4JJ8EKL3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L484R6JTWY3J3H3WMJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L484R6JTWY3J3H3WMJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=34HEANEL6XWAAWA6ME&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=34HEANEL6XWAAWA6ME&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=YYRFEHWY8Y6E3KYTYN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=YYRFEHWY8Y6E3KYTYN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=JLKHTYPLM686M74H84&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=JLKHTYPLM686M74H84&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6XXYRJTM8RJF44H8JE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6XXYRJTM8RJF44H8JE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TL3J88T4WNWXXLH3HE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TL3J88T4WNWXXLH3HE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=HRH7MYKWHFN37TTXHM&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=HRH7MYKWHFN37TTXHM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=4KY4N4AL8KTFFKJYNA&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=4KY4N4AL8KTFFKJYNA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=F7747P6HP6HEKM6NKH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=F7747P6HP6HEKM6NKH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L7363RHTHYWFFEXLFP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L7363RHTHYWFFEXLFP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=37MLPHHXXHWLAJ63M8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=37MLPHHXXHWLAJ63M8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=L8M6LLTH4A8EYN3TEH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=L8M6LLTH4A8EYN3TEH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8K4884P3L7LXJ3FP6E&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8K4884P3L7LXJ3FP6E&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WYFEENPKWXK84RPF3M&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WYFEENPKWXK84RPF3M&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=LF6HMPRKFLYEYMTWM8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=LF6HMPRKFLYEYMTWM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=Y466HK7L34NMFFEX3F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=Y466HK7L34NMFFEX3F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WMREWNR764K8RL4WY7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WMREWNR764K8RL4WY7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=4ARPT88RNLAXH3MPEH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=4ARPT88RNLAXH3MPEH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=XRF4HMKNPNLXYXXJM8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=XRF4HMKNPNLXYXXJM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=LP3WE4P8M7L34JR3TJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=LP3WE4P8M7L34JR3TJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=LTXRYMKA64H7JX6RMF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=LTXRYMKA64H7JX6RMF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=MFNL7T6TAL644MA8A8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=MFNL7T6TAL644MA8A8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=R8J87HW8MHW4TY7P7X&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=R8J87HW8MHW4TY7P7X&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=AHFFLF3ARYKA37L73R&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=AHFFLF3ARYKA37L73R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=N846N8Y6M7NRN8XJME&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=N846N8Y6M7NRN8XJME&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=M7LA7MTL7P6RYPMPHH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=M7LA7MTL7P6RYPMPHH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FY4EPY6H468X8K74AA&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FY4EPY6H468X8K74AA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=W6HM7FN4A4NL4NMPP4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=W6HM7FN4A4NL4NMPP4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=6MXNWYXTTX8P6NLNM8&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=6MXNWYXTTX8P6NLNM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=K4F3EXFWYKJ3PRYL3H&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=K4F3EXFWYKJ3PRYL3H&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EPMKKWPPT4XARHLNE4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EPMKKWPPT4XARHLNE4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=3NRX3NNH6AHM7JTHJW&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=3NRX3NNH6AHM7JTHJW&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KALKPPLKWMPWWAY8E4&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KALKPPLKWMPWWAY8E4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=EPTTL6JPJYT3AHT8FY&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=EPTTL6JPJYT3AHT8FY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8A4PXHK6YJ66FLAYWE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8A4PXHK6YJ66FLAYWE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TPHJREHR3TRFHPJK33&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TPHJREHR3TRFHPJK33&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=XN3MMEFH8LAJ8XE7J6&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=XN3MMEFH8LAJ8XE7J6&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=E3MW6Y373XH7KNX4LE&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=E3MW6Y373XH7KNX4LE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KPH3YMA6XAWJPLPAWM&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KPH3YMA6XAWJPLPAWM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=3WAW6NYK6HENXE37HP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=3WAW6NYK6HENXE37HP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=JFM3JHF6WEFXMFMNLR&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=JFM3JHF6WEFXMFMNLR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=34H644H37XWRFNAPJ3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=34H644H37XWRFNAPJ3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=MMAYMR7HY663KXWJRP&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=MMAYMR7HY663KXWJRP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=4H44KT4673YMFRTTA7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=4H44KT4673YMFRTTA7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KMTWYY66NER6P8JAWJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KMTWYY66NER6P8JAWJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WK8FKHWYWFRE883WYX&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WK8FKHWYWFRE883WYX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=YMP7X3E6R8PJRXYN36&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=YMP7X3E6R8PJRXYN36&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KAYWPATWJR8TNPRJFT&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KAYWPATWJR8TNPRJFT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=8RM48YRAN7F73R3W6K&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=8RM48YRAN7F73R3W6K&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=M4YPRYPJKYHFWR8MRJ&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=M4YPRYPJKYHFWR8MRJ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=E88H4Y6JAAPFNR874F&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=E88H4Y6JAAPFNR874F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=FHENM4648NLFTJ86WN&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=FHENM4648NLFTJ86WN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=X4YMWLTJJJKYE3E3YX&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=X4YMWLTJJJKYE3E3YX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=F7XFNNFPFYJAN7JHK7&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=F7XFNNFPFYJAN7JHK7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=WW7XT76X68A48NX7AW&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=WW7XT76X68A48NX7AW&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KEY3KF36L7WYJFJ7T3&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KEY3KF36L7WYJFJ7T3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=HWFE4RKR6YHJEPK67H&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=HWFE4RKR6YHJEPK67H&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=T3YYRKF8WKJFTLJFTF&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=T3YYRKF8WKJFTLJFTF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=TH8XW6H8RKWT38F4LH&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=TH8XW6H8RKWT38F4LH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/redeem?ctx=offercodes&amp;id=6762731663&amp;code=KNYJP4F7WK88LLPH3J&#34;&gt;https://apps.apple.com/redeem?ctx=offercodes&amp;amp;id=6762731663&amp;amp;code=KNYJP4F7WK88LLPH3J&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <category term="WebDAV" />
+        <category term="SMB" />
+        <updated>2026-06-15T17:50:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-update-log/</id>
+        <title>时刻同步（SynoSync）1.1.5 版本更新：iOS 低版本支持</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-update-log/"/>
+        <content type="html">&lt;p&gt;距离 SynoSync 发布 1.0 开始也已经过了一个多月了，在这段时间里，我收到了很多有用的建议，也按照大家的建议对 SynoSync 进行了一系列的升级，现在，是时候让大家重新认识这款 App 了！&lt;/p&gt;
+&lt;p&gt;初版发布介绍：&lt;a href=&#34;https://blog.gadore.top/archives/synosync/&#34;&gt;SynoSync｜iOS 缺失的现代化文件同步&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B46%E6%9C%881%E6%97%A5%2015_26_27.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;重要更新一：中文名、换图标&#34;&gt;&lt;a href=&#34;#重要更新一：中文名、换图标&#34; class=&#34;headerlink&#34; title=&#34;重要更新一：中文名、换图标&#34;&gt;&lt;/a&gt;重要更新一：中文名、换图标&lt;/h2&gt;&lt;h3 id=&#34;SynoSync-名称由来&#34;&gt;&lt;a href=&#34;#SynoSync-名称由来&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 名称由来&#34;&gt;&lt;/a&gt;SynoSync 名称由来&lt;/h3&gt;&lt;p&gt;这款应用一开始的开发初衷是解决我在 iOS 上同步我 NAS 里的 Obsidian 文档库的，因为我 NAS 买的是群晖（Synology），所以我就把它起名为了 SynoSync，翻译过来就是：群晖同步，当时我留了心眼，没有贸然起中文名，因为我觉得叫群晖同步的话太过绑定群晖也不好。&lt;/p&gt;
+&lt;h3 id=&#34;中文名「时刻同步」的含义&#34;&gt;&lt;a href=&#34;#中文名「时刻同步」的含义&#34; class=&#34;headerlink&#34; title=&#34;中文名「时刻同步」的含义&#34;&gt;&lt;/a&gt;中文名「时刻同步」的含义&lt;/h3&gt;&lt;p&gt;「时刻同步」这个名称一方面是 Syno 跟 时刻 有一定的谐音，更重要的是，应用是可以通过 iOS 后台调度机制在你不打开 App 的情况下进行同步，当然，这其中仍旧不能突破 iOS 的后台限制，每次后台调度同步的窗口只有几十秒，不过充电情况下系统会给较长的后台同步时间，也足够我同步 NAS 上的超大文档库了，相比较 Obsidian 内置的插件不打开就不同步，我觉得这种后台同步的机制已经相当及时了，所以「时刻同步」就此定下。&lt;/p&gt;
+&lt;h3 id=&#34;图标更换&#34;&gt;&lt;a href=&#34;#图标更换&#34; class=&#34;headerlink&#34; title=&#34;图标更换&#34;&gt;&lt;/a&gt;图标更换&lt;/h3&gt;&lt;p&gt;同理，在 App 开发早期，我更多的精力都在开发、测试、修 Bug，根本没有精力去设计 App 图标，所以第一版本的图标完全是打开 AI 生图然后顺手生成的，没有任何设计感可言。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024-oban.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但随着 App 功能逐渐稳定，现在我也终于有余力来重新更换一下 App 图标了。&lt;/p&gt;
+&lt;p&gt;相比较第一版顺手使用 AI 生成的版本，现在的图标设计做了大量的精简。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;图标主题仅保留两个代表同步的首尾衔接的箭头，&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;左右箭头分别是云 ☁️ 和文件夹 📁 的轮廓，代表「时刻同步」是同步云服务器和本地文件夹的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;箭头取色基本上跟 MacOS 的 Finder 接近，一致性这块拿捏的死死的～&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望你们更喜欢这个新的图标版本，当然，老版本图标依旧可以在设置中切换。&lt;/p&gt;
+&lt;h2 id=&#34;重要更新二：增加对-WebDAV、SMB、DSM-6-0-等协议支持&#34;&gt;&lt;a href=&#34;#重要更新二：增加对-WebDAV、SMB、DSM-6-0-等协议支持&#34; class=&#34;headerlink&#34; title=&#34;重要更新二：增加对 WebDAV、SMB、DSM 6.0 等协议支持&#34;&gt;&lt;/a&gt;重要更新二：增加对 WebDAV、SMB、DSM 6.0 等协议支持&lt;/h2&gt;&lt;p&gt;正如我上边所提到的，时刻同步一开始是为了方便我同步群晖上的文档库而开发的，DSM （群晖 NAS 系统） 支持是刚需。&lt;/p&gt;
+&lt;p&gt;随着下载人数越来越多……&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;老旧 NAS 和黑群晖可能需要用到 DSM 6.0 和 https 自签证书，已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;部分现存服务器仅部署了 WebDAV 协议？WebDAV 协议已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;家里的路由器仅支持 SMB 协议？SMB 协议已支持 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为我主要使用 DSM 协议完成同步，所以其他协议都只做了基础功能测试，保证功能是完整可用的，但非 DSM 7.0 协议在长期使用下来的稳定性我是很难知晓的，如果大家有遇到任何问题，欢迎反馈～&lt;/p&gt;
+&lt;h2 id=&#34;重要更新三：调整最低可运行的-iOS-版本到-iOS-16-4&#34;&gt;&lt;a href=&#34;#重要更新三：调整最低可运行的-iOS-版本到-iOS-16-4&#34; class=&#34;headerlink&#34; title=&#34;重要更新三：调整最低可运行的 iOS 版本到 iOS 16.4&#34;&gt;&lt;/a&gt;重要更新三：调整最低可运行的 iOS 版本到 iOS 16.4&lt;/h2&gt;&lt;p&gt;「SynoSync」发布第一周就有朋友因为版本问题不得不升级自己设备的 iOS 大版本来安装「时刻同步」（非常感谢这位朋友的支持🙏🙏🙏），当时我忙于修复已知的同步的问题，根本没有余力兼顾降低 iOS 版本支持的工作，但最近这种低版本兼容的呼声开始变得多了起来，似乎使用低版本或者旧设备的朋友对这类文件同步软件的需求挺多？所以我就在砍掉一部分不重要的特性的情况下，将 App 最低可安装版本从 iOS 18.6 一路降到了 iOS 16.4。&lt;/p&gt;
+&lt;p&gt;我也希望更多小伙伴可以用上「时刻同步」，更需要你们在使用低版本时遇到任何问题后第一时间告诉我，因为我手头没有低版本设备，只能使用 XCode 自带的模拟器运行低版本设备做到最基础的兼容运行和功能可用性测试，但真实设备运行起来什么样，有任何问题，还需要大家安装和使用后告诉我。&lt;/p&gt;
+&lt;h2 id=&#34;承诺&#34;&gt;&lt;a href=&#34;#承诺&#34; class=&#34;headerlink&#34; title=&#34;承诺&#34;&gt;&lt;/a&gt;承诺&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;「时刻同步」绝不搞订阅制，工具类的 App 搞订阅制就是抢钱，当前情况下即使不内购的朋友也可以使用绝大多数同步功能，服务器添加、同步任务添加等没有任何限制；内购仅仅解锁后台静默同步和一些进阶功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;绝不 Vibe Coding，我会借助 AI 开发一些我不熟悉的语法特性，一些奇奇怪怪的 bug 也会让 AI 帮我分析，但我绝不会全权交给 AI 任由 Agent 编写风险未知的代码（毕竟我自己也要高强度使用）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;鸣谢&#34;&gt;&lt;a href=&#34;#鸣谢&#34; class=&#34;headerlink&#34; title=&#34;鸣谢&#34;&gt;&lt;/a&gt;鸣谢&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;❤️ 特别感谢第一天下载就付费内购的朋友！也感谢所有内购朋友的信任与支持～&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;❤️ 感谢所有反馈与建议的朋友，「时刻同步」是在你们的建议下越来越完善的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;❤️ 感谢少数派网站对本 App 的大力推广支持。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我的另一款轻量级倒数日 App「唯记」永久免费且没有任何内购。&lt;/p&gt;
+&lt;p&gt;如果你厌倦了各种复杂的 UI，蹩脚的设置，或者想要一个一目了然的倒数日小组件，那可以试试「唯记」，又不要钱～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/v2rmb-store.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;时刻同步(SynoSync)：iOS 缺失的现代化文件同步： &lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;App Store 下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;唯记(V2RMB)：简约漂亮的双历倒数日：&lt;a href=&#34;https://apps.apple.com/cn/app/%E5%94%AF%E8%AE%B0/id6502951931&#34;&gt;App Store 下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <category term="WebDAV" />
+        <category term="SMB" />
+        <updated>2026-06-03T16:40:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync/</id>
+        <title>SynoSync｜让群晖与 iOS 之间的文件同步真正「现代化」</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/ChatGPT%20Image%202026%E5%B9%B45%E6%9C%887%E6%97%A5%2013_29_47%20(1).png&#34; alt=&#34;ChatGPT Image 2026年5月7日 132947 1png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更新：1.0.8 或者更新的版本已增加 WebDAV 协议支持，所以就算没有群晖 DSM 系统的 NAS 现在也可以使用 SynoSync 啦～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;开发背景：关于安全感与掌控感&#34;&gt;&lt;a href=&#34;#开发背景：关于安全感与掌控感&#34; class=&#34;headerlink&#34; title=&#34;开发背景：关于安全感与掌控感&#34;&gt;&lt;/a&gt;开发背景：关于安全感与掌控感&lt;/h2&gt;&lt;p&gt;一直以来，基于 Markdown 纯文本的 Obsidian 文档库给了我极强的安全感与掌控感。&lt;/p&gt;
+&lt;p&gt;在我的工作流中，NAS 承担着文档库托管与同步的核心角色。群晖 Drive 在 Windows、Mac、Linux 乃至 Android 平台上的体验都堪称出色，唯独在 iOS 端，这种连贯性戛然而止。&lt;/p&gt;
+&lt;h2 id=&#34;困境：iOS-上的群晖-Drive，为何不够「现代化」？&#34;&gt;&lt;a href=&#34;#困境：iOS-上的群晖-Drive，为何不够「现代化」？&#34; class=&#34;headerlink&#34; title=&#34;困境：iOS 上的群晖 Drive，为何不够「现代化」？&#34;&gt;&lt;/a&gt;困境：iOS 上的群晖 Drive，为何不够「现代化」？&lt;/h2&gt;&lt;p&gt;在 iOS 生态下，群晖 Drive 的同步范围被严格限制在自身的沙盒文件夹内（应该是考虑到旧版本 iOS 兼容性）。这意味着 Obsidian 无法直接调用 Drive 的同步能力来读取文档库。对于追求「全平台一致体验」的开发者来说，这成了最难受的断层。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024%20(1).png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Obsidian-的多平台同步方案现状&#34;&gt;&lt;a href=&#34;#Obsidian-的多平台同步方案现状&#34; class=&#34;headerlink&#34; title=&#34;Obsidian 的多平台同步方案现状&#34;&gt;&lt;/a&gt;Obsidian 的多平台同步方案现状&lt;/h2&gt;&lt;p&gt;如果你想自建 Obsidian 文档库同步，目前主流方案的优劣对比清晰可见：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;方案&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;优点&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;缺点&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;官方 Sync 服务&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;集成度最高，支持最完美&lt;/td&gt;
+&lt;td&gt;订阅制费用随空间上涨；隐私完全托付于第三方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;iCloud&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;苹果原生支持，全家桶体验好&lt;/td&gt;
+&lt;td&gt;仅限 Apple 生态；大库订阅费高；同步状态黑盒化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;自托管 + 插件&lt;/strong&gt; (如 Remotely Save)&lt;/td&gt;
+&lt;td&gt;空间不受限，隐私高度可控&lt;/td&gt;
+&lt;td&gt;需维护内网穿透及 WebDAV 服务；配置门槛较高&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;如果你和我一样，希望文档库具备更安全的托管方式，&lt;strong&gt;Remotely Save + WebDAV&lt;/strong&gt; 依然是目前的权宜之计。但要获得稳定的体验，通常还需折腾 &lt;strong&gt;HTTPS、内网穿透、DDNS 或 Cloudflare&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么，难道就没有一种方案，能让我们直接复用 QuickConnect 那种「开箱即用」的穿透能力与内外网自动切换逻辑，在免去繁琐穿透配置的同时，实现真正的文档库自动同步到任何地方？&lt;/p&gt;
+&lt;h2 id=&#34;我的「万级」文件同步噩梦&#34;&gt;&lt;a href=&#34;#我的「万级」文件同步噩梦&#34; class=&#34;headerlink&#34; title=&#34;我的「万级」文件同步噩梦&#34;&gt;&lt;/a&gt;我的「万级」文件同步噩梦&lt;/h2&gt;&lt;p&gt;我的 Obsidian 文档库包含 &lt;strong&gt;26,000+ 个文件&lt;/strong&gt;，总体积接近 &lt;strong&gt;10GB&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-05-07_12.56.08%20(1).png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在这种规模下，单纯依赖 Obsidian 的前台插件同步，体验会呈断崖式下降。更棘手的是，常规插件方案很难像群晖官方 App 那样，根据网络环境（局域网 vs 公网）自动且智能地切换连接地址。&lt;/p&gt;
+&lt;p&gt;为了解决这些切肤之痛，我开发了 &lt;strong&gt;SynoSync&lt;/strong&gt;。它的目标非常明确：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;彻底解决「群晖 + iOS」用户的文档库同步难题。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;SynoSync-能为你做什么？&#34;&gt;&lt;a href=&#34;#SynoSync-能为你做什么？&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 能为你做什么？&#34;&gt;&lt;/a&gt;SynoSync 能为你做什么？&lt;/h2&gt;&lt;h3 id=&#34;1-多账号与多任务的灵活管理&#34;&gt;&lt;a href=&#34;#1-多账号与多任务的灵活管理&#34; class=&#34;headerlink&#34; title=&#34;1. 多账号与多任务的灵活管理&#34;&gt;&lt;/a&gt;1. 多账号与多任务的灵活管理&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;支持配置多台 DSM：&lt;/strong&gt; 完美适配拥有多套群晖环境的进阶用户。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;支持多同步任务并行：&lt;/strong&gt; 你可以针对不同的 App、不同的本地路径，创建多条上传、下载或双向同步任务，灵活构建你的同步方案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-覆盖全场景的同步模式&#34;&gt;&lt;a href=&#34;#2-覆盖全场景的同步模式&#34; class=&#34;headerlink&#34; title=&#34;2. 覆盖全场景的同步模式&#34;&gt;&lt;/a&gt;2. 覆盖全场景的同步模式&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024%20(1)-eaFO.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;前台同步：&lt;/strong&gt; 实时可见的极速同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;大批量初始化：&lt;/strong&gt; 针对首次同步或超大文件夹优化的传输模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;后台静默同步：&lt;/strong&gt; 无需干预，在系统允许的范围内自动对齐差异。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;快捷指令触发：&lt;/strong&gt; 联动 iOS 自动化，解锁更多高效玩法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-直观的状态追踪&#34;&gt;&lt;a href=&#34;#3-直观的状态追踪&#34; class=&#34;headerlink&#34; title=&#34;3. 直观的状态追踪&#34;&gt;&lt;/a&gt;3. 直观的状态追踪&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024%20(1)-pYDC.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Activity 报告：&lt;/strong&gt; 每一个文件的流转都清晰可查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;小组件支持：&lt;/strong&gt; 无需打开 App，在桌面即可实时观察同步进度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一些坦诚的局限性……&#34;&gt;&lt;a href=&#34;#一些坦诚的局限性……&#34; class=&#34;headerlink&#34; title=&#34;一些坦诚的局限性……&#34;&gt;&lt;/a&gt;一些坦诚的局限性……&lt;/h2&gt;&lt;p&gt;在开发 SynoSync 的这一个多月里，最让我抓狂的莫过于 iOS 严苛的后台机制。&lt;/p&gt;
+&lt;p&gt;众所周知，iOS 采用了近乎「墓碑式」的后台管理。对于 SynoSync 这种需要频繁进行网络请求、文件比对及高强度读写的 App 来说，后台环境极其不友好。为了实现优雅的「静默同步」，我尝试了各种姿势去突破限制，但必须承认：&lt;strong&gt;它的后台效果依然无法达到 Android 或 PC 端的随心所欲。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;特别是在面对我那 2.6 万个文件的「巨型库」时，iOS 的后台限制会导致同步耗时拉长。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;因此，SynoSync 提供的最终解法是：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先通过「前台大批量同步」完成沉重的初始化任务，后续的日常增量更新，则交给「后台比对」去静默完成。&lt;/p&gt;
+&lt;p&gt;如果你发现 SynoSync 发出了后台同步失败的通知，也不用惊慌，这只是 iOS 后台切断了 App 的后台网络权限（为了省电），SynoSync 会在下一个 iOS 允许的时间窗口重新尝试同步的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/cn/app/synosync/id6762731663&#34;&gt;App Store&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="NAS" />
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="群晖" />
+        <category term="Obsidian" />
+        <updated>2026-05-07T12:30:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/v2rmb-free/</id>
+        <title>iOS 应用：唯记，限免</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/v2rmb-free/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202026-04-01%2016.32.53_%E5%89%AF%E6%9C%AC-HfAM.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;开发背景&#34;&gt;&lt;a href=&#34;#开发背景&#34; class=&#34;headerlink&#34; title=&#34;开发背景&#34;&gt;&lt;/a&gt;开发背景&lt;/h2&gt;&lt;p&gt;上大学时，我是看着一堆独立开发者的故事毕业的，Kavin、Magabits、八爷等等，他们在我的心里留下了一个执念。&lt;/p&gt;
+&lt;p&gt;在具备了实力（系统学习了编程）和财力（工作后有钱购买 💻 Macbook Pro）之后，我也终于着手开发出了一款自己的 App：唯记&lt;/p&gt;
+&lt;p&gt;那可是 2020 年，AI 还无法使用，SwiftUI 的文档也散落在互联网的各个角落的时代。「唯记」开发出来后，我想着如果有人也想用，就象征性地付费给我一块钱，这样我们都有光明的未来🐶。&lt;/p&gt;
+&lt;h2 id=&#34;当前营收状况&#34;&gt;&lt;a href=&#34;#当前营收状况&#34; class=&#34;headerlink&#34; title=&#34;当前营收状况&#34;&gt;&lt;/a&gt;当前营收状况&lt;/h2&gt;&lt;p&gt;但，既然只有很少人看得到这个帖子，我也就不嫌丢人了：实际上这三年来用户数量始终没有突破1000，好吧，甚至没有突破500。&lt;/p&gt;
+&lt;p&gt;错误当然在我，因为我也并没有真正把它当作一个正经的可以盈利的 App 在运作。截止到目前也就3～400人在使用。相对应的，我这几年的 App Store 开发者账号付费已经轻松超过 1k 了 。&lt;/p&gt;
+&lt;p&gt;我必须承认我不是一个合格的独立开发者（本来也不是……）😭，这款 App 也过于平庸，我现在终于接受了它的平庸，但我仍旧还没接受自己的平庸，即使 Github 的废案仓库一个接着一个地建，我还在努力爬行，我知道现在早已不是一个独立开发者的黄金时代，但心里总是放不下那种执念。&lt;/p&gt;
+&lt;h2 id=&#34;如果你真的喜欢&#34;&gt;&lt;a href=&#34;#如果你真的喜欢&#34; class=&#34;headerlink&#34; title=&#34;如果你真的喜欢&#34;&gt;&lt;/a&gt;如果你真的喜欢&lt;/h2&gt;&lt;p&gt;咳咳，总而言之，既然我一直没打算靠 唯记 赚钱，那设置这一块钱的付费反而是画蛇添足，现在永久免费啦～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/Icon%201024.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果你真的真的喜欢唯记的话：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;App 本身的安装后占用是不超过15MB 的，应该足够轻量；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用的是 iCloud 同步 Sqlite 数据库，绝对的隐私友好；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;对苹果即将到来的 AI 支持应该是很好的（适配了 App Intent，方便 siri 调用）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;无内购、无广告、无账号绑定，现在也无需付费了，放心食用～&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;%5B%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%5D(https://sspai.com/post/102845)&#34;&gt;搭配 Quote&amp;#x2F;0 ，也很好玩哦～&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/%E6%88%AA%E5%B1%8F%202026-04-01%2015.55.10-FcRx.jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载地址&#34;&gt;&lt;a href=&#34;#下载地址&#34; class=&#34;headerlink&#34; title=&#34;下载地址&#34;&gt;&lt;/a&gt;下载地址&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&#34;https://apps.apple.com/us/app/v2rmb/id6502951931&#34;&gt;‎V2RMB App - App Store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;或者直接 App Store 搜索：v2rmb&lt;/p&gt;
+</content>
+        <category term="iOS" />
+        <category term="独立开发" />
+        <category term="唯记" />
+        <category term="V2RMB" />
+        <category term="Way 2 Remember" />
+        <category term="倒数日" />
+        <updated>2026-04-02T08:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/copilot-token-monitoring/</id>
+        <title>为了解决 Openclaw 的 Token 恐怖消耗，我做了这些事……</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/copilot-token-monitoring/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/IMG_0809.jpg&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Agent failed before reply: All models failed (17): github-copilot&amp;#x2F;claude-haiku-4.5: Provider github-copilot is in cooldown (all profiles unavailable) (rate_limit) | ……………………………… github-copilot&amp;#x2F;gpt-5: Provider github-copilot is in cooldown (all profiles unavailable) (rate_limit).&lt;/p&gt;
+&lt;p&gt;Logs: openclaw logs –follow&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从 2 月给树莓派装上 Openclaw 开始，我的 Copilot Pro 订阅就被过度消耗了，自己平时写代码拼命去用也很难用完的 300 次 PR （高级模型请求次数），Openclaw 两天就可以用完，所以对这种消耗焦虑就一直萦绕在我心中。到了 3 月，我就尝试了些折腾方式来跟踪我的 Token（PR） 用量。&lt;/p&gt;
+&lt;h2 id=&#34;使用低速率模型（Flash、-mini）&#34;&gt;&lt;a href=&#34;#使用低速率模型（Flash、-mini）&#34; class=&#34;headerlink&#34; title=&#34;使用低速率模型（Flash、 mini）&#34;&gt;&lt;/a&gt;使用低速率模型（Flash、 mini）&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/lowCostModel.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;使用低速率模型的确可以给消耗打三折，但低速率模型也会带来模型降智，降智后好多任务需要我反复纠错，一来二去省掉的模型用量还是浪费了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/clawbot.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;增加监控手段&#34;&gt;&lt;a href=&#34;#增加监控手段&#34; class=&#34;headerlink&#34; title=&#34;增加监控手段&#34;&gt;&lt;/a&gt;增加监控手段&lt;/h2&gt;&lt;p&gt;Openclaw 有时候经常会不声不响地跑大半天，在我看不到的地方消耗大量的 Token 但没有产出任何有效的产物；有时候又会摆烂，跟聊天网页一样，我说一句，他后台跑10分钟就歇菜了，我还得频繁去打开网页问他状态，所以监控 Token 的消耗趋势可以得知 Openclaw 是否在后台正常的工作。&lt;/p&gt;
+&lt;h3 id=&#34;1、Quote-0-墨水屏监控&#34;&gt;&lt;a href=&#34;#1、Quote-0-墨水屏监控&#34; class=&#34;headerlink&#34; title=&#34;1、Quote&amp;#x2F;0 墨水屏监控&#34;&gt;&lt;/a&gt;1、Quote&amp;#x2F;0 墨水屏监控&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/quote_copilot_monitor.jpg&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2、iOS-小组件监控-（Http-Widget）&#34;&gt;&lt;a href=&#34;#2、iOS-小组件监控-（Http-Widget）&#34; class=&#34;headerlink&#34; title=&#34;2、iOS 小组件监控 （Http Widget）&#34;&gt;&lt;/a&gt;2、iOS 小组件监控 （Http Widget）&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/HttpWidget.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3、Android-小组件监控-HTTP-快捷指令&#34;&gt;&lt;a href=&#34;#3、Android-小组件监控-HTTP-快捷指令&#34; class=&#34;headerlink&#34; title=&#34;3、Android 小组件监控 ( HTTP 快捷指令 )&#34;&gt;&lt;/a&gt;3、Android 小组件监控 ( HTTP 快捷指令 )&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/http_shortcuts.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/copilot_widget_1.png&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; payload = &lt;span class=&#34;title class_&#34;&gt;JSON&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;parse&lt;/span&gt;(response.&lt;span class=&#34;property&#34;&gt;body&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; usageItems = payload &amp;amp;&amp;amp; payload.&lt;span class=&#34;property&#34;&gt;usageItems&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; gross = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (usageItems &amp;amp;&amp;amp; usageItems.&lt;span class=&#34;property&#34;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; usageItems.&lt;span class=&#34;property&#34;&gt;length&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; item = usageItems[i]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (item &amp;amp;&amp;amp; item.&lt;span class=&#34;property&#34;&gt;product&lt;/span&gt; === &lt;span class=&#34;string&#34;&gt;&amp;#x27;Copilot&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      gross += &lt;span class=&#34;title class_&#34;&gt;Number&lt;/span&gt;(item.&lt;span class=&#34;property&#34;&gt;grossQuantity&lt;/span&gt; || &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 计算百分比&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; usagePercent = (gross / &lt;span class=&#34;number&#34;&gt;300&lt;/span&gt;) * &lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用 toFixed(1) 保留一位小数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; formattedPercent = usagePercent.&lt;span class=&#34;title function_&#34;&gt;toFixed&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title function_&#34;&gt;setVariable&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;Copilot&amp;quot;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;Copilot: &amp;#x27;&lt;/span&gt; + formattedPercent + &lt;span class=&#34;string&#34;&gt;&amp;#x27;%&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;JavaScript&lt;/p&gt;
+&lt;h2 id=&#34;改用-Github-Agent-Action&#34;&gt;&lt;a href=&#34;#改用-Github-Agent-Action&#34; class=&#34;headerlink&#34; title=&#34;改用 Github Agent + Action&#34;&gt;&lt;/a&gt;改用 Github Agent + Action&lt;/h2&gt;&lt;p&gt;当你深入使用 Openclaw 了一段时间之后，你很快就会发现他的瓶颈，你让他做简单的事情，他可以很快帮你搞定，但你如果让他帮你开发项目，随着项目的功能复杂度上升、业务逻辑逐渐展开给大模型后，Openclaw 很快就开始失控了：它会反复在一个地方出错，或者改好了一个地方后又会在另一个地方出问题。这不仅仅消耗你大量 Token，还会消耗你大量时间和精力，反反复复好几次之后，你会像我一样萌生这样一个想法：我自己写都比让他改要强。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/thumbnails/2026/w1600/iShot2026-03-2614.02.15.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但好在 Openclaw 已经搅动了 Agent 的整个格局，现在其他家也已经在自动化 Agent 助手功能方面做了不小的升级，以我现在在用的 Github Copilot 的订阅为例，如果你是开发工程师，并且有一定的框架思维的话，你完全可以站在架构师的层面上（其实没有也行，问 AI 就好了），使用 Github 的 Agent + Action 实现不输于 Openclaw 的工程开发能力，这种方式会让整个工程在规模逐渐庞大之后仍旧保证基本可控，而且消耗的 Token 量要小非常多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-03-26_13.49.02-fajE.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同样可以运行测试，甚至可以运行无头浏览器测试！！&lt;/p&gt;
+&lt;p&gt;当然了，Copilot 也有犯蠢的时候：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-03-26_13.28.57-ImKA.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但相对于 Openclaw 项目复杂度上升后 Token 消耗也指数级上升，这种可控的消耗方式还是更容易让人（我）接受～&lt;/p&gt;
+&lt;h2 id=&#34;升级-Copilot-Pro&#34;&gt;&lt;a href=&#34;#升级-Copilot-Pro&#34; class=&#34;headerlink&#34; title=&#34;升级 Copilot Pro +&#34;&gt;&lt;/a&gt;升级 Copilot Pro +&lt;/h2&gt;&lt;p&gt;如果你已经开始用起来这个 Github Copilot，那么恭喜你，你已经使用 10 美元雇佣了一个能力超强的开发工程了，他任劳任怨，随叫随到，你可以一天分配给他 10 个开发任务，然后坐等他叫你验收就好了。&lt;/p&gt;
+&lt;p&gt;如果你还想继续扩大你的公司规模，可以升级 Github Copilot Pro +，39 刀，你就可以额外再雇佣 4 名能力非凡的开发工程师。&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="AI" />
+        <category term="Copilot" />
+        <category term="Openclaw" />
+        <updated>2026-03-26T12:28:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://blog.gadore.top/archives/smile-pro/</id>
+        <title>上海复旦五官科医院，2026 年全飞秒激光二代，手术分享</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/smile-pro/"/>
+        <content type="html">&lt;h2 id=&#34;我的眼部情况&#34;&gt;&lt;a href=&#34;#我的眼部情况&#34; class=&#34;headerlink&#34; title=&#34;我的眼部情况&#34;&gt;&lt;/a&gt;我的眼部情况&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;超过 15 年戴眼镜的经历，受够了眼镜雾气、下雨躲雨、低头扶镜框、不戴眼镜啥也看不清等等各种不便&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;大概近视度数：左边 300 + 100 散光，右眼 350&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2023 年做过一次检查，当时医生说我可能有青光眼，不适合做全飞秒，可以尝试准分子，我拒绝了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当时我还额外挂了专家号，专家说需要一年后复查，看下青光眼的可能性&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2026-年-1-月-5-号，术前检查，耗时：整个下午&#34;&gt;&lt;a href=&#34;#2026-年-1-月-5-号，术前检查，耗时：整个下午&#34; class=&#34;headerlink&#34; title=&#34;2026 年 1 月 5 号，术前检查，耗时：整个下午&#34;&gt;&lt;/a&gt;2026 年 1 月 5 号，术前检查，耗时：整个下午&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;医院：上海复旦大学附属眼耳鼻喉科医院（宝庆路分院）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;挂号：刘盛涛（那天下午只有他有号，其他医生的号都满了，哈哈）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;网上银行或者医院一楼挂号，可以在一楼缴费或者挂号处缴费&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;到对应医生所在楼层（一般在 4、5 楼）进行就医签到&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;签到后，在同楼层，找到服务台，领取必要的术前检查流程指导书，指导书会详细告诉你每一步需要做什么检查&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;按照指示到不同的房间做各种检查，这个过程会持续超过 2～3 小时，其中包含但不限于：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;角膜地形图&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;验光（精确查看近视程度、散光度数）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;扩瞳，也叫散瞳，做完之后会有一点儿畏光，因为眼睛的瞳孔被用扩瞳药水强行散开，进光量无法控制，应该是为了方便医生检查眼内的各种细节&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;眼底检查（青光眼、眼部各种潜在病变）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多说一句，排在我前边的哥们儿，查到这一项的时候，医生说他眼睛里有个小洞，需要赶紧用激光手术封上，否则会越来越大……显然，在封上之前，他没办法做激光手术，医生说做完修补手术后，如果一切正常，可以再考虑做激光手术。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;各种红色、白色的激光照射检查……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;p&gt;所有检查做完之后，就可以拿着检查报告去找最初你挂号的医生去做诊断了，医生会告诉你，你适不适合做手术，以及什么时候可以做手术（预约手术时间）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果你决定要做手术，就直接上 6 楼，护士服务站会给你一个术前准备说明，还会跟你讲术前几天需要准备的&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2026-年-1-月-13-号，手术前抽血，检查血常规、梅毒、艾滋等等（为了自己也是为了医生的安全）&#34;&gt;&lt;a href=&#34;#2026-年-1-月-13-号，手术前抽血，检查血常规、梅毒、艾滋等等（为了自己也是为了医生的安全）&#34; class=&#34;headerlink&#34; title=&#34;2026 年 1 月 13 号，手术前抽血，检查血常规、梅毒、艾滋等等（为了自己也是为了医生的安全）&#34;&gt;&lt;/a&gt;2026 年 1 月 13 号，手术前抽血，检查血常规、梅毒、艾滋等等（为了自己也是为了医生的安全）&lt;/h2&gt;&lt;p&gt;因为是 1 月 14 号手术，如果在手术相同的医院抽血检查，只需要提前一天，而且抽完血直接就可以走，不用等报告，同医院的信息系统是相通的，如果不是在同一家医院抽血，就需要把其他医院的抽血报告在手术当天带到医院。&lt;/p&gt;
+&lt;h2 id=&#34;2026-年-1-月-14-号，手术&#34;&gt;&lt;a href=&#34;#2026-年-1-月-14-号，手术&#34; class=&#34;headerlink&#34; title=&#34;2026 年 1 月 14 号，手术&#34;&gt;&lt;/a&gt;2026 年 1 月 14 号，手术&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;因为做完手术之后，眼睛有接近半小时几乎什么都看不到，就算能看到，重影也会非常严重，所以强烈建议带一个人陪同。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;到场之后，直接到 6 楼签到，护士站会给你额头上标记，还会带一个手术信息手环&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;到自动缴费机去交费（2W+）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;到 1 楼提前把后期要用的眼药水领了（主要作用：消炎、人工泪水）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;等待手术叫号（根据情况而定，可能持续两个小时，所以该吃吃、该睡睡）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;叫号后，把眼镜、外套等等内容全部给家属，到手术准备室门口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;穿鞋套、手术服、坐在等待区&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;首先，会有一个护士过来确定你的身份和信息，以及你的手术内容、主刀医生&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其次，会有一个护士过来帮你做眼部消毒，消完毒之后眼睛会有点儿难受，不好睁开，闭起来就好了，等待最终手术叫号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后，会有一个护士过来叫你，带你去手术室（扶着你）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;躺在手术床上，护士会再次确认你的身份、手术内容、主治医生信息&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;主治医师到场，让你躺在床（手术台）上，开始手术准备&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;护士会帮你滴眼药水（眼球表皮麻醉）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;医生把眼皮撑放在你的右眼，把激光工具放在你眼睛上，你盯着激光的绿点，大概十秒钟左右，机器吸附到你的眼球（因为麻醉了，所以几乎不会有任何感觉），完成扫描、锁定、激光作业，完成后你的右眼会变成模糊的白色，这个时候什么也看不到（因为已经在角膜里切出来了一个镜片，中间有空隙，所以一片白），持续大概十几秒钟。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;医生会立刻取出右眼眼撑，放到左眼，再重复刚刚右眼的步骤，这样之后，你两只眼都是白茫茫的一片了。这个过程也是持续大概十多秒钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;医生会立刻使用镊子，取出激光切割的左眼的多余角膜，取出后，立刻把眼撑切换到右边，继续取出右边的多余角膜，眼撑可以取出了。这个过程大概也就半分钟。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;截止到目前为止，手术过程基本上就结束了，这个时候你基本上什么也看不清，世界非常的模糊，只能看到大概的轮廓，护士会协助你走到术后观察室，坐大概 5 分钟，这个过程中，护士会告诉你术后注意事项和用药注意事项（你大概记不住，但她给你的单子里什么都有写，拿着给当日陪同的家属就行）。然后会告诉你：觉得没什么异常就可以走了，因为你这个时候已经可以模糊的看清走廊的大概轮廓了，但是非常模糊，需要去找家属，然后坐下来休息一下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;没错，整个手术过程，从开始准备手术，到手术结束，一共就十几分钟。而&lt;strong&gt;真正的手术部分可能就短短一两分钟&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;2026-年-1-月-14-号，手术后半小时&#34;&gt;&lt;a href=&#34;#2026-年-1-月-14-号，手术后半小时&#34; class=&#34;headerlink&#34; title=&#34;2026 年 1 月 14 号，手术后半小时&#34;&gt;&lt;/a&gt;2026 年 1 月 14 号，手术后半小时&lt;/h2&gt;&lt;p&gt;需要每隔 5 ～ 10 分钟滴一种眼药水，具体眼药水会有说明清单（手术后护士给你的那张），可以坐在医院的等候室把最近半小时的眼药水滴完，这个过程中，眼睛会从完全模糊，变成逐渐能够看到一定的内容了，只是有非常严重的重影。眼睛开始有点酸，但不怎么痛。&lt;/p&gt;
+&lt;h2 id=&#34;2026-年-1-月-14-号，手术后一到两小时&#34;&gt;&lt;a href=&#34;#2026-年-1-月-14-号，手术后一到两小时&#34; class=&#34;headerlink&#34; title=&#34;2026 年 1 月 14 号，手术后一到两小时&#34;&gt;&lt;/a&gt;2026 年 1 月 14 号，手术后一到两小时&lt;/h2&gt;&lt;p&gt;眼睛逐渐可以看到世界的一些原本的样貌了，会一点点怕强光，还有手机基本上看不清楚，重影非常严重，但是看远处的房子、树木、都能够看到了，只是有一定的重影，会有点儿激动，尤其是戴了眼镜超过 10 年以上的人，会有一种隐隐的解脱感。&lt;/p&gt;
+&lt;h2 id=&#34;2026-年-1-月-14-号，手术后半天&#34;&gt;&lt;a href=&#34;#2026-年-1-月-14-号，手术后半天&#34; class=&#34;headerlink&#34; title=&#34;2026 年 1 月 14 号，手术后半天&#34;&gt;&lt;/a&gt;2026 年 1 月 14 号，手术后半天&lt;/h2&gt;&lt;p&gt;手机基本上可以看到，但是重影比较严重，看久了眼睛会累，看电视、看远处、都只是有一些重影，但已经基本上可以看清了。感觉效果已经非常好了。&lt;/p&gt;
+&lt;h2 id=&#34;手术后第一天，复查&#34;&gt;&lt;a href=&#34;#手术后第一天，复查&#34; class=&#34;headerlink&#34; title=&#34;手术后第一天，复查&#34;&gt;&lt;/a&gt;手术后第一天，复查&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;到院后直接去 2 或者 5 楼签到，找到术后复查的机器做签到&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;签到后，在大厅找到测视力的医生做视力检查，我这个时候已经双眼 1.2 了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;到 206 专用复查室检查眼部状况（角膜地形图等等吧，我不太专业）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;带着检查的报告去找主刀医生复诊，医生说：非常棒，按照用药单正常用药即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;手术后第一周&#34;&gt;&lt;a href=&#34;#手术后第一周&#34; class=&#34;headerlink&#34; title=&#34;手术后第一周&#34;&gt;&lt;/a&gt;手术后第一周&lt;/h2&gt;&lt;h3 id=&#34;注意事项：&#34;&gt;&lt;a href=&#34;#注意事项：&#34; class=&#34;headerlink&#34; title=&#34;注意事项：&#34;&gt;&lt;/a&gt;注意事项：&lt;/h3&gt;&lt;p&gt;眼睛不能进水。&lt;/p&gt;
+&lt;p&gt;正常用眼（不要过度用眼），我就正常使用手机、电脑、看电视。&lt;/p&gt;
+&lt;p&gt;重影（炫光）仍旧存在，医生说需要大概一个月左右才会彻底消失。&lt;/p&gt;
+&lt;p&gt;早上起床后，尤其是被公司顶灯的强光照久了之后，重影会比较严重，暗光下视力正常。&lt;/p&gt;
+&lt;h3 id=&#34;你会：&#34;&gt;&lt;a href=&#34;#你会：&#34; class=&#34;headerlink&#34; title=&#34;你会：&#34;&gt;&lt;/a&gt;你会：&lt;/h3&gt;&lt;p&gt;虚空扶镜框多次&lt;/p&gt;
+&lt;p&gt;睁开眼睛就能看到清晰的世界，不用再去找眼镜了&lt;/p&gt;
+&lt;p&gt;努力克服摘眼镜羞耻，现在是另一种模样了&lt;/p&gt;
+&lt;h2 id=&#34;术后第二周&#34;&gt;&lt;a href=&#34;#术后第二周&#34; class=&#34;headerlink&#34; title=&#34;术后第二周&#34;&gt;&lt;/a&gt;术后第二周&lt;/h2&gt;&lt;p&gt;保持正常滴眼药水，此时炫光的情况渐渐少了很多，眼睛也可以正常进水了，除了要定时滴眼药水，基本上不影响正常生活了。&lt;/p&gt;
+&lt;p&gt;早上视力会有点儿差，不知道是不是我的个人体质问题，之前带眼镜的时候，眼睛早上视力也比较差，眼部视力到下午和晚上之后就正常了。&lt;/p&gt;
+&lt;p&gt;看近处时间长了有点儿吃力，比如手机、捣鼓手工之类的东西等等，看久了眼睛会有点儿累，看不清，看远处一会儿可以缓解。&lt;/p&gt;
+&lt;h2 id=&#34;术后第三周（最新时间线-2026-02-04）&#34;&gt;&lt;a href=&#34;#术后第三周（最新时间线-2026-02-04）&#34; class=&#34;headerlink&#34; title=&#34;术后第三周（最新时间线 2026-02-04）&#34;&gt;&lt;/a&gt;术后第三周（最新时间线 2026-02-04）&lt;/h2&gt;&lt;p&gt;眼药水已经滴完了，也停了，没有干眼症、没有飞蚊症、视力仍旧是早上会比较差，到了下午会好很多，考虑到做手术之前眼睛状态也是这样，所以应该跟手术没关系，单纯是眼睛自己的状态如此。&lt;/p&gt;
+&lt;p&gt;做了第 20 天的复查，左眼仍旧 1.2，右眼视力来到了 1.5 ，我最开始以为是我的左眼视力下降了，没想到是右眼视力变得更好了。&lt;/p&gt;
+&lt;p&gt;平时也可以正常揉眼睛了（轻轻地），复查的时候医生也没说有任何问题，所以我这次手术大概率算成功啦 ～ ？&lt;/p&gt;
+&lt;h2 id=&#34;后记&#34;&gt;&lt;a href=&#34;#后记&#34; class=&#34;headerlink&#34; title=&#34;后记&#34;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;如果你要做全飞秒激光手术，一定记得在手术前记录你眼睛的各种状态，方便在术后做对比，方可知道哪些是眼睛本来就有的症状，哪些是手术后出现的症状。&lt;/p&gt;
+&lt;p&gt;以上就是我做眼部全飞秒二代的全部过程了，后期如果有任何其他状况，我会继续更新。&lt;/p&gt;
+</content>
+        <category term="全飞秒" />
+        <category term="全飞秒二代" />
+        <category term="近视" />
+        <category term="眼睛" />
+        <category term="眼镜" />
+        <category term="上海五官科医院" />
+        <updated>2026-02-04T17:28:19.000Z</updated>
+    </entry>
+</feed>

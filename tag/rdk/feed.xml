@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;rdk&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-10-14T17:00:18.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="SynoSync" />
+    <category term="Mac" />
+    <category term="时刻同步" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="a6700" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <category term="红米电视" />
+    <category term="HyperOS" />
+    <category term="开机自启动" />
+    <category term="视觉" />
+    <category term="RDK" />
+    <category term="Radxa" />
+    <category term="Jetson" />
+    <entry>
+        <id>https://blog.gadore.top/archives/edgeAiDevice/</id>
+        <title>边缘视觉识别工控机选型</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/edgeAiDevice/"/>
+        <content type="html">&lt;h2 id=&#34;背景&#34;&gt;&lt;a href=&#34;#背景&#34; class=&#34;headerlink&#34; title=&#34;背景&#34;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;传统快递分拣行业没有在传输过程中感知流量的模块，只能通过光电、光幕来感知：有 &amp;#x2F; 无 包裹这种比较简单的判断。只有到达了单件分离、叠件分离、这些特种设备的时候，才能知道流量。但这种设备动辄 10～30W，不可能大面积布置。&lt;/p&gt;
+&lt;p&gt;而传统视觉厂家的提供的便宜的AI视觉设备采购价也动辄超过 1W，最便宜的也在 7～8 K 以上。&lt;/p&gt;
+&lt;p&gt;我最近两个月刚好就是负责公司这边的视觉识别在现场的应用，所以有机会采购了一大批形形色色的负责 AI 模型推理的电脑。&lt;/p&gt;
+&lt;h2 id=&#34;NVIDIA-Jetson-Orin-NX-Super-16GB&#34;&gt;&lt;a href=&#34;#NVIDIA-Jetson-Orin-NX-Super-16GB&#34; class=&#34;headerlink&#34; title=&#34;NVIDIA Jetson Orin NX Super 16GB&#34;&gt;&lt;/a&gt;NVIDIA Jetson Orin NX Super 16GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-Lysl.png&#34; alt=&#34;NVIDIA Jetson Orin NX Super 16GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;智能算力：157 TOPS&lt;/li&gt;
+&lt;li&gt;参考价格：¥ 7000 ～ 9000&lt;/li&gt;
+&lt;li&gt;使用感受：完全过剩，16 bit 高精度模型推理不在话下！但 Nvidia 在 Linux on arm 的生态和驱动没有在 x86 平台上成熟，Jetpack 版本非常不稳定，会遇到很多奇奇怪怪的依赖问题，好在有了 AI 帮忙都解决了，算力强的没话说&lt;/li&gt;
+&lt;li&gt;是否推荐：不推荐，算力过剩，成本过高；而且它居然不支持上电自启动！也可能是我这家代理商没有配置对应的上电自启动的配件，导致我在现场只能手搓。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;NVIDIA-Jetson-Nano-Super-8GB&#34;&gt;&lt;a href=&#34;#NVIDIA-Jetson-Nano-Super-8GB&#34; class=&#34;headerlink&#34; title=&#34;NVIDIA Jetson Nano Super 8GB&#34;&gt;&lt;/a&gt;NVIDIA Jetson Nano Super 8GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-rQie.png&#34; alt=&#34;NVIDIA Jetson Nano Super 8GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：40 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 4000 ～ 6000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：在我们当前的使用状况下，算力仍旧非常充沛，占用空间更小了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：不推荐，算力过剩，跟上方的 NX 一样，成本过高；有类似的 arm 生态配置问题，Ai 能解决。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;RDK-X5-8GB&#34;&gt;&lt;a href=&#34;#RDK-X5-8GB&#34; class=&#34;headerlink&#34; title=&#34;RDK X5 8GB&#34;&gt;&lt;/a&gt;RDK X5 8GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-GpYl.png?width=1600&#34; alt=&#34;RDK X5 8GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：10 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 900 ～ 1000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：算力刚刚好够用，RDK 生态非常丰富，官方手册也很详细，例程丰富，非常适合初学者，但很多例程对我来说有点儿没必要，占用了非常大的 SD 卡空间，后续删除了不少示例项目；而且它标识的是 8G 运行内存，但是实际上有 4GB 是完全被 NPU 给独占了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：新手推荐，周边配套完善&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Radxa-Cubie-A7S-4GB&#34;&gt;&lt;a href=&#34;#Radxa-Cubie-A7S-4GB&#34; class=&#34;headerlink&#34; title=&#34;Radxa Cubie A7S 4GB&#34;&gt;&lt;/a&gt;Radxa Cubie A7S 4GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-fGdY.png&#34; alt=&#34;Radxa Cubie A7S 4GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：3 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 410&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：暂未使用，摄像头接口转换线与树莓派不兼容，而且算力较低，需要降低模型精度或者间歇性推理场景&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：如果购买到对应转换线和摄像头的话，在需要控制体积的情况下，可以购买&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Radxa-4D-6GB&#34;&gt;&lt;a href=&#34;#Radxa-4D-6GB&#34; class=&#34;headerlink&#34; title=&#34;Radxa 4D 6GB&#34;&gt;&lt;/a&gt;Radxa 4D 6GB&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/image-rOIk.png&#34; alt=&#34;Radxa 4D 6GB&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;智能算力：6 TOPS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考价格：¥ 650&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用感受：接口适配树莓派生态，算力刚好够用，系统比较干净，资料说明详细，非常不错；而且他的 NPU 和 CPU 共用 6GB 的运行内存，反而比 上方的 RDK X5 的内存应用还要灵活&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;是否推荐：我已购买，体验暂时良好。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感想&#34;&gt;&lt;a href=&#34;#感想&#34; class=&#34;headerlink&#34; title=&#34;感想&#34;&gt;&lt;/a&gt;感想&lt;/h2&gt;&lt;p&gt;其实这类 AI 视觉模型在前几年就已经非常成熟了，只是这两年语言大模型的程序才让大众后知后觉地意识到了这一点，当然，语言大模型也在这其中帮助了很多，尤其在环境配置和应用开发方面。&lt;/p&gt;
+&lt;p&gt;借助 RDK 和 Radxa 这两个开发板，我成功把采购成本降到了 1K 左右。&lt;/p&gt;
+&lt;p&gt;如果后续的芯片和内存产能能够释放到民用和工业端的话，这类计算设备应该可以更便宜。&lt;/p&gt;
+&lt;p&gt;现在我在其中一个场地布置了 RDK X5 5 台，另两个场地布置 Radxa 4D 共 10 台，想要了解后续反馈的话，请持续关注我的博客吧～&lt;/p&gt;
+</content>
+        <category term="AI" />
+        <category term="视觉" />
+        <category term="RDK" />
+        <category term="Radxa" />
+        <category term="Jetson" />
+        <updated>2026-10-14T17:00:18.000Z</updated>
+    </entry>
+</feed>

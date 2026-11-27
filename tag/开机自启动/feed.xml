@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;开机自启动&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-08-12T13:00:00.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="SynoSync" />
+    <category term="Mac" />
+    <category term="时刻同步" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="a6700" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <category term="红米电视" />
+    <category term="HyperOS" />
+    <category term="开机自启动" />
+    <category term="视觉" />
+    <category term="RDK" />
+    <category term="Radxa" />
+    <category term="Jetson" />
+    <entry>
+        <id>https://blog.gadore.top/archives/bloger-saved-my-redmi-tv/</id>
+        <title>传统网站在 AI 时代并没有失去价值（使用api控制红米/小米电视开机启动第三方应用）</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/bloger-saved-my-redmi-tv/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;文章由本人 100% 手打，仅文章封面图使用了 AI 生成，请放心阅读～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;背景：现场买了几百台红米电视当数据看板&#34;&gt;&lt;a href=&#34;#背景：现场买了几百台红米电视当数据看板&#34; class=&#34;headerlink&#34; title=&#34;背景：现场买了几百台红米电视当数据看板&#34;&gt;&lt;/a&gt;背景：现场买了几百台红米电视当数据看板&lt;/h2&gt;&lt;p&gt;近期项目上采购了几百台红米 A43 2025 省电版作为现场的监控屏，主要用于各个点位的数据看板，足够大的尺寸+自带系统，要比现场使用工控机+显示器的方案要简单很多，本来是一个非常完美的方案的。&lt;/p&gt;
+&lt;p&gt;我们自己封装了一个 Apk 应用，打开后自动热加载网页更新然后展示各式各样的数据，一切看起来都很美好。&lt;/p&gt;
+&lt;h2 id=&#34;现状：红米HyperOS不支持第三方应用自启&#34;&gt;&lt;a href=&#34;#现状：红米HyperOS不支持第三方应用自启&#34; class=&#34;headerlink&#34; title=&#34;现状：红米HyperOS不支持第三方应用自启&#34;&gt;&lt;/a&gt;现状：红米HyperOS不支持第三方应用自启&lt;/h2&gt;&lt;p&gt;现场实际安装后，才发现红米 A43 搭载的 HyperOS 1.0.24 根本不支持设置开机自启动第三方应用！&lt;/p&gt;
+&lt;p&gt;也就相当于现场&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;要么一直给 TV 通电，这样设置一次就可以一直用下去；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;要么每&lt;strong&gt;次开机之后都要拿几百个遥控器，然后一个个 TV 分别打开一遍 Apk&lt;/strong&gt;！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这显然很反人类。&lt;/p&gt;
+&lt;p&gt;所以我们需要想办法让 TV 开机后自启动到我们的应用程序去。&lt;/p&gt;
+&lt;h2 id=&#34;调查：B-站、小红书、Bing、Google、Claude&#34;&gt;&lt;a href=&#34;#调查：B-站、小红书、Bing、Google、Claude&#34; class=&#34;headerlink&#34; title=&#34;调查：B 站、小红书、Bing、Google、Claude&#34;&gt;&lt;/a&gt;调查：B 站、小红书、Bing、Google、Claude&lt;/h2&gt;&lt;p&gt;去 B 站看了很多视频，都是基于 MIUI for TV 的旧系统的方案，在 HyperOS 时代已经不适用了。&lt;/p&gt;
+&lt;p&gt;然后去小红书（当今的年轻人的搜索引擎）搜索了很多帖子，都是不知所云或者求方案贴，完全没用。&lt;/p&gt;
+&lt;p&gt;我去，难道这几百台电视机就这么废了？&lt;/p&gt;
+&lt;p&gt;于是开始疯狂 Bing、Google，这其中也过滤了非常多似是而非的帖子，一些一看就是 AI 生成的乐色。&lt;/p&gt;
+&lt;p&gt;经过半个多小时的疯狂查找，终于翻到了一个 52 破解网站的帖子&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我开始激动了起来，就像是找到了唯一的救命稻草了。&lt;/p&gt;
+&lt;p&gt;如果这个方案还不行，就只能研究 root 方案了，那样的话，现场的操作量会非常非常复杂。&lt;/p&gt;
+&lt;p&gt;因为 TV 架设在比较高的地方，操作需要爬上爬下、U盘拷贝等等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;52-破解网站的帖子&#34;&gt;&lt;a href=&#34;#52-破解网站的帖子&#34; class=&#34;headerlink&#34; title=&#34;52 破解网站的帖子&#34;&gt;&lt;/a&gt;52 破解网站的帖子&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.52pojie.cn/thread-1834214-1-1.html&#34;&gt;小米电视开机启动指定APP脚本PY版&lt;/a&gt;：&lt;a href=&#34;https://www.52pojie.cn/thread-1834214-1-1.html&#34;&gt;https://www.52pojie.cn/thread-1834214-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;帖子时间是 2023年9月15日,那还能不能适配现在的 HyperOS 系统呢，万一官方在新系统上把这个 Api 给关了我不就直接凉凉了。&lt;/p&gt;
+&lt;p&gt;于是继续在网上搜索其他类似的帖子，想要得到交叉验证，希望还有其他人也通过这种方式控制过红米电视的开机启动第三方 App，但找了很久都没有找到……&lt;/p&gt;
+&lt;h3 id=&#34;Claude-和个人博客&#34;&gt;&lt;a href=&#34;#Claude-和个人博客&#34; class=&#34;headerlink&#34; title=&#34;Claude 和个人博客&#34;&gt;&lt;/a&gt;Claude 和个人博客&lt;/h3&gt;&lt;p&gt;我不相信整个互联网只有这一个使用 Python 的案例，打开 DeepSeek、Claude，把关键字同步发送给两个智能体，让他们帮我去检索和确定这个 API 的方案是否在 2026 年 或者在 HyperOS 上仍旧可用。&lt;/p&gt;
+&lt;p&gt;仅仅用了5分钟，Claude 就传来喜报，在互联网的某个角落，找到了另一篇 &lt;strong&gt;2026年 2月 19 号&lt;/strong&gt;的博客文章，里边也提到了类似的接口地址！！！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gddhy.net/2026/xiao-mi-dian-shi-api/&#34;&gt;小米电视API收集整理&lt;/a&gt;：&lt;a href=&#34;https://gddhy.net/2026/xiao-mi-dian-shi-api/&#34;&gt;https://gddhy.net/2026/xiao-mi-dian-shi-api/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;识别度 AAAAA ！！！&lt;/p&gt;
+&lt;h2 id=&#34;解决&#34;&gt;&lt;a href=&#34;#解决&#34; class=&#34;headerlink&#34; title=&#34;解决&#34;&gt;&lt;/a&gt;解决&lt;/h2&gt;&lt;p&gt;这个时候是北京时间晚上 10 点 37 分，远在其他国家的同事开始工作了，给现场设备通上电之后，直接一个 curl 测试，成了！App 通过远程 API 调用在 红米电视上被正常启动了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-08-12_12.35.56.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Bloger-help-bloger&#34;&gt;&lt;a href=&#34;#Bloger-help-bloger&#34; class=&#34;headerlink&#34; title=&#34;Bloger help bloger&#34;&gt;&lt;/a&gt;Bloger help bloger&lt;/h2&gt;&lt;p&gt;谁说博客时代过去了？这些所谓的新时代主流网络平台，没一个能解决我的问题的！&lt;/p&gt;
+&lt;p&gt;还得是咱们写博客的，各位千万不要断更啊！！！&lt;/p&gt;
+</content>
+        <category term="红米电视" />
+        <category term="HyperOS" />
+        <category term="开机自启动" />
+        <updated>2026-08-12T13:00:00.000Z</updated>
+    </entry>
+</feed>

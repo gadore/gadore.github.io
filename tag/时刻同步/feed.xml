@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gadore.top</id>
+    <title>千里之豪的格物垛 • Posts by &#34;时刻同步&#34; tag</title>
+    <link href="https://blog.gadore.top" />
+    <updated>2026-11-22T20:25:00.000Z</updated>
+    <category term="旅行" />
+    <category term="日本" />
+    <category term="手机" />
+    <category term="程序员" />
+    <category term="动漫" />
+    <category term="AI" />
+    <category term="Copilot" />
+    <category term="Openclaw" />
+    <category term="刷机" />
+    <category term="Pixel 5" />
+    <category term="LineageOS" />
+    <category term="NAS" />
+    <category term="相册" />
+    <category term="网络" />
+    <category term="iOS" />
+    <category term="独立开发" />
+    <category term="群晖" />
+    <category term="Obsidian" />
+    <category term="WebDAV" />
+    <category term="SMB" />
+    <category term="SynoSync" />
+    <category term="Mac" />
+    <category term="时刻同步" />
+    <category term="唯记" />
+    <category term="V2RMB" />
+    <category term="Way 2 Remember" />
+    <category term="倒数日" />
+    <category term="iPhone" />
+    <category term="a6700" />
+    <category term="墨水屏" />
+    <category term="产品" />
+    <category term="SwiftUI" />
+    <category term="像素风" />
+    <category term="全飞秒" />
+    <category term="全飞秒二代" />
+    <category term="近视" />
+    <category term="眼睛" />
+    <category term="眼镜" />
+    <category term="上海五官科医院" />
+    <category term="安全" />
+    <category term="博客" />
+    <category term="公租房" />
+    <category term="生活" />
+    <category term="Swift" />
+    <category term="腕表" />
+    <category term="拓竹" />
+    <category term="P2SC" />
+    <category term="红米 K Pad" />
+    <category term="小米手环 10 NFC" />
+    <category term="游戏" />
+    <category term="PCB" />
+    <category term="树莓派" />
+    <category term="嘉立创" />
+    <category term="红米电视" />
+    <category term="HyperOS" />
+    <category term="开机自启动" />
+    <category term="视觉" />
+    <category term="RDK" />
+    <category term="Radxa" />
+    <category term="Jetson" />
+    <entry>
+        <id>https://blog.gadore.top/archives/synosync-mac-native/</id>
+        <title>SynoSync（时刻同步），Mac 原生文件同步客户端+1</title>
+        <link rel="alternate" href="https://blog.gadore.top/archives/synosync-mac-native/"/>
+        <content type="html">&lt;p&gt;SynoSync 最初是一款为了解决群晖的 Drive 在 iOS 端没办法把 Obsidian 文档库同步给 Obsidian 的同步工具，它因为&lt;strong&gt;支持后台静默同步&lt;/strong&gt;，受到了一部分用户的喜欢，感兴趣的可以移步站内&lt;a href=&#34;/archives/synosync/&#34;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;它可以连接群晖、WebDAV、SMB 这类常用的文件服务器，然后设置多种不同的同步方向和同步策略，并按照这种策略同步本地与服务器文件的工具。尤其擅长 Obsidian 文档库、Harness 会话库等基于文件的同步场景。&lt;/p&gt;
+&lt;p&gt;SynoSync 其实在最初是没有 Mac 版本的，因为我不擅长写 App Kit，只用过 SwiftUI。所以当时就基于 iOS 版本的源代码，配合苹果的 Catalyst 转译，自动生成了 Mac端，界面风格基本上和 iPad 一致。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/iShot_2026-11-15_22.38.25.png&#34; alt=&#34;老版本，还是 iPad 的操作逻辑&#34;&gt;&lt;/p&gt;
+&lt;p&gt;现在俺带着 Mac 原生客户端来啦～&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/c0305585f7e00df409f5549f9c6212d1.png&#34; alt=&#34;新版：Mac 原生应用&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;SynoSync，解决什么问题&#34;&gt;&lt;a href=&#34;#SynoSync，解决什么问题&#34; class=&#34;headerlink&#34; title=&#34;SynoSync，解决什么问题&#34;&gt;&lt;/a&gt;SynoSync，解决什么问题&lt;/h2&gt;&lt;p&gt;（老用户可以跳到下一章）&lt;/p&gt;
+&lt;p&gt;因为我是 NAS + Obsidian 用户，避免不了地需要用到一些同步工具，而在这其中，最难用的同步工具，莫过于群晖自家的 Synology Drive Client；&lt;/p&gt;
+&lt;p&gt;在 iOS 端（名为 Drive），它无法支持同步到自身沙盒以外，让我不得不借助第三方插件才能同步 Obsidian 的文档库（但我的文档库有 20000 + 的文件，Obsidian 插件同步效率非常低，而且必须要开 App 才能同步）；而在 Mac 上，群晖家的客户端也远远算不上好用。&lt;/p&gt;
+&lt;h3 id=&#34;Synology-Drive-Client-在-Mac-端的问题&#34;&gt;&lt;a href=&#34;#Synology-Drive-Client-在-Mac-端的问题&#34; class=&#34;headerlink&#34; title=&#34;Synology Drive Client 在 Mac 端的问题&#34;&gt;&lt;/a&gt;Synology Drive Client 在 Mac 端的问题&lt;/h3&gt;&lt;p&gt;界面老旧&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/0cb548756ad8d0be2993a0f546825a61.png&#34; alt=&#34;传统派 UI 设计&#34;&gt;&lt;/p&gt;
+&lt;p&gt;操作反应迟钝&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2d8fce5eee9c865c13bce0fe9bd87160.JPG&#34; alt=&#34;每次退出都需要等待非常长的时间，而且会阻塞电脑操作&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装体积巨大&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7b03ad64457bddf19ab7f1143c4f7b4b.png&#34; alt=&#34;安装体积动辄 250 MB +&#34;&gt;&lt;/p&gt;
+&lt;p&gt;创建任务时自动帮你创建新文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7e1444f6425da456e311e7e73c69e663.png&#34; alt=&#34;俺知道可以取消，但人有时候只有在反复试错后才知道不取消意味着什么……&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当你填写同步任务的时候，再自动帮你增加一个跟任务名同名的嵌套子文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/69fc5abd9a3f612fd1fa3ba4bc708ac0.png&#34; alt=&#34;请注意，我先选的 Obsidian 文件夹，然后填写任务名称，这一步无法跳过、无法留空&#34;&gt;&lt;/p&gt;
+&lt;p&gt;本地只能设置空文件夹为同步目的地&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/6699999dfe34ea787a7398c424044705.png&#34;&gt;&lt;br&gt;一旦设置好的同步任务就无法再调整&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/409d8d5f5da2b69595cfdb08d28f4ca8.png&#34;&gt;&lt;br&gt;新建成功后就无法编辑的同步任务&lt;/p&gt;
+&lt;p&gt;这几个问题叠加在一起，就可能会导致你遇上这样的事情：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;新建任务的时候默认帮你加两层子文件夹命名（如果不仔细看的话）&lt;/li&gt;
+&lt;li&gt;新建成功后发现任务无法修改&lt;/li&gt;
+&lt;li&gt;删掉旧的同步任务，重新创建任务&lt;/li&gt;
+&lt;li&gt;你猜怎么着？刚刚的文件夹不为空，无法选择了！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;新版功能增强&#34;&gt;&lt;a href=&#34;#新版功能增强&#34; class=&#34;headerlink&#34; title=&#34;新版功能增强&#34;&gt;&lt;/a&gt;新版功能增强&lt;/h2&gt;&lt;p&gt;正如开始所说，本次时刻同步进行了底层升级，从 iOS 转译应用（Catalyst）转向了 Mac 原生！因此 SynoSync 本身也获得了更强的能力：&lt;/p&gt;
+&lt;h3 id=&#34;常驻菜单栏能力&#34;&gt;&lt;a href=&#34;#常驻菜单栏能力&#34; class=&#34;headerlink&#34; title=&#34;常驻菜单栏能力&#34;&gt;&lt;/a&gt;常驻菜单栏能力&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/29f5230714bb7d72e0fd0871c865690d.png&#34;&gt;&lt;br&gt;之前 Catalyst 版本必须要保留一个窗口才能正常同步，现在可以放心关掉主界面了。&lt;/p&gt;
+&lt;h3 id=&#34;开机自启动&#34;&gt;&lt;a href=&#34;#开机自启动&#34; class=&#34;headerlink&#34; title=&#34;开机自启动&#34;&gt;&lt;/a&gt;开机自启动&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/85276d1c5fc726bc1260bdcb591377d3.png&#34;&gt;&lt;br&gt;默认关闭，但你有需要的话，现在可以打开了。&lt;/p&gt;
+&lt;h3 id=&#34;毫秒级文件变动监控&#34;&gt;&lt;a href=&#34;#毫秒级文件变动监控&#34; class=&#34;headerlink&#34; title=&#34;毫秒级文件变动监控&#34;&gt;&lt;/a&gt;毫秒级文件变动监控&lt;/h3&gt;&lt;p&gt;之前 Catalyst 转译是 iOS 逻辑，无法监听到文件的变更事件，只能定时同步；&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/8429a02d8149e42f9854a12fa24ef2b9.png&#34;&gt;&lt;br&gt;现在，本地文件修改可以及时通知到客户端，进而实时同步到服务器了。&lt;/p&gt;
+&lt;h3 id=&#34;更加自然的-UI&#34;&gt;&lt;a href=&#34;#更加自然的-UI&#34; class=&#34;headerlink&#34; title=&#34;更加自然的 UI&#34;&gt;&lt;/a&gt;更加自然的 UI&lt;/h3&gt;&lt;p&gt;先看看之前老版本通过 Catalyst 转译的界面长啥样：&lt;/p&gt;
+&lt;p&gt;老版本服务器创建界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/2626c4cf5f65a7493219ce3edbc10cf7.png&#34;&gt;&lt;br&gt;老版本关于界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/c0f69b621f6550da880f9ca34ab3a619.png&#34;&gt;&lt;br&gt;使用 App Kit 原生构建后：&lt;/p&gt;
+&lt;p&gt;新的活动界面看板&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/e9cc4dce87f931956c09b751616d3dc7.png&#34;&gt;&lt;br&gt;新的添加服务器界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/56016b65796aa43fc32df522836c643a.png&#34;&gt;&lt;br&gt;新的设置界面&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/f7c49123292f3a42f1391687987094f5.png&#34;&gt;&lt;br&gt;对了，Catalyst 甚至不支持图标切换！这怎么可以被接受呢？原生！必须原生！&lt;/p&gt;
+&lt;h4 id=&#34;更小的安装体积&#34;&gt;&lt;a href=&#34;#更小的安装体积&#34; class=&#34;headerlink&#34; title=&#34;更小的安装体积&#34;&gt;&lt;/a&gt;更小的安装体积&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://halo.gadore.top/upload/4d11a0404984d593bc27dd4857095803.png&#34;&gt;&lt;br&gt;原生的伟大，无需多言！&lt;/p&gt;
+&lt;h3 id=&#34;所有功能仍旧免费中！&#34;&gt;&lt;a href=&#34;#所有功能仍旧免费中！&#34; class=&#34;headerlink&#34; title=&#34;所有功能仍旧免费中！&#34;&gt;&lt;/a&gt;所有功能仍旧免费中！&lt;/h3&gt;&lt;p&gt;只要你下载时免费，那就是&lt;strong&gt;永久解锁所有功能&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;其他同步协议选择&#34;&gt;&lt;a href=&#34;#其他同步协议选择&#34; class=&#34;headerlink&#34; title=&#34;其他同步协议选择&#34;&gt;&lt;/a&gt;其他同步协议选择&lt;/h3&gt;&lt;p&gt;SynoSync 最初的确是为了解决群晖的一系列问题而开发的，但第一版发布后，我就陆陆续续收到了一些用户对 WebDAV 和 SMB 协议支持的意见，用户就是天！&lt;/p&gt;
+&lt;p&gt;WebDAV、SMB 文件协议早已在 iOS 版本支持，现在也延续到了 Mac 客户端。&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/35f738a188d7f9463515fb4949bf2f1c.png&#34;&gt;&lt;br&gt;当前已经支持连接的服务器类型&lt;/p&gt;
+&lt;h2 id=&#34;SynoSync-未来的发展路线规划&#34;&gt;&lt;a href=&#34;#SynoSync-未来的发展路线规划&#34; class=&#34;headerlink&#34; title=&#34;SynoSync 未来的发展路线规划&#34;&gt;&lt;/a&gt;SynoSync 未来的发展路线规划&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;飞牛 FN 接口支持（视官方 Api 而定）&lt;/li&gt;
+&lt;li&gt;Windows 和 Linux 版本 （开发语言：MyGO ！！！）&lt;/li&gt;
+&lt;li&gt;Android 版本（是否有人想要呢？）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;AI-使用声明&#34;&gt;&lt;a href=&#34;#AI-使用声明&#34; class=&#34;headerlink&#34; title=&#34;AI 使用声明&#34;&gt;&lt;/a&gt;AI 使用声明&lt;/h2&gt;&lt;p&gt;你可能有疑问，你不是开头说你不会写 App Kit 吗？难道说这个 Mac 版本……&lt;/p&gt;
+&lt;p&gt;没错～拿到 AI 生成的第一版本后，我发现各种细节都很难说是直接能用，难道又要我花费很长时间一点点去反馈问题然后一条条告诉 AI 再去慢慢改嘛？&lt;/p&gt;
+&lt;p&gt;遥想半年前（哽咽），时刻同步的每个 iOS 版本发布，都是我手工一条条去核对测试集，一个个按钮点击测试的，一次完整功能测试做完，俺两天时间都没了。&lt;/p&gt;
+&lt;p&gt;而 Mac 版本客户端的加入，让测试工作的进展更加艰难了，因为我没办法利用空闲时间测试，毕竟 iPhone 可以随身携带，有时间就拿出来验证一些应用场景，但Mac 没办法揣兜里啊！&lt;/p&gt;
+&lt;p&gt;不过正如 XINGRZ（aka：导演）之前的文章所说：“&lt;strong&gt;现在是 AI 时代，有什么东西不能靠许愿得到呢？&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;为了尽可能地保障 AI 参与后的版本稳定可靠，我同步让 AI 搭建了单元测试、UI 测试、集成测试等整条自动化测试管线（&lt;strong&gt;纯脚本运行，搭建成功后零 Token 消耗&lt;/strong&gt;）。&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/f4ba5e0c5856fffed5923be94f02b1fb.png&#34;&gt;&lt;br&gt;双击运行的 command 终端脚本&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/7369df97599601e8e893a6d306ddfac4.png&#34;&gt;&lt;br&gt;Mac OS 端的自动化测试脚本运行截图&lt;br&gt;&lt;img src=&#34;https://halo.gadore.top/upload/SynoSync-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95-%E6%89%A7%E8%A1%8C%E8%AE%B0%E5%BD%95.png&#34;&gt;&lt;br&gt;手搓匠人的精神，终究是在便利的 AI 面前，毫无性价比了呀～&lt;/p&gt;
+</content>
+        <category term="程序员" />
+        <category term="SynoSync" />
+        <category term="Mac" />
+        <category term="时刻同步" />
+        <updated>2026-11-22T20:25:00.000Z</updated>
+    </entry>
+</feed>
